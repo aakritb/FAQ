@@ -92,7 +92,7 @@ const SEARCH_STOPWORDS=new Set(['a','an','the','is','are','am','do','does','did'
 function selectCategory(id,move=true){active=id;search.value='';buttons.forEach(b=>{const selected=b.dataset.filter===id;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});cards.forEach(card=>card.classList.toggle('active',card.dataset.categoryCard===id));applyFilters();if(move)document.querySelector('#answers').scrollIntoView({behavior:'smooth',block:'start'});}
 buttons.forEach(button=>button.addEventListener('click',()=>selectCategory(button.dataset.filter,false)));cards.forEach(card=>card.addEventListener('click',()=>selectCategory(card.dataset.categoryCard)));
 search.addEventListener('input',()=>{active='all';buttons.forEach(b=>{const selected=b.dataset.filter==='all';b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});cards.forEach(card=>card.classList.remove('active'));applyFilters();});
-search.addEventListener('keydown',event=>{if(event.key==='Enter')event.preventDefault();});applyFilters();
+search.addEventListener('keydown',event=>{if(event.key==='Enter')event.preventDefault();});const incomingQuery=new URLSearchParams(location.search).get('q');if(incomingQuery){search.value=incomingQuery;applyFilters();document.querySelector('#answers').scrollIntoView({block:'start'});items.forEach(item=>{item.open=false;});const firstVisible=items.find(item=>!item.hidden);if(firstVisible)firstVisible.open=true;}else{applyFilters();}
 
 </script>
 <script>
