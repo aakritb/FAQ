@@ -7,7 +7,7 @@
 <title>AssureOne Support</title>
 <style>
 :root{--night:#0d0f1f;--violet:#6957e5;--violet-dark:#4b3fb0;--ink:#181b32;--muted:#5b607e;--paper:#f7f7fb;--card:#fff;--rule:#e3e3ef;--soft:#efedff;--white:#f7f6fc;--font:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}button,input{font:inherit}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hc-topbar-h) + 14px)}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}button,input{font:inherit}
 .topbar{background:#fff;border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:10;box-shadow:0 2px 12px rgba(24,27,50,.05)}.topbar-inner{max-width:1040px;margin:auto;padding:12px 24px;display:flex;align-items:center}.brand-logo{display:block;width:auto;height:30px;max-width:190px}
 .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 82% 12%,rgba(105,87,229,.4),transparent 34%),linear-gradient(126deg,#0d0f1f 0 58%,#19163c 58% 72%,#4b3fb0 72% 76%,#151832 76%);color:var(--white);padding:56px 24px 62px}.hero:after{content:"";position:absolute;width:420px;height:18px;right:-100px;bottom:44px;transform:rotate(-18deg);background:linear-gradient(90deg,#7867ee,#fe7b58,#f3bc42);border-radius:999px;opacity:.9}.hero-inner{max-width:1040px;margin:auto;position:relative;z-index:1}.eyebrow{margin:0 0 12px;color:#c2bdf8;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em}h1{font-size:clamp(2.6rem,6vw,4.2rem);line-height:1.02;letter-spacing:-.05em;margin:0 0 16px}.lede{font-size:1.08rem;line-height:1.65;color:#c0c3d8;max-width:760px;margin:0}.lede strong{color:#fff;font-weight:600}
 .page{max-width:1040px;margin:auto;padding:42px 24px 60px}.section-kicker{margin:0 0 7px;color:var(--violet-dark);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.section-title{font-size:clamp(1.45rem,3vw,2rem);letter-spacing:-.025em;margin:0}.section-copy{color:var(--muted);line-height:1.6;margin:8px 0 0}.category-browser{margin-bottom:38px}.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}.category-card{position:relative;text-align:left;border:1px solid var(--rule);background:var(--card);border-radius:14px;padding:20px;min-height:148px;color:var(--ink);cursor:pointer;box-shadow:0 6px 22px rgba(24,27,50,.045);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.category-card:hover,.category-card:focus-visible{transform:translateY(-2px);border-color:#c9c1ff;box-shadow:0 12px 28px rgba(51,42,121,.1);outline:none}.category-card.active{border-color:var(--violet);box-shadow:0 0 0 2px rgba(105,87,229,.12)}.category-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.category-badge{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--soft);color:var(--violet-dark);font-size:.76rem;font-weight:800}.category-count{color:#8b8fa8;font-size:.78rem}.category-card strong{display:block;margin-top:14px;font-size:1rem}.category-card small{display:block;color:var(--muted);font-size:.84rem;line-height:1.5;margin-top:6px}
@@ -25,21 +25,21 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 .hero,.page{display:none}.topbar{position:relative;box-shadow:none;border-color:#e9e8f2}.topbar-inner{max-width:1240px;padding:16px 28px}.topbar-inner:after{content:"Help Center";margin-left:18px;padding-left:18px;border-left:1px solid #deddea;color:#353750;font-size:.93rem;font-weight:650}.brand-logo{height:28px;max-width:178px}
 .hc-hero{background:linear-gradient(128deg,#101225 0%,#17193a 54%,#3e337f 100%);color:#fff;padding:32px 28px 36px;position:relative;overflow:hidden}.hc-hero:after{content:"";position:absolute;inset:auto -8% -86px 43%;height:160px;transform:rotate(-8deg);background:linear-gradient(90deg,rgba(105,87,229,.75),rgba(255,113,91,.72),rgba(250,188,64,.7));border-radius:60%}.hc-hero-inner{position:relative;z-index:1;max-width:920px;margin:auto;text-align:center}.hc-eyebrow{margin:0 0 8px;color:#c9c4ff;font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hc-hero h1{font-size:clamp(2rem,4.2vw,3.15rem);letter-spacing:-.04em;line-height:1.08;margin:0 0 22px}
 .hc-search-box{position:relative;max-width:760px;margin:auto}.hc-search-box svg{position:absolute;left:20px;top:50%;width:20px;transform:translateY(-50%);color:#6a6f89}.hc-search{width:100%;height:58px;border:1px solid rgba(255,255,255,.45);border-radius:15px;background:#fff;color:#171a31;padding:0 84px 0 54px;font-size:1.02rem;outline:none;box-shadow:0 18px 42px rgba(5,6,21,.22)}.hc-search:focus{box-shadow:0 0 0 4px rgba(178,169,255,.28),0 18px 42px rgba(5,6,21,.22)}.hc-kbd{position:absolute;right:15px;top:50%;transform:translateY(-50%);padding:5px 9px;border:1px solid #deddea;background:#f5f4fa;border-radius:7px;color:#696d83;font-size:.75rem;font-weight:700}.hc-try{margin:10px 0 0;color:#c8cadd;font-size:.78rem}
-.hc-shell{max-width:1240px;margin:0 auto;padding:30px 28px 54px;display:grid;grid-template-columns:190px minmax(0,1fr) 236px;gap:28px;align-items:start}.hc-sidebar,.hc-rail{position:sticky;top:18px}.hc-label{margin:0 0 12px;color:#8589a2;font-size:.68rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.hc-category-list{display:grid;gap:3px}.hc-category{width:100%;border:0;background:transparent;border-radius:9px;padding:9px 11px;text-align:left;color:#555a74;font-size:.86rem;cursor:pointer;transition:.15s ease}.hc-category:hover,.hc-category:focus-visible{background:#efedff;color:#4b3fb0;outline:none}.hc-category.active{background:#ebe8ff;color:#4b3fb0;font-weight:750;box-shadow:inset 3px 0 #6957e5}
+.hc-shell{max-width:1240px;margin:0 auto;padding:30px 28px 54px;display:grid;grid-template-columns:190px minmax(0,1fr) 236px;gap:28px;align-items:start}.hc-sidebar,.hc-rail{position:sticky;top:calc(var(--hc-topbar-h) + 18px);max-height:calc(100vh - var(--hc-topbar-h) - 34px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:#d5d5e4 transparent}.hc-sidebar::-webkit-scrollbar,.hc-rail::-webkit-scrollbar{width:6px}.hc-sidebar::-webkit-scrollbar-thumb,.hc-rail::-webkit-scrollbar-thumb{background:#d5d5e4;border-radius:3px}.hc-label{margin:0 0 12px;color:#8589a2;font-size:.68rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.hc-category-list{display:grid;gap:3px}.hc-category{width:100%;border:0;background:transparent;border-radius:9px;padding:9px 11px;text-align:left;color:#555a74;font-size:.86rem;cursor:pointer;transition:.15s ease}.hc-category:hover,.hc-category:focus-visible{background:#efedff;color:#4b3fb0;outline:none}.hc-category.active{background:#ebe8ff;color:#4b3fb0;font-weight:750;box-shadow:inset 3px 0 #6957e5}
 .hc-content{min-width:0}.hc-welcome{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:19px}.hc-welcome h2{font-size:1.75rem;letter-spacing:-.035em;margin:0}.hc-welcome p{color:#686d88;margin:7px 0 0;font-size:.91rem;line-height:1.55}.hc-count{color:#898da3;font-size:.75rem;white-space:nowrap}.hc-products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:28px}.hc-product{border:1px solid #e0dfeb;background:#fff;border-radius:12px;padding:12px 10px;text-decoration:none;color:#252940;display:flex;align-items:center;gap:9px;font-size:.82rem;font-weight:750;box-shadow:0 4px 14px rgba(24,27,50,.035);transition:.15s ease;cursor:pointer}.hc-product:hover,.hc-product:focus-visible,.hc-product.active{border-color:#bbb2ff;box-shadow:0 7px 18px rgba(72,58,168,.1);outline:none}.hc-product-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;color:#fff;background:#6957e5;font-size:.68rem}.hc-product[data-product="tax"] .hc-product-icon{background:#0f9c79}.hc-product[data-product="audit"] .hc-product-icon{background:#e47645}.hc-product[data-product="books"] .hc-product-icon{background:#3379bd}
 .hc-section-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:11px}.hc-section-head h3{margin:0;font-size:1.05rem}.hc-clear{display:none;border:0;background:transparent;color:#5647c8;font-size:.78rem;font-weight:700;cursor:pointer}.hc-articles{display:grid;gap:10px}.hc-article{display:block;border:1px solid #e2e1ec;background:#fff;border-radius:13px;padding:16px 17px;text-decoration:none;color:inherit;box-shadow:0 4px 15px rgba(24,27,50,.035);transition:.16s ease}.hc-article:hover,.hc-article:focus-visible{border-color:#c2baff;transform:translateY(-1px);box-shadow:0 9px 23px rgba(53,43,130,.08);outline:none}.hc-article-top{display:flex;justify-content:space-between;gap:16px}.hc-article h4{font-size:.94rem;line-height:1.4;margin:0}.hc-arrow{color:#6a58dc;font-size:1.15rem}.hc-article p{color:#686d88;font-size:.81rem;line-height:1.52;margin:6px 0 12px}.hc-meta{display:flex;align-items:center;gap:8px;color:#8b8fa3;font-size:.7rem}.hc-badge{padding:4px 7px;border-radius:6px;background:#efedff;color:#5545c7;font-weight:750}.hc-badge.tax{background:#e4f7f1;color:#08745a}.hc-badge.audit{background:#fff0e9;color:#a94c25}.hc-badge.books{background:#e8f2fb;color:#27689e}.hc-empty{display:none;text-align:center;border:1px dashed #d8d6e5;border-radius:13px;padding:34px 18px;color:#6b6f88;background:#fbfbfd}.hc-empty strong{display:block;color:#23263c;margin-bottom:6px}
 .hc-rail-card{border:1px solid #e2e1ec;background:#fff;border-radius:13px;padding:18px;box-shadow:0 5px 17px rgba(24,27,50,.035)}.hc-rail-card+.hc-rail-card{margin-top:14px}.hc-popular{display:grid;gap:2px}.hc-popular a{display:grid;grid-template-columns:28px 1fr;gap:9px;align-items:start;color:#30344c;text-decoration:none;padding:9px 0;border-bottom:1px solid #efeff4;font-size:.79rem;line-height:1.4}.hc-popular a:last-child{border-bottom:0}.hc-number{font-size:.69rem;font-weight:850;color:#6a58dc}.hc-latest{list-style:none;padding:0;margin:0;display:grid;gap:12px}.hc-latest a{color:#3e425b;text-decoration:none;font-size:.78rem;line-height:1.42}.hc-latest small{display:block;color:#9699ad;margin-top:3px}.hc-popular a:hover,.hc-latest a:hover{color:#5140c0}.hc-support{background:#181a35;color:#fff;border:0}.hc-support .hc-label{color:#aaa5e8}.hc-support p{font-size:.79rem;line-height:1.5;color:#c4c6d7;margin:0 0 13px}.hc-support a{display:block;text-align:center;padding:9px;background:#6a58dc;color:#fff;border-radius:8px;text-decoration:none;font-size:.78rem;font-weight:750}
 @media(max-width:980px){.hc-shell{grid-template-columns:170px minmax(0,1fr)}.hc-rail{grid-column:1/-1;position:static;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.hc-rail-card+.hc-rail-card{margin-top:0}}@media(max-width:720px){.topbar-inner{padding:13px 18px}.topbar-inner:after{font-size:.8rem;margin-left:12px;padding-left:12px}.brand-logo{height:24px;max-width:150px}.hc-hero{padding:27px 18px 31px}.hc-shell{display:block;padding:23px 18px 42px}.hc-sidebar{position:static;margin-bottom:20px}.hc-category-list{display:flex;overflow:auto;padding-bottom:5px}.hc-category{white-space:nowrap;width:auto;border:1px solid #e0dfeb;background:#fff;padding:8px 11px}.hc-category.active{box-shadow:none;border-color:#bbb2ff}.hc-products{grid-template-columns:repeat(2,1fr)}.hc-welcome{align-items:start}.hc-rail{display:grid;grid-template-columns:1fr;margin-top:22px}.hc-rail-card+.hc-rail-card{margin-top:0}}
 
 /* Brand alignment with assureone.ai */
-:root{--violet:#5c45e7;--violet-dark:#4735be;--ink:#111321;--paper:#fafaff}
+:root{--violet:#5c45e7;--violet-dark:#4735be;--ink:#111321;--paper:#fafaff;--hc-topbar-h:69px}
 .topbar{background:rgba(255,255,255,.96);border-bottom:1px solid #ecebf3}
 .topbar-inner{height:68px;max-width:1320px;padding:0 32px;gap:0}
 .brand-logo{height:25px;max-width:165px}
 .topbar-inner:after{content:"Help Center";margin-left:16px;padding-left:16px;border-left:1px solid #d9d8e2;color:#2b2e43;font-size:.88rem;font-weight:700}
 .hc-top-actions{margin-left:auto;display:flex;align-items:center;gap:26px}.hc-top-actions a{color:#36384b;text-decoration:none;font-size:.84rem;font-weight:600}.hc-top-actions a:hover,.hc-top-actions a:focus-visible{color:var(--violet);outline:none}.hc-top-actions .hc-top-support{display:inline-block;text-decoration:none;padding:10px 15px;border-radius:9px;background:var(--violet);color:#fff;box-shadow:0 7px 17px rgba(92,69,231,.22)}.hc-top-actions .hc-top-support:hover,.hc-top-actions .hc-top-support:focus-visible{background:var(--violet-dark);color:#fff}
 .hc-hero{color:var(--ink);padding:42px 28px 45px;background-image:radial-gradient(circle at 50% 5%,rgba(111,83,234,.13),transparent 48%),linear-gradient(rgba(111,83,234,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(111,83,234,.045) 1px,transparent 1px),linear-gradient(#fff,#faf9ff);background-size:auto,72px 72px,72px 72px,auto;background-position:center,center,center,center;border-bottom:1px solid #eceaf6}.hc-hero:after{width:420px;height:220px;right:-80px;bottom:-190px;left:auto;inset:auto -80px -190px auto;transform:none;background:rgba(92,69,231,.2);filter:blur(55px);border-radius:50%}.hc-eyebrow{display:inline-flex;margin:0 0 14px;padding:6px 10px;border:1px solid #ded9ff;border-radius:999px;background:rgba(255,255,255,.84);color:#4d3cc0;font-size:.7rem;letter-spacing:.1em}.hc-hero h1{font-size:clamp(2.1rem,4vw,3.25rem);color:#111321;margin-bottom:24px}.hc-search{height:60px;border:1px solid #d9d6ea;box-shadow:0 16px 38px rgba(31,24,85,.12);font-size:1rem}.hc-search:focus{border-color:#806dec;box-shadow:0 0 0 4px rgba(92,69,231,.13),0 16px 38px rgba(31,24,85,.12)}.hc-try{color:#6f7285;font-size:.8rem}.hc-kbd{background:#f1effb;border-color:#dcd8ee;color:#5b5870}.hc-shell{padding-top:34px}.hc-label{font-size:.75rem}.hc-category{font-size:.9rem}.hc-article p{font-size:.86rem}.hc-meta{font-size:.75rem}.hc-popular a,.hc-latest a,.hc-support p,.hc-support a{font-size:.8rem}
-@media(max-width:720px){.topbar-inner{height:60px;padding:0 18px}.topbar-inner:after{font-size:.76rem}.hc-top-actions{gap:8px}.hc-top-actions a:not(.hc-top-support){display:none}.hc-top-actions .hc-top-support{padding:8px 11px;font-size:.76rem}.hc-hero{padding:31px 18px 34px;background-size:auto,48px 48px,48px 48px,auto}}
+@media(max-width:720px){:root{--hc-topbar-h:61px}.topbar-inner{height:60px;padding:0 18px}.topbar-inner:after{font-size:.76rem}.hc-top-actions{gap:8px}.hc-top-actions a:not(.hc-top-support){display:none}.hc-top-actions .hc-top-support{padding:8px 11px;font-size:.76rem}.hc-hero{padding:31px 18px 34px;background-size:auto,48px 48px,48px 48px,auto}}
 
 /* Product discovery and copyable support action */
 .hc-products{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
@@ -75,6 +75,8 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 /* Welcoming typed hero */
 .hc-hero h1{min-height:2.12em;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.04}.hc-hello{display:block}.hc-typing-line{display:flex;align-items:center;justify-content:center;min-height:1.12em;color:#5c45e7}.hc-typing-caret{display:inline-block;width:3px;height:.82em;margin-left:5px;border-radius:2px;background:#5c45e7;animation:hc-caret-blink .82s steps(1,end) infinite}.hc-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@keyframes hc-caret-blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.hc-typing-caret{animation:none}}
 
+/* Slimmer hero + search that stays reachable on scroll */
+.topbar{position:sticky;top:0;z-index:30}.hc-hero{padding:26px 28px 30px}.hc-eyebrow{margin:0 0 6px;font-size:.7rem}.hc-hero h1{font-size:clamp(1.7rem,3.1vw,2.45rem);margin:0 0 15px;min-height:2.08em}.hc-search{height:52px;font-size:.98rem;box-shadow:0 12px 30px rgba(5,6,21,.16)}.hc-mini-search{margin-left:auto;margin-right:18px;position:relative;display:flex;align-items:center;width:min(340px,34vw);opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease}.topbar.hc-stuck .hc-mini-search{opacity:1;transform:none;pointer-events:auto}.hc-mini-search svg{position:absolute;left:12px;width:15px;height:15px;color:#8a8ea6;pointer-events:none}.hc-mini-search input{width:100%;height:38px;border:1px solid #e0dfea;border-radius:9px;background:#f7f7fb;color:var(--ink);font:inherit;font-size:.88rem;padding:0 12px 0 34px;outline:none}.hc-mini-search input:focus{border-color:var(--violet);background:#fff;box-shadow:0 0 0 3px rgba(105,87,229,.13)}@media(max-width:900px){.hc-mini-search{width:min(240px,42vw);margin-right:12px}}@media(max-width:720px){.hc-mini-search{width:auto;flex:1;margin-right:0}.topbar.hc-stuck .hc-top-actions{display:none}.topbar.hc-stuck .topbar-inner{gap:12px}.hc-mini-search input{height:36px;font-size:.85rem}}@media(prefers-reduced-motion:reduce){.hc-mini-search{transition:none}}
 </style>
 </head>
 <body>
@@ -126,10 +128,10 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 <h2 class="section-title" id="browse-title">Browse AssureOne by product</h2>
 <p class="section-copy">Select a product to see every verified question for that part of the suite.</p>
 <div class="category-grid product-grid" id="product-grid">
-<a class="category-card" href="assurepro/index.html"><span class="category-top"><span class="category-badge">01</span><span class="category-count">173 questions</span></span><strong>AssurePro</strong><small>Practice management &mdash; clients, engagements, workflows, engagement letters, billing, communications, reporting, and AI.</small></a>
+<a class="category-card" href="assurepro/index.html"><span class="category-top"><span class="category-badge">01</span></span><strong>AssurePro</strong><small>Practice management &mdash; clients, engagements, workflows, engagement letters, billing, communications, reporting, and AI.</small></a>
 <a class="category-card soon" href="assureaudit/index.html"><span class="category-top"><span class="category-badge">02</span><span class="category-count">Coming soon</span></span><strong>AssureAudit</strong><small>Audit fieldwork and engagement management.</small></a>
-<a class="category-card" href="assurebooks/index.html"><span class="category-top"><span class="category-badge">03</span><span class="category-count">40 questions</span></span><strong>AssureBooks</strong><small>Bookkeeping for client accounts.</small></a>
-<a class="category-card" href="assuretax/index.html"><span class="category-top"><span class="category-badge">04</span><span class="category-count">23 questions</span></span><strong>AssureTax</strong><small>Tax return preparation and filing.</small></a>
+<a class="category-card" href="assurebooks/index.html"><span class="category-top"><span class="category-badge">03</span></span><strong>AssureBooks</strong><small>Bookkeeping for client accounts.</small></a>
+<a class="category-card" href="assuretax/index.html"><span class="category-top"><span class="category-badge">04</span></span><strong>AssureTax</strong><small>Tax return preparation and filing.</small></a>
 </div>
 </section>
 
@@ -146,7 +148,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 <script>
 (function(){
   const topbar=document.querySelector('.topbar-inner');
-  if(topbar){topbar.insertAdjacentHTML('beforeend','<div class="hc-top-actions"><a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><a class="hc-top-support" href="mailto:support@assureone.ai">Contact support</a></div>');}
+  if(topbar){topbar.insertAdjacentHTML('beforeend','<div class="hc-mini-search" id="hc-mini-search" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="hc-search-mini" type="search" placeholder="Search help..." autocomplete="off" aria-label="Search AssureOne help" tabindex="-1"></div><div class="hc-top-actions"><a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><a class="hc-top-support" href="mailto:support@assureone.ai">Contact support</a></div>');}
   const supportEmail='support@assureone.ai';
   function fallbackCopy(value){const field=document.createElement('textarea');field.value=value;field.setAttribute('readonly','');field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);field.select();let copied=false;try{copied=document.execCommand('copy');}catch(e){}field.remove();return copied;}
   function showCopied(button){const original=button.dataset.originalLabel||button.textContent;button.dataset.originalLabel=original;button.textContent='Email copied';button.classList.add('copied');const note=button.parentElement.querySelector('.hc-copy-note');if(note)note.textContent=supportEmail+' copied';window.clearTimeout(button._copyTimer);button._copyTimer=window.setTimeout(()=>{button.textContent=original;button.classList.remove('copied');if(note)note.textContent='';},2200);}
@@ -206,7 +208,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
     const active=query||product||category!=='All Articles';
     title.textContent=query?'Search results':(product?names[product]:(category!=='All Articles'?category:'All help articles'));
     clear.style.display=active?'inline-block':'none';
-    count.textContent=result.length+' article'+(result.length===1?'':'s');
+    count.textContent=active?result.length+' result'+(result.length===1?'':'s'):'';
     const shown=result.slice(0,visibleLimit);
     list.innerHTML=shown.map(a=>'<a class="hc-article" href="'+link(a)+'"><div class="hc-article-top"><h4>'+esc(a.title)+'</h4><span class="hc-arrow">→</span></div><p>'+esc(a.description)+'</p><div class="hc-meta"><span class="hc-badge '+a.product+'">'+names[a.product]+'</span><span>'+esc(a.category)+'</span><span>•</span><span>'+a.read+' read</span></div></a>').join('');
     empty.style.display=shown.length?'none':'block';
@@ -280,6 +282,61 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
         flash(ok2?'Copied':(selected?'Selected — press Ctrl+C':'Copy blocked'),ok2);
       }
     });
+  });
+})();
+</script>
+<script>
+(function(){
+  var topbar=document.querySelector('.topbar');
+  var heroSearch=document.querySelector('.hc-search-box');
+  var main=document.getElementById('hc-search');
+  var mini=document.getElementById('hc-search-mini');
+  var miniWrap=document.getElementById('hc-mini-search');
+  if(!topbar||!heroSearch||!main||!mini) return;
+
+  function setStuck(on){
+    topbar.classList.toggle('hc-stuck',on);
+    if(miniWrap) miniWrap.setAttribute('aria-hidden',on?'false':'true');
+    mini.tabIndex = on ? 0 : -1;
+  }
+  // The hero search has scrolled under the sticky header.
+  function shouldStick(){
+    return heroSearch.getBoundingClientRect().bottom < topbar.getBoundingClientRect().height;
+  }
+  function update(){ setStuck(shouldStick()); }
+
+  // A plain scroll listener is the primary trigger: universally supported and
+  // it also covers resize and in-page anchor jumps. rAF keeps it cheap.
+  var queued=false;
+  function onScroll(){
+    if(queued) return;
+    queued=true;
+    requestAnimationFrame(function(){ queued=false; update(); });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  update();
+  // exposed so the behaviour can be exercised without a real scroll
+  window.__hcStickyUpdate=update;
+
+  var syncing=false;
+  mini.addEventListener('input',function(){
+    if(syncing) return;
+    syncing=true; main.value=mini.value;
+    main.dispatchEvent(new Event('input',{bubbles:true}));
+    syncing=false;
+  });
+  main.addEventListener('input',function(){
+    if(syncing) return;
+    syncing=true; mini.value=main.value; syncing=false;
+  });
+  mini.addEventListener('keydown',function(e){ if(e.key==='Enter') e.preventDefault(); });
+
+  document.addEventListener('keydown',function(e){
+    if((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){
+      e.preventDefault();
+      (topbar.classList.contains('hc-stuck')?mini:main).focus();
+    }
   });
 })();
 </script>
