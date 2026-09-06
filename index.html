@@ -96,6 +96,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 .hdr-tip.bad{background:#8a3d2c}
 @media(max-width:720px){.hdr-copy{width:32px;height:32px}.hdr-support{gap:6px}.hdr-tip{font-size:.7rem}}
 /* hdr-support:end */
+.hc-noindex{border:1px solid #e6d9b0;background:#fdfaf0;border-radius:13px;padding:20px 22px}.hc-noindex strong{display:block;margin-bottom:6px;font-size:1rem;letter-spacing:-.015em}.hc-noindex p{margin:0 0 14px;color:var(--muted);font-size:.88rem;line-height:1.6}.hc-noindex-links{display:flex;flex-wrap:wrap;gap:9px}.hc-noindex-links a{display:inline-block;padding:9px 13px;border:1px solid #ddd9f0;border-radius:9px;background:#fff;color:var(--violet-dark);text-decoration:none;font-size:.84rem;font-weight:700}.hc-noindex-links a:hover,.hc-noindex-links a:focus-visible{border-color:#bbb2ff;color:var(--violet);outline:none}
 </style>
 </head>
 <body>
@@ -177,39 +178,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   if(typed&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){typed.textContent='get answers faster.';}
   else if(typed){let phrase=0,position=typingPhrases[0].length,deleting=true;function typeNext(){const value=typingPhrases[phrase];typed.textContent=value.slice(0,position);if(deleting){if(position>0){position-=1;window.setTimeout(typeNext,32);}else{deleting=false;phrase=(phrase+1)%typingPhrases.length;window.setTimeout(typeNext,240);}}else{const next=typingPhrases[phrase];if(position<next.length){position+=1;window.setTimeout(typeNext,52);}else{deleting=true;window.setTimeout(typeNext,1550);}}}window.setTimeout(typeNext,1550);}
   const categories=['All Articles','Getting Started','Clients','Engagements','Workflow','Documents','Tasks','Billing','AI & Automation','Integrations','Users & Access','Settings','Troubleshooting'];
-  const featuredArticles=[
-    {id:'create-client',product:'pro',category:'Clients',title:'How is a new client added?',description:'Create a client directly, complete the client record, set portal access, and apply the right onboarding defaults.',read:'5 min',path:'assurepro/index.html'},
-    {id:'prospect-client',product:'pro',category:'Clients',title:'How does a prospect become a client?',description:'Move the opportunity through the firm’s pipeline, mark it Won, and use the resulting client record to continue onboarding.',read:'4 min',path:'assurepro/index.html'},
-    {id:'prospect-pipeline',product:'pro',category:'Clients',title:'How are prospect pipelines and stages configured?',description:'Create or restructure a pipeline, define its stages, and keep prospective work organized before conversion.',read:'5 min',path:'assurepro/index.html'},
-    {id:'custom-fields',product:'pro',category:'Clients',title:'What information can be captured for a prospect or client?',description:'Use standard record fields and firm-configured custom fields to collect information specific to the firm’s process.',read:'4 min',path:'assurepro/index.html'},
-    {id:'engagement',product:'pro',category:'Engagements',title:'How do I create and manage an engagement?',description:'Choose the client and engagement type, apply a workflow, assign the team, confirm dates, and monitor the work through completion.',read:'7 min',path:'assurepro/index.html'},
-    {id:'letter',product:'pro',category:'Engagements',title:'How do I create and send an engagement letter?',description:'Build the package, select services and pricing, review terms and recipients, preview the client experience, and send for signature.',read:'8 min',path:'assurepro/index.html'},
-    {id:'signature',product:'pro',category:'Engagements',title:'How do signatures, the magic link, and the audit log work?',description:'Understand the signing experience and the post-send controls available when staff preview a sent engagement letter.',read:'5 min',path:'assurepro/index.html'},
-    {id:'workflow',product:'pro',category:'Workflow',title:'How do I create a workflow?',description:'Define reusable stages and tasks, set assignments and due-date behavior, then apply the workflow to engagement work.',read:'7 min',path:'assurepro/index.html'},
-    {id:'workflow-progress',product:'pro',category:'Workflow',title:'How is work monitored across workflow stages?',description:'Review stage volume, assignments, due dates, overdue items, blockers, and progress without opening every engagement.',read:'5 min',path:'assurepro/index.html'},
-    {id:'timesheet',product:'pro',category:'Tasks',title:'How do staff record and review time?',description:'Add time against the relevant client or work item, review entries in Time Sheet, and track billed status separately from workflow progress.',read:'5 min',path:'assurepro/index.html'},
-    {id:'documents',product:'pro',category:'Documents',title:'How are client documents organized and requested?',description:'Use client workspaces, folder templates, document types, requests, uploads, and connected storage to keep files with the right work.',read:'6 min',path:'assurepro/index.html'},
-    {id:'folder-template',product:'pro',category:'Documents',title:'How do I create or update a folder template?',description:'Standardize folder structures that can be reused during client and engagement onboarding.',read:'4 min',path:'assurepro/index.html'},
-    {id:'invoice',product:'pro',category:'Billing',title:'How do I create and send an invoice?',description:'Create an invoice manually or review a draft generated from a signed agreement, then confirm the recipient, balance, and due date before sending.',read:'6 min',path:'assurepro/index.html'},
-    {id:'services',product:'pro',category:'Billing',title:'How are services, add-ons, bundles, and pricing maintained?',description:'Manage the service catalog, categories, pricing method, default amount, SOP link, and active status used in engagement packages.',read:'6 min',path:'assurepro/index.html'},
-    {id:'reports',product:'pro',category:'Getting Started',title:'What is available under Reports?',description:'Use Overview for firm reporting, My Report for saved dashboards, and Templates for reusable report layouts.',read:'6 min',path:'assurepro/index.html'},
-    {id:'briefing',product:'pro',category:'AI & Automation',title:'What does the AI-generated daily briefing do?',description:'It summarizes items that need attention—such as overdue invoices—and its module links take staff directly to the relevant area to act.',read:'4 min',path:'assurepro/index.html'},
-    {id:'ai-credits',product:'pro',category:'AI & Automation',title:'How do AI credits, usage visibility, and limits work?',description:'Review consumption by module and user, allocate credits, set user caps, and understand how the balance is replenished.',read:'7 min',path:'assurepro/index.html'},
-    {id:'invite-team',product:'pro',category:'Users & Access',title:'How do I invite a team member and assign access?',description:'Send an invitation, select product access and role, and review the permissions that person receives.',read:'5 min',path:'assurepro/index.html'},
-    {id:'roles',product:'pro',category:'Users & Access',title:'How are teams, roles, and permissions managed?',description:'Organize members into teams, maintain roles, and control access at the permission level.',read:'6 min',path:'assurepro/index.html'},
-    {id:'settings',product:'pro',category:'Settings',title:'What is included in AssurePro Settings?',description:'A complete guide to Firm, Work, Money, Communication, and Access settings, including onboarding defaults and security.',read:'10 min',path:'assurepro/index.html'},
-    {id:'templates',product:'pro',category:'Settings',title:'What is in the Template Library?',description:'Find reusable engagement-letter, workflow, folder, and message templates and understand where each is applied.',read:'6 min',path:'assurepro/index.html'},
-    {id:'integrations',product:'pro',category:'Integrations',title:'Which third-party services can be connected?',description:'Connect supported email, calendar, cloud-storage, payments, accounting, messaging, and referral services from Settings.',read:'5 min',path:'assurepro/index.html'},
-    {id:'support',product:'pro',category:'Troubleshooting',title:'What support channels are available?',description:'Email support@assureone.ai, report product issues from the application, or work with the implementation contact for rollout questions.',read:'3 min',path:'assurepro/index.html'},
-    {id:'tax-organizer',product:'tax',category:'Documents',title:'How does a firm request tax documents from a client?',description:'Use the organizer and checklist to request information, monitor completion, and ask for additional items when needed.',read:'6 min',path:'assuretax/index.html'},
-    {id:'tax-review',product:'tax',category:'Workflow',title:'Is there a review stage for a prepared tax return?',description:'See how prepared return information is reviewed before delivery and filing.',read:'4 min',path:'assuretax/index.html'},
-    {id:'tax-software',product:'tax',category:'Integrations',title:'Which tax software does AssureTax connect to?',description:'Review the supported tax-software workflow and how data moves between preparation and delivery.',read:'5 min',path:'assuretax/index.html'},
-    {id:'books-qbo',product:'books',category:'Integrations',title:'How does AssureBooks work with QuickBooks?',description:'Understand the QuickBooks connection and which bookkeeping work can be completed from AssureBooks.',read:'5 min',path:'assurebooks/index.html'},
-    {id:'books-transactions',product:'books',category:'AI & Automation',title:'How does AssureBooks categorize a transaction?',description:'Review AI-assisted categorization, confidence scores, edits, bulk actions, and rules for recurring activity.',read:'6 min',path:'assurebooks/index.html'},
-    {id:'books-reporting',product:'books',category:'Getting Started',title:'What financial statements and management reports are available?',description:'Review financial statements, management reporting, client visibility, budgets, and forecasting availability.',read:'6 min',path:'assurebooks/index.html'},
-    {id:'audit-overview',product:'audit',category:'Getting Started',title:'AssureAudit help center',description:'Open the AssureAudit area for current product guidance and support options.',read:'2 min',path:'assureaudit/index.html'}
-  ];
-  const articles=window.ASSUREONE_ARTICLES||featuredArticles;
+  const articles=window.ASSUREONE_ARTICLES||[];
   const names={pro:'AssurePro',tax:'AssureTax',audit:'AssureAudit',books:'AssureBooks'};
   let category='All Articles', product='', query='', visibleLimit=12;
   const search=document.getElementById('hc-search');
@@ -262,6 +231,34 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
       .map(o=>o.f.article);
   }
   function render(){
+    // The article index lives in questions-*.js. If it did not load, say so
+    // and send the reader to the product help centres, which hold their
+    // questions and answers inline and work without it.
+    if(!articles.length){
+      title.textContent='Help articles';
+      count.textContent='';
+      clear.style.display='none';
+      loadMore.style.display='none';
+      empty.style.display='none';
+      if(productPageLink) productPageLink.style.display='none';
+      // The Popular and Latest cards are driven by the index, so without it
+      // they would sit there as empty headings.
+      ['hc-popular','hc-latest'].forEach(function(id){
+        var el=document.getElementById(id);
+        if(el&&el.closest('.hc-rail-card')) el.closest('.hc-rail-card').style.display='none';
+      });
+      list.innerHTML='<div class="hc-noindex"><strong>The article index did not load</strong>'+
+        '<p>This can happen if a browser extension or network blocked part of the page. '+
+        'Reload to try again, or open a product help centre below \u2014 those pages work on their own. '+
+        'You can also email support@assureone.ai.</p>'+
+        '<div class="hc-noindex-links">'+
+        '<a href="assurepro/index.html">AssurePro</a>'+
+        '<a href="assurebooks/index.html">AssureBooks</a>'+
+        '<a href="assuretax/index.html">AssureTax</a>'+
+        '<a href="assureaudit/index.html">AssureAudit</a>'+
+        '</div></div>';
+      return;
+    }
     const result=filtered();
     const active=query||product||category!=='All Articles';
     title.textContent=query?'Search results':(product?names[product]:(category!=='All Articles'?category:'All help articles'));
