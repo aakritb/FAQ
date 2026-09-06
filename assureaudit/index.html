@@ -189,5 +189,75 @@
   });
 })();
 </script><!-- hdr-support:end -->
+<!-- clean-links:start --><script>
+(function(){
+  // Opened from disk, the .html files are what exist, so leave links alone.
+  if(location.protocol==='file:') return;
+
+  function clean(href){
+    var u;
+    try{u=new URL(href,location.href);}catch(e){return href;}
+    if(u.origin!==location.origin) return href;
+    var p=u.pathname.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
+    if(p!=='/') p=p.replace(/\/$/,'');
+    return p+u.search+u.hash;
+  }
+
+  function fix(root){
+    if(!root||!root.querySelectorAll) return;
+    var links=root.querySelectorAll?root.querySelectorAll('a[href]'):[];
+    for(var i=0;i<links.length;i++){
+      var a=links[i], h=a.getAttribute('href');
+      if(!h||/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(h)) continue;
+      var c=clean(h);
+      if(c!==h) a.setAttribute('href',c);
+    }
+    if(root.matches&&root.matches('a[href]')) fix({querySelectorAll:function(){return [root];}});
+  }
+
+  function fixAll(){fix(document);}
+
+  function enable(){
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',fixAll);
+    else fixAll();
+    watch();
+  }
+
+  // Only rewrite if this host actually serves the clean paths. A plain static
+  // server may not, and rewritten links would 404. If the page we are on is
+  // already at a clean address the host clearly does; otherwise ask it.
+  var here=location.pathname+location.search+location.hash;
+  if(clean(here)===here){
+    enable();
+  }else if(window.fetch){
+    fetch(clean(location.pathname),{method:'HEAD'}).then(function(r){
+      if(r&&r.ok) enable();
+    },function(){});
+  }
+
+  // The hub rebuilds its article list as the reader searches and filters, and
+  // sets some hrefs from script, so watch for both.
+  function watch(){
+  if(window.MutationObserver){
+    new MutationObserver(function(records){
+      for(var i=0;i<records.length;i++){
+        var r=records[i];
+        if(r.type==='attributes'){
+          var t=r.target, h=t.getAttribute&&t.getAttribute('href');
+          if(h&&!/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(h)){
+            var c=clean(h);
+            // Rewriting to the same value would not fire again, so this ends.
+            if(c!==h) t.setAttribute('href',c);
+          }
+        }else{
+          for(var j=0;j<r.addedNodes.length;j++) fix(r.addedNodes[j]);
+        }
+      }
+    }).observe(document.documentElement,
+      {childList:true,subtree:true,attributes:true,attributeFilter:['href']});
+  }
+  }
+})();
+</script><!-- clean-links:end -->
 </body>
 </html>

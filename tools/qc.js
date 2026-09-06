@@ -229,6 +229,37 @@ for (const p of PAGES) {
 }
 notes.push("   tags balanced, titles and viewport present, no dead rules");
 
+/* ------------------------------------------------------- 11. clean URLs */
+section("11. clean URLs");
+{
+  if (!exists("vercel.json")) fail("vercel.json missing — the web copy would serve /index.html");
+  else {
+    let cfg;
+    try { cfg = JSON.parse(read("vercel.json")); }
+    catch (e) { fail("vercel.json is not valid JSON: " + e.message); }
+    if (cfg) {
+      if (cfg.cleanUrls !== true) fail("vercel.json: cleanUrls must be true");
+      if (cfg.trailingSlash !== false) fail("vercel.json: trailingSlash must be false");
+    }
+  }
+  for (const p of PAGES) {
+    const html = read(p);
+    const copies = (html.match(/<!-- clean-links:start -->/g) || []).length;
+    if (copies !== 1) fail(`${p}: ${copies} clean-link scripts, expected 1`);
+    if (!html.includes("location.protocol==='file:'")) fail(`${p}: clean-link script is not guarded for file://`);
+    if (!html.includes("method:'HEAD'")) fail(`${p}: clean-link rewriting is not gated on the host supporting it`);
+    // an absolute .html href would break the downloadable copy
+    for (const m of html.matchAll(/href="(\/[^"]*\.html[^"]*)"/g)) {
+      fail(`${p}: absolute href ${m[1]} would break the local copy`);
+    }
+    // every internal href must stay relative so the local copy works
+    for (const m of html.matchAll(/href="((?!https?:|mailto:|#|data:|\/\/)[^"]+\.html[^"]*)"/g)) {
+      if (m[1].startsWith("/")) fail(`${p}: ${m[1]} is absolute`);
+    }
+  }
+  notes.push("   vercel.json sets cleanUrls, every page rewrites links on the web only");
+}
+
 /* -------------------------------------------------------------- report */
 console.log(notes.join("\n"));
 console.log("\n" + "=".repeat(58));
