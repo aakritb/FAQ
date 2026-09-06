@@ -77,6 +77,25 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 
 /* Slimmer hero + search that stays reachable on scroll */
 .topbar{position:sticky;top:0;z-index:30}.hc-hero{padding:26px 28px 30px}.hc-eyebrow{margin:0 0 6px;font-size:.7rem}.hc-hero h1{font-size:clamp(1.7rem,3.1vw,2.45rem);margin:0 0 15px;min-height:2.08em}.hc-search{height:52px;font-size:.98rem;box-shadow:0 12px 30px rgba(5,6,21,.16)}.hc-mini-search{margin-left:auto;margin-right:18px;position:relative;display:flex;align-items:center;width:min(340px,34vw);opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease}.topbar.hc-stuck .hc-mini-search{opacity:1;transform:none;pointer-events:auto}.hc-mini-search svg{position:absolute;left:12px;width:15px;height:15px;color:#8a8ea6;pointer-events:none}.hc-mini-search input{width:100%;height:38px;border:1px solid #e0dfea;border-radius:9px;background:#f7f7fb;color:var(--ink);font:inherit;font-size:.88rem;padding:0 12px 0 34px;outline:none}.hc-mini-search input:focus{border-color:var(--violet);background:#fff;box-shadow:0 0 0 3px rgba(105,87,229,.13)}@media(max-width:900px){.hc-mini-search{width:min(240px,42vw);margin-right:12px}}@media(max-width:720px){.hc-mini-search{width:auto;flex:1;margin-right:0}.topbar.hc-stuck .hc-top-actions{display:none}.topbar.hc-stuck .topbar-inner{gap:12px}.hc-mini-search input{height:36px;font-size:.85rem}}@media(prefers-reduced-motion:reduce){.hc-mini-search{transition:none}}
+.hc-product-page{margin-left:auto;color:var(--violet-dark);text-decoration:none;font-size:.8rem;font-weight:700;white-space:nowrap}.hc-product-page:hover,.hc-product-page:focus-visible{color:var(--violet);outline:none}.hc-section-head{align-items:center}@media(max-width:600px){.hc-product-page{font-size:.75rem}}
+
+/* hdr-support:start */
+/* header support control: open a mail app, or copy the address */
+.hdr-support{position:relative;display:inline-flex;align-items:center;gap:7px}
+.hdr-copy{display:grid;place-items:center;width:36px;height:36px;flex:none;padding:0;border:1px solid #cfc9ff;border-radius:9px;background:#efedff;color:#4735be;cursor:pointer;transition:background .15s ease,border-color .15s ease}
+.hdr-copy:hover,.hdr-copy:focus-visible{background:#e2ddff;border-color:#b6acff;outline:none}
+.hdr-copy svg{width:15px;height:15px;display:block}
+.hdr-copy .hdr-copy-done{display:none}
+.hdr-copy.copied{background:#e8f7ee;border-color:#a9dcbd;color:#1f7a45}
+.hdr-copy.copied .hdr-copy-mark{display:none}
+.hdr-copy.copied .hdr-copy-done{display:block}
+.hdr-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* The icon-only header button has no label to change, so it gets a small
+   confirmation instead. */
+.hdr-tip{position:absolute;top:calc(100% + 7px);right:0;z-index:50;padding:5px 9px;border-radius:7px;background:#1f7a45;color:#fff;font-size:.72rem;font-weight:700;white-space:nowrap;box-shadow:0 6px 16px rgba(24,27,50,.18);pointer-events:none}
+.hdr-tip.bad{background:#8a3d2c}
+@media(max-width:720px){.hdr-copy{width:32px;height:32px}.hdr-support{gap:6px}.hdr-tip{font-size:.7rem}}
+/* hdr-support:end */
 </style>
 </head>
 <body>
@@ -110,7 +129,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
       <button class="hc-product" type="button" data-product="audit">AssureAudit</button>
       <button class="hc-product" type="button" data-product="books">AssureBooks</button>
     </div>
-    <div class="hc-section-head"><h3 id="hc-results-title">All help articles</h3><button class="hc-clear" id="hc-clear" type="button">Clear filters</button></div>
+    <div class="hc-section-head"><h3 id="hc-results-title">All help articles</h3><a class="hc-product-page" id="hc-product-page" href="#" style="display:none"></a><button class="hc-clear" id="hc-clear" type="button">Clear filters</button></div>
     <div class="hc-articles" id="hc-articles"></div>
     <div class="hc-empty" id="hc-empty"><strong>No exact match found</strong>Try a shorter phrase, another category, or email support@assureone.ai.</div>
     <button class="hc-load-more" id="hc-load-more" type="button">Load more articles</button>
@@ -148,7 +167,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 <script>
 (function(){
   const topbar=document.querySelector('.topbar-inner');
-  if(topbar){topbar.insertAdjacentHTML('beforeend','<div class="hc-mini-search" id="hc-mini-search" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="hc-search-mini" type="search" placeholder="Search help..." autocomplete="off" aria-label="Search AssureOne help" tabindex="-1"></div><div class="hc-top-actions"><a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><a class="hc-top-support" href="mailto:support@assureone.ai">Contact support</a></div>');}
+  if(topbar){topbar.insertAdjacentHTML('beforeend','<div class="hc-mini-search" id="hc-mini-search" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="hc-search-mini" type="search" placeholder="Search help..." autocomplete="off" aria-label="Search AssureOne help" tabindex="-1"></div><div class="hc-top-actions"><a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><span class="hdr-support"><a class="hc-top-support" href="mailto:support@assureone.ai">Contact support</a><button class="hdr-copy" type="button" title="Copy support@assureone.ai to clipboard" aria-label="Copy support email address"><svg class="hdr-copy-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="hdr-copy-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></button><span class="hdr-sr" role="status" aria-live="polite"></span></span></div>');}
   const supportEmail='support@assureone.ai';
   function fallbackCopy(value){const field=document.createElement('textarea');field.value=value;field.setAttribute('readonly','');field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);field.select();let copied=false;try{copied=document.execCommand('copy');}catch(e){}field.remove();return copied;}
   function showCopied(button){const original=button.dataset.originalLabel||button.textContent;button.dataset.originalLabel=original;button.textContent='Email copied';button.classList.add('copied');const note=button.parentElement.querySelector('.hc-copy-note');if(note)note.textContent=supportEmail+' copied';window.clearTimeout(button._copyTimer);button._copyTimer=window.setTimeout(()=>{button.textContent=original;button.classList.remove('copied');if(note)note.textContent='';},2200);}
@@ -199,14 +218,62 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   const count=document.getElementById('hc-count');
   const title=document.getElementById('hc-results-title');
   const clear=document.getElementById('hc-clear');
+  const productPageLink=document.getElementById('hc-product-page');
   const loadMore=document.getElementById('hc-load-more');
   function esc(value){return String(value).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));}
-  function link(article){return article.path+'?q='+encodeURIComponent(article.title);}
-  function filtered(){const terms=query.toLowerCase().trim().split(/\s+/).filter(Boolean);return articles.filter(a=>(category==='All Articles'||a.category===category)&&(!product||a.product===product)&&terms.every(t=>(a.title+' '+a.description+' '+(a.search||'')+' '+a.category+' '+names[a.product]).toLowerCase().includes(t)));}
+  function link(article){return 'article.html?id='+encodeURIComponent(article.id);}
+  // Words this common carry no signal, and leaving them in means a query like
+  // "how do I add a client" only matches articles phrased exactly that way.
+  const SEARCH_STOPWORDS=new Set(['a','an','the','is','are','am','do','does','did','how','what','which','who','can','could','should','would','will','i','to','of','for','in','on','at','by','from','with','as','and','or','we','you','your','my','our','it','its','this','that','be']);
+  function filtered(){
+    const scoped=articles.filter(a=>(category==='All Articles'||a.category===category)&&(!product||a.product===product));
+    const raw=query.toLowerCase().trim();
+    if(!raw) return scoped;
+    const tokens=raw.split(/\s+/).filter(t=>t&&!SEARCH_STOPWORDS.has(t));
+    // Match on word starts, so "in" no longer matches "invoice" or "printing".
+    const safe=t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    const patterns=tokens.map(t=>new RegExp('\\b'+safe(t)));
+    // Prefix matching lets "client" find "clients", but it also lets "add"
+    // find "address", so a whole-word title hit is ranked above a prefix one.
+    const whole=tokens.map(t=>new RegExp('\\b'+safe(t)+'\\b'));
+    const flags=scoped.map(a=>{
+      const title=a.title.toLowerCase();
+      const hay=(a.title+' '+a.description+' '+(a.search||'')+' '+a.category+' '+names[a.product]).toLowerCase();
+      return {
+        article:a,
+        phrase:hay.indexOf(raw)>-1,
+        titlePhrase:title.indexOf(raw)>-1,
+        titleWords:whole.length>0&&whole.every(re=>re.test(title)),
+        titleTokens:patterns.length>0&&patterns.every(re=>re.test(title)),
+        tokens:!patterns.length||patterns.every(re=>re.test(hay))
+      };
+    });
+    // If anything contains the whole phrase, those are the real answers;
+    // otherwise fall back to requiring every word somewhere.
+    const usePhrase=raw.length>2&&flags.some(f=>f.phrase);
+    const matched=flags.filter(f=>usePhrase?f.phrase:f.tokens);
+    // Most specific first: the phrase in the title, then every word in the
+    // title, then word-prefixes in the title, then the phrase in the body,
+    // then the rest. Ties keep their original order.
+    const rank=f=>f.titlePhrase?0:(f.titleWords?1:(f.titleTokens?2:(f.phrase?3:4)));
+    return matched
+      .map((f,i)=>({f,i}))
+      .sort((x,y)=>rank(x.f)-rank(y.f)||x.i-y.i)
+      .map(o=>o.f.article);
+  }
   function render(){
     const result=filtered();
     const active=query||product||category!=='All Articles';
     title.textContent=query?'Search results':(product?names[product]:(category!=='All Articles'?category:'All help articles'));
+    if(productPageLink){
+      const dirs={pro:'assurepro',tax:'assuretax',audit:'assureaudit',books:'assurebooks'};
+      const show=product&&!query;
+      productPageLink.style.display=show?'inline-block':'none';
+      if(show){
+        productPageLink.href=dirs[product]+'/index.html';
+        productPageLink.textContent='Browse the '+names[product]+' help center';
+      }
+    }
     clear.style.display=active?'inline-block':'none';
     count.textContent=active?result.length+' result'+(result.length===1?'':'s'):'';
     const shown=result.slice(0,visibleLimit);
@@ -232,57 +299,24 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   clear.addEventListener('click',()=>{query='';product='';category='All Articles';visibleLimit=12;search.value='';render();});
   loadMore.addEventListener('click',()=>{visibleLimit+=12;render();});
   document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search.focus();}if(e.key==='Escape'&&document.activeElement===search){search.value='';query='';render();search.blur();}});
-  const popular=['create-client','engagement','invite-team','ai-credits','tax-review'].map(id=>featuredArticles.find(a=>a.id===id));
+  const popular=['pro-how-is-a-new-client-added-directly-31','pro-how-do-i-create-and-send-an-engagement-letter-82','pro-how-do-i-invite-a-team-member-20','pro-how-much-do-ai-credits-cost-and-how-are-more-credits-purchased-153','tax-is-there-a-review-stage-for-a-prepared-return-18'].map(id=>articles.find(a=>a.id===id)).filter(Boolean);
   document.getElementById('hc-popular').innerHTML=popular.map(a=>'<a href="'+link(a)+'"><span>'+esc(a.title)+'<small>'+names[a.product]+' · '+esc(a.category)+'</small></span><span class="hc-popular-arrow">→</span></a>').join('');
-  const latest=['settings','signature','books-reporting'].map(id=>featuredArticles.find(a=>a.id===id));
+  const latest=['pro-what-is-included-in-assurepro-settings-11','pro-how-does-the-engagement-letter-signature-process-work-90','books-what-financial-statements-can-assurebooks-produce-31'].map(id=>articles.find(a=>a.id===id)).filter(Boolean);
   document.getElementById('hc-latest').innerHTML=latest.map(a=>'<li><a href="'+link(a)+'">'+esc(a.title)+'<small>'+names[a.product]+' · '+a.read+' read</small></a></li>').join('');
+  // Deep links from the article pages: ?q=, ?product= and ?category=
+  // land the reader on the matching slice of the knowledge base.
+  (function(){
+    var incoming=new URLSearchParams(location.search);
+    var q=incoming.get('q');
+    var wantProduct=incoming.get('product');
+    var wantCategory=incoming.get('category');
+    // render() already syncs the category and product buttons from state,
+    // so setting the state here is enough.
+    if(q){search.value=q;query=q;}
+    if(wantProduct&&names[wantProduct]){product=wantProduct;}
+    if(wantCategory&&categories.indexOf(wantCategory)>-1){category=wantCategory;}
+  })();
   render();
-})();
-</script>
-
-<script>
-(function(){
-  var EMAIL='support@assureone.ai';
-  function selectNode(node){
-    try{
-      var r=document.createRange();r.selectNodeContents(node);
-      var s=window.getSelection();s.removeAllRanges();s.addRange(r);
-      return true;
-    }catch(e){return false;}
-  }
-  function execCopy(){
-    try{return document.execCommand('copy');}catch(e){return false;}
-  }
-  document.querySelectorAll('.help-cta-copy').forEach(function(btn){
-    var label=btn.querySelector('.help-cta-copy-label');
-    var original=label?label.textContent:EMAIL;
-    var timer=null;
-    function flash(msg,good){
-      if(label)label.textContent=msg;
-      btn.classList.toggle('copied',!!good);
-      if(timer)clearTimeout(timer);
-      timer=setTimeout(function(){
-        if(label)label.textContent=original;
-        btn.classList.remove('copied');
-      },2200);
-    }
-    btn.addEventListener('click',function(){
-      // Select the address first, so Ctrl+C / Cmd+C always works even if
-      // the programmatic copy is blocked (file:// pages, older browsers).
-      var selected=label?selectNode(label):false;
-      if(navigator.clipboard&&navigator.clipboard.writeText){
-        navigator.clipboard.writeText(EMAIL).then(function(){
-          flash('Copied',true);
-        },function(){
-          var ok=execCopy();
-          flash(ok?'Copied':(selected?'Selected — press Ctrl+C':'Copy blocked'),ok);
-        });
-      }else{
-        var ok2=execCopy();
-        flash(ok2?'Copied':(selected?'Selected — press Ctrl+C':'Copy blocked'),ok2);
-      }
-    });
-  });
 })();
 </script>
 <script>
@@ -317,6 +351,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   window.addEventListener('resize',onScroll);
   update();
   // exposed so the behaviour can be exercised without a real scroll
+  if(main.value&&!mini.value) mini.value=main.value;
   window.__hcStickyUpdate=update;
 
   var syncing=false;
@@ -340,5 +375,87 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   });
 })();
 </script>
+<!-- hdr-support:start --><script>
+(function(){
+  var EMAIL='support@assureone.ai';
+  var TARGETS='.hdr-copy,.ar-help-copy,.help-cta-copy';
+
+  // Synchronous, so it still holds the click's user activation.
+  function copyNow(text){
+    var field=document.createElement('textarea');
+    field.value=text;
+    field.setAttribute('readonly','');
+    field.setAttribute('aria-hidden','true');
+    field.style.position='fixed';
+    field.style.left='-9999px';
+    field.style.top='0';
+    document.body.appendChild(field);
+
+    // Put the caller's selection back afterwards, so copying from the header
+    // does not wipe out text the reader had highlighted.
+    var sel=document.getSelection();
+    var previous=(sel&&sel.rangeCount)?sel.getRangeAt(0):null;
+
+    field.focus({preventScroll:true});
+    field.select();
+    try{field.setSelectionRange(0,text.length);}catch(e){}  // iOS needs this
+
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){}
+
+    document.body.removeChild(field);
+    if(previous&&sel){try{sel.removeAllRanges();sel.addRange(previous);}catch(e){}}
+    return ok;
+  }
+
+  document.querySelectorAll(TARGETS).forEach(function(btn){
+    var label=btn.querySelector('.help-cta-copy-label,.ar-help-copy-label');
+    var original=label?label.textContent:'';
+    var tip=null, timer=null;
+
+    function reset(){
+      if(timer){clearTimeout(timer);timer=null;}
+      btn.classList.remove('copied');
+      btn.title='Copy '+EMAIL+' to clipboard';
+      if(label) label.textContent=original;
+      if(tip){tip.remove();tip=null;}
+    }
+
+    function show(message,good){
+      if(timer) clearTimeout(timer);
+      btn.classList.toggle('copied',good);
+      btn.title=good?('Copied '+EMAIL):('Copy '+EMAIL+' to clipboard');
+      if(label) label.textContent=good?'Copied':original;
+      // A labelled button says it in the label; the icon-only header button
+      // needs somewhere to say it.
+      if(!label){
+        if(!tip){
+          tip=document.createElement('span');
+          tip.className='hdr-tip';
+          tip.setAttribute('role','status');
+          btn.parentNode.appendChild(tip);
+        }
+        tip.textContent=message;
+        tip.classList.toggle('bad',!good);
+      }
+      timer=setTimeout(reset,1600);
+    }
+
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      if(copyNow(EMAIL)){show('Copied',true);return;}
+      // Some browsers have retired execCommand; try the modern API next.
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(EMAIL).then(
+          function(){show('Copied',true);},
+          function(){show('Press ⌘C',false);}
+        );
+      }else{
+        show('Press ⌘C',false);
+      }
+    });
+  });
+})();
+</script><!-- hdr-support:end -->
 </body>
 </html>
