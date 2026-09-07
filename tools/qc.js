@@ -12,7 +12,12 @@ const PAGES = ["index.html", "article.html", "assurepro/index.html",
   "assureaudit/index.html", "assurebooks/index.html", "assuretax/index.html"];
 const CHUNKS = ["questions-1.js", "questions-2.js", "questions-3.js",
   "questions-4.js", "questions-5.js", "questions-6.js"];
-const DIRS = { pro: "assurepro", books: "assurebooks", tax: "assuretax" };
+const ALL_DIRS = { pro: "assurepro", books: "assurebooks", tax: "assuretax" };
+// A product taken off the site by tools/set-published-products.js has no FAQS
+// array; its answers live in drafts/ and must not appear anywhere deployed.
+const DIRS = Object.fromEntries(Object.entries(ALL_DIRS).filter(
+  ([, dir]) => fs.readFileSync(path.join(ROOT, dir, "index.html"), "utf8").includes("const FAQS=")));
+const UNPUBLISHED = Object.entries(ALL_DIRS).filter(([k]) => !DIRS[k]).map(([, dir]) => dir);
 const NAMES = { pro: "AssurePro", books: "AssureBooks", tax: "AssureTax", audit: "AssureAudit" };
 
 const fails = [];
@@ -228,7 +233,8 @@ section("7. hub search");
   if (html.includes("const terms=query.toLowerCase()")) fail("index.html: old substring search still present");
   if (!html.includes("function link(article){return 'article.html?id='")) fail("index.html: links not pointing at article.html");
   if (!html.includes("Deep links from the article pages")) fail("index.html: ?q/?product/?category handling missing");
-  if (!hasScript(html, "productPageLink")) fail("index.html: product help-centre link missing");
+  if (/productPageLink|hc-product-page/.test(html))
+    fail("index.html: the removed product help-centre link is back");
   notes.push("   stopwords, word-boundary, phrase-first, ranking, deep links, product link");
 }
 
@@ -242,18 +248,41 @@ notes.push(`   "What is the ${GONE}?" absent from every page and data file`);
 
 /* ------------------------------------------------- 9. product page alignment */
 section("9. product pages");
-for (const dir of Object.values(DIRS).concat("assureaudit")) {
+for (const dir of Object.values(ALL_DIRS).concat("assureaudit")) {
   const html = read(dir + "/index.html");
   if (!hasStyle(html, "/* Aligned with the knowledge-base design */")) fail(`${dir}: design overrides missing`);
   if (!hasMarkup(html, 'class="top-actions"')) fail(`${dir}: header actions missing`);
   if (/>\s*\d+ questions\s*</.test(html) || /\$\{count\} questions/.test(html))
     fail(`${dir}: a question count is still rendered`);
   if (/category-badge">\d/.test(html)) fail(`${dir}: numbering badge still present`);
-  // the answer link is produced by a template literal, so it lives in script
-  if (dir !== "assureaudit" && !hasScript(html, '<a class="answer-link" href="../article.html?id=')) {
-    fail(`${dir}: answer-link template missing`);
+  if (!/mailto:support@assureone\.ai/.test(html)) fail(`${dir}: support link missing`);
+
+  const published = Object.values(DIRS).includes(dir);
+  if (published) {
+    // the answer link is produced by a template literal, so it lives in script
+    if (!hasScript(html, '<a class="answer-link" href="../article.html?id='))
+      fail(`${dir}: answer-link template missing`);
+  } else {
+    if (html.includes("const FAQS=")) fail(`${dir}: unpublished but still carries its questions`);
+    if (!html.includes("Coming soon")) fail(`${dir}: unpublished with no coming-soon notice`);
   }
 }
+notes.push(`   published: ${Object.values(DIRS).join(", ")}; awaiting review: ${UNPUBLISHED.concat("assureaudit").join(", ")}`);
+
+// nothing an unpublished product wrote may survive in a deployed file
+for (const dir of UNPUBLISHED) {
+  const draft = path.join(ROOT, "drafts", `${dir}-index.html`);
+  if (!fs.existsSync(draft)) { warn(`${dir}: no draft kept, so its answers cannot be restored`); continue; }
+  const m = fs.readFileSync(draft, "utf8").match(/const FAQS=(\[[\s\S]*?\n\]);/);
+  if (!m) continue;
+  const answers = [...m[1].matchAll(/a:"((?:[^"\\]|\\.){40,})"/g)].map((x) => x[1].slice(0, 40));
+  for (const p of PAGES.concat(CHUNKS)) {
+    const html = read(p);
+    const leaked = answers.filter((a) => html.includes(a));
+    if (leaked.length) fail(`${p}: carries ${leaked.length} ${dir} answers that are not published`);
+  }
+}
+notes.push("   no unpublished answer appears in any deployed file");
 notes.push("   all four aligned, no counts, no numbering, answer links present");
 
 /* --------------------------------------------------------- 10. hygiene */
@@ -265,6 +294,7 @@ for (const p of PAGES) {
   if (opens !== closes) fail(`${p}: ${opens} <script> vs ${closes} </script>`);
   if ((html.match(/<style/g) || []).length !== (html.match(/<\/style>/g) || []).length) fail(`${p}: style tags unbalanced`);
   if (hasStyle(html, "hdr-note")) fail(`${p}: dead hdr-note rule left behind`);
+  if (/@media\([^)]*\)\{\s*\}/.test(html)) fail(`${p}: an empty @media block was left behind`);
   if (/\bTODO\b|\bFIXME\b/.test(html)) warn(`${p}: contains TODO/FIXME`);
   if (!/<title>/.test(html)) fail(`${p}: no <title>`);
   if (countIn(html, "markup", 'class="site-copyright"') !== 1)

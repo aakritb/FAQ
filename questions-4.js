@@ -1,610 +1,460 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-can-administrators-audit-automated-email-delivery-121",
+    "id": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Can administrators audit automated email delivery?",
-    "description": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or…",
-    "answer": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded.",
+    "category": "Engagements",
+    "title": "Can AssurePro remind a client to sign an engagement letter?",
+    "description": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
+    "answer": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
     "more": [
-      "Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a user's sent-mail folder."
+      "For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred."
     ],
-    "search": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded. Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a user's sent-mail folder.",
+    "search": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending. For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-do-i-investigate-an-email-that-was-not-delivered-122",
+    "id": "pro-which-signing-statuses-can-staff-track-89",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I investigate an email that was not delivered?",
-    "description": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or…",
-    "answer": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email.",
+    "category": "Engagements",
+    "title": "Which signing statuses can staff track?",
+    "description": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status…",
+    "answer": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable.",
     "more": [
-      "After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected."
+      "Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up."
+    ],
+    "search": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable. Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-does-the-engagement-letter-signature-process-work-90",
+    "product": "pro",
+    "category": "Engagements",
+    "title": "How does the engagement-letter signature process work?",
+    "description": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a…",
+    "answer": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a signature or typing the signer's name.",
+    "more": [
+      "The completed package keeps the agreed services, pricing, terms, recipients, consent, signature result, and related audit activity with the client record. The firm should select the authorized signer and finish its internal review before sending so the signed package accurately represents the engagement the client accepted."
     ],
     "steps": [
-      "Open Settings and choose Email Log.",
-      "Search by recipient or subject.",
-      "Filter to Failed or Not sent.",
-      "Review the sent time, client, subject, message type, and any error text shown on the row.",
-      "Correct the underlying address, connection, or template issue before retrying the associated workflow."
+      "Confirm the correct client, recipients, services, price, terms, sign-by date, and approval requirements before sending.",
+      "The recipient opens the engagement package from the delivered client link and completes any required selections or approvals.",
+      "The recipient draws a signature or types the signer's name and submits the package.",
+      "AssurePro updates the package through statuses such as Sent, Viewed, Partial, Signed, or Declined so the firm can follow up with the correct recipient.",
+      "When more than one signature is required, Partial indicates that at least one required signer still needs to complete the package.",
+      "Open the completed package from the client or Engagement Letter record to retain and review the accepted services, pricing, terms, recipients, consent, signature result, and audit history."
     ],
-    "search": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email. After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or Not sent. Review the sent time, client, subject, message type, and any error text shown on the row. Correct the underlying address, connection, or template issue before retrying the associated workflow.",
+    "search": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a signature or typing the signer's name. The completed package keeps the agreed services, pricing, terms, recipients, consent, signature result, and related audit activity with the client record. The firm should select the authorized signer and finish its internal review before sending so the signed package accurately represents the engagement the client accepted. Confirm the correct client, recipients, services, price, terms, sign-by date, and approval requirements before sending. The recipient opens the engagement package from the delivered client link and completes any required selections or approvals. The recipient draws a signature or types the signer's name and submits the package. AssurePro updates the package through statuses such as Sent, Viewed, Partial, Signed, or Declined so the firm can follow up with the correct recipient. When more than one signature is required, Partial indicates that at least one required signer still needs to complete the package. Open the completed package from the client or Engagement Letter record to retain and review the accepted services, pricing, terms, recipients, consent, signature result, and audit history.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-reminders-can-be-automated-123",
+    "id": "pro-what-are-the-magic-link-and-audit-log-for-a-sent-engagement-letter-91",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "What reminders can be automated?",
-    "description": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule…",
-    "answer": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule showing the first delay, repeat interval, and total number of reminders.",
-    "more": [
-      "Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action."
-    ],
-    "search": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule showing the first delay, repeat interval, and total number of reminders. Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-change-an-automatic-reminder-schedule-124",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I change an automatic reminder schedule?",
-    "description": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work. Open Settings and choose Reminders. Find Document requests, Unanswered…",
-    "answer": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work.",
+    "category": "Engagements",
+    "title": "What are the magic link and audit log for a sent engagement letter?",
+    "description": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the…",
+    "answer": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log.",
     "steps": [
-      "Open Settings and choose Reminders.",
-      "Find Document requests, Unanswered messages, Tax organizers, or Signature requests.",
-      "Use the switch to enable or disable that reminder type.",
-      "Select Edit schedule and set the initial delay, repeat cadence, and total number of reminders offered by the editor.",
-      "Review the schedule summary shown on the reminder card."
+      "Open Engagement Letter and select the package from Sent.",
+      "Preview the sent engagement letter rather than reopening the draft builder.",
+      "Use the magic-link option to open or copy the client-facing route for that specific sent package when the recipient needs help accessing it.",
+      "Confirm the package and intended recipient before sharing the link; the link belongs to that engagement-letter delivery and should not be reused for a different client.",
+      "Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on.",
+      "Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature."
     ],
-    "search": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work. Open Settings and choose Reminders. Find Document requests, Unanswered messages, Tax organizers, or Signature requests. Use the switch to enable or disable that reminder type. Select Edit schedule and set the initial delay, repeat cadence, and total number of reminders offered by the editor. Review the schedule summary shown on the reminder card.",
+    "search": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the package from Sent. Preview the sent engagement letter rather than reopening the draft builder. Use the magic-link option to open or copy the client-facing route for that specific sent package when the recipient needs help accessing it. Confirm the package and intended recipient before sharing the link; the link belongs to that engagement-letter delivery and should not be reused for a different client. Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on. Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-can-assurepro-follow-up-when-a-client-has-not-responded-125",
+    "id": "pro-can-a-client-sign-an-engagement-letter-from-a-mobile-device-92",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Can AssurePro follow up when a client has not responded?",
-    "description": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type…",
-    "answer": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type separately so its cadence matches the firm's process.",
-    "more": [
-      "For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but staff should intervene when the sequence ends or the client explains a blocker."
-    ],
-    "search": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type separately so its cadence matches the firm's process. For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but staff should intervene when the sequence ends or the client explains a blocker.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-assurepro-send-and-receive-client-text-messages-126",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "Can AssurePro send and receive client text messages?",
-    "description": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration…",
-    "answer": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked.",
-    "more": [
-      "After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized staff."
-    ],
-    "search": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked. After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized staff.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-configure-a-firm-phone-number-for-sms-127",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I configure a firm phone number for SMS?",
-    "description": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add…",
-    "answer": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers.",
+    "category": "Engagements",
+    "title": "Can a client sign an engagement letter from a mobile device?",
+    "description": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction,…",
+    "answer": "Yes. The client can review and sign the engagement package from a supported mobile device.",
     "steps": [
-      "Open Settings and confirm Twilio is connected under Integrations.",
-      "Choose Phone Numbers and select Add number.",
-      "Link a number already owned in Twilio or follow the offered flow to add a new number.",
-      "Confirm the number and its SMS or MMS capabilities under Your numbers.",
-      "Complete A2P 10DLC registration for US carrier messaging and use Refresh status to verify the result."
+      "Open the engagement-package link from the firm's invitation or client experience.",
+      "Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs.",
+      "Complete any required service selections, approvals, or payment-capture step included by the firm.",
+      "Draw the signature or type the signer's name and submit the signed package.",
+      "The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record."
     ],
-    "search": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add number. Link a number already owned in Twilio or follow the offered flow to add a new number. Confirm the number and its SMS or MMS capabilities under Your numbers. Complete A2P 10DLC registration for US carrier messaging and use Refresh status to verify the result.",
+    "search": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs. Complete any required service selections, approvals, or payment-capture step included by the firm. Draw the signature or type the signer's name and submit the signed package. The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-phone-number-does-a-client-see-when-the-firm-sends-an-sms-128",
+    "id": "pro-how-is-the-billing-area-organized-93",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "What phone number does a client see when the firm sends an SMS?",
-    "description": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before…",
-    "answer": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before relying on it for US client messaging.",
+    "category": "Billing",
+    "title": "How is the Billing area organized?",
+    "description": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks…",
+    "answer": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks MyCPEOne referrals and commissions.",
     "more": [
-      "If the firm owns several Twilio numbers, confirm which one is linked in Settings > Phone Numbers before telling clients what to save. The row also shows capabilities and registration status; a number that is not correctly registered may be filtered even though it appears in the firm's configuration."
+      "Use Invoices for one-time and generated receivables, Recurring for schedules that create invoices on a cadence, and Referrals for MyCPEOne introductions and commissions. The signed-agreements banner bridges Engagement Letter and Billing by gathering new drafts and schedules that need review before activation or delivery."
     ],
-    "search": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before relying on it for US client messaging. If the firm owns several Twilio numbers, confirm which one is linked in Settings > Phone Numbers before telling clients what to save. The row also shows capabilities and registration status; a number that is not correctly registered may be filtered even though it appears in the firm's configuration.",
+    "search": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks MyCPEOne referrals and commissions. Use Invoices for one-time and generated receivables, Recurring for schedules that create invoices on a cadence, and Referrals for MyCPEOne introductions and commissions. The signed-agreements banner bridges Engagement Letter and Billing by gathering new drafts and schedules that need review before activation or delivery.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-calendar-connections-are-supported-129",
+    "id": "pro-what-does-the-invoices-overview-show-94",
     "product": "pro",
-    "category": "Troubleshooting",
-    "title": "What calendar connections are supported?",
-    "description": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
-    "answer": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
+    "category": "Billing",
+    "title": "What does the Invoices overview show?",
+    "description": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched…",
+    "answer": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched by invoice number or client and filtered by status, client, source, and date; Columns controls which fields are visible.",
     "more": [
-      "Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to the relevant client; verify the client association so meeting context appears with the correct relationship."
+      "For example, select Overdue to isolate invoices that need collection follow-up, Awaiting payment for sent invoices not yet paid, Drafts for items that still need review, or Collected to confirm recent cash activity. Search and filters can then narrow the selected group to one client, source, status, or date range."
     ],
-    "search": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client. Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to the relevant client; verify the client association so meeting context appears with the correct relationship.",
+    "search": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched by invoice number or client and filtered by status, client, source, and date; Columns controls which fields are visible. For example, select Overdue to isolate invoices that need collection follow-up, Awaiting payment for sent invoices not yet paid, Drafts for items that still need review, or Collected to confirm recent cash activity. Search and filters can then narrow the selected group to one client, source, status, or date range.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-does-everything-a-client-sees-carry-the-firm-s-branding-or-does-assure-130",
+    "id": "pro-which-invoice-sources-and-statuses-are-tracked-95",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Does everything a client sees carry the firm's branding, or does AssureOne branding appear anywhere?",
-    "description": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client…",
-    "answer": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
-    "search": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-is-the-reports-area-organized-131",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How is the Reports area organized?",
-    "description": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates…",
-    "answer": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates is the widget library and custom-dashboard builder.",
+    "category": "Billing",
+    "title": "Which invoice sources and statuses are tracked?",
+    "description": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown…",
+    "answer": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown separately so a status does not need to be inferred from the invoice amount.",
     "more": [
-      "Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review."
+      "Source explains how the invoice began: Manual from the invoice builder, Agreement from signed engagement terms, or Time from billable entries. Status explains its lifecycle; for example, Viewed means the client opened a sent invoice, Overdue means its unpaid balance passed the due date, and Paid means the balance was satisfied."
     ],
-    "search": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates is the widget library and custom-dashboard builder. Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review.",
+    "search": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown separately so a status does not need to be inferred from the invoice amount. Source explains how the invoice began: Manual from the invoice builder, Agreement from signed engagement terms, or Time from billable entries. Status explains its lifecycle; for example, Viewed means the client opened a sent invoice, Overdue means its unpaid balance passed the due date, and Paid means the balance was satisfied.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-reports-are-available-on-overview-132",
+    "id": "pro-how-is-a-new-invoice-created-96",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "What reports are available on Overview?",
-    "description": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's…",
-    "answer": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's active and overdue counts, average days, and load.",
-    "more": [
-      "Revenue by service line explains where billed value comes from; Hours logged compares logged, billable, and billed time; A/R aging groups unpaid balances by age; Tasks completed shows operational throughput; Agreement funnel tracks signing; Top clients shows concentration; and Workflow stages shows volume, overdue work, age, and load."
-    ],
-    "search": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's active and overdue counts, average days, and load. Revenue by service line explains where billed value comes from; Hours logged compares logged, billable, and billed time; A/R aging groups unpaid balances by age; Tasks completed shows operational throughput; Agreement funnel tracks signing; Top clients shows concentration; and Workflow stages shows volume, overdue work, age, and load.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-which-kpis-appear-at-the-top-of-reports-133",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "Which KPIs appear at the top of Reports?",
-    "description": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received,…",
-    "answer": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received, Outstanding A/R identifies the unpaid balance, Billable Hours and Utilization describe productive time, and New Clients shows growth. Select MTD, QTD, YTD, 12M, or Custom before interpreting the values so every card reflects the intended period.",
-    "search": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received, Outstanding A/R identifies the unpaid balance, Billable Hours and Utilization describe productive time, and New Clients shows growth. Select MTD, QTD, YTD, 12M, or Custom before interpreting the values so every card reflects the intended period.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-review-and-export-a-report-134",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I review and export a report?",
-    "description": "Use the common period controls to keep the report cards and KPI context aligned. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when…",
-    "answer": "Use the common period controls to keep the report cards and KPI context aligned.",
+    "category": "Billing",
+    "title": "How is a new invoice created?",
+    "description": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the…",
+    "answer": "An invoice cannot be sent until a client, due date, and at least one priced line item are present.",
     "steps": [
-      "Open Reports and choose Overview or My Report.",
-      "Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required.",
-      "Review the relevant KPI or report card.",
-      "Select Full report on a card when a detailed view is available.",
-      "Review the resulting focused dashboard and its supporting widgets.",
-      "Select Export when an external copy is needed."
+      "Open Billing and select Create invoice, or choose Invoice from the global + New menu.",
+      "Select the client; optionally associate an engagement after the client is selected.",
+      "Confirm the invoice number, issue date, and due date.",
+      "Add a service-catalog item or a custom line, then enter quantity and unit price.",
+      "If applicable, import unbilled time and apply a dollar or percentage discount and tax.",
+      "Add a description, client note, or internal note as needed.",
+      "Review the live invoice preview.",
+      "Choose Save as draft or Create & send."
     ],
-    "search": "Use the common period controls to keep the report cards and KPI context aligned. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required. Review the relevant KPI or report card. Select Full report on a card when a detailed view is available. Review the resulting focused dashboard and its supporting widgets. Select Export when an external copy is needed.",
+    "search": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the client; optionally associate an engagement after the client is selected. Confirm the invoice number, issue date, and due date. Add a service-catalog item or a custom line, then enter quantity and unit price. If applicable, import unbilled time and apply a dollar or percentage discount and tax. Add a description, client note, or internal note as needed. Review the live invoice preview. Choose Save as draft or Create & send.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-happens-when-i-select-full-report-on-an-overview-card-135",
+    "id": "pro-what-can-staff-review-on-an-individual-invoice-97",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "What happens when I select Full report on an Overview card?",
-    "description": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per…",
-    "answer": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per billed client, existing-versus-new split, cross-sell measures, revenue mix, and service-line detail can be reviewed together.",
+    "category": "Billing",
+    "title": "What can staff review on an individual invoice?",
+    "description": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items.…",
+    "answer": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state.",
     "more": [
-      "The focused dashboard keeps the report period controls and Export action while adding supporting metrics and breakdowns. For example, Revenue Snapshot goes beyond the service-line chart with revenue per billed client, existing versus new client revenue, cross-sell revenue, revenue mix, and detailed service-line performance."
+      "Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received."
     ],
-    "search": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per billed client, existing-versus-new split, cross-sell measures, revenue mix, and service-line detail can be reviewed together. The focused dashboard keeps the report period controls and Export action while adding supporting metrics and breakdowns. For example, Revenue Snapshot goes beyond the service-line chart with revenue per billed client, existing versus new client revenue, cross-sell revenue, revenue mix, and detailed service-line performance.",
+    "search": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state. Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-can-report-periods-and-results-be-changed-or-exported-136",
+    "id": "pro-how-can-clients-pay-an-assurepro-invoice-98",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Can report periods and results be changed or exported?",
-    "description": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active…",
-    "answer": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active and overdue work.",
+    "category": "Billing",
+    "title": "How can clients pay an AssurePro invoice?",
+    "description": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the…",
+    "answer": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the payment methods presented to a client depend on the connected processor and the options enabled for the firm.",
     "more": [
-      "Choose MTD for current-month operations, QTD for quarter performance, YTD for the current year, 12M for a rolling view, or Custom for a specific engagement or management period. Apply the period before opening Full report or Export so the detailed view and downloaded result use the intended dates."
+      "The firm first connects its payment processor in Settings > Integrations and confirms the payout connection under Billing & Payments. After the invoice is sent, the client uses the payment options enabled for the firm; AssurePro updates the invoice's payment history, remaining balance, and status when the processor reports the payment."
     ],
-    "search": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active and overdue work. Choose MTD for current-month operations, QTD for quarter performance, YTD for the current year, 12M for a rolling view, or Custom for a specific engagement or management period. Apply the period before opening Full report or Export so the detailed view and downloaded result use the intended dates.",
+    "search": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the payment methods presented to a client depend on the connected processor and the options enabled for the firm. The firm first connects its payment processor in Settings > Integrations and confirms the payout connection under Billing & Payments. After the invoice is sent, the client uses the payment options enabled for the firm; AssurePro updates the invoice's payment history, remaining balance, and status when the processor reports the payment.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-can-report-and-dashboard-data-be-exported-137",
+    "id": "pro-can-the-firm-record-a-payment-received-outside-assurepro-99",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Can report and dashboard data be exported?",
-    "description": "Yes. Report and dashboard results can be exported for review or use outside AssurePro. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export…",
-    "answer": "Yes. Report and dashboard results can be exported for review or use outside AssurePro.",
+    "category": "Billing",
+    "title": "Can the firm record a payment received outside AssurePro?",
+    "description": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status…",
+    "answer": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status reflect the payment received.",
+    "more": [
+      "Example: when a client pays by check or another off-platform method, open the invoice, select Add payment, choose the method, enter the actual payment date and reference details, and save. Confirm that the payment appears in Payment history and that the remaining balance and invoice status changed correctly."
+    ],
+    "search": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status reflect the payment received. Example: when a client pays by check or another off-platform method, open the invoice, select Add payment, choose the method, enter the actual payment date and reference details, and save. Confirm that the payment appears in Payment history and that the remaining balance and invoice status changed correctly.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-signed-agreements-create-billing-work-100",
+    "product": "pro",
+    "category": "Billing",
+    "title": "Can signed agreements create billing work?",
+    "description": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work…",
+    "answer": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client.",
+    "more": [
+      "A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated."
+    ],
+    "search": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client. A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-review-billing-created-by-a-signed-agreement-101",
+    "product": "pro",
+    "category": "Billing",
+    "title": "How do I review billing created by a signed agreement?",
+    "description": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date,…",
+    "answer": "Agreement billing is separated by what still needs attention.",
     "steps": [
-      "Open Reports and choose Overview or My Report.",
-      "Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period.",
-      "Open a Full report when the export should come from a focused dashboard rather than the high-level Overview.",
-      "Confirm that the visible widgets and filters match the information needed.",
-      "Select Export and complete the download offered by the report.",
-      "Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data."
+      "Open Billing and select the signed-agreements banner.",
+      "Search by client or agreement if needed.",
+      "Under Pending review, check the signed date, number of drafts or schedules, and amount.",
+      "Select Review & send and inspect the generated invoice, line items, dates, and agreement link.",
+      "Edit the draft if the billing details need correction, then send it when ready.",
+      "Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create."
     ],
-    "search": "Yes. Report and dashboard results can be exported for review or use outside AssurePro. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period. Open a Full report when the export should come from a focused dashboard rather than the high-level Overview. Confirm that the visible widgets and filters match the information needed. Select Export and complete the download offered by the report. Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data.",
+    "search": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date, number of drafts or schedules, and amount. Select Review & send and inspect the generated invoice, line items, dates, and agreement link. Edit the draft if the billing details need correction, then send it when ready. Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-is-available-in-my-report-138",
+    "id": "pro-how-does-recurring-billing-work-102",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "What is available in My Report?",
-    "description": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for…",
-    "answer": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for everyone with report access. My dashboards contains the current user's saved dashboards built from Templates.",
+    "category": "Billing",
+    "title": "How does recurring billing work?",
+    "description": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client,…",
+    "answer": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions.",
     "more": [
-      "Starter dashboards are maintained reference views; Shared with the firm contains dashboards published for all users with report access; My dashboards contains the signed-in user's private or owned work. The separation lets a firm keep standard management reporting while allowing personal analysis without changing everyone else's view."
+      "For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active."
     ],
-    "search": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for everyone with report access. My dashboards contains the current user's saved dashboards built from Templates. Starter dashboards are maintained reference views; Shared with the firm contains dashboards published for all users with report access; My dashboards contains the signed-in user's private or owned work. The separation lets a firm keep standard management reporting while allowing personal analysis without changing everyone else's view.",
+    "search": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions. For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-which-starter-dashboards-are-available-139",
+    "id": "pro-how-do-i-review-or-control-a-recurring-schedule-103",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Which starter dashboards are available?",
-    "description": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused…",
-    "answer": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused set of widgets for that operating question.",
-    "more": [
-      "Use Revenue Snapshot for growth and mix, Client Health for relationship attention, Billing & Collections for receivables, Agreement Pipeline for signing progress, Workflow & Capacity for delivery pressure, Task Dashboard for execution, Time & Utilization for effort, and Firm Pulse for a broad operating summary."
-    ],
-    "search": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused set of widgets for that operating question. Use Revenue Snapshot for growth and mix, Client Health for relationship attention, Billing & Collections for receivables, Agreement Pipeline for signing progress, Workflow & Capacity for delivery pressure, Task Dashboard for execution, Time & Utilization for effort, and Firm Pulse for a broad operating summary.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-build-a-custom-dashboard-140",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I build a custom dashboard?",
-    "description": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected. Open Reports and choose Templates. Search for a widget…",
-    "answer": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected.",
+    "category": "Billing",
+    "title": "How do I review or control a recurring schedule?",
+    "description": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total…",
+    "answer": "A schedule can be inspected without opening the client record.",
     "steps": [
-      "Open Reports and choose Templates.",
-      "Search for a widget or filter the library by category.",
-      "Select the widgets needed for the dashboard.",
-      "Review the selected widgets, which appear in selection order.",
-      "Drag widgets into the preferred order and adjust their width or height where supported.",
-      "Select Save dashboard.",
-      "Enter a name and optional description, then decide whether to Share with the firm.",
-      "Save the dashboard; a shared dashboard is visible to everyone with report access."
+      "Open Billing and choose Recurring.",
+      "Find the schedule in tile or list view.",
+      "Select View details to review client, email, status, total billed, total received, pending amount, and invoice history.",
+      "Use Pause or Resume schedule when the cadence should stop or restart.",
+      "Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused.",
+      "Review any displayed future price change before the next invoice date."
     ],
-    "search": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected. Open Reports and choose Templates. Search for a widget or filter the library by category. Select the widgets needed for the dashboard. Review the selected widgets, which appear in selection order. Drag widgets into the preferred order and adjust their width or height where supported. Select Save dashboard. Enter a name and optional description, then decide whether to Share with the firm. Save the dashboard; a shared dashboard is visible to everyone with report access.",
+    "search": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total billed, total received, pending amount, and invoice history. Use Pause or Resume schedule when the cadence should stop or restart. Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused. Review any displayed future price change before the next invoice date.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-can-report-widgets-be-arranged-141",
+    "id": "pro-what-is-the-services-catalog-104",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "How can report widgets be arranged?",
-    "description": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or…",
-    "answer": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or removed before the dashboard is saved.",
+    "category": "Billing",
+    "title": "What is the Services catalog?",
+    "description": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the…",
+    "answer": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status.",
     "more": [
-      "A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order."
+      "Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work."
     ],
-    "search": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or removed before the dashboard is saved. A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order.",
+    "search": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status. Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-do-i-share-or-manage-a-custom-dashboard-142",
+    "id": "pro-which-service-kinds-and-pricing-models-are-available-105",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I share or manage a custom dashboard?",
-    "description": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets,…",
-    "answer": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete. Starter dashboards can be duplicated into My dashboards before customization.",
+    "category": "Billing",
+    "title": "Which service kinds and pricing models are available?",
+    "description": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the…",
+    "answer": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the number included; Add-on identifies an optional catalog item.",
     "more": [
-      "Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it."
+      "Example: create a Fixed Service for an individual return, an Hourly item for advisory time, a Retainer for recurring access, an Add-on for audit protection, or a Bundle that groups included items. Kind describes the commercial role of the item; Fixed, Hourly, and Retainer pricing determine how the amount is calculated."
     ],
-    "search": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete. Starter dashboards can be duplicated into My dashboards before customization. Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it.",
+    "search": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the number included; Add-on identifies an optional catalog item. Example: create a Fixed Service for an individual return, an Hourly item for advisory time, a Retainer for recurring access, an Add-on for audit protection, or a Bundle that groups included items. Kind describes the commercial role of the item; Fixed, Hourly, and Retainer pricing determine how the amount is calculated.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-which-report-widget-categories-can-i-use-143",
+    "id": "pro-how-do-i-create-a-service-106",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "Which report-widget categories can I use?",
-    "description": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client…",
-    "answer": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views appropriate to each category.",
-    "more": [
-      "For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures."
+    "category": "Billing",
+    "title": "How do I create a service?",
+    "description": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on,…",
+    "answer": "A catalog item can carry the defaults that staff would otherwise re-enter during billing.",
+    "steps": [
+      "Open Services and select New service.",
+      "Enter the service name and optional description.",
+      "Choose Bundle, Add-on, Hourly, Retainer, or Service as the kind.",
+      "Choose the category and Fixed, Hourly, or Retainer as the pricing model.",
+      "Set the default price and optional default discount.",
+      "Set the default tax rate and whether the item is taxable by default.",
+      "Select Create service after all required fields are complete."
     ],
-    "search": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views appropriate to each category. For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures.",
+    "search": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on, Hourly, Retainer, or Service as the kind. Choose the category and Fixed, Hourly, or Retainer as the pricing model. Set the default price and optional default discount. Set the default tax rate and whether the item is taxable by default. Select Create service after all required fields are complete.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-does-the-agreement-funnel-report-show-144",
+    "id": "pro-how-do-i-find-deactivate-or-archive-a-service-107",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "What does the agreement funnel report show?",
-    "description": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing…",
-    "answer": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing or stopping.",
+    "category": "Billing",
+    "title": "How do I find, deactivate, or archive a service?",
+    "description": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is…",
+    "answer": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is available from the row action menu and is distinct from simply switching the item inactive.",
     "more": [
-      "Compare Sent to Viewed to identify delivery or attention problems, Viewed to Signed to identify decision friction, and the declined, expired, or cancelled counts to understand why packages left the active pipeline. Open the underlying engagement-letter work when a specific package needs follow-up."
+      "Use inactive when the firm may need to reactivate or reference the item later, and Archive when the catalog item should be removed from normal maintenance. Before either action, check whether the service is used by templates, agreements, recurring schedules, or draft invoices so new work is not left with an unavailable dependency."
     ],
-    "search": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing or stopping. Compare Sent to Viewed to identify delivery or attention problems, Viewed to Signed to identify decision friction, and the declined, expired, or cancelled counts to understand why packages left the active pipeline. Open the underlying engagement-letter work when a specific package needs follow-up.",
+    "search": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is available from the row action menu and is distinct from simply switching the item inactive. Use inactive when the firm may need to reactivate or reference the item later, and Archive when the catalog item should be removed from normal maintenance. Before either action, check whether the service is used by templates, agreements, recurring schedules, or draft invoices so new work is not left with an unavailable dependency.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-does-the-dashboard-help-identify-work-needing-attention-145",
+    "id": "pro-how-is-a-standard-operating-procedure-attached-to-a-service-108",
     "product": "pro",
-    "category": "Getting Started",
-    "title": "How does the dashboard help identify work needing attention?",
-    "description": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each…",
-    "answer": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each major tile links to the underlying operational screen.",
+    "category": "Billing",
+    "title": "How is a standard operating procedure attached to a service?",
+    "description": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how…",
+    "answer": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how that service is performed.",
     "more": [
-      "For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary."
+      "For example, the SOP for Monthly Bookkeeping can describe statement collection, reconciliation, review, delivery, and client follow-up. Open the service's SOP dialog from the plus or Actions menu, add or maintain the procedure, and make sure the active instructions match the service description being sold."
     ],
-    "search": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each major tile links to the underlying operational screen. For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary.",
+    "search": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how that service is performed. For example, the SOP for Monthly Bookkeeping can describe statement collection, reconciliation, review, delivery, and client follow-up. Open the service's SOP dialog from the plus or Actions menu, add or maintain the procedure, and make sure the active instructions match the service description being sold.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-can-the-ai-agent-help-with-146",
+    "id": "pro-how-are-time-entries-turned-into-invoices-109",
     "product": "pro",
-    "category": "AI & Automation",
-    "title": "What can the AI Agent help with?",
-    "description": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements,…",
-    "answer": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week.",
+    "category": "Billing",
+    "title": "How are time entries turned into invoices?",
+    "description": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice.",
+    "answer": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice.",
     "more": [
-      "A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”"
+      "From Time Sheet, filter to the correct client or engagement, select billable entries that are not already invoiced, and choose Generate invoice. Alternatively, start an invoice and use Import unbilled time; review every imported description, quantity, rate, amount, date, and client association before sending."
     ],
-    "search": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week. A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”",
+    "search": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice. From Time Sheet, filter to the correct client or engagement, select billable entries that are not already invoiced, and choose Generate invoice. Alternatively, start an invoice and use Import unbilled time; review every imported description, quantity, rate, amount, date, and client association before sending.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-do-i-ask-the-ai-agent-for-help-147",
+    "id": "pro-what-is-the-difference-between-billing-payments-and-platform-subscript-110",
     "product": "pro",
-    "category": "AI & Automation",
-    "title": "How do I ask the AI Agent for help?",
-    "description": "The Agent uses a conversational prompt and states that it asks before changing anything. Open AI Agent. Enter a specific question about clients, documents, work, billing, or communications, or choose a…",
-    "answer": "The Agent uses a conversational prompt and states that it asks before changing anything.",
+    "category": "Billing",
+    "title": "What is the difference between Billing & Payments and Platform Subscription?",
+    "description": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and…",
+    "answer": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts.",
     "more": [
-      "Ask a narrower follow-up when the first result is too broad, open linked records to validate important facts, and keep the request in draft mode when no change is intended. The Agent's statement that it asks before changing anything should not replace the user's review of recipients, amounts, dates, or client context."
+      "Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne."
+    ],
+    "search": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts. Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-review-assureone-platform-purchases-and-receipts-111",
+    "product": "pro",
+    "category": "Billing",
+    "title": "How do I review AssureOne platform purchases and receipts?",
+    "description": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each…",
+    "answer": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice.",
+    "more": [
+      "Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents."
     ],
     "steps": [
-      "Open AI Agent.",
-      "Enter a specific question about clients, documents, work, billing, or communications, or choose a suggested prompt.",
-      "Review the answer and any linked source or proposed action.",
-      "If the Agent proposes a change, review the requested confirmation before allowing it."
+      "Open Settings and choose Platform Subscription.",
+      "Filter invoices by status or date when needed.",
+      "Select Preview for an on-screen invoice review.",
+      "Select Download to save the invoice or receipt for the firm's records."
     ],
-    "search": "The Agent uses a conversational prompt and states that it asks before changing anything. Ask a narrower follow-up when the first result is too broad, open linked records to validate important facts, and keep the request in draft mode when no change is intended. The Agent's statement that it asks before changing anything should not replace the user's review of recipients, amounts, dates, or client context. Open AI Agent. Enter a specific question about clients, documents, work, billing, or communications, or choose a suggested prompt. Review the answer and any linked source or proposed action. If the Agent proposes a change, review the requested confirmation before allowing it.",
+    "search": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice. Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents. Open Settings and choose Platform Subscription. Filter invoices by status or date when needed. Select Preview for an on-screen invoice review. Select Download to save the invoice or receipt for the firm's records.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-are-ai-agent-conversations-managed-148",
+    "id": "pro-what-payment-and-accounting-connections-are-available-112",
     "product": "pro",
-    "category": "AI & Automation",
-    "title": "How are AI Agent conversations managed?",
-    "description": "The Agent keeps separate conversations so a user can return to earlier work without mixing unrelated requests. Open AI Agent and select New chat when beginning a different question or client context.…",
-    "answer": "The Agent keeps separate conversations so a user can return to earlier work without mixing unrelated requests.",
+    "category": "Billing",
+    "title": "What payment and accounting connections are available?",
+    "description": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points…",
+    "answer": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points administrators to Integrations for payout-account management.",
+    "more": [
+      "The payment connection receives client payments and supports payout management; QuickBooks Online receives paid-invoice information for accounting. Test each connection with a controlled transaction or record, then verify both the AssurePro invoice and the external system before relying on the integration for month-end reconciliation."
+    ],
+    "search": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points administrators to Integrations for payout-account management. The payment connection receives client payments and supports payout management; QuickBooks Online receives paid-invoice information for accounting. Test each connection with a controlled transaction or record, then verify both the AssurePro invoice and the external system before relying on the integration for month-end reconciliation.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-does-assurepro-include-referral-tracking-113",
+    "product": "pro",
+    "category": "Billing",
+    "title": "Does AssurePro include referral tracking?",
+    "description": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime…",
+    "answer": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout.",
+    "more": [
+      "For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received."
+    ],
+    "search": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout. For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-refer-a-client-to-mycpeone-114",
+    "product": "pro",
+    "category": "Billing",
+    "title": "How do I refer a client to MyCPEOne?",
+    "description": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required…",
+    "answer": "A referral can use an existing AssurePro client or create a new referral contact.",
     "steps": [
-      "Open AI Agent and select New chat when beginning a different question or client context.",
-      "Enter the request and review the Agent's response, sources, links, and any proposed action.",
-      "Use the conversation history to reopen an earlier chat.",
-      "Rename a conversation so its purpose is recognizable later.",
-      "Delete a conversation from its controls when it is no longer needed, following the firm's information-retention expectations."
+      "Open Billing and choose Referrals.",
+      "Select Refer a client.",
+      "Choose New client or From my clients.",
+      "Enter the required client name, entity type, contact email, and service line.",
+      "Add contact name, phone, address, ZIP code, requested services, or notes when useful.",
+      "Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking."
     ],
-    "search": "The Agent keeps separate conversations so a user can return to earlier work without mixing unrelated requests. Open AI Agent and select New chat when beginning a different question or client context. Enter the request and review the Agent's response, sources, links, and any proposed action. Use the conversation history to reopen an earlier chat. Rename a conversation so its purpose is recognizable later. Delete a conversation from its controls when it is no longer needed, following the firm's information-retention expectations.",
+    "search": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required client name, entity type, contact email, and service line. Add contact name, phone, address, ZIP code, requested services, or notes when useful. Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-is-ai-agent-memory-and-how-can-i-control-it-149",
+    "id": "pro-which-communication-channels-are-available-115",
     "product": "pro",
-    "category": "AI & Automation",
-    "title": "What is AI Agent memory and how can I control it?",
-    "description": "Memory is the context the Agent retains for future conversations. Each user can decide whether the Agent should keep that context and can inspect what has been saved. Open AI Agent and go to Memory.…",
-    "answer": "Memory is the context the Agent retains for future conversations. Each user can decide whether the Agent should keep that context and can inspect what has been saved.",
+    "category": "Getting Started",
+    "title": "Which communication channels are available?",
+    "description": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected…",
+    "answer": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
+    "search": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-start-a-client-conversation-116",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I start a client conversation?",
+    "description": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select…",
+    "answer": "A conversation can begin in the shared Communications area or in the selected client's workspace.",
     "steps": [
-      "Open AI Agent and go to Memory.",
-      "Turn memory on when the Agent should retain useful context for later conversations, or turn it off when nothing should be retained beyond the current session.",
-      "Refresh the list to review the latest saved items.",
-      "Use Forget this to remove one item that should no longer influence future conversations.",
-      "Use Clear all memory to remove every saved item for the user."
+      "Open Communications and choose the required channel, or open the client's Communications tab.",
+      "Select New Conversation.",
+      "Choose the client and channel.",
+      "Add the recipients, subject, message, or other details required by that channel.",
+      "Review and send the conversation.",
+      "Use the shared inbox to monitor its response and handling status."
     ],
-    "search": "Memory is the context the Agent retains for future conversations. Each user can decide whether the Agent should keep that context and can inspect what has been saved. Open AI Agent and go to Memory. Turn memory on when the Agent should retain useful context for later conversations, or turn it off when nothing should be retained beyond the current session. Refresh the list to review the latest saved items. Use Forget this to remove one item that should no longer influence future conversations. Use Clear all memory to remove every saved item for the user.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-does-auto-approve-low-risk-actions-do-150",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "What does Auto-approve low-risk actions do?",
-    "description": "The setting allows the Agent to proceed with actions it classifies as low risk without asking for each approval. Keep it off when the user wants to review every proposed change; higher-impact actions…",
-    "answer": "The setting allows the Agent to proceed with actions it classifies as low risk without asking for each approval. Keep it off when the user wants to review every proposed change; higher-impact actions remain subject to the Agent's confirmation behavior.",
-    "more": [
-      "Examples of low-risk behavior can differ as the Agent evolves, so review the proposed activity and the firm's policy before enabling it. Leave the option off for users who should approve every change; enabling it should never be treated as authorization for higher-impact actions that still require confirmation."
-    ],
-    "search": "The setting allows the Agent to proceed with actions it classifies as low risk without asking for each approval. Keep it off when the user wants to review every proposed change; higher-impact actions remain subject to the Agent's confirmation behavior. Examples of low-risk behavior can differ as the Agent evolves, so review the proposed activity and the firm's policy before enabling it. Leave the option off for users who should approve every change; enabling it should never be treated as authorization for higher-impact actions that still require confirmation.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-the-ai-generated-daily-briefing-151",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "What is the AI-generated daily briefing?",
-    "description": "The Daily briefing turns recent firm activity into quantified insights and direct follow-up paths. For example, it can say that four invoices are overdue, identify payments received, count completed…",
-    "answer": "The Daily briefing turns recent firm activity into quantified insights and direct follow-up paths. For example, it can say that four invoices are overdue, identify payments received, count completed tasks or stage changes, summarize document uploads and client messages, or identify a newly added client. The exact numbers come from the firm's current data and selected time window—not from a fixed sample.",
-    "steps": [
-      "Open Overview and choose Today, This week, or This month to set the briefing window.",
-      "Read each insight for the count, affected work, and business meaning—for example overdue invoices that need collection activity or uploaded documents that unblock an engagement.",
-      "Select View sources to inspect the records behind the generated summary.",
-      "Use the Next actions links, such as Communication or Documents, to move into the relevant work area.",
-      "Use the connected Overview module tiles as additional action paths: Billing or its Report link opens billing work, Clients opens the client list, Engagements and Bottlenecks open Workflow, and Team load opens the team area.",
-      "Select Re-Generate when the underlying activity has changed and a fresh summary is needed."
-    ],
-    "search": "The Daily briefing turns recent firm activity into quantified insights and direct follow-up paths. For example, it can say that four invoices are overdue, identify payments received, count completed tasks or stage changes, summarize document uploads and client messages, or identify a newly added client. The exact numbers come from the firm's current data and selected time window—not from a fixed sample. Open Overview and choose Today, This week, or This month to set the briefing window. Read each insight for the count, affected work, and business meaning—for example overdue invoices that need collection activity or uploaded documents that unblock an engagement. Select View sources to inspect the records behind the generated summary. Use the Next actions links, such as Communication or Documents, to move into the relevant work area. Use the connected Overview module tiles as additional action paths: Billing or its Report link opens billing work, Clients opens the client list, Engagements and Bottlenecks open Workflow, and Team load opens the team area. Select Re-Generate when the underlying activity has changed and a fresh summary is needed.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-use-is-tracked-in-ai-credits-152",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "What use is tracked in AI Credits?",
-    "description": "AI Credits power the smart features used across AssureOne, including the AI assistant, summaries, drafting, call transcripts, document reading and extraction, and product-specific AI assistance. Every…",
-    "answer": "AI Credits power the smart features used across AssureOne, including the AI assistant, summaries, drafting, call transcripts, document reading and extraction, and product-specific AI assistance. Every charge is itemized so the firm can see what consumed credits rather than relying only on the remaining balance.",
-    "steps": [
-      "Open Settings and choose AI Credits.",
-      "Review Available credits and the amount used during the last 30 days.",
-      "Filter activity to All products, Pro, Tax, Audit, or Books.",
-      "Choose All team members or one person to review individual usage.",
-      "Read each row's activity, feature, attributed user, product, date, and credits consumed; use the About control when more context is needed.",
-      "Open Platform Subscription when the firm needs invoices or receipts for purchased credits."
-    ],
-    "search": "AI Credits power the smart features used across AssureOne, including the AI assistant, summaries, drafting, call transcripts, document reading and extraction, and product-specific AI assistance. Every charge is itemized so the firm can see what consumed credits rather than relying only on the remaining balance. Open Settings and choose AI Credits. Review Available credits and the amount used during the last 30 days. Filter activity to All products, Pro, Tax, Audit, or Books. Choose All team members or one person to review individual usage. Read each row's activity, feature, attributed user, product, date, and credits consumed; use the About control when more context is needed. Open Platform Subscription when the firm needs invoices or receipts for purchased credits.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-much-do-ai-credits-cost-and-how-are-more-credits-purchased-153",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "How much do AI Credits cost, and how are more credits purchased?",
-    "description": "The purchase screen offers $25 for 2,500 credits, $50 for 5,000 credits, and $100 for 10,000 credits, plus a Custom amount option. Credits are billed at the underlying AI cost without a markup, and the…",
-    "answer": "The purchase screen offers $25 for 2,500 credits, $50 for 5,000 credits, and $100 for 10,000 credits, plus a Custom amount option. Credits are billed at the underlying AI cost without a markup, and the firm chooses when to add them.",
-    "steps": [
-      "Open Settings and choose AI Credits.",
-      "Review the remaining balance and usage for the last 30 days.",
-      "Select Buy credits.",
-      "Choose the $25, $50, or $100 pack, or enter a custom top-up amount.",
-      "Review the number of credits that will be added and the payment method secured by Stripe.",
-      "Complete the purchase only after confirming the amount; the related invoice or receipt is available in Platform Subscription."
-    ],
-    "search": "The purchase screen offers $25 for 2,500 credits, $50 for 5,000 credits, and $100 for 10,000 credits, plus a Custom amount option. Credits are billed at the underlying AI cost without a markup, and the firm chooses when to add them. Open Settings and choose AI Credits. Review the remaining balance and usage for the last 30 days. Select Buy credits. Choose the $25, $50, or $100 pack, or enter a custom top-up amount. Review the number of credits that will be added and the payment method secured by Stripe. Complete the purchase only after confirming the amount; the related invoice or receipt is available in Platform Subscription.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-are-ai-credits-replenished-automatically-or-included-as-a-monthly-allo-154",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "Are AI Credits replenished automatically or included as a monthly allowance?",
-    "description": "No. The firm controls when credits are purchased; AssurePro does not automatically charge the card or reset the balance as a monthly allowance. When the balance is running low, an administrator…",
-    "answer": "No. The firm controls when credits are purchased; AssurePro does not automatically charge the card or reset the balance as a monthly allowance. When the balance is running low, an administrator manually buys another pack or custom amount. As a planning benchmark, a firm with approximately five to ten users using AssurePro plus one additional AssureOne product typically consumes about $50 of AI Credits per month under normal usage, although actual consumption depends on the features and document volume used.",
-    "search": "No. The firm controls when credits are purchased; AssurePro does not automatically charge the card or reset the balance as a monthly allowance. When the balance is running low, an administrator manually buys another pack or custom amount. As a planning benchmark, a firm with approximately five to ten users using AssurePro plus one additional AssureOne product typically consumes about $50 of AI Credits per month under normal usage, although actual consumption depends on the features and document volume used.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-happens-when-the-firm-runs-out-of-ai-credits-155",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "What happens when the firm runs out of AI Credits?",
-    "description": "The remaining firm balance is shown in the application header and in Settings > AI Credits. When it reaches zero, activities that depend on AI Credits pause rather than creating an automatic card…",
-    "answer": "The remaining firm balance is shown in the application header and in Settings > AI Credits. When it reaches zero, activities that depend on AI Credits pause rather than creating an automatic card charge. An administrator can open AI Credits, select Buy credits, complete a pack or custom-amount purchase, and then resume the AI-dependent work.",
-    "more": [
-      "To avoid interruption, monitor Available credits and the last-30-days usage rather than only the header badge. If the balance reaches zero during document extraction, drafting, or another smart feature, buy credits, confirm the new balance, and restart the affected action so its result is not assumed to have completed."
-    ],
-    "search": "The remaining firm balance is shown in the application header and in Settings > AI Credits. When it reaches zero, activities that depend on AI Credits pause rather than creating an automatic card charge. An administrator can open AI Credits, select Buy credits, complete a pack or custom-amount purchase, and then resume the AI-dependent work. To avoid interruption, monitor Available credits and the last-30-days usage rather than only the header badge. If the balance reaches zero during document extraction, drafting, or another smart feature, buy credits, confirm the new balance, and restart the affected action so its result is not assumed to have completed.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-the-firm-set-a-spending-cap-or-get-an-alert-before-ai-credits-run--156",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "Can the firm set a spending cap or get an alert before AI Credits run out?",
-    "description": "Not yet. A spending cap and low-balance alert are planned for release by the end of this year. Until those controls are available, administrators should monitor the header balance, the last-30-days…",
-    "answer": "Not yet. A spending cap and low-balance alert are planned for release by the end of this year. Until those controls are available, administrators should monitor the header balance, the last-30-days usage total, and the per-user Credit activity filter, then purchase credits proactively when the balance approaches the firm's internal threshold.",
-    "more": [
-      "Until the planned controls are released, define an internal threshold—for example, enough credits for one normal week—assign one administrator to review usage, and check product and team-member filters regularly. This makes an unexpected spike attributable before the firm purchases another pack."
-    ],
-    "search": "Not yet. A spending cap and low-balance alert are planned for release by the end of this year. Until those controls are available, administrators should monitor the header balance, the last-30-days usage total, and the per-user Credit activity filter, then purchase credits proactively when the balance approaches the firm's internal threshold. Until the planned controls are released, define an internal threshold—for example, enough credits for one normal week—assign one administrator to review usage, and check product and team-member filters regularly. This makes an unexpected spike attributable before the firm purchases another pack.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-are-ai-credits-shared-across-the-firm-or-does-each-user-have-a-separat-157",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "Are AI Credits shared across the firm, or does each user have a separate allowance?",
-    "description": "AI Credits are pooled at the firm level rather than issued as a separate allowance for each seat. Administrators can still attribute consumption by selecting a team member in Settings > AI Credits and…",
-    "answer": "AI Credits are pooled at the firm level rather than issued as a separate allowance for each seat. Administrators can still attribute consumption by selecting a team member in Settings > AI Credits and reviewing the activity, feature, product, date, and credits charged. A per-user cap is planned alongside the spending-cap and low-balance controls.",
-    "more": [
-      "Because the balance is pooled, heavy use in Tax, Audit, Books, or Pro reduces the same firm balance. Product filters show where consumption occurred and the team-member filter shows who initiated it, helping administrators coach usage even before per-user caps are available."
-    ],
-    "search": "AI Credits are pooled at the firm level rather than issued as a separate allowance for each seat. Administrators can still attribute consumption by selecting a team member in Settings > AI Credits and reviewing the activity, feature, product, date, and credits charged. A per-user cap is planned alongside the spending-cap and low-balance controls. Because the balance is pooled, heavy use in Tax, Audit, Books, or Pro reduces the same firm balance. Product filters show where consumption occurred and the team-member filter shows who initiated it, helping administrators coach usage even before per-user caps are available.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-we-control-what-data-the-ai-agent-retains-158",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "Can we control what data the AI Agent retains?",
-    "description": "Yes. Each user controls retention through AI Agent Memory. Turn Memory on when the Agent should keep useful context for future conversations, or turn it off when nothing should be retained beyond the…",
-    "answer": "Yes. Each user controls retention through AI Agent Memory. Turn Memory on when the Agent should keep useful context for future conversations, or turn it off when nothing should be retained beyond the current session. The user can also inspect saved items, remove one item with Forget this, or erase all saved Agent context with Clear all memory.",
-    "more": [
-      "For example, keep a stable firm preference only when it will help future conversations, but forget temporary client-specific context when it is no longer appropriate. Review Memory periodically and use Clear all memory when the user wants to reset the Agent's retained context completely."
-    ],
-    "search": "Yes. Each user controls retention through AI Agent Memory. Turn Memory on when the Agent should keep useful context for future conversations, or turn it off when nothing should be retained beyond the current session. The user can also inspect saved items, remove one item with Forget this, or erase all saved Agent context with Clear all memory. For example, keep a stable firm preference only when it will help future conversations, but forget temporary client-specific context when it is no longer appropriate. Review Memory periodically and use Clear all memory when the user wants to reset the Agent's retained context completely.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-an-ai-agent-action-be-undone-and-is-there-an-audit-trail-of-what-i-159",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "Can an AI Agent action be undone, and is there an audit trail of what it did?",
-    "description": "An Agent action cannot be undone after it is completed, so the Agent asks for confirmation before higher-impact changes; Auto-approve low-risk actions is a separate user-controlled setting. Review the…",
-    "answer": "An Agent action cannot be undone after it is completed, so the Agent asks for confirmation before higher-impact changes; Auto-approve low-risk actions is a separate user-controlled setting. Review the proposed change carefully before confirming it. A full Agent activity trail is available through Settings > AI Credits, where administrators can inspect the activity, feature, attributed user, product, date, and credit usage.",
-    "search": "An Agent action cannot be undone after it is completed, so the Agent asks for confirmation before higher-impact changes; Auto-approve low-risk actions is a separate user-controlled setting. Review the proposed change carefully before confirming it. A full Agent activity trail is available through Settings > AI Credits, where administrators can inspect the activity, feature, attributed user, product, date, and credit usage.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-do-unused-ai-credits-expire-or-roll-over-160",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "Do unused AI Credits expire or roll over?",
-    "description": "AI Credits never expire and do not reset at the end of a month or subscription cycle. The unused balance remains available to the firm until it is consumed, so there is no rollover calculation and no…",
-    "answer": "AI Credits never expire and do not reset at the end of a month or subscription cycle. The unused balance remains available to the firm until it is consumed, so there is no rollover calculation and no need to spend credits before a renewal date.",
-    "more": [
-      "For example, if a firm buys 5,000 credits and uses only 3,500 during the month, the remaining 1,500 stay in the balance for later work. Since there is no monthly reset, administrators can buy based on expected usage rather than spending credits to avoid forfeiture."
-    ],
-    "search": "AI Credits never expire and do not reset at the end of a month or subscription cycle. The unused balance remains available to the firm until it is consumed, so there is no rollover calculation and no need to spend credits before a renewal date. For example, if a firm buys 5,000 credits and uses only 3,500 during the month, the remaining 1,500 stay in the balance for later work. Since there is no monthly reset, administrators can buy based on expected usage rather than spending credits to avoid forfeiture.",
+    "search": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select New Conversation. Choose the client and channel. Add the recipients, subject, message, or other details required by that channel. Review and send the conversation. Use the shared inbox to monitor its response and handling status.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

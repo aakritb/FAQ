@@ -42,7 +42,7 @@ window.ASSUREONE_ARTICLES.push(...[
   {
     "id": "pro-what-is-on-the-assurepro-overview-3",
     "product": "pro",
-    "category": "Getting Started",
+    "category": "Dashboard",
     "title": "What is on the AssurePro Overview?",
     "description": "Overview is the firm's operating dashboard. It combines an AI-generated daily briefing with configurable tiles and widgets for clients, engagements, team load, engagement letters, bottlenecks, billing,…",
     "answer": "Overview is the firm's operating dashboard. It combines an AI-generated daily briefing with configurable tiles and widgets for clients, engagements, team load, engagement letters, bottlenecks, billing, workflow mix, review status, service-line performance, top clients, current tasks, recent activity, and key filing dates. The figures are actionable: for example, Clients opens the client list, Engagements and Bottlenecks open Workflow, Team load opens Team & Roles, and the financial Report link opens Billing. Use Edit layout to choose and arrange the widgets most useful to the signed-in user.",
@@ -53,7 +53,7 @@ window.ASSUREONE_ARTICLES.push(...[
   {
     "id": "pro-can-the-overview-dashboard-be-customized-4",
     "product": "pro",
-    "category": "Getting Started",
+    "category": "Dashboard",
     "title": "Can the Overview dashboard be customized?",
     "description": "Yes. Select Edit layout to add or remove available widgets, drag them into the preferred order, and save the layout. This changes how the available Overview information is arranged for the user.",
     "answer": "Yes. Select Edit layout to add or remove available widgets, drag them into the preferred order, and save the layout. This changes how the available Overview information is arranged for the user.",
@@ -471,181 +471,6 @@ window.ASSUREONE_ARTICLES.push(...[
       "Use Sort to change the catalog order and Preview to inspect an item before adding it."
     ],
     "search": "The library can be searched by name, type, or tag, filtered by practice area, limited to items already added, sorted, or narrowed to one asset-type tab. Open Template Library from Admin. Choose All, Engagement Letter Templates, Workflows, Folders, or Messages. Search by name, type, or tag and select a practice area when needed. Turn on Added only to review the firm's activated items. Use Sort to change the catalog order and Preview to inspect an item before adding it.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-is-a-template-library-item-added-and-edited-29",
-    "product": "pro",
-    "category": "Settings",
-    "title": "How is a Template Library item added and edited?",
-    "description": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document…",
-    "answer": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it.",
-    "steps": [
-      "Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary.",
-      "Select Add to Library.",
-      "Use the provided Open in… link to go to the correct working area.",
-      "Review and configure the firm's copy before using it in live client work."
-    ],
-    "search": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it. Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary. Select Add to Library. Use the provided Open in… link to go to the correct working area. Review and configure the firm's copy before using it in live client work.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-does-each-template-library-type-provide-30",
-    "product": "pro",
-    "category": "Settings",
-    "title": "What does each Template Library type provide?",
-    "description": "Engagement Letter Templates include agreement prose, packages, services, and billing structures. Workflows provide stage-and-task sequences. Folders provide reusable per-client folder layouts. Messages…",
-    "answer": "Engagement Letter Templates include agreement prose, packages, services, and billing structures. Workflows provide stage-and-task sequences. Folders provide reusable per-client folder layouts. Messages provide reusable email or SMS wording for client touchpoints.",
-    "more": [
-      "For example, an Engagement Letter Template can provide packages and billing structures, while its linked Workflow supplies the operational stages and tasks and a Folder template supplies the document hierarchy. Message templates then standardize client reminders or other touchpoints around that work."
-    ],
-    "search": "Engagement Letter Templates include agreement prose, packages, services, and billing structures. Workflows provide stage-and-task sequences. Folders provide reusable per-client folder layouts. Messages provide reusable email or SMS wording for client touchpoints. For example, an Engagement Letter Template can provide packages and billing structures, while its linked Workflow supplies the operational stages and tasks and a Folder template supplies the document hierarchy. Message templates then standardize client reminders or other touchpoints around that work.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-is-a-new-client-added-directly-31",
-    "product": "pro",
-    "category": "Clients",
-    "title": "How is a new client added directly?",
-    "description": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline. Open Clients and select New Client, or choose Client from the global + New…",
-    "answer": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline.",
-    "steps": [
-      "Open Clients and select New Client, or choose Client from the global + New menu.",
-      "Enter the required Client Name and Entity Type.",
-      "Set the status, industry and sub-industry, assignees, folder template, country, and address as needed.",
-      "Optionally add the primary contact's name, phone number, and email.",
-      "Choose whether Send portal invite should remain selected.",
-      "Review the record and select Create Client."
-    ],
-    "search": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline. Open Clients and select New Client, or choose Client from the global + New menu. Enter the required Client Name and Entity Type. Set the status, industry and sub-industry, assignees, folder template, country, and address as needed. Optionally add the primary contact's name, phone number, and email. Choose whether Send portal invite should remain selected. Review the record and select Create Client.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-are-all-the-ways-to-add-a-client-32",
-    "product": "pro",
-    "category": "Clients",
-    "title": "What are all the ways to add a client?",
-    "description": "AssurePro provides several entry points for different onboarding situations: create one client directly, convert a qualified prospect by moving it to Won, import many clients from a CSV or Excel file,…",
-    "answer": "AssurePro provides several entry points for different onboarding situations: create one client directly, convert a qualified prospect by moving it to Won, import many clients from a CSV or Excel file, or create a missing client from the client picker while starting an engagement. The global + New menu is another shortcut to the direct-client form.",
-    "more": [
-      "Choose the path that preserves the correct history: direct creation for an established client, Won conversion for a lead that passed through the pipeline, import for a prepared migration file, or contextual creation when an engagement cannot proceed because the client is missing. All paths should end with a review of contacts, assignments, portal access, folders, and onboarding defaults."
-    ],
-    "search": "AssurePro provides several entry points for different onboarding situations: create one client directly, convert a qualified prospect by moving it to Won, import many clients from a CSV or Excel file, or create a missing client from the client picker while starting an engagement. The global + New menu is another shortcut to the direct-client form. Choose the path that preserves the correct history: direct creation for an established client, Won conversion for a lead that passed through the pipeline, import for a prepared migration file, or contextual creation when an engagement cannot proceed because the client is missing. All paths should end with a review of contacts, assignments, portal access, folders, and onboarding defaults.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-convert-a-prospect-into-a-client-33",
-    "product": "pro",
-    "category": "Clients",
-    "title": "How do I convert a prospect into a client?",
-    "description": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding. Open Prospects and find the…",
-    "answer": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding.",
-    "steps": [
-      "Open Prospects and find the lead in Board or List view.",
-      "Open the prospect record and review the company, contact, service interest, owners, deal value, and other details that should carry forward.",
-      "Open the Stage control and change the prospect to Won.",
-      "Open the resulting client record and complete any client-specific information, assignments, documents, portal access, or engagement setup that was not captured on the prospect."
-    ],
-    "search": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding. Open Prospects and find the lead in Board or List view. Open the prospect record and review the company, contact, service interest, owners, deal value, and other details that should carry forward. Open the Stage control and change the prospect to Won. Open the resulting client record and complete any client-specific information, assignments, documents, portal access, or engagement setup that was not captured on the prospect.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-import-multiple-clients-34",
-    "product": "pro",
-    "category": "Clients",
-    "title": "How do I import multiple clients?",
-    "description": "The client import accepts CSV and XLSX files and provides a downloadable CSV template. Open Clients. Select More ways to add clients, then Import from CSV. Download the CSV template if you need the…",
-    "answer": "The client import accepts CSV and XLSX files and provides a downloadable CSV template.",
-    "steps": [
-      "Open Clients.",
-      "Select More ways to add clients, then Import from CSV.",
-      "Download the CSV template if you need the expected structure, or prepare a supported .csv or .xlsx file.",
-      "Drop the file into the import dialog or select it with the file browser.",
-      "Follow the validation prompts shown for the uploaded file, then review the imported client records."
-    ],
-    "search": "The client import accepts CSV and XLSX files and provides a downloadable CSV template. Open Clients. Select More ways to add clients, then Import from CSV. Download the CSV template if you need the expected structure, or prepare a supported .csv or .xlsx file. Drop the file into the import dialog or select it with the file browser. Follow the validation prompts shown for the uploaded file, then review the imported client records.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-i-create-a-client-while-starting-an-engagement-35",
-    "product": "pro",
-    "category": "Clients",
-    "title": "Can I create a client while starting an engagement?",
-    "description": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing. Open Workflow and select New Engagement. Open the…",
-    "answer": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing.",
-    "more": [
-      "This is useful when staff discover that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not required in the contextual form."
-    ],
-    "steps": [
-      "Open Workflow and select New Engagement.",
-      "Open the Client chooser.",
-      "Select Create new client and complete the client record.",
-      "Return to the engagement setup, select the new client and an Engagement type, and continue creating the engagement."
-    ],
-    "search": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing. This is useful when staff discover that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not required in the contextual form. Open Workflow and select New Engagement. Open the Client chooser. Select Create new client and complete the client record. Return to the engagement setup, select the new client and an Engagement type, and continue creating the engagement.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-can-staff-see-in-a-client-workspace-36",
-    "product": "pro",
-    "category": "Clients",
-    "title": "What can staff see in a client workspace?",
-    "description": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention,…",
-    "answer": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention, engagements, open tasks, recent documents, balances, deadlines, client pending actions, communications, and recent activity.",
-    "more": [
-      "Use Overview for a concise operating summary and the specialized tabs for the full record. For example, an overdue invoice is reviewed in Billing, an unsigned package in Engagement Letter, missing source files in Documents, and the associated delivery plan in Engagements—without searching for the client again."
-    ],
-    "search": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention, engagements, open tasks, recent documents, balances, deadlines, client pending actions, communications, and recent activity. Use Overview for a concise operating summary and the specialized tabs for the full record. For example, an overdue invoice is reviewed in Billing, an unsigned package in Engagement Letter, missing source files in Documents, and the associated delivery plan in Engagements—without searching for the client again.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-information-is-kept-on-the-client-info-tab-37",
-    "product": "pro",
-    "category": "Clients",
-    "title": "What information is kept on the client Info tab?",
-    "description": "The Info tab includes profile completeness, contact information, entity details, contacts, tags, related entities, account roles, and notes. The displayed entity fields adjust to the client type; for…",
-    "answer": "The Info tab includes profile completeness, contact information, entity details, contacts, tags, related entities, account roles, and notes. The displayed entity fields adjust to the client type; for an individual, the interface can request items such as SSN, date of birth, filing status, address, and period.",
-    "more": [
-      "The tab separates the primary entity record from Contacts, Related Entities, Account Roles, Tags, and Notes. This matters when one organization has several people or related businesses: update the appropriate relationship record instead of overwriting the primary client details."
-    ],
-    "search": "The Info tab includes profile completeness, contact information, entity details, contacts, tags, related entities, account roles, and notes. The displayed entity fields adjust to the client type; for an individual, the interface can request items such as SSN, date of birth, filing status, address, and period. The tab separates the primary entity record from Contacts, Related Entities, Account Roles, Tags, and Notes. This matters when one organization has several people or related businesses: update the appropriate relationship record instead of overwriting the primary client details.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-a-client-have-multiple-contacts-and-relationship-details-38",
-    "product": "pro",
-    "category": "Clients",
-    "title": "Can a client have multiple contacts and relationship details?",
-    "description": "Yes. The client record includes a Contacts section as well as Related Entities and Account Roles. These areas keep the people and relationships associated with the client separate from the primary…",
-    "answer": "Yes. The client record includes a Contacts section as well as Related Entities and Account Roles. These areas keep the people and relationships associated with the client separate from the primary client record.",
-    "more": [
-      "For example, a business client can keep an owner, bookkeeper, payroll contact, and authorized signer as separate contacts, while Related Entities records connected companies and Account Roles clarifies each person's relationship. Portal access and communication recipients can then be managed against the appropriate contact."
-    ],
-    "search": "Yes. The client record includes a Contacts section as well as Related Entities and Account Roles. These areas keep the people and relationships associated with the client separate from the primary client record. For example, a business client can keep an owner, bookkeeper, payroll contact, and authorized signer as separate contacts, while Related Entities records connected companies and Account Roles clarifies each person's relationship. Portal access and communication recipients can then be managed against the appropriate contact.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-does-assurepro-help-complete-a-client-profile-39",
-    "product": "pro",
-    "category": "Clients",
-    "title": "How does AssurePro help complete a client profile?",
-    "description": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist.",
-    "answer": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist.",
-    "more": [
-      "Treat the checklist as an onboarding quality control rather than a cosmetic score. Completing the missing entity, address, contact, filing-period, and related fields improves downstream engagement setup, document requests, communications, agreements, invoices, and reports."
-    ],
-    "search": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist. Treat the checklist as an onboarding quality control rather than a cosmetic score. Completing the missing entity, address, contact, filing-period, and related fields improves downstream engagement setup, document requests, communications, agreements, invoices, and reports.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

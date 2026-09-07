@@ -1,506 +1,439 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-which-third-party-services-can-be-connected-161",
+    "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
     "product": "pro",
-    "category": "Integrations",
-    "title": "Which third-party services can be connected?",
-    "description": "Open Settings > Integrations to connect the external services the firm uses for communication, scheduling, documents, payments, and accounting. Email: connect Gmail or Outlook so authorized users can…",
-    "answer": "Open Settings > Integrations to connect the external services the firm uses for communication, scheduling, documents, payments, and accounting.",
+    "category": "Getting Started",
+    "title": "What is the difference between portal chat and SMS?",
+    "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
+    "answer": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace.",
     "more": [
-      "Choose the provider by workflow: Gmail or Outlook for firm email, Calendly or a calendar provider for meetings, Dropbox or OneDrive for documents, the payment processor for client collections, QuickBooks Online for paid-invoice accounting, Twilio for SMS, and ProdAff for its supported connection. A provider showing in the list is not enough—complete authorization and test the dependent workflow."
+      "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
+    ],
+    "search": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace. Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-can-the-communications-inbox-be-organized-118",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How can the communications inbox be organized?",
+    "description": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review…",
+    "answer": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review completed threads. Conversation labels such as Awaiting Reply, Needs Action, and FYI communicate the expected next step so staff can separate client follow-up from informational messages.",
+    "more": [
+      "A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response."
+    ],
+    "search": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review completed threads. Conversation labels such as Awaiting Reply, Needs Action, and FYI communicate the expected next step so staff can separate client follow-up from informational messages. A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-client-facing-emails-be-standardized-119",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Can client-facing emails be standardized?",
+    "description": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each…",
+    "answer": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template indicates its trigger and can expose editable subject, heading, introduction, body, button label, and footer content as applicable.",
+    "more": [
+      "For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups."
+    ],
+    "search": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template indicates its trigger and can expose editable subject, heading, introduction, body, button label, and footer content as applicable. For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-edit-and-test-an-automated-email-template-120",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I edit and test an automated email template?",
+    "description": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings…",
+    "answer": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording.",
+    "steps": [
+      "Open Settings and choose Email Templates.",
+      "Search for the email or select it from its functional group.",
+      "Edit the subject and the available message sections, inserting supported placeholders with the { } control.",
+      "Review the desktop and mobile previews.",
+      "Use Send test to me to inspect the current on-screen wording.",
+      "Save the final version and confirm it appears under the Edited filter."
+    ],
+    "search": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings and choose Email Templates. Search for the email or select it from its functional group. Edit the subject and the available message sections, inserting supported placeholders with the { } control. Review the desktop and mobile previews. Use Send test to me to inspect the current on-screen wording. Save the final version and confirm it appears under the Edited filter.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-administrators-audit-automated-email-delivery-121",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Can administrators audit automated email delivery?",
+    "description": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or…",
+    "answer": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded.",
+    "more": [
+      "Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a user's sent-mail folder."
+    ],
+    "search": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded. Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a user's sent-mail folder.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-investigate-an-email-that-was-not-delivered-122",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I investigate an email that was not delivered?",
+    "description": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or…",
+    "answer": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email.",
+    "more": [
+      "After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected."
     ],
     "steps": [
-      "Email: connect Gmail or Outlook so authorized users can work with firm email inside the supported AssurePro communication flows.",
-      "Scheduling and calendars: connect Calendly, Google Calendar, or Outlook Calendar for the supported meeting and calendar workflows.",
-      "Document storage: connect Dropbox or OneDrive so staff can import client files and use the available connected-folder workflows.",
-      "Payments: connect the available payment processor before sending invoices that clients should be able to pay electronically.",
-      "Accounting: connect QuickBooks Online when paid-invoice information should flow into the firm's accounting process.",
-      "SMS: connect Twilio and configure the firm's phone-number setup before using text-message workflows.",
-      "Other available connection: ProdAff can be connected for its supported workflow.",
-      "After authorizing a provider, return to the dependent AssurePro area and test the complete workflow; a Connected label confirms authorization, while a successful email, calendar event, import, payment, sync, or SMS confirms that the connection is usable."
+      "Open Settings and choose Email Log.",
+      "Search by recipient or subject.",
+      "Filter to Failed or Not sent.",
+      "Review the sent time, client, subject, message type, and any error text shown on the row.",
+      "Correct the underlying address, connection, or template issue before retrying the associated workflow."
     ],
-    "search": "Open Settings > Integrations to connect the external services the firm uses for communication, scheduling, documents, payments, and accounting. Choose the provider by workflow: Gmail or Outlook for firm email, Calendly or a calendar provider for meetings, Dropbox or OneDrive for documents, the payment processor for client collections, QuickBooks Online for paid-invoice accounting, Twilio for SMS, and ProdAff for its supported connection. A provider showing in the list is not enough—complete authorization and test the dependent workflow. Email: connect Gmail or Outlook so authorized users can work with firm email inside the supported AssurePro communication flows. Scheduling and calendars: connect Calendly, Google Calendar, or Outlook Calendar for the supported meeting and calendar workflows. Document storage: connect Dropbox or OneDrive so staff can import client files and use the available connected-folder workflows. Payments: connect the available payment processor before sending invoices that clients should be able to pay electronically. Accounting: connect QuickBooks Online when paid-invoice information should flow into the firm's accounting process. SMS: connect Twilio and configure the firm's phone-number setup before using text-message workflows. Other available connection: ProdAff can be connected for its supported workflow. After authorizing a provider, return to the dependent AssurePro area and test the complete workflow; a Connected label confirms authorization, while a successful email, calendar event, import, payment, sync, or SMS confirms that the connection is usable.",
+    "search": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email. After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or Not sent. Review the sent time, client, subject, message type, and any error text shown on the row. Correct the underlying address, connection, or template issue before retrying the associated workflow.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-do-i-connect-an-integration-162",
+    "id": "pro-what-reminders-can-be-automated-123",
     "product": "pro",
-    "category": "Integrations",
-    "title": "How do I connect an integration?",
-    "description": "Connections are managed by provider in Settings. Open Settings and choose Integrations. Find the email, calendar, storage, payment, accounting, messaging, or other provider needed by the firm. Select…",
-    "answer": "Connections are managed by provider in Settings.",
+    "category": "Getting Started",
+    "title": "What reminders can be automated?",
+    "description": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule…",
+    "answer": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule showing the first delay, repeat interval, and total number of reminders.",
     "more": [
-      "Use a firm-controlled provider account with the permissions required for the workflow, not an individual's temporary test account. After authorization, confirm the connected identity and run a safe test—for example, import a non-sensitive demo file, send an internal test email, or reconcile a controlled invoice—before enabling client-facing use."
+      "Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action."
     ],
+    "search": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule showing the first delay, repeat interval, and total number of reminders. Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-change-an-automatic-reminder-schedule-124",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I change an automatic reminder schedule?",
+    "description": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work. Open Settings and choose Reminders. Find Document requests, Unanswered…",
+    "answer": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work.",
     "steps": [
-      "Open Settings and choose Integrations.",
-      "Find the email, calendar, storage, payment, accounting, messaging, or other provider needed by the firm.",
-      "Select Connect and complete the provider's authorization flow.",
-      "Return to AssurePro and confirm that the provider shows as connected.",
-      "Test the corresponding workflow before relying on it for client work."
+      "Open Settings and choose Reminders.",
+      "Find Document requests, Unanswered messages, Tax organizers, or Signature requests.",
+      "Use the switch to enable or disable that reminder type.",
+      "Select Edit schedule and set the initial delay, repeat cadence, and total number of reminders offered by the editor.",
+      "Review the schedule summary shown on the reminder card."
     ],
-    "search": "Connections are managed by provider in Settings. Use a firm-controlled provider account with the permissions required for the workflow, not an individual's temporary test account. After authorization, confirm the connected identity and run a safe test—for example, import a non-sensitive demo file, send an internal test email, or reconcile a controlled invoice—before enabling client-facing use. Open Settings and choose Integrations. Find the email, calendar, storage, payment, accounting, messaging, or other provider needed by the firm. Select Connect and complete the provider's authorization flow. Return to AssurePro and confirm that the provider shows as connected. Test the corresponding workflow before relying on it for client work.",
+    "search": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work. Open Settings and choose Reminders. Find Document requests, Unanswered messages, Tax organizers, or Signature requests. Use the switch to enable or disable that reminder type. Select Edit schedule and set the initial delay, repeat cadence, and total number of reminders offered by the editor. Review the schedule summary shown on the reminder card.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-which-workflows-require-a-connected-service-163",
+    "id": "pro-can-assurepro-follow-up-when-a-client-has-not-responded-125",
     "product": "pro",
-    "category": "Integrations",
-    "title": "Which workflows require a connected service?",
-    "description": "Cloud document import requires Dropbox or OneDrive; client SMS requires Twilio and a firm phone number; calendar matching uses Calendly, Google Calendar, or Outlook Calendar; email connections use…",
-    "answer": "Cloud document import requires Dropbox or OneDrive; client SMS requires Twilio and a firm phone number; calendar matching uses Calendly, Google Calendar, or Outlook Calendar; email connections use Gmail or Outlook; client payment collection uses the payment processor; and paid-invoice accounting sync uses QuickBooks Online. The available behavior depends on the relevant connection being active.",
+    "category": "Getting Started",
+    "title": "Can AssurePro follow up when a client has not responded?",
+    "description": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type…",
+    "answer": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type separately so its cadence matches the firm's process.",
     "more": [
-      "Example: selecting Import without Dropbox or OneDrive sends the user toward Integrations; SMS cannot operate without Twilio and a linked number; and client payment collection depends on the payment processor. Document the owner of each connection because an expired authorization can interrupt several staff members at once."
+      "For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but staff should intervene when the sequence ends or the client explains a blocker."
     ],
-    "search": "Cloud document import requires Dropbox or OneDrive; client SMS requires Twilio and a firm phone number; calendar matching uses Calendly, Google Calendar, or Outlook Calendar; email connections use Gmail or Outlook; client payment collection uses the payment processor; and paid-invoice accounting sync uses QuickBooks Online. The available behavior depends on the relevant connection being active. Example: selecting Import without Dropbox or OneDrive sends the user toward Integrations; SMS cannot operate without Twilio and a linked number; and client payment collection depends on the payment processor. Document the owner of each connection because an expired authorization can interrupt several staff members at once.",
+    "search": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type separately so its cadence matches the firm's process. For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but staff should intervene when the sequence ends or the client explains a blocker.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-is-the-tax-connector-164",
+    "id": "pro-can-assurepro-send-and-receive-client-text-messages-126",
     "product": "pro",
-    "category": "Integrations",
-    "title": "What is the Tax Connector?",
-    "description": "Tax Connector approves Windows computers that import supported tax-software data into AssureTax. A pairing code expires after ten minutes, each approved computer receives its own revocable import-only…",
-    "answer": "Tax Connector approves Windows computers that import supported tax-software data into AssureTax. A pairing code expires after ten minutes, each approved computer receives its own revocable import-only credential, and the connected-computer list records status, last seen, credential expiry, platform, and app version.",
+    "category": "Getting Started",
+    "title": "Can AssurePro send and receive client text messages?",
+    "description": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration…",
+    "answer": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked.",
+    "more": [
+      "After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized staff."
+    ],
+    "search": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked. After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized staff.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-configure-a-firm-phone-number-for-sms-127",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I configure a firm phone number for SMS?",
+    "description": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add…",
+    "answer": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers.",
     "steps": [
-      "Open Settings and choose Tax Connector.",
-      "Enter the pairing code displayed by the Tax Connector within its ten-minute validity window.",
-      "Select Approve computer, or Deny when the request is not recognized.",
-      "Review the computer under Connected computers.",
-      "Use Revoke to remove an active computer; revocation takes effect on its next connector request."
+      "Open Settings and confirm Twilio is connected under Integrations.",
+      "Choose Phone Numbers and select Add number.",
+      "Link a number already owned in Twilio or follow the offered flow to add a new number.",
+      "Confirm the number and its SMS or MMS capabilities under Your numbers.",
+      "Complete A2P 10DLC registration for US carrier messaging and use Refresh status to verify the result."
     ],
-    "search": "Tax Connector approves Windows computers that import supported tax-software data into AssureTax. A pairing code expires after ten minutes, each approved computer receives its own revocable import-only credential, and the connected-computer list records status, last seen, credential expiry, platform, and app version. Open Settings and choose Tax Connector. Enter the pairing code displayed by the Tax Connector within its ten-minute validity window. Select Approve computer, or Deny when the request is not recognized. Review the computer under Connected computers. Use Revoke to remove an active computer; revocation takes effect on its next connector request.",
+    "search": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add number. Link a number already owned in Twilio or follow the offered flow to add a new number. Confirm the number and its SMS or MMS capabilities under Your numbers. Complete A2P 10DLC registration for US carrier messaging and use Refresh status to verify the result.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-how-are-shared-firm-and-client-credentials-handled-165",
+    "id": "pro-what-phone-number-does-a-client-see-when-the-firm-sends-an-sms-128",
     "product": "pro",
-    "category": "Users & Access",
-    "title": "How are shared firm and client credentials handled?",
-    "description": "Firm Credentials stores internal shared logins, while each client workspace has its own Credentials tab. The interface states that secrets are encrypted at rest with AES-256, only engagement owners can…",
-    "answer": "Firm Credentials stores internal shared logins, while each client workspace has its own Credentials tab. The interface states that secrets are encrypted at rest with AES-256, only engagement owners can reveal them, and every reveal is logged.",
-    "steps": [
-      "Open Settings and choose Firm Credentials for a firm-wide internal tool, or open the client's Credentials tab for a client-specific login.",
-      "Select Add your first credential or the corresponding add action.",
-      "Enter the service and credential details in the form.",
-      "Limit reveal access through engagement ownership and team permissions.",
-      "Use the recorded reveal history when access needs to be audited."
-    ],
-    "search": "Firm Credentials stores internal shared logins, while each client workspace has its own Credentials tab. The interface states that secrets are encrypted at rest with AES-256, only engagement owners can reveal them, and every reveal is logged. Open Settings and choose Firm Credentials for a firm-wide internal tool, or open the client's Credentials tab for a client-specific login. Select Add your first credential or the corresponding add action. Enter the service and credential details in the form. Limit reveal access through engagement ownership and team permissions. Use the recorded reveal history when access needs to be audited.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-can-users-manage-in-security-settings-166",
-    "product": "pro",
-    "category": "Integrations",
-    "title": "What can users manage in Security settings?",
-    "description": "Security currently provides password change for the signed-in user. It requires the current password, a new password of at least eight characters, and confirmation; show-password controls are available…",
-    "answer": "Security currently provides password change for the signed-in user. It requires the current password, a new password of at least eight characters, and confirmation; show-password controls are available for checking the entries.",
+    "category": "Getting Started",
+    "title": "What phone number does a client see when the firm sends an SMS?",
+    "description": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before…",
+    "answer": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before relying on it for US client messaging.",
     "more": [
-      "Use a unique password that meets the minimum length and the firm's internal policy, confirm the entry with the show controls when needed, and store it only in the firm's approved password manager. Changing the password affects the signed-in user's account; it does not change team roles, product access, or client portal credentials."
+      "If the firm owns several Twilio numbers, confirm which one is linked in Settings > Phone Numbers before telling clients what to save. The row also shows capabilities and registration status; a number that is not correctly registered may be filtered even though it appears in the firm's configuration."
     ],
-    "steps": [
-      "Open Settings and choose Security.",
-      "Enter the Current Password.",
-      "Enter and confirm the new password.",
-      "Select Change Password."
-    ],
-    "search": "Security currently provides password change for the signed-in user. It requires the current password, a new password of at least eight characters, and confirmation; show-password controls are available for checking the entries. Use a unique password that meets the minimum length and the firm's internal policy, confirm the entry with the show controls when needed, and store it only in the firm's approved password manager. Changing the password affects the signed-in user's account; it does not change team roles, product access, or client portal credentials. Open Settings and choose Security. Enter the Current Password. Enter and confirm the new password. Select Change Password.",
+    "search": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before relying on it for US client messaging. If the firm owns several Twilio numbers, confirm which one is linked in Settings > Phone Numbers before telling clients what to save. The row also shows capabilities and registration status; a number that is not correctly registered may be filtered even though it appears in the firm's configuration.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
   {
-    "id": "pro-what-account-security-control-is-available-in-assurepro-167",
+    "id": "pro-what-calendar-connections-are-supported-129",
     "product": "pro",
-    "category": "Integrations",
-    "title": "What account security control is available in AssurePro?",
-    "description": "Security settings let a signed-in user change their password by supplying the current password, a new password, and confirmation. Team access and roles are managed separately in Team & Roles.",
-    "answer": "Security settings let a signed-in user change their password by supplying the current password, a new password, and confirmation. Team access and roles are managed separately in Team & Roles.",
-    "more": [
-      "A user changes their own password under Settings > Security by entering the current password and matching new-password fields. Administrators manage who can access the platform, products, and permissions under Team & Roles; client access is managed from client contacts and portal invitations."
-    ],
-    "search": "Security settings let a signed-in user change their password by supplying the current password, a new password, and confirmation. Team access and roles are managed separately in Team & Roles. A user changes their own password under Settings > Security by entering the current password and matching new-password fields. Administrators manage who can access the platform, products, and permissions under Team & Roles; client access is managed from client contacts and portal invitations.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-are-notifications-and-report-alerts-controlled-168",
-    "product": "pro",
-    "category": "Integrations",
-    "title": "How are notifications and report alerts controlled?",
-    "description": "Notifications & Email lets a user independently choose email and in-app delivery for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Report alerts can…",
-    "answer": "Notifications & Email lets a user independently choose email and in-app delivery for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Report alerts can notify users when a KPI crosses a threshold or send a scheduled digest of key firm metrics.",
-    "more": [
-      "For example, enable both email and in-app delivery for overdue invoices, use in-app only for new uploads that staff review daily, and create a KPI threshold alert for an A/R or workflow measure that requires management attention. Scheduled digests are better for regular review than urgent exception handling."
-    ],
-    "search": "Notifications & Email lets a user independently choose email and in-app delivery for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Report alerts can notify users when a KPI crosses a threshold or send a scheduled digest of key firm metrics. For example, enable both email and in-app delivery for overdue invoices, use in-app only for new uploads that staff review daily, and create a KPI threshold alert for an A/R or workflow measure that requires management attention. Scheduled digests are better for regular review than urgent exception handling.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-where-is-firm-and-client-data-hosted-and-is-it-encrypted-169",
-    "product": "pro",
-    "category": "Integrations",
-    "title": "Where is firm and client data hosted, and is it encrypted?",
-    "description": "AssurePro runs on Amazon Web Services infrastructure. Firm and client data is encrypted both in transit and at rest. Firm Credentials and client Credentials state that stored secrets use AES-256…",
-    "answer": "AssurePro runs on Amazon Web Services infrastructure. Firm and client data is encrypted both in transit and at rest. Firm Credentials and client Credentials state that stored secrets use AES-256 encryption, restrict reveal access through engagement ownership and permissions, and log each reveal. Firms completing a security review should request the current architecture, retention, backup, and data-location documentation from their AssureOne contact.",
-    "search": "AssurePro runs on Amazon Web Services infrastructure. Firm and client data is encrypted both in transit and at rest. Firm Credentials and client Credentials state that stored secrets use AES-256 encryption, restrict reveal access through engagement ownership and permissions, and log each reveal. Firms completing a security review should request the current architecture, retention, backup, and data-location documentation from their AssureOne contact.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-does-assurepro-hold-specific-compliance-certifications-such-as-soc-2-170",
-    "product": "pro",
-    "category": "Integrations",
-    "title": "Does AssurePro hold specific compliance certifications, such as SOC 2?",
-    "description": "Formal compliance-certification details, including the current SOC 2 status, will be published soon. Because certification scope and report periods can change, firms should request the latest security…",
-    "answer": "Formal compliance-certification details, including the current SOC 2 status, will be published soon. Because certification scope and report periods can change, firms should request the latest security and compliance package from their AssureOne account team rather than relying on an older FAQ copy when completing vendor due diligence.",
-    "more": [
-      "When requesting the package, ask for the certification or report name, covered services, audit period, bridge letter if applicable, subservice-organization treatment, and any customer responsibilities. Review that current material with the firm's security or compliance lead rather than interpreting “published soon” as certification already being in force."
-    ],
-    "search": "Formal compliance-certification details, including the current SOC 2 status, will be published soon. Because certification scope and report periods can change, firms should request the latest security and compliance package from their AssureOne account team rather than relying on an older FAQ copy when completing vendor due diligence. When requesting the package, ask for the certification or report name, covered services, audit period, bridge letter if applicable, subservice-organization treatment, and any customer responsibilities. Review that current material with the firm's security or compliance lead rather than interpreting “published soon” as certification already being in force.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-is-multi-factor-authentication-available-for-staff-and-client-portal-l-171",
-    "product": "pro",
-    "category": "Users & Access",
-    "title": "Is multi-factor authentication available for staff and client portal logins?",
-    "description": "Yes. During account activation, both firm staff and client-portal users accept the invitation, set a password, and confirm their identity with a one-time code sent to the email address that received…",
-    "answer": "Yes. During account activation, both firm staff and client-portal users accept the invitation, set a password, and confirm their identity with a one-time code sent to the email address that received the invitation. Administrators should send invitations only to a verified address, and users should complete the code step from that mailbox before signing in.",
-    "more": [
-      "If the one-time code does not arrive, confirm the invited email address, check spam or filtering, and resend the invitation or code through the supported flow. Do not forward another person's code; the code is intended to confirm control of the exact mailbox that received the invitation."
-    ],
-    "search": "Yes. During account activation, both firm staff and client-portal users accept the invitation, set a password, and confirm their identity with a one-time code sent to the email address that received the invitation. Administrators should send invitations only to a verified address, and users should complete the code step from that mailbox before signing in. If the one-time code does not arrive, confirm the invited email address, check spam or filtering, and resend the invitation or code through the supported flow. Do not forward another person's code; the code is intended to confirm control of the exact mailbox that received the invitation.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-the-firm-export-its-data-if-it-cancels-its-assurepro-subscription-172",
-    "product": "pro",
-    "category": "Integrations",
-    "title": "Can the firm export its data if it cancels its AssurePro subscription?",
-    "description": "Yes. A firm can export its data before the AssurePro account is closed. Plan the export with the AssureOne account team early enough to identify the records, documents, reports, communications, billing…",
-    "answer": "Yes. A firm can export its data before the AssurePro account is closed. Plan the export with the AssureOne account team early enough to identify the records, documents, reports, communications, billing history, and other material the firm must retain; confirm the available formats and date range; download the approved exports; and validate that the files can be opened and reconciled before the closure date.",
-    "more": [
-      "Create a checklist and reconcile record counts after download—for example, compare exported clients, open engagements, documents, invoices, and communications with the corresponding AssurePro totals. Keep the account active until missing or unreadable files have been corrected and the firm has confirmed where the export will be retained."
-    ],
-    "search": "Yes. A firm can export its data before the AssurePro account is closed. Plan the export with the AssureOne account team early enough to identify the records, documents, reports, communications, billing history, and other material the firm must retain; confirm the available formats and date range; download the approved exports; and validate that the files can be opened and reconciled before the closure date. Create a checklist and reconcile record counts after download—for example, compare exported clients, open engagements, documents, invoices, and communications with the corresponding AssurePro totals. Keep the account active until missing or unreadable files have been corrected and the firm has confirmed where the export will be retained.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "books-does-assurebooks-integrate-with-quickbooks-0",
-    "product": "books",
-    "category": "Integrations",
-    "title": "Does AssureBooks integrate with QuickBooks?",
-    "description": "Yes. AssureBooks runs on top of QuickBooks Online with two-way synchronization. Transactions, the chart of accounts, and the customer, vendor, class, location, terms, and tax-rate lists are read from…",
-    "answer": "Yes. AssureBooks runs on top of QuickBooks Online with two-way synchronization. Transactions, the chart of accounts, and the customer, vendor, class, location, terms, and tax-rate lists are read from QuickBooks, and coded transactions, checks, payroll entries, and journal entries are posted back to it.",
-    "search": "Yes. AssureBooks runs on top of QuickBooks Online with two-way synchronization. Transactions, the chart of accounts, and the customer, vendor, class, location, terms, and tax-rate lists are read from QuickBooks, and coded transactions, checks, payroll entries, and journal entries are posted back to it.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-do-i-still-need-to-open-quickbooks-to-do-the-bookkeeping-1",
-    "product": "books",
-    "category": "Integrations",
-    "title": "Do I still need to open QuickBooks to do the bookkeeping?",
-    "description": "No. Coding, review, reconciliation, and reporting all happen in AssureBooks, and posted work syncs back to QuickBooks. A few settings remain QuickBooks-owned — the book closing date is the clearest…",
-    "answer": "No. Coding, review, reconciliation, and reporting all happen in AssureBooks, and posted work syncs back to QuickBooks. A few settings remain QuickBooks-owned — the book closing date is the clearest example, and AssureBooks reads it rather than setting it.",
-    "search": "No. Coding, review, reconciliation, and reporting all happen in AssureBooks, and posted work syncs back to QuickBooks. A few settings remain QuickBooks-owned — the book closing date is the clearest example, and AssureBooks reads it rather than setting it.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-can-a-client-s-own-bookkeeper-work-in-assurebooks-or-is-it-firm-only-2",
-    "product": "books",
-    "category": "Integrations",
-    "title": "Can a client's own bookkeeper work in AssureBooks, or is it firm-only?",
-    "description": "A client's bookkeeper can code transactions directly in AssureBooks. Clients themselves get a narrower view built around a dashboard, reports, and connecting their own QuickBooks; the bookkeeping and…",
-    "answer": "A client's bookkeeper can code transactions directly in AssureBooks. Clients themselves get a narrower view built around a dashboard, reports, and connecting their own QuickBooks; the bookkeeping and review screens stay with the firm.",
-    "search": "A client's bookkeeper can code transactions directly in AssureBooks. Clients themselves get a narrower view built around a dashboard, reports, and connecting their own QuickBooks; the bookkeeping and review screens stay with the firm.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-which-accounting-platforms-besides-quickbooks-are-supported-3",
-    "product": "books",
     "category": "Troubleshooting",
-    "title": "Which accounting platforms besides QuickBooks are supported?",
-    "description": "None yet. QuickBooks Online is the only accounting platform AssureBooks connects to today. Xero and Sage Intacct are the next two planned.",
-    "answer": "None yet. QuickBooks Online is the only accounting platform AssureBooks connects to today. Xero and Sage Intacct are the next two planned.",
-    "search": "None yet. QuickBooks Online is the only accounting platform AssureBooks connects to today. Xero and Sage Intacct are the next two planned.",
+    "title": "What calendar connections are supported?",
+    "description": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
+    "answer": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
+    "more": [
+      "Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to the relevant client; verify the client association so meeting context appears with the correct relationship."
+    ],
+    "search": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client. Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to the relevant client; verify the client association so meeting context appears with the correct relationship.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-will-assurebooks-eventually-replace-quickbooks-4",
-    "product": "books",
-    "category": "Integrations",
-    "title": "Will AssureBooks eventually replace QuickBooks?",
-    "description": "That is the stated direction, but not the current state. AssureBooks has no general ledger of its own, so a QuickBooks connection is required. A proprietary ledger — which would let a firm run a client…",
-    "answer": "That is the stated direction, but not the current state. AssureBooks has no general ledger of its own, so a QuickBooks connection is required. A proprietary ledger — which would let a firm run a client who is not on QuickBooks — remains on the roadmap.",
-    "search": "That is the stated direction, but not the current state. AssureBooks has no general ledger of its own, so a QuickBooks connection is required. A proprietary ledger — which would let a firm run a client who is not on QuickBooks — remains on the roadmap.",
+    "id": "pro-does-everything-a-client-sees-carry-the-firm-s-branding-or-does-assure-130",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Does everything a client sees carry the firm's branding, or does AssureOne branding appear anywhere?",
+    "description": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client…",
+    "answer": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
+    "search": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-does-assurebooks-connect-through-zapier-or-a-similar-service-5",
-    "product": "books",
-    "category": "Integrations",
-    "title": "Does AssureBooks connect through Zapier or a similar service?",
-    "description": "No. Each integration is built against the platform's own API rather than routed through Zapier or comparable middleware.",
-    "answer": "No. Each integration is built against the platform's own API rather than routed through Zapier or comparable middleware.",
-    "search": "No. Each integration is built against the platform's own API rather than routed through Zapier or comparable middleware.",
+    "id": "pro-how-is-the-reports-area-organized-131",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How is the Reports area organized?",
+    "description": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates…",
+    "answer": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates is the widget library and custom-dashboard builder.",
+    "more": [
+      "Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review."
+    ],
+    "search": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates is the widget library and custom-dashboard builder. Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-how-does-bank-activity-get-into-assurebooks-6",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "How does bank activity get into AssureBooks?",
-    "description": "Two ways, both live. Bank Accounts lists every QuickBooks bank and credit card account with its connection state, last sync, and a Connect action for linking it directly. Alternatively, Transaction…",
-    "answer": "Two ways, both live. Bank Accounts lists every QuickBooks bank and credit card account with its connection state, last sync, and a Connect action for linking it directly. Alternatively, Transaction Coding imports a statement: CSV and PDF are accepted up to 50MB per file. A CSV import requires choosing the bank account first, while PDF statements are parsed and mapped to accounts afterward.",
-    "search": "Two ways, both live. Bank Accounts lists every QuickBooks bank and credit card account with its connection state, last sync, and a Connect action for linking it directly. Alternatively, Transaction Coding imports a statement: CSV and PDF are accepted up to 50MB per file. A CSV import requires choosing the bank account first, while PDF statements are parsed and mapped to accounts afterward.",
+    "id": "pro-what-reports-are-available-on-overview-132",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "What reports are available on Overview?",
+    "description": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's…",
+    "answer": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's active and overdue counts, average days, and load.",
+    "more": [
+      "Revenue by service line explains where billed value comes from; Hours logged compares logged, billable, and billed time; A/R aging groups unpaid balances by age; Tasks completed shows operational throughput; Agreement funnel tracks signing; Top clients shows concentration; and Workflow stages shows volume, overdue work, age, and load."
+    ],
+    "search": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's active and overdue counts, average days, and load. Revenue by service line explains where billed value comes from; Hours logged compares logged, billable, and billed time; A/R aging groups unpaid balances by age; Tasks completed shows operational throughput; Agreement funnel tracks signing; Top clients shows concentration; and Workflow stages shows volume, overdue work, age, and load.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-which-banks-can-assurebooks-read-a-pdf-statement-from-7",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "Which banks can AssureBooks read a PDF statement from?",
-    "description": "PDF statement parsing is supported for Chase, Bank of America, Wells Fargo, US Bank, PNC, Capital One, TD Bank, Truist, American Express, and Discover.",
-    "answer": "PDF statement parsing is supported for Chase, Bank of America, Wells Fargo, US Bank, PNC, Capital One, TD Bank, Truist, American Express, and Discover.",
-    "search": "PDF statement parsing is supported for Chase, Bank of America, Wells Fargo, US Bank, PNC, Capital One, TD Bank, Truist, American Express, and Discover.",
+    "id": "pro-which-kpis-appear-at-the-top-of-reports-133",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Which KPIs appear at the top of Reports?",
+    "description": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received,…",
+    "answer": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received, Outstanding A/R identifies the unpaid balance, Billable Hours and Utilization describe productive time, and New Clients shows growth. Select MTD, QTD, YTD, 12M, or Custom before interpreting the values so every card reflects the intended period.",
+    "search": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received, Outstanding A/R identifies the unpaid balance, Billable Hours and Utilization describe productive time, and New Clients shows growth. Select MTD, QTD, YTD, 12M, or Custom before interpreting the values so every card reflects the intended period.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-how-does-assurebooks-categorize-a-transaction-8",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "How does AssureBooks categorize a transaction?",
-    "description": "Transaction Coding splits work into For Review, Categorized, and Excluded. Each row arrives with a suggested category drawn from the client's own QuickBooks history where a comparable transaction…",
-    "answer": "Transaction Coding splits work into For Review, Categorized, and Excluded. Each row arrives with a suggested category drawn from the client's own QuickBooks history where a comparable transaction exists, and from AI where none does. Every suggestion carries a confidence score, and the row also shows whether the transaction matches an existing record.",
-    "search": "Transaction Coding splits work into For Review, Categorized, and Excluded. Each row arrives with a suggested category drawn from the client's own QuickBooks history where a comparable transaction exists, and from AI where none does. Every suggestion carries a confidence score, and the row also shows whether the transaction matches an existing record.",
+    "id": "pro-how-do-i-review-and-export-a-report-134",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I review and export a report?",
+    "description": "Use the common period controls to keep the report cards and KPI context aligned. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when…",
+    "answer": "Use the common period controls to keep the report cards and KPI context aligned.",
+    "steps": [
+      "Open Reports and choose Overview or My Report.",
+      "Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required.",
+      "Review the relevant KPI or report card.",
+      "Select Full report on a card when a detailed view is available.",
+      "Review the resulting focused dashboard and its supporting widgets.",
+      "Select Export when an external copy is needed."
+    ],
+    "search": "Use the common period controls to keep the report cards and KPI context aligned. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required. Review the relevant KPI or report card. Select Full report on a card when a detailed view is available. Review the resulting focused dashboard and its supporting widgets. Select Export when an external copy is needed.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-what-do-the-confidence-scores-mean-9",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "What do the confidence scores mean?",
-    "description": "Confidence is banded: High covers 80–100%, Medium covers 50–79%, and Low covers 0–49%. The band is a filter in its own right, so a reviewer can work all high-confidence rows in bulk and give the…",
-    "answer": "Confidence is banded: High covers 80–100%, Medium covers 50–79%, and Low covers 0–49%. The band is a filter in its own right, so a reviewer can work all high-confidence rows in bulk and give the low-confidence ones individual attention.",
-    "search": "Confidence is banded: High covers 80–100%, Medium covers 50–79%, and Low covers 0–49%. The band is a filter in its own right, so a reviewer can work all high-confidence rows in bulk and give the low-confidence ones individual attention.",
+    "id": "pro-what-happens-when-i-select-full-report-on-an-overview-card-135",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "What happens when I select Full report on an Overview card?",
+    "description": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per…",
+    "answer": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per billed client, existing-versus-new split, cross-sell measures, revenue mix, and service-line detail can be reviewed together.",
+    "more": [
+      "The focused dashboard keeps the report period controls and Export action while adding supporting metrics and breakdowns. For example, Revenue Snapshot goes beyond the service-line chart with revenue per billed client, existing versus new client revenue, cross-sell revenue, revenue mix, and detailed service-line performance."
+    ],
+    "search": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per billed client, existing-versus-new split, cross-sell measures, revenue mix, and service-line detail can be reviewed together. The focused dashboard keeps the report period controls and Export action while adding supporting metrics and breakdowns. For example, Revenue Snapshot goes beyond the service-line chart with revenue per billed client, existing versus new client revenue, cross-sell revenue, revenue mix, and detailed service-line performance.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-how-do-i-narrow-a-long-list-of-transactions-10",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "How do I narrow a long list of transactions?",
-    "description": "Transaction Coding filters by date range — today, this week, this month, the last 30 days, or a custom span — and by customer, vendor, account, and confidence band. The visible set can be exported.",
-    "answer": "Transaction Coding filters by date range — today, this week, this month, the last 30 days, or a custom span — and by customer, vendor, account, and confidence band. The visible set can be exported.",
-    "search": "Transaction Coding filters by date range — today, this week, this month, the last 30 days, or a custom span — and by customer, vendor, account, and confidence band. The visible set can be exported.",
+    "id": "pro-can-report-periods-and-results-be-changed-or-exported-136",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Can report periods and results be changed or exported?",
+    "description": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active…",
+    "answer": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active and overdue work.",
+    "more": [
+      "Choose MTD for current-month operations, QTD for quarter performance, YTD for the current year, 12M for a rolling view, or Custom for a specific engagement or management period. Apply the period before opening Full report or Export so the detailed view and downloaded result use the intended dates."
+    ],
+    "search": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active and overdue work. Choose MTD for current-month operations, QTD for quarter performance, YTD for the current year, 12M for a rolling view, or Custom for a specific engagement or management period. Apply the period before opening Full report or Export so the detailed view and downloaded result use the intended dates.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-can-i-change-the-category-or-payee-that-assurebooks-suggested-11",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "Can I change the category or payee that AssureBooks suggested?",
-    "description": "Yes, in place on the row. The category picker searches the client's QuickBooks chart of accounts, labels each account with its type, shows sub-accounts nested beneath their parent, and can create a new…",
-    "answer": "Yes, in place on the row. The category picker searches the client's QuickBooks chart of accounts, labels each account with its type, shows sub-accounts nested beneath their parent, and can create a new account without leaving the screen. The payee and customer picker behaves the same way.",
-    "search": "Yes, in place on the row. The category picker searches the client's QuickBooks chart of accounts, labels each account with its type, shows sub-accounts nested beneath their parent, and can create a new account without leaving the screen. The payee and customer picker behaves the same way.",
+    "id": "pro-can-report-and-dashboard-data-be-exported-137",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Can report and dashboard data be exported?",
+    "description": "Yes. Report and dashboard results can be exported for review or use outside AssurePro. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export…",
+    "answer": "Yes. Report and dashboard results can be exported for review or use outside AssurePro.",
+    "steps": [
+      "Open Reports and choose Overview or My Report.",
+      "Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period.",
+      "Open a Full report when the export should come from a focused dashboard rather than the high-level Overview.",
+      "Confirm that the visible widgets and filters match the information needed.",
+      "Select Export and complete the download offered by the report.",
+      "Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data."
+    ],
+    "search": "Yes. Report and dashboard results can be exported for review or use outside AssurePro. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period. Open a Full report when the export should come from a focused dashboard rather than the high-level Overview. Confirm that the visible widgets and filters match the information needed. Select Export and complete the download offered by the report. Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-can-i-work-on-several-transactions-at-once-12",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "Can I work on several transactions at once?",
-    "description": "Yes. Rows can be selected in bulk to change the name, account, product or service, and customer together, and a reviewed batch can be posted to QuickBooks in a single action.",
-    "answer": "Yes. Rows can be selected in bulk to change the name, account, product or service, and customer together, and a reviewed batch can be posted to QuickBooks in a single action.",
-    "search": "Yes. Rows can be selected in bulk to change the name, account, product or service, and customer together, and a reviewed batch can be posted to QuickBooks in a single action.",
+    "id": "pro-what-is-available-in-my-report-138",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "What is available in My Report?",
+    "description": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for…",
+    "answer": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for everyone with report access. My dashboards contains the current user's saved dashboards built from Templates.",
+    "more": [
+      "Starter dashboards are maintained reference views; Shared with the firm contains dashboards published for all users with report access; My dashboards contains the signed-in user's private or owned work. The separation lets a firm keep standard management reporting while allowing personal analysis without changing everyone else's view."
+    ],
+    "search": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for everyone with report access. My dashboards contains the current user's saved dashboards built from Templates. Starter dashboards are maintained reference views; Shared with the firm contains dashboards published for all users with report access; My dashboards contains the signed-in user's private or owned work. The separation lets a firm keep standard management reporting while allowing personal analysis without changing everyone else's view.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-can-i-set-up-rules-so-recurring-transactions-code-themselves-13",
-    "product": "books",
-    "category": "AI & Automation",
-    "title": "Can I set up rules so recurring transactions code themselves?",
-    "description": "Yes. A rule matches on direction — money in or money out — and on one or all bank accounts, then on conditions such as a description containing particular text. It then sets the category and…",
-    "answer": "Yes. A rule matches on direction — money in or money out — and on one or all bank accounts, then on conditions such as a description containing particular text. It then sets the category and transaction type to apply. Rules are ordered by priority and the highest-priority match wins, and they only ever touch transactions that have not yet been reviewed. Turning on Auto-post lets a matching transaction categorize and push to the accounting software with no manual review at all.",
-    "search": "Yes. A rule matches on direction — money in or money out — and on one or all bank accounts, then on conditions such as a description containing particular text. It then sets the category and transaction type to apply. Rules are ordered by priority and the highest-priority match wins, and they only ever touch transactions that have not yet been reviewed. Turning on Auto-post lets a matching transaction categorize and push to the accounting software with no manual review at all.",
+    "id": "pro-which-starter-dashboards-are-available-139",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "Which starter dashboards are available?",
+    "description": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused…",
+    "answer": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused set of widgets for that operating question.",
+    "more": [
+      "Use Revenue Snapshot for growth and mix, Client Health for relationship attention, Billing & Collections for receivables, Agreement Pipeline for signing progress, Workflow & Capacity for delivery pressure, Task Dashboard for execution, Time & Utilization for effort, and Firm Pulse for a broad operating summary."
+    ],
+    "search": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused set of widgets for that operating question. Use Revenue Snapshot for growth and mix, Client Health for relationship attention, Billing & Collections for receivables, Agreement Pipeline for signing progress, Workflow & Capacity for delivery pressure, Task Dashboard for execution, Time & Utilization for effort, and Firm Pulse for a broad operating summary.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-can-assurebooks-read-check-images-14",
-    "product": "books",
-    "category": "Tasks",
-    "title": "Can AssureBooks read check images?",
-    "description": "Yes. Check accepts jpg, png, jpeg, pdf, and zip up to 50MB against a selected bank account, so a batch of scanned checks can be uploaded in one file. Extracted checks land in For Review with their…",
-    "answer": "Yes. Check accepts jpg, png, jpeg, pdf, and zip up to 50MB against a selected bank account, so a batch of scanned checks can be uploaded in one file. Extracted checks land in For Review with their date, check number, payee, and category for confirmation before they move to Categorized.",
-    "search": "Yes. Check accepts jpg, png, jpeg, pdf, and zip up to 50MB against a selected bank account, so a batch of scanned checks can be uploaded in one file. Extracted checks land in For Review with their date, check number, payee, and category for confirmation before they move to Categorized.",
+    "id": "pro-how-do-i-build-a-custom-dashboard-140",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "How do I build a custom dashboard?",
+    "description": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected. Open Reports and choose Templates. Search for a widget…",
+    "answer": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected.",
+    "steps": [
+      "Open Reports and choose Templates.",
+      "Search for a widget or filter the library by category.",
+      "Select the widgets needed for the dashboard.",
+      "Review the selected widgets, which appear in selection order.",
+      "Drag widgets into the preferred order and adjust their width or height where supported.",
+      "Select Save dashboard.",
+      "Enter a name and optional description, then decide whether to Share with the firm.",
+      "Save the dashboard; a shared dashboard is visible to everyone with report access."
+    ],
+    "search": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected. Open Reports and choose Templates. Search for a widget or filter the library by category. Select the widgets needed for the dashboard. Review the selected widgets, which appear in selection order. Drag widgets into the preferred order and adjust their width or height where supported. Select Save dashboard. Enter a name and optional description, then decide whether to Share with the firm. Save the dashboard; a shared dashboard is visible to everyone with report access.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-how-does-payroll-get-recorded-15",
-    "product": "books",
-    "category": "Tasks",
-    "title": "How does payroll get recorded?",
-    "description": "By uploading the payroll report. The first upload is mapped to the relevant accounts once; from then on each new report is turned into its journal entry automatically, leaving the entry to be reviewed…",
-    "answer": "By uploading the payroll report. The first upload is mapped to the relevant accounts once; from then on each new report is turned into its journal entry automatically, leaving the entry to be reviewed and saved.",
-    "search": "By uploading the payroll report. The first upload is mapped to the relevant accounts once; from then on each new report is turned into its journal entry automatically, leaving the entry to be reviewed and saved.",
+    "id": "pro-how-can-report-widgets-be-arranged-141",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "How can report widgets be arranged?",
+    "description": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or…",
+    "answer": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or removed before the dashboard is saved.",
+    "more": [
+      "A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order."
+    ],
+    "search": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or removed before the dashboard is saved. A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-does-assurebooks-run-payroll-or-connect-to-a-payroll-provider-16",
-    "product": "books",
-    "category": "Tasks",
-    "title": "Does AssureBooks run payroll or connect to a payroll provider?",
-    "description": "Neither. AssureBooks does not calculate payroll and does not pull data from a payroll system. It works from the report the payroll provider produces, which is what makes it usable for clients who…",
-    "answer": "Neither. AssureBooks does not calculate payroll and does not pull data from a payroll system. It works from the report the payroll provider produces, which is what makes it usable for clients who prefer not to share their payroll login.",
-    "search": "Neither. AssureBooks does not calculate payroll and does not pull data from a payroll system. It works from the report the payroll provider produces, which is what makes it usable for clients who prefer not to share their payroll login.",
+    "id": "pro-how-do-i-share-or-manage-a-custom-dashboard-142",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "How do I share or manage a custom dashboard?",
+    "description": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets,…",
+    "answer": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete. Starter dashboards can be duplicated into My dashboards before customization.",
+    "more": [
+      "Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it."
+    ],
+    "search": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete. Starter dashboards can be duplicated into My dashboards before customization. Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-what-happens-when-a-payroll-period-straddles-the-month-end-17",
-    "product": "books",
-    "category": "Tasks",
-    "title": "What happens when a payroll period straddles the month end?",
-    "description": "The accrual entry and its reversal can be generated for the portion that belongs to the earlier period, rather than being worked out by hand.",
-    "answer": "The accrual entry and its reversal can be generated for the portion that belongs to the earlier period, rather than being worked out by hand.",
-    "search": "The accrual entry and its reversal can be generated for the portion that belongs to the earlier period, rather than being worked out by hand.",
+    "id": "pro-which-report-widget-categories-can-i-use-143",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "Which report-widget categories can I use?",
+    "description": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client…",
+    "answer": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views appropriate to each category.",
+    "more": [
+      "For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures."
+    ],
+    "search": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views appropriate to each category. For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-can-i-post-journal-entries-directly-18",
-    "product": "books",
-    "category": "Tasks",
-    "title": "Can I post journal entries directly?",
-    "description": "Yes. Journal Entry lists every entry with its date, journal number, memo, and total, and supports viewing, editing, duplicating, and deleting. Entries created from an uploaded source document keep that…",
-    "answer": "Yes. Journal Entry lists every entry with its date, journal number, memo, and total, and supports viewing, editing, duplicating, and deleting. Entries created from an uploaded source document keep that document attached, and the attachment count shows on the row.",
-    "search": "Yes. Journal Entry lists every entry with its date, journal number, memo, and total, and supports viewing, editing, duplicating, and deleting. Entries created from an uploaded source document keep that document attached, and the attachment count shows on the row.",
+    "id": "pro-what-does-the-agreement-funnel-report-show-144",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "What does the agreement funnel report show?",
+    "description": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing…",
+    "answer": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing or stopping.",
+    "more": [
+      "Compare Sent to Viewed to identify delivery or attention problems, Viewed to Signed to identify decision friction, and the declined, expired, or cancelled counts to understand why packages left the active pipeline. Open the underlying engagement-letter work when a specific package needs follow-up."
+    ],
+    "search": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing or stopping. Compare Sent to Viewed to identify delivery or attention problems, Viewed to Signed to identify decision friction, and the declined, expired, or cancelled counts to understand why packages left the active pipeline. Open the underlying engagement-letter work when a specific package needs follow-up.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   },
   {
-    "id": "books-does-assurebooks-handle-prepaid-and-accrual-amortization-19",
-    "product": "books",
-    "category": "Tasks",
-    "title": "Does AssureBooks handle prepaid and accrual amortization?",
-    "description": "Yes, and the resulting entries are ordinary journal entries you can inspect. The Accrual Expenses Review and Prepaid Expense Review checks identify the transactions that need spreading, then generate…",
-    "answer": "Yes, and the resulting entries are ordinary journal entries you can inspect. The Accrual Expenses Review and Prepaid Expense Review checks identify the transactions that need spreading, then generate the monthly entries across the periods they cover, working from a configurable dollar threshold and the date range on the transaction.",
-    "search": "Yes, and the resulting entries are ordinary journal entries you can inspect. The Accrual Expenses Review and Prepaid Expense Review checks identify the transactions that need spreading, then generate the monthly entries across the periods they cover, working from a configurable dollar threshold and the date range on the transaction.",
+    "id": "pro-how-does-the-dashboard-help-identify-work-needing-attention-145",
+    "product": "pro",
+    "category": "Dashboard",
+    "title": "How does the dashboard help identify work needing attention?",
+    "description": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each…",
+    "answer": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each major tile links to the underlying operational screen.",
+    "more": [
+      "For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary."
+    ],
+    "search": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each major tile links to the underlying operational screen. For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary.",
     "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-how-does-accounts-payable-work-20",
-    "product": "books",
-    "category": "Tasks",
-    "title": "How does accounts payable work?",
-    "description": "Payables is organized as Inbox, Bills, Receipts, Vendors, Approvals, and Vendor Credits. The Inbox has its own email address, so a bill can be forwarded to it or uploaded directly, and documents…",
-    "answer": "Payables is organized as Inbox, Bills, Receipts, Vendors, Approvals, and Vendor Credits. The Inbox has its own email address, so a bill can be forwarded to it or uploaded directly, and documents waiting there are previewed alongside the list. Approvals separates work into Needs your approval, Upcoming, Approved by you, and Denied by you, and covers vendor credits as well as bills.",
-    "search": "Payables is organized as Inbox, Bills, Receipts, Vendors, Approvals, and Vendor Credits. The Inbox has its own email address, so a bill can be forwarded to it or uploaded directly, and documents waiting there are previewed alongside the list. Approvals separates work into Needs your approval, Upcoming, Approved by you, and Denied by you, and covers vendor credits as well as bills.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-what-about-accounts-receivable-21",
-    "product": "books",
-    "category": "Tasks",
-    "title": "What about accounts receivable?",
-    "description": "Receivables covers All Invoices, Recurring Invoices, Credit Memos, and Customers, with each customer carrying an open balance.",
-    "answer": "Receivables covers All Invoices, Recurring Invoices, Credit Memos, and Customers, with each customer carrying an open balance.",
-    "search": "Receivables covers All Invoices, Recurring Invoices, Credit Memos, and Customers, with each customer carrying an open balance.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-where-are-vendors-customers-and-the-chart-of-accounts-maintained-22",
-    "product": "books",
-    "category": "Tasks",
-    "title": "Where are vendors, customers, and the chart of accounts maintained?",
-    "description": "All Lists holds the ten master lists shared with QuickBooks: Products & Services, Payment Methods, Product Categories, Customers, Vendors, Chart of Accounts, Class, Location, Terms, and Tax Rates.…",
-    "answer": "All Lists holds the ten master lists shared with QuickBooks: Products & Services, Payment Methods, Product Categories, Customers, Vendors, Chart of Accounts, Class, Location, Terms, and Tax Rates. Edits made here synchronize back.",
-    "search": "All Lists holds the ten master lists shared with QuickBooks: Products & Services, Payment Methods, Product Categories, Customers, Vendors, Chart of Accounts, Class, Location, Terms, and Tax Rates. Edits made here synchronize back.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-can-duplicate-vendor-or-customer-names-be-merged-23",
-    "product": "books",
-    "category": "Tasks",
-    "title": "Can duplicate vendor or customer names be merged?",
-    "description": "Yes. Possible Duplicate Names surfaces names that look like variations of each other so the affected transactions can be reclassified onto one record and the duplicate retired.",
-    "answer": "Yes. Possible Duplicate Names surfaces names that look like variations of each other so the affected transactions can be reclassified onto one record and the duplicate retired.",
-    "search": "Yes. Possible Duplicate Names surfaces names that look like variations of each other so the affected transactions can be reclassified onto one record and the duplicate retired.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-what-does-assurebooks-check-at-the-transaction-level-24",
-    "product": "books",
-    "category": "Workflow",
-    "title": "What does AssureBooks check at the transaction level?",
-    "description": "Transactions Fix groups the exceptions into uncategorized entries, entries with no name attached, duplicate entries, entries posted to a parent GL account that belongs in a sub-account, and…",
-    "answer": "Transactions Fix groups the exceptions into uncategorized entries, entries with no name attached, duplicate entries, entries posted to a parent GL account that belongs in a sub-account, and misclassification rules, which catch a vendor or customer recorded across more than one account. Each group carries its own count, and the exceptions can be corrected from the list and exported to Excel.",
-    "search": "Transactions Fix groups the exceptions into uncategorized entries, entries with no name attached, duplicate entries, entries posted to a parent GL account that belongs in a sub-account, and misclassification rules, which catch a vendor or customer recorded across more than one account. Each group carries its own count, and the exceptions can be corrected from the list and exported to Excel.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-what-does-assurebooks-check-on-the-profit-and-loss-25",
-    "product": "books",
-    "category": "Workflow",
-    "title": "What does AssureBooks check on the profit and loss?",
-    "description": "Three checks: a GL consistency review for entries sitting in the wrong account, a new entities review that flags any customer or vendor first seen in the period, and account balance checks for accounts…",
-    "answer": "Three checks: a GL consistency review for entries sitting in the wrong account, a new entities review that flags any customer or vendor first seen in the period, and account balance checks for accounts carrying a balance in the direction they should not — an expense account in credit, for instance. Results can be read by payee or by GL.",
-    "search": "Three checks: a GL consistency review for entries sitting in the wrong account, a new entities review that flags any customer or vendor first seen in the period, and account balance checks for accounts carrying a balance in the direction they should not — an expense account in credit, for instance. Results can be read by payee or by GL.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-what-does-assurebooks-check-on-the-balance-sheet-26",
-    "product": "books",
-    "category": "Workflow",
-    "title": "What does AssureBooks check on the balance sheet?",
-    "description": "Nine checks: unreconciled entries, undeposited funds, aged payables, aged receivables, account balance checks, fixed assets, equity — owner contributions and distributions — accrual expenses, and…",
-    "answer": "Nine checks: unreconciled entries, undeposited funds, aged payables, aged receivables, account balance checks, fixed assets, equity — owner contributions and distributions — accrual expenses, and prepaid expenses. Each is scoped to a month and year or a custom range, and unreconciled entries link straight through to the account's bank register.",
-    "search": "Nine checks: unreconciled entries, undeposited funds, aged payables, aged receivables, account balance checks, fixed assets, equity — owner contributions and distributions — accrual expenses, and prepaid expenses. Each is scoped to a month and year or a custom range, and unreconciled entries link straight through to the account's bank register.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
-  },
-  {
-    "id": "books-does-assurebooks-correct-anything-on-its-own-27",
-    "product": "books",
-    "category": "Workflow",
-    "title": "Does AssureBooks correct anything on its own?",
-    "description": "No, and that is deliberate. The checks identify and group what needs attention; a bookkeeper or reviewer decides and applies every correction. The one exception is a rule the firm has explicitly set to…",
-    "answer": "No, and that is deliberate. The checks identify and group what needs attention; a bookkeeper or reviewer decides and applies every correction. The one exception is a rule the firm has explicitly set to auto-post.",
-    "search": "No, and that is deliberate. The checks identify and group what needs attention; a bookkeeper or reviewer decides and applies every correction. The one exception is a rule the firm has explicitly set to auto-post.",
-    "read": "2 min",
-    "path": "assurebooks/index.html"
+    "path": "assurepro/index.html"
   }
 ]);

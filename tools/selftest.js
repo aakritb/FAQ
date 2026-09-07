@@ -31,11 +31,18 @@ const COPY = ["index.html", "article.html", "vercel.json",
   "tools/qc.js", "tools/sync-articles.js", "tools/add-copyright.js",
   "tools/fix-merged-build.js", "tools/add-clean-links.js",
   "tools/remove-discovery-rails.js", "tools/static-hero-headline.js",
-  "tools/trim-page-chrome.js",
+  "tools/trim-page-chrome.js", "tools/set-published-products.js",
+  "tools/add-dashboard-category.js",
   "tools/lib/regions.js"];
 
 function sandbox() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "assureone-selftest-"));
+  // drafts hold the answers an unpublished product will be restored from
+  const drafts = path.join(ROOT, "drafts");
+  if (fs.existsSync(drafts)) {
+    fs.mkdirSync(path.join(dir, "drafts"), { recursive: true });
+    for (const f of fs.readdirSync(drafts)) fs.copyFileSync(path.join(drafts, f), path.join(dir, "drafts", f));
+  }
   for (const rel of COPY) {
     const to = path.join(dir, rel);
     fs.mkdirSync(path.dirname(to), { recursive: true });
@@ -113,9 +120,9 @@ const SCENARIOS = [
   {
     name: "an answer changed on a product page but the index not rebuilt",
     why: "the hub would search and display text the product page no longer says",
-    break: (dir) => edit(dir, "assuretax/index.html", (h) =>
-      h.replace('a:"Individual (1040), trust (1041), partnership (1065), and corporate (1120 and 1120S) organizers can all be created."',
-                'a:"Something else entirely, long enough to be a real answer."')),
+    break: (dir) => edit(dir, "assurepro/index.html", (h) =>
+      h.replace('a:"AssurePro is AssureOne\'s practice-management foundation.',
+                'a:"Something else entirely, long enough to be a real answer.')),
     expect: [
       { tool: "qc.js", mustFail: true, mentions: "differs from the product page" },
       { tool: "sync-articles.js", mustFail: false, thenRestores: "Something else entirely", inAnyOf: ["questions-1.js", "questions-2.js", "questions-3.js", "questions-4.js", "questions-5.js", "questions-6.js"] },
@@ -191,6 +198,28 @@ const SCENARIOS = [
     expect: [
       { tool: "qc.js", mustFail: true, mentions: "Show nearby articles" },
       { tool: "fix-merged-build.js", mustFail: false, thenRestores: "'Show fewer articles'", in: "article.html" },
+    ],
+  },
+  {
+    name: "an unpublished product's answers put back on its live page",
+    why: "the whole point is that nobody reads them before review",
+    break: (dir) => {
+      const draft = fs.readFileSync(path.join(ROOT, "drafts", "assurebooks-index.html"), "utf8");
+      fs.writeFileSync(path.join(dir, "assurebooks", "index.html"), draft);
+    },
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "unpublished" },
+      { tool: "set-published-products.js", mustFail: false, thenRestores: "Coming soon", in: "assurebooks/index.html" },
+    ],
+  },
+  {
+    name: "the Dashboard category refiled back into Getting Started",
+    why: "eleven dashboard questions would go back to hiding in a 39-question bucket",
+    break: (dir) => edit(dir, "questions-1.js", (h) =>
+      h.replace(/"category": "Dashboard"/g, '"category": "Getting Started"')),
+    expect: [
+      { tool: "qc.js", mustFail: false },
+      { tool: "add-dashboard-category.js", mustFail: false, thenRestores: '"category": "Dashboard"', inAnyOf: ["questions-1.js", "questions-2.js", "questions-3.js", "questions-4.js", "questions-5.js", "questions-6.js"] },
     ],
   },
   {

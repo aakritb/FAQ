@@ -24,13 +24,19 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const CHUNKS = ["questions-1.js", "questions-2.js", "questions-3.js",
   "questions-4.js", "questions-5.js", "questions-6.js"];
-const PRODUCT_ORDER = ["pro", "books", "tax"];
-const DIR_FOR = { pro: "assurepro", books: "assurebooks", tax: "assuretax" };
+
+const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
+/* Only products whose pages still carry their questions are indexed. A product
+ * taken off the site by tools/set-published-products.js has no FAQS array, so
+ * its answers cannot be searched on the hub or opened at article.html either.
+ * Its records stay in drafts/ and come back when it is published. */
+const ALL_PRODUCTS = { pro: "assurepro", books: "assurebooks", tax: "assuretax" };
+const DIR_FOR = Object.fromEntries(Object.entries(ALL_PRODUCTS).filter(
+  ([, dir]) => read(dir + "/index.html").includes("const FAQS=")));
+const PRODUCT_ORDER = Object.keys(ALL_PRODUCTS).filter((k) => DIR_FOR[k]);
 
 const FIELD_ORDER = ["id", "product", "category", "title", "description",
   "answer", "more", "steps", "search", "read", "path"];
-
-const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 
 /* -------------------------------------------------------------- read input */
 
@@ -128,8 +134,12 @@ function derive(existing, faqs) {
     }
   }
 
-  const removed = existing.filter((a) => !seen.has(a.product + "||" + a.title.trim()));
-  return { articles, added, removed };
+  // Records for a product that is no longer indexed are withdrawn, not deleted:
+  // they are still in drafts/ and return when the product is published.
+  const withdrawn = existing.filter((a) => !PRODUCT_ORDER.includes(a.product));
+  const removed = existing.filter((a) =>
+    PRODUCT_ORDER.includes(a.product) && !seen.has(a.product + "||" + a.title.trim()));
+  return { articles, added, removed, withdrawn };
 }
 
 /* ------------------------------------------------------------------- write */
@@ -178,7 +188,13 @@ const existing = readExisting();
 const faqs = readProductFaqs();
 console.log(`product pages: ${PRODUCT_ORDER.map((k) => k + "=" + (faqs[k] || []).length).join(" ")}`);
 
-const { articles, added, removed } = derive(existing, faqs);
+const { articles, added, removed, withdrawn } = derive(existing, faqs);
+console.log(`indexing: ${PRODUCT_ORDER.join(", ") || "nothing"}`);
+if (withdrawn.length) {
+  const by = {};
+  withdrawn.forEach((a) => { by[a.product] = (by[a.product] || 0) + 1; });
+  console.log(`  ok  withdrawn from the index: ${Object.entries(by).map(([p, n]) => `${p}=${n}`).join(" ")} (kept in drafts/)`);
+}
 console.log(`  ok  ${articles.length} articles derived (was ${existing.length})`);
 for (const a of removed) console.log(`      removed: ${a.product} | ${a.title}`);
 for (const a of added) console.log(`      added:   ${a.product} | ${a.title}  ->  ${a.id}`);

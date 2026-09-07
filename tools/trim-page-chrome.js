@@ -95,6 +95,33 @@ const notes = [];
   else notes.push("index.html: already done");
 }
 
+/* ------------------------------ 3. the "Browse the ... help center" link */
+{
+  const file = path.join(ROOT, "index.html");
+  let html = fs.readFileSync(file, "utf8");
+  const before = html;
+
+  // markup
+  html = html.replace(/<a class="hc-product-page" id="hc-product-page"[^>]*><\/a>/g, "");
+  // The block in render() that positioned and labelled it. Anchored on the
+  // line that follows, because a non-greedy match to the next closing brace
+  // stops at the nested if(show){...} and orphans the outer one.
+  html = html.replace(/\n?\s*if\(productPageLink\)\{[\s\S]*?\n(?=\s*clear\.style\.display=)/, "\n");
+  // the guard in the empty-index branch, and the lookup itself
+  html = html.replace(/\n?\s*if\(productPageLink\) productPageLink\.style\.display='none';/g, "");
+  html = html.replace(/\n?\s*const productPageLink=document\.getElementById\('hc-product-page'\);/g, "");
+  // css
+  html = html.replace(/\.hc-product-page\{[^}]*\}/g, "");
+  html = html.replace(/\.hc-product-page:hover,\.hc-product-page:focus-visible\{[^}]*\}/g, "");
+  html = html.replace(/@media\(max-width:600px\)\{\.hc-product-page\{[^}]*\}\}/g, "");
+
+  // That link was the only rule in one media query, so the query is now empty.
+  html = html.replace(/@media\([^)]*\)\{\s*\}/g, "");
+
+  if (html !== before) { fs.writeFileSync(file, html); notes.push("index.html: the product help-centre link removed"); }
+  else notes.push("index.html: product link already gone");
+}
+
 notes.forEach((n) => console.log("  ok  " + n));
 
 /* ------------------------------------------------------------- checks */
@@ -118,6 +145,10 @@ const problems = [];
   if (hub.includes("One knowledge base for your entire firm")) problems.push("index.html: the heading text is still present");
   // the count still has to exist, or every render throws
   if (!hasMarkup(hub, 'id="hc-count"')) problems.push("index.html: the result count element is gone; render() would throw");
+  if (/productPageLink|hc-product-page/.test(hub))
+    problems.push("index.html: a reference to the removed product help-centre link remains");
+  if (/@media\([^)]*\)\{\s*\}/.test(hub))
+    problems.push("index.html: an empty @media block was left behind");
   if (!hasScript(hub, "count.textContent=active")) problems.push("index.html: the count is no longer written");
 }
 if (problems.length) throw new Error("checks failed:\n  " + problems.join("\n  "));

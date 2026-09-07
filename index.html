@@ -77,7 +77,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 
 /* Slimmer hero + search that stays reachable on scroll */
 .topbar{position:sticky;top:0;z-index:30}.hc-hero{padding:26px 28px 30px}.hc-eyebrow{margin:0 0 6px;font-size:.7rem}.hc-hero h1{font-size:clamp(1.7rem,3.1vw,2.45rem);margin:0 0 15px;min-height:2.08em}.hc-search{height:52px;font-size:.98rem;box-shadow:0 12px 30px rgba(5,6,21,.16)}.hc-mini-search{margin-left:auto;margin-right:18px;position:relative;display:flex;align-items:center;width:min(340px,34vw);opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease}.topbar.hc-stuck .hc-mini-search{opacity:1;transform:none;pointer-events:auto}.hc-mini-search svg{position:absolute;left:12px;width:15px;height:15px;color:#8a8ea6;pointer-events:none}.hc-mini-search input{width:100%;height:38px;border:1px solid #e0dfea;border-radius:9px;background:#f7f7fb;color:var(--ink);font:inherit;font-size:.88rem;padding:0 12px 0 34px;outline:none}.hc-mini-search input:focus{border-color:var(--violet);background:#fff;box-shadow:0 0 0 3px rgba(105,87,229,.13)}@media(max-width:900px){.hc-mini-search{width:min(240px,42vw);margin-right:12px}}@media(max-width:720px){.hc-mini-search{width:auto;flex:1;margin-right:0}.topbar.hc-stuck .hc-top-actions{display:none}.topbar.hc-stuck .topbar-inner{gap:12px}.hc-mini-search input{height:36px;font-size:.85rem}}@media(prefers-reduced-motion:reduce){.hc-mini-search{transition:none}}
-.hc-product-page{margin-left:auto;color:var(--violet-dark);text-decoration:none;font-size:.8rem;font-weight:700;white-space:nowrap}.hc-product-page:hover,.hc-product-page:focus-visible{color:var(--violet);outline:none}.hc-section-head{align-items:center}@media(max-width:600px){.hc-product-page{font-size:.75rem}}
+.hc-section-head{align-items:center}
 
 /* hdr-support:start */
 /* header support control: open a mail app, or copy the address */
@@ -122,11 +122,11 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
     <div class="hc-products" id="hc-products">
       <button class="hc-product active" type="button" data-product="">All products</button>
       <button class="hc-product" type="button" data-product="pro">AssurePro</button>
-      <button class="hc-product" type="button" data-product="tax">AssureTax</button>
-      <button class="hc-product" type="button" data-product="audit">AssureAudit</button>
-      <button class="hc-product" type="button" data-product="books">AssureBooks</button>
+      <button class="hc-product hc-product-soon" type="button" data-product="tax" data-soon="assuretax">AssureTax<span class="hc-soon">Soon</span></button>
+      <button class="hc-product hc-product-soon" type="button" data-product="audit" data-soon="assureaudit">AssureAudit<span class="hc-soon">Soon</span></button>
+      <button class="hc-product hc-product-soon" type="button" data-product="books" data-soon="assurebooks">AssureBooks<span class="hc-soon">Soon</span></button>
     </div>
-    <div class="hc-section-head"><h3 id="hc-results-title">All help articles</h3><span class="hc-count" id="hc-count"></span><a class="hc-product-page" id="hc-product-page" href="#" style="display:none"></a><button class="hc-clear" id="hc-clear" type="button">Clear filters</button></div>
+    <div class="hc-section-head"><h3 id="hc-results-title">All help articles</h3><span class="hc-count" id="hc-count"></span><button class="hc-clear" id="hc-clear" type="button">Clear filters</button></div>
     <div class="hc-articles" id="hc-articles"></div>
     <div class="hc-empty" id="hc-empty"><strong>No exact match found</strong>Try a shorter phrase, another category, or email support@assureone.ai.</div>
     <button class="hc-load-more" id="hc-load-more" type="button">Load more articles</button>
@@ -165,7 +165,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   function fallbackCopy(value){const field=document.createElement('textarea');field.value=value;field.setAttribute('readonly','');field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);field.select();let copied=false;try{copied=document.execCommand('copy');}catch(e){}field.remove();return copied;}
   function showCopied(button){const original=button.dataset.originalLabel||button.textContent;button.dataset.originalLabel=original;button.textContent='Email copied';button.classList.add('copied');const note=button.parentElement.querySelector('.hc-copy-note');if(note)note.textContent=supportEmail+' copied';window.clearTimeout(button._copyTimer);button._copyTimer=window.setTimeout(()=>{button.textContent=original;button.classList.remove('copied');if(note)note.textContent='';},2200);}
   document.querySelectorAll('[data-copy-support]').forEach(button=>button.addEventListener('click',()=>{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(supportEmail).then(()=>showCopied(button),()=>{if(fallbackCopy(supportEmail))showCopied(button);});}else if(fallbackCopy(supportEmail)){showCopied(button);}}));
-  const categories=['All Articles','Getting Started','Clients','Engagements','Workflow','Documents','Tasks','Billing','AI & Automation','Integrations','Users & Access','Settings','Troubleshooting'];
+  const categories=['All Articles','Getting Started','Dashboard','Clients','Engagements','Workflow','Documents','Tasks','Billing','AI & Automation','Integrations','Users & Access','Settings','Troubleshooting'];
   const articles=window.ASSUREONE_ARTICLES||[];
   const names={pro:'AssurePro',tax:'AssureTax',audit:'AssureAudit',books:'AssureBooks'};
   let category='All Articles', product='', query='', visibleLimit=12;
@@ -175,7 +175,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   const count=document.getElementById('hc-count');
   const title=document.getElementById('hc-results-title');
   const clear=document.getElementById('hc-clear');
-  const productPageLink=document.getElementById('hc-product-page');
   const loadMore=document.getElementById('hc-load-more');
   function esc(value){return String(value).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));}
   function link(article){return 'article.html?id='+encodeURIComponent(article.id);}
@@ -228,7 +227,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
       clear.style.display='none';
       loadMore.style.display='none';
       empty.style.display='none';
-      if(productPageLink) productPageLink.style.display='none';
       list.innerHTML='<div class="hc-noindex"><strong>The article index did not load</strong>'+
         '<p>This can happen if a browser extension or network blocked part of the page. '+
         'Reload to try again, or open a product help centre below \u2014 those pages work on their own. '+
@@ -244,15 +242,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
     const result=filtered();
     const active=query||product||category!=='All Articles';
     title.textContent=query?'Search results':(product?names[product]:(category!=='All Articles'?category:'All help articles'));
-    if(productPageLink){
-      const dirs={pro:'assurepro',tax:'assuretax',audit:'assureaudit',books:'assurebooks'};
-      const show=product&&!query;
-      productPageLink.style.display=show?'inline-block':'none';
-      if(show){
-        productPageLink.href=dirs[product]+'/index.html';
-        productPageLink.textContent='Browse the '+names[product]+' help center';
-      }
-    }
     clear.style.display=active?'inline-block':'none';
     count.textContent=active?result.length+' result'+(result.length===1?'':'s'):'';
     const shown=result.slice(0,visibleLimit);
@@ -273,7 +262,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   const catWrap=document.getElementById('hc-categories');
   catWrap.innerHTML=categories.map(c=>'<button class="hc-category'+(c==='All Articles'?' active':'')+'" type="button" data-category="'+c+'">'+c+'</button>').join('');
   catWrap.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;category=b.dataset.category;visibleLimit=12;render();});
-  document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});
+  document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.soon){location.href=b.dataset.soon+'/index.html';return;}product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});
   search.addEventListener('input',()=>{query=search.value;visibleLimit=12;render();});
   clear.addEventListener('click',()=>{query='';product='';category='All Articles';visibleLimit=12;search.value='';render();});
   loadMore.addEventListener('click',()=>{visibleLimit+=12;render();});
@@ -656,6 +645,10 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 /* The result count sits beside the results heading now that the welcome
    block that used to hold it is gone. */
 .hc-section-head h3+.hc-count{margin-right:auto}
+
+/* A product whose answers are still in review says so on its button. */
+.hc-product-soon{color:#6f7390}
+.hc-soon{margin-left:7px;padding:2px 6px;border-radius:5px;background:#efedff;color:#5545c7;font-size:.62rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;vertical-align:1px}
 </style>
 <!-- homepage-rail-flow:end -->
 <!-- clean-links:start --><script>

@@ -1,5 +1,382 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
+    "id": "pro-what-is-the-difference-between-request-import-and-upload-58",
+    "product": "pro",
+    "category": "Documents",
+    "title": "What is the difference between Request, Import, and Upload?",
+    "description": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the…",
+    "answer": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored.",
+    "more": [
+      "Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action."
+    ],
+    "search": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored. Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-upload-a-document-to-a-client-workspace-59",
+    "product": "pro",
+    "category": "Documents",
+    "title": "How do I upload a document to a client workspace?",
+    "description": "Upload places a local file into the selected client's document structure. Open Documents and select the client. Choose the destination folder in the folder tree, or create a folder first with New…",
+    "answer": "Upload places a local file into the selected client's document structure.",
+    "more": [
+      "After upload, search for the filename and open it from the destination folder to confirm that the correct file—not an earlier draft—was stored. If the file should satisfy an outstanding client request, verify the Requests view rather than assuming a general upload automatically completes the requested item."
+    ],
+    "steps": [
+      "Open Documents and select the client.",
+      "Choose the destination folder in the folder tree, or create a folder first with New Folder.",
+      "Select Upload and choose the local file.",
+      "Confirm the destination and review the uploaded file in the client workspace."
+    ],
+    "search": "Upload places a local file into the selected client's document structure. After upload, search for the filename and open it from the destination folder to confirm that the correct file—not an earlier draft—was stored. If the file should satisfy an outstanding client request, verify the Requests view rather than assuming a general upload automatically completes the requested item. Open Documents and select the client. Choose the destination folder in the folder tree, or create a folder first with New Folder. Select Upload and choose the local file. Confirm the destination and review the uploaded file in the client workspace.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-import-documents-from-dropbox-or-onedrive-60",
+    "product": "pro",
+    "category": "Documents",
+    "title": "How do I import documents from Dropbox or OneDrive?",
+    "description": "A storage connection must be configured before cloud import is available. If neither provider is connected, AssurePro directs the user to Settings. Open Settings, choose Integrations, and connect…",
+    "answer": "A storage connection must be configured before cloud import is available. If neither provider is connected, AssurePro directs the user to Settings.",
+    "steps": [
+      "Open Settings, choose Integrations, and connect Dropbox or OneDrive.",
+      "Return to Documents and select the client and destination folder.",
+      "Select Import and choose content from the connected storage provider.",
+      "Complete the import and confirm the files in the client's document list."
+    ],
+    "search": "A storage connection must be configured before cloud import is available. If neither provider is connected, AssurePro directs the user to Settings. Open Settings, choose Integrations, and connect Dropbox or OneDrive. Return to Documents and select the client and destination folder. Select Import and choose content from the connected storage provider. Complete the import and confirm the files in the client's document list.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-find-a-file-or-review-outstanding-requests-61",
+    "product": "pro",
+    "category": "Documents",
+    "title": "How do I find a file or review outstanding requests?",
+    "description": "The client Documents workspace provides search, source filters, display controls, and separate Files and Requests views. Select the client in Documents. Use the folder tree or All Documents to set the…",
+    "answer": "The client Documents workspace provides search, source filters, display controls, and separate Files and Requests views.",
+    "more": [
+      "For example, select Requested to isolate client-provided files, switch to Requests to see items still awaiting a response, and use a folder plus filename search to narrow a large annual workspace. Reset filters when a known file does not appear before uploading a duplicate."
+    ],
+    "steps": [
+      "Select the client in Documents.",
+      "Use the folder tree or All Documents to set the scope.",
+      "Search by file name and narrow the source to All, Requested, or Internal when helpful.",
+      "Switch between Files and Requests, and use list or grid view and the file-type filter to refine the results."
+    ],
+    "search": "The client Documents workspace provides search, source filters, display controls, and separate Files and Requests views. For example, select Requested to isolate client-provided files, switch to Requests to see items still awaiting a response, and use a folder plus filename search to narrow a large annual workspace. Reset filters when a known file does not appear before uploading a duplicate. Select the client in Documents. Use the folder tree or All Documents to set the scope. Search by file name and narrow the source to All, Requested, or Internal when helpful. Switch between Files and Requests, and use list or grid view and the file-type filter to refine the results.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-client-documents-be-organized-by-tax-year-or-reporting-period-62",
+    "product": "pro",
+    "category": "Documents",
+    "title": "Can client documents be organized by tax year or reporting period?",
+    "description": "Yes. Administrators can build year- or period-based folders into a Folder Template, and staff can also create folders directly in a client's Documents tab. Apply the appropriate template to keep the…",
+    "answer": "Yes. Administrators can build year- or period-based folders into a Folder Template, and staff can also create folders directly in a client's Documents tab. Apply the appropriate template to keep the same structure across clients; AssurePro does not require every firm to use one fixed folder hierarchy.",
+    "more": [
+      "For a recurring client, a template might create 2025 and 2026 folders or monthly and quarterly subfolders beneath the service. Decide whether the period belongs in the folder structure, filename, engagement, or all three, then use the convention consistently across clients."
+    ],
+    "search": "Yes. Administrators can build year- or period-based folders into a Folder Template, and staff can also create folders directly in a client's Documents tab. Apply the appropriate template to keep the same structure across clients; AssurePro does not require every firm to use one fixed folder hierarchy. For a recurring client, a template might create 2025 and 2026 folders or monthly and quarterly subfolders beneath the service. Decide whether the period belongs in the folder structure, filename, engagement, or all three, then use the convention consistently across clients.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-documents-be-brought-in-from-cloud-storage-63",
+    "product": "pro",
+    "category": "Documents",
+    "title": "Can documents be brought in from cloud storage?",
+    "description": "Integrations supports Dropbox and OneDrive. Staff can import client documents without first downloading and re-uploading them, and synced folders can automatically bring new files from a connected…",
+    "answer": "Integrations supports Dropbox and OneDrive. Staff can import client documents without first downloading and re-uploading them, and synced folders can automatically bring new files from a connected cloud folder into a client's documents.",
+    "more": [
+      "Use Import for a one-time selection and configure a synced folder when new files should continue arriving from the connected source. After import or sync, confirm the target client and folder because a cloud connection can contain files for several clients."
+    ],
+    "search": "Integrations supports Dropbox and OneDrive. Staff can import client documents without first downloading and re-uploading them, and synced folders can automatically bring new files from a connected cloud folder into a client's documents. Use Import for a one-time selection and configure a synced folder when new files should continue arriving from the connected source. After import or sync, confirm the target client and folder because a cloud connection can contain files for several clients.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-views-are-available-for-engagement-work-64",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "What views are available for engagement work?",
+    "description": "Workflow provides Board, List, and Tasks views. Staff can select a workflow, search engagements, create a new engagement, customize displayed information, and open workflow configuration.",
+    "answer": "Workflow provides Board, List, and Tasks views. Staff can select a workflow, search engagements, create a new engagement, customize displayed information, and open workflow configuration.",
+    "more": [
+      "Board is best for seeing work by stage and moving an engagement through the process; List is best for scanning or sorting engagement fields; Tasks isolates the actionable work items across engagements. A user can switch views without changing the underlying engagement, then open the same client work from whichever view makes the next decision clearest."
+    ],
+    "search": "Workflow provides Board, List, and Tasks views. Staff can select a workflow, search engagements, create a new engagement, customize displayed information, and open workflow configuration. Board is best for seeing work by stage and moving an engagement through the process; List is best for scanning or sorting engagement fields; Tasks isolates the actionable work items across engagements. A user can switch views without changing the underlying engagement, then open the same client work from whichever view makes the next decision clearest.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-does-the-workflow-board-show-65",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "What does the Workflow board show?",
+    "description": "The Board groups engagements by configured stages and shows stage totals, engagement value, priority, role assignments, due dates, time in stage, start date, and task progress. The Overview also…",
+    "answer": "The Board groups engagements by configured stages and shows stage totals, engagement value, priority, role assignments, due dates, time in stage, start date, and task progress. The Overview also surfaces open, due-soon, past-due, stalled, and review-related work.",
+    "more": [
+      "For example, a card can show a high-priority 1040 engagement in Review, its assigned roles, due date, days in stage, start date, value, and completed-task progress. Stage totals and overdue counts help a manager distinguish one delayed card from a broader process bottleneck."
+    ],
+    "search": "The Board groups engagements by configured stages and shows stage totals, engagement value, priority, role assignments, due dates, time in stage, start date, and task progress. The Overview also surfaces open, due-soon, past-due, stalled, and review-related work. For example, a card can show a high-priority 1040 engagement in Review, its assigned roles, due date, days in stage, start date, value, and completed-task progress. Stage totals and overdue counts help a manager distinguish one delayed card from a broader process bottleneck.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-are-engagement-workflows-configured-66",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "How are engagement workflows configured?",
+    "description": "A workflow is the reusable operating path applied to engagements of the relevant type. Administrators define the stages, the order in which work moves, the controls for advancing, and the task…",
+    "answer": "A workflow is the reusable operating path applied to engagements of the relevant type. Administrators define the stages, the order in which work moves, the controls for advancing, and the task templates that should be created as an engagement reaches each stage.",
+    "more": [
+      "A strict stage can require its gates before work advances, while a flexible stage allows the team to move work with fewer constraints. Pair required task templates and relative due dates with the appropriate staff role so a new engagement receives a usable plan instead of only a set of empty stage names."
+    ],
+    "steps": [
+      "Open Settings and choose Workflow, then open an existing workflow or select New Workflow.",
+      "Name the workflow and add the stages that represent the firm's delivery process, such as Intake, Document Collection, Preparation, Review, Client Approval, and Complete.",
+      "Drag the stages into the order staff should follow.",
+      "Choose strict stage behavior when required gates must be satisfied before an engagement advances; choose flexible behavior when staff may move work without every gate being mandatory.",
+      "Configure each stage's gates and add reusable task templates.",
+      "For every task template, enter a clear task name, assign the responsible role, set its relative due-date offset from the date the engagement enters the stage, and mark the task Required when it must be completed before progression.",
+      "Reorder the task templates so the generated engagement plan is easy for staff to follow.",
+      "Save the workflow, create or open a matching engagement, and confirm that its stages, generated tasks, assignee roles, due dates, and required controls behave as intended.",
+      "Use the active and overdue counts shown for each stage to maintain the workflow after rollout and correct recurring bottlenecks."
+    ],
+    "search": "A workflow is the reusable operating path applied to engagements of the relevant type. Administrators define the stages, the order in which work moves, the controls for advancing, and the task templates that should be created as an engagement reaches each stage. A strict stage can require its gates before work advances, while a flexible stage allows the team to move work with fewer constraints. Pair required task templates and relative due dates with the appropriate staff role so a new engagement receives a usable plan instead of only a set of empty stage names. Open Settings and choose Workflow, then open an existing workflow or select New Workflow. Name the workflow and add the stages that represent the firm's delivery process, such as Intake, Document Collection, Preparation, Review, Client Approval, and Complete. Drag the stages into the order staff should follow. Choose strict stage behavior when required gates must be satisfied before an engagement advances; choose flexible behavior when staff may move work without every gate being mandatory. Configure each stage's gates and add reusable task templates. For every task template, enter a clear task name, assign the responsible role, set its relative due-date offset from the date the engagement enters the stage, and mark the task Required when it must be completed before progression. Reorder the task templates so the generated engagement plan is easy for staff to follow. Save the workflow, create or open a matching engagement, and confirm that its stages, generated tasks, assignee roles, due dates, and required controls behave as intended. Use the active and overdue counts shown for each stage to maintain the workflow after rollout and correct recurring bottlenecks.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-create-a-workflow-67",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "How do I create a workflow?",
+    "description": "Open Settings, choose Workflow, and select New Workflow. Add and order the required stages, then add task templates to each stage with the appropriate role, relative due date, and required status. The…",
+    "answer": "Open Settings, choose Workflow, and select New Workflow. Add and order the required stages, then add task templates to each stage with the appropriate role, relative due date, and required status. The configured workflow becomes available when new engagements are created.",
+    "more": [
+      "After saving the stages, test the workflow by creating a demo engagement of the intended type. Confirm that stage order, gates, tasks, assignees, and relative due dates appear as expected before the workflow is selected for live clients."
+    ],
+    "search": "Open Settings, choose Workflow, and select New Workflow. Add and order the required stages, then add task templates to each stage with the appropriate role, relative due date, and required status. The configured workflow becomes available when new engagements are created. After saving the stages, test the workflow by creating a demo engagement of the intended type. Confirm that stage order, gates, tasks, assignees, and relative due dates appear as expected before the workflow is selected for live clients.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-can-be-configured-on-workflow-task-templates-68",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "What can be configured on workflow task templates?",
+    "description": "A task template has a task name, responsible role, relative due-date offset from the time the engagement enters the stage, and an optional Required designation. Administrators can add, edit, delete,…",
+    "answer": "A task template has a task name, responsible role, relative due-date offset from the time the engagement enters the stage, and an optional Required designation. Administrators can add, edit, delete, and drag task templates into the required order inside each stage.",
+    "more": [
+      "Use the task name to describe the deliverable, the role to identify who should own it, the relative due date to anchor timing to the engagement, and Required when the stage must not be completed without it. For example, an Intake stage can require “Confirm signed engagement letter” before Document Collection begins."
+    ],
+    "search": "A task template has a task name, responsible role, relative due-date offset from the time the engagement enters the stage, and an optional Required designation. Administrators can add, edit, delete, and drag task templates into the required order inside each stage. Use the task name to describe the deliverable, the role to identify who should own it, the relative due date to anchor timing to the engagement, and Required when the stage must not be completed without it. For example, an Intake stage can require “Confirm signed engagement letter” before Document Collection begins.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-is-firm-sop-and-how-is-it-managed-69",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "What is Firm SOP and how is it managed?",
+    "description": "Firm SOP stores firm-wide procedures so preparers can follow one documented method. The page separates All, Pending, Active, Draft, and Rejected items and provides New SOP to start a procedure;…",
+    "answer": "Firm SOP stores firm-wide procedures so preparers can follow one documented method. The page separates All, Pending, Active, Draft, and Rejected items and provides New SOP to start a procedure; client-specific procedures remain in the client's AI SOP tab.",
+    "steps": [
+      "Open Settings and choose Firm SOP.",
+      "Select New SOP and document the procedure.",
+      "Save it in the appropriate workflow state and use the status tabs to review Pending, Active, Draft, or Rejected SOPs.",
+      "Keep client-specific instructions in that client's AI SOP rather than in the firm-wide library."
+    ],
+    "search": "Firm SOP stores firm-wide procedures so preparers can follow one documented method. The page separates All, Pending, Active, Draft, and Rejected items and provides New SOP to start a procedure; client-specific procedures remain in the client's AI SOP tab. Open Settings and choose Firm SOP. Select New SOP and document the procedure. Save it in the appropriate workflow state and use the status tabs to review Pending, Active, Draft, or Rejected SOPs. Keep client-specific instructions in that client's AI SOP rather than in the firm-wide library.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-is-a-new-engagement-created-70",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "How is a new engagement created?",
+    "description": "An engagement can be started from Workflow or from the selected client's Engagements tab. Select New Engagement. Search for and select the client; if the client is missing, choose Create new client.…",
+    "answer": "An engagement can be started from Workflow or from the selected client's Engagements tab.",
+    "steps": [
+      "Select New Engagement.",
+      "Search for and select the client; if the client is missing, choose Create new client.",
+      "Search for and select the Engagement type. AssurePro uses that selection to set up the rest of the engagement.",
+      "Complete the engagement details presented for that type and select Create Engagement.",
+      "Open the new engagement to review its configured workflow stages, tasks, roles, and dates."
+    ],
+    "search": "An engagement can be started from Workflow or from the selected client's Engagements tab. Select New Engagement. Search for and select the client; if the client is missing, choose Create new client. Search for and select the Engagement type. AssurePro uses that selection to set up the rest of the engagement. Complete the engagement details presented for that type and select Create Engagement. Open the new engagement to review its configured workflow stages, tasks, roles, and dates.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-should-staff-use-board-list-and-tasks-views-71",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "How should staff use Board, List, and Tasks views?",
+    "description": "Board is best for seeing engagements by workflow stage, List is best for scanning engagement records in rows, and Tasks focuses on the work items assigned within engagements. Open Workflow and select…",
+    "answer": "Board is best for seeing engagements by workflow stage, List is best for scanning engagement records in rows, and Tasks focuses on the work items assigned within engagements.",
+    "steps": [
+      "Open Workflow and select the workflow you want to review.",
+      "Use Board to identify stage volume, overdue work, role assignments, due dates, days in stage, and task progress.",
+      "Use List when you need a compact record-level view and search.",
+      "Use Tasks to focus on the individual work items and their status."
+    ],
+    "search": "Board is best for seeing engagements by workflow stage, List is best for scanning engagement records in rows, and Tasks focuses on the work items assigned within engagements. Open Workflow and select the workflow you want to review. Use Board to identify stage volume, overdue work, role assignments, due dates, days in stage, and task progress. Use List when you need a compact record-level view and search. Use Tasks to focus on the individual work items and their status.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-an-engagement-repeat-72",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "Can an engagement repeat?",
+    "description": "Yes. Workflow includes recurring engagements and shows recurrence badges such as monthly and semesterly, occurrence counts, and a Finished repeating state. Recurrence availability and options are…",
+    "answer": "Yes. Workflow includes recurring engagements and shows recurrence badges such as monthly and semesterly, occurrence counts, and a Finished repeating state. Recurrence availability and options are determined during the selected engagement setup.",
+    "more": [
+      "Use recurrence for work such as monthly bookkeeping or quarterly advisory where the same engagement structure should be created on a regular cadence. Confirm the recurrence pattern, the starting period, and the expected workflow so each generated occurrence has the right client, type, dates, assignments, and tasks."
+    ],
+    "search": "Yes. Workflow includes recurring engagements and shows recurrence badges such as monthly and semesterly, occurrence counts, and a Finished repeating state. Recurrence availability and options are determined during the selected engagement setup. Use recurrence for work such as monthly bookkeeping or quarterly advisory where the same engagement structure should be created on a regular cadence. Confirm the recurrence pattern, the starting period, and the expected workflow so each generated occurrence has the right client, type, dates, assignments, and tasks.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-are-tasks-tracked-73",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "How are tasks tracked?",
+    "description": "Tasks can carry a priority, due date, assignee, completion state, and engagement context. They appear in Workflow, on the client Overview, and in dashboard task and review widgets, with overdue work…",
+    "answer": "Tasks can carry a priority, due date, assignee, completion state, and engagement context. They appear in Workflow, on the client Overview, and in dashboard task and review widgets, with overdue work called out separately.",
+    "more": [
+      "A task should identify one actionable result, one owner or role, and a meaningful due date. For example, “Review uploaded W-2s” belongs to the client's tax engagement, can be marked high priority, appears in the engagement and Tasks view, and is surfaced as overdue on dashboards if the due date passes."
+    ],
+    "search": "Tasks can carry a priority, due date, assignee, completion state, and engagement context. They appear in Workflow, on the client Overview, and in dashboard task and review widgets, with overdue work called out separately. A task should identify one actionable result, one owner or role, and a meaningful due date. For example, “Review uploaded W-2s” belongs to the client's tax engagement, can be marked high priority, appears in the engagement and Tasks view, and is surfaced as overdue on dashboards if the due date passes.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-does-the-time-tracker-work-74",
+    "product": "pro",
+    "category": "Tasks",
+    "title": "How does the time tracker work?",
+    "description": "The header timer records work while it is being performed and keeps the entry connected to the correct client, engagement, task, billing treatment, and staff member. Open the timer from the application…",
+    "answer": "The header timer records work while it is being performed and keeps the entry connected to the correct client, engagement, task, billing treatment, and staff member.",
+    "more": [
+      "Use Start when work is beginning now and the user wants AssurePro to calculate elapsed time; use the manual hours and minutes controls when the duration is already known. Selecting the client, engagement or task, billable state, date, and note at entry time reduces cleanup before invoicing and reporting."
+    ],
+    "steps": [
+      "Open the timer from the application header.",
+      "Choose Client work or Internal work, then select the client and engagement when applicable.",
+      "Select an existing task or create the task needed for the entry.",
+      "Start the timer for live tracking, or enter the hours and minutes manually.",
+      "Confirm the work date, add a useful description, and mark the time billable or non-billable.",
+      "Save the entry and review it in Time Sheet, where the duration, rate, amount, billable status, and invoice status are visible."
+    ],
+    "search": "The header timer records work while it is being performed and keeps the entry connected to the correct client, engagement, task, billing treatment, and staff member. Use Start when work is beginning now and the user wants AssurePro to calculate elapsed time; use the manual hours and minutes controls when the duration is already known. Selecting the client, engagement or task, billable state, date, and note at entry time reduces cleanup before invoicing and reporting. Open the timer from the application header. Choose Client work or Internal work, then select the client and engagement when applicable. Select an existing task or create the task needed for the entry. Start the timer for live tracking, or enter the hours and minutes manually. Confirm the work date, add a useful description, and mark the time billable or non-billable. Save the entry and review it in Time Sheet, where the duration, rate, amount, billable status, and invoice status are visible.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-time-be-entered-manually-instead-of-using-the-timer-75",
+    "product": "pro",
+    "category": "Tasks",
+    "title": "Can time be entered manually instead of using the timer?",
+    "description": "Yes. Manual entry is useful for work completed away from the live timer, corrections, or time reconstructed from another reliable work record. Open the time tracker and select the correct client or…",
+    "answer": "Yes. Manual entry is useful for work completed away from the live timer, corrections, or time reconstructed from another reliable work record.",
+    "more": [
+      "Manual entry is appropriate for work performed away from the timer, corrections, or time reconstructed from another record. Enter the actual date and duration, select the correct client, engagement, and task, add a useful description, choose billable or non-billable, and review the resulting rate and amount in Time Sheet."
+    ],
+    "steps": [
+      "Open the time tracker and select the correct client or internal-work option.",
+      "Choose the engagement and task when the time relates to client work.",
+      "Enter the actual hours and minutes and select the date on which the work occurred.",
+      "Add a description that lets a reviewer understand what was completed.",
+      "Choose billable or non-billable and verify the rate when one applies.",
+      "Save the entry, then confirm its duration, amount, assignee, and invoice status in Time Sheet before it is included in billing."
+    ],
+    "search": "Yes. Manual entry is useful for work completed away from the live timer, corrections, or time reconstructed from another reliable work record. Manual entry is appropriate for work performed away from the timer, corrections, or time reconstructed from another record. Enter the actual date and duration, select the correct client, engagement, and task, add a useful description, choose billable or non-billable, and review the resulting rate and amount in Time Sheet. Open the time tracker and select the correct client or internal-work option. Choose the engagement and task when the time relates to client work. Enter the actual hours and minutes and select the date on which the work occurred. Add a description that lets a reviewer understand what was completed. Choose billable or non-billable and verify the rate when one applies. Save the entry, then confirm its duration, amount, assignee, and invoice status in Time Sheet before it is included in billing.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-does-assurepro-support-workload-capacity-and-budget-oversight-76",
+    "product": "pro",
+    "category": "Troubleshooting",
+    "title": "How does AssurePro support workload, capacity, and budget oversight?",
+    "description": "AssurePro brings workload, progress, actual time, and financial reporting together so managers can decide where attention or reassignment is needed. Use Team load to compare active staff, assigned task…",
+    "answer": "AssurePro brings workload, progress, actual time, and financial reporting together so managers can decide where attention or reassignment is needed.",
+    "more": [
+      "Managers get the clearest picture by reading the views together: Team load explains who is carrying the work, Workflow explains where the work is held up, Time Sheet explains the actual effort already spent, and Reports explains the operational or financial trend. This makes the follow-up actionable rather than relying on a single capacity number without its client and workflow context."
+    ],
+    "steps": [
+      "Use Team load to compare active staff, assigned task volume, overdue work, and members whose workload is marked as overloaded.",
+      "Use Workflow to review how many engagements sit in each stage, how long work has remained there, task completion, due dates, and bottlenecks that are affecting delivery.",
+      "Use Time Sheet to compare the actual hours recorded by client, engagement, task, or assignee and to distinguish billable, non-billable, invoiced, and uninvoiced time.",
+      "Use the available reporting widgets for time, utilization, workflow, and budget-versus-actual analysis when those measures are configured for the firm.",
+      "Example: if Team load shows one reviewer as overloaded, Workflow shows several files waiting in Review, and Time Sheet shows higher-than-expected actual hours, a manager can redistribute review tasks, update due dates, and investigate the source of the overrun.",
+      "Apply the same review on a regular cadence so capacity decisions use current assignments, deadlines, progress, and actual time rather than one isolated figure."
+    ],
+    "search": "AssurePro brings workload, progress, actual time, and financial reporting together so managers can decide where attention or reassignment is needed. Managers get the clearest picture by reading the views together: Team load explains who is carrying the work, Workflow explains where the work is held up, Time Sheet explains the actual effort already spent, and Reports explains the operational or financial trend. This makes the follow-up actionable rather than relying on a single capacity number without its client and workflow context. Use Team load to compare active staff, assigned task volume, overdue work, and members whose workload is marked as overloaded. Use Workflow to review how many engagements sit in each stage, how long work has remained there, task completion, due dates, and bottlenecks that are affecting delivery. Use Time Sheet to compare the actual hours recorded by client, engagement, task, or assignee and to distinguish billable, non-billable, invoiced, and uninvoiced time. Use the available reporting widgets for time, utilization, workflow, and budget-versus-actual analysis when those measures are configured for the firm. Example: if Team load shows one reviewer as overloaded, Workflow shows several files waiting in Review, and Time Sheet shows higher-than-expected actual hours, a manager can redistribute review tasks, update due dates, and investigate the source of the overrun. Apply the same review on a regular cadence so capacity decisions use current assignments, deadlines, progress, and actual time rather than one isolated figure.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-can-we-do-in-time-sheet-77",
+    "product": "pro",
+    "category": "Tasks",
+    "title": "What can we do in Time Sheet?",
+    "description": "Time Sheet is the detailed register for reviewing recorded time and moving eligible billable entries into invoicing. Review the date, start and end time, client, engagement, task, assignee,…",
+    "answer": "Time Sheet is the detailed register for reviewing recorded time and moving eligible billable entries into invoicing.",
+    "more": [
+      "A manager can, for example, filter to one client, group by engagement or assignee, show billable time only, identify entries that remain uninvoiced, and select those entries for Generate invoice. Export supports analysis outside AssurePro, while invoice status prevents the same time from being billed again inadvertently."
+    ],
+    "steps": [
+      "Review the date, start and end time, client, engagement, task, assignee, description, rate, duration, amount, billable status, and invoice status for each entry.",
+      "Search and filter the register to the client, engagement, task, assignee, date range, or status that needs review.",
+      "Group entries to compare time by client, engagement, task, or team member, and use the billable-only option when preparing billing.",
+      "Correct incomplete or inaccurate entries before they are invoiced, subject to the user's permissions.",
+      "Select eligible uninvoiced billable entries and choose Generate invoice, or import unbilled time from the invoice builder.",
+      "Export the filtered time data when the firm needs an external analysis or reconciliation.",
+      "Confirm invoice status after billing so the same time is not charged twice."
+    ],
+    "search": "Time Sheet is the detailed register for reviewing recorded time and moving eligible billable entries into invoicing. A manager can, for example, filter to one client, group by engagement or assignee, show billable time only, identify entries that remain uninvoiced, and select those entries for Generate invoice. Export supports analysis outside AssurePro, while invoice status prevents the same time from being billed again inadvertently. Review the date, start and end time, client, engagement, task, assignee, description, rate, duration, amount, billable status, and invoice status for each entry. Search and filter the register to the client, engagement, task, assignee, date range, or status that needs review. Group entries to compare time by client, engagement, task, or team member, and use the billable-only option when preparing billing. Correct incomplete or inaccurate entries before they are invoiced, subject to the user's permissions. Select eligible uninvoiced billable entries and choose Generate invoice, or import unbilled time from the invoice builder. Export the filtered time data when the firm needs an external analysis or reconciliation. Confirm invoice status after billing so the same time is not charged twice.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-standard-operating-procedures-be-managed-in-assurepro-78",
+    "product": "pro",
+    "category": "Workflow",
+    "title": "Can standard operating procedures be managed in AssurePro?",
+    "description": "Yes. Firm SOP stores firm-wide procedures with Pending, Active, Draft, and Rejected states. A client's AI SOP tab stores client-specific procedures so the work can follow the same documented steps…",
+    "answer": "Yes. Firm SOP stores firm-wide procedures with Pending, Active, Draft, and Rejected states. A client's AI SOP tab stores client-specific procedures so the work can follow the same documented steps across preparers.",
+    "more": [
+      "Use Firm SOP for procedures that apply across clients, a service's SOP for how that catalog service is delivered, and the client's AI SOP tab for client-specific instructions. Statuses such as Draft, Pending, Active, and Rejected help distinguish work being written or reviewed from procedures staff should actively follow."
+    ],
+    "search": "Yes. Firm SOP stores firm-wide procedures with Pending, Active, Draft, and Rejected states. A client's AI SOP tab stores client-specific procedures so the work can follow the same documented steps across preparers. Use Firm SOP for procedures that apply across clients, a service's SOP for how that catalog service is delivered, and the client's AI SOP tab for client-specific instructions. Statuses such as Draft, Pending, Active, and Rejected help distinguish work being written or reviewed from procedures staff should actively follow.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-can-a-new-signing-package-be-started-80",
+    "product": "pro",
+    "category": "Engagements",
+    "title": "How can a new signing package be started?",
+    "description": "A signing package can start from scratch or from a saved or curated template. Import from agreement is displayed as Coming soon and is not currently available as a starting method.",
+    "answer": "A signing package can start from scratch or from a saved or curated template. Import from agreement is displayed as Coming soon and is not currently available as a starting method.",
+    "more": [
+      "Start from scratch when the client or commercial terms are unique; use a saved firm template for a repeatable service; and use a curated template as a reviewed starting point before adapting it to the firm. Import from agreement is marked Coming soon, so it should not be presented as an available production path yet."
+    ],
+    "search": "A signing package can start from scratch or from a saved or curated template. Import from agreement is displayed as Coming soon and is not currently available as a starting method. Start from scratch when the client or commercial terms are unique; use a saved firm template for a repeatable service; and use a curated template as a reviewed starting point before adapting it to the firm. Import from agreement is marked Coming soon, so it should not be presented as an available production path yet.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
     "id": "pro-what-are-the-main-steps-in-the-engagement-letter-builder-81",
     "product": "pro",
     "category": "Engagements",
@@ -117,526 +494,6 @@ window.ASSUREONE_ARTICLES.push(...[
       "Treat the unresolved-requirements list as a preflight check. A package should not be sent until the client, package name, every recipient, service choice, price, terms, required approval, sign-by date, validity period, reminder cadence, and billing behavior all match what the firm intends to offer."
     ],
     "search": "Review & Send summarizes the client, package name, recipients, sign-by date, validity date, reminder cadence, billing, terms, and approval requirement. The builder lists each unresolved requirement and keeps Send disabled until required items are resolved. Treat the unresolved-requirements list as a preflight check. A package should not be sent until the client, package name, every recipient, service choice, price, terms, required approval, sign-by date, validity period, reminder cadence, and billing behavior all match what the firm intends to offer.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88",
-    "product": "pro",
-    "category": "Engagements",
-    "title": "Can AssurePro remind a client to sign an engagement letter?",
-    "description": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
-    "answer": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
-    "more": [
-      "For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred."
-    ],
-    "search": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending. For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-which-signing-statuses-can-staff-track-89",
-    "product": "pro",
-    "category": "Engagements",
-    "title": "Which signing statuses can staff track?",
-    "description": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status…",
-    "answer": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable.",
-    "more": [
-      "Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up."
-    ],
-    "search": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable. Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-does-the-engagement-letter-signature-process-work-90",
-    "product": "pro",
-    "category": "Engagements",
-    "title": "How does the engagement-letter signature process work?",
-    "description": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a…",
-    "answer": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a signature or typing the signer's name.",
-    "more": [
-      "The completed package keeps the agreed services, pricing, terms, recipients, consent, signature result, and related audit activity with the client record. The firm should select the authorized signer and finish its internal review before sending so the signed package accurately represents the engagement the client accepted."
-    ],
-    "steps": [
-      "Confirm the correct client, recipients, services, price, terms, sign-by date, and approval requirements before sending.",
-      "The recipient opens the engagement package from the delivered client link and completes any required selections or approvals.",
-      "The recipient draws a signature or types the signer's name and submits the package.",
-      "AssurePro updates the package through statuses such as Sent, Viewed, Partial, Signed, or Declined so the firm can follow up with the correct recipient.",
-      "When more than one signature is required, Partial indicates that at least one required signer still needs to complete the package.",
-      "Open the completed package from the client or Engagement Letter record to retain and review the accepted services, pricing, terms, recipients, consent, signature result, and audit history."
-    ],
-    "search": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a signature or typing the signer's name. The completed package keeps the agreed services, pricing, terms, recipients, consent, signature result, and related audit activity with the client record. The firm should select the authorized signer and finish its internal review before sending so the signed package accurately represents the engagement the client accepted. Confirm the correct client, recipients, services, price, terms, sign-by date, and approval requirements before sending. The recipient opens the engagement package from the delivered client link and completes any required selections or approvals. The recipient draws a signature or types the signer's name and submits the package. AssurePro updates the package through statuses such as Sent, Viewed, Partial, Signed, or Declined so the firm can follow up with the correct recipient. When more than one signature is required, Partial indicates that at least one required signer still needs to complete the package. Open the completed package from the client or Engagement Letter record to retain and review the accepted services, pricing, terms, recipients, consent, signature result, and audit history.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-are-the-magic-link-and-audit-log-for-a-sent-engagement-letter-91",
-    "product": "pro",
-    "category": "Engagements",
-    "title": "What are the magic link and audit log for a sent engagement letter?",
-    "description": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the…",
-    "answer": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log.",
-    "steps": [
-      "Open Engagement Letter and select the package from Sent.",
-      "Preview the sent engagement letter rather than reopening the draft builder.",
-      "Use the magic-link option to open or copy the client-facing route for that specific sent package when the recipient needs help accessing it.",
-      "Confirm the package and intended recipient before sharing the link; the link belongs to that engagement-letter delivery and should not be reused for a different client.",
-      "Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on.",
-      "Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature."
-    ],
-    "search": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the package from Sent. Preview the sent engagement letter rather than reopening the draft builder. Use the magic-link option to open or copy the client-facing route for that specific sent package when the recipient needs help accessing it. Confirm the package and intended recipient before sharing the link; the link belongs to that engagement-letter delivery and should not be reused for a different client. Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on. Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-a-client-sign-an-engagement-letter-from-a-mobile-device-92",
-    "product": "pro",
-    "category": "Engagements",
-    "title": "Can a client sign an engagement letter from a mobile device?",
-    "description": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction,…",
-    "answer": "Yes. The client can review and sign the engagement package from a supported mobile device.",
-    "steps": [
-      "Open the engagement-package link from the firm's invitation or client experience.",
-      "Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs.",
-      "Complete any required service selections, approvals, or payment-capture step included by the firm.",
-      "Draw the signature or type the signer's name and submit the signed package.",
-      "The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record."
-    ],
-    "search": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs. Complete any required service selections, approvals, or payment-capture step included by the firm. Draw the signature or type the signer's name and submit the signed package. The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-is-the-billing-area-organized-93",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How is the Billing area organized?",
-    "description": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks…",
-    "answer": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks MyCPEOne referrals and commissions.",
-    "more": [
-      "Use Invoices for one-time and generated receivables, Recurring for schedules that create invoices on a cadence, and Referrals for MyCPEOne introductions and commissions. The signed-agreements banner bridges Engagement Letter and Billing by gathering new drafts and schedules that need review before activation or delivery."
-    ],
-    "search": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks MyCPEOne referrals and commissions. Use Invoices for one-time and generated receivables, Recurring for schedules that create invoices on a cadence, and Referrals for MyCPEOne introductions and commissions. The signed-agreements banner bridges Engagement Letter and Billing by gathering new drafts and schedules that need review before activation or delivery.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-does-the-invoices-overview-show-94",
-    "product": "pro",
-    "category": "Billing",
-    "title": "What does the Invoices overview show?",
-    "description": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched…",
-    "answer": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched by invoice number or client and filtered by status, client, source, and date; Columns controls which fields are visible.",
-    "more": [
-      "For example, select Overdue to isolate invoices that need collection follow-up, Awaiting payment for sent invoices not yet paid, Drafts for items that still need review, or Collected to confirm recent cash activity. Search and filters can then narrow the selected group to one client, source, status, or date range."
-    ],
-    "search": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched by invoice number or client and filtered by status, client, source, and date; Columns controls which fields are visible. For example, select Overdue to isolate invoices that need collection follow-up, Awaiting payment for sent invoices not yet paid, Drafts for items that still need review, or Collected to confirm recent cash activity. Search and filters can then narrow the selected group to one client, source, status, or date range.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-which-invoice-sources-and-statuses-are-tracked-95",
-    "product": "pro",
-    "category": "Billing",
-    "title": "Which invoice sources and statuses are tracked?",
-    "description": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown…",
-    "answer": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown separately so a status does not need to be inferred from the invoice amount.",
-    "more": [
-      "Source explains how the invoice began: Manual from the invoice builder, Agreement from signed engagement terms, or Time from billable entries. Status explains its lifecycle; for example, Viewed means the client opened a sent invoice, Overdue means its unpaid balance passed the due date, and Paid means the balance was satisfied."
-    ],
-    "search": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown separately so a status does not need to be inferred from the invoice amount. Source explains how the invoice began: Manual from the invoice builder, Agreement from signed engagement terms, or Time from billable entries. Status explains its lifecycle; for example, Viewed means the client opened a sent invoice, Overdue means its unpaid balance passed the due date, and Paid means the balance was satisfied.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-is-a-new-invoice-created-96",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How is a new invoice created?",
-    "description": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the…",
-    "answer": "An invoice cannot be sent until a client, due date, and at least one priced line item are present.",
-    "steps": [
-      "Open Billing and select Create invoice, or choose Invoice from the global + New menu.",
-      "Select the client; optionally associate an engagement after the client is selected.",
-      "Confirm the invoice number, issue date, and due date.",
-      "Add a service-catalog item or a custom line, then enter quantity and unit price.",
-      "If applicable, import unbilled time and apply a dollar or percentage discount and tax.",
-      "Add a description, client note, or internal note as needed.",
-      "Review the live invoice preview.",
-      "Choose Save as draft or Create & send."
-    ],
-    "search": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the client; optionally associate an engagement after the client is selected. Confirm the invoice number, issue date, and due date. Add a service-catalog item or a custom line, then enter quantity and unit price. If applicable, import unbilled time and apply a dollar or percentage discount and tax. Add a description, client note, or internal note as needed. Review the live invoice preview. Choose Save as draft or Create & send.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-can-staff-review-on-an-individual-invoice-97",
-    "product": "pro",
-    "category": "Billing",
-    "title": "What can staff review on an individual invoice?",
-    "description": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items.…",
-    "answer": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state.",
-    "more": [
-      "Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received."
-    ],
-    "search": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state. Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-can-clients-pay-an-assurepro-invoice-98",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How can clients pay an AssurePro invoice?",
-    "description": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the…",
-    "answer": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the payment methods presented to a client depend on the connected processor and the options enabled for the firm.",
-    "more": [
-      "The firm first connects its payment processor in Settings > Integrations and confirms the payout connection under Billing & Payments. After the invoice is sent, the client uses the payment options enabled for the firm; AssurePro updates the invoice's payment history, remaining balance, and status when the processor reports the payment."
-    ],
-    "search": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the payment methods presented to a client depend on the connected processor and the options enabled for the firm. The firm first connects its payment processor in Settings > Integrations and confirms the payout connection under Billing & Payments. After the invoice is sent, the client uses the payment options enabled for the firm; AssurePro updates the invoice's payment history, remaining balance, and status when the processor reports the payment.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-the-firm-record-a-payment-received-outside-assurepro-99",
-    "product": "pro",
-    "category": "Billing",
-    "title": "Can the firm record a payment received outside AssurePro?",
-    "description": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status…",
-    "answer": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status reflect the payment received.",
-    "more": [
-      "Example: when a client pays by check or another off-platform method, open the invoice, select Add payment, choose the method, enter the actual payment date and reference details, and save. Confirm that the payment appears in Payment history and that the remaining balance and invoice status changed correctly."
-    ],
-    "search": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status reflect the payment received. Example: when a client pays by check or another off-platform method, open the invoice, select Add payment, choose the method, enter the actual payment date and reference details, and save. Confirm that the payment appears in Payment history and that the remaining balance and invoice status changed correctly.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-signed-agreements-create-billing-work-100",
-    "product": "pro",
-    "category": "Billing",
-    "title": "Can signed agreements create billing work?",
-    "description": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work…",
-    "answer": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client.",
-    "more": [
-      "A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated."
-    ],
-    "search": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client. A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-review-billing-created-by-a-signed-agreement-101",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How do I review billing created by a signed agreement?",
-    "description": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date,…",
-    "answer": "Agreement billing is separated by what still needs attention.",
-    "steps": [
-      "Open Billing and select the signed-agreements banner.",
-      "Search by client or agreement if needed.",
-      "Under Pending review, check the signed date, number of drafts or schedules, and amount.",
-      "Select Review & send and inspect the generated invoice, line items, dates, and agreement link.",
-      "Edit the draft if the billing details need correction, then send it when ready.",
-      "Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create."
-    ],
-    "search": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date, number of drafts or schedules, and amount. Select Review & send and inspect the generated invoice, line items, dates, and agreement link. Edit the draft if the billing details need correction, then send it when ready. Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-does-recurring-billing-work-102",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How does recurring billing work?",
-    "description": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client,…",
-    "answer": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions.",
-    "more": [
-      "For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active."
-    ],
-    "search": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions. For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-review-or-control-a-recurring-schedule-103",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How do I review or control a recurring schedule?",
-    "description": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total…",
-    "answer": "A schedule can be inspected without opening the client record.",
-    "steps": [
-      "Open Billing and choose Recurring.",
-      "Find the schedule in tile or list view.",
-      "Select View details to review client, email, status, total billed, total received, pending amount, and invoice history.",
-      "Use Pause or Resume schedule when the cadence should stop or restart.",
-      "Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused.",
-      "Review any displayed future price change before the next invoice date."
-    ],
-    "search": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total billed, total received, pending amount, and invoice history. Use Pause or Resume schedule when the cadence should stop or restart. Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused. Review any displayed future price change before the next invoice date.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-the-services-catalog-104",
-    "product": "pro",
-    "category": "Billing",
-    "title": "What is the Services catalog?",
-    "description": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the…",
-    "answer": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status.",
-    "more": [
-      "Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work."
-    ],
-    "search": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status. Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-which-service-kinds-and-pricing-models-are-available-105",
-    "product": "pro",
-    "category": "Billing",
-    "title": "Which service kinds and pricing models are available?",
-    "description": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the…",
-    "answer": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the number included; Add-on identifies an optional catalog item.",
-    "more": [
-      "Example: create a Fixed Service for an individual return, an Hourly item for advisory time, a Retainer for recurring access, an Add-on for audit protection, or a Bundle that groups included items. Kind describes the commercial role of the item; Fixed, Hourly, and Retainer pricing determine how the amount is calculated."
-    ],
-    "search": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the number included; Add-on identifies an optional catalog item. Example: create a Fixed Service for an individual return, an Hourly item for advisory time, a Retainer for recurring access, an Add-on for audit protection, or a Bundle that groups included items. Kind describes the commercial role of the item; Fixed, Hourly, and Retainer pricing determine how the amount is calculated.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-create-a-service-106",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How do I create a service?",
-    "description": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on,…",
-    "answer": "A catalog item can carry the defaults that staff would otherwise re-enter during billing.",
-    "steps": [
-      "Open Services and select New service.",
-      "Enter the service name and optional description.",
-      "Choose Bundle, Add-on, Hourly, Retainer, or Service as the kind.",
-      "Choose the category and Fixed, Hourly, or Retainer as the pricing model.",
-      "Set the default price and optional default discount.",
-      "Set the default tax rate and whether the item is taxable by default.",
-      "Select Create service after all required fields are complete."
-    ],
-    "search": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on, Hourly, Retainer, or Service as the kind. Choose the category and Fixed, Hourly, or Retainer as the pricing model. Set the default price and optional default discount. Set the default tax rate and whether the item is taxable by default. Select Create service after all required fields are complete.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-find-deactivate-or-archive-a-service-107",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How do I find, deactivate, or archive a service?",
-    "description": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is…",
-    "answer": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is available from the row action menu and is distinct from simply switching the item inactive.",
-    "more": [
-      "Use inactive when the firm may need to reactivate or reference the item later, and Archive when the catalog item should be removed from normal maintenance. Before either action, check whether the service is used by templates, agreements, recurring schedules, or draft invoices so new work is not left with an unavailable dependency."
-    ],
-    "search": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is available from the row action menu and is distinct from simply switching the item inactive. Use inactive when the firm may need to reactivate or reference the item later, and Archive when the catalog item should be removed from normal maintenance. Before either action, check whether the service is used by templates, agreements, recurring schedules, or draft invoices so new work is not left with an unavailable dependency.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-is-a-standard-operating-procedure-attached-to-a-service-108",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How is a standard operating procedure attached to a service?",
-    "description": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how…",
-    "answer": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how that service is performed.",
-    "more": [
-      "For example, the SOP for Monthly Bookkeeping can describe statement collection, reconciliation, review, delivery, and client follow-up. Open the service's SOP dialog from the plus or Actions menu, add or maintain the procedure, and make sure the active instructions match the service description being sold."
-    ],
-    "search": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how that service is performed. For example, the SOP for Monthly Bookkeeping can describe statement collection, reconciliation, review, delivery, and client follow-up. Open the service's SOP dialog from the plus or Actions menu, add or maintain the procedure, and make sure the active instructions match the service description being sold.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-are-time-entries-turned-into-invoices-109",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How are time entries turned into invoices?",
-    "description": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice.",
-    "answer": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice.",
-    "more": [
-      "From Time Sheet, filter to the correct client or engagement, select billable entries that are not already invoiced, and choose Generate invoice. Alternatively, start an invoice and use Import unbilled time; review every imported description, quantity, rate, amount, date, and client association before sending."
-    ],
-    "search": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice. From Time Sheet, filter to the correct client or engagement, select billable entries that are not already invoiced, and choose Generate invoice. Alternatively, start an invoice and use Import unbilled time; review every imported description, quantity, rate, amount, date, and client association before sending.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-the-difference-between-billing-payments-and-platform-subscript-110",
-    "product": "pro",
-    "category": "Billing",
-    "title": "What is the difference between Billing & Payments and Platform Subscription?",
-    "description": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and…",
-    "answer": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts.",
-    "more": [
-      "Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne."
-    ],
-    "search": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts. Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-review-assureone-platform-purchases-and-receipts-111",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How do I review AssureOne platform purchases and receipts?",
-    "description": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each…",
-    "answer": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice.",
-    "more": [
-      "Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents."
-    ],
-    "steps": [
-      "Open Settings and choose Platform Subscription.",
-      "Filter invoices by status or date when needed.",
-      "Select Preview for an on-screen invoice review.",
-      "Select Download to save the invoice or receipt for the firm's records."
-    ],
-    "search": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice. Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents. Open Settings and choose Platform Subscription. Filter invoices by status or date when needed. Select Preview for an on-screen invoice review. Select Download to save the invoice or receipt for the firm's records.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-payment-and-accounting-connections-are-available-112",
-    "product": "pro",
-    "category": "Billing",
-    "title": "What payment and accounting connections are available?",
-    "description": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points…",
-    "answer": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points administrators to Integrations for payout-account management.",
-    "more": [
-      "The payment connection receives client payments and supports payout management; QuickBooks Online receives paid-invoice information for accounting. Test each connection with a controlled transaction or record, then verify both the AssurePro invoice and the external system before relying on the integration for month-end reconciliation."
-    ],
-    "search": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points administrators to Integrations for payout-account management. The payment connection receives client payments and supports payout management; QuickBooks Online receives paid-invoice information for accounting. Test each connection with a controlled transaction or record, then verify both the AssurePro invoice and the external system before relying on the integration for month-end reconciliation.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-does-assurepro-include-referral-tracking-113",
-    "product": "pro",
-    "category": "Billing",
-    "title": "Does AssurePro include referral tracking?",
-    "description": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime…",
-    "answer": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout.",
-    "more": [
-      "For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received."
-    ],
-    "search": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout. For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-refer-a-client-to-mycpeone-114",
-    "product": "pro",
-    "category": "Billing",
-    "title": "How do I refer a client to MyCPEOne?",
-    "description": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required…",
-    "answer": "A referral can use an existing AssurePro client or create a new referral contact.",
-    "steps": [
-      "Open Billing and choose Referrals.",
-      "Select Refer a client.",
-      "Choose New client or From my clients.",
-      "Enter the required client name, entity type, contact email, and service line.",
-      "Add contact name, phone, address, ZIP code, requested services, or notes when useful.",
-      "Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking."
-    ],
-    "search": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required client name, entity type, contact email, and service line. Add contact name, phone, address, ZIP code, requested services, or notes when useful. Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-which-communication-channels-are-available-115",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "Which communication channels are available?",
-    "description": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected…",
-    "answer": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
-    "search": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-start-a-client-conversation-116",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I start a client conversation?",
-    "description": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select…",
-    "answer": "A conversation can begin in the shared Communications area or in the selected client's workspace.",
-    "steps": [
-      "Open Communications and choose the required channel, or open the client's Communications tab.",
-      "Select New Conversation.",
-      "Choose the client and channel.",
-      "Add the recipients, subject, message, or other details required by that channel.",
-      "Review and send the conversation.",
-      "Use the shared inbox to monitor its response and handling status."
-    ],
-    "search": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select New Conversation. Choose the client and channel. Add the recipients, subject, message, or other details required by that channel. Review and send the conversation. Use the shared inbox to monitor its response and handling status.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "What is the difference between portal chat and SMS?",
-    "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
-    "answer": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace.",
-    "more": [
-      "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
-    ],
-    "search": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace. Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-can-the-communications-inbox-be-organized-118",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How can the communications inbox be organized?",
-    "description": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review…",
-    "answer": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review completed threads. Conversation labels such as Awaiting Reply, Needs Action, and FYI communicate the expected next step so staff can separate client follow-up from informational messages.",
-    "more": [
-      "A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response."
-    ],
-    "search": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review completed threads. Conversation labels such as Awaiting Reply, Needs Action, and FYI communicate the expected next step so staff can separate client follow-up from informational messages. A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-can-client-facing-emails-be-standardized-119",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "Can client-facing emails be standardized?",
-    "description": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each…",
-    "answer": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template indicates its trigger and can expose editable subject, heading, introduction, body, button label, and footer content as applicable.",
-    "more": [
-      "For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups."
-    ],
-    "search": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template indicates its trigger and can expose editable subject, heading, introduction, body, button label, and footer content as applicable. For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-do-i-edit-and-test-an-automated-email-template-120",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "How do I edit and test an automated email template?",
-    "description": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings…",
-    "answer": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording.",
-    "steps": [
-      "Open Settings and choose Email Templates.",
-      "Search for the email or select it from its functional group.",
-      "Edit the subject and the available message sections, inserting supported placeholders with the { } control.",
-      "Review the desktop and mobile previews.",
-      "Use Send test to me to inspect the current on-screen wording.",
-      "Save the final version and confirm it appears under the Edited filter."
-    ],
-    "search": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings and choose Email Templates. Search for the email or select it from its functional group. Edit the subject and the available message sections, inserting supported placeholders with the { } control. Review the desktop and mobile previews. Use Send test to me to inspect the current on-screen wording. Save the final version and confirm it appears under the Edited filter.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

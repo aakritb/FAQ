@@ -3,18 +3,44 @@
 Run order after any content or design change:
 
 ```
+node tools/set-published-products.js # decide whose answers are on the site
 node tools/sync-articles.js          # rebuild the article index from the product pages
 node tools/fix-merged-build.js       # re-apply the copy and navigator fixes
 node tools/add-copyright.js          # re-apply the footer copyright
 node tools/remove-discovery-rails.js # keep the right-hand rails out
 node tools/static-hero-headline.js   # keep the hero headline static
 node tools/trim-page-chrome.js       # keep the breadcrumbs and welcome heading out
+node tools/add-dashboard-category.js # keep the Dashboard category filed
 node tools/qc.js                     # check everything
 node tools/selftest.js               # check that the checks still work
 ```
 
 Every script is idempotent: running it on unchanged files rewrites the same
 bytes.
+
+## `set-published-products.js`
+
+Decides whose answers are on the live site. `PUBLISHED` at the top of the file
+is the switch.
+
+Flipping a product to `false` copies its whole page to `drafts/`, replaces the
+live page with a coming-soon notice, removes the script that carried the
+questions, and marks the product "Soon" on the hub's picker. The answers are
+not merely hidden with CSS — that would still ship every one of them in the
+page source. Flipping it back restores the page from `drafts/`.
+
+`.vercelignore` keeps `drafts/` out of the deployment. Run `sync-articles.js`
+afterwards so the hub's index matches.
+
+## `add-dashboard-category.js`
+
+Files the eleven dashboard questions under a Dashboard category. They were
+split between Platform and Reporting on the product page, and all eleven sat
+in the hub's "Getting Started", which held 39 of AssurePro's 172 questions.
+
+The site keeps two category lists — the product page's own topics and the
+hub's coarser list — so this updates both, plus the stored category on each
+article. It only changes where questions are filed; no wording changes.
 
 ## `sync-articles.js`
 
