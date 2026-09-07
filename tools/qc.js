@@ -163,6 +163,16 @@ notes.push("   discovery rails absent from the hub and the article page");
   notes.push("   navigator collapse label reads plainly");
 }
 
+// a product held for review must say so, not "try another filter"
+{
+  const hub = read("index.html");
+  if (!hasScript(hub, "const soon=SOON_PRODUCTS[product];"))
+    fail("index.html: the empty state does not know which products are in review");
+  if (!hasScript(hub, "answers are coming soon"))
+    fail("index.html: no coming-soon message for a product held for review");
+  notes.push("   a product held for review says so on the hub");
+}
+
 // product page id maps
 for (const [key, dir] of Object.entries(DIRS)) {
   const html = read(dir + "/index.html");
@@ -185,6 +195,9 @@ for (const p of PAGES) {
   const html = read(p);
   const dir = path.dirname(p);
   for (const m of html.matchAll(/href="((?!https?:|mailto:|#|data:)[^"]+\.html)[^"]*"/g)) {
+    // Skip URLs a script builds at runtime — "'+soon.dir+'/index.html" and the
+    // like are not paths on disk.
+    if (/[$'`+{]/.test(m[1])) continue;
     const target = path.normalize(path.join(dir, m[1]));
     if (!exists(target)) fail(`${p}: href to a missing file — ${m[1]}`);
   }

@@ -223,6 +223,16 @@ const SCENARIOS = [
     ],
   },
   {
+    name: "the hub's empty state reverted to \"try another filter\"",
+    why: "a deep link to a product in review would tell the reader to try a different filter",
+    break: (dir) => edit(dir, "index.html", (h) =>
+      h.replace("      const soon=SOON_PRODUCTS[product];\n", "")),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "" },
+      { tool: "set-published-products.js", mustFail: false, thenRestores: "SOON_PRODUCTS[product]", in: "index.html" },
+    ],
+  },
+  {
     name: "a question deleted but its DETAILS entry left behind",
     why: "an orphaned entry means the answer and its extra paragraphs disagree",
     break: (dir) => edit(dir, "assurepro/index.html", (h) =>

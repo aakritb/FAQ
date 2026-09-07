@@ -136,6 +136,37 @@ for (const key of Object.keys(PRODUCTS)) {
   html = html.replace(/(<button class="hc-product" type="button" data-product="[a-z]*">)([A-Za-z]+)<span class="hc-soon">Soon<\/span>(<\/button>)/g,
     (_m, open, label, close) => `${open}${label}${close}`);
 
+  // A deep link like ?product=audit still sets the filter, so the empty state
+  // has to say the answers are in review rather than "try another filter".
+  const soonMap = "{" + Object.entries(PRODUCTS)
+    .filter(([k]) => !PUBLISHED[k])
+    .map(([k, { dir, name }]) => `${k}:{dir:'${dir}',name:'${name}'}`)
+    .join(",") + "}";
+  // Matches whatever form the block is in — the original two branches, the
+  // three-branch version, or a half-edited one — and rebuilds it whole.
+  const EMPTY_OLD = /(?:\n[ \t]*const soon=SOON_PRODUCTS\[product\];)?\n[ \t]*empty\.innerHTML=[\s\S]*?assureone\.ai\.';/;
+  const EMPTY_NEW =
+    "\n      const soon=SOON_PRODUCTS[product];\n" +
+    "      empty.innerHTML=query.trim()\n" +
+    "        ? '<strong>No exact match found</strong>Try a shorter phrase, another category, or email support@assureone.ai.'\n" +
+    "        : soon\n" +
+    "          ? '<strong>'+soon.name+' answers are coming soon</strong>We are reviewing every '+soon.name+' answer before it goes out. <a href=\"'+soon.dir+'/index.html\">See what is coming</a>, or email support@assureone.ai.'\n" +
+    "          : '<strong>Nothing here yet</strong>There are no articles in this section so far. Try another filter, or email support@assureone.ai.';";
+  const canonical = EMPTY_NEW;
+  if (!html.includes(canonical)) {
+    if (!EMPTY_OLD.test(html)) throw new Error("index.html: the empty-state block is not in a form this can rebuild");
+    html = html.replace(EMPTY_OLD, () => canonical);
+  }
+  // keep the map itself in step with PUBLISHED
+  const MAP_RE = /  const SOON_PRODUCTS=\{[^\n]*\};\n/;
+  const MAP_LINE = `  const SOON_PRODUCTS=${soonMap};\n`;
+  if (MAP_RE.test(html)) html = html.replace(MAP_RE, () => MAP_LINE);
+  else {
+    const anchor = "  const names={pro:'AssurePro',tax:'AssureTax',audit:'AssureAudit',books:'AssureBooks'};\n";
+    if (!html.includes(anchor)) throw new Error("index.html: product names line not found");
+    html = html.replace(anchor, () => anchor + MAP_LINE);
+  }
+
   // clicking one opens its notice instead of filtering to nothing
   const HANDLER_OLD = "document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});";
   const HANDLER_NEW = "document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.soon){location.href=b.dataset.soon+'/index.html';return;}product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});";
@@ -221,6 +252,13 @@ for (const [key, { dir, name }] of Object.entries(PRODUCTS)) {
   }
   if (!hub.includes("if(b.dataset.soon)")) problems.push("index.html: a Soon button would still filter to an empty list");
   if (!hub.includes(".hc-soon{")) problems.push("index.html: Soon badge styling missing");
+  if (!hub.includes("const soon=SOON_PRODUCTS[product];"))
+    problems.push("index.html: the empty state does not know about products in review");
+  for (const [key, { dir }] of Object.entries(PRODUCTS)) {
+    const inMap = new RegExp(`SOON_PRODUCTS=\\{[^\\n]*${key}:\\{dir:'${dir}'`).test(hub);
+    if (PUBLISHED[key] && inMap) problems.push(`index.html: ${dir} is published but still in SOON_PRODUCTS`);
+    if (!PUBLISHED[key] && !inMap) problems.push(`index.html: ${dir} is in review but missing from SOON_PRODUCTS`);
+  }
 }
 if (problems.length) throw new Error("checks failed:\n  " + problems.join("\n  "));
 const live = Object.keys(PUBLISHED).filter((k) => PUBLISHED[k]).map((k) => PRODUCTS[k].name);
