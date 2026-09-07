@@ -166,7 +166,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
     </div>
     <div class="ar-top-actions">
       <a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a>
-      <span class="hdr-support"><a class="ar-top-support" href="mailto:support@assureone.ai">Contact support</a><button class="hdr-copy" type="button" title="Copy support@assureone.ai to clipboard" aria-label="Copy support email address"><svg class="hdr-copy-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="hdr-copy-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></button><span class="hdr-sr" role="status" aria-live="polite"></span></span>
+      <span class="hdr-support"><a class="ar-top-support" href="mailto:support@assureone.ai">Contact support</a><button class="hdr-copy" type="button" title="Copy support@assureone.ai to clipboard" aria-label="Contact support address"><svg class="hdr-copy-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="hdr-copy-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></button><span class="hdr-sr" role="status" aria-live="polite"></span></span>
     </div>
   </div>
 </nav>
@@ -334,16 +334,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
         '<div class="ar-related">'+related.map(function(a){
           return '<a href="'+articleLink(a)+'">'+esc(a.title)+'<small>'+esc(a.category)+' &middot; '+esc(a.read||'')+' read</small></a>';
         }).join('')+'</div></section>'
-      : '')+
-    '<section class="ar-rail-card ar-help"><p class="ar-label">Still need help?</p>'+
-      '<p>If this does not answer your question, our support team can help.</p>'+
-      '<a class="ar-help-mail" href="mailto:'+EMAIL+'">Email support</a>'+
-      '<button class="ar-help-copy" type="button" title="Copy '+EMAIL+' to clipboard">'+
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+
-        '<rect x="9" y="9" width="13" height="13" rx="2"></rect>'+
-        '<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>'+
-        '<span class="ar-help-copy-label">'+EMAIL+'</span></button>'+
-    '</section>';
+      : '');
 
   initSearch();  // the support-copy handler is installed by add_header_copy.js
 
@@ -506,10 +497,353 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   });
 })();
 </script><!-- hdr-support:end -->
+<!-- functional-polish:start -->
+<style id="functional-polish">
+.single-support-copy{appearance:none;border:0;cursor:pointer;font:inherit;line-height:1;white-space:nowrap}
+.hdr-support .single-support-copy{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.help-cta-actions .single-support-copy{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.ar-help .single-support-copy,.hc-support .single-support-copy{display:flex;align-items:center;justify-content:center;gap:7px;width:100%}
+.single-support-copy svg{width:15px;height:15px;flex:none}
+.single-support-copy.copied{background:#16835c!important;color:#fff!important;box-shadow:0 7px 17px rgba(22,131,92,.18)!important}
+.single-support-copy.copy-error{background:#8c493b!important;color:#fff!important}
+.single-support-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Keep the homepage discovery rail available while the article list scrolls. */
+@media(min-width:981px){
+  .hc-rail{position:sticky!important;top:calc(var(--hc-topbar-h) + 18px)!important;align-self:start;max-height:calc(100vh - var(--hc-topbar-h) - 34px)!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:4px}
+}
+
+/* Focused article layout: section navigation + a generous reading column.
+   Related content and support follow the answer instead of competing with it. */
+.ar-side-more{width:100%;margin-top:8px;padding:8px 10px;border:1px solid #dedcea;border-radius:9px;background:#fff;color:var(--violet-dark);font:inherit;font-size:.76rem;font-weight:700;cursor:pointer}
+.ar-side-more:hover,.ar-side-more:focus-visible{background:var(--soft);border-color:#cfc9ff;outline:none}
+.ar-article-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:17px}
+.ar-article-toolbar .ar-meta{margin:0}
+.ar-copy-link{appearance:none;border:1px solid #dedcea;border-radius:8px;background:#fff;color:#555a74;padding:7px 10px;display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.74rem;font-weight:700;cursor:pointer;white-space:nowrap}
+.ar-copy-link:hover,.ar-copy-link:focus-visible{background:var(--soft);border-color:#cfc9ff;color:var(--violet-dark);outline:none}
+.ar-copy-link.copied{background:#e8f7ee;border-color:#a9dcbd;color:#1f7a45}
+.ar-copy-link svg{width:13px;height:13px;flex:none}
+.ar-copy-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media(min-width:981px){
+  .ar-shell{max-width:1180px;grid-template-columns:218px minmax(0,1fr);gap:28px 32px}
+  .ar-side{grid-column:1;grid-row:1 / span 2}
+  #ar-main{grid-column:2;grid-row:1;min-width:0}
+  .ar-rail{grid-column:2;grid-row:2;position:static;max-height:none;overflow:visible;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.8fr);gap:14px;align-items:stretch}
+  .ar-rail-card+.ar-rail-card{margin-top:0}
+  .ar-doc{padding:40px 48px 42px}
+  .ar-doc h1{font-size:clamp(1.9rem,3vw,2.45rem);max-width:22ch;margin-bottom:22px}
+  .ar-prose{font-size:1.03rem;line-height:1.78;max-width:72ch}
+  .ar-related{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .ar-related a{border:1px solid #ecebf3!important;border-radius:9px;padding:11px!important;background:#fcfcff}
+  .ar-related a:hover,.ar-related a:focus-visible{background:#f5f3ff}
+  .ar-help{background:#181a35;border-color:#181a35;color:#fff;display:flex;flex-direction:column}
+  .ar-help .ar-label{color:#aaa5e8}
+  .ar-help p{color:#c4c6d7}
+  .ar-help .single-support-copy{margin-top:auto}
+}
+@media(max-width:980px) and (min-width:761px){
+  .ar-doc{padding:36px 40px}
+  .ar-rail{margin-top:2px}
+}
+@media(max-width:600px){
+  .help-cta-actions .single-support-copy{width:100%}
+  .ar-article-toolbar{align-items:flex-start;flex-direction:column;gap:10px}
+  .ar-copy-link{width:100%;justify-content:center}
+  .ar-related{grid-template-columns:1fr}
+}
+</style>
+<script id="functional-polish-script">
+(function(){
+  var EMAIL='support@assureone.ai';
+  var COPY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+  var CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>';
+
+  function makeButton(source){
+    var b=document.createElement('button');
+    b.type='button';b.className=((source&&source.className)||'')+' single-support-copy';
+    b.setAttribute('data-single-support-copy','');
+    b.setAttribute('aria-label','Copy '+EMAIL+' to clipboard');
+    b.innerHTML=COPY+'<span>Contact support</span><span class="single-support-status" role="status" aria-live="polite"></span>';
+    return b;
+  }
+
+  function replaceContents(container,source){
+    if(!container||container.querySelector('[data-single-support-copy]'))return;
+    container.replaceChildren(makeButton(source));
+  }
+
+  function upgradeSupport(root){
+    root=root||document;
+    root.querySelectorAll('.hdr-support').forEach(function(box){replaceContents(box,box.querySelector('a,.hdr-copy'));});
+    root.querySelectorAll('.help-cta-actions').forEach(function(box){replaceContents(box,box.querySelector('.help-cta-mail,.help-cta-copy'));});
+    root.querySelectorAll('.ar-help').forEach(function(box){
+      if(box.querySelector('[data-single-support-copy]'))return;
+      var source=box.querySelector('.ar-help-mail,.ar-help-copy');
+      box.querySelectorAll('.ar-help-mail,.ar-help-copy').forEach(function(n){n.remove();});
+      box.appendChild(makeButton(source));
+    });
+    root.querySelectorAll('.hc-support').forEach(function(box){
+      if(box.querySelector('[data-single-support-copy]'))return;
+      var source=box.querySelector('a,button');
+      box.querySelectorAll('a,button,.hc-copy-note').forEach(function(n){n.remove();});
+      box.appendChild(makeButton(source));
+    });
+  }
+
+  function fallbackCopy(text){
+    var area=document.createElement('textarea');
+    area.value=text;area.setAttribute('readonly','');area.setAttribute('aria-hidden','true');
+    area.style.position='fixed';area.style.left='-9999px';area.style.top='0';area.style.opacity='0';
+    document.body.appendChild(area);
+    // Put back whatever the reader had highlighted.
+    var sel=document.getSelection();
+    var previous=(sel&&sel.rangeCount)?sel.getRangeAt(0):null;
+    area.focus({preventScroll:true});area.select();
+    try{area.setSelectionRange(0,text.length);}catch(e){}
+    var ok=false;try{ok=document.execCommand('copy');}catch(e){}
+    area.remove();
+    if(previous&&sel){try{sel.removeAllRanges();sel.addRange(previous);}catch(e){}}
+    return ok;
+  }
+
+  function setSupportState(btn,ok){
+    btn.classList.toggle('copied',ok);btn.classList.toggle('copy-error',!ok);
+    btn.innerHTML=(ok?CHECK:COPY)+'<span>'+(ok?'Copied':'Copy failed')+'</span><span class="single-support-status" role="status" aria-live="polite">'+(ok?EMAIL+' copied to clipboard':'Copy failed. Email address is '+EMAIL)+'</span>';
+    clearTimeout(btn._supportTimer);
+    btn._supportTimer=setTimeout(function(){
+      btn.classList.remove('copied','copy-error');
+      btn.innerHTML=COPY+'<span>Contact support</span><span class="single-support-status" role="status" aria-live="polite"></span>';
+    },2200);
+  }
+
+  document.addEventListener('click',function(e){
+    var support=e.target.closest('[data-single-support-copy]');
+    if(support){
+      e.preventDefault();
+      // execCommand first, synchronously, while the click still grants
+      // permission to copy; the async API is the second attempt.
+      if(fallbackCopy(EMAIL)){setSupportState(support,true);}
+      else if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(EMAIL).then(function(){setSupportState(support,true);},function(){setSupportState(support,false);});
+      }else setSupportState(support,false);
+      return;
+    }
+    var link=e.target.closest('[data-copy-article-link]');
+    if(link){
+      e.preventDefault();
+      var value=location.href;
+      var done=function(ok){
+        link.classList.toggle('copied',ok);
+        link.innerHTML=(ok?CHECK:COPY)+'<span>'+(ok?'Link copied':'Copy link')+'</span><span class="ar-copy-status" role="status" aria-live="polite">'+(ok?'Article link copied':'Unable to copy article link')+'</span>';
+        clearTimeout(link._linkTimer);
+        link._linkTimer=setTimeout(function(){link.classList.remove('copied');link.innerHTML=COPY+'<span>Copy link</span><span class="ar-copy-status" role="status" aria-live="polite"></span>';},1800);
+      };
+      if(fallbackCopy(value)){done(true);}
+      else if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(value).then(function(){done(true);},function(){done(false);});
+      else done(false);
+    }
+  });
+
+  function refineNav(){
+    var list=document.querySelector('.ar-side-list');
+    if(!list||list.dataset.compact)return;
+    var links=[].slice.call(list.querySelectorAll('a'));
+    if(links.length<=9)return;
+    list.dataset.compact='true';
+    var current=links.findIndex(function(a){return a.getAttribute('aria-current')==='page';});
+    if(current<0)current=0;
+    var start=Math.max(0,Math.min(current-4,links.length-9)),end=start+9;
+    links.forEach(function(a,i){a.hidden=i<start||i>=end;});
+    var toggle=document.createElement('button');
+    toggle.type='button';toggle.className='ar-side-more';toggle.setAttribute('aria-expanded','false');
+    toggle.textContent='Show all '+links.length+' articles';
+    toggle.addEventListener('click',function(){
+      var open=toggle.getAttribute('aria-expanded')==='true';
+      links.forEach(function(a,i){a.hidden=open&&(i<start||i>=end);});
+      toggle.setAttribute('aria-expanded',String(!open));
+      toggle.textContent=open?'Show all '+links.length+' articles':'Show fewer articles';
+    });
+    list.after(toggle);
+  }
+
+  function enhanceArticle(){
+    var doc=document.querySelector('.ar-doc');
+    if(!doc||doc.dataset.enhanced)return;
+    doc.dataset.enhanced='true';
+    var meta=doc.querySelector('.ar-meta');
+    if(meta){
+      var toolbar=document.createElement('div');toolbar.className='ar-article-toolbar';
+      meta.before(toolbar);toolbar.appendChild(meta);
+      var button=document.createElement('button');button.type='button';button.className='ar-copy-link';button.setAttribute('data-copy-article-link','');
+      button.innerHTML=COPY+'<span>Copy link</span><span class="ar-copy-status" role="status" aria-live="polite"></span>';
+      toolbar.appendChild(button);
+    }
+    var related=document.querySelector('.ar-rail-card:not(.ar-help) .ar-label');
+    if(related)related.textContent='Related articles';
+  }
+
+  function apply(){
+    upgradeSupport();refineNav();enhanceArticle();
+  }
+  apply();
+  if(window.MutationObserver)new MutationObserver(apply).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+<!-- functional-polish:end -->
+<!-- article-navigation-v2:start -->
+<style id="article-navigation-v2-style">
+/* The section navigator is a compact, self-contained reading aid rather than
+   a second long article index. */
+.ar-side{background:#fff;border:1px solid #e2e1ec;border-radius:16px;padding:15px 12px 12px;box-shadow:0 7px 24px rgba(24,27,50,.055);overflow:hidden!important;display:flex;flex-direction:column}
+.ar-side-back{margin:0 3px 13px;padding:8px 9px;border-radius:9px;font-size:.8rem}
+.ar-side-back:hover,.ar-side-back:focus-visible{background:#f4f2ff}
+.ar-side>.ar-label{margin:0;padding:13px 7px 5px;border-top:1px solid #efeff5;color:#737891;line-height:1.45}
+.ar-side-context{margin:0;padding:0 7px 11px;color:#9a9db0;font-size:.72rem;line-height:1.4}
+.ar-side-list{min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:12px 3px 0;border-top:1px solid #efeff5;gap:4px}
+.ar-side-list::-webkit-scrollbar{width:5px}
+.ar-side-list::-webkit-scrollbar-thumb{background:#d8d5e8;border-radius:999px}
+.ar-side-list a{padding:10px 11px;border:1px solid transparent;border-radius:10px;font-size:.82rem;line-height:1.35}
+.ar-side-list a:hover,.ar-side-list a:focus-visible{border-color:#e3dfff;background:#f6f4ff}
+.ar-side-list a[aria-current="page"]{border-color:#d9d3ff;background:linear-gradient(135deg,#f0edff,#e7e3ff);box-shadow:inset 3px 0 #6957e5;color:#493cb5}
+.ar-side-more{flex:none;margin:10px 3px 1px;padding:10px 12px;border-color:#ddd9f1;border-radius:10px;background:#f8f7ff;text-align:left;font-size:.78rem}
+.ar-side-more:after{content:"→";float:right;font-size:1rem;line-height:.8}
+.ar-side-more[aria-expanded="true"]:after{content:"↑"}
+
+/* Previous/next is one calm continuation component. Destination titles stay
+   readable without competing with the article body. */
+.ar-pager{grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:22px;border:1px solid #e2e1ec;border-radius:16px;background:#fff;box-shadow:0 6px 22px rgba(24,27,50,.045);overflow:hidden}
+.ar-pager-heading{grid-column:1/-1;margin:0;padding:12px 18px;border-bottom:1px solid #efeff5;color:#8589a2;background:#fcfcff;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.ar-pager>a{position:relative;display:grid;grid-template-columns:34px minmax(0,1fr);grid-template-rows:auto auto;column-gap:12px;align-content:center;min-height:104px;padding:17px 19px;border:0;border-radius:0;box-shadow:none}
+.ar-pager>a+a{border-left:1px solid #efeff5}
+.ar-pager>a:before{content:"←";grid-column:1;grid-row:1/span 2;align-self:center;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#f0edff;color:#5545c7;font-weight:800;transition:.16s ease}
+.ar-pager>a.ar-next:before{content:"→"}
+.ar-pager>a:hover,.ar-pager>a:focus-visible{transform:none;border-color:transparent;background:#f8f7ff;box-shadow:none}
+.ar-pager>a:hover:before,.ar-pager>a:focus-visible:before{background:#6957e5;color:#fff;transform:translateX(-2px)}
+.ar-pager>a.ar-next:hover:before,.ar-pager>a.ar-next:focus-visible:before{transform:translateX(2px)}
+.ar-pager small,.ar-pager strong{grid-column:2;text-align:left}
+.ar-pager small{margin:0 0 4px;color:#8589a2;font-size:.67rem;letter-spacing:.09em}
+.ar-pager strong{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;font-size:.91rem;line-height:1.38;color:#25283c}
+.ar-pager .ar-next{text-align:left}
+
+@media(max-width:980px) and (min-width:761px){
+  .ar-side{max-height:calc(100vh - var(--hc-topbar-h) - 30px)}
+}
+@media(max-width:760px){
+  .ar-side{max-height:none;padding:14px 12px}
+  .ar-side-list{max-height:360px}
+  .ar-pager{grid-template-columns:1fr}
+  .ar-pager>a+a{border-left:0;border-top:1px solid #efeff5}
+  .ar-pager>a{min-height:92px}
+}
+
+/* Desktop articles use three purposeful columns: section context, answer,
+   and related/support utilities. The reading column keeps priority. */
+@media(min-width:1020px){
+  .ar-shell{max-width:1320px;padding:30px 20px 54px;grid-template-columns:clamp(200px,17vw,220px) minmax(0,1fr) clamp(240px,21vw,270px);gap:20px}
+  .ar-side{grid-column:1;grid-row:1;align-self:start}
+  #ar-main{grid-column:2;grid-row:1;min-width:0}
+  .ar-rail{grid-column:3;grid-row:1;position:sticky;top:calc(var(--hc-topbar-h) + 18px);align-self:start;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - var(--hc-topbar-h) - 34px);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:3px}
+  .ar-rail::-webkit-scrollbar{width:5px}
+  .ar-rail::-webkit-scrollbar-thumb{background:#d8d5e8;border-radius:999px}
+  .ar-rail-card{padding:17px}
+  .ar-rail-card+.ar-rail-card{margin-top:0}
+  .ar-related{grid-template-columns:1fr;gap:7px}
+  .ar-related a{padding:10px!important;font-size:.78rem;line-height:1.36}
+  .ar-related small{font-size:.68rem;line-height:1.35}
+  .ar-help{min-height:190px}
+  .ar-help .single-support-copy{margin-top:auto}
+  .ar-doc{padding:34px 38px 38px}
+  .ar-doc h1{font-size:clamp(1.75rem,2.6vw,2.25rem)}
+  .ar-prose{font-size:1rem;line-height:1.74}
+}
+@media(min-width:1240px){
+  .ar-shell{gap:24px;padding-left:24px;padding-right:24px}
+  .ar-doc{padding:40px 44px 42px}
+}
+
+/* The section navigator and related list hide entries with the hidden
+   attribute. The browser's own [hidden] rule loses to the display rules
+   above, so state it here or nothing is ever hidden. */
+.ar-side-list a[hidden],.ar-related a[hidden],.ar-side-list [hidden],.ar-rail [hidden]{display:none!important}
+</style>
+<script id="article-navigation-v2-script">
+(function(){
+  function compactSection(){
+    var side=document.querySelector('.ar-side');
+    var list=side&&side.querySelector('.ar-side-list');
+    if(!list||list.dataset.navigationV2)return;
+    list.dataset.navigationV2='true';
+    var links=[].slice.call(list.querySelectorAll('a'));
+    if(!links.length)return;
+    var current=links.findIndex(function(a){return a.getAttribute('aria-current')==='page';});
+    if(current<0)current=0;
+    var visible=Math.min(6,links.length);
+    var start=Math.max(0,Math.min(current-2,links.length-visible));
+    var end=start+visible;
+    var old=side.querySelector('.ar-side-more');
+    if(old)old.remove();
+    links.forEach(function(a,i){a.hidden=i<start||i>=end;});
+
+    var label=side.querySelector(':scope>.ar-label');
+    if(label)label.remove();
+    var context=side.querySelector('.ar-side-context');
+    if(context)context.remove();
+    if(links.length<=visible)return;
+    if(!list.id)list.id='ar-section-articles';
+    var toggle=document.createElement('button');
+    toggle.type='button';
+    toggle.className='ar-side-more';
+    toggle.setAttribute('aria-controls',list.id);
+    toggle.setAttribute('aria-expanded','false');
+    toggle.textContent='View all '+links.length+' articles';
+    toggle.addEventListener('click',function(){
+      var expanded=toggle.getAttribute('aria-expanded')==='true';
+      links.forEach(function(a,i){a.hidden=expanded&&(i<start||i>=end);});
+      toggle.setAttribute('aria-expanded',String(!expanded));
+      toggle.textContent=expanded?'View all '+links.length+' articles':'Show nearby articles';
+      if(expanded){
+        var active=list.querySelector('[aria-current="page"]');
+        if(active)active.scrollIntoView({block:'nearest'});
+      }
+    });
+    list.after(toggle);
+  }
+
+  function refinePager(){
+    var pager=document.querySelector('.ar-pager');
+    if(!pager||pager.dataset.navigationV2)return;
+    pager.dataset.navigationV2='true';
+    [].slice.call(pager.children).forEach(function(node){
+      if(node.tagName==='SPAN'&&!node.textContent.trim())node.remove();
+    });
+    var heading=document.createElement('p');
+    heading.className='ar-pager-heading';
+    heading.textContent='Continue in this section';
+    pager.prepend(heading);
+    var links=[].slice.call(pager.querySelectorAll('a'));
+    links.forEach(function(link){
+      var next=link.classList.contains('ar-next');
+      var title=link.querySelector('strong');
+      var small=link.querySelector('small');
+      if(small)small.textContent=next?'Next article':'Previous article';
+      link.rel=next?'next':'prev';
+      link.setAttribute('aria-label',(next?'Next article: ':'Previous article: ')+(title?title.textContent.trim():''));
+    });
+    if(links.length===1)links[0].style.gridColumn='1 / -1';
+  }
+
+  function apply(){compactSection();refinePager();}
+  apply();
+  if(window.MutationObserver)new MutationObserver(apply).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+<!-- article-navigation-v2:end -->
 <!-- clean-links:start --><script>
 (function(){
-  // Opened from disk, the .html files are what exist, so leave links alone.
-  if(location.protocol==='file:') return;
+  // Disk copies and simple local preview servers need the real .html files.
+  // Vercel handles the extensionless routes after deployment.
+  if(location.protocol==='file:' || location.hostname==='localhost' || location.hostname==='127.0.0.1' || location.hostname==='[::1]') return;
 
   function clean(href){
     var u;

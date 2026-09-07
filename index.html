@@ -138,7 +138,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   <aside class="hc-rail" aria-label="Popular and latest help">
     <section class="hc-rail-card"><p class="hc-label">Popular now</p><div class="hc-popular" id="hc-popular"></div></section>
     <section class="hc-rail-card"><p class="hc-label">Latest articles</p><ul class="hc-latest" id="hc-latest"></ul></section>
-    <section class="hc-rail-card hc-support"><p class="hc-label">Still need help?</p><p>Copy our support address and send us the details of the area you were working in.</p><button class="hc-copy-support" type="button" data-copy-support>Copy support email</button><span class="hc-copy-note" aria-live="polite"></span></section>
   </aside>
 </main>
 <header class="hero"><div class="hero-inner"><p class="eyebrow">AssureOne support center</p><h1>How can we help?</h1><p class="lede"><strong>Find precise answers across the AssureOne suite.</strong> Choose a product below to browse its help center.</p></div></header>
@@ -168,7 +167,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 <script>
 (function(){
   const topbar=document.querySelector('.topbar-inner');
-  if(topbar){topbar.insertAdjacentHTML('beforeend','<div class="hc-mini-search" id="hc-mini-search" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="hc-search-mini" type="search" placeholder="Search help..." autocomplete="off" aria-label="Search AssureOne help" tabindex="-1"></div><div class="hc-top-actions"><a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><span class="hdr-support"><a class="hc-top-support" href="mailto:support@assureone.ai">Contact support</a><button class="hdr-copy" type="button" title="Copy support@assureone.ai to clipboard" aria-label="Copy support email address"><svg class="hdr-copy-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="hdr-copy-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></button><span class="hdr-sr" role="status" aria-live="polite"></span></span></div>');}
+  if(topbar){topbar.insertAdjacentHTML('beforeend','<div class="hc-mini-search" id="hc-mini-search" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="hc-search-mini" type="search" placeholder="Search help..." autocomplete="off" aria-label="Search AssureOne help" tabindex="-1"></div><div class="hc-top-actions"><a href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><span class="hdr-support"><a class="hc-top-support" href="mailto:support@assureone.ai">Contact support</a><button class="hdr-copy" type="button" title="Copy support@assureone.ai to clipboard" aria-label="Contact support address"><svg class="hdr-copy-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="hdr-copy-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></button><span class="hdr-sr" role="status" aria-live="polite"></span></span></div>');}
   const supportEmail='support@assureone.ai';
   function fallbackCopy(value){const field=document.createElement('textarea');field.value=value;field.setAttribute('readonly','');field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);field.select();let copied=false;try{copied=document.execCommand('copy');}catch(e){}field.remove();return copied;}
   function showCopied(button){const original=button.dataset.originalLabel||button.textContent;button.dataset.originalLabel=original;button.textContent='Email copied';button.classList.add('copied');const note=button.parentElement.querySelector('.hc-copy-note');if(note)note.textContent=supportEmail+' copied';window.clearTimeout(button._copyTimer);button._copyTimer=window.setTimeout(()=>{button.textContent=original;button.classList.remove('copied');if(note)note.textContent='';},2200);}
@@ -454,10 +453,214 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   });
 })();
 </script><!-- hdr-support:end -->
+<!-- functional-polish:start -->
+<style id="functional-polish">
+.single-support-copy{appearance:none;border:0;cursor:pointer;font:inherit;line-height:1;white-space:nowrap}
+.hdr-support .single-support-copy{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.help-cta-actions .single-support-copy{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.ar-help .single-support-copy,.hc-support .single-support-copy{display:flex;align-items:center;justify-content:center;gap:7px;width:100%}
+.single-support-copy svg{width:15px;height:15px;flex:none}
+.single-support-copy.copied{background:#16835c!important;color:#fff!important;box-shadow:0 7px 17px rgba(22,131,92,.18)!important}
+.single-support-copy.copy-error{background:#8c493b!important;color:#fff!important}
+.single-support-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Keep the homepage discovery rail available while the article list scrolls. */
+@media(min-width:981px){
+  .hc-rail{position:sticky!important;top:calc(var(--hc-topbar-h) + 18px)!important;align-self:start;max-height:calc(100vh - var(--hc-topbar-h) - 34px)!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:4px}
+}
+
+/* Focused article layout: section navigation + a generous reading column.
+   Related content and support follow the answer instead of competing with it. */
+.ar-side-more{width:100%;margin-top:8px;padding:8px 10px;border:1px solid #dedcea;border-radius:9px;background:#fff;color:var(--violet-dark);font:inherit;font-size:.76rem;font-weight:700;cursor:pointer}
+.ar-side-more:hover,.ar-side-more:focus-visible{background:var(--soft);border-color:#cfc9ff;outline:none}
+.ar-article-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:17px}
+.ar-article-toolbar .ar-meta{margin:0}
+.ar-copy-link{appearance:none;border:1px solid #dedcea;border-radius:8px;background:#fff;color:#555a74;padding:7px 10px;display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.74rem;font-weight:700;cursor:pointer;white-space:nowrap}
+.ar-copy-link:hover,.ar-copy-link:focus-visible{background:var(--soft);border-color:#cfc9ff;color:var(--violet-dark);outline:none}
+.ar-copy-link.copied{background:#e8f7ee;border-color:#a9dcbd;color:#1f7a45}
+.ar-copy-link svg{width:13px;height:13px;flex:none}
+.ar-copy-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media(min-width:981px){
+  .ar-shell{max-width:1180px;grid-template-columns:218px minmax(0,1fr);gap:28px 32px}
+  .ar-side{grid-column:1;grid-row:1 / span 2}
+  #ar-main{grid-column:2;grid-row:1;min-width:0}
+  .ar-rail{grid-column:2;grid-row:2;position:static;max-height:none;overflow:visible;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.8fr);gap:14px;align-items:stretch}
+  .ar-rail-card+.ar-rail-card{margin-top:0}
+  .ar-doc{padding:40px 48px 42px}
+  .ar-doc h1{font-size:clamp(1.9rem,3vw,2.45rem);max-width:22ch;margin-bottom:22px}
+  .ar-prose{font-size:1.03rem;line-height:1.78;max-width:72ch}
+  .ar-related{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .ar-related a{border:1px solid #ecebf3!important;border-radius:9px;padding:11px!important;background:#fcfcff}
+  .ar-related a:hover,.ar-related a:focus-visible{background:#f5f3ff}
+  .ar-help{background:#181a35;border-color:#181a35;color:#fff;display:flex;flex-direction:column}
+  .ar-help .ar-label{color:#aaa5e8}
+  .ar-help p{color:#c4c6d7}
+  .ar-help .single-support-copy{margin-top:auto}
+}
+@media(max-width:980px) and (min-width:761px){
+  .ar-doc{padding:36px 40px}
+  .ar-rail{margin-top:2px}
+}
+@media(max-width:600px){
+  .help-cta-actions .single-support-copy{width:100%}
+  .ar-article-toolbar{align-items:flex-start;flex-direction:column;gap:10px}
+  .ar-copy-link{width:100%;justify-content:center}
+  .ar-related{grid-template-columns:1fr}
+}
+</style>
+<script id="functional-polish-script">
+(function(){
+  var EMAIL='support@assureone.ai';
+  var COPY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+  var CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>';
+
+  function makeButton(source){
+    var b=document.createElement('button');
+    b.type='button';b.className=((source&&source.className)||'')+' single-support-copy';
+    b.setAttribute('data-single-support-copy','');
+    b.setAttribute('aria-label','Copy '+EMAIL+' to clipboard');
+    b.innerHTML=COPY+'<span>Contact support</span><span class="single-support-status" role="status" aria-live="polite"></span>';
+    return b;
+  }
+
+  function replaceContents(container,source){
+    if(!container||container.querySelector('[data-single-support-copy]'))return;
+    container.replaceChildren(makeButton(source));
+  }
+
+  function upgradeSupport(root){
+    root=root||document;
+    root.querySelectorAll('.hdr-support').forEach(function(box){replaceContents(box,box.querySelector('a,.hdr-copy'));});
+    root.querySelectorAll('.help-cta-actions').forEach(function(box){replaceContents(box,box.querySelector('.help-cta-mail,.help-cta-copy'));});
+    root.querySelectorAll('.ar-help').forEach(function(box){
+      if(box.querySelector('[data-single-support-copy]'))return;
+      var source=box.querySelector('.ar-help-mail,.ar-help-copy');
+      box.querySelectorAll('.ar-help-mail,.ar-help-copy').forEach(function(n){n.remove();});
+      box.appendChild(makeButton(source));
+    });
+    root.querySelectorAll('.hc-support').forEach(function(box){
+      if(box.querySelector('[data-single-support-copy]'))return;
+      var source=box.querySelector('a,button');
+      box.querySelectorAll('a,button,.hc-copy-note').forEach(function(n){n.remove();});
+      box.appendChild(makeButton(source));
+    });
+  }
+
+  function fallbackCopy(text){
+    var area=document.createElement('textarea');
+    area.value=text;area.setAttribute('readonly','');area.setAttribute('aria-hidden','true');
+    area.style.position='fixed';area.style.left='-9999px';area.style.top='0';area.style.opacity='0';
+    document.body.appendChild(area);
+    // Put back whatever the reader had highlighted.
+    var sel=document.getSelection();
+    var previous=(sel&&sel.rangeCount)?sel.getRangeAt(0):null;
+    area.focus({preventScroll:true});area.select();
+    try{area.setSelectionRange(0,text.length);}catch(e){}
+    var ok=false;try{ok=document.execCommand('copy');}catch(e){}
+    area.remove();
+    if(previous&&sel){try{sel.removeAllRanges();sel.addRange(previous);}catch(e){}}
+    return ok;
+  }
+
+  function setSupportState(btn,ok){
+    btn.classList.toggle('copied',ok);btn.classList.toggle('copy-error',!ok);
+    btn.innerHTML=(ok?CHECK:COPY)+'<span>'+(ok?'Copied':'Copy failed')+'</span><span class="single-support-status" role="status" aria-live="polite">'+(ok?EMAIL+' copied to clipboard':'Copy failed. Email address is '+EMAIL)+'</span>';
+    clearTimeout(btn._supportTimer);
+    btn._supportTimer=setTimeout(function(){
+      btn.classList.remove('copied','copy-error');
+      btn.innerHTML=COPY+'<span>Contact support</span><span class="single-support-status" role="status" aria-live="polite"></span>';
+    },2200);
+  }
+
+  document.addEventListener('click',function(e){
+    var support=e.target.closest('[data-single-support-copy]');
+    if(support){
+      e.preventDefault();
+      // execCommand first, synchronously, while the click still grants
+      // permission to copy; the async API is the second attempt.
+      if(fallbackCopy(EMAIL)){setSupportState(support,true);}
+      else if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(EMAIL).then(function(){setSupportState(support,true);},function(){setSupportState(support,false);});
+      }else setSupportState(support,false);
+      return;
+    }
+    var link=e.target.closest('[data-copy-article-link]');
+    if(link){
+      e.preventDefault();
+      var value=location.href;
+      var done=function(ok){
+        link.classList.toggle('copied',ok);
+        link.innerHTML=(ok?CHECK:COPY)+'<span>'+(ok?'Link copied':'Copy link')+'</span><span class="ar-copy-status" role="status" aria-live="polite">'+(ok?'Article link copied':'Unable to copy article link')+'</span>';
+        clearTimeout(link._linkTimer);
+        link._linkTimer=setTimeout(function(){link.classList.remove('copied');link.innerHTML=COPY+'<span>Copy link</span><span class="ar-copy-status" role="status" aria-live="polite"></span>';},1800);
+      };
+      if(fallbackCopy(value)){done(true);}
+      else if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(value).then(function(){done(true);},function(){done(false);});
+      else done(false);
+    }
+  });
+
+  function refineNav(){
+    var list=document.querySelector('.ar-side-list');
+    if(!list||list.dataset.compact)return;
+    var links=[].slice.call(list.querySelectorAll('a'));
+    if(links.length<=9)return;
+    list.dataset.compact='true';
+    var current=links.findIndex(function(a){return a.getAttribute('aria-current')==='page';});
+    if(current<0)current=0;
+    var start=Math.max(0,Math.min(current-4,links.length-9)),end=start+9;
+    links.forEach(function(a,i){a.hidden=i<start||i>=end;});
+    var toggle=document.createElement('button');
+    toggle.type='button';toggle.className='ar-side-more';toggle.setAttribute('aria-expanded','false');
+    toggle.textContent='Show all '+links.length+' articles';
+    toggle.addEventListener('click',function(){
+      var open=toggle.getAttribute('aria-expanded')==='true';
+      links.forEach(function(a,i){a.hidden=open&&(i<start||i>=end);});
+      toggle.setAttribute('aria-expanded',String(!open));
+      toggle.textContent=open?'Show all '+links.length+' articles':'Show fewer articles';
+    });
+    list.after(toggle);
+  }
+
+  function enhanceArticle(){
+    var doc=document.querySelector('.ar-doc');
+    if(!doc||doc.dataset.enhanced)return;
+    doc.dataset.enhanced='true';
+    var meta=doc.querySelector('.ar-meta');
+    if(meta){
+      var toolbar=document.createElement('div');toolbar.className='ar-article-toolbar';
+      meta.before(toolbar);toolbar.appendChild(meta);
+      var button=document.createElement('button');button.type='button';button.className='ar-copy-link';button.setAttribute('data-copy-article-link','');
+      button.innerHTML=COPY+'<span>Copy link</span><span class="ar-copy-status" role="status" aria-live="polite"></span>';
+      toolbar.appendChild(button);
+    }
+    var related=document.querySelector('.ar-rail-card:not(.ar-help) .ar-label');
+    if(related)related.textContent='Related articles';
+  }
+
+  function apply(){
+    upgradeSupport();refineNav();enhanceArticle();
+  }
+  apply();
+  if(window.MutationObserver)new MutationObserver(apply).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+<!-- functional-polish:end -->
+<!-- homepage-rail-flow:start -->
+<style id="homepage-rail-flow-style">
+/* The homepage utility rail belongs to the article results and moves with the
+   page. Its three cards remain one uninterrupted stack. */
+@media(min-width:981px){
+  .hc-rail{position:static!important;top:auto!important;align-self:start;max-height:none!important;overflow:visible!important;overscroll-behavior:auto;scrollbar-gutter:auto;padding-right:0}
+}
+</style>
+<!-- homepage-rail-flow:end -->
 <!-- clean-links:start --><script>
 (function(){
-  // Opened from disk, the .html files are what exist, so leave links alone.
-  if(location.protocol==='file:') return;
+  // Disk copies and simple local preview servers need the real .html files.
+  // Vercel handles the extensionless routes after deployment.
+  if(location.protocol==='file:' || location.hostname==='localhost' || location.hostname==='127.0.0.1' || location.hostname==='[::1]') return;
 
   function clean(href){
     var u;

@@ -27,8 +27,9 @@ const CLOSE = "<!-- clean-links:end -->";
 
 const SCRIPT = `${OPEN}<script>
 (function(){
-  // Opened from disk, the .html files are what exist, so leave links alone.
-  if(location.protocol==='file:') return;
+  // Disk copies and simple local preview servers need the real .html files.
+  // Vercel handles the extensionless routes after deployment.
+  if(location.protocol===\x27file:\x27 || location.hostname===\x27localhost\x27 || location.hostname===\x27127.0.0.1\x27 || location.hostname===\x27[::1]\x27) return;
 
   function clean(href){
     var u;
