@@ -776,7 +776,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
       var expanded=toggle.getAttribute('aria-expanded')==='true';
       links.forEach(function(a,i){a.hidden=expanded&&(i<start||i>=end);});
       toggle.setAttribute('aria-expanded',String(!expanded));
-      toggle.textContent=expanded?'View all '+links.length+' articles':'Show nearby articles';
+      toggle.textContent=expanded?'View all '+links.length+' articles':'Show fewer articles';
       if(expanded){
         var active=list.querySelector('[aria-current="page"]');
         if(active)active.scrollIntoView({block:'nearest'});

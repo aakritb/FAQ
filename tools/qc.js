@@ -148,6 +148,16 @@ notes.push("   discovery rails absent from the hub and the article page");
   notes.push("   breadcrumbs and welcome heading absent, result count present");
 }
 
+// the section navigator's collapse label has to say what it does
+{
+  const art = read("article.html");
+  if (hasScript(art, "Show nearby articles"))
+    fail('article.html: the collapse label still says "Show nearby articles"');
+  if (hasScript(art, "function compactSection()") && !hasScript(art, "'Show fewer articles'"))
+    fail("article.html: the navigator toggle has no collapse label");
+  notes.push("   navigator collapse label reads plainly");
+}
+
 // product page id maps
 for (const [key, dir] of Object.entries(DIRS)) {
   const html = read(dir + "/index.html");

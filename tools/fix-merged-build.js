@@ -82,6 +82,17 @@ const HELPER_NEW =
   "    return ok;\n" +
   "  }";
 
+/* ---------------------------------------- 3. say what the toggle does */
+
+/* The collapsed label reads "View all 11 articles". Expanded, it read "Show
+ * nearby articles" — "nearby" is not a thing a reader is looking for, and it
+ * does not say that pressing it shows less. */
+/* Replaced wherever it appears: the page carries a superseded copy of the
+ * navigator from an earlier layer, and fixing only one leaves the phrase in
+ * the file. */
+const TOGGLE_OLD = "'Show nearby articles'";
+const TOGGLE_NEW = "'Show fewer articles'";
+
 /* ------------------------------------------- 2. make [hidden] actually hide */
 
 const HIDDEN_CSS =
@@ -109,6 +120,12 @@ for (const page of PAGES) {
     if (!html.includes(oldText)) throw new Error(`${page}: ${label} is not in either expected form`);
     html = html.replace(oldText, () => newText);
     notes.push(label);
+  }
+
+  // only the article page has the section navigator
+  if (html.includes(TOGGLE_OLD)) {
+    html = html.split(TOGGLE_OLD).join(TOGGLE_NEW);
+    notes.push("collapse label");
   }
 
   if (html.includes(HIDDEN_ANCHOR) && !hasStyle(html, ".ar-side-list a[hidden]")) {
@@ -146,6 +163,10 @@ for (const page of PAGES) {
 
   // Only the article page carries the section navigator and its markup; the
   // shared CSS is copied to every page, so key the check off the script.
+  if (hasScript(html, "Show nearby articles"))
+    problems.push(`${page}: the collapse label still says "Show nearby articles"`);
+  if (hasScript(html, "function compactSection()") && !hasScript(html, "'Show fewer articles'"))
+    problems.push(`${page}: the navigator toggle has no collapse label`);
   if (hasScript(html, "function compactSection()") && !hasStyle(html, ".ar-side-list a[hidden]"))
     problems.push(`${page}: hides nav items but no [hidden] rule outranks the display rule`);
 }

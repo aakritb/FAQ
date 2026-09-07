@@ -184,6 +184,16 @@ const SCENARIOS = [
     ],
   },
   {
+    name: "the navigator's collapse label reverted to jargon",
+    why: "\"Show nearby articles\" does not tell a reader that pressing it shows less",
+    break: (dir) => edit(dir, "article.html", (h) =>
+      h.replace("'Show fewer articles'", "'Show nearby articles'")),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "Show nearby articles" },
+      { tool: "fix-merged-build.js", mustFail: false, thenRestores: "'Show fewer articles'", in: "article.html" },
+    ],
+  },
+  {
     name: "a question deleted but its DETAILS entry left behind",
     why: "an orphaned entry means the answer and its extra paragraphs disagree",
     break: (dir) => edit(dir, "assurepro/index.html", (h) =>
