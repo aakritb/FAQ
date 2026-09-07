@@ -134,6 +134,20 @@ notes.push("   discovery rails absent from the hub and the article page");
   notes.push("   hero headline is static");
 }
 
+// the article breadcrumb bar and the hub welcome heading were removed
+{
+  const art = read("article.html");
+  if (hasMarkup(art, "ar-crumbs") || hasScript(art, "crumbs.innerHTML"))
+    fail("article.html: the breadcrumb bar is back");
+  const hub = read("index.html");
+  if (hasMarkup(hub, "hc-welcome") || hub.includes("One knowledge base for your entire firm"))
+    fail("index.html: the welcome heading is back");
+  // it held the result count, which render() writes to on every keystroke
+  if (!hasMarkup(hub, 'id="hc-count"'))
+    fail("index.html: the result count element is missing; searching would throw");
+  notes.push("   breadcrumbs and welcome heading absent, result count present");
+}
+
 // product page id maps
 for (const [key, dir] of Object.entries(DIRS)) {
   const html = read(dir + "/index.html");

@@ -31,6 +31,7 @@ const COPY = ["index.html", "article.html", "vercel.json",
   "tools/qc.js", "tools/sync-articles.js", "tools/add-copyright.js",
   "tools/fix-merged-build.js", "tools/add-clean-links.js",
   "tools/remove-discovery-rails.js", "tools/static-hero-headline.js",
+  "tools/trim-page-chrome.js",
   "tools/lib/regions.js"];
 
 function sandbox() {
@@ -160,6 +161,26 @@ const SCENARIOS = [
     expect: [
       { tool: "qc.js", mustFail: true, mentions: "headline" },
       { tool: "static-hero-headline.js", mustFail: false, thenRestores: '<span class="hc-typing-line">get answers faster.</span>', in: "index.html" },
+    ],
+  },
+  {
+    name: "the article breadcrumb bar put back",
+    why: "removed on request; the article meta line already carries that context as links",
+    break: (dir) => edit(dir, "article.html", (h) =>
+      h.replace("<div class=\"ar-shell\">", '<nav class="ar-crumbs"><div id="ar-crumbs"></div></nav><div class="ar-shell">')),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "breadcrumb" },
+      { tool: "trim-page-chrome.js", mustFail: false, thenRestores: "ar-shell", in: "article.html" },
+    ],
+  },
+  {
+    name: "the hub result count deleted along with its old container",
+    why: "render() writes to it on every keystroke, so losing it breaks search entirely",
+    break: (dir) => edit(dir, "index.html", (h) =>
+      h.replace('<span class="hc-count" id="hc-count"></span>', "")),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "result count" },
+      { tool: "trim-page-chrome.js", mustFail: false, thenRestores: 'id="hc-count"', in: "index.html" },
     ],
   },
   {

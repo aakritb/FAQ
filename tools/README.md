@@ -8,6 +8,7 @@ node tools/fix-merged-build.js       # re-apply the copy and navigator fixes
 node tools/add-copyright.js          # re-apply the footer copyright
 node tools/remove-discovery-rails.js # keep the right-hand rails out
 node tools/static-hero-headline.js   # keep the hero headline static
+node tools/trim-page-chrome.js       # keep the breadcrumbs and welcome heading out
 node tools/qc.js                     # check everything
 node tools/selftest.js               # check that the checks still work
 ```
@@ -71,6 +72,22 @@ The animated half carried `aria-hidden` with a screen-reader-only duplicate
 beside it, because text that rewrites itself cannot be read aloud. Both are
 gone, so the heading is simply read as written — with a space between its two
 spans, or it is announced as "youget".
+
+## `trim-page-chrome.js`
+
+Keeps two pieces of furniture out.
+
+The article page's breadcrumb bar: a reader still gets back three other ways —
+the logo, "All articles" in the section navigator, and the header search — and
+the article's own meta line prints its product and category as links to the
+filtered hub, so the bar repeated what the page already said.
+
+The knowledge base's "One knowledge base for your entire firm" heading and
+subtitle: the hero above it already says what the page is for.
+
+That welcome block also held the search result count, which `render()` writes
+to on every keystroke. Deleting it outright throws on the first character
+typed, so the count moves beside the results heading instead.
 
 ## `qc.js`
 

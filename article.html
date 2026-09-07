@@ -31,12 +31,11 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
 .ar-top-actions .ar-top-support{display:inline-block;padding:10px 15px;border-radius:9px;background:var(--violet);color:#fff;box-shadow:0 7px 17px rgba(92,69,231,.22)}
 .ar-top-actions .ar-top-support:hover,.ar-top-actions .ar-top-support:focus-visible{background:var(--violet-dark);color:#fff}
 
-/* ---- breadcrumbs ---- */
-.ar-crumbs{border-bottom:1px solid #ecebf3;background:#fff}
-.ar-crumbs-inner{max-width:1240px;margin:auto;padding:13px 28px;display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:.79rem;color:#8b8fa3}
-.ar-crumbs a{color:#5b607e;text-decoration:none;font-weight:600}
-.ar-crumbs a:hover,.ar-crumbs a:focus-visible{color:var(--violet);outline:none}
-.ar-crumbs span[aria-current]{color:#2b2e43;font-weight:650}
+
+
+
+
+
 
 /* ---- shell: same three columns as the hub ---- */
 .ar-shell{max-width:1240px;margin:0 auto;padding:30px 28px 54px;display:grid;grid-template-columns:212px minmax(0,1fr) 236px;gap:28px;align-items:start}
@@ -123,7 +122,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   .ar-doc{padding:24px 20px;border-radius:14px}
   .ar-pager{grid-template-columns:1fr}
   .ar-pager .ar-next{text-align:left}
-  .ar-crumbs-inner{padding:11px 18px;font-size:.75rem}
+  
   /* The header wraps to two rows so the search field gets the full width
      instead of being squeezed between the logo and the support button. */
   .topbar-inner{height:auto;padding:10px 18px;flex-wrap:wrap;row-gap:9px}
@@ -170,8 +169,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
     </div>
   </div>
 </nav>
-
-<nav class="ar-crumbs" aria-label="Breadcrumb"><div class="ar-crumbs-inner" id="ar-crumbs"></div></nav>
 
 <div class="ar-shell">
   <aside class="ar-side" id="ar-side" aria-label="Articles in this category"></aside>
@@ -229,13 +226,10 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   }
 
   var main=document.getElementById('ar-main');
-  var crumbs=document.getElementById('ar-crumbs');
   var side=document.getElementById('ar-side');
 
   if(!current){
     document.title='Article not found | AssureOne Support';
-    crumbs.innerHTML='<a href="index.html">AssureOne Support</a><span>/</span>'+
-      '<span aria-current="page">Article not found</span>';
     main.innerHTML='<div class="ar-missing"><h1>We could not find that article</h1>'+
       '<p>The link may be out of date. Search from the box above, or browse the full knowledge base.</p>'+
       '<a href="index.html">Browse all articles</a></div>';
@@ -247,13 +241,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   document.title=current.title+' | AssureOne Support';
   var desc=document.querySelector('meta[name="description"]');
   if(desc) desc.setAttribute('content',current.description||current.title);
-
-  /* ---- breadcrumbs stay inside this design: they filter the hub ---- */
-  crumbs.innerHTML=
-    '<a href="index.html">AssureOne Support</a><span>/</span>'+
-    '<a href="'+hubLink({product:current.product})+'">'+esc(NAMES[current.product])+'</a><span>/</span>'+
-    '<a href="'+hubLink({category:current.category})+'">'+esc(current.category)+'</a><span>/</span>'+
-    '<span aria-current="page">'+esc(current.title)+'</span>';
 
   /* ---- the article ---- */
   var blocks=paragraphs(current.answer);
