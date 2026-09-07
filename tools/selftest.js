@@ -114,7 +114,7 @@ const SCENARIOS = [
     name: "an article id pointed at something that does not exist",
     why: "a dead link inside the app looks like a working one until it is clicked",
     break: (dir) => edit(dir, "assurepro/index.html", (h) =>
-      h.replace(/"pro-what-is-assureone-0"/, '"pro-does-not-exist-999"')),
+      h.replace(/"pro-what-is-assurepro-1"/, '"pro-does-not-exist-999"')),
     expect: [{ tool: "qc.js", mustFail: true, mentions: "" }],
   },
   {

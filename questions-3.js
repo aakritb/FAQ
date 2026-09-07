@@ -1,19 +1,5 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-what-is-the-difference-between-request-import-and-upload-58",
-    "product": "pro",
-    "category": "Documents",
-    "title": "What is the difference between Request, Import, and Upload?",
-    "description": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the…",
-    "answer": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored.",
-    "more": [
-      "Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action."
-    ],
-    "search": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored. Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
     "id": "pro-how-do-i-upload-a-document-to-a-client-workspace-59",
     "product": "pro",
     "category": "Documents",
@@ -494,6 +480,20 @@ window.ASSUREONE_ARTICLES.push(...[
       "Treat the unresolved-requirements list as a preflight check. A package should not be sent until the client, package name, every recipient, service choice, price, terms, required approval, sign-by date, validity period, reminder cadence, and billing behavior all match what the firm intends to offer."
     ],
     "search": "Review & Send summarizes the client, package name, recipients, sign-by date, validity date, reminder cadence, billing, terms, and approval requirement. The builder lists each unresolved requirement and keeps Send disabled until required items are resolved. Treat the unresolved-requirements list as a preflight check. A package should not be sent until the client, package name, every recipient, service choice, price, terms, required approval, sign-by date, validity period, reminder cadence, and billing behavior all match what the firm intends to offer.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88",
+    "product": "pro",
+    "category": "Engagements",
+    "title": "Can AssurePro remind a client to sign an engagement letter?",
+    "description": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
+    "answer": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
+    "more": [
+      "For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred."
+    ],
+    "search": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending. For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

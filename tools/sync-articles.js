@@ -26,6 +26,13 @@ const CHUNKS = ["questions-1.js", "questions-2.js", "questions-3.js",
   "questions-4.js", "questions-5.js", "questions-6.js"];
 
 const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
+
+// The hub keeps its own, coarser category list; a new article has to be filed
+// under one of these or the hub cannot show it.
+const HUB_CATEGORIES = (() => {
+  const m = read("index.html").match(/const categories=\[([^\]]*)\]/);
+  return m ? m[1].split(",").map((s) => s.trim().replace(/^'|'$/g, "")) : [];
+})();
 /* Only products whose pages still carry their questions are indexed. A product
  * taken off the site by tools/set-published-products.js has no FAQS array, so
  * its answers cannot be searched on the hub or opened at article.html either.
@@ -66,6 +73,14 @@ function readProductFaqs() {
       );
     }
     for (const f of faqs) if (details[f.q]) f.more = details[f.q];
+
+    // The page's own title→id map. Matching on it means a question whose
+    // wording was reworded keeps its id, its category and its description
+    // instead of being read as one deletion and one new question.
+    const im = html.match(/const ARTICLE_IDS=(\{.*?\});/s);
+    const ids = im ? vm.runInNewContext("(" + im[1] + ")") : {};
+    for (const f of faqs) if (ids[f.q]) f.id = ids[f.q];
+
     out[key] = faqs;
   }
   return out;
@@ -84,9 +99,12 @@ function categories(dir) {
 
 function derive(existing, faqs) {
   const byKey = new Map(existing.map((a) => [a.product + "||" + a.title.trim(), a]));
+  const byId = new Map(existing.map((a) => [a.id, a]));
   const seen = new Set();
+  const seenIds = new Set();
   const articles = [];
   const added = [];
+  const retitled = [];
 
   for (const product of PRODUCT_ORDER) {
     // New ids continue past the highest this product has used, so a deletion
@@ -101,10 +119,14 @@ function derive(existing, faqs) {
       seen.add(key);
       const steps = Array.isArray(f.steps) && f.steps.length ? f.steps.slice() : undefined;
       const more = Array.isArray(f.more) && f.more.length ? f.more.slice() : undefined;
-      const prior = byKey.get(key);
+      // id first, so a reworded question is recognised as the same article
+      const prior = (f.id && byId.get(f.id)) || byKey.get(key);
+      if (prior) seenIds.add(prior.id);
 
       if (prior) {
+        if (prior.title !== f.q) retitled.push({ id: prior.id, from: prior.title, to: f.q });
         const rec = Object.assign({}, prior);
+        rec.title = f.q;
         rec.answer = f.a;
         if (more) rec.more = more; else delete rec.more;
         if (steps) rec.steps = steps; else delete rec.steps;
@@ -113,9 +135,12 @@ function derive(existing, faqs) {
         continue;
       }
 
-      const label = labels
+      const productLabel = labels
         ? (labels.find((c) => (Array.isArray(c) ? c[0] === f.c : c.id === f.c)) || [])[1]
         : null;
+      // The product page and the hub use different category names, so only
+      // use the product's label when the hub actually lists it.
+      const label = productLabel && HUB_CATEGORIES.includes(productLabel) ? productLabel : null;
       const rec = {
         id: product + "-" + slug(f.q) + "-" + next++,
         product,
@@ -138,8 +163,10 @@ function derive(existing, faqs) {
   // they are still in drafts/ and return when the product is published.
   const withdrawn = existing.filter((a) => !PRODUCT_ORDER.includes(a.product));
   const removed = existing.filter((a) =>
-    PRODUCT_ORDER.includes(a.product) && !seen.has(a.product + "||" + a.title.trim()));
-  return { articles, added, removed, withdrawn };
+    PRODUCT_ORDER.includes(a.product) &&
+    !seenIds.has(a.id) &&
+    !seen.has(a.product + "||" + a.title.trim()));
+  return { articles, added, removed, withdrawn, retitled };
 }
 
 /* ------------------------------------------------------------------- write */
@@ -188,7 +215,7 @@ const existing = readExisting();
 const faqs = readProductFaqs();
 console.log(`product pages: ${PRODUCT_ORDER.map((k) => k + "=" + (faqs[k] || []).length).join(" ")}`);
 
-const { articles, added, removed, withdrawn } = derive(existing, faqs);
+const { articles, added, removed, withdrawn, retitled } = derive(existing, faqs);
 console.log(`indexing: ${PRODUCT_ORDER.join(", ") || "nothing"}`);
 if (withdrawn.length) {
   const by = {};
@@ -198,6 +225,7 @@ if (withdrawn.length) {
 console.log(`  ok  ${articles.length} articles derived (was ${existing.length})`);
 for (const a of removed) console.log(`      removed: ${a.product} | ${a.title}`);
 for (const a of added) console.log(`      added:   ${a.product} | ${a.title}  ->  ${a.id}`);
+for (const r of retitled) console.log(`      retitled (id kept ${r.id}):\n        was: ${r.from}\n        now: ${r.to}`);
 
 const short = articles.filter((a) => !a.answer || a.answer.trim().length < 15);
 if (short.length) throw new Error("articles with no usable answer:\n  " + short.map((a) => a.id).join("\n  "));

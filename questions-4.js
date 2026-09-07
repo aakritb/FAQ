@@ -1,19 +1,5 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88",
-    "product": "pro",
-    "category": "Engagements",
-    "title": "Can AssurePro remind a client to sign an engagement letter?",
-    "description": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
-    "answer": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
-    "more": [
-      "For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred."
-    ],
-    "search": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending. For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
     "id": "pro-which-signing-statuses-can-staff-track-89",
     "product": "pro",
     "category": "Engagements",
@@ -455,6 +441,20 @@ window.ASSUREONE_ARTICLES.push(...[
       "Use the shared inbox to monitor its response and handling status."
     ],
     "search": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select New Conversation. Choose the client and channel. Add the recipients, subject, message, or other details required by that channel. Review and send the conversation. Use the shared inbox to monitor its response and handling status.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "What is the difference between portal chat and SMS?",
+    "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
+    "answer": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace.",
+    "more": [
+      "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
+    ],
+    "search": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace. Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

@@ -1,22 +1,5 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-how-is-a-template-library-item-added-and-edited-29",
-    "product": "pro",
-    "category": "Settings",
-    "title": "How is a Template Library item added and edited?",
-    "description": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document…",
-    "answer": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it.",
-    "steps": [
-      "Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary.",
-      "Select Add to Library.",
-      "Use the provided Open in… link to go to the correct working area.",
-      "Review and configure the firm's copy before using it in live client work."
-    ],
-    "search": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it. Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary. Select Add to Library. Use the provided Open in… link to go to the correct working area. Review and configure the firm's copy before using it in live client work.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
     "id": "pro-what-does-each-template-library-type-provide-30",
     "product": "pro",
     "category": "Settings",
@@ -464,6 +447,20 @@ window.ASSUREONE_ARTICLES.push(...[
       "If the request remains outstanding after the automated sequence, contact the client from Communications and document the follow-up in the shared conversation history."
     ],
     "search": "AssurePro can continue following up through the configured Document requests reminder schedule, so staff do not have to rely only on manual chasing. Open Settings and choose Reminders. Confirm that Document requests reminders are enabled. Review or edit the initial delay, repeat interval, and total number of reminders. Monitor the request from the client's Documents > Requests view. If the request remains outstanding after the automated sequence, contact the client from Communications and document the follow-up in the shared conversation history.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-is-the-difference-between-request-import-and-upload-58",
+    "product": "pro",
+    "category": "Documents",
+    "title": "What is the difference between Request, Import, and Upload?",
+    "description": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the…",
+    "answer": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored.",
+    "more": [
+      "Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action."
+    ],
+    "search": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored. Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

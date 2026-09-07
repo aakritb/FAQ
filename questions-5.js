@@ -1,19 +1,5 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "What is the difference between portal chat and SMS?",
-    "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
-    "answer": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace.",
-    "more": [
-      "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
-    ],
-    "search": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace. Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
     "id": "pro-how-can-the-communications-inbox-be-organized-118",
     "product": "pro",
     "category": "Getting Started",
@@ -433,6 +419,20 @@ window.ASSUREONE_ARTICLES.push(...[
       "For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary."
     ],
     "search": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each major tile links to the underlying operational screen. For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-can-the-ai-agent-help-with-146",
+    "product": "pro",
+    "category": "AI & Automation",
+    "title": "What can the AI Agent help with?",
+    "description": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements,…",
+    "answer": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week.",
+    "more": [
+      "A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”"
+    ],
+    "search": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week. A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

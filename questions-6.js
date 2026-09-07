@@ -1,19 +1,5 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-what-can-the-ai-agent-help-with-146",
-    "product": "pro",
-    "category": "AI & Automation",
-    "title": "What can the AI Agent help with?",
-    "description": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements,…",
-    "answer": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week.",
-    "more": [
-      "A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”"
-    ],
-    "search": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week. A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
     "id": "pro-how-do-i-ask-the-ai-agent-for-help-147",
     "product": "pro",
     "category": "AI & Automation",

@@ -1,17 +1,6 @@
 window.ASSUREONE_ARTICLES=[];
 window.ASSUREONE_ARTICLES.push(...[
   {
-    "id": "pro-what-is-assureone-0",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "What is AssureOne?",
-    "description": "AssureOne is the firm's internal, AI-first platform for a CPA firm. It unifies practice management, bookkeeping, audit, and tax so client records, documents, and activity can remain connected instead…",
-    "answer": "AssureOne is the firm's internal, AI-first platform for a CPA firm. It unifies practice management, bookkeeping, audit, and tax so client records, documents, and activity can remain connected instead of being re-entered in separate products. Firm staff use the product switcher to move between AssurePro for practice management, AssureBooks for bookkeeping, AssureAudit for audit work, and AssureTax for tax filings when those products are enabled. Clients do not work inside the staff-facing AssureOne workspace; they use the separate client portal or dedicated mobile app for activities such as reviewing requests, uploading files, communicating, signing documents, and paying invoices.",
-    "search": "AssureOne is the firm's internal, AI-first platform for a CPA firm. It unifies practice management, bookkeeping, audit, and tax so client records, documents, and activity can remain connected instead of being re-entered in separate products. Firm staff use the product switcher to move between AssurePro for practice management, AssureBooks for bookkeeping, AssureAudit for audit work, and AssureTax for tax filings when those products are enabled. Clients do not work inside the staff-facing AssureOne workspace; they use the separate client portal or dedicated mobile app for activities such as reviewing requests, uploading files, communicating, signing documents, and paying invoices.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
     "id": "pro-what-is-assurepro-1",
     "product": "pro",
     "category": "Getting Started",
@@ -68,17 +57,17 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-find-information-or-start-common-work-quickly-5",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I find information or start common work quickly?",
+    "title": "How do I find existing information or create a new record quickly?",
     "description": "Use search when the record already exists and + New when the work has not been created yet. Select the header search or use its displayed keyboard shortcut. Enter a client, document, or task name and…",
-    "answer": "Use search when the record already exists and + New when the work has not been created yet.",
+    "answer": "Use the global search when the information or record already exists. Use + New when you need to create a record or begin a new activity.",
     "steps": [
       "Select the header search or use its displayed keyboard shortcut.",
       "Enter a client, document, or task name and open the matching result in its source module.",
-      "When starting new work, select + New in the header.",
+      "When creating a new record, select + New in the header.",
       "Choose Client, Task, Message, Invoice, Document Request, or Engagement Letter.",
       "Complete and review the destination form before saving or sending."
     ],
-    "search": "Use search when the record already exists and + New when the work has not been created yet. Select the header search or use its displayed keyboard shortcut. Enter a client, document, or task name and open the matching result in its source module. When starting new work, select + New in the header. Choose Client, Task, Message, Invoice, Document Request, or Engagement Letter. Complete and review the destination form before saving or sending.",
+    "search": "Use the global search when the information or record already exists. Use + New when you need to create a record or begin a new activity. Select the header search or use its displayed keyboard shortcut. Enter a client, document, or task name and open the matching result in its source module. When creating a new record, select + New in the header. Choose Client, Task, Message, Invoice, Document Request, or Engagement Letter. Complete and review the destination form before saving or sending.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -119,10 +108,10 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-we-try-assurepro-before-committing-to-a-migration-8",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can we try AssurePro before committing to a migration?",
+    "title": "Can we see a demonstration of AssurePro before implementation?",
     "description": "Yes. AssureOne provides demo accounts so a firm can evaluate AssurePro before committing to onboarding and data migration. Use the demo to walk through the firm's highest-priority scenarios—creating a…",
-    "answer": "Yes. AssureOne provides demo accounts so a firm can evaluate AssurePro before committing to onboarding and data migration. Use the demo to walk through the firm's highest-priority scenarios—creating a client, converting a prospect, requesting documents, creating an engagement, sending an engagement letter, recording time, invoicing, communicating with a client, and reviewing reports. Questions or configuration gaps identified during the evaluation can then be included in the implementation plan.",
-    "search": "Yes. AssureOne provides demo accounts so a firm can evaluate AssurePro before committing to onboarding and data migration. Use the demo to walk through the firm's highest-priority scenarios—creating a client, converting a prospect, requesting documents, creating an engagement, sending an engagement letter, recording time, invoicing, communicating with a client, and reviewing reports. Questions or configuration gaps identified during the evaluation can then be included in the implementation plan.",
+    "answer": "Yes. Your firm can schedule a guided demonstration with the AssureOne demo team before implementing AssurePro. The team will introduce the platform, explain how its main areas work together, and demonstrate how AssurePro can support your firm's day-to-day operations. Your team can discuss its current processes, ask questions, and understand what to expect during implementation.",
+    "search": "Yes. Your firm can schedule a guided demonstration with the AssureOne demo team before implementing AssurePro. The team will introduce the platform, explain how its main areas work together, and demonstrate how AssurePro can support your firm's day-to-day operations. Your team can discuss its current processes, ask questions, and understand what to expect during implementation.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -130,7 +119,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-support-channels-are-available-if-we-run-into-an-issue-9",
     "product": "pro",
     "category": "Troubleshooting",
-    "title": "What support channels are available if we run into an issue?",
+    "title": "How do I get help or report an issue in AssurePro?",
     "description": "AssureOne provides direct email support, in-product issue reporting, and implementation assistance. Email support@assureone.ai when you need help from the AssureOne support team. Use Report a bug in…",
     "answer": "AssureOne provides direct email support, in-product issue reporting, and implementation assistance.",
     "steps": [
@@ -471,6 +460,23 @@ window.ASSUREONE_ARTICLES.push(...[
       "Use Sort to change the catalog order and Preview to inspect an item before adding it."
     ],
     "search": "The library can be searched by name, type, or tag, filtered by practice area, limited to items already added, sorted, or narrowed to one asset-type tab. Open Template Library from Admin. Choose All, Engagement Letter Templates, Workflows, Folders, or Messages. Search by name, type, or tag and select a practice area when needed. Turn on Added only to review the firm's activated items. Use Sort to change the catalog order and Preview to inspect an item before adding it.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-is-a-template-library-item-added-and-edited-29",
+    "product": "pro",
+    "category": "Settings",
+    "title": "How is a Template Library item added and edited?",
+    "description": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document…",
+    "answer": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it.",
+    "steps": [
+      "Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary.",
+      "Select Add to Library.",
+      "Use the provided Open in… link to go to the correct working area.",
+      "Review and configure the firm's copy before using it in live client work."
+    ],
+    "search": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it. Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary. Select Add to Library. Use the provided Open in… link to go to the correct working area. Review and configure the firm's copy before using it in live client work.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }
