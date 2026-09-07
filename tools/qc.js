@@ -371,6 +371,38 @@ for (const p of PAGES) {
   if (!/lang="en"/.test(html)) warn(`${p}: no lang attribute`);
   if (!/name="viewport"/.test(html)) fail(`${p}: no viewport meta`);
 }
+// Braces must balance in every stylesheet. One stray "}" is not ignored: the
+// parser reads it as the start of a rule and swallows the next rule's selector,
+// so exactly one rule silently disappears. That is how the header stopped
+// being sticky and the search bar scrolled out of reach.
+for (const p of PAGES) {
+  const html = read(p);
+  let n = 0;
+  for (const m of html.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)) {
+    n++;
+    const css = m[1].replace(/\/\*[\s\S]*?\*\//g, "");
+    let d = 0, neg = false;
+    for (const ch of css) {
+      if (ch === "{") d++;
+      else if (ch === "}") { d--; if (d < 0) neg = true; }
+    }
+    if (neg) fail(`${p} style#${n}: a stray } — it will eat the rule that follows it`);
+    else if (d !== 0) fail(`${p} style#${n}: ${d > 0 ? d + " unclosed" : -d + " extra"} brace(s)`);
+  }
+}
+
+// The hub's header carries the search once the hero scrolls away, so it has to
+// stay put, and the reveal has to be reachable.
+{
+  const hub = read("index.html");
+  if (!/\.topbar\{position:sticky/.test(hub)) fail("index.html: the header is not sticky, so the search scrolls away");
+  const sticky = hub.search(/\.topbar\{position:sticky/);
+  const relative = hub.lastIndexOf(".topbar{position:relative");
+  if (relative > sticky) fail("index.html: a later .topbar{position:relative} cancels the sticky header");
+  if (!hasStyle(hub, ".topbar.hc-stuck .hc-mini-search{opacity:1")) fail("index.html: the header search never becomes visible");
+  if (!hasScript(hub, "__hcStickyUpdate")) fail("index.html: nothing toggles the header search on scroll");
+}
+notes.push("   stylesheets balance; the hub header stays put and reveals its search");
 notes.push("   tags balanced, titles and viewport present, no dead rules");
 
 /* ------------------------------------------------------- 11. clean URLs */

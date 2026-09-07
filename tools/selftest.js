@@ -34,6 +34,7 @@ const COPY = ["index.html", "article.html", "vercel.json",
   "tools/trim-page-chrome.js", "tools/set-published-products.js",
   "tools/add-dashboard-category.js",
   "tools/lib/regions.js",
+  "tools/fix-sticky-header.js",
   ".vercelignore"];
 
 function sandbox() {
@@ -69,6 +70,23 @@ const edit = (dir, rel, fn) => {
 
 /* Each scenario: break one region, then say what must happen. */
 const SCENARIOS = [
+  {
+    name: "one stray closing brace in the hub stylesheet",
+    why: "what actually happened: the stray brace ate the very next rule, .topbar{position:sticky}, so the header and its search scrolled away while every other rule still worked",
+    break: (dir) => edit(dir, "index.html", (h) =>
+      h.replace("min-height:1.12em;color:#5c45e7}", "min-height:1.12em;color:#5c45e7}}")),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "stray }" },
+      { tool: "fix-sticky-header.js", mustFail: false, thenRestores: "color:#5c45e7}\n", in: "index.html" },
+    ],
+  },
+  {
+    name: "the sticky header rule deleted outright",
+    why: "the search in the header is only reachable while the header stays put",
+    break: (dir) => edit(dir, "index.html", (h) =>
+      h.replace(".topbar{position:sticky;top:0;z-index:30}", "")),
+    expect: [{ tool: "qc.js", mustFail: true, mentions: "search scrolls away" }],
+  },
   {
     name: "an archive left in the folder while .vercelignore only excludes drafts",
     why: "the state this was actually in: a zip holding 63 held-back answers was downloadable from the shared URL, and QC passed because it only inspected the files it already knew about",
