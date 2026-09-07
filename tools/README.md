@@ -7,6 +7,7 @@ node tools/sync-articles.js          # rebuild the article index from the produc
 node tools/fix-merged-build.js       # re-apply the copy and navigator fixes
 node tools/add-copyright.js          # re-apply the footer copyright
 node tools/remove-discovery-rails.js # keep the right-hand rails out
+node tools/static-hero-headline.js   # keep the hero headline static
 node tools/qc.js                     # check everything
 node tools/selftest.js               # check that the checks still work
 ```
@@ -59,6 +60,17 @@ The layout is corrected by a rule appended last rather than by unpicking the
 four style layers that size those grids — they overwrite each other, and a
 combined selector like `.hc-sidebar,.hc-rail{...}` cannot be edited safely by
 pattern. The rail CSS that remains targets nothing; it is dead but harmless.
+
+## `static-hero-headline.js`
+
+Keeps the hero headline static. It used to type and delete its way through five
+phrases behind a blinking caret; it now reads "Hi! Let's help you get answers
+faster." and stays there.
+
+The animated half carried `aria-hidden` with a screen-reader-only duplicate
+beside it, because text that rewrites itself cannot be read aloud. Both are
+gone, so the heading is simply read as written — with a space between its two
+spans, or it is announced as "youget".
 
 ## `qc.js`
 

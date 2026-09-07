@@ -123,6 +123,17 @@ for (const p of ["index.html", "article.html"]) {
 }
 notes.push("   discovery rails absent from the hub and the article page");
 
+// the hero headline is static; nothing may animate it again
+{
+  const hub = read("index.html");
+  if (hasScript(hub, "typingPhrases") || hasScript(hub, "getElementById('hc-typed')"))
+    fail("index.html: the hero headline is being animated again");
+  if (hasMarkup(hub, "hc-typing-caret")) fail("index.html: the headline caret is back");
+  if (!hasMarkup(hub, '<span class="hc-typing-line">get answers faster.</span>'))
+    fail("index.html: the static hero headline is missing or has changed");
+  notes.push("   hero headline is static");
+}
+
 // product page id maps
 for (const [key, dir] of Object.entries(DIRS)) {
   const html = read(dir + "/index.html");

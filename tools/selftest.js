@@ -30,7 +30,8 @@ const COPY = ["index.html", "article.html", "vercel.json",
   "assuretax/index.html", "assureaudit/index.html",
   "tools/qc.js", "tools/sync-articles.js", "tools/add-copyright.js",
   "tools/fix-merged-build.js", "tools/add-clean-links.js",
-  "tools/remove-discovery-rails.js", "tools/lib/regions.js"];
+  "tools/remove-discovery-rails.js", "tools/static-hero-headline.js",
+  "tools/lib/regions.js"];
 
 function sandbox() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "assureone-selftest-"));
@@ -149,6 +150,17 @@ const SCENARIOS = [
     break: (dir) => edit(dir, "article.html", (h) =>
       h.replace("  initSearch();  // the support-copy handler", "  rail.innerHTML='x';\n  initSearch();  // the support-copy handler")),
     expect: [{ tool: "qc.js", mustFail: true, mentions: "removed rail" }],
+  },
+  {
+    name: "the hero headline animation put back",
+    why: "the headline was made static on request; a typing loop must not return",
+    break: (dir) => edit(dir, "index.html", (h) =>
+      h.replace('<span class="hc-typing-line">get answers faster.</span>',
+        '<span class="hc-typing-line" aria-hidden="true"><span id="hc-typed">create a client.</span></span>')),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "headline" },
+      { tool: "static-hero-headline.js", mustFail: false, thenRestores: '<span class="hc-typing-line">get answers faster.</span>', in: "index.html" },
+    ],
   },
   {
     name: "a question deleted but its DETAILS entry left behind",
