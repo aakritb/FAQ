@@ -10,6 +10,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { hasStyle, hasStyleRule, hasMarkup, countIn } = require("./lib/regions");
 
 const ROOT = path.resolve(__dirname, "..");
 const LINE = "&copy; 2026 AssureOne Technologies LLC. All rights reserved.";
@@ -22,7 +23,7 @@ const CSS =
   "@media(max-width:760px){.site-footer{padding:18px 18px 34px}}\n";
 
 function addCss(html, page) {
-  if (html.includes(".site-copyright{")) return html;
+  if (hasStyleRule(html, ".site-copyright")) return html;
   // The pages carry several <style> blocks now; append to the last one so the
   // rule also sits after the design layers in the cascade.
   const at = html.lastIndexOf("</style>");
@@ -39,7 +40,7 @@ const results = [];
   let html = fs.readFileSync(file, "utf8");
   const before = html;
   html = addCss(html, page);
-  if (!html.includes('class="site-copyright"')) {
+  if (!hasMarkup(html, 'class="site-copyright"')) {
     // Straight after the visible shell, ahead of the hidden legacy markup.
     const anchor = "</main>\n";
     if (html.split(anchor).length < 2) throw new Error(`${page}: </main> anchor not found`);
@@ -59,8 +60,15 @@ const results = [];
   html = addCss(html, page);
   const OLD = '<p class="ar-foot">Answers are maintained by the AssureOne team. If something here does not match what you see in the product, email <a href="mailto:support@assureone.ai">support@assureone.ai</a>.</p>';
   const NEW = `<p class="ar-foot"><span class="site-copyright">${LINE}</span></p>`;
-  if (html.includes(OLD)) html = html.replace(OLD, () => NEW);
-  else if (!html.includes(NEW)) throw new Error(`${page}: the old footer line is not in either expected form`);
+  if (html.includes(OLD)) {
+    html = html.replace(OLD, () => NEW);
+  } else if (!hasMarkup(html, 'class="site-copyright"')) {
+    // Neither the old note nor the copyright is there. Refill the footer
+    // rather than giving up, so a lost element can be repaired.
+    const empty = /<p class="ar-foot">[\s\S]*?<\/p>/;
+    if (empty.test(html)) html = html.replace(empty, () => NEW);
+    else throw new Error(`${page}: no .ar-foot footer to put the copyright in`);
+  }
   if (html !== before) { fs.writeFileSync(file, html); results.push(`${page}: line replaced`); }
   else results.push(`${page}: already done`);
 }
@@ -73,7 +81,7 @@ for (const dir of ["assurepro", "assurebooks", "assuretax", "assureaudit"]) {
   const before = html;
   html = addCss(html, page);
   // Key this off the markup: the CSS added above also contains the name.
-  if (!html.includes('class="site-copyright"')) {
+  if (!hasMarkup(html, 'class="site-copyright"')) {
     const close = "</footer>";
     if (html.split(close).length !== 2) throw new Error(`${page}: expected exactly one </footer>`);
     html = html.replace(close, () => `<span class="site-copyright">${LINE}</span>${close}`);
@@ -90,10 +98,10 @@ const PAGES = ["index.html", "article.html", "assurepro/index.html",
 const problems = [];
 for (const page of PAGES) {
   const html = fs.readFileSync(path.join(ROOT, page), "utf8");
-  const n = (html.match(/class="site-copyright"/g) || []).length;
+  const n = countIn(html, "markup", 'class="site-copyright"');
   if (n !== 1) problems.push(`${page}: ${n} copyright lines, expected 1`);
   if (!html.includes(LINE)) problems.push(`${page}: copyright text missing`);
-  if (!html.includes(".site-copyright{")) problems.push(`${page}: copyright styles missing`);
+  if (!hasStyleRule(html, ".site-copyright")) problems.push(`${page}: copyright styles missing`);
   if (html.includes("Answers are maintained by the AssureOne team")) problems.push(`${page}: old footer line still present`);
 }
 if (problems.length) throw new Error("checks failed:\n  " + problems.join("\n  "));

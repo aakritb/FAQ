@@ -5,6 +5,7 @@
 const fs = require("fs");
 const vm = require("vm");
 const path = require("path");
+const { hasStyle, hasStyleRule, hasScript, hasMarkup, hasMarkupOrScript, countIn } = require("./lib/regions");
 
 const ROOT = require("path").resolve(__dirname, "..");
 const PAGES = ["index.html", "article.html", "assurepro/index.html",
@@ -155,8 +156,10 @@ section("6. support routes");
 for (const p of PAGES) {
   const html = read(p);
   if (!/mailto:support@assureone\.ai/.test(html)) fail(`${p}: no mailto link`);
-  if (!/class=\\?"hdr-copy\\?"/.test(html)) fail(`${p}: no header copy button`);
-  if (!html.includes("function copyNow(text)")) fail(`${p}: shared copy routine missing`);
+  // the hub builds its header inside a JS string, so either region counts
+  if (!hasMarkupOrScript(html, 'class="hdr-copy"') && !hasMarkupOrScript(html, 'class=\\"hdr-copy\\"'))
+    fail(`${p}: no header copy button`);
+  if (!hasScript(html, "function copyNow(text)")) fail(`${p}: shared copy routine missing`);
   const open = html.indexOf("<!-- hdr-support:start -->");
   const close = html.indexOf("<!-- hdr-support:end -->");
   if (open < 0 || close < 0) { fail(`${p}: copy handler markers missing`); continue; }
@@ -166,7 +169,7 @@ for (const p of PAGES) {
   if (sync < 0) fail(`${p}: no synchronous copy attempt`);
   if (asyncAt > -1 && sync > asyncAt) fail(`${p}: async clipboard is tried before the synchronous copy`);
   // only one handler per page
-  const handlers = (html.match(/function copyNow\(text\)/g) || []).length;
+  const handlers = countIn(html, "script", "function copyNow(text)");
   if (handlers !== 1) fail(`${p}: ${handlers} copy routines, expected 1`);
   const legacy = html.replace(handler, "");
   if (/querySelectorAll\('\.help-cta-copy'\)/.test(legacy)) fail(`${p}: legacy copy handler still present`);
@@ -187,7 +190,7 @@ section("7. hub search");
   if (html.includes("const terms=query.toLowerCase()")) fail("index.html: old substring search still present");
   if (!html.includes("function link(article){return 'article.html?id='")) fail("index.html: links not pointing at article.html");
   if (!html.includes("Deep links from the article pages")) fail("index.html: ?q/?product/?category handling missing");
-  if (!html.includes("productPageLink")) fail("index.html: product help-centre link missing");
+  if (!hasScript(html, "productPageLink")) fail("index.html: product help-centre link missing");
   notes.push("   stopwords, word-boundary, phrase-first, ranking, deep links, product link");
 }
 
@@ -203,11 +206,13 @@ notes.push(`   "What is the ${GONE}?" absent from every page and data file`);
 section("9. product pages");
 for (const dir of Object.values(DIRS).concat("assureaudit")) {
   const html = read(dir + "/index.html");
-  if (!html.includes("/* Aligned with the knowledge-base design */")) fail(`${dir}: design overrides missing`);
-  if (!html.includes('class="top-actions"')) fail(`${dir}: header actions missing`);
-  if (!/\d+ questions/.test(html) === false) fail(`${dir}: a question count is still rendered`);
+  if (!hasStyle(html, "/* Aligned with the knowledge-base design */")) fail(`${dir}: design overrides missing`);
+  if (!hasMarkup(html, 'class="top-actions"')) fail(`${dir}: header actions missing`);
+  if (/>\s*\d+ questions\s*</.test(html) || /\$\{count\} questions/.test(html))
+    fail(`${dir}: a question count is still rendered`);
   if (/category-badge">\d/.test(html)) fail(`${dir}: numbering badge still present`);
-  if (dir !== "assureaudit" && !html.includes('<a class="answer-link" href="../article.html?id=')) {
+  // the answer link is produced by a template literal, so it lives in script
+  if (dir !== "assureaudit" && !hasScript(html, '<a class="answer-link" href="../article.html?id=')) {
     fail(`${dir}: answer-link template missing`);
   }
 }
@@ -221,9 +226,13 @@ for (const p of PAGES) {
   const closes = (html.match(/<\/script>/g) || []).length;
   if (opens !== closes) fail(`${p}: ${opens} <script> vs ${closes} </script>`);
   if ((html.match(/<style/g) || []).length !== (html.match(/<\/style>/g) || []).length) fail(`${p}: style tags unbalanced`);
-  if (html.includes("hdr-note")) fail(`${p}: dead hdr-note rule left behind`);
+  if (hasStyle(html, "hdr-note")) fail(`${p}: dead hdr-note rule left behind`);
   if (/\bTODO\b|\bFIXME\b/.test(html)) warn(`${p}: contains TODO/FIXME`);
   if (!/<title>/.test(html)) fail(`${p}: no <title>`);
+  if (countIn(html, "markup", 'class="site-copyright"') !== 1)
+    fail(`${p}: expected exactly one copyright element in the markup`);
+  if (!hasStyleRule(html, ".site-copyright")) fail(`${p}: copyright styles missing`);
+  if (html.includes("Answers are maintained by the AssureOne team")) fail(`${p}: old footer note still present`);
   if (!/lang="en"/.test(html)) warn(`${p}: no lang attribute`);
   if (!/name="viewport"/.test(html)) fail(`${p}: no viewport meta`);
 }
@@ -246,8 +255,8 @@ section("11. clean URLs");
     const html = read(p);
     const copies = (html.match(/<!-- clean-links:start -->/g) || []).length;
     if (copies !== 1) fail(`${p}: ${copies} clean-link scripts, expected 1`);
-    if (!html.includes("location.protocol==='file:'")) fail(`${p}: clean-link script is not guarded for file://`);
-    if (!html.includes("method:'HEAD'")) fail(`${p}: clean-link rewriting is not gated on the host supporting it`);
+    if (!hasScript(html, "location.protocol==='file:'")) fail(`${p}: clean-link script is not guarded for file://`);
+    if (!hasScript(html, "method:'HEAD'")) fail(`${p}: clean-link rewriting is not gated on the host supporting it`);
     // an absolute .html href would break the downloadable copy
     for (const m of html.matchAll(/href="(\/[^"]*\.html[^"]*)"/g)) {
       fail(`${p}: absolute href ${m[1]} would break the local copy`);

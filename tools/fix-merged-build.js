@@ -29,6 +29,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { hasStyle, hasScript } = require("./lib/regions");
 
 const ROOT = path.resolve(__dirname, "..");
 const PAGES = ["index.html", "article.html", "assurepro/index.html",
@@ -110,7 +111,7 @@ for (const page of PAGES) {
     notes.push(label);
   }
 
-  if (html.includes(HIDDEN_ANCHOR) && !html.includes(".ar-side-list a[hidden]")) {
+  if (html.includes(HIDDEN_ANCHOR) && !hasStyle(html, ".ar-side-list a[hidden]")) {
     html = html.replace(HIDDEN_ANCHOR, () => HIDDEN_CSS + HIDDEN_ANCHOR);
     notes.push("[hidden] honoured");
   }
@@ -141,11 +142,11 @@ for (const page of PAGES) {
     const asyncAt = html.indexOf("navigator.clipboard.writeText", sync);
     if (asyncAt > -1 && asyncAt < sync) problems.push(`${page}: async ${label} copy runs first`);
   }
-  if (!html.includes("sel.addRange(previous)")) problems.push(`${page}: selection not restored`);
+  if (!hasScript(html, "sel.addRange(previous)")) problems.push(`${page}: selection not restored`);
 
   // Only the article page carries the section navigator and its markup; the
   // shared CSS is copied to every page, so key the check off the script.
-  if (html.includes("article-navigation-v2-script") && !html.includes(".ar-side-list a[hidden]"))
+  if (hasScript(html, "function compactSection()") && !hasStyle(html, ".ar-side-list a[hidden]"))
     problems.push(`${page}: hides nav items but no [hidden] rule outranks the display rule`);
 }
 if (problems.length) throw new Error("checks failed:\n  " + problems.join("\n  "));
