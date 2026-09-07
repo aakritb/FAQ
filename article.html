@@ -178,7 +178,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   <main id="ar-main" aria-live="polite"></main>
   <aside class="ar-rail" id="ar-rail" aria-label="Related"></aside>
 </div>
-<p class="ar-foot">Answers are maintained by the AssureOne team. If something here does not match what you see in the product, email <a href="mailto:support@assureone.ai">support@assureone.ai</a>.</p>
+<p class="ar-foot"><span class="site-copyright">&copy; 2026 AssureOne Technologies LLC. All rights reserved.</span></p>
 
 <script src="questions-1.js"></script>
 <script src="questions-2.js"></script>
@@ -766,6 +766,12 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
    attribute. The browser's own [hidden] rule loses to the display rules
    above, so state it here or nothing is ever hidden. */
 .ar-side-list a[hidden],.ar-related a[hidden],.ar-side-list [hidden],.ar-rail [hidden]{display:none!important}
+
+/* One copyright line at the foot of every page. */
+.site-copyright{display:block;color:#8b8fa3;font-size:.78rem;line-height:1.6}
+.footer .site-copyright{margin-top:14px}
+.site-footer{max-width:1240px;margin:34px auto 0;padding:20px 28px 42px;border-top:1px solid #ecebf3}
+@media(max-width:760px){.site-footer{padding:18px 18px 34px}}
 </style>
 <script id="article-navigation-v2-script">
 (function(){
