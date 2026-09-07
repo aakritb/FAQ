@@ -1,1 +1,16 @@
+# Nothing here is deployed. The Vercel URL is the link shared with customers,
+# so anything not part of the published site is kept off it — even when the
+# same file is readable in the git repo.
+
+# Answers held back for review (AssureBooks, AssureTax) and the review documents.
 drafts/
+
+# Build and QC scripts: needed to produce the site, not to serve it.
+tools/
+
+# Archives, review documents and editor junk, wherever they turn up.
+*.zip
+*.docx
+*.doc
+extracted/
+.DS_Store

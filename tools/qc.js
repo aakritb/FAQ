@@ -296,6 +296,60 @@ for (const dir of UNPUBLISHED) {
   }
 }
 notes.push("   no unpublished answer appears in any deployed file");
+
+/* The check above only looks at the files this script already knows about, so
+ * it cannot see a stray file that also gets deployed. A 1.3MB zip holding 63
+ * unpublished answers was downloadable from the shared URL while QC passed.
+ * So enumerate what would actually be deployed and judge that instead. */
+const IGNORE = fs
+  .readFileSync(path.join(ROOT, ".vercelignore"), "utf8")
+  .split("\n")
+  .map((l) => l.trim())
+  .filter((l) => l && !l.startsWith("#"));
+
+const ignored = (rel) =>
+  IGNORE.some((pat) =>
+    pat.endsWith("/")
+      ? rel === pat.slice(0, -1) || rel.startsWith(pat)
+      : pat.startsWith("*.")
+        ? rel.endsWith(pat.slice(1))
+        : rel === pat || path.basename(rel) === pat,
+  );
+
+const deploySet = [];
+(function walk(dir) {
+  for (const e of fs.readdirSync(path.join(ROOT, dir) || ROOT, { withFileTypes: true })) {
+    const rel = dir ? `${dir}/${e.name}` : e.name;
+    if (e.name === ".git" || e.name === ".vercel" || e.name === "node_modules") continue;
+    if (ignored(rel)) continue;
+    if (e.isDirectory()) walk(rel);
+    else deploySet.push(rel);
+  }
+})("");
+
+// Nothing that is not part of the published site may be deployed.
+const NOT_A_PAGE = /\.(zip|tar|gz|tgz|rar|7z|docx?|xlsx?|pptx?|pdf|bak|orig)$/i;
+for (const rel of deploySet) {
+  if (NOT_A_PAGE.test(rel)) fail(`${rel} would be deployed: the shared URL must carry only the site`);
+  if (path.basename(rel) === ".DS_Store") fail(`${rel} would be deployed`);
+}
+
+// And every deployed file — not just the known ones — must be free of held-back answers.
+const heldAnswers = [];
+for (const dir of UNPUBLISHED) {
+  const draft = path.join(ROOT, "drafts", `${dir}-index.html`);
+  if (!fs.existsSync(draft)) continue;
+  const m = fs.readFileSync(draft, "utf8").match(/const FAQS=(\[[\s\S]*?\n\]);/);
+  if (m) for (const x of m[1].matchAll(/a:"((?:[^"\\]|\\.){40,})"/g)) heldAnswers.push([dir, x[1].slice(0, 40)]);
+}
+for (const rel of deploySet) {
+  const buf = fs.readFileSync(path.join(ROOT, rel));
+  if (buf.includes(0)) continue; // binary: the extension check above already rejected archives
+  const text = buf.toString("utf8");
+  const leaked = heldAnswers.filter(([, a]) => text.includes(a));
+  if (leaked.length) fail(`${rel}: carries ${leaked.length} answers held back for review`);
+}
+notes.push(`   ${deploySet.length} files would deploy, none of them an archive or review document`);
 notes.push("   all four aligned, no counts, no numbering, answer links present");
 
 /* --------------------------------------------------------- 10. hygiene */

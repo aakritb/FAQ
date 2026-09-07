@@ -33,7 +33,8 @@ const COPY = ["index.html", "article.html", "vercel.json",
   "tools/remove-discovery-rails.js", "tools/static-hero-headline.js",
   "tools/trim-page-chrome.js", "tools/set-published-products.js",
   "tools/add-dashboard-category.js",
-  "tools/lib/regions.js"];
+  "tools/lib/regions.js",
+  ".vercelignore"];
 
 function sandbox() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "assureone-selftest-"));
@@ -68,6 +69,34 @@ const edit = (dir, rel, fn) => {
 
 /* Each scenario: break one region, then say what must happen. */
 const SCENARIOS = [
+  {
+    name: "an archive left in the folder while .vercelignore only excludes drafts",
+    why: "the state this was actually in: a zip holding 63 held-back answers was downloadable from the shared URL, and QC passed because it only inspected the files it already knew about",
+    break: (dir) => {
+      fs.writeFileSync(path.join(dir, ".vercelignore"), "drafts/\n");
+      fs.writeFileSync(path.join(dir, "AssureOne-Help-Center.zip"), "PK\u0003\u0004 stands in for the real archive");
+    },
+    expect: [{ tool: "qc.js", mustFail: true, mentions: "must carry only the site" }],
+  },
+  {
+    name: "a review document at the top level, with *.docx dropped from .vercelignore",
+    why: "one of those documents lists every AssureBooks and AssureTax answer",
+    break: (dir) => {
+      edit(dir, ".vercelignore", (t) => t.replace("*.docx\n", ""));
+      fs.writeFileSync(path.join(dir, "AssureOne-FAQ-Question-Review.docx"), "stands in for the review document");
+    },
+    expect: [{ tool: "qc.js", mustFail: true, mentions: "must carry only the site" }],
+  },
+  {
+    name: "a held-back answer pasted into a file nothing links to",
+    why: "the leak check must cover whatever would deploy, not a fixed list of pages",
+    break: (dir) => {
+      const draft = fs.readFileSync(path.join(dir, "drafts", "assurebooks-index.html"), "utf8");
+      const a = draft.match(/a:"((?:[^"\\]|\\.){80,})"/)[1];
+      fs.writeFileSync(path.join(dir, "handover-notes.txt"), "draft copy for later:\n" + a + "\n");
+    },
+    expect: [{ tool: "qc.js", mustFail: true, mentions: "held back for review" }],
+  },
   {
     name: "copyright element deleted, its CSS left in place",
     why: "the exact bug: a guard keyed on the class name would see the CSS and skip",
