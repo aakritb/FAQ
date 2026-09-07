@@ -27,19 +27,6 @@ const CHUNKS = ["questions-1.js", "questions-2.js", "questions-3.js",
 const PRODUCT_ORDER = ["pro", "books", "tax"];
 const DIR_FOR = { pro: "assurepro", books: "assurebooks", tax: "assuretax" };
 
-/* The hub's Popular/Latest rails name specific articles. They are checked on
- * every run, because a deleted article would otherwise become a dead link. */
-const RAIL_IDS = [
-  "pro-how-is-a-new-client-added-directly-31",
-  "pro-how-do-i-create-and-send-an-engagement-letter-82",
-  "pro-how-do-i-invite-a-team-member-20",
-  "pro-how-much-do-ai-credits-cost-and-how-are-more-credits-purchased-153",
-  "tax-is-there-a-review-stage-for-a-prepared-return-18",
-  "pro-what-is-included-in-assurepro-settings-11",
-  "pro-how-does-the-engagement-letter-signature-process-work-90",
-  "books-what-financial-statements-can-assurebooks-produce-31",
-];
-
 const FIELD_ORDER = ["id", "product", "category", "title", "description",
   "answer", "more", "steps", "search", "read", "path"];
 
@@ -202,16 +189,6 @@ if (short.length) throw new Error("articles with no usable answer:\n  " + short.
 const ids = new Set(articles.map((a) => a.id));
 if (ids.size !== articles.length) throw new Error("duplicate article ids");
 
-const dead = RAIL_IDS.filter((id) => !ids.has(id));
-if (dead.length) {
-  throw new Error(
-    "The hub's Popular/Latest rails point at articles that no longer exist:\n  " +
-    dead.join("\n  ") +
-    "\nPick replacements in RAIL_IDS at the top of this file, and update the\n" +
-    "matching `const popular=[...]` / `const latest=[...]` lines in index.html."
-  );
-}
-
 // every extra paragraph has to survive
 const lost = [];
 for (const product of PRODUCT_ORDER) {
@@ -226,5 +203,4 @@ if (lost.length) throw new Error("extra paragraphs did not survive:\n  " + lost.
 writeChunks(articles);
 console.log(`  ok  questions-*.js rewritten (${articles.filter((a) => a.more).length} with extra paragraphs, ${articles.filter((a) => a.steps).length} with steps)`);
 writeIdMaps(articles);
-console.log("  ok  rail ids all resolve");
 console.log("\nNow run:  node tools/qc.js");

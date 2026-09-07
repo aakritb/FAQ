@@ -135,10 +135,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
     <div class="hc-empty" id="hc-empty"><strong>No exact match found</strong>Try a shorter phrase, another category, or email support@assureone.ai.</div>
     <button class="hc-load-more" id="hc-load-more" type="button">Load more articles</button>
   </section>
-  <aside class="hc-rail" aria-label="Popular and latest help">
-    <section class="hc-rail-card"><p class="hc-label">Popular now</p><div class="hc-popular" id="hc-popular"></div></section>
-    <section class="hc-rail-card"><p class="hc-label">Latest articles</p><ul class="hc-latest" id="hc-latest"></ul></section>
-  </aside>
 </main>
 <footer class="site-footer"><span class="site-copyright">&copy; 2026 AssureOne Technologies LLC. All rights reserved.</span></footer>
 <header class="hero"><div class="hero-inner"><p class="eyebrow">AssureOne support center</p><h1>How can we help?</h1><p class="lede"><strong>Find precise answers across the AssureOne suite.</strong> Choose a product below to browse its help center.</p></div></header>
@@ -241,12 +237,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
       loadMore.style.display='none';
       empty.style.display='none';
       if(productPageLink) productPageLink.style.display='none';
-      // The Popular and Latest cards are driven by the index, so without it
-      // they would sit there as empty headings.
-      ['hc-popular','hc-latest'].forEach(function(id){
-        var el=document.getElementById(id);
-        if(el&&el.closest('.hc-rail-card')) el.closest('.hc-rail-card').style.display='none';
-      });
       list.innerHTML='<div class="hc-noindex"><strong>The article index did not load</strong>'+
         '<p>This can happen if a browser extension or network blocked part of the page. '+
         'Reload to try again, or open a product help centre below \u2014 those pages work on their own. '+
@@ -296,10 +286,6 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   clear.addEventListener('click',()=>{query='';product='';category='All Articles';visibleLimit=12;search.value='';render();});
   loadMore.addEventListener('click',()=>{visibleLimit+=12;render();});
   document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search.focus();}if(e.key==='Escape'&&document.activeElement===search){search.value='';query='';render();search.blur();}});
-  const popular=['pro-how-is-a-new-client-added-directly-31','pro-how-do-i-create-and-send-an-engagement-letter-82','pro-how-do-i-invite-a-team-member-20','pro-how-much-do-ai-credits-cost-and-how-are-more-credits-purchased-153','tax-is-there-a-review-stage-for-a-prepared-return-18'].map(id=>articles.find(a=>a.id===id)).filter(Boolean);
-  document.getElementById('hc-popular').innerHTML=popular.map(a=>'<a href="'+link(a)+'"><span>'+esc(a.title)+'<small>'+names[a.product]+' · '+esc(a.category)+'</small></span><span class="hc-popular-arrow">→</span></a>').join('');
-  const latest=['pro-what-is-included-in-assurepro-settings-11','pro-how-does-the-engagement-letter-signature-process-work-90','books-what-financial-statements-can-assurebooks-produce-31'].map(id=>articles.find(a=>a.id===id)).filter(Boolean);
-  document.getElementById('hc-latest').innerHTML=latest.map(a=>'<li><a href="'+link(a)+'">'+esc(a.title)+'<small>'+names[a.product]+' · '+a.read+' read</small></a></li>').join('');
   // Deep links from the article pages: ?q=, ?product= and ?category=
   // land the reader on the matching slice of the knowledge base.
   (function(){
@@ -661,6 +647,19 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
 .footer .site-copyright{margin-top:14px}
 .site-footer{max-width:1240px;margin:34px auto 0;padding:20px 28px 42px;border-top:1px solid #ecebf3}
 @media(max-width:760px){.site-footer{padding:18px 18px 34px}}
+
+/* rails-removed:start */
+/* The discovery rails are gone, so the shells are two columns and the
+   reading column takes the width the rail used to hold. */
+.hc-shell{grid-template-columns:190px minmax(0,1fr)!important}
+@media(max-width:1080px){.hc-shell{grid-template-columns:170px minmax(0,1fr)!important}}
+.ar-shell{max-width:1120px!important;grid-template-columns:218px minmax(0,1fr)!important}
+@media(min-width:981px){
+  .ar-side{grid-column:1!important;grid-row:1!important}
+  #ar-main{grid-column:2!important;grid-row:1!important}
+}
+@media(max-width:760px){.ar-shell{grid-template-columns:minmax(0,1fr)!important}}
+/* rails-removed:end */
 </style>
 <!-- homepage-rail-flow:end -->
 <!-- clean-links:start --><script>

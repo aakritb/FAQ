@@ -3,11 +3,12 @@
 Run order after any content or design change:
 
 ```
-node tools/sync-articles.js     # rebuild the article index from the product pages
-node tools/fix-merged-build.js  # re-apply the copy and navigator fixes
-node tools/add-copyright.js     # re-apply the footer copyright
-node tools/qc.js                # check everything
-node tools/selftest.js          # check that the checks still work
+node tools/sync-articles.js          # rebuild the article index from the product pages
+node tools/fix-merged-build.js       # re-apply the copy and navigator fixes
+node tools/add-copyright.js          # re-apply the footer copyright
+node tools/remove-discovery-rails.js # keep the right-hand rails out
+node tools/qc.js                     # check everything
+node tools/selftest.js               # check that the checks still work
 ```
 
 Every script is idempotent: running it on unchanged files rewrites the same
@@ -46,6 +47,18 @@ Two fixes that a rebuild of the design layer can undo:
 
 Puts `© 2026 AssureOne Technologies LLC. All rights reserved.` at the foot of
 every page, and keeps the old "Answers are maintained by…" note from returning.
+
+## `remove-discovery-rails.js`
+
+Keeps the right-hand rails out. The hub carried "Popular now" and "Latest
+articles"; the article page carried "Related articles". Those were the only
+cards in either rail, so both rails were removed and the grids collapsed to
+two columns, with the reading column taking the freed width.
+
+The layout is corrected by a rule appended last rather than by unpicking the
+four style layers that size those grids — they overwrite each other, and a
+combined selector like `.hc-sidebar,.hc-rail{...}` cannot be edited safely by
+pattern. The rail CSS that remains targets nothing; it is dead but harmless.
 
 ## `qc.js`
 

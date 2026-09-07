@@ -112,14 +112,17 @@ for (const p of PAGES) {
     if (!ids.has(id)) fail(`${p}: link to a non-existent article — ${id}`);
   }
 }
-// rails
-for (const listName of ["popular", "latest"]) {
-  const m = read("index.html").match(new RegExp("const " + listName + "=\\[(.*?)\\]"));
-  if (!m) { fail(`index.html: ${listName} rail not found`); continue; }
-  const list = m[1].split(",").map((s) => s.trim().replace(/^'|'$/g, "")).filter(Boolean);
-  for (const id of list) if (!ids.has(id)) fail(`index.html: ${listName} rail points at missing ${id}`);
-  notes.push(`   ${listName} rail: ${list.length} ids, all resolve`);
+// the discovery rails were removed; nothing may render or populate them
+for (const p of ["index.html", "article.html"]) {
+  const html = read(p);
+  if (hasMarkup(html, 'class="hc-rail"') || hasMarkup(html, 'id="ar-rail"'))
+    fail(`${p}: a removed discovery rail is back in the markup`);
+  if (/getElementById\('(hc-popular|hc-latest|ar-rail)'\)/.test(html))
+    fail(`${p}: still populating a removed rail`);
+  if (/rail\.innerHTML/.test(html)) fail(`${p}: still writing to a removed rail`);
 }
+notes.push("   discovery rails absent from the hub and the article page");
+
 // product page id maps
 for (const [key, dir] of Object.entries(DIRS)) {
   const html = read(dir + "/index.html");

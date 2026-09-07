@@ -29,7 +29,8 @@ const COPY = ["index.html", "article.html", "vercel.json",
   "assurepro/index.html", "assurebooks/index.html",
   "assuretax/index.html", "assureaudit/index.html",
   "tools/qc.js", "tools/sync-articles.js", "tools/add-copyright.js",
-  "tools/fix-merged-build.js", "tools/add-clean-links.js", "tools/lib/regions.js"];
+  "tools/fix-merged-build.js", "tools/add-clean-links.js",
+  "tools/remove-discovery-rails.js", "tools/lib/regions.js"];
 
 function sandbox() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "assureone-selftest-"));
@@ -131,6 +132,23 @@ const SCENARIOS = [
     break: (dir) => edit(dir, "article.html", (h) =>
       h.replace("<p class=\"ar-foot\">", "<p class=\"ar-foot\">Answers are maintained by the AssureOne team. ")),
     expect: [{ tool: "qc.js", mustFail: true, mentions: "old footer note" }],
+  },
+  {
+    name: "a discovery rail put back on the hub",
+    why: "the rails were removed on request; an empty or repopulated rail must not return",
+    break: (dir) => edit(dir, "index.html", (h) =>
+      h.replace("</main>", '<aside class="hc-rail"><div id="hc-popular"></div></aside></main>')),
+    expect: [
+      { tool: "qc.js", mustFail: true, mentions: "discovery rail" },
+      { tool: "remove-discovery-rails.js", mustFail: false, thenRestores: "rails-removed:start", in: "index.html" },
+    ],
+  },
+  {
+    name: "the article page writing to a rail that no longer exists",
+    why: "a leftover write would throw on every article and blank the page",
+    break: (dir) => edit(dir, "article.html", (h) =>
+      h.replace("  initSearch();  // the support-copy handler", "  rail.innerHTML='x';\n  initSearch();  // the support-copy handler")),
+    expect: [{ tool: "qc.js", mustFail: true, mentions: "removed rail" }],
   },
   {
     name: "a question deleted but its DETAILS entry left behind",

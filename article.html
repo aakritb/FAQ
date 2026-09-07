@@ -176,7 +176,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
 <div class="ar-shell">
   <aside class="ar-side" id="ar-side" aria-label="Articles in this category"></aside>
   <main id="ar-main" aria-live="polite"></main>
-  <aside class="ar-rail" id="ar-rail" aria-label="Related"></aside>
 </div>
 <p class="ar-foot"><span class="site-copyright">&copy; 2026 AssureOne Technologies LLC. All rights reserved.</span></p>
 
@@ -232,7 +231,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   var main=document.getElementById('ar-main');
   var crumbs=document.getElementById('ar-crumbs');
   var side=document.getElementById('ar-side');
-  var rail=document.getElementById('ar-rail');
 
   if(!current){
     document.title='Article not found | AssureOne Support';
@@ -241,7 +239,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
     main.innerHTML='<div class="ar-missing"><h1>We could not find that article</h1>'+
       '<p>The link may be out of date. Search from the box above, or browse the full knowledge base.</p>'+
       '<a href="index.html">Browse all articles</a></div>';
-    side.innerHTML='';rail.innerHTML='';
+    side.innerHTML='';
     initSearch();
     return;
   }
@@ -306,35 +304,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
     '</nav>';
 
   /* ---- right: more from this product, then support ---- */
-  /* The sidebar already lists this category, so the rail points at the rest
-     of the product instead — one article per other category, so it reads as
-     "other areas to look at" rather than six rows of the same heading. */
-  var pool=articles.filter(function(a){
-    return a.id!==current.id&&a.product===current.product;});
-  var byCategory={},order=[];
-  pool.forEach(function(a){
-    if(a.category===current.category) return;
-    if(!byCategory[a.category]){byCategory[a.category]=[];order.push(a.category);}
-    byCategory[a.category].push(a);
-  });
-  var related=[];
-  for(var round=0;related.length<6&&order.length;round++){
-    var added=false;
-    for(var i=0;i<order.length&&related.length<6;i++){
-      var bucket=byCategory[order[i]];
-      if(bucket[round]){related.push(bucket[round]);added=true;}
-    }
-    if(!added) break;
-  }
-  // A product with only this one category still gets a useful rail.
-  if(!related.length) related=pool.slice(0,6);
-  rail.innerHTML=
-    (related.length
-      ? '<section class="ar-rail-card"><p class="ar-label">More in '+esc(NAMES[current.product])+'</p>'+
-        '<div class="ar-related">'+related.map(function(a){
-          return '<a href="'+articleLink(a)+'">'+esc(a.title)+'<small>'+esc(a.category)+' &middot; '+esc(a.read||'')+' read</small></a>';
-        }).join('')+'</div></section>'
-      : '');
 
   initSearch();  // the support-copy handler is installed by add_header_copy.js
 
@@ -772,6 +741,19 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
 .footer .site-copyright{margin-top:14px}
 .site-footer{max-width:1240px;margin:34px auto 0;padding:20px 28px 42px;border-top:1px solid #ecebf3}
 @media(max-width:760px){.site-footer{padding:18px 18px 34px}}
+
+/* rails-removed:start */
+/* The discovery rails are gone, so the shells are two columns and the
+   reading column takes the width the rail used to hold. */
+.hc-shell{grid-template-columns:190px minmax(0,1fr)!important}
+@media(max-width:1080px){.hc-shell{grid-template-columns:170px minmax(0,1fr)!important}}
+.ar-shell{max-width:1120px!important;grid-template-columns:218px minmax(0,1fr)!important}
+@media(min-width:981px){
+  .ar-side{grid-column:1!important;grid-row:1!important}
+  #ar-main{grid-column:2!important;grid-row:1!important}
+}
+@media(max-width:760px){.ar-shell{grid-template-columns:minmax(0,1fr)!important}}
+/* rails-removed:end */
 </style>
 <script id="article-navigation-v2-script">
 (function(){
