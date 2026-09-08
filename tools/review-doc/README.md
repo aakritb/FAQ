@@ -11,5 +11,5 @@ built from what is actually live.
 `assurepro.json` is generated — do not edit it. The finished document belongs in
 `drafts/`, which is excluded from the deployment.
 
-The last round-trip is complete: the edits returned on 7 September 2026 were
-applied in commit 8f512b0, and this document matches the 171 questions now live.
+The latest round-trip is complete: the approved 8 September 2026 review copy
+matches the 166 AssurePro questions now used by the Help Center.
