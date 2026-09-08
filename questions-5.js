@@ -1,15 +1,58 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
+    "id": "pro-which-communication-channels-are-available-115",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "Which communication channels are available?",
+    "description": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected…",
+    "answer": "AssurePro brings the firm's client and internal communication channels together in Communications.",
+    "more": [
+      "Available channels include Portal chat, Email, SMS, Calls, and Team chat. Portal chat: secure messages exchanged with clients through the AssurePro client experience. Email: client email communication sent through the firm's connected email service. SMS: text messages sent through the firm's connected Twilio number. Calls: client call activity that can be recorded as part of the communication history. Team chat: internal communication between firm users.",
+      "Firm users can work from the shared Communications area when they want to manage conversations across multiple clients, or open a client's Communications tab when they want to begin with that client already selected. Keeping these channels connected to the client record helps the firm maintain a more complete communication history across client service, document follow-up, billing, and engagement work."
+    ],
+    "search": "AssurePro brings the firm's client and internal communication channels together in Communications. Available channels include Portal chat, Email, SMS, Calls, and Team chat. Portal chat: secure messages exchanged with clients through the AssurePro client experience. Email: client email communication sent through the firm's connected email service. SMS: text messages sent through the firm's connected Twilio number. Calls: client call activity that can be recorded as part of the communication history. Team chat: internal communication between firm users. Firm users can work from the shared Communications area when they want to manage conversations across multiple clients, or open a client's Communications tab when they want to begin with that client already selected. Keeping these channels connected to the client record helps the firm maintain a more complete communication history across client service, document follow-up, billing, and engagement work.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-start-a-client-conversation-116",
+    "product": "pro",
+    "category": "Getting Started",
+    "title": "How do I start a client conversation?",
+    "description": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select…",
+    "answer": "Firm users can start a conversation from the shared Communications area or directly from a client's Communications tab.",
+    "more": [
+      "Starting from the client workspace is useful when you are already working with a specific client because the client is selected automatically."
+    ],
+    "steps": [
+      "Open Communications, or open the client record and select Communications.",
+      "Select New Conversation.",
+      "Choose the client, if it is not already selected.",
+      "Choose the communication channel.",
+      "Complete the required information for that channel:",
+      "For Email, confirm the recipients, enter the subject, and write the message.",
+      "For Portal chat, confirm the client contact and enter the message.",
+      "For SMS, confirm the client contact and mobile number, then enter the message.",
+      "Review the recipients and message.",
+      "Send the conversation.",
+      "Use the shared inbox or client workspace to monitor replies and follow-up activity.",
+      "The conversation remains connected to the client relationship so other authorized firm users can review the communication history at any time."
+    ],
+    "search": "Firm users can start a conversation from the shared Communications area or directly from a client's Communications tab. Starting from the client workspace is useful when you are already working with a specific client because the client is selected automatically. Open Communications, or open the client record and select Communications. Select New Conversation. Choose the client, if it is not already selected. Choose the communication channel. Complete the required information for that channel: For Email, confirm the recipients, enter the subject, and write the message. For Portal chat, confirm the client contact and enter the message. For SMS, confirm the client contact and mobile number, then enter the message. Review the recipients and message. Send the conversation. Use the shared inbox or client workspace to monitor replies and follow-up activity. The conversation remains connected to the client relationship so other authorized firm users can review the communication history at any time.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
     "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
     "product": "pro",
     "category": "Getting Started",
     "title": "What is the difference between portal chat and SMS?",
     "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
-    "answer": "Portal chat is read and answered by the client user inside the client experience. SMS is delivered to the client's mobile number from the firm's connected Twilio number. Authorized firm users can review both channels in Communications and from the client workspace, but the client receives and responds through a different channel in each case.",
+    "answer": "Both portal chat and SMS let firm users communicate with clients, but the client receives and responds through a different channel.",
     "more": [
-      "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
+      "Portal chat is delivered inside the AssurePro client experience — use it for an ongoing conversation with a client who has activated portal access. SMS sends a text to the client's mobile number through the firm's connected Twilio number — use it for short, time-sensitive messages such as deadline reminders, follow-ups, or prompts to check the portal. SMS requires the firm's Twilio connection, an enabled sending number, and any applicable messaging registration. Authorized firm users can review the communication history in AssurePro regardless of which channel was used."
     ],
-    "search": "Portal chat is read and answered by the client user inside the client experience. SMS is delivered to the client's mobile number from the firm's connected Twilio number. Authorized firm users can review both channels in Communications and from the client workspace, but the client receives and responds through a different channel in each case. Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network.",
+    "search": "Both portal chat and SMS let firm users communicate with clients, but the client receives and responds through a different channel. Portal chat is delivered inside the AssurePro client experience — use it for an ongoing conversation with a client who has activated portal access. SMS sends a text to the client's mobile number through the firm's connected Twilio number — use it for short, time-sensitive messages such as deadline reminders, follow-ups, or prompts to check the portal. SMS requires the firm's Twilio connection, an enabled sending number, and any applicable messaging registration. Authorized firm users can review the communication history in AssurePro regardless of which channel was used.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -19,11 +62,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How can the communications inbox be organized?",
     "description": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review…",
-    "answer": "Choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in firm user's queue, and Resolved for completed threads. Labels such as Awaiting Reply, Needs Action, and FYI identify the expected next step so firm users can separate required client follow-up from informational messages.",
+    "answer": "The Communications inbox can be filtered and organized so firm users can focus on conversations that need attention.",
     "more": [
-      "A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response."
+      "After selecting the relevant communication channel, you can narrow the inbox using All, Unread, Assigned to me, and Resolved. All: shows all conversations available to you. Unread: shows conversations with new activity that has not yet been reviewed. Assigned to me: shows conversations assigned to the signed-in firm user. Resolved: shows conversations that have been completed and no longer require active follow-up.",
+      "Labels can provide additional context about what should happen next. Needs Action: the firm needs to take the next step. Awaiting Reply: the firm has responded and is waiting for the client. FYI: the conversation is informational and does not currently require a response.",
+      "A practical daily workflow is to start with Assigned to me, prioritize conversations marked Needs Action, respond or complete the required work, and then update the thread appropriately. Use Awaiting Reply when the next action belongs to the client, and mark the conversation Resolved when no further follow-up is required. Consistent use of assignments, labels, and resolution status helps firm users at every level distinguish active client follow-up from conversations that are already complete."
     ],
-    "search": "Choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in firm user's queue, and Resolved for completed threads. Labels such as Awaiting Reply, Needs Action, and FYI identify the expected next step so firm users can separate required client follow-up from informational messages. A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response.",
+    "search": "The Communications inbox can be filtered and organized so firm users can focus on conversations that need attention. After selecting the relevant communication channel, you can narrow the inbox using All, Unread, Assigned to me, and Resolved. All: shows all conversations available to you. Unread: shows conversations with new activity that has not yet been reviewed. Assigned to me: shows conversations assigned to the signed-in firm user. Resolved: shows conversations that have been completed and no longer require active follow-up. Labels can provide additional context about what should happen next. Needs Action: the firm needs to take the next step. Awaiting Reply: the firm has responded and is waiting for the client. FYI: the conversation is informational and does not currently require a response. A practical daily workflow is to start with Assigned to me, prioritize conversations marked Needs Action, respond or complete the required work, and then update the thread appropriately. Use Awaiting Reply when the next action belongs to the client, and mark the conversation Resolved when no further follow-up is required. Consistent use of assignments, labels, and resolution status helps firm users at every level distinguish active client follow-up from conversations that are already complete.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -33,11 +78,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Can client-facing emails be standardized?",
     "description": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each…",
-    "answer": "Yes. Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Templates are grouped by Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template identifies its trigger and provides the content fields that the firm can edit, such as the subject, heading, introduction, body, button label, or footer.",
+    "answer": "Yes. Email Templates allows firm administrators to standardize automated emails that AssurePro sends on the firm's behalf.",
     "more": [
-      "For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups."
+      "Templates are organized by functional area, such as Billing, Tax & Intake, Documents, E-sign, Client Portal, and Internal Alerts. Each template is associated with a specific trigger, helping administrators understand when that message will be sent. Depending on the template, editable content can include the subject, heading, introduction, message body, call-to-action or button label, and footer.",
+      "For example, your firm can customize a billing email that tells the client an invoice is ready, a document-request email that explains what the client needs to upload, an e-sign email that asks the client to review and sign an engagement package, and a client-portal email used during account activation or other portal activity.",
+      "Standardizing these templates helps maintain consistent wording, tone, instructions, and branding across recurring client communications. When editing an automated template, keep the message specific to its trigger and avoid adding instructions that could conflict with the workflow or action the client will see after selecting the email's call-to-action."
     ],
-    "search": "Yes. Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Templates are grouped by Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template identifies its trigger and provides the content fields that the firm can edit, such as the subject, heading, introduction, body, button label, or footer. For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups.",
+    "search": "Yes. Email Templates allows firm administrators to standardize automated emails that AssurePro sends on the firm's behalf. Templates are organized by functional area, such as Billing, Tax & Intake, Documents, E-sign, Client Portal, and Internal Alerts. Each template is associated with a specific trigger, helping administrators understand when that message will be sent. Depending on the template, editable content can include the subject, heading, introduction, message body, call-to-action or button label, and footer. For example, your firm can customize a billing email that tells the client an invoice is ready, a document-request email that explains what the client needs to upload, an e-sign email that asks the client to review and sign an engagement package, and a client-portal email used during account activation or other portal activity. Standardizing these templates helps maintain consistent wording, tone, instructions, and branding across recurring client communications. When editing an automated template, keep the message specific to its trigger and avoid adding instructions that could conflict with the workflow or action the client will see after selecting the email's call-to-action.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -47,16 +94,25 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How do I edit and test an automated email template?",
     "description": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings…",
-    "answer": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording.",
-    "steps": [
-      "Open Settings and choose Email Templates.",
-      "Search for the email or select it from its functional group.",
-      "Edit the subject and the available message sections, inserting supported placeholders with the { } control.",
-      "Review the desktop and mobile previews.",
-      "Use Send test to me to inspect the current on-screen wording.",
-      "Save the final version and confirm it appears under the Edited filter."
+    "answer": "Firm administrators can customize an automated email template from Settings > Email Templates and test the message before it is used with clients.",
+    "more": [
+      "The template editor supports features such as supported placeholders for dynamic information, rich-text formatting, desktop preview, mobile preview, and test email delivery."
     ],
-    "search": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings and choose Email Templates. Search for the email or select it from its functional group. Edit the subject and the available message sections, inserting supported placeholders with the { } control. Review the desktop and mobile previews. Use Send test to me to inspect the current on-screen wording. Save the final version and confirm it appears under the Edited filter.",
+    "steps": [
+      "Open Settings > Email Templates.",
+      "Search for the required email template or locate it within its functional group.",
+      "Review the template's trigger so you understand when the message is sent.",
+      "Edit the subject and any available message sections.",
+      "Use the { } control to insert supported placeholders where dynamic information is required.",
+      "Review both the desktop and mobile previews.",
+      "Select Send test to me to review the current message in an actual email.",
+      "Check the subject, formatting, wording, links or buttons, and placeholder placement.",
+      "Make any required corrections and save the template.",
+      "Confirm that the customized template appears under the Edited filter.",
+      "When testing, pay particular attention to placeholders. Make sure dynamic client, firm, date, invoice, document, or engagement information appears in a context that will still read naturally when the template is used.",
+      "Testing both desktop and mobile layouts helps ensure that clients receive a clear and usable message regardless of the device they use."
+    ],
+    "search": "Firm administrators can customize an automated email template from Settings > Email Templates and test the message before it is used with clients. The template editor supports features such as supported placeholders for dynamic information, rich-text formatting, desktop preview, mobile preview, and test email delivery. Open Settings > Email Templates. Search for the required email template or locate it within its functional group. Review the template's trigger so you understand when the message is sent. Edit the subject and any available message sections. Use the { } control to insert supported placeholders where dynamic information is required. Review both the desktop and mobile previews. Select Send test to me to review the current message in an actual email. Check the subject, formatting, wording, links or buttons, and placeholder placement. Make any required corrections and save the template. Confirm that the customized template appears under the Edited filter. When testing, pay particular attention to placeholders. Make sure dynamic client, firm, date, invoice, document, or engagement information appears in a context that will still read naturally when the template is used. Testing both desktop and mobile layouts helps ensure that clients receive a clear and usable message regardless of the device they use.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -66,11 +122,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Can administrators audit automated email delivery?",
     "description": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or…",
-    "answer": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded.",
+    "answer": "Yes. Email Log gives firm administrators visibility into automated emails sent by AssurePro.",
     "more": [
-      "Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a firm user's sent-mail folder."
+      "The log can show details such as sent time, delivery status, recipient, client, subject, message type, and delivery error when one is returned. Firm users can search the log by recipient or subject and filter by All, Sent, Failed, and Not sent. Use Sent to confirm successful delivery attempts, and use Failed or Not sent to identify messages that need investigation.",
+      "For example, if a client says they did not receive an automated document-request or engagement-letter email, search for the recipient and review the message status, timestamp, type, and any returned error. Verification-code and temporary-password emails are not included in Email Log.",
+      "For automated AssurePro messages, Email Log is the better source for delivery verification than relying on an individual firm user's sent-mail folder."
     ],
-    "search": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded. Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a firm user's sent-mail folder.",
+    "search": "Yes. Email Log gives firm administrators visibility into automated emails sent by AssurePro. The log can show details such as sent time, delivery status, recipient, client, subject, message type, and delivery error when one is returned. Firm users can search the log by recipient or subject and filter by All, Sent, Failed, and Not sent. Use Sent to confirm successful delivery attempts, and use Failed or Not sent to identify messages that need investigation. For example, if a client says they did not receive an automated document-request or engagement-letter email, search for the recipient and review the message status, timestamp, type, and any returned error. Verification-code and temporary-password emails are not included in Email Log. For automated AssurePro messages, Email Log is the better source for delivery verification than relying on an individual firm user's sent-mail folder.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -80,18 +138,20 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How do I investigate an email that was not delivered?",
     "description": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or…",
-    "answer": "Open Settings > Email Log to check an automated AssurePro email. Search by recipient or subject, filter by Sent, Failed, or Not sent, and open the record to review the delivery status and any error returned.",
-    "more": [
-      "After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected."
-    ],
+    "answer": "Use Email Log to investigate an automated AssurePro email that was not successfully delivered.",
     "steps": [
-      "Open Settings and choose Email Log.",
-      "Search by recipient or subject.",
-      "Filter to Failed or Not sent.",
-      "Review the sent time, client, subject, message type, and any error text shown on the row.",
-      "Correct the underlying address, connection, or template issue before retrying the associated workflow."
+      "Open Settings > Email Log.",
+      "Search by the client's email address or the email subject.",
+      "Filter the results to Failed or Not sent.",
+      "Review the: Recipient, Client, Sent time, Subject, Message type, Delivery error, when available.",
+      "Identify and correct the underlying issue, such as an incorrect email address, integration problem, or template-related issue.",
+      "Return to the workflow that originally generated the email, such as: Portal invitation, Invoice, Document request, Engagement-letter request.",
+      "Retry the action from that workflow.",
+      "Return to Email Log and confirm the new delivery attempt.",
+      "Do not assume that an email was delivered simply because the original workflow action was completed. Use Email Log to verify the status of the new attempt.",
+      "If the recipient address is incorrect, update the client or contact record before retrying so future automated communications use the correct address."
     ],
-    "search": "Open Settings > Email Log to check an automated AssurePro email. Search by recipient or subject, filter by Sent, Failed, or Not sent, and open the record to review the delivery status and any error returned. After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or Not sent. Review the sent time, client, subject, message type, and any error text shown on the row. Correct the underlying address, connection, or template issue before retrying the associated workflow.",
+    "search": "Use Email Log to investigate an automated AssurePro email that was not successfully delivered. Open Settings > Email Log. Search by the client's email address or the email subject. Filter the results to Failed or Not sent. Review the: Recipient, Client, Sent time, Subject, Message type, Delivery error, when available. Identify and correct the underlying issue, such as an incorrect email address, integration problem, or template-related issue. Return to the workflow that originally generated the email, such as: Portal invitation, Invoice, Document request, Engagement-letter request. Retry the action from that workflow. Return to Email Log and confirm the new delivery attempt. Do not assume that an email was delivered simply because the original workflow action was completed. Use Email Log to verify the status of the new attempt. If the recipient address is incorrect, update the client or contact record before retrying so future automated communications use the correct address.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -101,11 +161,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "What reminders can be automated?",
     "description": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule…",
-    "answer": "Reminders can send automated follow-up messages for outstanding document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off control and schedule for the initial delay, repeat interval, and total number of reminders.",
+    "answer": "AssurePro can automate follow-up reminders for several common client actions, helping the firm reduce repetitive manual follow-up.",
     "more": [
-      "Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action."
+      "Reminder types can include document requests, unanswered messages, tax organizers, and signature requests. Document requests: reminds clients about requested files that are still outstanding. Unanswered messages: follows up when a client has not responded to a communication. Tax organizers: reminds clients to complete required intake or organizer information. Signature requests: follows up on engagement letters or other signing packages that remain unsigned.",
+      "Each reminder type has its own configuration, including an enable or disable control, an initial reminder delay, a repeat interval, and a total number of reminders, which allows the firm to use different follow-up schedules for different client actions. For example, a missing tax document may require a different reminder cadence from an unsigned engagement letter or an unanswered message.",
+      "Firm administrators should configure reminder schedules based on the urgency and expected response time of each workflow rather than using the same cadence for every type of client follow-up."
     ],
-    "search": "Reminders can send automated follow-up messages for outstanding document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off control and schedule for the initial delay, repeat interval, and total number of reminders. Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action.",
+    "search": "AssurePro can automate follow-up reminders for several common client actions, helping the firm reduce repetitive manual follow-up. Reminder types can include document requests, unanswered messages, tax organizers, and signature requests. Document requests: reminds clients about requested files that are still outstanding. Unanswered messages: follows up when a client has not responded to a communication. Tax organizers: reminds clients to complete required intake or organizer information. Signature requests: follows up on engagement letters or other signing packages that remain unsigned. Each reminder type has its own configuration, including an enable or disable control, an initial reminder delay, a repeat interval, and a total number of reminders, which allows the firm to use different follow-up schedules for different client actions. For example, a missing tax document may require a different reminder cadence from an unsigned engagement letter or an unanswered message. Firm administrators should configure reminder schedules based on the urgency and expected response time of each workflow rather than using the same cadence for every type of client follow-up.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -115,15 +177,21 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How do I change an automatic reminder schedule?",
     "description": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work. Open Settings and choose Reminders. Find Document requests, Unanswered…",
-    "answer": "Open Settings > Reminders to configure document-request, unanswered-message, tax-organizer, and signature-request reminders separately. For each type, the firm can enable or disable reminders and set the first delay, repeat interval, and maximum number of reminders.",
-    "steps": [
-      "Open Settings and choose Reminders.",
-      "Find Document requests, Unanswered messages, Tax organizers, or Signature requests.",
-      "Use the switch to enable or disable that reminder type.",
-      "Select Edit schedule and set the number of days before the first reminder, the number of days between later reminders, and the maximum number of reminders to send.",
-      "Review the schedule summary shown on the reminder card."
+    "answer": "Firm administrators can configure each type of automated client reminder separately from Settings > Reminders.",
+    "more": [
+      "Reminder schedules are available for document requests, unanswered messages, tax organizers, and signature requests. For each reminder type, your firm can control whether reminders are enabled and how frequently they are sent."
     ],
-    "search": "Open Settings > Reminders to configure document-request, unanswered-message, tax-organizer, and signature-request reminders separately. For each type, the firm can enable or disable reminders and set the first delay, repeat interval, and maximum number of reminders. Open Settings and choose Reminders. Find Document requests, Unanswered messages, Tax organizers, or Signature requests. Use the switch to enable or disable that reminder type. Select Edit schedule and set the number of days before the first reminder, the number of days between later reminders, and the maximum number of reminders to send. Review the schedule summary shown on the reminder card.",
+    "steps": [
+      "Open Settings > Reminders.",
+      "Find the reminder type you want to update.",
+      "Turn the reminder on or off using the available switch.",
+      "Select Edit schedule.",
+      "Configure: Initial delay — number of days before the first reminder, Repeat interval — number of days between subsequent reminders, Maximum reminders — total number of automated reminders that can be sent.",
+      "Review the schedule summary displayed on the reminder card.",
+      "Set the cadence based on the type and urgency of the client action. For example, a time-sensitive tax organizer may require a different follow-up schedule from a routine document request.",
+      "Review reminder schedules periodically, particularly before high-volume filing or onboarding periods, to make sure the timing still matches your firm's client-service process."
+    ],
+    "search": "Firm administrators can configure each type of automated client reminder separately from Settings > Reminders. Reminder schedules are available for document requests, unanswered messages, tax organizers, and signature requests. For each reminder type, your firm can control whether reminders are enabled and how frequently they are sent. Open Settings > Reminders. Find the reminder type you want to update. Turn the reminder on or off using the available switch. Select Edit schedule. Configure: Initial delay — number of days before the first reminder, Repeat interval — number of days between subsequent reminders, Maximum reminders — total number of automated reminders that can be sent. Review the schedule summary displayed on the reminder card. Set the cadence based on the type and urgency of the client action. For example, a time-sensitive tax organizer may require a different follow-up schedule from a routine document request. Review reminder schedules periodically, particularly before high-volume filing or onboarding periods, to make sure the timing still matches your firm's client-service process.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -133,11 +201,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Can AssurePro follow up when a client has not responded?",
     "description": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type…",
-    "answer": "Yes. AssurePro can send automated follow-up messages for outstanding document requests, unanswered messages, tax organizers, and signature requests. Firm administrators configure each reminder type separately so the timing and number of reminders match the firm's process.",
+    "answer": "Yes. AssurePro can automatically follow up with clients when certain requests or actions remain outstanding.",
     "more": [
-      "For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but a firm user should intervene when the sequence ends or the client explains a blocker."
+      "Automated follow-up can be configured for document requests that are still awaiting files, unanswered messages waiting for a client response, tax organizers that have not been completed, and signature requests for unsigned engagement packages. Firm administrators configure the reminder schedule for each type independently, including the initial delay, repeat interval, and maximum number of reminders.",
+      "For example, if a client has not uploaded requested tax documents, AssurePro can send reminders according to the firm's Document requests schedule. If a client has not responded to an important conversation, the Unanswered messages schedule can provide a separate follow-up cadence.",
+      "Automated reminders reduce routine follow-up, but they do not replace active client management, and firm users should continue monitoring the underlying request, conversation, organizer, or signing package. If the automated reminder sequence ends and the item is still outstanding—or if the client reports a problem completing the requested action—a firm user should follow up directly and address the specific blocker."
     ],
-    "search": "Yes. AssurePro can send automated follow-up messages for outstanding document requests, unanswered messages, tax organizers, and signature requests. Firm administrators configure each reminder type separately so the timing and number of reminders match the firm's process. For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but a firm user should intervene when the sequence ends or the client explains a blocker.",
+    "search": "Yes. AssurePro can automatically follow up with clients when certain requests or actions remain outstanding. Automated follow-up can be configured for document requests that are still awaiting files, unanswered messages waiting for a client response, tax organizers that have not been completed, and signature requests for unsigned engagement packages. Firm administrators configure the reminder schedule for each type independently, including the initial delay, repeat interval, and maximum number of reminders. For example, if a client has not uploaded requested tax documents, AssurePro can send reminders according to the firm's Document requests schedule. If a client has not responded to an important conversation, the Unanswered messages schedule can provide a separate follow-up cadence. Automated reminders reduce routine follow-up, but they do not replace active client management, and firm users should continue monitoring the underlying request, conversation, organizer, or signing package. If the automated reminder sequence ends and the item is still outstanding—or if the client reports a problem completing the requested action—a firm user should follow up directly and address the specific blocker.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -147,11 +217,17 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Can AssurePro send and receive client text messages?",
     "description": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration…",
-    "answer": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked.",
+    "answer": "Yes. AssurePro supports client SMS messaging through a connected Twilio account.",
     "more": [
-      "After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized firm users."
+      "After Twilio is connected, the firm can configure a phone number for client texting; Phone Numbers shows which capabilities — SMS, MMS, Voice — each number supports. Firm users can then use SMS from Communications or the client workspace, with replies remaining connected to the client's communication history."
     ],
-    "search": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked. After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized firm users.",
+    "steps": [
+      "Connect the firm's Twilio account, then open Phone Numbers and link an existing firm-owned number or add a new one.",
+      "Confirm the number supports the communication capabilities the firm intends to use.",
+      "Complete A2P 10DLC registration for applicable US messaging traffic — unregistered traffic may be filtered or blocked by carriers.",
+      "Send a controlled test message to confirm both outbound and inbound messaging work, then begin using SMS for appropriate client communications."
+    ],
+    "search": "Yes. AssurePro supports client SMS messaging through a connected Twilio account. After Twilio is connected, the firm can configure a phone number for client texting; Phone Numbers shows which capabilities — SMS, MMS, Voice — each number supports. Firm users can then use SMS from Communications or the client workspace, with replies remaining connected to the client's communication history. Connect the firm's Twilio account, then open Phone Numbers and link an existing firm-owned number or add a new one. Confirm the number supports the communication capabilities the firm intends to use. Complete A2P 10DLC registration for applicable US messaging traffic — unregistered traffic may be filtered or blocked by carriers. Send a controlled test message to confirm both outbound and inbound messaging work, then begin using SMS for appropriate client communications.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -161,15 +237,19 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How do I configure a firm phone number for SMS?",
     "description": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add…",
-    "answer": "Connect the firm's Twilio account in Settings > Integrations, then open Phone Numbers to link an existing Twilio number or add a new number for client messaging. Confirm its SMS capability and A2P 10DLC registration status before using it for US carrier traffic.",
+    "answer": "Firm administrators can configure a phone number for client SMS messaging after connecting the firm's Twilio account.",
     "steps": [
-      "Open Settings and confirm Twilio is connected under Integrations.",
-      "Choose Phone Numbers and select Add number.",
-      "Link a number already owned in Twilio or follow the offered flow to add a new number.",
-      "Confirm the number and its SMS or MMS capabilities under Your numbers.",
-      "Complete A2P 10DLC registration for US carrier messaging and use Refresh status to verify the result."
+      "Open Settings > Integrations and confirm that Twilio is connected.",
+      "Open Phone Numbers.",
+      "Select Add number.",
+      "Choose whether to: Link a phone number already owned in Twilio, Add a new number using the available setup flow.",
+      "Review the number under Your numbers and confirm its supported capabilities, such as SMS or MMS.",
+      "For applicable U.S. carrier messaging, complete A2P 10DLC registration.",
+      "Use Refresh status to confirm the registration result.",
+      "Send a controlled test message before using the number for regular client communication.",
+      "Before rollout, confirm that the number your firm intends to use is active, supports SMS, and has the required registration status for the type of messaging being sent."
     ],
-    "search": "Connect the firm's Twilio account in Settings > Integrations, then open Phone Numbers to link an existing Twilio number or add a new number for client messaging. Confirm its SMS capability and A2P 10DLC registration status before using it for US carrier traffic. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add number. Link a number already owned in Twilio or follow the offered flow to add a new number. Confirm the number and its SMS or MMS capabilities under Your numbers. Complete A2P 10DLC registration for US carrier messaging and use Refresh status to verify the result.",
+    "search": "Firm administrators can configure a phone number for client SMS messaging after connecting the firm's Twilio account. Open Settings > Integrations and confirm that Twilio is connected. Open Phone Numbers. Select Add number. Choose whether to: Link a phone number already owned in Twilio, Add a new number using the available setup flow. Review the number under Your numbers and confirm its supported capabilities, such as SMS or MMS. For applicable U.S. carrier messaging, complete A2P 10DLC registration. Use Refresh status to confirm the registration result. Send a controlled test message before using the number for regular client communication. Before rollout, confirm that the number your firm intends to use is active, supports SMS, and has the required registration status for the type of messaging being sent.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -179,11 +259,12 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "What phone number does a client see when the firm sends an SMS?",
     "description": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before…",
-    "answer": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before relying on it for US client messaging.",
+    "answer": "The client sees the Twilio phone number linked to your firm in AssurePro as the sender of the SMS.",
     "more": [
-      "If the firm owns several Twilio numbers, confirm which one is linked in Settings > Phone Numbers before telling clients what to save. The row also shows capabilities and registration status; a number that is not correctly registered may be filtered even though it appears in the firm's configuration."
+      "If your firm has more than one Twilio number, administrators should confirm which number is linked under Settings > Phone Numbers before telling clients which number to save or recognize. The Phone Numbers area can also show information such as SMS capability, MMS capability, voice capability, and A2P 10DLC registration status.",
+      "For U.S. carrier messaging, confirm that the selected number has the required registration status before relying on it for regular client communication — a number may appear in the firm's configuration but still experience carrier filtering if the required messaging registration is incomplete. It is good practice to use a consistent firm number for client SMS so clients can recognize the sender and firm users can maintain a predictable communication channel."
     ],
-    "search": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before relying on it for US client messaging. If the firm owns several Twilio numbers, confirm which one is linked in Settings > Phone Numbers before telling clients what to save. The row also shows capabilities and registration status; a number that is not correctly registered may be filtered even though it appears in the firm's configuration.",
+    "search": "The client sees the Twilio phone number linked to your firm in AssurePro as the sender of the SMS. If your firm has more than one Twilio number, administrators should confirm which number is linked under Settings > Phone Numbers before telling clients which number to save or recognize. The Phone Numbers area can also show information such as SMS capability, MMS capability, voice capability, and A2P 10DLC registration status. For U.S. carrier messaging, confirm that the selected number has the required registration status before relying on it for regular client communication — a number may appear in the firm's configuration but still experience carrier filtering if the required messaging registration is incomplete. It is good practice to use a consistent firm number for client SMS so clients can recognize the sender and firm users can maintain a predictable communication channel.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -193,11 +274,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Troubleshooting",
     "title": "What calendar connections are supported?",
     "description": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
-    "answer": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching each connected meeting to its client record.",
+    "answer": "AssurePro supports calendar and scheduling integrations that help the firm manage client meetings and connect meeting activity to client records.",
     "more": [
-      "Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to a client record; verify that association so meeting context appears with the correct relationship."
+      "Calendly supports client meeting scheduling; Google Calendar and Outlook Calendar connect calendar activity and can associate a supported meeting with the relevant client record. Connect the provider under Settings > Integrations, then use Calendar for the firm's meeting workflow, and confirm connected meetings are matched to the correct client where matching is available."
     ],
-    "search": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching each connected meeting to its client record. Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to a client record; verify that association so meeting context appears with the correct relationship.",
+    "search": "AssurePro supports calendar and scheduling integrations that help the firm manage client meetings and connect meeting activity to client records. Calendly supports client meeting scheduling; Google Calendar and Outlook Calendar connect calendar activity and can associate a supported meeting with the relevant client record. Connect the provider under Settings > Integrations, then use Calendar for the firm's meeting workflow, and confirm connected meetings are matched to the correct client where matching is available.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -207,8 +288,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Does everything a client sees carry the firm's branding, or does AssureOne branding appear anywhere?",
     "description": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client…",
-    "answer": "The firm can configure its client-facing identity in Settings > Client Portal, including the firm logo, primary and accent colors, portal address, and client-facing portal settings shown on that page. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
-    "search": "The firm can configure its client-facing identity in Settings > Client Portal, including the firm logo, primary and accent colors, portal address, and client-facing portal settings shown on that page. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
+    "answer": "AssurePro allows the firm to apply its own branding across key client-facing areas, but some AssureOne branding may still appear in selected platform-managed locations.",
+    "more": [
+      "Firm administrators maintain the firm's core identity in Settings > Firm Profile, including the firm logo, firm name and contact information, primary brand color, and accent color. The client portal address and related portal settings are managed separately under Settings > Client Portal.",
+      "The firm's branding is used across supported parts of the client experience, while the AssureOne name may still appear in certain system-managed areas, such as selected email footers or other platform-generated content.",
+      "Before rolling AssurePro out to clients, firm administrators should review Firm Profile branding, Client Portal settings and portal address, the client portal experience, Automated Email Templates, desktop and mobile email previews, test emails, and the engagement-letter and document-request experiences. This helps the firm confirm how its branding appears across the client experience and understand where AssureOne platform identification may still be visible."
+    ],
+    "search": "AssurePro allows the firm to apply its own branding across key client-facing areas, but some AssureOne branding may still appear in selected platform-managed locations. Firm administrators maintain the firm's core identity in Settings > Firm Profile, including the firm logo, firm name and contact information, primary brand color, and accent color. The client portal address and related portal settings are managed separately under Settings > Client Portal. The firm's branding is used across supported parts of the client experience, while the AssureOne name may still appear in certain system-managed areas, such as selected email footers or other platform-generated content. Before rolling AssurePro out to clients, firm administrators should review Firm Profile branding, Client Portal settings and portal address, the client portal experience, Automated Email Templates, desktop and mobile email previews, test emails, and the engagement-letter and document-request experiences. This helps the firm confirm how its branding appears across the client experience and understand where AssureOne platform identification may still be visible.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -218,25 +304,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How is the Reports area organized?",
     "description": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates…",
-    "answer": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the firm user's own dashboards. Templates is the widget library and custom-dashboard builder.",
+    "answer": "The Reports area is organized into three main destinations:",
     "more": [
-      "Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review."
+      "Overview provides standard firm KPIs and report cards for a high-level view of firm performance. My Report contains starter dashboards, dashboards shared with the firm, and dashboards created by the signed-in user. Templates provides the report-widget library and tools for building custom dashboards.",
+      "Use Overview for a standard firm health check, My Report for dashboards you review regularly, and Templates when you want to create a dashboard with a different combination of metrics. For example, a manager may begin in Overview to review the firm's current billing position, open the Full billing report for more detail, and then duplicate a Billing & Collections dashboard into My dashboards for a customized recurring review.",
+      "This structure lets firm users move from high-level monitoring to detailed analysis and then save the views they need for ongoing management."
     ],
-    "search": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the firm user's own dashboards. Templates is the widget library and custom-dashboard builder. Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-reports-are-available-on-overview-132",
-    "product": "pro",
-    "category": "Dashboard",
-    "title": "What reports are available on Overview?",
-    "description": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's…",
-    "answer": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's active and overdue counts, average days, and load.",
-    "more": [
-      "Revenue by service line explains where billed value comes from; Hours logged compares logged, billable, and billed time; A/R aging groups unpaid balances by age; Tasks completed shows operational throughput; Agreement funnel tracks signing; Top clients shows concentration; and Workflow stages shows volume, overdue work, age, and load."
-    ],
-    "search": "Overview includes Revenue by service line, Hours logged monthly, A/R aging, Tasks completed monthly, Agreement funnel, Top clients by revenue, and Workflow stages. Workflow stages shows each stage's active and overdue counts, average days, and load. Revenue by service line explains where billed value comes from; Hours logged compares logged, billable, and billed time; A/R aging groups unpaid balances by age; Tasks completed shows operational throughput; Agreement funnel tracks signing; Top clients shows concentration; and Workflow stages shows volume, overdue work, age, and load.",
+    "search": "The Reports area is organized into three main destinations: Overview provides standard firm KPIs and report cards for a high-level view of firm performance. My Report contains starter dashboards, dashboards shared with the firm, and dashboards created by the signed-in user. Templates provides the report-widget library and tools for building custom dashboards. Use Overview for a standard firm health check, My Report for dashboards you review regularly, and Templates when you want to create a dashboard with a different combination of metrics. For example, a manager may begin in Overview to review the firm's current billing position, open the Full billing report for more detail, and then duplicate a Billing & Collections dashboard into My dashboards for a customized recurring review. This structure lets firm users move from high-level monitoring to detailed analysis and then save the views they need for ongoing management.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -246,8 +320,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Which KPIs appear at the top of Reports?",
     "description": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received,…",
-    "answer": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received, Outstanding A/R identifies the unpaid balance, Billable Hours and Utilization describe productive time, and New Clients shows growth. Select MTD, QTD, YTD, 12M, or Custom before interpreting the values so every card reflects the intended period.",
-    "search": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received, Outstanding A/R identifies the unpaid balance, Billable Hours and Utilization describe productive time, and New Clients shows growth. Select MTD, QTD, YTD, 12M, or Custom before interpreting the values so every card reflects the intended period.",
+    "answer": "The top of Reports includes headline KPI cards that provide a quick view of firm performance.",
+    "more": [
+      "These can include Total Revenue (billed revenue for the selected period), Collected (payments collected during the selected period), Outstanding A/R (client balances that remain unpaid), Billable Hours (time recorded as billable), Utilization (the proportion of available or recorded time used for billable work, based on the firm's reporting setup), and New Clients (clients added during the selected period).",
+      "Review these KPIs together rather than in isolation. For example, strong Total Revenue with a growing Outstanding A/R balance may indicate that billing performance is strong but collections require attention.",
+      "Before interpreting the KPI cards, select the correct reporting period: MTD (Month to Date), QTD (Quarter to Date), YTD (Year to Date), 12M (Last 12 months), or Custom (a date range selected by the user). Using the same reporting period across the cards helps partners and managers compare the metrics consistently."
+    ],
+    "search": "The top of Reports includes headline KPI cards that provide a quick view of firm performance. These can include Total Revenue (billed revenue for the selected period), Collected (payments collected during the selected period), Outstanding A/R (client balances that remain unpaid), Billable Hours (time recorded as billable), Utilization (the proportion of available or recorded time used for billable work, based on the firm's reporting setup), and New Clients (clients added during the selected period). Review these KPIs together rather than in isolation. For example, strong Total Revenue with a growing Outstanding A/R balance may indicate that billing performance is strong but collections require attention. Before interpreting the KPI cards, select the correct reporting period: MTD (Month to Date), QTD (Quarter to Date), YTD (Year to Date), 12M (Last 12 months), or Custom (a date range selected by the user). Using the same reporting period across the cards helps partners and managers compare the metrics consistently.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -257,30 +336,22 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How do I review and export a report?",
     "description": "Use the common period controls to keep the report cards and KPI context aligned. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when…",
-    "answer": "Set the reporting period before reviewing or exporting results so the KPI cards, report widgets, focused dashboard, and downloaded output all use the intended dates. AssurePro provides MTD, QTD, YTD, 12M, and custom date-range controls.",
+    "answer": "Set the reporting period first so the KPI cards, report widgets, detailed dashboards, and exported results reflect the dates you intend to review.",
+    "more": [
+      "AssurePro provides period options such as MTD, QTD, YTD, 12M, and Custom."
+    ],
     "steps": [
       "Open Reports and choose Overview or My Report.",
-      "Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required.",
-      "Review the KPI card or report card that answers the reporting question.",
-      "Select Full report on a card when a detailed view is available.",
-      "Review the resulting focused dashboard and its supporting widgets.",
-      "Select Export when an external copy is needed."
+      "Select the reporting period: MTD, QTD, YTD, 12M, Custom.",
+      "If you choose Custom, enter the required date range.",
+      "Review the KPI card, report card, or dashboard that answers your reporting question.",
+      "Select Full report where a more detailed view is available.",
+      "Review the focused dashboard and its supporting widgets.",
+      "Select Export when you need a copy for external analysis, reconciliation, or recordkeeping.",
+      "Before exporting, confirm the reporting period and any active filters. This helps ensure the downloaded output matches the same view you reviewed in AssurePro.",
+      "For example, if a partner is reviewing year-to-date collections, set the period to YTD before opening the detailed billing report and exporting the results."
     ],
-    "search": "Set the reporting period before reviewing or exporting results so the KPI cards, report widgets, focused dashboard, and downloaded output all use the intended dates. AssurePro provides MTD, QTD, YTD, 12M, and custom date-range controls. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required. Review the KPI card or report card that answers the reporting question. Select Full report on a card when a detailed view is available. Review the resulting focused dashboard and its supporting widgets. Select Export when an external copy is needed.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-happens-when-i-select-full-report-on-an-overview-card-135",
-    "product": "pro",
-    "category": "Dashboard",
-    "title": "What happens when I select Full report on an Overview card?",
-    "description": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per…",
-    "answer": "Full report opens the detailed dashboard connected to the selected Overview card instead of expanding that card on the Overview page. The focused dashboard keeps the reporting-period controls and provides the related metrics, breakdowns, and Export action in one view.",
-    "more": [
-      "For example, Full revenue report opens Revenue Snapshot, where a firm user can review total revenue, revenue per billed client, new-versus-existing client revenue, revenue mix, cross-sell measures, and service-line detail for the selected period."
-    ],
-    "search": "Full report opens the detailed dashboard connected to the selected Overview card instead of expanding that card on the Overview page. The focused dashboard keeps the reporting-period controls and provides the related metrics, breakdowns, and Export action in one view. For example, Full revenue report opens Revenue Snapshot, where a firm user can review total revenue, revenue per billed client, new-versus-existing client revenue, revenue mix, cross-sell measures, and service-line detail for the selected period.",
+    "search": "Set the reporting period first so the KPI cards, report widgets, detailed dashboards, and exported results reflect the dates you intend to review. AssurePro provides period options such as MTD, QTD, YTD, 12M, and Custom. Open Reports and choose Overview or My Report. Select the reporting period: MTD, QTD, YTD, 12M, Custom. If you choose Custom, enter the required date range. Review the KPI card, report card, or dashboard that answers your reporting question. Select Full report where a more detailed view is available. Review the focused dashboard and its supporting widgets. Select Export when you need a copy for external analysis, reconciliation, or recordkeeping. Before exporting, confirm the reporting period and any active filters. This helps ensure the downloaded output matches the same view you reviewed in AssurePro. For example, if a partner is reviewing year-to-date collections, set the period to YTD before opening the detailed billing report and exporting the results.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -290,11 +361,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Can report periods and results be changed or exported?",
     "description": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active…",
-    "answer": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active and overdue work.",
+    "answer": "Yes. AssurePro lets firm users change the reporting period, review more detailed results, and export report data.",
     "more": [
-      "Choose MTD for current-month operations, QTD for quarter performance, YTD for the current year, 12M for a rolling view, or Custom for a specific engagement or management period. Apply the period before opening Full report or Export so the detailed view and downloaded result use the intended dates."
+      "Available reporting periods include MTD (Month to Date), QTD (Quarter to Date), YTD (Year to Date), 12M (Last 12 months), and Custom (a user-defined date range). Use the period that matches the management question you are reviewing — for example, MTD for current-month operations, QTD for quarterly performance, YTD for year-to-date trends, and Custom for a specific engagement or review period.",
+      "Some reports also support additional filters. For example, workflow reporting can be narrowed by stage or by measures such as active and overdue work.",
+      "After setting the reporting period and filters, use Full report when a more detailed dashboard is available or Export when you need the results outside AssurePro. Always apply the intended reporting period and filters before opening a detailed report or exporting so the resulting view reflects the correct scope."
     ],
-    "search": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active and overdue work. Choose MTD for current-month operations, QTD for quarter performance, YTD for the current year, 12M for a rolling view, or Custom for a specific engagement or management period. Apply the period before opening Full report or Export so the detailed view and downloaded result use the intended dates.",
+    "search": "Yes. AssurePro lets firm users change the reporting period, review more detailed results, and export report data. Available reporting periods include MTD (Month to Date), QTD (Quarter to Date), YTD (Year to Date), 12M (Last 12 months), and Custom (a user-defined date range). Use the period that matches the management question you are reviewing — for example, MTD for current-month operations, QTD for quarterly performance, YTD for year-to-date trends, and Custom for a specific engagement or review period. Some reports also support additional filters. For example, workflow reporting can be narrowed by stage or by measures such as active and overdue work. After setting the reporting period and filters, use Full report when a more detailed dashboard is available or Export when you need the results outside AssurePro. Always apply the intended reporting period and filters before opening a detailed report or exporting so the resulting view reflects the correct scope.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -304,44 +377,18 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Can report and dashboard data be exported?",
     "description": "Yes. Report and dashboard results can be exported for review or use outside AssurePro. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export…",
-    "answer": "Yes. Set the reporting period and filters first, then select Export from the report or focused dashboard. Review the downloaded file before sharing it because it can contain client names, financial results, workload measures, or other firm information.",
+    "answer": "Yes. Firm users can export report and dashboard data for external analysis, reconciliation, or recordkeeping.",
     "steps": [
       "Open Reports and choose Overview or My Report.",
-      "Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period.",
-      "Open a Full report when the export should come from a focused dashboard rather than the high-level Overview.",
-      "Confirm that the visible widgets and filters match the information needed.",
-      "Select Export and save the report file generated by AssurePro.",
-      "Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data."
+      "Select the required reporting period: MTD, QTD, YTD, 12M, or Custom.",
+      "Apply any additional filters needed for the review.",
+      "Open Full report if you want to export from a focused dashboard rather than the high-level Overview.",
+      "Confirm that the visible widgets and filters match the information you need.",
+      "Select Export.",
+      "Review the exported file before sharing or storing it.",
+      "Note: Exported reports may contain client names, financial amounts, workload information, engagement data, or other firm information. Review the file and follow your firm's data-handling and sharing policies before distributing it outside the intended audience."
     ],
-    "search": "Yes. Set the reporting period and filters first, then select Export from the report or focused dashboard. Review the downloaded file before sharing it because it can contain client names, financial results, workload measures, or other firm information. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period. Open a Full report when the export should come from a focused dashboard rather than the high-level Overview. Confirm that the visible widgets and filters match the information needed. Select Export and save the report file generated by AssurePro. Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-available-in-my-report-138",
-    "product": "pro",
-    "category": "Dashboard",
-    "title": "What is available in My Report?",
-    "description": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for…",
-    "answer": "My Report organizes dashboards into Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards provide ready-to-use views, shared dashboards are available to firm users with report access, and My dashboards contains the signed-in firm user's saved dashboards.",
-    "more": [
-      "This separation lets your firm keep standard management views available to the team while allowing individual firm users to build personal dashboards without changing the shared versions."
-    ],
-    "search": "My Report organizes dashboards into Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards provide ready-to-use views, shared dashboards are available to firm users with report access, and My dashboards contains the signed-in firm user's saved dashboards. This separation lets your firm keep standard management views available to the team while allowing individual firm users to build personal dashboards without changing the shared versions.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-which-starter-dashboards-are-available-139",
-    "product": "pro",
-    "category": "Dashboard",
-    "title": "Which starter dashboards are available?",
-    "description": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused…",
-    "answer": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused set of widgets for that operating question.",
-    "more": [
-      "Use Revenue Snapshot for growth and mix, Client Health for relationship attention, Billing & Collections for receivables, Agreement Pipeline for signing progress, Workflow & Capacity for delivery pressure, Task Dashboard for execution, Time & Utilization for effort, and Firm Pulse for a broad operating summary."
-    ],
-    "search": "The starter dashboards are Revenue Snapshot, Client Health, Billing & Collections, Agreement Pipeline, Workflow & Capacity, Task Dashboard, Time & Utilization, and Firm Pulse. Each combines a focused set of widgets for that operating question. Use Revenue Snapshot for growth and mix, Client Health for relationship attention, Billing & Collections for receivables, Agreement Pipeline for signing progress, Workflow & Capacity for delivery pressure, Task Dashboard for execution, Time & Utilization for effort, and Firm Pulse for a broad operating summary.",
+    "search": "Yes. Firm users can export report and dashboard data for external analysis, reconciliation, or recordkeeping. Open Reports and choose Overview or My Report. Select the required reporting period: MTD, QTD, YTD, 12M, or Custom. Apply any additional filters needed for the review. Open Full report if you want to export from a focused dashboard rather than the high-level Overview. Confirm that the visible widgets and filters match the information you need. Select Export. Review the exported file before sharing or storing it. Note: Exported reports may contain client names, financial amounts, workload information, engagement data, or other firm information. Review the file and follow your firm's data-handling and sharing policies before distributing it outside the intended audience.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -349,34 +396,25 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-build-a-custom-dashboard-140",
     "product": "pro",
     "category": "Dashboard",
-    "title": "How do I build a custom dashboard?",
+    "title": "How do I build a custom report?",
     "description": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected. Open Reports and choose Templates. Search for a widget…",
-    "answer": "Build a custom dashboard from Reports > Templates by selecting the report widgets that answer the management question you want to track. After selecting at least one widget, you can arrange the layout and save the dashboard for personal use or share it with the firm.",
-    "steps": [
-      "Open Reports and choose Templates.",
-      "Search for a widget or filter the library by category.",
-      "Select the widgets needed for the dashboard.",
-      "Review the selected widgets, which appear in selection order.",
-      "Drag widgets into the preferred order and choose a width and, when the widget displays a height control, adjust its height.",
-      "Select Save dashboard.",
-      "Enter a name and optional description, then decide whether to Share with the firm.",
-      "Save the dashboard; a shared dashboard is visible to everyone with report access."
-    ],
-    "search": "Build a custom dashboard from Reports > Templates by selecting the report widgets that answer the management question you want to track. After selecting at least one widget, you can arrange the layout and save the dashboard for personal use or share it with the firm. Open Reports and choose Templates. Search for a widget or filter the library by category. Select the widgets needed for the dashboard. Review the selected widgets, which appear in selection order. Drag widgets into the preferred order and choose a width and, when the widget displays a height control, adjust its height. Select Save dashboard. Enter a name and optional description, then decide whether to Share with the firm. Save the dashboard; a shared dashboard is visible to everyone with report access.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-how-can-report-widgets-be-arranged-141",
-    "product": "pro",
-    "category": "Dashboard",
-    "title": "How can report widgets be arranged?",
-    "description": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or…",
-    "answer": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, and displays a height control on widgets that can be resized vertically. A widget can also be moved or removed before the dashboard is saved.",
+    "answer": "You can build a custom dashboard from Reports > Templates by selecting the report widgets that match the information or management question you want to track.",
     "more": [
-      "A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order."
+      "After selecting one or more widgets, you can arrange the dashboard layout, adjust widget sizing where available, and save the dashboard for personal use or share it with other firm users who have report access."
     ],
-    "search": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, and displays a height control on widgets that can be resized vertically. A widget can also be moved or removed before the dashboard is saved. A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order.",
+    "steps": [
+      "Open Reports and select Templates.",
+      "Search for a report widget or filter the available widgets by category.",
+      "Select the widgets you want to include in the dashboard.",
+      "Review the selected widgets. They are initially added in the order in which you selected them.",
+      "Drag the widgets into your preferred order. Adjust the widget width and, where available, its height.",
+      "Select Save dashboard.",
+      "Enter a dashboard name and, optionally, a description.",
+      "Choose whether to Share with the firm.",
+      "Save the dashboard.",
+      "If you share the dashboard with the firm, it becomes available to users who have the required report access. If you do not share it, the dashboard remains available for your own use."
+    ],
+    "search": "You can build a custom dashboard from Reports > Templates by selecting the report widgets that match the information or management question you want to track. After selecting one or more widgets, you can arrange the dashboard layout, adjust widget sizing where available, and save the dashboard for personal use or share it with other firm users who have report access. Open Reports and select Templates. Search for a report widget or filter the available widgets by category. Select the widgets you want to include in the dashboard. Review the selected widgets. They are initially added in the order in which you selected them. Drag the widgets into your preferred order. Adjust the widget width and, where available, its height. Select Save dashboard. Enter a dashboard name and, optionally, a description. Choose whether to Share with the firm. Save the dashboard. If you share the dashboard with the firm, it becomes available to users who have the required report access. If you do not share it, the dashboard remains available for your own use.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -386,11 +424,12 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Dashboard",
     "title": "How do I share or manage a custom dashboard?",
     "description": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets,…",
-    "answer": "Enable Share with the firm when saving a dashboard to make it available to firm users with report access. Owners and administrators can manage a shared dashboard using Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete.",
+    "answer": "When saving a custom dashboard, enable Share with the firm to make it available to other firm users who have report access.",
     "more": [
-      "Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it."
+      "Shared dashboards can be managed using options such as Edit widgets to change the dashboard content or layout, Rename to update the dashboard name, Duplicate to my dashboards to create a personal copy that you can modify independently, Make private to remove the dashboard from firm-wide access without deleting it, and Delete to permanently remove the dashboard.",
+      "If you want to experiment with a shared or starter dashboard, use Duplicate to my dashboards first — this lets you make changes without affecting the original. A good practice is to name the dashboard based on the management question or area it is designed to track, update the widgets to match that purpose, and enable Share with the firm only when the dashboard is ready for broader use."
     ],
-    "search": "Enable Share with the firm when saving a dashboard to make it available to firm users with report access. Owners and administrators can manage a shared dashboard using Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete. Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it.",
+    "search": "When saving a custom dashboard, enable Share with the firm to make it available to other firm users who have report access. Shared dashboards can be managed using options such as Edit widgets to change the dashboard content or layout, Rename to update the dashboard name, Duplicate to my dashboards to create a personal copy that you can modify independently, Make private to remove the dashboard from firm-wide access without deleting it, and Delete to permanently remove the dashboard. If you want to experiment with a shared or starter dashboard, use Duplicate to my dashboards first — this lets you make changes without affecting the original. A good practice is to name the dashboard based on the management question or area it is designed to track, update the widgets to match that purpose, and enable Share with the firm only when the dashboard is ready for broader use.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -400,11 +439,12 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Dashboard",
     "title": "Which report-widget categories can I use?",
     "description": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client…",
-    "answer": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views grouped under the category they measure.",
+    "answer": "The Reports > Templates library organizes report widgets into categories so you can quickly find metrics related to a specific area of the firm.",
     "more": [
-      "For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures."
+      "Available categories include Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. Each category can include different types of widgets, such as headline metrics, trend charts, aging reports, client or assignee breakdowns, operational lists, and budget-versus-actual views.",
+      "For example, a management dashboard could combine Total Revenue from Revenue, New Clients from Clients, Stage Aging from Workflow, Overdue Tasks from Tasks, Utilization from Time, A/R Aging from Billing, and Agreement Funnel from Agreements. Use Search when you know the widget you need, and use the category filters when you want to explore related measures and identify additional widgets for your dashboard."
     ],
-    "search": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views grouped under the category they measure. For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures.",
+    "search": "The Reports > Templates library organizes report widgets into categories so you can quickly find metrics related to a specific area of the firm. Available categories include Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. Each category can include different types of widgets, such as headline metrics, trend charts, aging reports, client or assignee breakdowns, operational lists, and budget-versus-actual views. For example, a management dashboard could combine Total Revenue from Revenue, New Clients from Clients, Stage Aging from Workflow, Overdue Tasks from Tasks, Utilization from Time, A/R Aging from Billing, and Agreement Funnel from Agreements. Use Search when you know the widget you need, and use the category filters when you want to explore related measures and identify additional widgets for your dashboard.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -414,11 +454,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "What does the agreement funnel report show?",
     "description": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing…",
-    "answer": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing or stopping.",
+    "answer": "The Agreement Funnel report shows how engagement-letter signing packages are progressing from delivery through completion.",
     "more": [
-      "Compare Sent to Viewed to identify delivery or attention problems, Viewed to Signed to identify decision friction, and the declined, expired, or cancelled counts to understand why packages left the active pipeline. Open the underlying engagement-letter work when a specific package needs follow-up."
+      "The funnel can track stages and outcomes such as Sent, Viewed, Signed, In progress, Declined, Expired, and Cancelled. Use the funnel to understand where signing packages are moving forward and where they may be getting delayed.",
+      "For example, compare Sent to Viewed to identify packages that may not have reached the client's attention, compare Viewed to Signed to identify packages that were opened but have not yet been completed, and review Declined, Expired, or Cancelled packages to understand why they left the active signing process. If a specific package needs follow-up, open the related engagement-letter record to review its recipients, current status, reminder activity, and audit history.",
+      "The Agreement Funnel helps partners and managers distinguish a one-off unsigned package from a broader signing bottleneck that may require changes to follow-up, pricing, terms, or onboarding timing."
     ],
-    "search": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing or stopping. Compare Sent to Viewed to identify delivery or attention problems, Viewed to Signed to identify decision friction, and the declined, expired, or cancelled counts to understand why packages left the active pipeline. Open the underlying engagement-letter work when a specific package needs follow-up.",
+    "search": "The Agreement Funnel report shows how engagement-letter signing packages are progressing from delivery through completion. The funnel can track stages and outcomes such as Sent, Viewed, Signed, In progress, Declined, Expired, and Cancelled. Use the funnel to understand where signing packages are moving forward and where they may be getting delayed. For example, compare Sent to Viewed to identify packages that may not have reached the client's attention, compare Viewed to Signed to identify packages that were opened but have not yet been completed, and review Declined, Expired, or Cancelled packages to understand why they left the active signing process. If a specific package needs follow-up, open the related engagement-letter record to review its recipients, current status, reminder activity, and audit history. The Agreement Funnel helps partners and managers distinguish a one-off unsigned package from a broader signing bottleneck that may require changes to follow-up, pricing, terms, or onboarding timing.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -428,11 +470,53 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Dashboard",
     "title": "How does the dashboard help identify work needing attention?",
     "description": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each…",
-    "answer": "The dashboard highlights work that may need follow-up, including approaching or missed deadlines, stalled engagements, review queues, unsigned engagement letters, overdue tasks, workload pressure, receivables, and key filing dates. Select a tile to open the underlying records and take action.",
+    "answer": "The Overview dashboard helps firm users identify work that may require attention by bringing key deadlines, exceptions, workload indicators, and operational risks into one place.",
     "more": [
-      "For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary."
+      "Depending on the widgets available to your firm, the dashboard can highlight items such as approaching or missed deadlines, stalled engagements or workflow bottlenecks, review work waiting for action, unsigned engagement letters, overdue tasks, team workload or capacity pressure, outstanding receivables, and important filing dates.",
+      "The information displayed can also support different roles across the firm. Partners and firm leaders may focus on revenue, receivables, client concentration, workflow bottlenecks, and overall firm performance. Managers and reviewers may prioritize engagement progress, review queues, deadlines, overdue work, and team capacity. Team members may focus on assigned tasks, upcoming deadlines, engagement activity, and work requiring follow-up.",
+      "Select a dashboard tile, metric, or record to open the related area in AssurePro and review the underlying work. For example, an overdue invoice can lead to Billing, a workflow bottleneck can lead to Workflow, an awaiting-signature item can lead to Engagement Letters, and a workload alert can lead to Team & Roles. The dashboard is designed to act as an operational starting point, helping each user quickly identify the work most relevant to their role and move directly to the area where action is required."
     ],
-    "search": "The dashboard highlights work that may need follow-up, including approaching or missed deadlines, stalled engagements, review queues, unsigned engagement letters, overdue tasks, workload pressure, receivables, and key filing dates. Select a tile to open the underlying records and take action. For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary.",
+    "search": "The Overview dashboard helps firm users identify work that may require attention by bringing key deadlines, exceptions, workload indicators, and operational risks into one place. Depending on the widgets available to your firm, the dashboard can highlight items such as approaching or missed deadlines, stalled engagements or workflow bottlenecks, review work waiting for action, unsigned engagement letters, overdue tasks, team workload or capacity pressure, outstanding receivables, and important filing dates. The information displayed can also support different roles across the firm. Partners and firm leaders may focus on revenue, receivables, client concentration, workflow bottlenecks, and overall firm performance. Managers and reviewers may prioritize engagement progress, review queues, deadlines, overdue work, and team capacity. Team members may focus on assigned tasks, upcoming deadlines, engagement activity, and work requiring follow-up. Select a dashboard tile, metric, or record to open the related area in AssurePro and review the underlying work. For example, an overdue invoice can lead to Billing, a workflow bottleneck can lead to Workflow, an awaiting-signature item can lead to Engagement Letters, and a workload alert can lead to Team & Roles. The dashboard is designed to act as an operational starting point, helping each user quickly identify the work most relevant to their role and move directly to the area where action is required.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-what-can-the-ai-agent-help-with-146",
+    "product": "pro",
+    "category": "AI & Automation",
+    "title": "What can the AI Agent help with?",
+    "description": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements,…",
+    "answer": "The AssurePro AI Agent can help firm users find, summarize, analyze, and draft information related to client and firm work.",
+    "more": [
+      "It can assist with areas such as clients, documents, engagements and tasks, communications, billing, and deadlines and outstanding work.",
+      "Examples of useful requests include \"Which engagements have been in the same stage for more than 10 days?\", \"Summarize unread messages for my assigned clients,\" \"Show clients with outstanding invoices due this month,\" \"Which document requests are still waiting on a client response?\", \"Summarize work due this week,\" and \"Draft a polite follow-up for overdue invoices, but do not send it.\"",
+      "A good prompt should include the subject (what client, engagement, task, or area you want to review), the time period when relevant, the desired output (summary, list, analysis, or draft), and the action intent (whether you only want information or want the Agent to propose an action). For example, \"List my tax engagements due in the next 14 days that still have open document requests, grouped by manager.\" More specific prompts generally produce more useful results and make it easier for firm users to validate the Agent's response."
+    ],
+    "search": "The AssurePro AI Agent can help firm users find, summarize, analyze, and draft information related to client and firm work. It can assist with areas such as clients, documents, engagements and tasks, communications, billing, and deadlines and outstanding work. Examples of useful requests include \"Which engagements have been in the same stage for more than 10 days?\", \"Summarize unread messages for my assigned clients,\" \"Show clients with outstanding invoices due this month,\" \"Which document requests are still waiting on a client response?\", \"Summarize work due this week,\" and \"Draft a polite follow-up for overdue invoices, but do not send it.\" A good prompt should include the subject (what client, engagement, task, or area you want to review), the time period when relevant, the desired output (summary, list, analysis, or draft), and the action intent (whether you only want information or want the Agent to propose an action). For example, \"List my tax engagements due in the next 14 days that still have open document requests, grouped by manager.\" More specific prompts generally produce more useful results and make it easier for firm users to validate the Agent's response.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
+    "id": "pro-how-do-i-ask-the-ai-agent-for-help-147",
+    "product": "pro",
+    "category": "AI & Automation",
+    "title": "How do I ask the AI Agent for help?",
+    "description": "The Agent uses a conversational prompt and states that it asks before changing anything. Open AI Agent. Enter a specific question about clients, documents, work, billing, or communications, or choose a…",
+    "answer": "Ask the AI Agent a specific question in plain language, then review the response, linked records, and any action it proposes.",
+    "steps": [
+      "Open AI Agent.",
+      "Enter your question, or choose one of the available suggested prompts.",
+      "Include the client, time period, status, or other criteria the question depends on.",
+      "Review the Agent's response and any linked records or supporting information.",
+      "If the result is too broad, ask a narrower follow-up question.",
+      "If the Agent proposes a change, review the action before approving it.",
+      "For example, instead of asking: \"What needs attention?\".",
+      "ask: \"Show my assigned engagements due in the next seven days that have overdue tasks or missing client documents.\".",
+      "For actions that can change firm or client data, AssurePro may request confirmation before proceeding. If Auto-approve low-risk actions is enabled for the firm user, supported low-risk actions may proceed without a separate confirmation each time.",
+      "Even when an action is proposed by the Agent, firm users should verify important details such as client, recipient, amount, date, engagement, and message content before allowing a change.",
+      "If you only want assistance preparing content, make that clear in the prompt—for example, \"Draft the message, but do not send it.\""
+    ],
+    "search": "Ask the AI Agent a specific question in plain language, then review the response, linked records, and any action it proposes. Open AI Agent. Enter your question, or choose one of the available suggested prompts. Include the client, time period, status, or other criteria the question depends on. Review the Agent's response and any linked records or supporting information. If the result is too broad, ask a narrower follow-up question. If the Agent proposes a change, review the action before approving it. For example, instead of asking: \"What needs attention?\". ask: \"Show my assigned engagements due in the next seven days that have overdue tasks or missing client documents.\". For actions that can change firm or client data, AssurePro may request confirmation before proceeding. If Auto-approve low-risk actions is enabled for the firm user, supported low-risk actions may proceed without a separate confirmation each time. Even when an action is proposed by the Agent, firm users should verify important details such as client, recipient, amount, date, engagement, and message content before allowing a change. If you only want assistance preparing content, make that clear in the prompt—for example, \"Draft the message, but do not send it.\"",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

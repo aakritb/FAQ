@@ -74,8 +74,8 @@ const SCENARIOS = [
     name: "internal product jargon added to a client-facing answer",
     why: "phrases such as same destination form do not tell a reader which screen opens",
     break: (dir) => {
-      edit(dir, "assurepro/index.html", (h) => h.replace("The + New menu can create six record types:", "The same destination form can create six record types:"));
-      edit(dir, "questions-1.js", (h) => h.replace('"answer": "The + New menu can create six record types:', '"answer": "The same destination form can create six record types:'));
+      edit(dir, "assurepro/index.html", (h) => h.replace("AssurePro is the practice management platform within AssureOne.", "The same destination form is the practice management platform within AssureOne."));
+      edit(dir, "questions-1.js", (h) => h.replace('"answer": "AssurePro is the practice management platform within AssureOne.', '"answer": "The same destination form is the practice management platform within AssureOne.'));
     },
     expect: [{ tool: "qc.js", mustFail: true, mentions: "unclear client-facing wording" }],
   },
@@ -177,7 +177,7 @@ const SCENARIOS = [
     name: "an answer changed on a product page but the index not rebuilt",
     why: "the hub would search and display text the product page no longer says",
     break: (dir) => edit(dir, "assurepro/index.html", (h) =>
-      h.replace('a:"AssurePro is the practice-management platform within AssureOne.',
+      h.replace('a:"AssurePro is the practice management platform within AssureOne.',
                 'a:"Something else entirely, long enough to be a real answer.')),
     expect: [
       { tool: "qc.js", mustFail: true, mentions: "differs from the product page" },

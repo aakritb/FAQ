@@ -37,16 +37,18 @@ const PAGE_META = "Understand the Overview dashboard, its widgets, and building 
 const MOVE = [
   "What is on the AssurePro Overview?",
   "Can the Overview dashboard be customized?",
-  "What reports are available on Overview?",
-  "What happens when I select Full report on an Overview card?",
-  "Which starter dashboards are available?",
-  "How do I build a custom dashboard?",
-  "How can report widgets be arranged?",
+  "How do I build a custom report?",
   "How do I share or manage a custom dashboard?",
   "Which report-widget categories can I use?",
   "How does the dashboard help identify work needing attention?",
-  "What is available in My Report?",
 ];
+// The original migration also refiled "What reports are available on Overview?",
+// "What happens when I select Full report on an Overview card?", "Which starter
+// dashboards are available?", "How can report widgets be arranged?", and "What
+// is available in My Report?" — all five were later deleted from the product
+// page (2026-09-08 review), and "How do I build a custom dashboard?" was
+// retitled to "How do I build a custom report?". MOVE reflects what is
+// actually live now, not the original migration's list.
 
 const notes = [];
 
