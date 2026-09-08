@@ -47,28 +47,24 @@
   // same icon for the same topic. Keyed by collection/guide id (not label)
   // so a wording change to a label can never silently break the lookup.
   const TOPIC_ICONS={
-    'getting-started':'flag','clients-crm':'idcard','work-workflow':'flow','documents':'file',
-    'engagement-letters':'signature','communications':'users','time-billing':'receipt','services':'briefcase',
-    'reports-insights':'chart','ai-features':'sparkle','firm-administration':'settings','integrations':'plug',
-    'security-access':'shield','subscription':'percent','referrals':'compass','security-compliance-data':'book',
-    'troubleshooting-support':'wrench',
-    'gs-intro':'flag','gs-account':'idcard','gs-navigate':'compass','gs-admin-setup':'settings','gs-team-setup':'users',
-    'prospects':'users','prospect-pipeline':'flow','convert-prospects':'check','clients':'idcard','client-contacts':'idcard',
-    'client-workspace':'briefcase','client-portal':'grid',
-    'engagements':'briefcase','workflow':'flow','workflow-tasks':'check','tasks':'check','workload-capacity':'chart','sops':'book',
+    'start-here':'flag','prospects-clients':'idcard','engagements-workflows-tasks':'flow','documents-client-requests':'file',
+    'engagement-letters':'signature','client-communications':'users','time-services-billing':'receipt','overview-reports':'chart',
+    'ai-automation':'sparkle','firm-setup-administration':'settings','connect-your-tools':'plug','security-data':'shield',
+    'help-troubleshooting':'wrench','product-updates':'grid',
+    'gs-intro':'flag','gs-account':'idcard','gs-navigate':'compass','gs-admin-checklist':'check','team-setup-checklist':'check',
+    'prospects':'users','prospect-pipeline':'flow','convert-prospects':'check','clients':'idcard','client-contacts':'idcard','client-workspace':'briefcase','client-portal':'grid',
+    'engagements':'briefcase','workflow':'flow','workflow-tasks':'check','tasks':'check','sops':'book',
     'doc-workspace':'file','folders':'file','document-types':'file','work-types':'file','upload-import':'file','document-requests':'file',
     'el-getting-started':'signature','el-setup':'settings','el-services-pricing':'percent','el-agreement-terms':'signature','el-review-send':'signature','el-signing':'signature','el-status-audit':'check',
     'comms-inbox':'users','email':'plug','portal-messages':'users','sms':'users','calls':'users','email-templates':'file','email-log':'file','automated-reminders':'sparkle',
-    'time-tracking':'receipt','billing':'receipt',
-    'service-catalog':'briefcase','service-types-pricing':'percent','manage-services':'briefcase','service-sops':'book',
-    'reports-overview':'chart','overview-by-role':'chart','reports':'chart','dashboards':'grid','key-reports':'chart',
+    'time-tracking':'receipt','billing':'receipt','service-catalog':'briefcase','service-types-pricing':'percent','manage-services':'briefcase','service-sops':'book',
+    'reports-overview':'chart','overview-by-role':'chart','reports':'chart','dashboards':'grid','key-reports':'chart','report-alerts':'chart',
     'ai-agent':'sparkle','daily-briefing':'sparkle','ai-credits':'percent',
-    'settings-overview':'settings','firm-profile':'briefcase','client-portal-settings':'settings','team-roles':'users','engagement-types':'signature','tags':'flag','onboarding-defaults':'flag','notifications-email':'plug','report-alerts':'chart','templates':'book',
-    'integrations-getting-started':'plug','email-integrations':'plug','calendars-scheduling':'grid','document-storage':'file','payments-integration':'percent','quickbooks':'plug','twilio':'plug','prodaff':'plug','integrations-troubleshooting':'wrench',
-    'account-security':'shield','firm-user-access':'users','client-access':'idcard','credentials':'shield','tax-connector':'plug',
-    'platform-subscription':'percent','mycpeone-referrals':'compass',
-    'data-security':'shield','compliance':'check','data-retention-export':'file',
+    'settings-overview':'settings','firm-profile':'briefcase','client-portal-settings':'settings','team-roles':'users','engagement-types':'signature','tags':'flag','onboarding-defaults':'flag','notifications-email':'plug','templates':'book','workload-capacity':'chart','platform-subscription':'percent','mycpeone-referrals':'compass',
+    'integrations-getting-started':'plug','email-integrations':'plug','calendars-scheduling':'grid','document-storage':'file','payments-integration':'percent','quickbooks':'plug','twilio':'plug','prodaff':'plug','tax-connector':'plug',
+    'account-security':'shield','firm-user-access':'users','client-access':'idcard','credentials':'shield','data-security':'shield','compliance':'check','data-retention-export':'file',
     'account-issues':'wrench','portal-issues':'wrench','communication-issues':'wrench','integration-issues':'wrench','billing-issues':'wrench','get-support':'wrench',
+    'release-notes':'grid',
   };
   function topicIcon(id){return icon(TOPIC_ICONS[id]||'file')}
   function fallbackCopy(text){const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.cssText='position:fixed;opacity:0';document.body.append(t);t.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}
@@ -92,7 +88,7 @@
       const guidesHtml = c.guides.map((g) => {
         const n = counts[g.id] || 0;
         const cls = g.id === activeGuideId ? 'active' : '';
-        return `<a href="${T.guideUrl(g.id)}" class="${cls}"><span>${esc(g.label)}</span>${n ? `<small>${n}</small>` : `<small class="soon">Soon</small>`}</a>`;
+        return `<a href="${T.guideUrl(g.id)}" class="${cls}"><span>${esc(g.label)}</span>${n ? '' : '<small class="soon">Soon</small>'}</a>`;
       }).join('');
       return `<div class="nav-collection${isOpen ? ' open' : ''}">
         <button type="button" class="nav-collection-toggle${c.id === (activeCollectionId || (activeCollection && activeCollection.id)) ? ' active' : ''}" aria-expanded="${isOpen ? 'true' : 'false'}">

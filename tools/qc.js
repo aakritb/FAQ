@@ -85,12 +85,18 @@ else{
   const danglingArticleRefs=Object.keys(T.ARTICLE_GUIDE).filter(id=>!ids.has(id));
   if(danglingArticleRefs.length)fail(`ARTICLE_GUIDE maps an article id that no longer exists: ${danglingArticleRefs.slice(0,5).join(', ')}`);
   else ok('every article id referenced by ARTICLE_GUIDE is a real, published article');
-  const journeyMatches=[...categoryPage.matchAll(/guides:\s*\[([^\]]*)\]/g)];
-  const journeyGuideIds=journeyMatches.flatMap(m=>[...m[1].matchAll(/'([\w-]+)'/g)].map(x=>x[1]));
-  const badJourneyRefs=journeyGuideIds.filter(gid=>!guideIds.has(gid));
-  if(!journeyGuideIds.length)fail('category.html: no homepage journeys reference any guide — journey pages would be empty');
-  else if(badJourneyRefs.length)fail(`a homepage journey references a guide id that does not exist: ${[...new Set(badJourneyRefs)].join(', ')}`);
-  else ok('every guide referenced by a homepage journey exists in the taxonomy');
+  const journeyIds=new Set([...categoryPage.matchAll(/\n\s*'([\w-]+)':\{title:/g)].map(m=>m[1]));
+  const homepageLinks=[...homepage.matchAll(/\['([\w-]+)',\s*'[\w-]+',/g)].map(m=>m[1]);
+  const badHomepageLinks=homepageLinks.filter(jid=>!journeyIds.has(jid));
+  if(!homepageLinks.length)fail('index.html: no homepage entry point links to a journey — the homepage would have nothing to click into');
+  else if(badHomepageLinks.length)fail(`a homepage entry point links to a journey id that does not exist in category.html: ${[...new Set(badHomepageLinks)].join(', ')}`);
+  else ok('every homepage entry point links to a journey defined in category.html');
+  const journeyGuideMatches=[...categoryPage.matchAll(/guides:\s*\[([^\]]*)\]/g)];
+  const journeyGuideIds=journeyGuideMatches.flatMap(m=>[...m[1].matchAll(/'([\w-]+)'/g)].map(x=>x[1]));
+  const badJourneyGuideRefs=journeyGuideIds.filter(gid=>!guideIds.has(gid));
+  if(!journeyGuideIds.length)fail('category.html: no journey references any guide — journey pages would be empty');
+  else if(badJourneyGuideRefs.length)fail(`a journey references a guide id that does not exist: ${[...new Set(badJourneyGuideRefs)].join(', ')}`);
+  else ok('every guide referenced by a journey exists in the taxonomy');
 }
 
 if(!failures)console.log('\nPASS — Help Center QC completed with no failures.');else{console.error(`\n${failures} QC failure${failures===1?'':'s'}.`);process.exit(1)}

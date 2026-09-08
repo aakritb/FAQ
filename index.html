@@ -24,17 +24,19 @@
     </div>
   </section>
   <div class="content page-width">
-    <section aria-labelledby="product-heading">
-      <div class="section-heading"><div><p class="overline">Choose a product</p><h2 id="product-heading">Help for your AssureOne workspace</h2></div></div>
-      <div class="product-tiles">
-        <a class="product-tile active" href="index.html" aria-current="page"><img class="product-tile-logo" src="assets/images/assure-pro.svg" alt="AssurePro" width="205" height="48"></a>
-        <button class="product-tile disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><img class="product-tile-logo" src="assets/images/assure-books.svg" alt="AssureBooks" width="205" height="48"></button>
-        <button class="product-tile disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><img class="product-tile-logo" src="assets/images/assure-audit.svg" alt="AssureAudit" width="205" height="48"></button>
-        <button class="product-tile disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><img class="product-tile-logo" src="assets/images/assure-tax.svg" alt="AssureTax" width="205" height="48"></button>
+    <section aria-label="Choose an AssureOne product">
+      <div class="product-switcher-row">
+        <p class="overline">Choose a product</p>
+        <div class="product-switcher" role="tablist">
+          <a class="product-pill active" href="index.html" aria-current="page" role="tab" aria-selected="true">AssurePro</a>
+          <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureBooks<span class="pill-soon">Soon</span></button>
+          <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureAudit<span class="pill-soon">Soon</span></button>
+          <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureTax<span class="pill-soon">Soon</span></button>
+        </div>
       </div>
     </section>
     <section aria-labelledby="journey-heading" style="margin-top:44px">
-      <div class="section-heading"><div><p class="overline">Browse AssurePro</p><h2 id="journey-heading">What would you like to do?</h2><p>Start with your goal, then open the exact guidance you need.</p></div></div>
+      <div class="section-heading"><div><h2 id="journey-heading">Get to know AssurePro</h2></div><a class="text-link" href="category.html">Browse all AssurePro help →</a></div>
       <div class="journey-grid" id="journey-grid"></div>
     </section>
   </div>
@@ -46,12 +48,12 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const H=window.HelpCenter;
   const journeys=[
-    ['firm-admin','settings','Get started as a firm administrator','Set up your firm, users, services, workflows, portal, and core settings.'],
-    ['team-member','compass','Get started as a team member','Learn the workspace, clients, tasks, documents, communications, time tracking, and daily work.'],
-    ['clients','users','Work with clients','Manage prospects, clients, engagements, documents, communications, engagement letters, and client portal activity.'],
-    ['run-firm','briefcase','Run your firm','Manage team capacity, billing, services, reporting, templates, notifications, and administration.'],
-    ['ai','sparkle','AI & automation','Use AI Agent, Daily Briefing, AI Credits, reminders, templates, and AI-assisted workflows.'],
-    ['reference','shield','Reference & support','Integrations, security, account access, compliance, troubleshooting, FAQs, and support.']
+    ['firm-admin','settings','Get started as a firm administrator','Set up your firm, invite clients, and get your first engagement workflow running.'],
+    ['team-member','compass','Get started as a team member','Activate your account, find your way around, and start working with clients.'],
+    ['prospects-clients','idcard','Work with prospects and clients','Add prospects, move them through the pipeline, and manage client relationships.'],
+    ['deliver-work','flow','Deliver client work','Run engagements, manage documents, send engagement letters, and track deadlines.'],
+    ['run-firm','briefcase','Run your firm','Track time and billing, manage your team, review reports, and connect your tools.'],
+    ['ai-automation','sparkle','Use AI and automation','Use AI Agent, Daily Briefing, AI Credits, and automated reminders.']
   ];
   document.getElementById('journey-grid').innerHTML=journeys.map(j=>`<a class="journey-card" href="category.html?journey=${j[0]}"><span class="journey-icon">${H.icon(j[1])}</span><h3>${j[2]}</h3><p>${j[3]}</p></a>`).join('');
 });

@@ -5,8 +5,8 @@ const files=['index.html','category.html','article.html','assets/css/help-center
 const cases=[
  ['removed shared stylesheet','index.html',s=>s.replace('assets/css/help-center.css','missing.css'),'shared design system missing'],
  ['navigating unpublished product','index.html',s=>s.replace(
-    '<button class="product-tile disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><img class="product-tile-logo" src="assets/images/assure-tax.svg" alt="AssureTax" width="205" height="48"></button>',
-    '<a href="https://example.com/assuretax"><span class="soon-dot">Coming soon</span><img class="product-tile-logo" src="assets/images/assure-tax.svg" alt="AssureTax" width="205" height="48"></a>'
+    '<button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureTax<span class="pill-soon">Soon</span></button>',
+    '<a href="https://example.com/assuretax">AssureTax<span class="pill-soon">Soon</span></a>'
   ),'AssureTax must be a non-navigating'],
  ['vague destination wording','questions-1.js',s=>s.replace('Use the global search in AssurePro','Use the destination window in AssurePro'),'unclear or incorrect wording'],
  ['missing screenshot support','article.html',s=>s.replace('media?.steps','media.steps'),'article template is not ready'],
@@ -15,9 +15,10 @@ const cases=[
  ['related articles no longer filtered','article.html',s=>s.split('exclude.has(a.id)').join('false'),'not filtered against'],
  ['dangling getElementById after markup removed','index.html',s=>s.replace('<div class="journey-grid" id="journey-grid">','<div class="journey-grid" id="journey-grid-renamed">'),'no matching id in the page'],
  ['taxonomy not loaded on a page','category.html',s=>s.replace('src="assets/js/taxonomy.js">',''),'taxonomy.js is not loaded'],
- ['article no longer mapped to a guide','assets/js/taxonomy.js',s=>s.replace("'pro-what-is-assurepro-1': 'gs-intro',",''),'not mapped to any guide'],
- ['internal numbering leaks into a reader-facing label','assets/js/taxonomy.js',s=>s.replace("label: 'Getting Started', guides:","label: '1.1 Getting Started', guides:"),'internal numbering is exposed'],
- ['homepage journey references a guide that does not exist','category.html',s=>s.replace("guides:['gs-intro','gs-account','gs-navigate','gs-admin-setup','firm-profile','team-roles']","guides:['nonexistent-guide','gs-account','gs-navigate','gs-admin-setup','firm-profile','team-roles']"),'does not exist']
+ ['article no longer mapped to a guide','assets/js/taxonomy.js',s=>s.replace('"pro-what-is-assurepro-1": \'gs-intro\',',''),'not mapped to any guide'],
+ ['internal numbering leaks into a reader-facing label','assets/js/taxonomy.js',s=>s.replace("label: 'Start Here', guides:","label: '1.1 Start Here', guides:"),'internal numbering is exposed'],
+ ['homepage entry point links to a journey that does not exist','index.html',s=>s.replace("['firm-admin','settings',","['nonexistent-journey','settings',"),'does not exist'],
+ ['a journey references a guide that does not exist','category.html',s=>s.replace("guides:['gs-intro','gs-account','gs-navigate','gs-admin-checklist','firm-profile','team-roles']","guides:['nonexistent-guide','gs-account','gs-navigate','gs-admin-checklist','firm-profile','team-roles']"),'does not exist']
 ];
 function make(){const d=fs.mkdtempSync(path.join(os.tmpdir(),'assureone-qc-'));for(const rel of files){const to=path.join(d,rel);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(path.join(ROOT,rel),to)}return d}
 let failed=0;

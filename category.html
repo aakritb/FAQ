@@ -3,23 +3,43 @@
 <body><a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html" aria-label="AssureOne Help Center home"><img class="brand-logo" src="assets/images/assureone-logo.png" alt="AssureOne" width="149" height="31"><span class="brand-suffix">Help Center</span></a><div class="top-search"><svg class="search-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2"/></svg><input data-search type="search" placeholder="Search AssurePro help" aria-label="Search AssurePro help"><span class="key-hint">⌘ K</span><div class="search-panel" hidden></div></div><div class="top-actions"><a class="website-link" href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><button class="support-copy" aria-label="Copy support@assureone.ai to clipboard"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.5" stroke="currentColor" stroke-width="1.8"/></svg><span class="support-label">Contact support</span></button></div></div></header>
 <nav class="breadcrumb-wrap"><div class="breadcrumbs page-width" id="breadcrumbs"></div></nav>
-<main id="main"><section class="category-hero"><div class="page-width"><p class="overline" id="category-eyebrow">AssurePro guidance</p><h1 id="category-title">AssurePro help</h1><p id="category-description"></p><div class="category-stats" id="category-stats"></div></div></section><div class="category-layout page-width"><nav class="category-nav" aria-label="AssurePro topics"><strong>Browse topics</strong><div id="category-nav"></div></nav><div id="category-content"></div></div></main>
+<main id="main"><section class="category-hero"><div class="page-width"><p class="overline" id="category-eyebrow">AssurePro guidance</p><h1 id="category-title">AssurePro help</h1><p id="category-description"></p></div></section><div class="category-layout page-width"><nav class="category-nav" aria-label="AssurePro topics"><strong>Browse topics</strong><div id="category-nav"></div></nav><div id="category-content"></div></div></main>
 <footer class="site-footer"><div class="page-width"><span>© 2026 AssureOne Technologies LLC. All rights reserved.</span><span>Need help? <a href="mailto:support@assureone.ai">support@assureone.ai</a></span></div></footer>
 <script src="questions-1.js"></script><script src="questions-2.js"></script><script src="questions-3.js"></script><script src="questions-4.js"></script><script src="questions-5.js"></script><script src="questions-6.js"></script><script src="assets/js/taxonomy.js"></script><script src="assets/js/help-center.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
  const H=window.HelpCenter,T=window.HelpCenterTaxonomy,A=H.proArticles(),params=new URLSearchParams(location.search);
 
- // Journeys are curated, cross-cutting entry points for the homepage — the
- // opposite axis from the permanent feature-based nav. A journey names the
- // guides it pulls together; it does not need to be a whole collection.
+ // Journeys are curated, cross-cutting homepage entry points — the opposite
+ // axis from "Browse all AssurePro help" below. A journey links into guides
+ // that live in one or more modules; it never hosts its own copy of a guide
+ // or article. See research/assurepro-ia-blueprint-2026-09-08.md, Section B.
  const journeys={
-  'firm-admin':{title:'Get started as a firm administrator',description:'Set up your firm, users, services, workflows, portal, and core settings.',guides:['gs-intro','gs-account','gs-navigate','gs-admin-setup','firm-profile','team-roles']},
-  'team-member':{title:'Get started as a team member',description:'Learn the workspace, clients, tasks, documents, communications, time tracking, and daily work.',guides:['gs-team-setup','gs-navigate','client-workspace','tasks','doc-workspace','comms-inbox','time-tracking']},
-  'clients':{title:'Work with clients',description:'Manage prospects, clients, engagements, documents, communications, engagement letters, and client portal activity.',guides:['prospects','prospect-pipeline','clients','client-workspace','client-portal','doc-workspace']},
-  'run-firm':{title:'Run your firm',description:'Manage team capacity, billing, services, reporting, templates, notifications, and administration.',guides:['workload-capacity','billing','service-catalog','reports','templates','notifications-email']},
-  'ai':{title:'AI & automation',description:'Use AI Agent, Daily Briefing, AI Credits, reminders, templates, and AI-assisted workflows.',guides:['ai-agent','daily-briefing','ai-credits','automated-reminders']},
-  'reference':{title:'Reference & support',description:'Integrations, security, account access, compliance, troubleshooting, FAQs, and support.',guides:['integrations-getting-started','account-security','data-security','compliance','get-support']},
+  'firm-admin':{title:'Get started as a firm administrator',description:'Set up your firm, invite clients, and get your first engagement workflow running.',guides:['gs-intro','gs-account','gs-navigate','gs-admin-checklist','firm-profile','team-roles']},
+  'team-member':{title:'Get started as a team member',description:'Activate your account, find your way around, and start working with clients.',guides:['team-setup-checklist','gs-navigate','client-workspace','tasks','doc-workspace','comms-inbox','time-tracking']},
+  'prospects-clients':{title:'Work with prospects and clients',description:'Add prospects, move them through the pipeline, and manage client relationships.',guides:['prospects','prospect-pipeline','convert-prospects','clients','client-contacts','client-portal']},
+  'deliver-work':{title:'Deliver client work',description:'Run engagements, manage documents, send engagement letters, and track deadlines.',guides:['engagements','workflow','tasks','document-requests','el-review-send','comms-inbox']},
+  'run-firm':{title:'Run your firm',description:'Track time and billing, manage your team, review reports, and connect your tools.',guides:['workload-capacity','billing','service-catalog','reports','templates','notifications-email']},
+  'ai-automation':{title:'Use AI and automation',description:'Use AI Agent, Daily Briefing, AI Credits, and automated reminders.',guides:['ai-agent','daily-briefing','ai-credits','automated-reminders']},
+ };
+
+ // One-line descriptions for the exhaustive "Browse all AssurePro help" modules —
+ // a separate axis from the journeys above (Section B of the IA blueprint).
+ const moduleDescriptions={
+  'start-here':'The essentials for signing in, finding your way around, and getting your firm or team ready.',
+  'prospects-clients':'Add prospects, move them through the pipeline, and manage every client relationship.',
+  'engagements-workflows-tasks':'Create engagements, configure workflows and stages, and manage the tasks inside them.',
+  'documents-client-requests':'Organize documents, request files from clients, and manage uploads and imports.',
+  'engagement-letters':'Build, send, sign, and track engagement letters from setup to a signed agreement.',
+  'client-communications':'Manage the inbox, email, SMS, calls, and automated reminders sent to clients.',
+  'time-services-billing':'Track time, configure services and pricing, and manage billing and invoices.',
+  'overview-reports':'Review the Overview dashboard, run reports, and configure report alerts.',
+  'ai-automation':'Use AI Agent, Daily Briefing, and AI Credits to automate firm and client work.',
+  'firm-setup-administration':'Configure firm profile, team roles, engagement types, templates, and subscription.',
+  'connect-your-tools':'Connect, reconnect, and manage the outside tools AssurePro works with.',
+  'security-data':'Manage account security, access permissions, and data compliance.',
+  'help-troubleshooting':'Fix common issues by feature and find the right way to contact support.',
+  'product-updates':'See what has changed in AssurePro, release by release.',
  };
 
  const guideId=params.get('guide'),collectionId=params.get('collection'),journeyId=params.get('journey'),journey=journeys[journeyId];
@@ -29,7 +49,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  function articlesFor(guideIds){return A.filter(a=>guideIds.includes(T.guideOfArticle(a.id)))}
  function card(a){return `<a class="article-card" href="${H.articleUrl(a.id)}"><strong>${H.esc(a.title)}</strong></a>`}
  function guideCard(g,count){return count
-   ?`<a class="article-card guide-card" href="${T.guideUrl(g.id)}"><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong><span class="meta">${count} article${count===1?'':'s'}</span></a>`
+   ?`<a class="article-card guide-card" href="${T.guideUrl(g.id)}"><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong></a>`
    :`<button class="article-card guide-card disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong><span class="meta">Content in review</span></button>`}
 
  let title,description,crumbTrail,contentHtml;
@@ -39,30 +59,25 @@ document.addEventListener('DOMContentLoaded',()=>{
   const items=articlesFor([guide.id]);
   crumbTrail=`<a href="${T.collectionUrl(collection.id)}">${H.esc(collection.label)}</a><span class="slash">/</span><span class="current">${H.esc(guide.label)}</span>`;
   document.getElementById('category-eyebrow').textContent=collection.label;
-  document.getElementById('category-stats').innerHTML=items.length?`<span>${items.length} article${items.length===1?'':'s'}</span><span>Updated for the current AssurePro experience</span>`:'';
   contentHtml=items.length
    ?`<div class="article-list">${items.map(card).join('')}</div>`
    :`<div class="empty-guide"><strong>This guide is still being written.</strong><p>We are reviewing the answers for “${H.esc(guide.label)}” before publishing them. In the meantime, use search or <a href="mailto:support@assureone.ai">email support</a>.</p></div>`;
  } else if(collection){
-  title=collection.label;description='Browse this area of AssurePro by guide.';
+  title=collection.label;description=moduleDescriptions[collection.id]||'Browse this area of AssurePro by guide.';
   crumbTrail=`<span class="current">${H.esc(collection.label)}</span>`;
   document.getElementById('category-eyebrow').textContent='AssurePro guidance';
-  const total=articlesFor(collection.guides.map(g=>g.id)).length;
-  document.getElementById('category-stats').innerHTML=`<span>${total} article${total===1?'':'s'}</span><span>${collection.guides.length} guide${collection.guides.length===1?'':'s'}</span>`;
   contentHtml=`<div class="article-list guide-grid">${collection.guides.map(g=>guideCard(g,articlesFor([g.id]).length)).join('')}</div>`;
  } else if(journey){
   title=journey.title;description=journey.description;
   crumbTrail=`<span class="current">${H.esc(journey.title)}</span>`;
   document.getElementById('category-eyebrow').textContent='AssurePro guidance';
   const items=articlesFor(journey.guides);
-  document.getElementById('category-stats').innerHTML=`<span>${items.length} article${items.length===1?'':'s'}</span><span>Updated for the current AssurePro experience</span>`;
   contentHtml=journey.guides.map(gid=>{const g=T.guideById(gid);const its=articlesFor([gid]);if(!its.length)return'';return `<section class="article-list-section"><p class="overline">${H.esc(T.collectionOfGuide(gid).label)}</p><h2><span class="section-icon">${H.topicIcon(gid)}</span>${H.esc(g.label)}</h2><div class="article-list">${its.map(card).join('')}</div></section>`}).join('');
  } else {
   title='All AssurePro guidance';description='Browse clear, practical answers for using AssurePro, organized the way the product itself is organized.';
   crumbTrail=`<span class="current">All AssurePro</span>`;
   document.getElementById('category-eyebrow').textContent='AssurePro guidance';
-  document.getElementById('category-stats').innerHTML=`<span>${A.length} articles</span><span>${T.TAXONOMY.length} collections</span>`;
-  contentHtml=`<div class="article-list guide-grid">${T.TAXONOMY.map(c=>{const n=articlesFor(c.guides.map(g=>g.id)).length;return `<a class="article-card guide-card" href="${T.collectionUrl(c.id)}"><span class="guide-card-icon">${H.topicIcon(c.id)}</span><strong>${H.esc(c.label)}</strong><span class="meta">${n} article${n===1?'':'s'}</span></a>`}).join('')}</div>`;
+  contentHtml=`<div class="article-list guide-grid">${T.TAXONOMY.map(c=>`<a class="article-card guide-card" href="${T.collectionUrl(c.id)}"><span class="guide-card-icon">${H.topicIcon(c.id)}</span><strong>${H.esc(c.label)}</strong></a>`).join('')}</div>`;
  }
 
  document.title=`${title} | AssureOne Help Center`;
