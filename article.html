@@ -5,7 +5,7 @@
 <nav class="breadcrumb-wrap"><div class="breadcrumbs page-width" id="breadcrumbs"></div></nav>
 <div class="article-shell">
   <aside class="article-side" aria-label="AssurePro topics"><a class="back-link" href="index.html">← All AssurePro help</a><nav class="category-nav" id="category-nav"></nav></aside>
-  <main id="ar-main"><article class="article-doc" id="article-doc"></article><div class="article-footer"><section class="helpful"><p id="feedback-label">Was this article helpful?</p><div class="feedback-buttons"><button type="button" data-feedback="yes">Yes</button><button type="button" data-feedback="no">Not yet</button></div></section><nav class="pager" id="pager" aria-label="Previous and next articles"></nav><section class="related-section" id="related-section" aria-labelledby="related-heading"><h2 id="related-heading">Related articles</h2><div class="article-list" id="related-list"></div></section></div></main>
+  <main id="ar-main"><article class="article-doc" id="article-doc"></article><div class="article-footer"><section class="related-section" id="related-section" aria-labelledby="related-heading"><h2 id="related-heading">Related articles</h2><div class="article-list" id="related-list"></div></section></div></main>
   <aside class="article-toc" aria-label="Page tools">
     <div class="article-save"><strong>Save</strong><button class="save-pdf" type="button" aria-label="Save this article as a PDF"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Save as PDF</span></button></div>
     <div id="article-toc"></div>
@@ -28,10 +28,9 @@ document.addEventListener('DOMContentLoaded',()=>{
  const more=(article.more||[]).map(detail).join(''),steps=(article.steps||[]);
  document.getElementById('article-doc').innerHTML=`<div class="article-meta"><span class="meta"><span class="tag">AssurePro</span><a href="${guideId?T.guideUrl(guideId):'category.html'}">${H.esc(guideLabel)}</a><span>·</span><span>${article.read} read</span></span><button class="copy-link" type="button" aria-label="Copy article link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.5" stroke="currentColor" stroke-width="1.8"/></svg><span>Copy link</span></button></div><h1>${H.esc(article.title)}</h1><div class="article-body"><section id="overview"><h2 class="overline">Overview</h2><p class="article-lead">${H.esc(article.answer)}</p>${mediaBlock(article.media?.overview)}${more}</section>${steps.length?`<section id="how-to"><h2>How to do it</h2><ol class="steps">${steps.map((s,i)=>`<li><span>${H.esc(s)}${mediaBlock(article.media?.steps?.[i])}</span></li>`).join('')}</ol></section>`:''}${article.note?`<aside class="callout"><strong>Good to know</strong>${H.esc(article.note)}</aside>`:''}</div>`;
  const tocSections=[...document.querySelectorAll('.article-body section')],toc=document.getElementById('article-toc');if(tocSections.length>1){toc.innerHTML='<strong>On this page</strong>'+tocSections.map(s=>`<a href="#${s.id}">${s.querySelector('h2')?.textContent||'Section'}</a>`).join('')}else toc.hidden=true;
- document.getElementById('pager').innerHTML=`${previous?`<a href="${H.articleUrl(previous.id)}"><small>← Previous article</small><strong>${H.esc(previous.title)}</strong></a>`:'<span></span>'}${next?`<a href="${H.articleUrl(next.id)}"><small>Next article →</small><strong>${H.esc(next.title)}</strong></a>`:'<span></span>'}`;
  // Related: other articles in the same guide first (excluding this one and
- // the two already shown by the pager), padded out from the wider set if the
- // guide is too small — so a reader never hits a dead end after one answer.
+ // its immediate neighbors), padded out from the wider set if the guide is
+ // too small — so a reader never hits a dead end after one answer.
  const exclude=new Set([article.id,previous?.id,next?.id].filter(Boolean));
  let related=topicItems.filter(a=>!exclude.has(a.id)).slice(0,4);
  if(related.length<4){const fill=A.filter(a=>!exclude.has(a.id)&&!related.includes(a)).slice(0,4-related.length);related=related.concat(fill)}
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded',()=>{
  if(related.length){document.getElementById('related-list').innerHTML=related.map(a=>`<a class="article-card" href="${H.articleUrl(a.id)}"><strong>${H.esc(a.title)}</strong></a>`).join('')}else relatedSection.hidden=true;
  document.querySelectorAll('.copy-link').forEach(btn=>btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href)}catch(e){}const s=btn.querySelector('span');s.textContent='Link copied';setTimeout(()=>s.textContent='Copy link',1500)}));
  document.querySelector('.save-pdf')?.addEventListener('click',()=>window.print());
- document.querySelectorAll('[data-feedback]').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('feedback-label').textContent='Thank you — your feedback helps us improve this guidance.';document.querySelector('.feedback-buttons').hidden=true}));
  document.querySelector('.nav-guides a.active')?.scrollIntoView({block:'center'});
 });
 </script></body></html>
