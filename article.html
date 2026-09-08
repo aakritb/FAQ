@@ -80,12 +80,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
 /* ---- right rail ---- */
 .ar-rail-card{border:1px solid #e2e1ec;background:#fff;border-radius:13px;padding:18px;box-shadow:0 5px 17px rgba(24,27,50,.035)}
 .ar-rail-card+.ar-rail-card{margin-top:14px}
-.ar-related{display:grid}
-.ar-related a{display:block;color:#3e425b;text-decoration:none;font-size:.79rem;line-height:1.42;padding:9px 0;border-bottom:1px solid #efeff4}
-.ar-related a:last-child{border-bottom:0;padding-bottom:0}
-.ar-related a:first-child{padding-top:0}
-.ar-related a:hover,.ar-related a:focus-visible{color:var(--violet);outline:none}
-.ar-related small{display:block;margin-top:3px;color:#8b8fa3;font-size:.71rem}
 .ar-help p{margin:0 0 12px;color:var(--muted);font-size:.79rem;line-height:1.55}
 .ar-help-mail{display:block;text-align:center;padding:9px;background:var(--violet);color:#fff;border-radius:8px;text-decoration:none;font-size:.79rem;font-weight:750}
 .ar-help-mail:hover,.ar-help-mail:focus-visible{background:var(--violet-dark);outline:none}
@@ -101,7 +95,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
 .ar-missing a{display:inline-block;padding:10px 16px;border-radius:9px;background:var(--violet);color:#fff;text-decoration:none;font-size:.88rem;font-weight:700}
 
 .ar-foot{max-width:1240px;margin:0 auto;padding:0 28px 46px;color:#8b8fa3;font-size:.8rem;line-height:1.6}
-.ar-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* Below the three-column width the rail drops under the article rather than
    disappearing, so the support card stays reachable on tablets and phones. */
@@ -490,9 +483,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   .ar-doc{padding:40px 48px 42px}
   .ar-doc h1{font-size:clamp(1.9rem,3vw,2.45rem);max-width:22ch;margin-bottom:22px}
   .ar-prose{font-size:1.03rem;line-height:1.78;max-width:72ch}
-  .ar-related{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-  .ar-related a{border:1px solid #ecebf3!important;border-radius:9px;padding:11px!important;background:#fcfcff}
-  .ar-related a:hover,.ar-related a:focus-visible{background:#f5f3ff}
   .ar-help{background:#181a35;border-color:#181a35;color:#fff;display:flex;flex-direction:column}
   .ar-help .ar-label{color:#aaa5e8}
   .ar-help p{color:#c4c6d7}
@@ -506,7 +496,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
   .help-cta-actions .single-support-copy{width:100%}
   .ar-article-toolbar{align-items:flex-start;flex-direction:column;gap:10px}
   .ar-copy-link{width:100%;justify-content:center}
-  .ar-related{grid-template-columns:1fr}
 }
 </style>
 <script id="functional-polish-script">
@@ -726,14 +715,11 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-
 /* One copyright line at the foot of every page. */
 .site-copyright{display:block;color:#8b8fa3;font-size:.78rem;line-height:1.6}
 .footer .site-copyright{margin-top:14px}
-.site-footer{max-width:1240px;margin:34px auto 0;padding:20px 28px 42px;border-top:1px solid #ecebf3}
-@media(max-width:760px){.site-footer{padding:18px 18px 34px}}
 
 /* rails-removed:start */
 /* The discovery rails are gone, so the shells are two columns and the
    reading column takes the width the rail used to hold. */
 .hc-shell{grid-template-columns:190px minmax(0,1fr)!important}
-@media(max-width:1080px){.hc-shell{grid-template-columns:170px minmax(0,1fr)!important}}
 .ar-shell{max-width:1120px!important;grid-template-columns:218px minmax(0,1fr)!important}
 @media(min-width:981px){
   .ar-side{grid-column:1!important;grid-row:1!important}
