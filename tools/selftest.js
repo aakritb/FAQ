@@ -71,6 +71,15 @@ const edit = (dir, rel, fn) => {
 /* Each scenario: break one region, then say what must happen. */
 const SCENARIOS = [
   {
+    name: "internal product jargon added to a client-facing answer",
+    why: "phrases such as same destination form do not tell a reader which screen opens",
+    break: (dir) => {
+      edit(dir, "assurepro/index.html", (h) => h.replace("The + New menu can create six record types:", "The same destination form can create six record types:"));
+      edit(dir, "questions-1.js", (h) => h.replace('"answer": "The + New menu can create six record types:', '"answer": "The same destination form can create six record types:'));
+    },
+    expect: [{ tool: "qc.js", mustFail: true, mentions: "unclear client-facing wording" }],
+  },
+  {
     name: "one stray closing brace in the hub stylesheet",
     why: "what actually happened: the stray brace ate the very next rule, .topbar{position:sticky}, so the header and its search scrolled away while every other rule still worked",
     break: (dir) => edit(dir, "index.html", (h) =>
@@ -168,7 +177,7 @@ const SCENARIOS = [
     name: "an answer changed on a product page but the index not rebuilt",
     why: "the hub would search and display text the product page no longer says",
     break: (dir) => edit(dir, "assurepro/index.html", (h) =>
-      h.replace('a:"AssurePro is AssureOne\'s practice-management foundation.',
+      h.replace('a:"AssurePro is the practice-management platform within AssureOne.',
                 'a:"Something else entirely, long enough to be a real answer.')),
     expect: [
       { tool: "qc.js", mustFail: true, mentions: "differs from the product page" },

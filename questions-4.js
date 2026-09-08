@@ -1,15 +1,29 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
+    "id": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88",
+    "product": "pro",
+    "category": "Engagements",
+    "title": "Can AssurePro remind a client to sign an engagement letter?",
+    "description": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
+    "answer": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by date and the date on which the package should expire, choose the reminder schedule, and confirm the reminder details before sending.",
+    "more": [
+      "For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred."
+    ],
+    "search": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by date and the date on which the package should expire, choose the reminder schedule, and confirm the reminder details before sending. For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
     "id": "pro-which-signing-statuses-can-staff-track-89",
     "product": "pro",
     "category": "Engagements",
-    "title": "Which signing statuses can staff track?",
+    "title": "Which signing statuses can firm users track?",
     "description": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status…",
-    "answer": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable.",
+    "answer": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and the recorded consent status when the package includes consent.",
     "more": [
       "Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up."
     ],
-    "search": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable. Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up.",
+    "search": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and the recorded consent status when the package includes consent. Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -41,7 +55,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Engagements",
     "title": "What are the magic link and audit log for a sent engagement letter?",
     "description": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the…",
-    "answer": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log.",
+    "answer": "The magic link is the client-facing route for one specific sent engagement package. The audit log records the delivery and signing activity associated with that package, helping firm users distinguish access or delivery issues from a package that has been viewed, partially signed, completed, or declined.",
     "steps": [
       "Open Engagement Letter and select the package from Sent.",
       "Preview the sent engagement letter rather than reopening the draft builder.",
@@ -50,7 +64,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on.",
       "Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature."
     ],
-    "search": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the package from Sent. Preview the sent engagement letter rather than reopening the draft builder. Use the magic-link option to open or copy the client-facing route for that specific sent package when the recipient needs help accessing it. Confirm the package and intended recipient before sharing the link; the link belongs to that engagement-letter delivery and should not be reused for a different client. Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on. Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature.",
+    "search": "The magic link is the client-facing route for one specific sent engagement package. The audit log records the delivery and signing activity associated with that package, helping firm users distinguish access or delivery issues from a package that has been viewed, partially signed, completed, or declined. Open Engagement Letter and select the package from Sent. Preview the sent engagement letter rather than reopening the draft builder. Use the magic-link option to open or copy the client-facing route for that specific sent package when the recipient needs help accessing it. Confirm the package and intended recipient before sharing the link; the link belongs to that engagement-letter delivery and should not be reused for a different client. Open the audit log to review the package's recorded delivery and signing activity, such as when it was sent, opened or viewed, and signed or otherwise acted on. Use the recipient status and audit events together when following up—for example, distinguish a delivery problem from a package that was viewed but is still awaiting a signature.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -60,7 +74,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Engagements",
     "title": "Can a client sign an engagement letter from a mobile device?",
     "description": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction,…",
-    "answer": "Yes. The client can review and sign the engagement package from a supported mobile device.",
+    "answer": "Yes. A client user can open the engagement-package link on a phone or tablet, review the services, pricing, terms, and supporting documents, and complete the signature from the mobile screen.",
     "steps": [
       "Open the engagement-package link from the firm's invitation or client experience.",
       "Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs.",
@@ -68,7 +82,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Draw the signature or type the signer's name and submit the signed package.",
       "The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record."
     ],
-    "search": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs. Complete any required service selections, approvals, or payment-capture step included by the firm. Draw the signature or type the signer's name and submit the signed package. The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record.",
+    "search": "Yes. A client user can open the engagement-package link on a phone or tablet, review the services, pricing, terms, and supporting documents, and complete the signature from the mobile screen. Open the engagement-package link from the firm's invitation or client experience. Review the introduction, selected services and pricing, agreement terms, and any supporting pages or PDFs. Complete any required service selections, approvals, or payment-capture step included by the firm. Draw the signature or type the signer's name and submit the signed package. The firm can then track the package as Viewed, Partial, or Signed and open the completed agreement from the client record.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -120,18 +134,18 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "How is a new invoice created?",
     "description": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the…",
-    "answer": "An invoice cannot be sent until a client, due date, and at least one priced line item are present.",
+    "answer": "Create an invoice by selecting the client, setting the invoice and due dates, and adding at least one priced line item. AssurePro provides a live preview and keeps the send action unavailable until the required client, due date, and line-item information is complete.",
     "steps": [
       "Open Billing and select Create invoice, or choose Invoice from the global + New menu.",
-      "Select the client; optionally associate an engagement after the client is selected.",
+      "Select the client, then select an engagement when the invoice relates to a specific engagement.",
       "Confirm the invoice number, issue date, and due date.",
       "Add a service-catalog item or a custom line, then enter quantity and unit price.",
-      "If applicable, import unbilled time and apply a dollar or percentage discount and tax.",
-      "Add a description, client note, or internal note as needed.",
+      "Import unbilled time when the invoice includes time-based work. Add a dollar or percentage discount and tax only when they apply to the invoice.",
+      "Add the service description, a note visible to the client, or an internal note for firm users when the invoice requires that context.",
       "Review the live invoice preview.",
       "Choose Save as draft or Create & send."
     ],
-    "search": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the client; optionally associate an engagement after the client is selected. Confirm the invoice number, issue date, and due date. Add a service-catalog item or a custom line, then enter quantity and unit price. If applicable, import unbilled time and apply a dollar or percentage discount and tax. Add a description, client note, or internal note as needed. Review the live invoice preview. Choose Save as draft or Create & send.",
+    "search": "Create an invoice by selecting the client, setting the invoice and due dates, and adding at least one priced line item. AssurePro provides a live preview and keeps the send action unavailable until the required client, due date, and line-item information is complete. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the client, then select an engagement when the invoice relates to a specific engagement. Confirm the invoice number, issue date, and due date. Add a service-catalog item or a custom line, then enter quantity and unit price. Import unbilled time when the invoice includes time-based work. Add a dollar or percentage discount and tax only when they apply to the invoice. Add the service description, a note visible to the client, or an internal note for firm users when the invoice requires that context. Review the live invoice preview. Choose Save as draft or Create & send.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -139,13 +153,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-staff-review-on-an-individual-invoice-97",
     "product": "pro",
     "category": "Billing",
-    "title": "What can staff review on an individual invoice?",
+    "title": "What can firm users review on an individual invoice?",
     "description": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items.…",
-    "answer": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state.",
+    "answer": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, the related signed agreement for agreement-generated invoices, description, and line items. Payment history and an audit trail show what happened after creation. The action menu shows Download PDF, Edit, Send invoice, or Cancel only when that action is permitted for the invoice's current status.",
     "more": [
       "Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received."
     ],
-    "search": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state. Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received.",
+    "search": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, the related signed agreement for agreement-generated invoices, description, and line items. Payment history and an audit trail show what happened after creation. The action menu shows Download PDF, Edit, Send invoice, or Cancel only when that action is permitted for the invoice's current status. Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -183,11 +197,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "Can signed agreements create billing work?",
     "description": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work…",
-    "answer": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client.",
+    "answer": "Yes. A signed engagement package can create invoice drafts or recurring schedules from the billing terms accepted by the client. AssurePro places the generated billing work in Agreements awaiting billing so an authorized firm user can review it before an invoice is sent or a schedule is activated.",
     "more": [
-      "A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated."
+      "A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require firm users to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated."
     ],
-    "search": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client. A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated.",
+    "search": "Yes. A signed engagement package can create invoice drafts or recurring schedules from the billing terms accepted by the client. AssurePro places the generated billing work in Agreements awaiting billing so an authorized firm user can review it before an invoice is sent or a schedule is activated. A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require firm users to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -197,16 +211,16 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "How do I review billing created by a signed agreement?",
     "description": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date,…",
-    "answer": "Agreement billing is separated by what still needs attention.",
+    "answer": "Billing created from a signed agreement appears in a review queue before it is sent or activated. This lets your firm confirm the client, services, amounts, dates, and billing schedule against the accepted agreement.",
     "steps": [
       "Open Billing and select the signed-agreements banner.",
-      "Search by client or agreement if needed.",
+      "Search by client name or agreement name to locate the billing item.",
       "Under Pending review, check the signed date, number of drafts or schedules, and amount.",
       "Select Review & send and inspect the generated invoice, line items, dates, and agreement link.",
       "Edit the draft if the billing details need correction, then send it when ready.",
       "Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create."
     ],
-    "search": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date, number of drafts or schedules, and amount. Select Review & send and inspect the generated invoice, line items, dates, and agreement link. Edit the draft if the billing details need correction, then send it when ready. Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create.",
+    "search": "Billing created from a signed agreement appears in a review queue before it is sent or activated. This lets your firm confirm the client, services, amounts, dates, and billing schedule against the accepted agreement. Open Billing and select the signed-agreements banner. Search by client name or agreement name to locate the billing item. Under Pending review, check the signed date, number of drafts or schedules, and amount. Select Review & send and inspect the generated invoice, line items, dates, and agreement link. Edit the draft if the billing details need correction, then send it when ready. Use Active for agreements already producing billing; items marked Manual, no priced services have no automatically billable service to create.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -216,11 +230,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "How does recurring billing work?",
     "description": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client,…",
-    "answer": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions.",
+    "answer": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send generates and sends each scheduled invoice without a separate review step; Manual send creates the invoice for a firm user to review before delivery. The list shows the client, cadence, service, send mode, status, next invoice date, amount, and available actions.",
     "more": [
-      "For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active."
+      "For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so a firm user reviews it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active."
     ],
-    "search": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions. For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active.",
+    "search": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send generates and sends each scheduled invoice without a separate review step; Manual send creates the invoice for a firm user to review before delivery. The list shows the client, cadence, service, send mode, status, next invoice date, amount, and available actions. For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so a firm user reviews it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -230,7 +244,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "How do I review or control a recurring schedule?",
     "description": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total…",
-    "answer": "A schedule can be inspected without opening the client record.",
+    "answer": "Open the recurring schedule from Billing to review its status, cadence, amount, invoice history, and next billing date. From the same view, authorized firm users can pause, resume, or bill the schedule immediately.",
     "steps": [
       "Open Billing and choose Recurring.",
       "Find the schedule in tile or list view.",
@@ -239,7 +253,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused.",
       "Review any displayed future price change before the next invoice date."
     ],
-    "search": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total billed, total received, pending amount, and invoice history. Use Pause or Resume schedule when the cadence should stop or restart. Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused. Review any displayed future price change before the next invoice date.",
+    "search": "Open the recurring schedule from Billing to review its status, cadence, amount, invoice history, and next billing date. From the same view, authorized firm users can pause, resume, or bill the schedule immediately. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total billed, total received, pending amount, and invoice history. Use Pause or Resume schedule when the cadence should stop or restart. Use Bill now when an immediate invoice is needed; this action is unavailable while the schedule is paused. Review any displayed future price change before the next invoice date.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -251,9 +265,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the…",
     "answer": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status.",
     "more": [
-      "Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work."
+      "Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether firm users can select it in new work."
     ],
-    "search": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status. Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work.",
+    "search": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status. Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether firm users can select it in new work.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -277,7 +291,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "How do I create a service?",
     "description": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on,…",
-    "answer": "A catalog item can carry the defaults that staff would otherwise re-enter during billing.",
+    "answer": "Create a service from Services > New service to save its name, description, kind, category, pricing model, default price, discount, tax treatment, and SOP. Firm users can then reuse those defaults in invoices and engagement packages.",
     "steps": [
       "Open Services and select New service.",
       "Enter the service name and optional description.",
@@ -287,7 +301,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Set the default tax rate and whether the item is taxable by default.",
       "Select Create service after all required fields are complete."
     ],
-    "search": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on, Hourly, Retainer, or Service as the kind. Choose the category and Fixed, Hourly, or Retainer as the pricing model. Set the default price and optional default discount. Set the default tax rate and whether the item is taxable by default. Select Create service after all required fields are complete.",
+    "search": "Create a service from Services > New service to save its name, description, kind, category, pricing model, default price, discount, tax treatment, and SOP. Firm users can then reuse those defaults in invoices and engagement packages. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on, Hourly, Retainer, or Service as the kind. Choose the category and Fixed, Hourly, or Retainer as the pricing model. Set the default price and optional default discount. Set the default tax rate and whether the item is taxable by default. Select Create service after all required fields are complete.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -339,11 +353,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "What is the difference between Billing & Payments and Platform Subscription?",
     "description": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and…",
-    "answer": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts.",
+    "answer": "Billing & Payments covers the firm's configuration for collecting client payments and managing its connected payout account. Platform Subscription is separate: it records purchases the firm makes from AssureOne Technologies LLC and keeps the related invoices and receipts. Client receivables belong in Billing; AssureOne charges to the firm belong in Platform Subscription.",
     "more": [
       "Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne."
     ],
-    "search": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts. Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne.",
+    "search": "Billing & Payments covers the firm's configuration for collecting client payments and managing its connected payout account. Platform Subscription is separate: it records purchases the firm makes from AssureOne Technologies LLC and keeps the related invoices and receipts. Client receivables belong in Billing; AssureOne charges to the firm belong in Platform Subscription. Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -355,15 +369,15 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each…",
     "answer": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice.",
     "more": [
-      "Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents."
+      "Use the status and date filters to find the AssureOne purchase being reconciled, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents."
     ],
     "steps": [
       "Open Settings and choose Platform Subscription.",
-      "Filter invoices by status or date when needed.",
+      "Filter the purchase invoices by status or transaction date.",
       "Select Preview for an on-screen invoice review.",
       "Select Download to save the invoice or receipt for the firm's records."
     ],
-    "search": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice. Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents. Open Settings and choose Platform Subscription. Filter invoices by status or date when needed. Select Preview for an on-screen invoice review. Select Download to save the invoice or receipt for the firm's records.",
+    "search": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice. Use the status and date filters to find the AssureOne purchase being reconciled, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents. Open Settings and choose Platform Subscription. Filter the purchase invoices by status or transaction date. Select Preview for an on-screen invoice review. Select Download to save the invoice or receipt for the firm's records.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -389,9 +403,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime…",
     "answer": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout.",
     "more": [
-      "For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received."
+      "For example, refer a client to MyCPEOne, associate the client engagement connected to the referral, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received."
     ],
-    "search": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout. For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received.",
+    "search": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout. For example, refer a client to MyCPEOne, associate the client engagement connected to the referral, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -401,7 +415,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Billing",
     "title": "How do I refer a client to MyCPEOne?",
     "description": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required…",
-    "answer": "A referral can use an existing AssurePro client or create a new referral contact.",
+    "answer": "Create a MyCPEOne referral from Billing > Referrals. The referral can use an existing AssurePro client or a new referral contact, and the submitted record remains available for status and commission tracking.",
     "steps": [
       "Open Billing and choose Referrals.",
       "Select Refer a client.",
@@ -410,7 +424,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Add contact name, phone, address, ZIP code, requested services, or notes when useful.",
       "Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking."
     ],
-    "search": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required client name, entity type, contact email, and service line. Add contact name, phone, address, ZIP code, requested services, or notes when useful. Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking.",
+    "search": "Create a MyCPEOne referral from Billing > Referrals. The referral can use an existing AssurePro client or a new referral contact, and the submitted record remains available for status and commission tracking. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required client name, entity type, contact email, and service line. Add contact name, phone, address, ZIP code, requested services, or notes when useful. Review the details and submit the referral. MyCPEOne then sends the portal invitation, and the referral remains visible for commission tracking.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -420,8 +434,8 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "Which communication channels are available?",
     "description": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected…",
-    "answer": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
-    "search": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
+    "answer": "Communications brings together client portal chat, email, SMS, calls, and internal team chat. Portal chat stays within the client experience, email uses the firm's connected email service, SMS uses the firm's connected Twilio number, calls can be recorded with the client communication history, and team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or the client's Communications tab when the conversation should begin with that client already selected.",
+    "search": "Communications brings together client portal chat, email, SMS, calls, and internal team chat. Portal chat stays within the client experience, email uses the firm's connected email service, SMS uses the firm's connected Twilio number, calls can be recorded with the client communication history, and team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or the client's Communications tab when the conversation should begin with that client already selected.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -431,30 +445,16 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Getting Started",
     "title": "How do I start a client conversation?",
     "description": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select…",
-    "answer": "A conversation can begin in the shared Communications area or in the selected client's workspace.",
+    "answer": "Start a client conversation from Communications to choose the client and channel, or open the client's Communications tab to begin with that client already selected. The conversation remains in the shared inbox and the client workspace for follow-up.",
     "steps": [
       "Open Communications and choose the required channel, or open the client's Communications tab.",
       "Select New Conversation.",
       "Choose the client and channel.",
-      "Add the recipients, subject, message, or other details required by that channel.",
+      "For email, enter the recipients, subject, and message. For portal chat or SMS, confirm the client contact and enter the message.",
       "Review and send the conversation.",
       "Use the shared inbox to monitor its response and handling status."
     ],
-    "search": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select New Conversation. Choose the client and channel. Add the recipients, subject, message, or other details required by that channel. Review and send the conversation. Use the shared inbox to monitor its response and handling status.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
-    "product": "pro",
-    "category": "Getting Started",
-    "title": "What is the difference between portal chat and SMS?",
-    "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
-    "answer": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace.",
-    "more": [
-      "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
-    ],
-    "search": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace. Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network.",
+    "search": "Start a client conversation from Communications to choose the client and channel, or open the client's Communications tab to begin with that client already selected. The conversation remains in the shared inbox and the client workspace for follow-up. Open Communications and choose the required channel, or open the client's Communications tab. Select New Conversation. Choose the client and channel. For email, enter the recipients, subject, and message. For portal chat or SMS, confirm the client contact and enter the message. Review and send the conversation. Use the shared inbox to monitor its response and handling status.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

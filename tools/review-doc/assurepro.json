@@ -1,5 +1,5 @@
 {
-  "total": 171,
+  "total": 172,
   "groups": [
     {
       "id": "platform",
@@ -7,9 +7,9 @@
       "items": [
         {
           "q": "What is AssurePro?",
-          "a": "AssurePro is AssureOne's practice-management foundation. It brings together firm setup, team access, clients, prospects, documents, engagement workflows, engagement letters, time, billing, services, calendars, reports, communications, templates, integrations, and administrative settings.",
+          "a": "AssurePro is the practice-management platform within AssureOne. It is where an accounting firm configures its organization, team access, client relationships, documents, engagement workflows, engagement letters, time, billing, communications, reporting, templates, and integrations.",
           "more": [
-            "In practice, this is the staff workspace used from the first prospect interaction through recurring client delivery and collection. A client record becomes the common reference point for contacts, documents, communications, engagements, agreements, credentials, time, and billing, reducing the need to reconcile separate tools."
+            "AssurePro also provides shared setup and client context for the other AssureOne products enabled for your firm. Keeping operational information connected to the client record helps firm users move between practice management and service delivery without rebuilding the relationship in separate systems."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -20,7 +20,7 @@
           "q": "Is AssurePro the firm's practice-management system or a bookkeeping system?",
           "a": "AssurePro is the firm's practice-management system. It manages the operational relationship with clients, including onboarding, documents, workflows, engagement letters, time, billing, communications, and reporting. Bookkeeping work is handled in AssureBooks when that product is available to the firm.",
           "more": [
-            "For example, AssurePro can create the bookkeeping engagement, assign its tasks, request source documents, track time, communicate with the client, and invoice the work. The accounting entries and books themselves belong in AssureBooks; the product switcher connects staff to that product when enabled."
+            "For example, AssurePro can create the bookkeeping engagement, assign its tasks, request source documents, track time, communicate with the client, and invoice the work. The accounting entries and books themselves belong in AssureBooks; the product switcher connects firm users to that product when enabled."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -28,40 +28,47 @@
           "ref": "pro-is-assurepro-the-firm-s-practice-management-system-or-a-bookkeeping-sy-2"
         },
         {
-          "q": "How do I find existing information or create a new record quickly?",
-          "a": "Use the global search when the information or record already exists. Use + New when you need to create a record or begin a new activity.",
+          "q": "How do I find existing information quickly?",
+          "a": "Use the global search in the AssurePro header to find information that already exists. Search for a client, document, or task by name, then select the matching result to open the client record, document, or task.",
           "more": [],
           "steps": [
-            "Select the header search or use its displayed keyboard shortcut.",
-            "Enter a client, document, or task name and open the matching result in its source module.",
-            "When creating a new record, select + New in the header.",
-            "Choose Client, Task, Message, Invoice, Document Request, or Engagement Letter.",
-            "Complete and review the destination form before saving or sending."
+            "Select the search field in the application header or use the displayed keyboard shortcut.",
+            "Enter the name of the client, document, or task you need.",
+            "Review the matches and select the correct result to open its record."
           ],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-how-do-i-find-information-or-start-common-work-quickly-5"
         },
         {
-          "q": "What can I create from the global + New menu?",
-          "a": "The + New menu contains Client, Task, Message, Invoice, Document Request, and Engagement Letter. It is the fastest entry point when the user already knows which record or activity they need to start.",
-          "more": [
-            "The chosen shortcut opens the same destination form used inside its module, so using + New does not create a reduced record. For example, choosing Invoice opens the invoice builder with its client, due-date, line-item, discount, tax, notes, preview, draft, and send controls."
-          ],
+          "q": "How do I create a new record quickly?",
+          "a": "Use the global + New menu to create a Client, Task, Message, Invoice, Document Request, or Engagement Letter from anywhere in AssurePro. Selecting a shortcut opens the full creation form for that record.",
+          "more": [],
           "steps": [
             "Select + New in the application header.",
             "Choose Client, Task, Message, Invoice, Document Request, or Engagement Letter.",
-            "Complete the fields in the opened form and review the information before saving or sending."
+            "Enter the fields marked as required in the opened form, confirm the client and recipients where shown, and then select the form's Save, Create, or Send action."
           ],
+          "alsoSettings": false,
+          "keywords": "",
+          "ref": "pro-how-do-i-create-a-new-record-quickly-173"
+        },
+        {
+          "q": "What can I create from the global + New menu?",
+          "a": "The + New menu can create six record types: Client, Task, Message, Invoice, Document Request, and Engagement Letter. Selecting one opens its full creation form; for example, Invoice opens the invoice builder and Document Request opens the client-document request form.",
+          "more": [
+            "Using + New does not create a simplified record. For example, selecting Invoice opens the invoice builder with client, issue-date, due-date, line-item, discount, tax, notes, preview, Save as draft, and Create & send controls."
+          ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-can-i-create-from-the-global-new-menu-6"
         },
         {
           "q": "Where do firm users sign in?",
-          "a": "Firm users use the AssurePro sign-in link supplied by their administrator or AssureOne. A new user first opens the invitation sent to their work email, accepts it, completes the requested email-code verification, and sets a password. Later sign-ins use the established account and open the staff-facing AssurePro dashboard; clients use the separate client portal or mobile app instead.",
+          "a": "Firm users sign in to the internal AssurePro workspace using the link provided by their firm administrator or the AssureOne team. A new firm user opens the invitation sent to their work email address, verifies that address, and sets an account password. Client users follow a separate process: they access the firm's client portal or the AssureOne client mobile application and do not sign in to the internal AssurePro workspace.",
           "more": [
-            "If an invitation cannot be completed, first confirm that the user is opening the newest invitation sent to the correct email address. Team & Roles shows invitations separately from active members, allowing an administrator to review or resend access before troubleshooting permissions."
+            "If a firm user cannot activate the account, the firm administrator should confirm that the email address is correct and ask the person to open the most recent invitation. The administrator can review, resend, or cancel the invitation under Team & Roles > Invitations."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -79,20 +86,20 @@
         },
         {
           "q": "How do I get help or report an issue in AssurePro?",
-          "a": "AssureOne provides direct email support, in-product issue reporting, and implementation assistance.",
+          "a": "Use support@assureone.ai for feature, access, or workflow help; use Report a bug in the application header for a product issue; and contact the assigned AssureOne implementation team for configuration, migration, testing, or launch assistance.",
           "more": [],
           "steps": [
-            "Email support@assureone.ai when you need help from the AssureOne support team.",
+            "Email support@assureone.ai for help using a feature or resolving an access or workflow issue.",
             "Use Report a bug in the application header to report a product issue from the screen where it occurred. Include what you were doing, what you expected, what happened, and the affected area; attach a privacy-safe screenshot when it helps explain the problem.",
-            "For questions about configuration, onboarding, or data migration, contact the firm's AssureOne implementation or account contact because the answer may depend on the firm's plan and rollout."
+            "During implementation, work with your assigned AssureOne implementation team for firm and portal configuration, team setup, workflow design, integrations, data-migration planning, validation, testing, and launch preparation."
           ],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-support-channels-are-available-if-we-run-into-an-issue-9"
         },
         {
-          "q": "Is there an audit log of staff actions across the firm?",
-          "a": "Yes. The Overview dashboard's Recent activity area gives administrators firm-wide visibility into staff and client actions. Each entry identifies what happened, the person or record involved, and the time—for example, an invitation sent or accepted, a portal password set, a client login, or a contact update. Use it to confirm recent changes and understand who performed an action without opening every client record individually.",
+          "q": "Can administrators review recent activity across the firm?",
+          "a": "Yes. The Overview dashboard's Recent Activity area helps administrators review selected firm-user, client-user, and system events across the firm. An entry identifies what happened, the associated person or record, and when it occurred—for example, an invitation being sent or accepted, a client portal login, or a contact update. Recent Activity is an operational history and should not be treated as a complete compliance or security audit log.",
           "more": [],
           "steps": [],
           "alsoSettings": false,
@@ -107,7 +114,7 @@
       "items": [
         {
           "q": "What is on the AssurePro Overview?",
-          "a": "Overview is the firm's operating dashboard. It combines an AI-generated daily briefing with configurable tiles and widgets for clients, engagements, team load, engagement letters, bottlenecks, billing, workflow mix, review status, service-line performance, top clients, current tasks, recent activity, and key filing dates. The figures are actionable: for example, Clients opens the client list, Engagements and Bottlenecks open Workflow, Team load opens Team & Roles, and the financial Report link opens Billing. Use Edit layout to choose and arrange the widgets most useful to the signed-in user.",
+          "a": "The Overview is the firm's operating dashboard. It combines an AI-generated daily briefing with configurable widgets for clients, engagements, team workload, deadlines, workflow bottlenecks, invoices, tasks, and review work. Select a widget or record to open the client, engagement, task, invoice, or report behind that summary.",
           "more": [],
           "steps": [],
           "alsoSettings": false,
@@ -116,9 +123,9 @@
         },
         {
           "q": "Can the Overview dashboard be customized?",
-          "a": "Yes. Select Edit layout to add or remove available widgets, drag them into the preferred order, and save the layout. This changes how the available Overview information is arranged for the user.",
+          "a": "Yes. Select Edit layout to choose which available widgets appear on the Overview, arrange them in the preferred order, and save the layout.",
           "more": [
-            "A user can keep operational cards such as Clients, Engagements, Bottlenecks, financial performance, deadlines, review queues, or recent activity in the order that best supports their role. Reset layout returns the dashboard to its standard arrangement if the customized version is no longer useful."
+            "For example, a partner may prioritize financial performance and workflow bottlenecks, while a manager may focus on engagements, review work, deadlines, and team capacity. The layout is saved for the signed-in firm user. Select Reset layout at any time to restore the standard arrangement."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -138,9 +145,9 @@
         },
         {
           "q": "What happens when I select Full report on an Overview card?",
-          "a": "Full report opens the related focused dashboard rather than expanding the card in place. For example, Full revenue report opens Revenue Snapshot, where the selected period, total revenue, revenue per billed client, existing-versus-new split, cross-sell measures, revenue mix, and service-line detail can be reviewed together.",
+          "a": "Full report opens the detailed dashboard connected to the selected Overview card instead of expanding that card on the Overview page. The focused dashboard keeps the reporting-period controls and provides the related metrics, breakdowns, and Export action in one view.",
           "more": [
-            "The focused dashboard keeps the report period controls and Export action while adding supporting metrics and breakdowns. For example, Revenue Snapshot goes beyond the service-line chart with revenue per billed client, existing versus new client revenue, cross-sell revenue, revenue mix, and detailed service-line performance."
+            "For example, Full revenue report opens Revenue Snapshot, where a firm user can review total revenue, revenue per billed client, new-versus-existing client revenue, revenue mix, cross-sell measures, and service-line detail for the selected period."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -149,9 +156,9 @@
         },
         {
           "q": "What is available in My Report?",
-          "a": "My Report separates Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards are curated and always available. Shared dashboards are published by an owner or administrator for everyone with report access. My dashboards contains the current user's saved dashboards built from Templates.",
+          "a": "My Report organizes dashboards into Starter dashboards, Shared with the firm, and My dashboards. Starter dashboards provide ready-to-use views, shared dashboards are available to firm users with report access, and My dashboards contains the signed-in firm user's saved dashboards.",
           "more": [
-            "Starter dashboards are maintained reference views; Shared with the firm contains dashboards published for all users with report access; My dashboards contains the signed-in user's private or owned work. The separation lets a firm keep standard management reporting while allowing personal analysis without changing everyone else's view."
+            "This separation lets your firm keep standard management views available to the team while allowing individual firm users to build personal dashboards without changing the shared versions."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -171,14 +178,14 @@
         },
         {
           "q": "How do I build a custom dashboard?",
-          "a": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected.",
+          "a": "Build a custom dashboard from Reports > Templates by selecting the report widgets that answer the management question you want to track. After selecting at least one widget, you can arrange the layout and save the dashboard for personal use or share it with the firm.",
           "more": [],
           "steps": [
             "Open Reports and choose Templates.",
             "Search for a widget or filter the library by category.",
             "Select the widgets needed for the dashboard.",
             "Review the selected widgets, which appear in selection order.",
-            "Drag widgets into the preferred order and adjust their width or height where supported.",
+            "Drag widgets into the preferred order and choose a width and, when the widget displays a height control, adjust its height.",
             "Select Save dashboard.",
             "Enter a name and optional description, then decide whether to Share with the firm.",
             "Save the dashboard; a shared dashboard is visible to everyone with report access."
@@ -189,7 +196,7 @@
         },
         {
           "q": "How can report widgets be arranged?",
-          "a": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, along with height adjustment where supported. A widget can also be moved or removed before the dashboard is saved.",
+          "a": "Selected widgets can be dragged into a new order. The layout controls offer one-third, one-half, two-thirds, and full width, and displays a height control on widgets that can be resized vertically. A widget can also be moved or removed before the dashboard is saved.",
           "more": [
             "A headline metric can use one-third width beside related cards, while a detailed table can use Full width. After changing width or height, review the dashboard at the normal screen size and reorder widgets so the most important decision appears first rather than simply preserving selection order."
           ],
@@ -200,7 +207,7 @@
         },
         {
           "q": "How do I share or manage a custom dashboard?",
-          "a": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete. Starter dashboards can be duplicated into My dashboards before customization.",
+          "a": "Enable Share with the firm when saving a dashboard to make it available to firm users with report access. Owners and administrators can manage a shared dashboard using Edit widgets, Rename, Duplicate to my dashboards, Make private, and Delete.",
           "more": [
             "Use Duplicate to my dashboards before experimenting with a starter or shared view. Rename it for the management question it answers, edit widgets, and enable Share with the firm only when the content is ready; Make private withdraws a shared dashboard without deleting it, while Delete removes it."
           ],
@@ -211,7 +218,7 @@
         },
         {
           "q": "Which report-widget categories can I use?",
-          "a": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views appropriate to each category.",
+          "a": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client breakdowns, operational lists, and budget-versus-actual views grouped under the category they measure.",
           "more": [
             "For example, combine Total revenue from Revenue, New clients from Clients, Stage ageing from Workflow, Overdue tasks from Tasks, Utilization from Time, A/R ageing from Billing, and Agreement funnel from Agreements. Search finds a known widget; category filters are better for exploring related measures."
           ],
@@ -222,7 +229,7 @@
         },
         {
           "q": "How does the dashboard help identify work needing attention?",
-          "a": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each major tile links to the underlying operational screen.",
+          "a": "The dashboard highlights work that may need follow-up, including approaching or missed deadlines, stalled engagements, review queues, unsigned engagement letters, overdue tasks, workload pressure, receivables, and key filing dates. Select a tile to open the underlying records and take action.",
           "more": [
             "For example, an overdue-invoice card leads to Billing, a stalled-engagement or bottleneck card leads to Workflow, an awaiting-signature metric leads to Engagement Letter, and a team-load alert leads to Team & Roles. The dashboard is therefore a starting queue, not only a static summary."
           ],
@@ -239,30 +246,25 @@
       "items": [
         {
           "q": "What is included in AssurePro Settings?",
-          "a": "Settings is the firm's central configuration area, organized into five groups so administrators can move from firm setup to day-to-day operating controls.",
-          "more": [],
-          "steps": [
-            "Firm: maintain Firm Profile, Client Portal, and Team & Roles, including branding, portal access, members, teams, roles, and permissions.",
-            "Work: configure Engagement Types, Workflow, Firm SOP, Documents, Tags, and Onboarding Defaults so new clients and engagements begin with the correct structure.",
-            "Money: manage Billing & Payments, AI Credits, and Platform Subscription.",
-            "Communication: configure Notifications & Email, Email Templates, Reminders, Phone Numbers, and Email Log.",
-            "Access: manage Integrations, Tax Connector, Security, and Firm Credentials.",
-            "Use Search settings when the destination is known; selecting a result opens the corresponding configuration page without changing the underlying group structure."
+          "a": "Settings is the central configuration area for AssurePro. Administrators use it to manage the firm's identity, client portal, teams and permissions, work standards, billing controls, communications, integrations, security, and reusable onboarding defaults.",
+          "more": [
+            "The navigation is grouped into Firm, Work, Money, Communication, and Access. For example, use Firm Profile for branding, Workflow for delivery stages, Reminders for automated follow-up, and Integrations for connected services."
           ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-is-included-in-assurepro-settings-11"
         },
         {
           "q": "How do I find a particular setting?",
-          "a": "Settings has 21 destinations grouped under Firm, Work, Money, Communication, and Access.",
+          "a": "Use Search settings when you know what you need but are unsure where it is located. Settings groups its configuration pages under Firm, Work, Money, Communication, and Access.",
           "more": [
-            "Search Settings matches the destination names in the left navigation; selecting a result opens the corresponding configuration page. For example, search “reminders” for automated follow-up schedules or “credentials” for the encrypted firm credential store."
+            "Search settings matches page names in the left navigation; selecting a result opens that Settings page. For example, search “reminders” for automated follow-up schedules or “credentials” for the encrypted firm credential store."
           ],
           "steps": [
             "Open Settings from the Admin area of the main navigation.",
             "Enter a term in Search settings, or scan the five setting groups.",
-            "Choose the matching destination; for example, Documents under Work or Notifications & Email under Communication."
+            "Choose the matching Settings page; for example, Documents under Work or Notifications & Email under Communication."
           ],
           "alsoSettings": false,
           "keywords": "",
@@ -322,16 +324,18 @@
         },
         {
           "q": "What can be configured for a team?",
-          "a": "A team has a name, description, optional standard hourly rate, optional per-member AI credit allowance, client-access scope, members, and permissions. Access all clients lets the team bypass per-client assignment; otherwise access follows the firm's assignments.",
-          "more": [],
+          "a": "A team can have a name, description, standard hourly rate, client-access scope, members, and permissions. Access all clients gives the team firm-wide client access; otherwise, access follows the firm's client assignments.",
+          "more": [
+            "Configure teams around job responsibilities rather than individual exceptions. For example, a tax-preparation team may need access to assigned tax clients, documents, tasks, and workflows without receiving firm-wide billing or security permissions."
+          ],
           "steps": [
             "Open Team & Roles and choose Teams.",
-            "Select New team, or open Manage on an existing non-system team.",
-            "Set the team name and description.",
-            "Optionally set the standard hourly rate used when pricing logged time and an AI credit allowance for each member.",
+            "Select New team, or select Manage for an existing custom team.",
+            "Enter the team name and description.",
+            "Set the standard hourly rate when the firm uses one for the team.",
             "Choose whether the team can access all clients.",
-            "Select team members and configure the required permission groups.",
-            "Review the permission count before saving the team."
+            "Add the team members and select the permissions required for their responsibilities.",
+            "Review the client-access scope and permissions, then save the team."
           ],
           "alsoSettings": false,
           "keywords": "",
@@ -339,9 +343,9 @@
         },
         {
           "q": "How granular are team permissions?",
-          "a": "The team editor provides 86 permissions grouped into Client Management, Content & Documents, Work & Operations, Communication, Finance & Compliance, Reporting & Analytics, and Administration. Controls include action-level permissions such as View, Create, Edit, Delete, and Assign where applicable, plus Select all for a group. System teams are identified separately from custom teams.",
+          "a": "Team permissions are organized by work area and action. Administrators can control access to Client Management, Content & Documents, Work & Operations, Communication, Finance & Compliance, Reporting & Analytics, and Administration, with separate View, Create, Edit, Delete, and Assign controls for the work areas that support those actions.",
           "more": [
-            "Permission totals displayed beside a member or role make broad differences visible—for example, an administrator can have all permissions while a staff or manager role has a smaller subset. Review permissions by work area before inviting users so client, billing, settings, and security access match job responsibilities."
+            "Review permissions by responsibility before inviting firm users. For example, a firm user may be allowed to view billing information without being able to create or cancel invoices, while an administrator may manage firm-wide settings and access."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -361,14 +365,14 @@
         },
         {
           "q": "How do I invite a team member?",
-          "a": "Team & Roles manages Teams, Members, and Invitations in one place.",
+          "a": "Invite a firm user from Team & Roles, where you select the role that matches the person's responsibilities before sending the account-activation email. The invitation remains visible until the recipient completes activation.",
           "more": [
             "After sending the invitation, monitor it under Invitations rather than immediately creating a duplicate. The recipient accepts the newest email invitation, verifies the invited address, sets a password, and then appears under Members with the assigned role and product access."
           ],
           "steps": [
             "Open Settings and choose Team & Roles, or use Team & Roles in the main navigation.",
             "Select Invite member.",
-            "Complete the member details and assign the appropriate role.",
+            "Enter the firm user's name and work email, then select the team and role that determine their access.",
             "Send the invitation.",
             "Use the Invitations tab to review invitations that are still pending."
           ],
@@ -380,7 +384,7 @@
           "q": "What are Engagement Types?",
           "a": "Engagement Types are the named services the firm delivers, organized by areas such as Bookkeeping, Audit & Assurance, Accounting, Advisory, and Tax. Each type has a description and code and can control the custom fields displayed in that engagement's Context rail.",
           "more": [
-            "An engagement type is the reusable definition selected when creating client work—for example Individual Tax Return, Monthly Bookkeeping, or Financial Statement Audit. It connects the service category and expected engagement structure so staff do not build every engagement from a blank record."
+            "An engagement type is the reusable definition selected when creating client work—for example Individual Tax Return, Monthly Bookkeeping, or Financial Statement Audit. It connects the service category and expected engagement structure so firm users do not build every engagement from a blank record."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -389,13 +393,13 @@
         },
         {
           "q": "How do I configure an engagement type's Context fields?",
-          "a": "The editor supports Dropdown, People, Date, Files, Number, Money, Formula, and Text fields. Fields can be reordered, made required or inactive where supported, and deleted; Formula fields are identified as read-only.",
+          "a": "The editor supports Dropdown, People, Date, Files, Number, Money, Formula, and Text fields. Fields can be reordered and deleted. The editor shows whether the selected field can be marked Required or Inactive; Formula fields are read-only.",
           "more": [],
           "steps": [
             "Open Settings and choose Engagement Types.",
             "Select the engagement type whose Context rail needs to change.",
-            "Select Add field and choose the appropriate field type.",
-            "Configure the field label and available options or rules.",
+            "Select Add field and choose Dropdown, People, Date, Files, Number, Money, Formula, or Text.",
+            "Enter the field label. For a Dropdown, add the choices; for other field types, set the Required and Active controls displayed by the editor.",
             "Reorder fields with Move up or Move down and review required, inactive, or read-only indicators.",
             "Open an engagement of that type to confirm the Context rail matches the configuration."
           ],
@@ -405,7 +409,7 @@
         },
         {
           "q": "What are Onboarding Defaults?",
-          "a": "Onboarding Defaults pre-fill the first engagement assignee, engagement-letter template, and client folder structure. An unset assignee or template can auto-resolve, entity-type matches can override the general engagement-letter template, and selecting None for folders starts the client without a folder structure.",
+          "a": "Onboarding Defaults determine the starting configuration applied when a new client is created. They can preselect the first engagement assignee, engagement-letter template, and client folder structure, reducing repeated setup and helping new client records begin consistently.",
           "more": [],
           "steps": [
             "Open Settings and choose Onboarding Defaults.",
@@ -420,9 +424,9 @@
         },
         {
           "q": "How are tags created and maintained?",
-          "a": "Tags categorize clients and engagements across the firm. Settings provides a simple tag list with add, edit, and delete controls.",
+          "a": "Tags help your firm categorize clients and engagements for filtering and organization. Administrators can add, rename, or delete tags from Settings > Tags.",
           "more": [
-            "Use a consistent naming convention before creating many tags; examples include service line, risk level, client tier, referral source, or special handling. Deactivating an unused tag keeps the list cleaner while preserving existing records that already reference it."
+            "Use a consistent naming convention before creating many tags. Delete a tag only after confirming that it is no longer needed on client or engagement records."
           ],
           "steps": [
             "Open Settings and choose Tags.",
@@ -438,7 +442,7 @@
           "q": "How do I configure personal notification preferences?",
           "a": "Notifications & Email provides separate email and in-app switches for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Emails received in a connected client inbox also have their own email preference.",
           "more": [
-            "Choose email for events that must be seen outside AssurePro and in-app delivery for items staff will handle while working in the platform. A user can enable both channels for high-priority events such as overdue invoices or upcoming deadlines and use one channel for lower-priority activity."
+            "Choose email for events that must be seen outside AssurePro and in-app delivery for items firm users will handle while working in the platform. A firm user can enable both channels for high-priority events such as overdue invoices or upcoming deadlines and use one channel for lower-priority activity."
           ],
           "steps": [
             "Open Settings and choose Notifications & Email.",
@@ -451,7 +455,7 @@
         },
         {
           "q": "How do report alerts work?",
-          "a": "The Report alerts area can notify subscribed users by email and the in-app bell when a KPI crosses a threshold, or send a scheduled digest of key firm metrics.",
+          "a": "Report alerts notify selected firm users when a KPI crosses a defined threshold or deliver a scheduled digest of key firm metrics. Alerts can be delivered by email and through the in-app notification bell.",
           "more": [],
           "steps": [
             "Open Settings and choose Notifications & Email.",
@@ -467,19 +471,11 @@
         },
         {
           "q": "What is in the Template Library?",
-          "a": "The Template Library gives the firm reusable starting points that can be added to its working configuration instead of rebuilding common content from scratch.",
+          "a": "The Template Library provides reusable starting points for engagement letters, workflows, client folder structures, and messages. Your firm can preview a curated template, add it to the library, and then adapt its working copy before using it with clients.",
           "more": [
-            "Use All to browse across types or open a specific tab to reduce the catalog. Preview an item before adding it, review its tags and included content, then use the provided Open in… destination to configure the firm's working copy rather than treating the curated template as final client-ready content."
+            "Preview the template and review its tags and included content before adding it. After it is added, open the added engagement letter, workflow, folder template, or message template in its editor and update it for your firm's policies, services, and client communication style."
           ],
-          "steps": [
-            "All combines the available library items in one view.",
-            "Engagement Letter Templates provide agreement wording, packages, services, pricing structures, and related signing content.",
-            "Workflows provide reusable stage and task sequences for recurring delivery processes.",
-            "Folders provide standardized client-document structures.",
-            "Messages provide reusable email and SMS wording for common client touchpoints.",
-            "Search or filter the library, preview an item, review its included content and tags, and select Add to Library.",
-            "Open the added item in its destination area and adapt the firm's copy before using it with a client."
-          ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-is-in-the-template-library-27"
@@ -491,7 +487,7 @@
           "steps": [
             "Open Template Library from Admin.",
             "Choose All, Engagement Letter Templates, Workflows, Folders, or Messages.",
-            "Search by name, type, or tag and select a practice area when needed.",
+            "Search by name, type, or tag and select a practice area to narrow the results to that service area.",
             "Turn on Added only to review the firm's activated items.",
             "Use Sort to change the catalog order and Preview to inspect an item before adding it."
           ],
@@ -500,8 +496,8 @@
           "ref": "pro-how-do-i-find-the-right-template-library-item-28"
         },
         {
-          "q": "How is a Template Library item added and edited?",
-          "a": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document settings. Adding a curated item makes it available to the firm; its downstream editor is where the firm reviews or adapts it.",
+          "q": "How do I add and customize a Template Library item?",
+          "a": "Preview the template, select Add to Library, and then use Open in… to open the added copy in Engagement Letters, Workflow, Folder Templates, or Messages, based on the template type. Curated templates are starting points; your firm customizes the added working copy rather than editing the original library item.",
           "more": [],
           "steps": [
             "Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary.",
@@ -532,12 +528,12 @@
       "items": [
         {
           "q": "How is a new client added directly?",
-          "a": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline.",
+          "a": "Create a client directly when the relationship is already confirmed and does not need to move through the prospect pipeline. The client record becomes the starting point for contacts, portal access, documents, engagements, billing, and other client work.",
           "more": [],
           "steps": [
             "Open Clients and select New Client, or choose Client from the global + New menu.",
             "Enter the required Client Name and Entity Type.",
-            "Set the status, industry and sub-industry, assignees, folder template, country, and address as needed.",
+            "Add the status, industry, sub-industry, assigned firm users, folder template, country, and address that apply to the client.",
             "Optionally add the primary contact's name, phone number, and email.",
             "Choose whether Send portal invite should remain selected.",
             "Review the record and select Create Client."
@@ -563,7 +559,7 @@
           "more": [],
           "steps": [
             "Open Prospects and find the lead in Board or List view.",
-            "Open the prospect record and review the company, contact, service interest, owners, deal value, and other details that should carry forward.",
+            "Open the prospect record and review the company, contact, service interest, owners, deal value, expected close date, tags, and notes that should carry forward.",
             "Open the Stage control and change the prospect to Won.",
             "Open the resulting client record and complete any client-specific information, assignments, documents, portal access, or engagement setup that was not captured on the prospect."
           ],
@@ -573,7 +569,7 @@
         },
         {
           "q": "How do I import multiple clients?",
-          "a": "The client import accepts CSV and XLSX files and provides a downloadable CSV template.",
+          "a": "Use the client import when the firm needs to add multiple client records at once. AssurePro accepts CSV and XLSX files and provides a downloadable CSV template so the source data can be prepared in the expected structure before upload.",
           "more": [],
           "steps": [
             "Open Clients.",
@@ -588,9 +584,9 @@
         },
         {
           "q": "Can I create a client while starting an engagement?",
-          "a": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing.",
+          "a": "Yes. The New Engagement client chooser includes Create new client, so firm users do not have to leave the workflow when the required client is missing.",
           "more": [
-            "This is useful when staff discover that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not required in the contextual form."
+            "This is useful when a firm user discovers that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not shown in the client form opened from New Engagement."
           ],
           "steps": [
             "Open Workflow and select New Engagement.",
@@ -603,8 +599,8 @@
           "ref": "pro-can-i-create-a-client-while-starting-an-engagement-35"
         },
         {
-          "q": "What can staff see in a client workspace?",
-          "a": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention, engagements, open tasks, recent documents, balances, deadlines, client pending actions, communications, and recent activity.",
+          "q": "What can firm users see in a client workspace?",
+          "a": "Firm users can use a client workspace to review the relationship and the work connected to it in one place. The workspace includes Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview brings forward items requiring attention, open work, deadlines, documents, balances, communications, and recent activity.",
           "more": [
             "Use Overview for a concise operating summary and the specialized tabs for the full record. For example, an overdue invoice is reviewed in Billing, an unsigned package in Engagement Letter, missing source files in Documents, and the associated delivery plan in Engagements—without searching for the client again."
           ],
@@ -637,7 +633,7 @@
         },
         {
           "q": "How does AssurePro help complete a client profile?",
-          "a": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist.",
+          "a": "The Info tab shows a profile-completeness checklist and identifies missing fields. Firm users can add missing contact, address, entity, and period information directly from that checklist.",
           "more": [
             "Treat the checklist as an onboarding quality control rather than a cosmetic score. Completing the missing entity, address, contact, filing-period, and related fields improves downstream engagement setup, document requests, communications, agreements, invoices, and reports."
           ],
@@ -648,7 +644,7 @@
         },
         {
           "q": "Can a portal invitation be sent again?",
-          "a": "Yes. Portal access can be initiated during client creation or managed later from the client record.",
+          "a": "Yes. A firm user can resend a portal invitation from the client record after confirming that the intended client contact and email address are correct. The client should use the newest invitation because an earlier link may no longer be valid.",
           "more": [],
           "steps": [
             "Open the client and choose Info.",
@@ -663,9 +659,9 @@
         },
         {
           "q": "What can a client do through the client portal?",
-          "a": "A client with portal access can work with the firm on the client-facing items made available to them, including engagement-letter review and signing, document requests and uploads, messages, and billing items. Portal access begins with the invitation sent during onboarding or from the client's Info tab.",
+          "a": "A client user can review and sign engagement letters, respond to document requests, upload files, exchange messages with the firm, and review or pay invoices that the firm sends through the client portal. Portal access begins with the invitation sent during onboarding or from the client's Info tab.",
           "more": [
-            "A typical flow is: accept the invitation, set a password, open a request or message, upload the requested documents, review and sign the engagement package, and pay an invoice when billing is enabled. The client sees only the client-facing work made available by the firm, not the internal staff workspace."
+            "A typical flow is: accept the invitation, set a password, open a request or message, upload the requested documents, review and sign the engagement package, and pay an invoice when billing is enabled. The client sees only the client-facing work made available by the firm, not the internal firm workspace."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -687,7 +683,7 @@
           "q": "Is there a mobile app for clients?",
           "a": "Yes. AssurePro provides a client mobile app for both iOS and Android. Clients can use the mobile experience for the work the firm makes available to them, including reviewing requests, uploading documents, communicating with the firm, signing documents, and handling billing-related actions. The client must first accept the firm's portal invitation and establish their account before signing in on a mobile device.",
           "more": [
-            "For a smooth rollout, ask the client to activate the account from the firm's invitation first, then install the appropriate app and sign in with the same account. The firm should still verify that the intended request, message, signing package, or invoice is visible to that contact before directing them to act."
+            "For a smooth rollout, ask the client to activate the account from the firm's invitation first, then install the iOS or Android client app and sign in with the same account. The firm should still verify that the intended request, message, signing package, or invoice is visible to that contact before directing them to act."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -696,7 +692,7 @@
         },
         {
           "q": "Can we migrate data from our previous practice-management software?",
-          "a": "Yes. AssurePro's implementation team supports migration from other practice-management platforms, including systems such as Karbon, Canopy, and TaxDome, as part of onboarding. The firm should identify the source system, records and documents to move, custom fields, user assignments, historical depth, and target cutover date. The implementation team then confirms the export format, field mapping, import sequence, exception handling, and validation process so the firm can review the migrated data before relying on it for live work.",
+          "a": "Yes. The AssureOne implementation team can help the firm plan and complete a migration from its current practice-management system. The migration scope is agreed during onboarding and depends on the source data, available export format, records and documents to be moved, required history, field mapping, and planned cutover. The firm reviews and validates the migrated information before using it for live work.",
           "more": [],
           "steps": [],
           "alsoSettings": false,
@@ -705,7 +701,7 @@
         },
         {
           "q": "Does AssurePro include CRM capabilities?",
-          "a": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, and other prospect details, then manage active clients through dedicated workspaces containing contacts, engagements, documents, communications, billing, and related information.",
+          "a": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, contact information, tags, and qualification fields, then manage active clients through dedicated workspaces containing contacts, engagements, documents, communications, billing, and related information.",
           "more": [
             "For example, a firm can capture a referral as a prospect, assign an owner and expected close date, record service interest and deal value, move it through Discovery and Proposal, and mark it Won. The resulting client can then continue into portal onboarding, documents, engagement delivery, agreements, and billing without rebuilding the relationship."
           ],
@@ -718,10 +714,10 @@
           "q": "How are prospects managed before they become clients?",
           "a": "Prospects can be managed in Board or List view inside a firm-defined pipeline. The firm is not limited to one fixed sales process: administrators can create a new pipeline and define, rename, reorder, add, or restructure its stages to match the firm's qualification and proposal process.",
           "more": [
-            "A firm may use one pipeline for all prospects or create separate pipelines for service lines or sales motions. For example, an advisory pipeline may include Assessment and Scoping stages, while a tax pipeline may move from New lead to Documents received, Proposal, Won, or Lost. Restructuring the stages changes how the firm organizes future pipeline work, so administrators should agree on the definitions before rollout."
+            "A firm may use one pipeline for all prospects or create separate pipelines for service lines or sales motions. For example, an advisory pipeline may include Assessment and Scoping stages, while a tax pipeline may move from New lead to Documents received, Proposal, Won, or Lost. Restructuring the stages changes how the firm organizes future pipeline work, so firm administrators should agree on the definitions before rollout."
           ],
           "steps": [
-            "Choose or create the pipeline used for the relevant service line or prospect process.",
+            "Choose or create the pipeline used for that service line or sales process.",
             "Configure the stages in the order work should move—for example, New lead, Discovery, Qualified, Proposal, Decision, Won, and Lost.",
             "Use Board view to move prospects between stages and see the pipeline visually; use List view to search, filter, and compare prospect details in rows.",
             "Open a prospect to manage owners, tasks, notes, emails, calls, service interest, deal value, expected close date, and engagement-letter activity.",
@@ -745,25 +741,18 @@
         },
         {
           "q": "What information can be captured for a prospect?",
-          "a": "A prospect record supports standard sales, contact, ownership, and qualification information, and the firm can extend the record with custom fields configured in Settings.",
+          "a": "A prospect record can capture contact and company details, pipeline and stage, source, owner, expected close date, deal value, service interest, tags, and other qualification information. Firm administrators can add custom fields in Settings when the standard record does not cover a detail required by the firm's sales or onboarding process.",
           "more": [
-            "Custom fields let the firm collect qualification details unique to its process—for example, current accounting system, number of entities, annual revenue band, fiscal year-end, tax jurisdictions, audit requirement, or preferred onboarding date. Use clear field labels and consistent field types so staff can complete the record reliably and the information remains useful after the prospect becomes a client."
+            "Custom fields let the firm collect qualification details unique to its process—for example, current accounting system, number of entities, annual revenue band, fiscal year-end, tax jurisdictions, audit requirement, or preferred onboarding date. Use clear field labels and consistent field types so firm users can complete the record reliably and the information remains useful after the prospect becomes a client."
           ],
-          "steps": [
-            "Capture the prospect or company name, email, phone number, linked contact, and other contact details.",
-            "Set the pipeline and stage, source, owner or owners, expected close date, deal value, lead type, referrer, and service interest.",
-            "Add segmentation details such as tags, industry, company size, job role, and designation.",
-            "When the firm needs information that is not part of the standard record, open Settings, create the appropriate prospect custom field, define its label and field type, and make it available for prospect records.",
-            "Use those custom fields consistently on new and existing prospects so filtering, qualification, handoff, and conversion follow the firm's process.",
-            "For a larger starting list, import prospects from CSV and map the available columns before completing the import."
-          ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-information-can-be-captured-for-a-prospect-48"
         },
         {
           "q": "What work can be managed from a prospect record?",
-          "a": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Staff can also add tasks and notes while the opportunity moves through Prospect, Discovery, Proposal, Won, or Lost.",
+          "a": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Firm users can also add tasks and notes while the opportunity moves through Prospect, Discovery, Proposal, Won, or Lost.",
           "more": [
             "A practical sequence is to record the lead, assign discovery tasks, keep outreach in Email or Calls, add notes after each conversation, prepare an engagement letter during Proposal, and change the stage as the opportunity advances. Mark Won only when it should enter client onboarding; use Lost when the opportunity should remain in history without becoming a client."
           ],
@@ -782,7 +771,7 @@
           "q": "How are documents organized across the firm?",
           "a": "The top-level Documents screen groups work by client and highlights clients that are awaiting documents. Inside a client workspace, documents are organized into folders and can be viewed by areas such as client uploads, messaging, engagement letters, tax returns, source documents, signed forms, correspondence, and miscellaneous files.",
           "more": [
-            "The firm-level view helps staff find clients with missing documents, while the client workspace provides the actual folder hierarchy and request history. Use Folder Templates for consistency, Document Types for classification, and source filters to distinguish requested client uploads from internal or imported files."
+            "The firm-level view helps firm users find clients with missing documents, while the client workspace provides the actual folder hierarchy and request history. Use Folder Templates for consistency, Document Types for classification, and source filters to distinguish requested client uploads from internal or imported files."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -793,7 +782,7 @@
           "q": "Can firms standardize folder structures and document labels?",
           "a": "Yes. Documents settings contain Folder Templates, Document Types, and Work Types. Administrators can create folder templates, add folders, define document codes, labels, categories, descriptions, and fields, and control which definitions are active.",
           "more": [
-            "For example, a tax folder template can create Intake, Source Documents, Workpapers, Review, Filed Return, and Correspondence folders, while document types distinguish W-2, 1099, K-1, identification, and signed forms. Apply the standard during onboarding so staff and clients see a predictable structure."
+            "For example, a tax folder template can create Intake, Source Documents, Workpapers, Review, Filed Return, and Correspondence folders, while document types distinguish W-2, 1099, K-1, identification, and signed forms. Apply the standard during onboarding so firm users and client users see a predictable structure."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -813,44 +802,29 @@
         },
         {
           "q": "What can be configured for Document Types?",
-          "a": "Document Types standardize how uploads are classified and which fields can be extracted. The table shows name, category, description, field count, status, and actions; system definitions are marked System. Categories can be filtered or managed, and new firm-specific document types can be added.",
+          "a": "Document Types standardize how files are classified and which information AssurePro can capture for that type. Firm administrators can maintain categories and create firm-specific document types with a name, description, fields, and active status. System-provided definitions are identified separately from the firm's own definitions.",
           "more": [],
-          "steps": [
-            "Open Settings, choose Documents, and select Document Types.",
-            "Filter by category or select Manage categories when the classification list needs maintenance.",
-            "Select New document type, or Edit beside an existing definition.",
-            "Set the name, category, description, fields, and active state offered by the editor.",
-            "Review the result in the Document Types table before using it in client work."
-          ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-can-be-configured-for-document-types-53"
         },
         {
           "q": "What is available under Work Types in Documents settings?",
-          "a": "Work Types defines the selectable work classifications used when staff create intake templates for bookkeeping, audit, accounting, advisory, and tax work. The table shows Code, Label, Description, Type, Active status, and Actions. AssurePro includes system types such as Monthly Bookkeeping, Quarterly Bookkeeping, Financial Statement Audit, Financial Statement Review, Financial Statement Compilation, Employee Benefit Plan Audit, Advisory Engagement, and tax-return types such as 1040. System types can be activated or deactivated but cannot be renamed or deleted; firm-created custom types can be maintained separately.",
+          "a": "Work Types defines the classifications available when the firm creates document-intake templates for bookkeeping, audit, accounting, advisory, and tax work. AssurePro includes system-provided work types, and firm administrators can create additional custom types with their own code, label, and description. A type can be made inactive when it should no longer be used for new intake work.",
           "more": [],
-          "steps": [
-            "Open Settings, choose Documents, and select Work Types.",
-            "Search by code, label, or description; enable Show inactive when reviewing a type that was previously disabled.",
-            "Use the Active switch to control whether a system or custom type is available for new intake-template work.",
-            "Select Edit to review the fields that are editable for the chosen type; system identifiers remain protected.",
-            "To add a firm-specific classification, select New work type.",
-            "Enter a unique Code of no more than 20 characters, a client-friendly Label, and an optional Description of up to 500 characters explaining when the type applies.",
-            "Create the type, then confirm it appears as Custom and is active before using it in an intake template.",
-            "Delete a custom type only when it is no longer required; system types display a disabled delete action."
-          ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-what-is-available-under-work-types-in-documents-settings-54"
         },
         {
           "q": "How is a folder template applied to a client?",
-          "a": "A template creates the firm's reusable folder structure inside a client workspace.",
+          "a": "Apply a Folder Template from the client's Documents tab to create the firm's standard folders in that client workspace. The template adds its saved folder structure without preventing firm users from creating additional client-specific folders.",
           "more": [],
           "steps": [
             "Open the client and choose Documents.",
-            "Select Apply Template and choose the appropriate firm template.",
+            "Select Apply Template and choose the Folder Template created for that client's service, year, or reporting period.",
             "Review the folders that will be added and apply the template.",
             "Use New Folder when the client needs an additional folder that is not part of the standard template.",
             "For future clients, choose the default folder template during client creation or configure it in Settings > Onboarding Defaults."
@@ -861,12 +835,12 @@
         },
         {
           "q": "How do I request documents from a client?",
-          "a": "A document request tells the client exactly what the firm needs and keeps the response attached to the client workspace.",
+          "a": "A document request tells the client user what the firm needs, where to provide it, and when it is due. The request and the files supplied in response remain connected to the client workspace so firm users can monitor what is outstanding without relying on separate email follow-up.",
           "more": [],
           "steps": [
             "Open the client and choose Documents.",
             "Select Request and describe each document or item needed.",
-            "Set any request details, destination, or due information offered by the form.",
+            "Select the folder where the returned files should be stored, set the due date, and complete the recipient and request fields shown in the form.",
             "Review the recipient and send the request.",
             "The client receives the request through the client experience and uploads the files against it.",
             "Return to the Requests view to monitor the outstanding item; completed uploads remain available in the client's Documents workspace."
@@ -877,7 +851,7 @@
         },
         {
           "q": "What happens if a client doesn't respond to a document request?",
-          "a": "AssurePro can continue following up through the configured Document requests reminder schedule, so staff do not have to rely only on manual chasing.",
+          "a": "AssurePro follows the firm's configured Document requests reminder schedule while the request remains outstanding. Firm users can monitor the request in the client workspace and follow up directly when the automated reminder sequence has finished or the client needs additional help.",
           "more": [],
           "steps": [
             "Open Settings and choose Reminders.",
@@ -892,9 +866,9 @@
         },
         {
           "q": "What is the difference between Request, Import, and Upload?",
-          "a": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored.",
+          "a": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the firm user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored.",
           "more": [
-            "Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action."
+            "Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a firm user has the file locally. In every case, select the correct client and destination folder before completing the action."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -903,7 +877,7 @@
         },
         {
           "q": "How do I upload a document to a client workspace?",
-          "a": "Upload places a local file into the selected client's document structure.",
+          "a": "Use Upload when a firm user already has the document on their computer and needs to place it in a client's workspace. Select the client and destination folder carefully so the file is stored with the correct record.",
           "more": [
             "After upload, search for the filename and open it from the destination folder to confirm that the correct file—not an earlier draft—was stored. If the file should satisfy an outstanding client request, verify the Requests view rather than assuming a general upload automatically completes the requested item."
           ],
@@ -919,7 +893,7 @@
         },
         {
           "q": "How do I import documents from Dropbox or OneDrive?",
-          "a": "A storage connection must be configured before cloud import is available. If neither provider is connected, AssurePro directs the user to Settings.",
+          "a": "A storage connection must be configured before cloud import is available. When neither provider is connected, AssurePro directs the firm user to Settings > Integrations.",
           "more": [],
           "steps": [
             "Open Settings, choose Integrations, and connect Dropbox or OneDrive.",
@@ -933,7 +907,7 @@
         },
         {
           "q": "How do I find a file or review outstanding requests?",
-          "a": "The client Documents workspace provides search, source filters, display controls, and separate Files and Requests views.",
+          "a": "Use the Files view to search stored documents by filename, folder, source, or file type. Use the Requests view to find document requests that are still awaiting a client response or to review completed requests.",
           "more": [
             "For example, select Requested to isolate client-provided files, switch to Requests to see items still awaiting a response, and use a folder plus filename search to narrow a large annual workspace. Reset filters when a known file does not appear before uploading a duplicate."
           ],
@@ -949,7 +923,7 @@
         },
         {
           "q": "Can client documents be organized by tax year or reporting period?",
-          "a": "Yes. Administrators can build year- or period-based folders into a Folder Template, and staff can also create folders directly in a client's Documents tab. Apply the appropriate template to keep the same structure across clients; AssurePro does not require every firm to use one fixed folder hierarchy.",
+          "a": "Yes. Administrators can build year- or period-based folders into a Folder Template, and firm users can also create folders directly in a client's Documents tab. Apply the appropriate template to keep the same structure across clients; AssurePro does not require every firm to use one fixed folder hierarchy.",
           "more": [
             "For a recurring client, a template might create 2025 and 2026 folders or monthly and quarterly subfolders beneath the service. Decide whether the period belongs in the folder structure, filename, engagement, or all three, then use the convention consistently across clients."
           ],
@@ -960,7 +934,7 @@
         },
         {
           "q": "Can documents be brought in from cloud storage?",
-          "a": "Integrations supports Dropbox and OneDrive. Staff can import client documents without first downloading and re-uploading them, and synced folders can automatically bring new files from a connected cloud folder into a client's documents.",
+          "a": "Integrations supports Dropbox and OneDrive. Firm users can import client documents without first downloading and re-uploading them, and synced folders can automatically bring new files from a connected cloud folder into a client's documents.",
           "more": [
             "Use Import for a one-time selection and configure a synced folder when new files should continue arriving from the connected source. After import or sync, confirm the target client and folder because a cloud connection can contain files for several clients."
           ],
@@ -977,9 +951,9 @@
       "items": [
         {
           "q": "What views are available for engagement work?",
-          "a": "Workflow provides Board, List, and Tasks views. Staff can select a workflow, search engagements, create a new engagement, customize displayed information, and open workflow configuration.",
+          "a": "Workflow provides Board, List, and Tasks views. Firm users can select a workflow, search engagements, create an engagement, customize the displayed information, and open the workflow configuration.",
           "more": [
-            "Board is best for seeing work by stage and moving an engagement through the process; List is best for scanning or sorting engagement fields; Tasks isolates the actionable work items across engagements. A user can switch views without changing the underlying engagement, then open the same client work from whichever view makes the next decision clearest."
+            "Board is best for seeing work by stage and moving an engagement through the process; List is best for scanning or sorting engagement fields; Tasks isolates the actionable work items across engagements. A firm user can switch views without changing the underlying engagement, then open the same client work from whichever view makes the next decision clearest."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -999,18 +973,18 @@
         },
         {
           "q": "How are engagement workflows configured?",
-          "a": "A workflow is the reusable operating path applied to engagements of the relevant type. Administrators define the stages, the order in which work moves, the controls for advancing, and the task templates that should be created as an engagement reaches each stage.",
+          "a": "A workflow is the reusable operating path applied to engagements created with the selected Engagement Type. Administrators define the stages, the order in which work moves, the controls for advancing, and the task templates that should be created as an engagement reaches each stage.",
           "more": [
-            "A strict stage can require its gates before work advances, while a flexible stage allows the team to move work with fewer constraints. Pair required task templates and relative due dates with the appropriate staff role so a new engagement receives a usable plan instead of only a set of empty stage names."
+            "A strict stage can require its gates before work advances, while a flexible stage allows the team to move work with fewer constraints. Pair required task templates and relative due dates with the appropriate firm role so a new engagement receives a usable plan instead of only a set of empty stage names."
           ],
           "steps": [
             "Open Settings and choose Workflow, then open an existing workflow or select New Workflow.",
             "Name the workflow and add the stages that represent the firm's delivery process, such as Intake, Document Collection, Preparation, Review, Client Approval, and Complete.",
-            "Drag the stages into the order staff should follow.",
-            "Choose strict stage behavior when required gates must be satisfied before an engagement advances; choose flexible behavior when staff may move work without every gate being mandatory.",
+            "Drag the stages into the order firm users should follow.",
+            "Choose strict stage behavior when required gates must be satisfied before an engagement advances; choose flexible behavior when firm users may move work without every gate being mandatory.",
             "Configure each stage's gates and add reusable task templates.",
             "For every task template, enter a clear task name, assign the responsible role, set its relative due-date offset from the date the engagement enters the stage, and mark the task Required when it must be completed before progression.",
-            "Reorder the task templates so the generated engagement plan is easy for staff to follow.",
+            "Reorder the task templates so the generated engagement plan is easy for firm users to follow.",
             "Save the workflow, create or open a matching engagement, and confirm that its stages, generated tasks, assignee roles, due dates, and required controls behave as intended.",
             "Use the active and overdue counts shown for each stage to maintain the workflow after rollout and correct recurring bottlenecks."
           ],
@@ -1047,7 +1021,7 @@
           "steps": [
             "Open Settings and choose Firm SOP.",
             "Select New SOP and document the procedure.",
-            "Save it in the appropriate workflow state and use the status tabs to review Pending, Active, Draft, or Rejected SOPs.",
+            "Save a new procedure as Draft while it is being written, move it to Pending for review, use Active for an approved procedure, or Rejected when it should not be used.",
             "Keep client-specific instructions in that client's AI SOP rather than in the firm-wide library."
           ],
           "alsoSettings": false,
@@ -1056,13 +1030,13 @@
         },
         {
           "q": "How is a new engagement created?",
-          "a": "An engagement can be started from Workflow or from the selected client's Engagements tab.",
+          "a": "Select New Engagement from Workflow to choose the client and Engagement Type, or open the client's Engagements tab to begin with that client already selected. AssurePro uses the Engagement Type to apply the configured workflow, tasks, roles, and dates.",
           "more": [],
           "steps": [
             "Select New Engagement.",
             "Search for and select the client; if the client is missing, choose Create new client.",
             "Search for and select the Engagement type. AssurePro uses that selection to set up the rest of the engagement.",
-            "Complete the engagement details presented for that type and select Create Engagement.",
+            "Enter the engagement name, dates, priority, assigned roles, recurrence, and other fields displayed for the selected Engagement Type, then select Create Engagement.",
             "Open the new engagement to review its configured workflow stages, tasks, roles, and dates."
           ],
           "alsoSettings": false,
@@ -1070,8 +1044,8 @@
           "ref": "pro-how-is-a-new-engagement-created-70"
         },
         {
-          "q": "How should staff use Board, List, and Tasks views?",
-          "a": "Board is best for seeing engagements by workflow stage, List is best for scanning engagement records in rows, and Tasks focuses on the work items assigned within engagements.",
+          "q": "How should firm users use Board, List, and Tasks views?",
+          "a": "Board shows engagements by workflow stage, List presents engagement records in rows for searching and comparison, and Tasks brings together the individual work items assigned within engagements. Changing the view does not change the underlying engagement or its status.",
           "more": [],
           "steps": [
             "Open Workflow and select the workflow you want to review.",
@@ -1109,7 +1083,7 @@
           "q": "Can standard operating procedures be managed in AssurePro?",
           "a": "Yes. Firm SOP stores firm-wide procedures with Pending, Active, Draft, and Rejected states. A client's AI SOP tab stores client-specific procedures so the work can follow the same documented steps across preparers.",
           "more": [
-            "Use Firm SOP for procedures that apply across clients, a service's SOP for how that catalog service is delivered, and the client's AI SOP tab for client-specific instructions. Statuses such as Draft, Pending, Active, and Rejected help distinguish work being written or reviewed from procedures staff should actively follow."
+            "Use Firm SOP for procedures that apply across clients, a service's SOP for how that catalog service is delivered, and the client's AI SOP tab for client-specific instructions. Statuses such as Draft, Pending, Active, and Rejected help distinguish work being written or reviewed from procedures firm users should actively follow."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1124,13 +1098,13 @@
       "items": [
         {
           "q": "How does the time tracker work?",
-          "a": "The header timer records work while it is being performed and keeps the entry connected to the correct client, engagement, task, billing treatment, and staff member.",
+          "a": "The header timer records work while it is being performed and keeps the entry connected to the correct client, engagement, task, billing treatment, and firm user.",
           "more": [
-            "Use Start when work is beginning now and the user wants AssurePro to calculate elapsed time; use the manual hours and minutes controls when the duration is already known. Selecting the client, engagement or task, billable state, date, and note at entry time reduces cleanup before invoicing and reporting."
+            "Use Start when work is beginning now and the firm user wants AssurePro to calculate elapsed time; use the manual hours and minutes controls when the duration is already known. Selecting the client, engagement or task, billable state, date, and note at entry time reduces cleanup before invoicing and reporting."
           ],
           "steps": [
             "Open the timer from the application header.",
-            "Choose Client work or Internal work, then select the client and engagement when applicable.",
+            "Choose Client work or Internal work, then select the client and engagement for client work.",
             "Select an existing task or create the task needed for the entry.",
             "Start the timer for live tracking, or enter the hours and minutes manually.",
             "Confirm the work date, add a useful description, and mark the time billable or non-billable.",
@@ -1165,10 +1139,10 @@
             "Managers get the clearest picture by reading the views together: Team load explains who is carrying the work, Workflow explains where the work is held up, Time Sheet explains the actual effort already spent, and Reports explains the operational or financial trend. This makes the follow-up actionable rather than relying on a single capacity number without its client and workflow context."
           ],
           "steps": [
-            "Use Team load to compare active staff, assigned task volume, overdue work, and members whose workload is marked as overloaded.",
+            "Use Team load to compare active team members, assigned task volume, overdue work, and members whose workload is marked as overloaded.",
             "Use Workflow to review how many engagements sit in each stage, how long work has remained there, task completion, due dates, and bottlenecks that are affecting delivery.",
             "Use Time Sheet to compare the actual hours recorded by client, engagement, task, or assignee and to distinguish billable, non-billable, invoiced, and uninvoiced time.",
-            "Use the available reporting widgets for time, utilization, workflow, and budget-versus-actual analysis when those measures are configured for the firm.",
+            "Open the Time & Utilization or Workflow & Capacity dashboard to review hours, utilization, stage ageing, assignments, and workload; add a budget-versus-actual widget to a custom dashboard when the firm tracks engagement budgets.",
             "Example: if Team load shows one reviewer as overloaded, Workflow shows several files waiting in Review, and Time Sheet shows higher-than-expected actual hours, a manager can redistribute review tasks, update due dates, and investigate the source of the overrun.",
             "Apply the same review on a regular cadence so capacity decisions use current assignments, deadlines, progress, and actual time rather than one isolated figure."
           ],
@@ -1186,7 +1160,7 @@
             "Review the date, start and end time, client, engagement, task, assignee, description, rate, duration, amount, billable status, and invoice status for each entry.",
             "Search and filter the register to the client, engagement, task, assignee, date range, or status that needs review.",
             "Group entries to compare time by client, engagement, task, or team member, and use the billable-only option when preparing billing.",
-            "Correct incomplete or inaccurate entries before they are invoiced, subject to the user's permissions.",
+            "Correct incomplete or inaccurate entries before they are invoiced, subject to the firm user's permissions.",
             "Select eligible uninvoiced billable entries and choose Generate invoice, or import unbilled time from the invoice builder.",
             "Export the filtered time data when the firm needs an external analysis or reconciliation.",
             "Confirm invoice status after billing so the same time is not charged twice."
@@ -1216,12 +1190,12 @@
           "q": "What are the main steps in the engagement-letter builder?",
           "a": "The engagement-letter builder separates the package into four connected sections so the firm can validate the client, commercial terms, agreement content, and delivery settings before sending.",
           "more": [
-            "Setup answers who the client and signers are; Services & Pricing defines what is being offered and how choices work; Agreement & Terms contains the legal and supporting content; Review & Send confirms dates, reminders, billing, approvals, and unresolved requirements. The progress indicator lets staff return to an earlier section without losing the overall package context."
+            "Setup answers who the client and signers are; Services & Pricing defines what is being offered and how choices work; Agreement & Terms contains the legal and supporting content; Review & Send confirms dates, reminders, billing, approvals, and unresolved requirements. The progress indicator lets firm users return to an earlier section without losing the overall package context."
           ],
           "steps": [
             "Setup: select the client, name the signing package, and confirm the primary and any additional recipients.",
             "Services & Pricing: add the services, packages, add-ons, prices, discounts, billing method, and any client choices.",
-            "Agreement & Terms: select or edit the agreement wording, decide whether explicit approval is required, and add supporting text, PDFs, terms, notes, payment capture, or approval automation where needed.",
+            "Agreement & Terms: select or edit the agreement wording, decide whether explicit approval is required, and add the supporting text, PDFs, additional terms, firm notes, payment-capture step, or approval automation included in the package.",
             "Review & Send: confirm the recipients, sign-by and validity dates, reminder cadence, selected services, total, billing arrangement, terms, and approval requirements.",
             "Use Preview to read the package as the client will see it and correct any unclear wording or choices.",
             "Resolve every item in the missing-requirements list; Send remains unavailable until the required client, package, recipient, service, and agreement information is complete."
@@ -1232,17 +1206,17 @@
         },
         {
           "q": "How do I create and send an engagement letter?",
-          "a": "The builder prevents sending until its required client, package, recipient, and service information is complete.",
+          "a": "Create an engagement letter from Engagement Letters by starting a new signing package. You can build the package from scratch or use a saved or curated template, then tailor the recipients, services, pricing, terms, and delivery settings for the client.",
           "more": [],
           "steps": [
-            "Open Engagement Letter and start a new Engagement Letter.",
-            "Start from scratch or choose a saved or curated template.",
+            "Open Engagement Letters and select New signing package.",
+            "Start from scratch, or choose a saved or curated template.",
             "In Setup, select the client, name the package, and confirm the primary and any additional recipients.",
-            "Add Services & Pricing and choose how each service is presented to the client.",
-            "Configure Agreement & Terms, including approval requirements and supporting content.",
-            "Preview the client experience.",
-            "In Review & Send, set the sign-by date, validity date, reminders, and other package details.",
-            "Resolve every missing requirement and select Send package."
+            "In Services & Pricing, add the services and decide which choices, if any, the client can make.",
+            "In Agreement & Terms, review the agreement wording, approval requirements, and supporting content.",
+            "Select Preview to review the package as the client will see it.",
+            "In Review & Send, confirm the sign-by date, validity date, reminder schedule, billing arrangement, and recipients.",
+            "Resolve every item shown under missing requirements. Send package remains unavailable until the client, package name, recipients, services, pricing, agreement terms, and required dates are complete."
           ],
           "alsoSettings": false,
           "keywords": "",
@@ -1250,25 +1224,18 @@
         },
         {
           "q": "Can engagement letters be created and sent in bulk?",
-          "a": "Engagement letters are currently created and sent as client-specific signing packages; the Engagement Letter screen does not provide a bulk-create or bulk-send action. This keeps each package tied to the correct client, recipients, services, pricing, terms, and signature requirements.",
+          "a": "No. AssurePro currently creates and sends each engagement letter as a client-specific signing package. This ensures that the client, recipients, services, pricing, billing schedule, terms, and signature requirements are reviewed for the correct engagement before the package is sent.",
           "more": [
-            "For example, a firm preparing annual tax packages can save one approved tax template and reuse it across clients, while still checking each client's entity, recipients, selected services, price, due dates, and billing schedule before sending. This provides consistency without treating client-specific agreements as an undifferentiated bulk message."
+            "To reduce repeated setup, save an approved firm template and use it as the starting point for each client's package. The wording and structure can remain consistent while your firm reviews the client-specific recipients, services, pricing, dates, and billing terms before sending."
           ],
-          "steps": [
-            "Open Engagement Letters and select New signing package.",
-            "Choose the client and add the required recipients.",
-            "Build the letter from scratch, a firm template, or a curated template.",
-            "Review the services, pricing, billing schedule, terms, and signature fields for that client.",
-            "Send the package and monitor its status from Engagement Letters.",
-            "Repeat the package flow for the next client; reusable templates reduce repeated drafting even though sending remains client-specific."
-          ],
+          "steps": [],
           "alsoSettings": false,
           "keywords": "",
           "ref": "pro-can-engagement-letters-be-created-and-sent-in-bulk-83"
         },
         {
           "q": "How can services be presented to a client in a signing package?",
-          "a": "Services & Pricing supports three structures: Client picks one for choose-one packages, Client can add it for optional add-ons, and No client choice for services that are always included. The builder also supports billing software as part of the package.",
+          "a": "Services & Pricing supports three presentation choices: Client picks one for mutually exclusive options, Client can add it for optional services, and No client choice for services that are included automatically. The selected services, prices, and billing terms remain part of the same client-facing package.",
           "more": [
             "Use Client picks one when packages are mutually exclusive, such as Basic, Standard, and Premium; Client can add it for optional items such as audit protection or an advisory consultation; and No client choice for a service that must always be included. Preview the package to confirm the client's choices and total are understandable before sending."
           ],
@@ -1281,7 +1248,7 @@
           "q": "Can a package include more than one recipient?",
           "a": "Yes. After selecting the client in Setup, confirm the primary recipient and use Add additional recipient for every other required signer. Review each recipient's name and email before sending, then confirm the package's signing mode and recipient summary in Review & Send. After delivery, the package status can distinguish a partially signed package from one completed by all required recipients.",
           "more": [
-            "For example, a business package can include an owner as primary recipient and a second authorized signer. If only one signer completes their part, the package remains Partial; staff can use the status and recipient detail to follow up with the outstanding signer rather than resending the entire package blindly."
+            "For example, a business package can include an owner as primary recipient and a second authorized signer. If only one signer completes their part, the package remains Partial; firm users can use the status and recipient detail to follow up with the outstanding signer rather than resending the entire package blindly."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1312,7 +1279,7 @@
         },
         {
           "q": "Can AssurePro remind a client to sign an engagement letter?",
-          "a": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
+          "a": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by date and the date on which the package should expire, choose the reminder schedule, and confirm the reminder details before sending.",
           "more": [
             "For example, set a sign-by date that reflects the onboarding deadline, choose a reminder cadence that gives the client time to respond, and make sure the validity date does not expire before the final reminder. After sending, monitor Viewed, Partial, and Signed rather than assuming each reminder means no activity occurred."
           ],
@@ -1322,8 +1289,8 @@
           "ref": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88"
         },
         {
-          "q": "Which signing statuses can staff track?",
-          "a": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status where applicable.",
+          "q": "Which signing statuses can firm users track?",
+          "a": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and the recorded consent status when the package includes consent.",
           "more": [
             "Draft means the package has not been sent; Sent confirms delivery was initiated; Viewed shows client access; Partial means at least one required signer remains; Signed marks completion; Declined records refusal; and Archived removes the package from the active list. Event dates and consent information provide additional context for follow-up."
           ],
@@ -1352,7 +1319,7 @@
         },
         {
           "q": "What are the magic link and audit log for a sent engagement letter?",
-          "a": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log.",
+          "a": "The magic link is the client-facing route for one specific sent engagement package. The audit log records the delivery and signing activity associated with that package, helping firm users distinguish access or delivery issues from a package that has been viewed, partially signed, completed, or declined.",
           "more": [],
           "steps": [
             "Open Engagement Letter and select the package from Sent.",
@@ -1368,7 +1335,7 @@
         },
         {
           "q": "Can a client sign an engagement letter from a mobile device?",
-          "a": "Yes. The client can review and sign the engagement package from a supported mobile device.",
+          "a": "Yes. A client user can open the engagement-package link on a phone or tablet, review the services, pricing, terms, and supporting documents, and complete the signature from the mobile screen.",
           "more": [],
           "steps": [
             "Open the engagement-package link from the firm's invitation or client experience.",
@@ -1422,15 +1389,15 @@
         },
         {
           "q": "How is a new invoice created?",
-          "a": "An invoice cannot be sent until a client, due date, and at least one priced line item are present.",
+          "a": "Create an invoice by selecting the client, setting the invoice and due dates, and adding at least one priced line item. AssurePro provides a live preview and keeps the send action unavailable until the required client, due date, and line-item information is complete.",
           "more": [],
           "steps": [
             "Open Billing and select Create invoice, or choose Invoice from the global + New menu.",
-            "Select the client; optionally associate an engagement after the client is selected.",
+            "Select the client, then select an engagement when the invoice relates to a specific engagement.",
             "Confirm the invoice number, issue date, and due date.",
             "Add a service-catalog item or a custom line, then enter quantity and unit price.",
-            "If applicable, import unbilled time and apply a dollar or percentage discount and tax.",
-            "Add a description, client note, or internal note as needed.",
+            "Import unbilled time when the invoice includes time-based work. Add a dollar or percentage discount and tax only when they apply to the invoice.",
+            "Add the service description, a note visible to the client, or an internal note for firm users when the invoice requires that context.",
             "Review the live invoice preview.",
             "Choose Save as draft or Create & send."
           ],
@@ -1439,8 +1406,8 @@
           "ref": "pro-how-is-a-new-invoice-created-96"
         },
         {
-          "q": "What can staff review on an individual invoice?",
-          "a": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items. Payment history and an audit trail show what happened after creation. Available actions include Download PDF, Edit, Send invoice, and Cancel, depending on the invoice state.",
+          "q": "What can firm users review on an individual invoice?",
+          "a": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, the related signed agreement for agreement-generated invoices, description, and line items. Payment history and an audit trail show what happened after creation. The action menu shows Download PDF, Edit, Send invoice, or Cancel only when that action is permitted for the invoice's current status.",
           "more": [
             "Use the audit trail to confirm creation and later events, Payment history to reconcile receipts, and the signed-agreement link to compare an Agreement invoice with accepted terms. Before editing or cancelling, check the current balance and status so the action does not conflict with a payment already received."
           ],
@@ -1473,9 +1440,9 @@
         },
         {
           "q": "Can signed agreements create billing work?",
-          "a": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work before it reaches the client.",
+          "a": "Yes. A signed engagement package can create invoice drafts or recurring schedules from the billing terms accepted by the client. AssurePro places the generated billing work in Agreements awaiting billing so an authorized firm user can review it before an invoice is sent or a schedule is activated.",
           "more": [
-            "A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require staff to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated."
+            "A one-time agreed charge can become an invoice draft, while recurring terms can create a billing schedule. AssurePro does not require firm users to retype the accepted commercial terms; instead, the generated item appears in Agreements awaiting billing for validation before it is sent or activated."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1484,11 +1451,11 @@
         },
         {
           "q": "How do I review billing created by a signed agreement?",
-          "a": "Agreement billing is separated by what still needs attention.",
+          "a": "Billing created from a signed agreement appears in a review queue before it is sent or activated. This lets your firm confirm the client, services, amounts, dates, and billing schedule against the accepted agreement.",
           "more": [],
           "steps": [
             "Open Billing and select the signed-agreements banner.",
-            "Search by client or agreement if needed.",
+            "Search by client name or agreement name to locate the billing item.",
             "Under Pending review, check the signed date, number of drafts or schedules, and amount.",
             "Select Review & send and inspect the generated invoice, line items, dates, and agreement link.",
             "Edit the draft if the billing details need correction, then send it when ready.",
@@ -1500,9 +1467,9 @@
         },
         {
           "q": "How does recurring billing work?",
-          "a": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client, cadence, service, send mode, status, next invoice date, amount, and actions.",
+          "a": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send generates and sends each scheduled invoice without a separate review step; Manual send creates the invoice for a firm user to review before delivery. The list shows the client, cadence, service, send mode, status, next invoice date, amount, and available actions.",
           "more": [
-            "For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so staff review it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active."
+            "For example, a monthly bookkeeping agreement can create a Monthly schedule with Auto-send so each generated invoice is delivered automatically, while a quarterly advisory schedule can use Manual send so a firm user reviews it first. Pausing stops scheduled activity; Resume restarts it; Bill now creates an immediate invoice when the schedule is active."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1511,7 +1478,7 @@
         },
         {
           "q": "How do I review or control a recurring schedule?",
-          "a": "A schedule can be inspected without opening the client record.",
+          "a": "Open the recurring schedule from Billing to review its status, cadence, amount, invoice history, and next billing date. From the same view, authorized firm users can pause, resume, or bill the schedule immediately.",
           "more": [],
           "steps": [
             "Open Billing and choose Recurring.",
@@ -1529,7 +1496,7 @@
           "q": "What is the Services catalog?",
           "a": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the service kind, SOP, category, pricing model, default amount, and active status.",
           "more": [
-            "Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether staff can select it in new work."
+            "Treat each item as a reusable billing definition: the name and description explain the work, Kind controls how it is used, Category groups it, Pricing model and default price establish the starting charge, discount and tax fields establish defaults, SOP documents delivery, and Active controls whether firm users can select it in new work."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1549,7 +1516,7 @@
         },
         {
           "q": "How do I create a service?",
-          "a": "A catalog item can carry the defaults that staff would otherwise re-enter during billing.",
+          "a": "Create a service from Services > New service to save its name, description, kind, category, pricing model, default price, discount, tax treatment, and SOP. Firm users can then reuse those defaults in invoices and engagement packages.",
           "more": [],
           "steps": [
             "Open Services and select New service.",
@@ -1599,7 +1566,7 @@
         },
         {
           "q": "What is the difference between Billing & Payments and Platform Subscription?",
-          "a": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and late-fee settings are marked In development in staging. Platform Subscription contains charges from AssureOne Technologies LLC to the firm and keeps the related purchase invoices and receipts.",
+          "a": "Billing & Payments covers the firm's configuration for collecting client payments and managing its connected payout account. Platform Subscription is separate: it records purchases the firm makes from AssureOne Technologies LLC and keeps the related invoices and receipts. Client receivables belong in Billing; AssureOne charges to the firm belong in Platform Subscription.",
           "more": [
             "Example: a client payment processor connection and payout issue belongs under Billing & Payments and Integrations; a receipt for AI Credits purchased by the firm belongs under Platform Subscription. Keep the two separate during reconciliation because one records client receivables and the other records the firm's purchases from AssureOne."
           ],
@@ -1612,11 +1579,11 @@
           "q": "How do I review AssureOne platform purchases and receipts?",
           "a": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each invoice.",
           "more": [
-            "Use the status and date filters to find the relevant purchase, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents."
+            "Use the status and date filters to find the AssureOne purchase being reconciled, then Preview before downloading so the amount, payment method, and purchasing entity are correct. Store the downloaded invoice or receipt according to the firm's accounts-payable process rather than with a client's billing documents."
           ],
           "steps": [
             "Open Settings and choose Platform Subscription.",
-            "Filter invoices by status or date when needed.",
+            "Filter the purchase invoices by status or transaction date.",
             "Select Preview for an on-screen invoice review.",
             "Select Download to save the invoice or receipt for the firm's records."
           ],
@@ -1639,7 +1606,7 @@
           "q": "Does AssurePro include referral tracking?",
           "a": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime earnings, engagement, status, total paid, commission rate, accrued commission, and pending payout.",
           "more": [
-            "For example, refer a client to MyCPEOne, associate the relevant engagement, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received."
+            "For example, refer a client to MyCPEOne, associate the client engagement connected to the referral, and monitor whether the referral becomes active or paying. The dashboard then separates monthly commission, lifetime earned, accrued commission, and pending payout so the firm can distinguish performance from cash already received."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1648,7 +1615,7 @@
         },
         {
           "q": "How do I refer a client to MyCPEOne?",
-          "a": "A referral can use an existing AssurePro client or create a new referral contact.",
+          "a": "Create a MyCPEOne referral from Billing > Referrals. The referral can use an existing AssurePro client or a new referral contact, and the submitted record remains available for status and commission tracking.",
           "more": [],
           "steps": [
             "Open Billing and choose Referrals.",
@@ -1670,7 +1637,7 @@
       "items": [
         {
           "q": "Which communication channels are available?",
-          "a": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected Twilio number; Call records the call workflow available to the firm; and Team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or open a client's Communications tab when the conversation should begin with that client already selected.",
+          "a": "Communications brings together client portal chat, email, SMS, calls, and internal team chat. Portal chat stays within the client experience, email uses the firm's connected email service, SMS uses the firm's connected Twilio number, calls can be recorded with the client communication history, and team chat supports internal discussion. Use the shared Communications area for a cross-client inbox or the client's Communications tab when the conversation should begin with that client already selected.",
           "more": [],
           "steps": [],
           "alsoSettings": false,
@@ -1679,13 +1646,13 @@
         },
         {
           "q": "How do I start a client conversation?",
-          "a": "A conversation can begin in the shared Communications area or in the selected client's workspace.",
+          "a": "Start a client conversation from Communications to choose the client and channel, or open the client's Communications tab to begin with that client already selected. The conversation remains in the shared inbox and the client workspace for follow-up.",
           "more": [],
           "steps": [
             "Open Communications and choose the required channel, or open the client's Communications tab.",
             "Select New Conversation.",
             "Choose the client and channel.",
-            "Add the recipients, subject, message, or other details required by that channel.",
+            "For email, enter the recipients, subject, and message. For portal chat or SMS, confirm the client contact and enter the message.",
             "Review and send the conversation.",
             "Use the shared inbox to monitor its response and handling status."
           ],
@@ -1695,7 +1662,7 @@
         },
         {
           "q": "What is the difference between portal chat and SMS?",
-          "a": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's mobile number. Both channels remain visible to authorized firm staff in Communications and in the client's workspace.",
+          "a": "Portal chat is read and answered by the client user inside the client experience. SMS is delivered to the client's mobile number from the firm's connected Twilio number. Authorized firm users can review both channels in Communications and from the client workspace, but the client receives and responds through a different channel in each case.",
           "more": [
             "Use portal chat for secure ongoing conversation with a client who has activated portal access; use SMS for short, time-sensitive outreach to the client's mobile number. SMS requires Twilio, an enabled firm number, and applicable A2P registration, while portal chat depends on the client's AssurePro access rather than a carrier network."
           ],
@@ -1706,7 +1673,7 @@
         },
         {
           "q": "How can the communications inbox be organized?",
-          "a": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review completed threads. Conversation labels such as Awaiting Reply, Needs Action, and FYI communicate the expected next step so staff can separate client follow-up from informational messages.",
+          "a": "Choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in firm user's queue, and Resolved for completed threads. Labels such as Awaiting Reply, Needs Action, and FYI identify the expected next step so firm users can separate required client follow-up from informational messages.",
           "more": [
             "A useful routine is to start with Assigned to me, handle Needs Action, send any required reply, and resolve the thread when no further work remains. Use Awaiting Reply for conversations where the next move belongs to the client and FYI for messages that should be read but do not require a response."
           ],
@@ -1717,7 +1684,7 @@
         },
         {
           "q": "Can client-facing emails be standardized?",
-          "a": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template indicates its trigger and can expose editable subject, heading, introduction, body, button label, and footer content as applicable.",
+          "a": "Yes. Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Templates are grouped by Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each template identifies its trigger and provides the content fields that the firm can edit, such as the subject, heading, introduction, body, button label, or footer.",
           "more": [
             "For example, a billing template can explain that an invoice is ready, a document template can request an upload, and an e-sign template can prompt review. Each automated template shows its trigger; administrators can edit the available subject, heading, body, call-to-action label, and footer without changing unrelated template groups."
           ],
@@ -1746,7 +1713,7 @@
           "q": "Can administrators audit automated email delivery?",
           "a": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or Not sent. Verification codes and temporary-password emails are intentionally excluded.",
           "more": [
-            "Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a user's sent-mail folder."
+            "Use Sent to confirm successful delivery attempts and Failed or Not sent to find exceptions. Search by recipient or subject, then review the timestamp, client, template type, and returned error; this is more reliable for automated notices than relying on a firm user's sent-mail folder."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1755,7 +1722,7 @@
         },
         {
           "q": "How do I investigate an email that was not delivered?",
-          "a": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email.",
+          "a": "Open Settings > Email Log to check an automated AssurePro email. Search by recipient or subject, filter by Sent, Failed, or Not sent, and open the record to review the delivery status and any error returned.",
           "more": [
             "After correcting an address, connection, or template issue, return to the originating workflow—such as the portal invitation, invoice, document request, or signature request—and retry from there. Confirm the new attempt in Email Log instead of assuming the workflow succeeded because its button was selected."
           ],
@@ -1772,7 +1739,7 @@
         },
         {
           "q": "What reminders can be automated?",
-          "a": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule showing the first delay, repeat interval, and total number of reminders.",
+          "a": "Reminders can send automated follow-up messages for outstanding document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off control and schedule for the initial delay, repeat interval, and total number of reminders.",
           "more": [
             "Document requests nudge clients for missing files, Unanswered messages follow up on communications, Tax organizers prompt intake completion, and Signature requests follow up on unsigned packages. Each schedule has its own switch, initial delay, repeat cadence, and total reminders so a firm can avoid using one aggressive pattern for every client action."
           ],
@@ -1783,13 +1750,13 @@
         },
         {
           "q": "How do I change an automatic reminder schedule?",
-          "a": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work.",
+          "a": "Open Settings > Reminders to configure document-request, unanswered-message, tax-organizer, and signature-request reminders separately. For each type, the firm can enable or disable reminders and set the first delay, repeat interval, and maximum number of reminders.",
           "more": [],
           "steps": [
             "Open Settings and choose Reminders.",
             "Find Document requests, Unanswered messages, Tax organizers, or Signature requests.",
             "Use the switch to enable or disable that reminder type.",
-            "Select Edit schedule and set the initial delay, repeat cadence, and total number of reminders offered by the editor.",
+            "Select Edit schedule and set the number of days before the first reminder, the number of days between later reminders, and the maximum number of reminders to send.",
             "Review the schedule summary shown on the reminder card."
           ],
           "alsoSettings": false,
@@ -1798,9 +1765,9 @@
         },
         {
           "q": "Can AssurePro follow up when a client has not responded?",
-          "a": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type separately so its cadence matches the firm's process.",
+          "a": "Yes. AssurePro can send automated follow-up messages for outstanding document requests, unanswered messages, tax organizers, and signature requests. Firm administrators configure each reminder type separately so the timing and number of reminders match the firm's process.",
           "more": [
-            "For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but staff should intervene when the sequence ends or the client explains a blocker."
+            "For example, enable document reminders for an outstanding upload and unanswered-message reminders for a conversation waiting on the client. Monitor the underlying request or thread as well: automated reminders reduce manual work, but a firm user should intervene when the sequence ends or the client explains a blocker."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1811,7 +1778,7 @@
           "q": "Can AssurePro send and receive client text messages?",
           "a": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration status because unregistered US carrier traffic may be filtered or blocked.",
           "more": [
-            "After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized staff."
+            "After Twilio is connected, link or add the intended firm number in Phone Numbers and confirm its SMS, MMS, and Voice capabilities. Complete A2P 10DLC registration for US carrier traffic, send a controlled test, and then use SMS from Communications or the client workspace so replies remain visible to authorized firm users."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1820,7 +1787,7 @@
         },
         {
           "q": "How do I configure a firm phone number for SMS?",
-          "a": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers.",
+          "a": "Connect the firm's Twilio account in Settings > Integrations, then open Phone Numbers to link an existing Twilio number or add a new number for client messaging. Confirm its SMS capability and A2P 10DLC registration status before using it for US carrier traffic.",
           "more": [],
           "steps": [
             "Open Settings and confirm Twilio is connected under Integrations.",
@@ -1846,9 +1813,9 @@
         },
         {
           "q": "What calendar connections are supported?",
-          "a": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
+          "a": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching each connected meeting to its client record.",
           "more": [
-            "Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to the relevant client; verify the client association so meeting context appears with the correct relationship."
+            "Connect the provider in Settings > Integrations, then use Calendar for the firm's meeting workflow. Calendly supports scheduling, while Google Calendar and Outlook Calendar can match connected meetings to a client record; verify that association so meeting context appears with the correct relationship."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1857,7 +1824,7 @@
         },
         {
           "q": "Does everything a client sees carry the firm's branding, or does AssureOne branding appear anywhere?",
-          "a": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
+          "a": "The firm can configure its client-facing identity in Settings > Client Portal, including the firm logo, primary and accent colors, portal address, and client-facing portal settings shown on that page. That branding is used across the client experience, while the AssureOne name can still appear in selected platform-managed locations such as email footers. Administrators should review both the desktop and mobile email previews, send test messages, and inspect the client portal before rollout so client-facing wording and branding are understood in advance.",
           "more": [],
           "steps": [],
           "alsoSettings": false,
@@ -1872,7 +1839,7 @@
       "items": [
         {
           "q": "How is the Reports area organized?",
-          "a": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates is the widget library and custom-dashboard builder.",
+          "a": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the firm user's own dashboards. Templates is the widget library and custom-dashboard builder.",
           "more": [
             "Use Overview for a standard firm health check, My Report for reusable dashboards, and Templates when a different combination of metrics is needed. A manager might begin with Overview, open Full billing report for collection detail, then duplicate Billing & Collections into My dashboards for a customized recurring review."
           ],
@@ -1892,12 +1859,12 @@
         },
         {
           "q": "How do I review and export a report?",
-          "a": "Use the common period controls to keep the report cards and KPI context aligned.",
+          "a": "Set the reporting period before reviewing or exporting results so the KPI cards, report widgets, focused dashboard, and downloaded output all use the intended dates. AssurePro provides MTD, QTD, YTD, 12M, and custom date-range controls.",
           "more": [],
           "steps": [
             "Open Reports and choose Overview or My Report.",
             "Select MTD, QTD, YTD, 12M, or Custom and provide the date range when required.",
-            "Review the relevant KPI or report card.",
+            "Review the KPI card or report card that answers the reporting question.",
             "Select Full report on a card when a detailed view is available.",
             "Review the resulting focused dashboard and its supporting widgets.",
             "Select Export when an external copy is needed."
@@ -1919,14 +1886,14 @@
         },
         {
           "q": "Can report and dashboard data be exported?",
-          "a": "Yes. Report and dashboard results can be exported for review or use outside AssurePro.",
+          "a": "Yes. Set the reporting period and filters first, then select Export from the report or focused dashboard. Review the downloaded file before sharing it because it can contain client names, financial results, workload measures, or other firm information.",
           "more": [],
           "steps": [
             "Open Reports and choose Overview or My Report.",
             "Select MTD, QTD, YTD, 12M, or a Custom date range so the export reflects the intended period.",
             "Open a Full report when the export should come from a focused dashboard rather than the high-level Overview.",
             "Confirm that the visible widgets and filters match the information needed.",
-            "Select Export and complete the download offered by the report.",
+            "Select Export and save the report file generated by AssurePro.",
             "Review the exported file before sharing it because report results can contain client names, financial amounts, workload information, or other firm data."
           ],
           "alsoSettings": false,
@@ -1952,9 +1919,9 @@
       "items": [
         {
           "q": "What can the AI Agent help with?",
-          "a": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements, missing uploads, overdue-invoice follow-up drafts, and work due this week.",
+          "a": "The AssurePro AI Agent can help firm users find and summarize information about clients, documents, work, communications, and billing, and can prepare drafts for review. Examples include client counts, outstanding invoices, open tasks, inbox summaries, stalled engagements, missing uploads, follow-up drafts, and work due during a selected period.",
           "more": [
-            "A useful prompt includes the subject, time period, desired output, and whether the user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”"
+            "A useful prompt includes the subject, time period, desired output, and whether the firm user wants analysis or a draft. Examples: “Which engagements have been in the same stage for more than ten days?”, “Summarize unread messages for my clients,” or “Draft a polite follow-up for overdue invoices, but do not send it.”"
           ],
           "steps": [],
           "alsoSettings": false,
@@ -1963,9 +1930,9 @@
         },
         {
           "q": "How do I ask the AI Agent for help?",
-          "a": "The Agent uses a conversational prompt and states that it asks before changing anything.",
+          "a": "Ask the AI Agent a specific question in plain language and review the response, linked records, and any proposed action. The Agent requests confirmation before higher-impact changes; low-risk actions can proceed without individual confirmation only when the firm user has enabled Auto-approve low-risk actions.",
           "more": [
-            "Ask a narrower follow-up when the first result is too broad, open linked records to validate important facts, and keep the request in draft mode when no change is intended. The Agent's statement that it asks before changing anything should not replace the user's review of recipients, amounts, dates, or client context."
+            "Ask a narrower follow-up when the first result is too broad, open linked records to validate important facts, and keep the request in draft mode when no change is intended. The Agent's statement that it asks before changing anything should not replace the firm user's review of recipients, amounts, dates, or client context."
           ],
           "steps": [
             "Open AI Agent.",
@@ -1979,7 +1946,7 @@
         },
         {
           "q": "How are AI Agent conversations managed?",
-          "a": "The Agent keeps separate conversations so a user can return to earlier work without mixing unrelated requests.",
+          "a": "The AI Agent keeps each chat as a separate conversation. A firm user can start a new chat for a different question or client, reopen an earlier conversation from history, rename it for easier identification, or delete it when it is no longer required.",
           "more": [],
           "steps": [
             "Open AI Agent and select New chat when beginning a different question or client context.",
@@ -1994,14 +1961,14 @@
         },
         {
           "q": "What is AI Agent memory and how can I control it?",
-          "a": "Memory is the context the Agent retains for future conversations. Each user can decide whether the Agent should keep that context and can inspect what has been saved.",
+          "a": "Memory is the context the Agent retains for future conversations. Each firm user can decide whether the Agent should keep that context and can inspect what has been saved.",
           "more": [],
           "steps": [
             "Open AI Agent and go to Memory.",
             "Turn memory on when the Agent should retain useful context for later conversations, or turn it off when nothing should be retained beyond the current session.",
             "Refresh the list to review the latest saved items.",
             "Use Forget this to remove one item that should no longer influence future conversations.",
-            "Use Clear all memory to remove every saved item for the user."
+            "Use Clear all memory to remove every saved item for the firm user."
           ],
           "alsoSettings": false,
           "keywords": "",
@@ -2009,9 +1976,9 @@
         },
         {
           "q": "What does Auto-approve low-risk actions do?",
-          "a": "The setting allows the Agent to proceed with actions it classifies as low risk without asking for each approval. Keep it off when the user wants to review every proposed change; higher-impact actions remain subject to the Agent's confirmation behavior.",
+          "a": "Auto-approve low-risk actions allows the AI Agent to complete actions it classifies as low risk without asking the firm user to approve each one. Leave the setting off when every proposed change should be reviewed individually. Higher-impact actions still require confirmation.",
           "more": [
-            "Examples of low-risk behavior can differ as the Agent evolves, so review the proposed activity and the firm's policy before enabling it. Leave the option off for users who should approve every change; enabling it should never be treated as authorization for higher-impact actions that still require confirmation."
+            "Examples of low-risk behavior can differ as the Agent evolves, so review the proposed activity and the firm's policy before enabling it. Leave the option off for firm users who should approve every change; enabling it should never be treated as authorization for higher-impact actions that still require confirmation."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2026,7 +1993,7 @@
             "Open Overview and choose Today, This week, or This month to set the briefing window.",
             "Read each insight for the count, affected work, and business meaning—for example overdue invoices that need collection activity or uploaded documents that unblock an engagement.",
             "Select View sources to inspect the records behind the generated summary.",
-            "Use the Next actions links, such as Communication or Documents, to move into the relevant work area.",
+            "Use the Next actions links, such as Communication or Documents, to open the Communications inbox or Documents workspace named by the link.",
             "Use the connected Overview module tiles as additional action paths: Billing or its Report link opens billing work, Clients opens the client list, Engagements and Bottlenecks open Workflow, and Team load opens the team area.",
             "Select Re-Generate when the underlying activity has changed and a fresh summary is needed."
           ],
@@ -2087,10 +2054,10 @@
           "ref": "pro-what-happens-when-the-firm-runs-out-of-ai-credits-155"
         },
         {
-          "q": "Can the firm set a spending cap or get an alert before AI Credits run out?",
-          "a": "Not yet. A spending cap and low-balance alert are planned for release by the end of this year. Until those controls are available, administrators should monitor the header balance, the last-30-days usage total, and the per-user Credit activity filter, then purchase credits proactively when the balance approaches the firm's internal threshold.",
+          "q": "How can administrators control AI Credit usage across the firm?",
+          "a": "Administrators have complete visibility into AI Credit usage and can control how credits are used across the firm. In Settings > AI Credits, they can review consumption by AssureOne product and by individual firm user, allocate credits across the team, and set a usage cap for each firm user. This helps the firm manage its balance without limiting access to the AI features needed for approved work.",
           "more": [
-            "Until the planned controls are released, define an internal threshold—for example, enough credits for one normal week—assign one administrator to review usage, and check product and team-member filters regularly. This makes an unexpected spike attributable before the firm purchases another pack."
+            "For example, an administrator can give a frequent AI user a larger allocation, set a lower cap for a firm user who needs AI only occasionally, and review usage by Pro, Tax, Audit, or Books. Because AssureOne never reloads the balance or charges the card automatically, these controls help the firm decide when and how much to purchase."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2098,10 +2065,10 @@
           "ref": "pro-can-the-firm-set-a-spending-cap-or-get-an-alert-before-ai-credits-run--156"
         },
         {
-          "q": "Are AI Credits shared across the firm, or does each user have a separate allowance?",
-          "a": "AI Credits are pooled at the firm level rather than issued as a separate allowance for each seat. Administrators can still attribute consumption by selecting a team member in Settings > AI Credits and reviewing the activity, feature, product, date, and credits charged. A per-user cap is planned alongside the spending-cap and low-balance controls.",
+          "q": "Are AI Credits shared across the firm, or can they be allocated by firm user?",
+          "a": "AI Credits are purchased for the firm, and administrators can allocate that balance across individual firm users. They can review usage by product and by firm user, then set a per-user cap based on each person's responsibilities. The Credit Usage section shows where credits were consumed, so administrators can adjust allocations using actual activity rather than estimates.",
           "more": [
-            "Because the balance is pooled, heavy use in Tax, Audit, Books, or Pro reduces the same firm balance. Product filters show where consumption occurred and the team-member filter shows who initiated it, helping administrators coach usage even before per-user caps are available."
+            "For example, if the firm buys 10,000 credits, an administrator can distribute appropriate portions to different firm users and cap each person's usage. The administrator can then review consumption by module and firm user and revise those allocations as responsibilities or usage patterns change."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2110,9 +2077,9 @@
         },
         {
           "q": "Can we control what data the AI Agent retains?",
-          "a": "Yes. Each user controls retention through AI Agent Memory. Turn Memory on when the Agent should keep useful context for future conversations, or turn it off when nothing should be retained beyond the current session. The user can also inspect saved items, remove one item with Forget this, or erase all saved Agent context with Clear all memory.",
+          "a": "Yes. Each firm user controls retention through AI Agent Memory. Turn Memory on when the Agent should keep useful context for future conversations, or turn it off when nothing should be retained beyond the current session. The firm user can also inspect saved items, remove one item with Forget this, or erase all saved Agent context with Clear all memory.",
           "more": [
-            "For example, keep a stable firm preference only when it will help future conversations, but forget temporary client-specific context when it is no longer appropriate. Review Memory periodically and use Clear all memory when the user wants to reset the Agent's retained context completely."
+            "For example, keep a stable firm preference only when it will help future conversations, but forget temporary client-specific context when it is no longer appropriate. Review Memory periodically and use Clear all memory when the firm user wants to reset the Agent's retained context completely."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2121,7 +2088,7 @@
         },
         {
           "q": "Can an AI Agent action be undone, and is there an audit trail of what it did?",
-          "a": "An Agent action cannot be undone after it is completed, so the Agent asks for confirmation before higher-impact changes; Auto-approve low-risk actions is a separate user-controlled setting. Review the proposed change carefully before confirming it. A full Agent activity trail is available through Settings > AI Credits, where administrators can inspect the activity, feature, attributed user, product, date, and credit usage.",
+          "a": "AssurePro does not provide one universal Undo control for every completed AI Agent action. Review the affected client, record, recipient, amount, and date before confirming a proposed change, and leave Auto-approve low-risk actions off when each action should be approved individually. Settings > AI Credits records AI usage and attribution; it should not be treated as a complete change log for every action. Review the affected record's own activity or audit history when that history is available.",
           "more": [],
           "steps": [],
           "alsoSettings": false,
@@ -2147,18 +2114,18 @@
       "items": [
         {
           "q": "Which third-party services can be connected?",
-          "a": "Open Settings > Integrations to connect the external services the firm uses for communication, scheduling, documents, payments, and accounting.",
+          "a": "Settings > Integrations lists Gmail and Outlook for email, Calendly, Google Calendar, and Outlook Calendar for meetings, Dropbox and OneDrive for documents, Twilio for SMS, the displayed payment processor for client payments, QuickBooks Online for accounting, and ProdAff for its listed connection.",
           "more": [
-            "Choose the provider by workflow: Gmail or Outlook for firm email, Calendly or a calendar provider for meetings, Dropbox or OneDrive for documents, the payment processor for client collections, QuickBooks Online for paid-invoice accounting, Twilio for SMS, and ProdAff for its supported connection. A provider showing in the list is not enough—complete authorization and test the dependent workflow."
+            "Choose the service based on the task: Gmail or Outlook for firm email; Calendly, Google Calendar, or Outlook Calendar for meetings; Dropbox or OneDrive for document import; the payment processor shown in Integrations for client payments; QuickBooks Online for paid-invoice accounting; and Twilio for SMS. ProdAff appears as a separate connection in the Integrations list. A provider showing in the list is not enough—complete authorization and test the dependent workflow."
           ],
           "steps": [
-            "Email: connect Gmail or Outlook so authorized users can work with firm email inside the supported AssurePro communication flows.",
-            "Scheduling and calendars: connect Calendly, Google Calendar, or Outlook Calendar for the supported meeting and calendar workflows.",
-            "Document storage: connect Dropbox or OneDrive so staff can import client files and use the available connected-folder workflows.",
-            "Payments: connect the available payment processor before sending invoices that clients should be able to pay electronically.",
+            "Email: connect Gmail or Outlook so authorized firm users can send and review email through AssurePro Communications.",
+            "Scheduling and calendars: connect Calendly for scheduling and connect Google Calendar or Outlook Calendar to associate meetings with client records.",
+            "Document storage: connect Dropbox or OneDrive so firm users can import files into a client's Documents workspace and configure connected-folder imports.",
+            "Payments: connect the payment processor shown in Integrations before sending invoices that client users should be able to pay online.",
             "Accounting: connect QuickBooks Online when paid-invoice information should flow into the firm's accounting process.",
             "SMS: connect Twilio and configure the firm's phone-number setup before using text-message workflows.",
-            "Other available connection: ProdAff can be connected for its supported workflow.",
+            "ProdAff: connect the provider only when the firm uses the ProdAff service identified on the Integrations page.",
             "After authorizing a provider, return to the dependent AssurePro area and test the complete workflow; a Connected label confirms authorization, while a successful email, calendar event, import, payment, sync, or SMS confirms that the connection is usable."
           ],
           "alsoSettings": false,
@@ -2167,7 +2134,7 @@
         },
         {
           "q": "How do I connect an integration?",
-          "a": "Connections are managed by provider in Settings.",
+          "a": "Connect each external service from Settings > Integrations. Use a firm-controlled provider account, confirm the connected identity after authorization, and test the exact feature that uses it before using the connection for client work.",
           "more": [
             "Use a firm-controlled provider account with the permissions required for the workflow, not an individual's temporary test account. After authorization, confirm the connected identity and run a safe test—for example, import a non-sensitive demo file, send an internal test email, or reconcile a controlled invoice—before enabling client-facing use."
           ],
@@ -2176,7 +2143,7 @@
             "Find the email, calendar, storage, payment, accounting, messaging, or other provider needed by the firm.",
             "Select Connect and complete the provider's authorization flow.",
             "Return to AssurePro and confirm that the provider shows as connected.",
-            "Test the corresponding workflow before relying on it for client work."
+            "Run a test for the connected service: send an internal email, import a non-sensitive test document, create a test calendar event, send an internal SMS, or reconcile a controlled payment or accounting record."
           ],
           "alsoSettings": false,
           "keywords": "",
@@ -2184,9 +2151,9 @@
         },
         {
           "q": "Which workflows require a connected service?",
-          "a": "Cloud document import requires Dropbox or OneDrive; client SMS requires Twilio and a firm phone number; calendar matching uses Calendly, Google Calendar, or Outlook Calendar; email connections use Gmail or Outlook; client payment collection uses the payment processor; and paid-invoice accounting sync uses QuickBooks Online. The available behavior depends on the relevant connection being active.",
+          "a": "Cloud document import requires Dropbox or OneDrive; client SMS requires Twilio and a firm phone number; calendar matching uses Calendly, Google Calendar, or Outlook Calendar; email connections use Gmail or Outlook; client payment collection uses the payment processor; and paid-invoice accounting sync uses QuickBooks Online. Each feature becomes usable only after its named external service is connected and authorized in Settings > Integrations.",
           "more": [
-            "Example: selecting Import without Dropbox or OneDrive sends the user toward Integrations; SMS cannot operate without Twilio and a linked number; and client payment collection depends on the payment processor. Document the owner of each connection because an expired authorization can interrupt several staff members at once."
+            "Example: selecting Import without Dropbox or OneDrive directs the firm user to Integrations; SMS cannot operate without Twilio and a linked number; and client payment collection depends on the payment processor. Document the owner of each connection because an expired authorization can interrupt several firm users at once."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2214,7 +2181,7 @@
           "more": [],
           "steps": [
             "Open Settings and choose Firm Credentials for a firm-wide internal tool, or open the client's Credentials tab for a client-specific login.",
-            "Select Add your first credential or the corresponding add action.",
+            "Select Add your first credential when the list is empty, or select Add credential when credentials already exist.",
             "Enter the service and credential details in the form.",
             "Limit reveal access through engagement ownership and team permissions.",
             "Use the recorded reveal history when access needs to be audited."
@@ -2224,10 +2191,10 @@
           "ref": "pro-how-are-shared-firm-and-client-credentials-handled-165"
         },
         {
-          "q": "What can users manage in Security settings?",
-          "a": "Security currently provides password change for the signed-in user. It requires the current password, a new password of at least eight characters, and confirmation; show-password controls are available for checking the entries.",
+          "q": "What can firm users manage in Security settings?",
+          "a": "Security currently provides password change for the signed-in firm user. It requires the current password, a new password of at least eight characters, and confirmation; show-password controls are available for checking the entries.",
           "more": [
-            "Use a unique password that meets the minimum length and the firm's internal policy, confirm the entry with the show controls when needed, and store it only in the firm's approved password manager. Changing the password affects the signed-in user's account; it does not change team roles, product access, or client portal credentials."
+            "Use a unique password that meets the minimum length and the firm's internal policy, use Show password to verify the entry before saving, and store it only in the firm's approved password manager. Changing the password affects the signed-in firm user's account; it does not change team roles, product access, or client portal credentials."
           ],
           "steps": [
             "Open Settings and choose Security.",
@@ -2240,10 +2207,10 @@
           "ref": "pro-what-can-users-manage-in-security-settings-166"
         },
         {
-          "q": "What account security control is available in AssurePro?",
-          "a": "Security settings let a signed-in user change their password by supplying the current password, a new password, and confirmation. Team access and roles are managed separately in Team & Roles.",
+          "q": "How is account access managed for firm users and client users?",
+          "a": "A firm user manages their own password in Settings > Security. Firm administrators manage team membership, product access, roles, and permissions in Team & Roles. Client-user access is managed separately from the client record through the contact's portal invitation and access status.",
           "more": [
-            "A user changes their own password under Settings > Security by entering the current password and matching new-password fields. Administrators manage who can access the platform, products, and permissions under Team & Roles; client access is managed from client contacts and portal invitations."
+            "A firm user changes their own password under Settings > Security by entering the current password and matching new-password fields. Administrators manage who can access the platform, products, and permissions under Team & Roles; client access is managed from client contacts and portal invitations."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2252,9 +2219,9 @@
         },
         {
           "q": "How are notifications and report alerts controlled?",
-          "a": "Notifications & Email lets a user independently choose email and in-app delivery for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Report alerts can notify users when a KPI crosses a threshold or send a scheduled digest of key firm metrics.",
+          "a": "Notifications & Email lets a firm user independently choose email and in-app delivery for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Report alerts can notify subscribed firm users when a KPI crosses a threshold or send a scheduled digest of key firm metrics.",
           "more": [
-            "For example, enable both email and in-app delivery for overdue invoices, use in-app only for new uploads that staff review daily, and create a KPI threshold alert for an A/R or workflow measure that requires management attention. Scheduled digests are better for regular review than urgent exception handling."
+            "For example, enable both email and in-app delivery for overdue invoices, use in-app only for new uploads that firm users review daily, and create a KPI threshold alert for an A/R or workflow measure that requires management attention. Scheduled digests are better for regular review than urgent exception handling."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2272,9 +2239,9 @@
         },
         {
           "q": "Does AssurePro hold specific compliance certifications, such as SOC 2?",
-          "a": "Formal compliance-certification details, including the current SOC 2 status, will be published soon. Because certification scope and report periods can change, firms should request the latest security and compliance package from their AssureOne account team rather than relying on an older FAQ copy when completing vendor due diligence.",
+          "a": "Compliance certifications and report coverage can change over time. Firms completing vendor due diligence should request the current AssureOne security and compliance package and confirm the certification name, covered services, and audit period before relying on it.",
           "more": [
-            "When requesting the package, ask for the certification or report name, covered services, audit period, bridge letter if applicable, subservice-organization treatment, and any customer responsibilities. Review that current material with the firm's security or compliance lead rather than interpreting “published soon” as certification already being in force."
+            "When requesting the package, ask for the certification or report name, covered services, audit period, a bridge letter when the latest report period does not extend through the firm's review date, the treatment of subservice organizations, and any customer responsibilities. Review that current material with the firm's security or compliance lead rather than interpreting “published soon” as certification already being in force."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2282,10 +2249,10 @@
           "ref": "pro-does-assurepro-hold-specific-compliance-certifications-such-as-soc-2-170"
         },
         {
-          "q": "Is multi-factor authentication available for staff and client portal logins?",
-          "a": "Yes. During account activation, both firm staff and client-portal users accept the invitation, set a password, and confirm their identity with a one-time code sent to the email address that received the invitation. Administrators should send invitations only to a verified address, and users should complete the code step from that mailbox before signing in.",
+          "q": "Is multi-factor authentication available for firm users and client users?",
+          "a": "AssurePro currently uses a one-time email verification code during account activation for both firm users and client users. The user accepts the invitation, verifies the invited email address, and sets a password. This activation check confirms control of the mailbox, but it is not recurring multi-factor authentication at each sign-in.",
           "more": [
-            "If the one-time code does not arrive, confirm the invited email address, check spam or filtering, and resend the invitation or code through the supported flow. Do not forward another person's code; the code is intended to confirm control of the exact mailbox that received the invitation."
+            "If a firm user's one-time code does not arrive, confirm the work email under Team & Roles > Invitations and resend the invitation. For a client user, confirm the contact email on the client Info tab and resend the portal invitation. In both cases, ask the recipient to check spam and email filtering. Do not forward another person's code; the code is intended to confirm control of the exact mailbox that received the invitation."
           ],
           "steps": [],
           "alsoSettings": false,
@@ -2294,9 +2261,9 @@
         },
         {
           "q": "Can the firm export its data if it cancels its AssurePro subscription?",
-          "a": "Yes. A firm can export its data before the AssurePro account is closed. Plan the export with the AssureOne account team early enough to identify the records, documents, reports, communications, billing history, and other material the firm must retain; confirm the available formats and date range; download the approved exports; and validate that the files can be opened and reconciled before the closure date.",
+          "a": "Data export should be planned with the AssureOne account team before the AssurePro account is closed. The firm and account team confirm which records and documents must be retained, the export methods and formats available for those items, the required date range, and the closure timeline. The firm should download and validate the agreed exports before access ends.",
           "more": [
-            "Create a checklist and reconcile record counts after download—for example, compare exported clients, open engagements, documents, invoices, and communications with the corresponding AssurePro totals. Keep the account active until missing or unreadable files have been corrected and the firm has confirmed where the export will be retained."
+            "Create a checklist and reconcile record counts after download—for example, compare the exported client, open-engagement, document, invoice, and communication counts with the totals shown in AssurePro. Keep the account active until missing or unreadable files have been corrected and the firm has confirmed where the export will be retained."
           ],
           "steps": [],
           "alsoSettings": false,

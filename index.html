@@ -111,9 +111,9 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
     <div class="hc-products" id="hc-products">
       <button class="hc-product active" type="button" data-product="">All products</button>
       <button class="hc-product" type="button" data-product="pro">AssurePro</button>
-      <button class="hc-product hc-product-soon" type="button" data-product="tax" data-soon="assuretax">AssureTax<span class="hc-soon">Soon</span></button>
-      <button class="hc-product hc-product-soon" type="button" data-product="audit" data-soon="assureaudit">AssureAudit<span class="hc-soon">Soon</span></button>
-      <button class="hc-product hc-product-soon" type="button" data-product="books" data-soon="assurebooks">AssureBooks<span class="hc-soon">Soon</span></button>
+      <button class="hc-product hc-product-soon" type="button" data-product="tax" data-soon="assuretax" disabled aria-disabled="true">AssureTax<span class="hc-soon">Soon</span></button>
+      <button class="hc-product hc-product-soon" type="button" data-product="audit" data-soon="assureaudit" disabled aria-disabled="true">AssureAudit<span class="hc-soon">Soon</span></button>
+      <button class="hc-product hc-product-soon" type="button" data-product="books" data-soon="assurebooks" disabled aria-disabled="true">AssureBooks<span class="hc-soon">Soon</span></button>
     </div>
     <div class="hc-section-head"><h3 id="hc-results-title">All help articles</h3><span class="hc-count" id="hc-count"></span><button class="hc-clear" id="hc-clear" type="button">Clear filters</button></div>
     <div class="hc-articles" id="hc-articles"></div>
@@ -255,7 +255,7 @@ a.category-card{color:inherit;text-decoration:none}.product-grid{grid-template-c
   const catWrap=document.getElementById('hc-categories');
   catWrap.innerHTML=categories.map(c=>'<button class="hc-category'+(c==='All Articles'?' active':'')+'" type="button" data-category="'+c+'">'+c+'</button>').join('');
   catWrap.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;category=b.dataset.category;visibleLimit=12;render();});
-  document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.soon){location.href=b.dataset.soon+'/index.html';return;}product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});
+  document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.soon)return;product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});
   search.addEventListener('input',()=>{query=search.value;visibleLimit=12;render();});
   clear.addEventListener('click',()=>{query='';product='';category='All Articles';visibleLimit=12;search.value='';render();});
   loadMore.addEventListener('click',()=>{visibleLimit+=12;render();});

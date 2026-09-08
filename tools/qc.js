@@ -78,6 +78,30 @@ for (const a of arts) {
 notes.push(`   by product: ${Object.keys(DIRS).map((k) => k + "=" + arts.filter((a) => a.product === k).length).join(" ")}`);
 notes.push(`   with extra paragraphs: ${arts.filter((a) => a.more).length}, with steps: ${arts.filter((a) => a.steps).length}`);
 
+// Client-facing help must name the screen, person, field, or result. These
+// phrases previously hid the actual instruction behind internal product jargon.
+const unclearContent = [
+  [/\bsame destination form\b/i, 'same destination form'],
+  [/\bmatching destination\b/i, 'matching destination'],
+  [/\brelevant AssurePro area\b/i, 'relevant AssurePro area'],
+  [/\brelated area of AssurePro\b/i, 'related area of AssurePro'],
+  [/\bcorresponding workflow\b/i, 'corresponding workflow'],
+  [/\boffered by the editor\b/i, 'offered by the editor'],
+  [/\bother details required by that channel\b/i, 'other details required by that channel'],
+  [/\b(?:as|when|where) needed\b/i, 'as/when/where needed'],
+  [/\b(?:if|when|where) applicable\b/i, 'if/when/where applicable'],
+  [/\bin staging\b/i, 'in staging'],
+  [/\bstart common work\b/i, 'start common work'],
+  [/\bstaff\b/i, 'staff (say firm user, firm administrator, or client user)'],
+];
+for (const a of arts) {
+  const visible = [a.title, a.answer, ...(a.more || []), ...(a.steps || [])].join(' ');
+  for (const [pattern, label] of unclearContent) {
+    if (pattern.test(visible)) fail(`${a.id}: unclear client-facing wording — ${label}`);
+  }
+}
+notes.push('   client-facing wording names the screen, role, field, or result');
+
 /* ------------------------------------ 4. data matches the source of truth */
 section("4. data matches the product pages");
 let compared = 0;
@@ -161,6 +185,16 @@ notes.push("   discovery rails absent from the hub and the article page");
   if (hasScript(art, "function compactSection()") && !hasScript(art, "'Show fewer articles'"))
     fail("article.html: the navigator toggle has no collapse label");
   notes.push("   navigator collapse label reads plainly");
+}
+
+// Long article titles must use the available reading width.
+{
+  const art = read("article.html");
+  if (hasStyle(art, "max-width:22ch"))
+    fail("article.html: article titles are constrained to a narrow column");
+  if (!hasStyle(art, ".ar-doc h1{font-size:clamp(1.9rem,3vw,2.45rem);max-width:none"))
+    fail("article.html: article titles do not use the available reading width");
+  notes.push("   long article titles use the full reading width");
 }
 
 // a product held for review must say so, not "try another filter"

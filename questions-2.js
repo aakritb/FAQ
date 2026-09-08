@@ -1,5 +1,22 @@
 window.ASSUREONE_ARTICLES.push(...[
   {
+    "id": "pro-how-is-a-template-library-item-added-and-edited-29",
+    "product": "pro",
+    "category": "Settings",
+    "title": "How do I add and customize a Template Library item?",
+    "description": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document…",
+    "answer": "Preview the template, select Add to Library, and then use Open in… to open the added copy in Engagement Letters, Workflow, Folder Templates, or Messages, based on the template type. Curated templates are starting points; your firm customizes the added working copy rather than editing the original library item.",
+    "steps": [
+      "Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary.",
+      "Select Add to Library.",
+      "Use the provided Open in… link to go to the correct working area.",
+      "Review and configure the firm's copy before using it in live client work."
+    ],
+    "search": "Preview the template, select Add to Library, and then use Open in… to open the added copy in Engagement Letters, Workflow, Folder Templates, or Messages, based on the template type. Curated templates are starting points; your firm customizes the added working copy rather than editing the original library item. Preview the template and review its practice-area and entity tags plus its package, service, stage, task, folder, or channel summary. Select Add to Library. Use the provided Open in… link to go to the correct working area. Review and configure the firm's copy before using it in live client work.",
+    "read": "2 min",
+    "path": "assurepro/index.html"
+  },
+  {
     "id": "pro-what-does-each-template-library-type-provide-30",
     "product": "pro",
     "category": "Settings",
@@ -19,16 +36,16 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "How is a new client added directly?",
     "description": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline. Open Clients and select New Client, or choose Client from the global + New…",
-    "answer": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline.",
+    "answer": "Create a client directly when the relationship is already confirmed and does not need to move through the prospect pipeline. The client record becomes the starting point for contacts, portal access, documents, engagements, billing, and other client work.",
     "steps": [
       "Open Clients and select New Client, or choose Client from the global + New menu.",
       "Enter the required Client Name and Entity Type.",
-      "Set the status, industry and sub-industry, assignees, folder template, country, and address as needed.",
+      "Add the status, industry, sub-industry, assigned firm users, folder template, country, and address that apply to the client.",
       "Optionally add the primary contact's name, phone number, and email.",
       "Choose whether Send portal invite should remain selected.",
       "Review the record and select Create Client."
     ],
-    "search": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline. Open Clients and select New Client, or choose Client from the global + New menu. Enter the required Client Name and Entity Type. Set the status, industry and sub-industry, assignees, folder template, country, and address as needed. Optionally add the primary contact's name, phone number, and email. Choose whether Send portal invite should remain selected. Review the record and select Create Client.",
+    "search": "Create a client directly when the relationship is already confirmed and does not need to move through the prospect pipeline. The client record becomes the starting point for contacts, portal access, documents, engagements, billing, and other client work. Open Clients and select New Client, or choose Client from the global + New menu. Enter the required Client Name and Entity Type. Add the status, industry, sub-industry, assigned firm users, folder template, country, and address that apply to the client. Optionally add the primary contact's name, phone number, and email. Choose whether Send portal invite should remain selected. Review the record and select Create Client.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -55,11 +72,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "answer": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding.",
     "steps": [
       "Open Prospects and find the lead in Board or List view.",
-      "Open the prospect record and review the company, contact, service interest, owners, deal value, and other details that should carry forward.",
+      "Open the prospect record and review the company, contact, service interest, owners, deal value, expected close date, tags, and notes that should carry forward.",
       "Open the Stage control and change the prospect to Won.",
       "Open the resulting client record and complete any client-specific information, assignments, documents, portal access, or engagement setup that was not captured on the prospect."
     ],
-    "search": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding. Open Prospects and find the lead in Board or List view. Open the prospect record and review the company, contact, service interest, owners, deal value, and other details that should carry forward. Open the Stage control and change the prospect to Won. Open the resulting client record and complete any client-specific information, assignments, documents, portal access, or engagement setup that was not captured on the prospect.",
+    "search": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding. Open Prospects and find the lead in Board or List view. Open the prospect record and review the company, contact, service interest, owners, deal value, expected close date, tags, and notes that should carry forward. Open the Stage control and change the prospect to Won. Open the resulting client record and complete any client-specific information, assignments, documents, portal access, or engagement setup that was not captured on the prospect.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -69,7 +86,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "How do I import multiple clients?",
     "description": "The client import accepts CSV and XLSX files and provides a downloadable CSV template. Open Clients. Select More ways to add clients, then Import from CSV. Download the CSV template if you need the…",
-    "answer": "The client import accepts CSV and XLSX files and provides a downloadable CSV template.",
+    "answer": "Use the client import when the firm needs to add multiple client records at once. AssurePro accepts CSV and XLSX files and provides a downloadable CSV template so the source data can be prepared in the expected structure before upload.",
     "steps": [
       "Open Clients.",
       "Select More ways to add clients, then Import from CSV.",
@@ -77,7 +94,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Drop the file into the import dialog or select it with the file browser.",
       "Follow the validation prompts shown for the uploaded file, then review the imported client records."
     ],
-    "search": "The client import accepts CSV and XLSX files and provides a downloadable CSV template. Open Clients. Select More ways to add clients, then Import from CSV. Download the CSV template if you need the expected structure, or prepare a supported .csv or .xlsx file. Drop the file into the import dialog or select it with the file browser. Follow the validation prompts shown for the uploaded file, then review the imported client records.",
+    "search": "Use the client import when the firm needs to add multiple client records at once. AssurePro accepts CSV and XLSX files and provides a downloadable CSV template so the source data can be prepared in the expected structure before upload. Open Clients. Select More ways to add clients, then Import from CSV. Download the CSV template if you need the expected structure, or prepare a supported .csv or .xlsx file. Drop the file into the import dialog or select it with the file browser. Follow the validation prompts shown for the uploaded file, then review the imported client records.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -87,9 +104,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "Can I create a client while starting an engagement?",
     "description": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing. Open Workflow and select New Engagement. Open the…",
-    "answer": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing.",
+    "answer": "Yes. The New Engagement client chooser includes Create new client, so firm users do not have to leave the workflow when the required client is missing.",
     "more": [
-      "This is useful when staff discover that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not required in the contextual form."
+      "This is useful when a firm user discovers that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not shown in the client form opened from New Engagement."
     ],
     "steps": [
       "Open Workflow and select New Engagement.",
@@ -97,7 +114,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Select Create new client and complete the client record.",
       "Return to the engagement setup, select the new client and an Engagement type, and continue creating the engagement."
     ],
-    "search": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing. This is useful when staff discover that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not required in the contextual form. Open Workflow and select New Engagement. Open the Client chooser. Select Create new client and complete the client record. Return to the engagement setup, select the new client and an Engagement type, and continue creating the engagement.",
+    "search": "Yes. The New Engagement client chooser includes Create new client, so firm users do not have to leave the workflow when the required client is missing. This is useful when a firm user discovers that an otherwise ready engagement has no client record. The created client is available immediately in the engagement chooser; after saving the engagement, return to the client Info tab to complete any optional contact, entity, portal, assignment, or relationship fields that were not shown in the client form opened from New Engagement. Open Workflow and select New Engagement. Open the Client chooser. Select Create new client and complete the client record. Return to the engagement setup, select the new client and an Engagement type, and continue creating the engagement.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -105,13 +122,13 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-staff-see-in-a-client-workspace-36",
     "product": "pro",
     "category": "Clients",
-    "title": "What can staff see in a client workspace?",
+    "title": "What can firm users see in a client workspace?",
     "description": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention,…",
-    "answer": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention, engagements, open tasks, recent documents, balances, deadlines, client pending actions, communications, and recent activity.",
+    "answer": "Firm users can use a client workspace to review the relationship and the work connected to it in one place. The workspace includes Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview brings forward items requiring attention, open work, deadlines, documents, balances, communications, and recent activity.",
     "more": [
       "Use Overview for a concise operating summary and the specialized tabs for the full record. For example, an overdue invoice is reviewed in Billing, an unsigned package in Engagement Letter, missing source files in Documents, and the associated delivery plan in Engagements—without searching for the client again."
     ],
-    "search": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention, engagements, open tasks, recent documents, balances, deadlines, client pending actions, communications, and recent activity. Use Overview for a concise operating summary and the specialized tabs for the full record. For example, an overdue invoice is reviewed in Billing, an unsigned package in Engagement Letter, missing source files in Documents, and the associated delivery plan in Engagements—without searching for the client again.",
+    "search": "Firm users can use a client workspace to review the relationship and the work connected to it in one place. The workspace includes Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview brings forward items requiring attention, open work, deadlines, documents, balances, communications, and recent activity. Use Overview for a concise operating summary and the specialized tabs for the full record. For example, an overdue invoice is reviewed in Billing, an unsigned package in Engagement Letter, missing source files in Documents, and the associated delivery plan in Engagements—without searching for the client again.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -149,11 +166,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "How does AssurePro help complete a client profile?",
     "description": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist.",
-    "answer": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist.",
+    "answer": "The Info tab shows a profile-completeness checklist and identifies missing fields. Firm users can add missing contact, address, entity, and period information directly from that checklist.",
     "more": [
       "Treat the checklist as an onboarding quality control rather than a cosmetic score. Completing the missing entity, address, contact, filing-period, and related fields improves downstream engagement setup, document requests, communications, agreements, invoices, and reports."
     ],
-    "search": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist. Treat the checklist as an onboarding quality control rather than a cosmetic score. Completing the missing entity, address, contact, filing-period, and related fields improves downstream engagement setup, document requests, communications, agreements, invoices, and reports.",
+    "search": "The Info tab shows a profile-completeness checklist and identifies missing fields. Firm users can add missing contact, address, entity, and period information directly from that checklist. Treat the checklist as an onboarding quality control rather than a cosmetic score. Completing the missing entity, address, contact, filing-period, and related fields improves downstream engagement setup, document requests, communications, agreements, invoices, and reports.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -163,7 +180,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "Can a portal invitation be sent again?",
     "description": "Yes. Portal access can be initiated during client creation or managed later from the client record. Open the client and choose Info. Find the contact who should have portal access and confirm the email…",
-    "answer": "Yes. Portal access can be initiated during client creation or managed later from the client record.",
+    "answer": "Yes. A firm user can resend a portal invitation from the client record after confirming that the intended client contact and email address are correct. The client should use the newest invitation because an earlier link may no longer be valid.",
     "steps": [
       "Open the client and choose Info.",
       "Find the contact who should have portal access and confirm the email address is correct.",
@@ -171,7 +188,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Ask the client to open the newest invitation, accept it, verify the invited email when prompted, and set their portal password.",
       "Confirm successful access from the client's activity history or portal-access status."
     ],
-    "search": "Yes. Portal access can be initiated during client creation or managed later from the client record. Open the client and choose Info. Find the contact who should have portal access and confirm the email address is correct. Use Resend invite for a contact whose invitation needs to be issued again. Ask the client to open the newest invitation, accept it, verify the invited email when prompted, and set their portal password. Confirm successful access from the client's activity history or portal-access status.",
+    "search": "Yes. A firm user can resend a portal invitation from the client record after confirming that the intended client contact and email address are correct. The client should use the newest invitation because an earlier link may no longer be valid. Open the client and choose Info. Find the contact who should have portal access and confirm the email address is correct. Use Resend invite for a contact whose invitation needs to be issued again. Ask the client to open the newest invitation, accept it, verify the invited email when prompted, and set their portal password. Confirm successful access from the client's activity history or portal-access status.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -181,11 +198,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "What can a client do through the client portal?",
     "description": "A client with portal access can work with the firm on the client-facing items made available to them, including engagement-letter review and signing, document requests and uploads, messages, and…",
-    "answer": "A client with portal access can work with the firm on the client-facing items made available to them, including engagement-letter review and signing, document requests and uploads, messages, and billing items. Portal access begins with the invitation sent during onboarding or from the client's Info tab.",
+    "answer": "A client user can review and sign engagement letters, respond to document requests, upload files, exchange messages with the firm, and review or pay invoices that the firm sends through the client portal. Portal access begins with the invitation sent during onboarding or from the client's Info tab.",
     "more": [
-      "A typical flow is: accept the invitation, set a password, open a request or message, upload the requested documents, review and sign the engagement package, and pay an invoice when billing is enabled. The client sees only the client-facing work made available by the firm, not the internal staff workspace."
+      "A typical flow is: accept the invitation, set a password, open a request or message, upload the requested documents, review and sign the engagement package, and pay an invoice when billing is enabled. The client sees only the client-facing work made available by the firm, not the internal firm workspace."
     ],
-    "search": "A client with portal access can work with the firm on the client-facing items made available to them, including engagement-letter review and signing, document requests and uploads, messages, and billing items. Portal access begins with the invitation sent during onboarding or from the client's Info tab. A typical flow is: accept the invitation, set a password, open a request or message, upload the requested documents, review and sign the engagement package, and pay an invoice when billing is enabled. The client sees only the client-facing work made available by the firm, not the internal staff workspace.",
+    "search": "A client user can review and sign engagement letters, respond to document requests, upload files, exchange messages with the firm, and review or pay invoices that the firm sends through the client portal. Portal access begins with the invitation sent during onboarding or from the client's Info tab. A typical flow is: accept the invitation, set a password, open a request or message, upload the requested documents, review and sign the engagement package, and pay an invoice when billing is enabled. The client sees only the client-facing work made available by the firm, not the internal firm workspace.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -211,9 +228,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Yes. AssurePro provides a client mobile app for both iOS and Android. Clients can use the mobile experience for the work the firm makes available to them, including reviewing requests, uploading…",
     "answer": "Yes. AssurePro provides a client mobile app for both iOS and Android. Clients can use the mobile experience for the work the firm makes available to them, including reviewing requests, uploading documents, communicating with the firm, signing documents, and handling billing-related actions. The client must first accept the firm's portal invitation and establish their account before signing in on a mobile device.",
     "more": [
-      "For a smooth rollout, ask the client to activate the account from the firm's invitation first, then install the appropriate app and sign in with the same account. The firm should still verify that the intended request, message, signing package, or invoice is visible to that contact before directing them to act."
+      "For a smooth rollout, ask the client to activate the account from the firm's invitation first, then install the iOS or Android client app and sign in with the same account. The firm should still verify that the intended request, message, signing package, or invoice is visible to that contact before directing them to act."
     ],
-    "search": "Yes. AssurePro provides a client mobile app for both iOS and Android. Clients can use the mobile experience for the work the firm makes available to them, including reviewing requests, uploading documents, communicating with the firm, signing documents, and handling billing-related actions. The client must first accept the firm's portal invitation and establish their account before signing in on a mobile device. For a smooth rollout, ask the client to activate the account from the firm's invitation first, then install the appropriate app and sign in with the same account. The firm should still verify that the intended request, message, signing package, or invoice is visible to that contact before directing them to act.",
+    "search": "Yes. AssurePro provides a client mobile app for both iOS and Android. Clients can use the mobile experience for the work the firm makes available to them, including reviewing requests, uploading documents, communicating with the firm, signing documents, and handling billing-related actions. The client must first accept the firm's portal invitation and establish their account before signing in on a mobile device. For a smooth rollout, ask the client to activate the account from the firm's invitation first, then install the iOS or Android client app and sign in with the same account. The firm should still verify that the intended request, message, signing package, or invoice is visible to that contact before directing them to act.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -223,8 +240,8 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "Can we migrate data from our previous practice-management software?",
     "description": "Yes. AssurePro's implementation team supports migration from other practice-management platforms, including systems such as Karbon, Canopy, and TaxDome, as part of onboarding. The firm should identify…",
-    "answer": "Yes. AssurePro's implementation team supports migration from other practice-management platforms, including systems such as Karbon, Canopy, and TaxDome, as part of onboarding. The firm should identify the source system, records and documents to move, custom fields, user assignments, historical depth, and target cutover date. The implementation team then confirms the export format, field mapping, import sequence, exception handling, and validation process so the firm can review the migrated data before relying on it for live work.",
-    "search": "Yes. AssurePro's implementation team supports migration from other practice-management platforms, including systems such as Karbon, Canopy, and TaxDome, as part of onboarding. The firm should identify the source system, records and documents to move, custom fields, user assignments, historical depth, and target cutover date. The implementation team then confirms the export format, field mapping, import sequence, exception handling, and validation process so the firm can review the migrated data before relying on it for live work.",
+    "answer": "Yes. The AssureOne implementation team can help the firm plan and complete a migration from its current practice-management system. The migration scope is agreed during onboarding and depends on the source data, available export format, records and documents to be moved, required history, field mapping, and planned cutover. The firm reviews and validates the migrated information before using it for live work.",
+    "search": "Yes. The AssureOne implementation team can help the firm plan and complete a migration from its current practice-management system. The migration scope is agreed during onboarding and depends on the source data, available export format, records and documents to be moved, required history, field mapping, and planned cutover. The firm reviews and validates the migrated information before using it for live work.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -234,11 +251,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "Does AssurePro include CRM capabilities?",
     "description": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, and other prospect details, then manage…",
-    "answer": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, and other prospect details, then manage active clients through dedicated workspaces containing contacts, engagements, documents, communications, billing, and related information.",
+    "answer": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, contact information, tags, and qualification fields, then manage active clients through dedicated workspaces containing contacts, engagements, documents, communications, billing, and related information.",
     "more": [
       "For example, a firm can capture a referral as a prospect, assign an owner and expected close date, record service interest and deal value, move it through Discovery and Proposal, and mark it Won. The resulting client can then continue into portal onboarding, documents, engagement delivery, agreements, and billing without rebuilding the relationship."
     ],
-    "search": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, and other prospect details, then manage active clients through dedicated workspaces containing contacts, engagements, documents, communications, billing, and related information. For example, a firm can capture a referral as a prospect, assign an owner and expected close date, record service interest and deal value, move it through Discovery and Proposal, and mark it Won. The resulting client can then continue into portal onboarding, documents, engagement delivery, agreements, and billing without rebuilding the relationship.",
+    "search": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, contact information, tags, and qualification fields, then manage active clients through dedicated workspaces containing contacts, engagements, documents, communications, billing, and related information. For example, a firm can capture a referral as a prospect, assign an owner and expected close date, record service interest and deal value, move it through Discovery and Proposal, and mark it Won. The resulting client can then continue into portal onboarding, documents, engagement delivery, agreements, and billing without rebuilding the relationship.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -250,17 +267,17 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Prospects can be managed in Board or List view inside a firm-defined pipeline. The firm is not limited to one fixed sales process: administrators can create a new pipeline and define, rename, reorder,…",
     "answer": "Prospects can be managed in Board or List view inside a firm-defined pipeline. The firm is not limited to one fixed sales process: administrators can create a new pipeline and define, rename, reorder, add, or restructure its stages to match the firm's qualification and proposal process.",
     "more": [
-      "A firm may use one pipeline for all prospects or create separate pipelines for service lines or sales motions. For example, an advisory pipeline may include Assessment and Scoping stages, while a tax pipeline may move from New lead to Documents received, Proposal, Won, or Lost. Restructuring the stages changes how the firm organizes future pipeline work, so administrators should agree on the definitions before rollout."
+      "A firm may use one pipeline for all prospects or create separate pipelines for service lines or sales motions. For example, an advisory pipeline may include Assessment and Scoping stages, while a tax pipeline may move from New lead to Documents received, Proposal, Won, or Lost. Restructuring the stages changes how the firm organizes future pipeline work, so firm administrators should agree on the definitions before rollout."
     ],
     "steps": [
-      "Choose or create the pipeline used for the relevant service line or prospect process.",
+      "Choose or create the pipeline used for that service line or sales process.",
       "Configure the stages in the order work should move—for example, New lead, Discovery, Qualified, Proposal, Decision, Won, and Lost.",
       "Use Board view to move prospects between stages and see the pipeline visually; use List view to search, filter, and compare prospect details in rows.",
       "Open a prospect to manage owners, tasks, notes, emails, calls, service interest, deal value, expected close date, and engagement-letter activity.",
       "Review lead count, pipeline value, won count and value, win rate, and average deal size for the selected pipeline.",
       "Move the prospect to Won when the opportunity is accepted; AssurePro then creates or promotes the client record so onboarding can continue without re-entering the prospect information."
     ],
-    "search": "Prospects can be managed in Board or List view inside a firm-defined pipeline. The firm is not limited to one fixed sales process: administrators can create a new pipeline and define, rename, reorder, add, or restructure its stages to match the firm's qualification and proposal process. A firm may use one pipeline for all prospects or create separate pipelines for service lines or sales motions. For example, an advisory pipeline may include Assessment and Scoping stages, while a tax pipeline may move from New lead to Documents received, Proposal, Won, or Lost. Restructuring the stages changes how the firm organizes future pipeline work, so administrators should agree on the definitions before rollout. Choose or create the pipeline used for the relevant service line or prospect process. Configure the stages in the order work should move—for example, New lead, Discovery, Qualified, Proposal, Decision, Won, and Lost. Use Board view to move prospects between stages and see the pipeline visually; use List view to search, filter, and compare prospect details in rows. Open a prospect to manage owners, tasks, notes, emails, calls, service interest, deal value, expected close date, and engagement-letter activity. Review lead count, pipeline value, won count and value, win rate, and average deal size for the selected pipeline. Move the prospect to Won when the opportunity is accepted; AssurePro then creates or promotes the client record so onboarding can continue without re-entering the prospect information.",
+    "search": "Prospects can be managed in Board or List view inside a firm-defined pipeline. The firm is not limited to one fixed sales process: administrators can create a new pipeline and define, rename, reorder, add, or restructure its stages to match the firm's qualification and proposal process. A firm may use one pipeline for all prospects or create separate pipelines for service lines or sales motions. For example, an advisory pipeline may include Assessment and Scoping stages, while a tax pipeline may move from New lead to Documents received, Proposal, Won, or Lost. Restructuring the stages changes how the firm organizes future pipeline work, so firm administrators should agree on the definitions before rollout. Choose or create the pipeline used for that service line or sales process. Configure the stages in the order work should move—for example, New lead, Discovery, Qualified, Proposal, Decision, Won, and Lost. Use Board view to move prospects between stages and see the pipeline visually; use List view to search, filter, and compare prospect details in rows. Open a prospect to manage owners, tasks, notes, emails, calls, service interest, deal value, expected close date, and engagement-letter activity. Review lead count, pipeline value, won count and value, win rate, and average deal size for the selected pipeline. Move the prospect to Won when the opportunity is accepted; AssurePro then creates or promotes the client record so onboarding can continue without re-entering the prospect information.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -284,19 +301,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "What information can be captured for a prospect?",
     "description": "A prospect record supports standard sales, contact, ownership, and qualification information, and the firm can extend the record with custom fields configured in Settings. Capture the prospect or…",
-    "answer": "A prospect record supports standard sales, contact, ownership, and qualification information, and the firm can extend the record with custom fields configured in Settings.",
+    "answer": "A prospect record can capture contact and company details, pipeline and stage, source, owner, expected close date, deal value, service interest, tags, and other qualification information. Firm administrators can add custom fields in Settings when the standard record does not cover a detail required by the firm's sales or onboarding process.",
     "more": [
-      "Custom fields let the firm collect qualification details unique to its process—for example, current accounting system, number of entities, annual revenue band, fiscal year-end, tax jurisdictions, audit requirement, or preferred onboarding date. Use clear field labels and consistent field types so staff can complete the record reliably and the information remains useful after the prospect becomes a client."
+      "Custom fields let the firm collect qualification details unique to its process—for example, current accounting system, number of entities, annual revenue band, fiscal year-end, tax jurisdictions, audit requirement, or preferred onboarding date. Use clear field labels and consistent field types so firm users can complete the record reliably and the information remains useful after the prospect becomes a client."
     ],
-    "steps": [
-      "Capture the prospect or company name, email, phone number, linked contact, and other contact details.",
-      "Set the pipeline and stage, source, owner or owners, expected close date, deal value, lead type, referrer, and service interest.",
-      "Add segmentation details such as tags, industry, company size, job role, and designation.",
-      "When the firm needs information that is not part of the standard record, open Settings, create the appropriate prospect custom field, define its label and field type, and make it available for prospect records.",
-      "Use those custom fields consistently on new and existing prospects so filtering, qualification, handoff, and conversion follow the firm's process.",
-      "For a larger starting list, import prospects from CSV and map the available columns before completing the import."
-    ],
-    "search": "A prospect record supports standard sales, contact, ownership, and qualification information, and the firm can extend the record with custom fields configured in Settings. Custom fields let the firm collect qualification details unique to its process—for example, current accounting system, number of entities, annual revenue band, fiscal year-end, tax jurisdictions, audit requirement, or preferred onboarding date. Use clear field labels and consistent field types so staff can complete the record reliably and the information remains useful after the prospect becomes a client. Capture the prospect or company name, email, phone number, linked contact, and other contact details. Set the pipeline and stage, source, owner or owners, expected close date, deal value, lead type, referrer, and service interest. Add segmentation details such as tags, industry, company size, job role, and designation. When the firm needs information that is not part of the standard record, open Settings, create the appropriate prospect custom field, define its label and field type, and make it available for prospect records. Use those custom fields consistently on new and existing prospects so filtering, qualification, handoff, and conversion follow the firm's process. For a larger starting list, import prospects from CSV and map the available columns before completing the import.",
+    "search": "A prospect record can capture contact and company details, pipeline and stage, source, owner, expected close date, deal value, service interest, tags, and other qualification information. Firm administrators can add custom fields in Settings when the standard record does not cover a detail required by the firm's sales or onboarding process. Custom fields let the firm collect qualification details unique to its process—for example, current accounting system, number of entities, annual revenue band, fiscal year-end, tax jurisdictions, audit requirement, or preferred onboarding date. Use clear field labels and consistent field types so firm users can complete the record reliably and the information remains useful after the prospect becomes a client.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -306,11 +315,11 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Clients",
     "title": "What work can be managed from a prospect record?",
     "description": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Staff can also add tasks and notes while the opportunity…",
-    "answer": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Staff can also add tasks and notes while the opportunity moves through Prospect, Discovery, Proposal, Won, or Lost.",
+    "answer": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Firm users can also add tasks and notes while the opportunity moves through Prospect, Discovery, Proposal, Won, or Lost.",
     "more": [
       "A practical sequence is to record the lead, assign discovery tasks, keep outreach in Email or Calls, add notes after each conversation, prepare an engagement letter during Proposal, and change the stage as the opportunity advances. Mark Won only when it should enter client onboarding; use Lost when the opportunity should remain in history without becoming a client."
     ],
-    "search": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Staff can also add tasks and notes while the opportunity moves through Prospect, Discovery, Proposal, Won, or Lost. A practical sequence is to record the lead, assign discovery tasks, keep outreach in Email or Calls, add notes after each conversation, prepare an engagement letter during Proposal, and change the stage as the opportunity advances. Mark Won only when it should enter client onboarding; use Lost when the opportunity should remain in history without becoming a client.",
+    "search": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Firm users can also add tasks and notes while the opportunity moves through Prospect, Discovery, Proposal, Won, or Lost. A practical sequence is to record the lead, assign discovery tasks, keep outreach in Email or Calls, add notes after each conversation, prepare an engagement letter during Proposal, and change the stage as the opportunity advances. Mark Won only when it should enter client onboarding; use Lost when the opportunity should remain in history without becoming a client.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -322,9 +331,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "The top-level Documents screen groups work by client and highlights clients that are awaiting documents. Inside a client workspace, documents are organized into folders and can be viewed by areas such…",
     "answer": "The top-level Documents screen groups work by client and highlights clients that are awaiting documents. Inside a client workspace, documents are organized into folders and can be viewed by areas such as client uploads, messaging, engagement letters, tax returns, source documents, signed forms, correspondence, and miscellaneous files.",
     "more": [
-      "The firm-level view helps staff find clients with missing documents, while the client workspace provides the actual folder hierarchy and request history. Use Folder Templates for consistency, Document Types for classification, and source filters to distinguish requested client uploads from internal or imported files."
+      "The firm-level view helps firm users find clients with missing documents, while the client workspace provides the actual folder hierarchy and request history. Use Folder Templates for consistency, Document Types for classification, and source filters to distinguish requested client uploads from internal or imported files."
     ],
-    "search": "The top-level Documents screen groups work by client and highlights clients that are awaiting documents. Inside a client workspace, documents are organized into folders and can be viewed by areas such as client uploads, messaging, engagement letters, tax returns, source documents, signed forms, correspondence, and miscellaneous files. The firm-level view helps staff find clients with missing documents, while the client workspace provides the actual folder hierarchy and request history. Use Folder Templates for consistency, Document Types for classification, and source filters to distinguish requested client uploads from internal or imported files.",
+    "search": "The top-level Documents screen groups work by client and highlights clients that are awaiting documents. Inside a client workspace, documents are organized into folders and can be viewed by areas such as client uploads, messaging, engagement letters, tax returns, source documents, signed forms, correspondence, and miscellaneous files. The firm-level view helps firm users find clients with missing documents, while the client workspace provides the actual folder hierarchy and request history. Use Folder Templates for consistency, Document Types for classification, and source filters to distinguish requested client uploads from internal or imported files.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -336,9 +345,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Yes. Documents settings contain Folder Templates, Document Types, and Work Types. Administrators can create folder templates, add folders, define document codes, labels, categories, descriptions, and…",
     "answer": "Yes. Documents settings contain Folder Templates, Document Types, and Work Types. Administrators can create folder templates, add folders, define document codes, labels, categories, descriptions, and fields, and control which definitions are active.",
     "more": [
-      "For example, a tax folder template can create Intake, Source Documents, Workpapers, Review, Filed Return, and Correspondence folders, while document types distinguish W-2, 1099, K-1, identification, and signed forms. Apply the standard during onboarding so staff and clients see a predictable structure."
+      "For example, a tax folder template can create Intake, Source Documents, Workpapers, Review, Filed Return, and Correspondence folders, while document types distinguish W-2, 1099, K-1, identification, and signed forms. Apply the standard during onboarding so firm users and client users see a predictable structure."
     ],
-    "search": "Yes. Documents settings contain Folder Templates, Document Types, and Work Types. Administrators can create folder templates, add folders, define document codes, labels, categories, descriptions, and fields, and control which definitions are active. For example, a tax folder template can create Intake, Source Documents, Workpapers, Review, Filed Return, and Correspondence folders, while document types distinguish W-2, 1099, K-1, identification, and signed forms. Apply the standard during onboarding so staff and clients see a predictable structure.",
+    "search": "Yes. Documents settings contain Folder Templates, Document Types, and Work Types. Administrators can create folder templates, add folders, define document codes, labels, categories, descriptions, and fields, and control which definitions are active. For example, a tax folder template can create Intake, Source Documents, Workpapers, Review, Filed Return, and Correspondence folders, while document types distinguish W-2, 1099, K-1, identification, and signed forms. Apply the standard during onboarding so firm users and client users see a predictable structure.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -362,15 +371,8 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Documents",
     "title": "What can be configured for Document Types?",
     "description": "Document Types standardize how uploads are classified and which fields can be extracted. The table shows name, category, description, field count, status, and actions; system definitions are marked…",
-    "answer": "Document Types standardize how uploads are classified and which fields can be extracted. The table shows name, category, description, field count, status, and actions; system definitions are marked System. Categories can be filtered or managed, and new firm-specific document types can be added.",
-    "steps": [
-      "Open Settings, choose Documents, and select Document Types.",
-      "Filter by category or select Manage categories when the classification list needs maintenance.",
-      "Select New document type, or Edit beside an existing definition.",
-      "Set the name, category, description, fields, and active state offered by the editor.",
-      "Review the result in the Document Types table before using it in client work."
-    ],
-    "search": "Document Types standardize how uploads are classified and which fields can be extracted. The table shows name, category, description, field count, status, and actions; system definitions are marked System. Categories can be filtered or managed, and new firm-specific document types can be added. Open Settings, choose Documents, and select Document Types. Filter by category or select Manage categories when the classification list needs maintenance. Select New document type, or Edit beside an existing definition. Set the name, category, description, fields, and active state offered by the editor. Review the result in the Document Types table before using it in client work.",
+    "answer": "Document Types standardize how files are classified and which information AssurePro can capture for that type. Firm administrators can maintain categories and create firm-specific document types with a name, description, fields, and active status. System-provided definitions are identified separately from the firm's own definitions.",
+    "search": "Document Types standardize how files are classified and which information AssurePro can capture for that type. Firm administrators can maintain categories and create firm-specific document types with a name, description, fields, and active status. System-provided definitions are identified separately from the firm's own definitions.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -380,18 +382,8 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Documents",
     "title": "What is available under Work Types in Documents settings?",
     "description": "Work Types defines the selectable work classifications used when staff create intake templates for bookkeeping, audit, accounting, advisory, and tax work. The table shows Code, Label, Description,…",
-    "answer": "Work Types defines the selectable work classifications used when staff create intake templates for bookkeeping, audit, accounting, advisory, and tax work. The table shows Code, Label, Description, Type, Active status, and Actions. AssurePro includes system types such as Monthly Bookkeeping, Quarterly Bookkeeping, Financial Statement Audit, Financial Statement Review, Financial Statement Compilation, Employee Benefit Plan Audit, Advisory Engagement, and tax-return types such as 1040. System types can be activated or deactivated but cannot be renamed or deleted; firm-created custom types can be maintained separately.",
-    "steps": [
-      "Open Settings, choose Documents, and select Work Types.",
-      "Search by code, label, or description; enable Show inactive when reviewing a type that was previously disabled.",
-      "Use the Active switch to control whether a system or custom type is available for new intake-template work.",
-      "Select Edit to review the fields that are editable for the chosen type; system identifiers remain protected.",
-      "To add a firm-specific classification, select New work type.",
-      "Enter a unique Code of no more than 20 characters, a client-friendly Label, and an optional Description of up to 500 characters explaining when the type applies.",
-      "Create the type, then confirm it appears as Custom and is active before using it in an intake template.",
-      "Delete a custom type only when it is no longer required; system types display a disabled delete action."
-    ],
-    "search": "Work Types defines the selectable work classifications used when staff create intake templates for bookkeeping, audit, accounting, advisory, and tax work. The table shows Code, Label, Description, Type, Active status, and Actions. AssurePro includes system types such as Monthly Bookkeeping, Quarterly Bookkeeping, Financial Statement Audit, Financial Statement Review, Financial Statement Compilation, Employee Benefit Plan Audit, Advisory Engagement, and tax-return types such as 1040. System types can be activated or deactivated but cannot be renamed or deleted; firm-created custom types can be maintained separately. Open Settings, choose Documents, and select Work Types. Search by code, label, or description; enable Show inactive when reviewing a type that was previously disabled. Use the Active switch to control whether a system or custom type is available for new intake-template work. Select Edit to review the fields that are editable for the chosen type; system identifiers remain protected. To add a firm-specific classification, select New work type. Enter a unique Code of no more than 20 characters, a client-friendly Label, and an optional Description of up to 500 characters explaining when the type applies. Create the type, then confirm it appears as Custom and is active before using it in an intake template. Delete a custom type only when it is no longer required; system types display a disabled delete action.",
+    "answer": "Work Types defines the classifications available when the firm creates document-intake templates for bookkeeping, audit, accounting, advisory, and tax work. AssurePro includes system-provided work types, and firm administrators can create additional custom types with their own code, label, and description. A type can be made inactive when it should no longer be used for new intake work.",
+    "search": "Work Types defines the classifications available when the firm creates document-intake templates for bookkeeping, audit, accounting, advisory, and tax work. AssurePro includes system-provided work types, and firm administrators can create additional custom types with their own code, label, and description. A type can be made inactive when it should no longer be used for new intake work.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -401,15 +393,15 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Documents",
     "title": "How is a folder template applied to a client?",
     "description": "A template creates the firm's reusable folder structure inside a client workspace. Open the client and choose Documents. Select Apply Template and choose the appropriate firm template. Review the…",
-    "answer": "A template creates the firm's reusable folder structure inside a client workspace.",
+    "answer": "Apply a Folder Template from the client's Documents tab to create the firm's standard folders in that client workspace. The template adds its saved folder structure without preventing firm users from creating additional client-specific folders.",
     "steps": [
       "Open the client and choose Documents.",
-      "Select Apply Template and choose the appropriate firm template.",
+      "Select Apply Template and choose the Folder Template created for that client's service, year, or reporting period.",
       "Review the folders that will be added and apply the template.",
       "Use New Folder when the client needs an additional folder that is not part of the standard template.",
       "For future clients, choose the default folder template during client creation or configure it in Settings > Onboarding Defaults."
     ],
-    "search": "A template creates the firm's reusable folder structure inside a client workspace. Open the client and choose Documents. Select Apply Template and choose the appropriate firm template. Review the folders that will be added and apply the template. Use New Folder when the client needs an additional folder that is not part of the standard template. For future clients, choose the default folder template during client creation or configure it in Settings > Onboarding Defaults.",
+    "search": "Apply a Folder Template from the client's Documents tab to create the firm's standard folders in that client workspace. The template adds its saved folder structure without preventing firm users from creating additional client-specific folders. Open the client and choose Documents. Select Apply Template and choose the Folder Template created for that client's service, year, or reporting period. Review the folders that will be added and apply the template. Use New Folder when the client needs an additional folder that is not part of the standard template. For future clients, choose the default folder template during client creation or configure it in Settings > Onboarding Defaults.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -419,16 +411,16 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Documents",
     "title": "How do I request documents from a client?",
     "description": "A document request tells the client exactly what the firm needs and keeps the response attached to the client workspace. Open the client and choose Documents. Select Request and describe each document…",
-    "answer": "A document request tells the client exactly what the firm needs and keeps the response attached to the client workspace.",
+    "answer": "A document request tells the client user what the firm needs, where to provide it, and when it is due. The request and the files supplied in response remain connected to the client workspace so firm users can monitor what is outstanding without relying on separate email follow-up.",
     "steps": [
       "Open the client and choose Documents.",
       "Select Request and describe each document or item needed.",
-      "Set any request details, destination, or due information offered by the form.",
+      "Select the folder where the returned files should be stored, set the due date, and complete the recipient and request fields shown in the form.",
       "Review the recipient and send the request.",
       "The client receives the request through the client experience and uploads the files against it.",
       "Return to the Requests view to monitor the outstanding item; completed uploads remain available in the client's Documents workspace."
     ],
-    "search": "A document request tells the client exactly what the firm needs and keeps the response attached to the client workspace. Open the client and choose Documents. Select Request and describe each document or item needed. Set any request details, destination, or due information offered by the form. Review the recipient and send the request. The client receives the request through the client experience and uploads the files against it. Return to the Requests view to monitor the outstanding item; completed uploads remain available in the client's Documents workspace.",
+    "search": "A document request tells the client user what the firm needs, where to provide it, and when it is due. The request and the files supplied in response remain connected to the client workspace so firm users can monitor what is outstanding without relying on separate email follow-up. Open the client and choose Documents. Select Request and describe each document or item needed. Select the folder where the returned files should be stored, set the due date, and complete the recipient and request fields shown in the form. Review the recipient and send the request. The client receives the request through the client experience and uploads the files against it. Return to the Requests view to monitor the outstanding item; completed uploads remain available in the client's Documents workspace.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -438,7 +430,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Documents",
     "title": "What happens if a client doesn't respond to a document request?",
     "description": "AssurePro can continue following up through the configured Document requests reminder schedule, so staff do not have to rely only on manual chasing. Open Settings and choose Reminders. Confirm that…",
-    "answer": "AssurePro can continue following up through the configured Document requests reminder schedule, so staff do not have to rely only on manual chasing.",
+    "answer": "AssurePro follows the firm's configured Document requests reminder schedule while the request remains outstanding. Firm users can monitor the request in the client workspace and follow up directly when the automated reminder sequence has finished or the client needs additional help.",
     "steps": [
       "Open Settings and choose Reminders.",
       "Confirm that Document requests reminders are enabled.",
@@ -446,21 +438,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Monitor the request from the client's Documents > Requests view.",
       "If the request remains outstanding after the automated sequence, contact the client from Communications and document the follow-up in the shared conversation history."
     ],
-    "search": "AssurePro can continue following up through the configured Document requests reminder schedule, so staff do not have to rely only on manual chasing. Open Settings and choose Reminders. Confirm that Document requests reminders are enabled. Review or edit the initial delay, repeat interval, and total number of reminders. Monitor the request from the client's Documents > Requests view. If the request remains outstanding after the automated sequence, contact the client from Communications and document the follow-up in the shared conversation history.",
-    "read": "2 min",
-    "path": "assurepro/index.html"
-  },
-  {
-    "id": "pro-what-is-the-difference-between-request-import-and-upload-58",
-    "product": "pro",
-    "category": "Documents",
-    "title": "What is the difference between Request, Import, and Upload?",
-    "description": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the…",
-    "answer": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored.",
-    "more": [
-      "Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action."
-    ],
-    "search": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the selected client workspace. Choose the action based on who currently has the file and where it is stored. Example: use Request when the client still holds a W-2, Import when it already exists in the firm's connected OneDrive or Dropbox, and Upload when a staff member has the file locally. In every case, select the correct client and destination folder before completing the action.",
+    "search": "AssurePro follows the firm's configured Document requests reminder schedule while the request remains outstanding. Firm users can monitor the request in the client workspace and follow up directly when the automated reminder sequence has finished or the client needs additional help. Open Settings and choose Reminders. Confirm that Document requests reminders are enabled. Review or edit the initial delay, repeat interval, and total number of reminders. Monitor the request from the client's Documents > Requests view. If the request remains outstanding after the automated sequence, contact the client from Communications and document the follow-up in the shared conversation history.",
     "read": "2 min",
     "path": "assurepro/index.html"
   }

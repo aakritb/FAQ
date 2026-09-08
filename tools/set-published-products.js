@@ -123,7 +123,7 @@ for (const key of Object.keys(PRODUCTS)) {
 
   for (const [key, { dir }] of Object.entries(PRODUCTS)) {
     const plain = `<button class="hc-product" type="button" data-product="${key}">`;
-    const soon = `<button class="hc-product hc-product-soon" type="button" data-product="${key}" data-soon="${dir}">`;
+    const soon = `<button class="hc-product hc-product-soon" type="button" data-product="${key}" data-soon="${dir}" disabled aria-disabled="true">`;
     if (PUBLISHED[key]) {
       if (html.includes(soon)) html = html.split(soon).join(plain);
     } else {
@@ -150,7 +150,7 @@ for (const key of Object.keys(PRODUCTS)) {
     "      empty.innerHTML=query.trim()\n" +
     "        ? '<strong>No exact match found</strong>Try a shorter phrase, another category, or email support@assureone.ai.'\n" +
     "        : soon\n" +
-    "          ? '<strong>'+soon.name+' answers are coming soon</strong>We are reviewing every '+soon.name+' answer before it goes out. <a href=\"'+soon.dir+'/index.html\">See what is coming</a>, or email support@assureone.ai.'\n" +
+    "          ? '<strong>'+soon.name+' answers are coming soon</strong>We are reviewing every '+soon.name+' answer before it goes out. Email support@assureone.ai if you need assistance.'\n" +
     "          : '<strong>Nothing here yet</strong>There are no articles in this section so far. Try another filter, or email support@assureone.ai.';";
   const canonical = EMPTY_NEW;
   if (!html.includes(canonical)) {
@@ -169,7 +169,7 @@ for (const key of Object.keys(PRODUCTS)) {
 
   // clicking one opens its notice instead of filtering to nothing
   const HANDLER_OLD = "document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});";
-  const HANDLER_NEW = "document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.soon){location.href=b.dataset.soon+'/index.html';return;}product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});";
+  const HANDLER_NEW = "document.getElementById('hc-products').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.soon)return;product=product===b.dataset.product?'':b.dataset.product;visibleLimit=12;render();});";
   if (html.includes(HANDLER_OLD)) html = html.replace(HANDLER_OLD, () => HANDLER_NEW);
 
   if (!html.includes(".hc-soon{")) {
