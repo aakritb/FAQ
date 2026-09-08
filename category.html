@@ -71,8 +71,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   title=journey.title;description=journey.description;
   crumbTrail=`<span class="current">${H.esc(journey.title)}</span>`;
   document.getElementById('category-eyebrow').textContent='AssurePro guidance';
-  const items=articlesFor(journey.guides);
-  contentHtml=journey.guides.map(gid=>{const g=T.guideById(gid);const its=articlesFor([gid]);if(!its.length)return'';return `<section class="article-list-section"><p class="overline">${H.esc(T.collectionOfGuide(gid).label)}</p><h2><span class="section-icon">${H.topicIcon(gid)}</span>${H.esc(g.label)}</h2><div class="article-list">${its.map(card).join('')}</div></section>`}).join('');
+  // Same guide-card grid as a module page — a journey is just a curated
+  // subset of guides, not a different navigation depth. Clicking a card
+  // here goes to the guide page, exactly like clicking one from a module.
+  contentHtml=`<div class="article-list guide-grid">${journey.guides.map(gid=>guideCard(T.guideById(gid),articlesFor([gid]).length)).join('')}</div>`;
  } else {
   title='All AssurePro guidance';description='Browse clear, practical answers for using AssurePro, organized the way the product itself is organized.';
   crumbTrail=`<span class="current">All AssurePro</span>`;
