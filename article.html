@@ -6,7 +6,10 @@
 <div class="article-shell">
   <aside class="article-side" aria-label="AssurePro topics"><a class="back-link" href="index.html">← All AssurePro help</a><nav class="category-nav" id="category-nav"></nav></aside>
   <main id="ar-main"><article class="article-doc" id="article-doc"></article><div class="article-footer"><section class="helpful"><p id="feedback-label">Was this article helpful?</p><div class="feedback-buttons"><button type="button" data-feedback="yes">Yes</button><button type="button" data-feedback="no">Not yet</button></div></section><nav class="pager" id="pager" aria-label="Previous and next articles"></nav><section class="related-section" id="related-section" aria-labelledby="related-heading"><h2 id="related-heading">Related articles</h2><div class="article-list" id="related-list"></div></section></div></main>
-  <aside class="article-toc" id="article-toc" aria-label="On this page"></aside>
+  <aside class="article-toc" aria-label="Page tools">
+    <div class="article-save"><strong>Save</strong><button class="save-pdf" type="button" aria-label="Save this article as a PDF"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Save as PDF</span></button></div>
+    <div id="article-toc"></div>
+  </aside>
 </div>
 <footer class="site-footer"><div class="page-width"><span>© 2026 AssureOne Technologies LLC. All rights reserved.</span><span>Need help? <a href="mailto:support@assureone.ai">support@assureone.ai</a></span></div></footer>
 <script src="questions-1.js"></script><script src="questions-2.js"></script><script src="questions-3.js"></script><script src="questions-4.js"></script><script src="questions-5.js"></script><script src="questions-6.js"></script><script src="assets/js/taxonomy.js"></script><script src="assets/js/help-center.js"></script>
@@ -35,6 +38,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const relatedSection=document.getElementById('related-section');
  if(related.length){document.getElementById('related-list').innerHTML=related.map(a=>`<a class="article-card" href="${H.articleUrl(a.id)}"><strong>${H.esc(a.title)}</strong></a>`).join('')}else relatedSection.hidden=true;
  document.querySelectorAll('.copy-link').forEach(btn=>btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href)}catch(e){}const s=btn.querySelector('span');s.textContent='Link copied';setTimeout(()=>s.textContent='Copy link',1500)}));
+ document.querySelector('.save-pdf')?.addEventListener('click',()=>window.print());
  document.querySelectorAll('[data-feedback]').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('feedback-label').textContent='Thank you — your feedback helps us improve this guidance.';document.querySelector('.feedback-buttons').hidden=true}));
  document.querySelector('.nav-guides a.active')?.scrollIntoView({block:'center'});
 });
