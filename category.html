@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded',()=>{
  const collection=guide?T.collectionOfGuide(guideId):(collectionId?T.TAXONOMY.find(c=>c.id===collectionId):null);
 
  function articlesFor(guideIds){return A.filter(a=>guideIds.includes(T.guideOfArticle(a.id)))}
- function card(a){return `<a class="article-card" href="${H.articleUrl(a.id)}"><strong>${H.esc(a.title)}</strong><p>${H.esc(a.answer)}</p><span class="meta"><span>${a.read} read</span><span>→</span></span></a>`}
+ function card(a){return `<a class="article-card" href="${H.articleUrl(a.id)}"><strong>${H.esc(a.title)}</strong></a>`}
  function guideCard(g,count){return count
-   ?`<a class="article-card guide-card" href="${T.guideUrl(g.id)}"><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong><span class="meta"><span>${count} article${count===1?'':'s'}</span><span>→</span></span></a>`
-   :`<button class="article-card guide-card disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong><span class="meta"><span>Content in review</span></span></button>`}
+   ?`<a class="article-card guide-card" href="${T.guideUrl(g.id)}"><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong><span class="meta">${count} article${count===1?'':'s'}</span></a>`
+   :`<button class="article-card guide-card disabled" data-coming-soon type="button"><span class="soon-dot">Coming soon</span><span class="guide-card-icon">${H.topicIcon(g.id)}</span><strong>${H.esc(g.label)}</strong><span class="meta">Content in review</span></button>`}
 
  let title,description,crumbTrail,contentHtml;
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   crumbTrail=`<span class="current">All AssurePro</span>`;
   document.getElementById('category-eyebrow').textContent='AssurePro guidance';
   document.getElementById('category-stats').innerHTML=`<span>${A.length} articles</span><span>${T.TAXONOMY.length} collections</span>`;
-  contentHtml=`<div class="article-list guide-grid">${T.TAXONOMY.map(c=>{const n=articlesFor(c.guides.map(g=>g.id)).length;return `<a class="article-card guide-card" href="${T.collectionUrl(c.id)}"><span class="guide-card-icon">${H.topicIcon(c.id)}</span><strong>${H.esc(c.label)}</strong><span class="meta"><span>${n} article${n===1?'':'s'}</span><span>→</span></span></a>`}).join('')}</div>`;
+  contentHtml=`<div class="article-list guide-grid">${T.TAXONOMY.map(c=>{const n=articlesFor(c.guides.map(g=>g.id)).length;return `<a class="article-card guide-card" href="${T.collectionUrl(c.id)}"><span class="guide-card-icon">${H.topicIcon(c.id)}</span><strong>${H.esc(c.label)}</strong><span class="meta">${n} article${n===1?'':'s'}</span></a>`}).join('')}</div>`;
  }
 
  document.title=`${title} | AssureOne Help Center`;

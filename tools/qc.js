@@ -65,10 +65,11 @@ else ok('every article suggests related articles instead of dead-ending');
 section('8. Feature-based taxonomy (Collection -> Guide -> Article)');
 function loadTaxonomy(){const ctx={window:{}};vm.runInNewContext(read('assets/js/taxonomy.js'),ctx,{filename:'assets/js/taxonomy.js'});return ctx.window.HelpCenterTaxonomy}
 const T=loadTaxonomy();
-for(const p of pages)if(!read(p).includes('assets/js/taxonomy.js'))fail(`${p}: taxonomy.js is not loaded, so guide and collection navigation will not work`);
+const taxonomyPages=['category.html','article.html'];
+for(const p of taxonomyPages)if(!read(p).includes('assets/js/taxonomy.js'))fail(`${p}: taxonomy.js is not loaded, so guide and collection navigation will not work`);
 if(!T)fail('assets/js/taxonomy.js did not export window.HelpCenterTaxonomy');
 else{
-  ok('taxonomy.js is loaded on every page and exports HelpCenterTaxonomy');
+  ok('taxonomy.js is loaded on every page that renders guide/collection navigation and exports HelpCenterTaxonomy');
   const guideIds=new Set(),labels=[];
   for(const c of T.TAXONOMY){labels.push(c.label);for(const g of c.guides){if(guideIds.has(g.id))fail(`guide id '${g.id}' is used by more than one guide`);guideIds.add(g.id);labels.push(g.label)}}
   const numbering=/\b\d+(\.\d+){1,}\b/;

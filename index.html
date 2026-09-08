@@ -37,19 +37,14 @@
       <div class="section-heading"><div><p class="overline">Browse AssurePro</p><h2 id="journey-heading">What would you like to do?</h2><p>Start with your goal, then open the exact guidance you need.</p></div></div>
       <div class="journey-grid" id="journey-grid"></div>
     </section>
-    <section aria-labelledby="featured-heading">
-      <div class="section-heading"><div><p class="overline">Recommended</p><h2 id="featured-heading">Start with the essentials</h2></div><a class="text-link" href="category.html?guide=gs-intro">View all getting-started help →</a></div>
-      <div class="featured-grid"><div class="featured-main" id="featured-main"></div><div class="featured-list" id="featured-list"></div></div>
-    </section>
   </div>
 </main>
 <footer class="site-footer"><div class="page-width"><span>© 2026 AssureOne Technologies LLC. All rights reserved.</span><span>Need help? <a href="mailto:support@assureone.ai">support@assureone.ai</a></span></div></footer>
 <script src="questions-1.js"></script><script src="questions-2.js"></script><script src="questions-3.js"></script><script src="questions-4.js"></script><script src="questions-5.js"></script><script src="questions-6.js"></script>
-<script src="assets/js/taxonomy.js"></script>
 <script src="assets/js/help-center.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
-  const H=window.HelpCenter, A=H.proArticles();
+  const H=window.HelpCenter;
   const journeys=[
     ['firm-admin','settings','Get started as a firm administrator','Set up your firm, users, services, workflows, portal, and core settings.'],
     ['team-member','compass','Get started as a team member','Learn the workspace, clients, tasks, documents, communications, time tracking, and daily work.'],
@@ -58,13 +53,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     ['ai','sparkle','AI & automation','Use AI Agent, Daily Briefing, AI Credits, reminders, templates, and AI-assisted workflows.'],
     ['reference','shield','Reference & support','Integrations, security, account access, compliance, troubleshooting, FAQs, and support.']
   ];
-  document.getElementById('journey-grid').innerHTML=journeys.map(j=>`<a class="journey-card" href="category.html?journey=${j[0]}"><span class="journey-icon">${H.icon(j[1])}</span><h3>${j[2]}</h3><p>${j[3]}</p><span class="journey-link">Explore guidance <span>→</span></span></a>`).join('');
-  const featured=['pro-what-is-assurepro-1','pro-how-do-i-create-a-new-record-quickly-173','pro-how-do-i-create-and-send-an-engagement-letter-82','pro-how-is-a-new-client-added-directly-31'].map(id=>A.find(a=>a.id===id)).filter(Boolean);
-  const first=featured[0]||A[0];
-  document.getElementById('featured-main').innerHTML=`<span class="featured-label">Featured guide</span><h3>${H.esc(first.title)}</h3><p>${H.esc(first.answer)}</p><a class="text-link" href="${H.articleUrl(first.id)}">Read the guide →</a>`;
-  const T=window.HelpCenterTaxonomy;
-  const guideLabel=a=>{const g=T.guideOfArticle(a.id);return g?T.guideById(g).label:a.category};
-  document.getElementById('featured-list').innerHTML=featured.slice(1).map(a=>`<a href="${H.articleUrl(a.id)}"><strong>${H.esc(a.title)}</strong><span class="meta"><span class="tag">AssurePro</span><span>${H.esc(guideLabel(a))}</span><span>·</span><span>${a.read} read</span></span></a>`).join('');
+  document.getElementById('journey-grid').innerHTML=journeys.map(j=>`<a class="journey-card" href="category.html?journey=${j[0]}"><span class="journey-icon">${H.icon(j[1])}</span><h3>${j[2]}</h3><p>${j[3]}</p></a>`).join('');
 });
 </script>
 </body></html>
