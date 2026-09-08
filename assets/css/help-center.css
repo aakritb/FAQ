@@ -80,9 +80,9 @@ button{color:inherit}
 .media-block{margin:26px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#f7f7fb}.media-block img{display:block;width:100%;height:auto}.media-caption{padding:10px 14px;color:#6e7591;font-size:13px;background:#fff}
 .article-toc{font-size:14px}.article-toc strong{display:block;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#7f859f;margin-bottom:11px}.article-toc a{display:block;border-left:1px solid #d9dbe7;padding:7px 0 7px 14px;color:#626a85}.article-toc a:hover,.article-toc a.active{border-left-color:var(--brand);color:#4934cc}
 .article-save{margin-bottom:24px}.save-pdf{display:flex;align-items:center;gap:9px;width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 13px;color:#3f455d;font:inherit;font-size:13.5px;font-weight:650;cursor:pointer;transition:.15s}.save-pdf svg{width:16px;height:16px;flex:none}.save-pdf:hover{border-color:#b7adff;color:#4934cc}
-@media print{.topbar,.breadcrumb-wrap,.article-side,.article-toc,.article-footer,.site-footer,.back-link{display:none!important}.article-shell{display:block;padding:0}.article-doc{border:none;box-shadow:none;padding:0}.copy-link{display:none}}
-.article-footer{margin-top:18px}
-.related-section{margin-top:36px}.related-section h2{font-size:20px;margin:0 0 14px;letter-spacing:-.02em}
+@media print{.topbar,.breadcrumb-wrap,.article-side,.article-toc,.site-footer,.back-link{display:none!important}.article-shell{display:block;padding:0}.article-doc{border:none;box-shadow:none;padding:0}.copy-link{display:none}}
+.related-section{margin-bottom:24px}.related-section strong{display:block;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#7f859f;margin-bottom:11px}
+.article-toc .related-section .article-list{display:flex;flex-direction:column;gap:8px}.article-toc .related-section .article-card{padding:12px 14px;min-height:auto}.article-toc .related-section .article-card strong{display:block;font-size:13.5px;font-weight:650;letter-spacing:normal;text-transform:none;color:var(--ink);margin-bottom:0}
 .site-footer{border-top:1px solid var(--line);background:#fff}.site-footer .page-width{min-height:90px;display:flex;justify-content:space-between;align-items:center;gap:22px;color:#7b8199;font-size:13px}.site-footer a:hover{color:var(--brand)}
 .mobile-menu{display:none}
 [hidden]{display:none!important}
