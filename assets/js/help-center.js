@@ -11,7 +11,6 @@
   const categoryUrl=category=>`category.html?topic=${encodeURIComponent(slug(category))}`;
   const categoryOfSlug=s=>[...new Set(proArticles().map(a=>a.category))].find(c=>slug(c)===s);
 
-  function iconCopy(){return '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.5" stroke="currentColor" stroke-width="1.8"/></svg>'}
   // A small stroke-based icon set (matches the search/copy icon style: 24x24,
   // fill:none, currentColor) so cards read at a glance instead of relying on
   // a number or a title alone.
@@ -78,7 +77,6 @@
   function topicIcon(id){return icon(TOPIC_ICONS[id]||'file')}
   function fallbackCopy(text){const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.cssText='position:fixed;opacity:0';document.body.append(t);t.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}
   function bindSupport(){qa('.support-copy').forEach(btn=>btn.addEventListener('click',async()=>{let ok=fallbackCopy(EMAIL);if(!ok&&navigator.clipboard){try{await navigator.clipboard.writeText(EMAIL);ok=true}catch(e){}}const label=q('.support-label',btn);btn.classList.toggle('copied',ok);if(label)label.textContent=ok?'Email copied':'Contact support';btn.setAttribute('aria-label',ok?`${EMAIL} copied`:`Copy ${EMAIL} to clipboard`);setTimeout(()=>{btn.classList.remove('copied');if(label)label.textContent='Contact support';btn.setAttribute('aria-label',`Copy ${EMAIL} to clipboard`)},3200)}))}
-  function bindCopyLink(){qa('.copy-link').forEach(btn=>btn.addEventListener('click',async()=>{let ok=fallbackCopy(location.href);if(!ok&&navigator.clipboard){try{await navigator.clipboard.writeText(location.href);ok=true}catch(e){}}const text=q('span',btn);if(text)text.textContent=ok?'Link copied':'Copy link';setTimeout(()=>{if(text)text.textContent='Copy link'},1600)}))}
   function resultMarkup(a){return `<a class="search-result" href="${articleUrl(a.id)}"><strong>${esc(a.title)}</strong><small>AssurePro · ${esc(a.category)}</small></a>`}
   function bindSearch(){qa('[data-search]').forEach(input=>{const panel=input.parentElement.querySelector('.search-panel');if(!panel)return;const run=()=>{const term=input.value.trim().toLowerCase();if(term.length<2){panel.hidden=true;panel.innerHTML='';return}const words=term.split(/\s+/);const hits=proArticles().map((a,order)=>{const title=a.title.toLowerCase(),category=a.category.toLowerCase(),haystack=(a.title+' '+a.search+' '+a.category).toLowerCase();if(!words.every(w=>haystack.includes(w)))return null;let score=title.includes(term)?100:0;for(const w of words){if(title.includes(w))score+=12;else if(category.includes(w))score+=5;else score+=1}return{a,score,order}}).filter(Boolean).sort((x,y)=>y.score-x.score||x.order-y.order).slice(0,8).map(x=>x.a);panel.innerHTML=hits.map(resultMarkup).join('')||'<div class="search-empty">No matching AssurePro articles found.</div>';panel.hidden=false};input.addEventListener('input',run);input.addEventListener('focus',run);input.addEventListener('keydown',e=>{if(e.key==='Escape')panel.hidden=true;if(e.key==='Enter'){const first=q('a',panel);if(first)location.href=first.href}})});document.addEventListener('click',e=>{if(!e.target.closest('.top-search,.hero-search'))qa('.search-panel').forEach(p=>p.hidden=true)});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();(q('.hero-search input')||q('.top-search input'))?.focus()}})}
   function bindComingSoon(){qa('[data-coming-soon]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();el.animate([{transform:'translateY(0)'},{transform:'translateY(-2px)'},{transform:'translateY(0)'}],{duration:280});el.setAttribute('title','Coming soon')}))}
@@ -104,26 +102,26 @@
         return `<div class="nav-guide${cls ? ' active' : ''}"><a href="${guideHref}" class="nav-guide-link ${cls}"><span class="nav-topic-group"><span class="nav-topic-icon">${topicIcon(g.id)}</span><span>${esc(g.label)}</span></span>${n ? `<small>${n}</small>` : '<small class="soon">Soon</small>'}</a>${articleItems ? `<div class="nav-articles">${articleItems}</div>` : ''}</div>`;
       }).join('');
       return `<div class="nav-collection${isOpen ? ' open' : ''}">
-        <button type="button" class="nav-collection-toggle${c.id === (activeCollectionId || (activeCollection && activeCollection.id)) ? ' active' : ''}" aria-expanded="${isOpen ? 'true' : 'false'}">
+        <div class="nav-collection-toggle${c.id === (activeCollectionId || (activeCollection && activeCollection.id)) ? ' active' : ''}">
           <a href="${T.collectionUrl(c.id)}">${esc(c.label)}</a>
-          <span class="nav-caret">${icon('chevron')}</span>
-        </button>
+          <button type="button" class="nav-caret" aria-label="${isOpen ? 'Collapse' : 'Expand'} ${esc(c.label)}" aria-expanded="${isOpen ? 'true' : 'false'}">${icon('chevron')}</button>
+        </div>
         <div class="nav-guides">${guidesHtml}</div>
       </div>`;
     }).join('');
-    container.querySelectorAll('.nav-collection-toggle').forEach((btn) => {
+    container.querySelectorAll('.nav-caret').forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        if (e.target.closest('a')) return; // let the collection link navigate
         e.preventDefault();
         const row = btn.closest('.nav-collection');
         const wasOpen = row.classList.contains('open');
-        container.querySelectorAll('.nav-collection.open').forEach((el) => { if (el !== row) el.classList.remove('open'); });
+        container.querySelectorAll('.nav-collection.open').forEach((el) => { if (el !== row) { el.classList.remove('open'); const caret=el.querySelector('.nav-caret');caret?.setAttribute('aria-expanded','false');caret?.setAttribute('aria-label',`Expand ${el.querySelector('.nav-collection-toggle a')?.textContent||'topic'}`); } });
         row.classList.toggle('open', !wasOpen);
         btn.setAttribute('aria-expanded', String(!wasOpen));
+        btn.setAttribute('aria-label',`${wasOpen ? 'Expand' : 'Collapse'} ${row.querySelector('.nav-collection-toggle a')?.textContent||'topic'}`);
       });
     });
   }
-  function renderBranchTree(container, moduleId, activeHeaderId, activeArticleId) {
+  function renderBranchTree(container, moduleId, activeHeaderId, activeArticleId, showAllTopics = true) {
     const B = window.AssureProBranches;
     if (!B || !container) return;
     const module = B.moduleById(moduleId);
@@ -135,7 +133,7 @@
       const listId = `branch-${header.id}`;
       const children = items.map(article => `<a class="nav-article${article.id === activeArticleId ? ' current' : ''}" href="${articleUrl(article.id)}"${article.id === activeArticleId ? ' aria-current="page"' : ''}>${esc(article.title)}</a>`).join('');
       return `<div class="branch-header${active ? ' open active' : ''}${items.length ? '' : ' unavailable'}"><button class="branch-header-toggle" type="button" aria-expanded="${active ? 'true' : 'false'}" aria-controls="${listId}"${items.length ? '' : ' disabled'}><span class="nav-topic-group"><span class="nav-topic-icon">${topicIcon(header.id)}</span><span>${esc(header.label)}</span></span><small>${items.length || 'Soon'}</small><span class="branch-caret" aria-hidden="true">${icon('chevron')}</span></button>${items.length ? `<div class="nav-articles branch-article-drawer" id="${listId}">${children}</div>` : ''}</div>`;
-    }).join('')}</div><a class="branch-all-link" href="category.html">Browse all AssurePro topics</a>`;
+    }).join('')}</div>${showAllTopics ? '<a class="branch-all-link" href="category.html">Browse all AssurePro topics</a>' : ''}`;
     container.querySelectorAll('.branch-header-toggle:not(:disabled)').forEach((button) => {
       button.addEventListener('click', () => {
         const row = button.closest('.branch-header');
@@ -150,7 +148,7 @@
       });
     });
   }
-  function boot(){bindSupport();bindCopyLink();bindSearch();bindComingSoon()}
-  window.HelpCenter={articles,proArticles,esc,slug,articleUrl,categoryUrl,categoryOfSlug,boot,PRODUCT_LABEL,iconCopy,icon,topicIcon,renderSidebarTree,renderBranchTree};
+  function boot(){bindSupport();bindSearch();bindComingSoon()}
+  window.HelpCenter={articles,proArticles,esc,slug,articleUrl,categoryUrl,categoryOfSlug,boot,bindComingSoon,PRODUCT_LABEL,icon,topicIcon,renderSidebarTree,renderBranchTree};
   document.addEventListener('DOMContentLoaded',boot);
 })();

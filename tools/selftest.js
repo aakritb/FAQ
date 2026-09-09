@@ -19,7 +19,13 @@ const cases=[
  ['reviewed Word content loses an answer','assets/js/reviewed-content.js',s=>s.replace('"pro-what-is-assurepro-1":','"deleted-review-answer":'),'missing their reviewed Word answer'],
  ['a new branch header ships with no icon mapping','assets/js/help-center.js',s=>s.replace("'fa-understand':'flag',",''),'no icon mapping'],
  ['two headers in the same module share an icon','assets/js/help-center.js',s=>s.replace("'fa-firm':'settings',","'fa-firm':'flag',"),'same icon on more than one header'],
- ['numbered steps restart at 1 after a nested list instead of continuing','article.html',s=>s.replace('stepStart>1?` start="${stepStart}"`:\'\'','false'),'restart at 1 instead of continuing']
+ ['numbered steps restart at 1 after nested detail','article.html',s=>s.replace('data-step="${stepNumber+itemIndex}"','data-step="1"'),'not rendered as one continuous procedure'],
+ ['Article Tools is added back','article.html',s=>s.replace('<main id="ar-main">','<button class="save-pdf">Save as PDF</button><main id="ar-main">'),'Article Tools remains'],
+ ['On this page is added back','article.html',s=>s.replace('<main id="ar-main">','<div id="article-toc">On this page</div><main id="ar-main">'),'removed article chrome remains'],
+ ['Quick answer card is added back','article.html',s=>s.replace('<main id="ar-main">','<section id="quick-answer">Quick answer</section><main id="ar-main">'),'removed article chrome remains'],
+ ['article Copy link is added back','article.html',s=>s.replace('<main id="ar-main">','<button class="copy-link">Copy article link</button><main id="ar-main">'),'removed article chrome remains'],
+ ['redundant article back link is added back','article.html',s=>s.replace('<nav class="category-nav" id="category-nav"></nav>','<a class="back-link">Back</a><nav class="category-nav" id="category-nav"></nav>'),'redundant back or browse navigation'],
+ ['invalid sidebar link is nested inside a button','assets/js/help-center.js',s=>s.replace('<div class="nav-collection-toggle${c.id','<button><a href="category.html">Topics</a></button><div class="nav-collection-toggle${c.id'),'nests a link inside a button']
 ];
 function make(){const d=fs.mkdtempSync(path.join(os.tmpdir(),'assureone-qc-'));for(const rel of files){const to=path.join(d,rel);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(path.join(ROOT,rel),to)}return d}
 let failed=0;

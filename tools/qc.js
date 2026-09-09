@@ -42,6 +42,12 @@ if(!app.includes("e.key==='Enter'"))fail('search does not open the first result 
 if(!articlePage.includes('B.articleHome(article.id)')||!articlePage.includes('renderBranchTree'))fail('article breadcrumb/sidebar is not connected to the six-branch learning structure');else ok('article breadcrumbs and branch navigation are connected');
 if(!articlePage.includes('media?.steps')||!articlePage.includes('media?.overview'))fail('article template is not ready for screenshots and overview media');else ok('article schema supports overview and step-specific media');
 if(!articlePage.includes("block.type==='list'")||!articlePage.includes("block.type==='steps'"))fail('reviewed bullets and numbered procedures are not rendered');else ok('reviewed bullets and numbered procedures are preserved');
+if(articlePage.includes('back-link')||!articlePage.includes('renderBranchTree(document.getElementById(\'category-nav\'),module.id,header.id,article.id,false)'))fail('article pages still expose redundant back or browse navigation');else ok('article pages use one clear breadcrumb and module-tree journey');
+if(/Article tools|save-pdf|Save as PDF/i.test(articlePage)||/\.save-pdf|\.article-save/.test(read('assets/css/help-center.css')))fail('Article Tools remains in the shared article experience');else ok('Article Tools is removed from every article');
+if(/article-tools-card|article-toc|On this page|quick-answer|Quick answer|copy-link|Copy article link/i.test(articlePage))fail('removed article chrome remains in the shared article template');else ok('On this page, Quick answer cards, and article Copy link are removed everywhere');
+if(!app.includes('branch-header-toggle')||!app.includes("row.classList.toggle('open', opening)"))fail('branch headers do not expand and collapse their article lists');else ok('branch headers expand and collapse their article lists');
+if(!app.includes('bindComingSoon,PRODUCT_LABEL'))fail('dynamically rendered Coming soon controls are not bound');else ok('dynamic Coming soon controls are bound');
+if(/<button[^>]*>[\s\S]{0,300}<a\s/i.test(app))fail('sidebar markup nests a link inside a button');else ok('sidebar controls avoid invalid nested interactions');
 if((hub.match(/class="support-copy"/g)||[]).length!==1)fail('homepage has a redundant support card or control');else ok('homepage has one always-available support control');
 
 section('6. Local asset links');
@@ -121,8 +127,8 @@ else{
   // for the step before it, not a new procedure. If article.html always starts a fresh <ol>
   // at 1, a reader sees "1, 2 … 1, 2 … 1" instead of one continuous 6-step walkthrough. This
   // affects 19 real articles (found via reviewed-content.js), so it is checked directly.
-  if(!articlePage.includes('stepStart>1')||!articlePage.includes('stepCount+=block.items.length'))fail('numbered steps interrupted by a nested list restart at 1 instead of continuing the sequence');
-  else ok('numbered steps continue across a nested list instead of restarting at 1');
+  if(!articlePage.includes('data-step="${stepNumber+itemIndex}"')||!articlePage.includes("listBlock(nested,'step-details')")||!css.includes('content:attr(data-step)'))fail('numbered steps interrupted by nested detail are not rendered as one continuous procedure');
+  else ok('split procedures keep continuous numbering and nested supporting pointers');
   const multiStepSections=[];
   for(const [articleId,entry] of Object.entries(reviewed||{})){const blocks=entry.blocks||[];let stepsInSection=0;for(const block of blocks){if(block.type==='heading')stepsInSection=0;else if(block.type==='steps'){stepsInSection++;if(stepsInSection>1)multiStepSections.push(articleId)}}}
   if(!multiStepSections.length)fail('no reviewed article exercises the multi-block numbered-steps case, so the continuation fix above has no real coverage');
