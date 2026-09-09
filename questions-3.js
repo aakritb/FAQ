@@ -123,16 +123,16 @@ window.ASSUREONE_ARTICLES.push(...[
     "category": "Workflow",
     "title": "Engagement Workflow views explained",
     "description": "Workflow provides Board, List, and Tasks views. Staff can select a workflow, search engagements, create a new engagement, customize displayed information, and open workflow configuration.",
-    "answer": "The Workflow area provides three main views for managing engagement work:",
+    "answer": "The Workflow module provides three main views for managing engagement work:",
     "more": [
       "Board — shows engagements by workflow stage and is useful for understanding where work is in the process and moving engagements between stages.",
       "List — displays engagement information in rows and is useful for searching, filtering, sorting, and comparing engagement details.",
       "Tasks — focuses on actionable tasks across engagements so firm users can review work that needs to be completed.",
       "Firm users can switch between these views without changing the underlying engagement.",
       "For example, a manager may use Board to identify work accumulating in Review, switch to List to compare due dates and assignments, and use Tasks to see the specific actions that are still outstanding.",
-      "The Workflow area also allows users to select a workflow, search for engagements, create a new engagement, customize the information displayed, and open the related workflow configuration where permitted."
+      "The Workflow module also allows users to select a workflow, search for engagements, create a new engagement, customize the information displayed, and open the related workflow configuration where permitted."
     ],
-    "search": "The Workflow area provides three main views for managing engagement work: Board — shows engagements by workflow stage and is useful for understanding where work is in the process and moving engagements between stages. List — displays engagement information in rows and is useful for searching, filtering, sorting, and comparing engagement details. Tasks — focuses on actionable tasks across engagements so firm users can review work that needs to be completed. Firm users can switch between these views without changing the underlying engagement. For example, a manager may use Board to identify work accumulating in Review, switch to List to compare due dates and assignments, and use Tasks to see the specific actions that are still outstanding. The Workflow area also allows users to select a workflow, search for engagements, create a new engagement, customize the information displayed, and open the related workflow configuration where permitted.",
+    "search": "The Workflow module provides three main views for managing engagement work: Board — shows engagements by workflow stage and is useful for understanding where work is in the process and moving engagements between stages. List — displays engagement information in rows and is useful for searching, filtering, sorting, and comparing engagement details. Tasks — focuses on actionable tasks across engagements so firm users can review work that needs to be completed. Firm users can switch between these views without changing the underlying engagement. For example, a manager may use Board to identify work accumulating in Review, switch to List to compare due dates and assignments, and use Tasks to see the specific actions that are still outstanding. The Workflow module also allows users to select a workflow, search for engagements, create a new engagement, customize the information displayed, and open the related workflow configuration where permitted.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -223,7 +223,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Firm SOP stores firm-wide procedures so preparers can follow one documented method. The page separates All, Pending, Active, Draft, and Rejected items and provides New SOP to start a procedure;…",
     "answer": "Firm SOP is the central location for maintaining firm-wide standard operating procedures in AssurePro.",
     "more": [
-      "It helps your firm document repeatable processes so partners, managers, reviewers, and firm users can follow a consistent approach when performing recurring work. The Firm SOP area separates procedures by status: All, Pending, Active, Draft, and Rejected. Use Draft while a procedure is being written or revised, Pending when it is ready for review, Active when it has been approved for firm use, and Rejected when it should not be used."
+      "It helps your firm document repeatable processes so partners, managers, reviewers, and firm users can follow a consistent approach when performing recurring work. The Firm SOP module separates procedures by status: All, Pending, Active, Draft, and Rejected. Use Draft while a procedure is being written or revised, Pending when it is ready for review, Active when it has been approved for firm use, and Rejected when it should not be used."
     ],
     "steps": [
       "Open Settings > Firm SOP.",
@@ -233,9 +233,9 @@ window.ASSUREONE_ARTICLES.push(...[
       "Move it to Pending when it is ready for review.",
       "Mark it Active once the procedure has been approved for use across the firm.",
       "Use Rejected when the procedure should not be adopted.",
-      "Use Firm SOP for procedures that apply broadly across the practice. Keep client-specific instructions in that client's AI SOP area so exceptions or unique client requirements remain separate from firm-wide standards."
+      "Use Firm SOP for procedures that apply broadly across the practice. Keep client-specific instructions in that client's AI SOP module so exceptions or unique client requirements remain separate from firm-wide standards."
     ],
-    "search": "Firm SOP is the central location for maintaining firm-wide standard operating procedures in AssurePro. It helps your firm document repeatable processes so partners, managers, reviewers, and firm users can follow a consistent approach when performing recurring work. The Firm SOP area separates procedures by status: All, Pending, Active, Draft, and Rejected. Use Draft while a procedure is being written or revised, Pending when it is ready for review, Active when it has been approved for firm use, and Rejected when it should not be used. Open Settings > Firm SOP. Select New SOP. Enter and document the procedure. Save it as Draft while it is being prepared. Move it to Pending when it is ready for review. Mark it Active once the procedure has been approved for use across the firm. Use Rejected when the procedure should not be adopted. Use Firm SOP for procedures that apply broadly across the practice. Keep client-specific instructions in that client's AI SOP area so exceptions or unique client requirements remain separate from firm-wide standards.",
+    "search": "Firm SOP is the central location for maintaining firm-wide standard operating procedures in AssurePro. It helps your firm document repeatable processes so partners, managers, reviewers, and firm users can follow a consistent approach when performing recurring work. The Firm SOP module separates procedures by status: All, Pending, Active, Draft, and Rejected. Use Draft while a procedure is being written or revised, Pending when it is ready for review, Active when it has been approved for firm use, and Rejected when it should not be used. Open Settings > Firm SOP. Select New SOP. Enter and document the procedure. Save it as Draft while it is being prepared. Move it to Pending when it is ready for review. Mark it Active once the procedure has been approved for use across the firm. Use Rejected when the procedure should not be adopted. Use Firm SOP for procedures that apply broadly across the practice. Keep client-specific instructions in that client's AI SOP module so exceptions or unique client requirements remain separate from firm-wide standards.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },

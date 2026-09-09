@@ -262,7 +262,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
     "blocks": [
       {
         "type": "paragraph",
-        "text": "The Settings area is organized into Firm, Work, Money, Communication, and Access. Search settings looks for matching Settings pages and lets you open the relevant page directly."
+        "text": "The Settings module is organized into Firm, Work, Money, Communication, and Access. Search settings looks for matching Settings pages and lets you open the relevant page directly."
       },
       {
         "type": "paragraph",
@@ -2398,7 +2398,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
   },
   "pro-what-views-are-available-for-engagement-work-64": {
     "category": "Workflow",
-    "answer": "The Workflow area provides three main views for managing engagement work:",
+    "answer": "The Workflow module provides three main views for managing engagement work:",
     "blocks": [
       {
         "type": "list",
@@ -2419,7 +2419,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "The Workflow area also allows users to select a workflow, search for engagements, create a new engagement, customize the information displayed, and open the related workflow configuration where permitted."
+        "text": "The Workflow module also allows users to select a workflow, search for engagements, create a new engagement, customize the information displayed, and open the related workflow configuration where permitted."
       }
     ]
   },
@@ -2608,7 +2608,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "The Firm SOP area separates procedures by status, including:"
+        "text": "The Firm SOP module separates procedures by status, including:"
       },
       {
         "type": "list",
@@ -2644,7 +2644,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "Use Firm SOP for procedures that apply broadly across the practice. Keep client-specific instructions in that client’s AI SOP area so exceptions or unique client requirements remain separate from firm-wide standards."
+        "text": "Use Firm SOP for procedures that apply broadly across the practice. Keep client-specific instructions in that client’s AI SOP module so exceptions or unique client requirements remain separate from firm-wide standards."
       }
     ]
   },
@@ -3787,7 +3787,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
   },
   "pro-how-is-the-billing-area-organized-93": {
     "category": "Billing & services",
-    "answer": "The Billing area is organized into three main tabs:",
+    "answer": "The Billing module is organized into three main tabs:",
     "blocks": [
       {
         "type": "list",
@@ -3816,7 +3816,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "Use the Billing area based on what you need to manage: Invoices for receivables, Recurring for scheduled billing, and Referrals for referral-related activity."
+        "text": "Use the Billing module based on what you need to manage: Invoices for receivables, Recurring for scheduled billing, and Referrals for referral-related activity."
       }
     ]
   },
@@ -4649,7 +4649,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "Use the service-level SOP for procedures that apply specifically to how that service is delivered. Keep broader firm policies in Firm SOP and client-specific exceptions in the client’s AI SOP area."
+        "text": "Use the service-level SOP for procedures that apply specifically to how that service is delivered. Keep broader firm policies in Firm SOP and client-specific exceptions in the client’s AI SOP module."
       },
       {
         "type": "paragraph",
@@ -5008,7 +5008,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "Firm users can work from the shared Communications area when they want to manage conversations across multiple clients, or open a client’s Communications tab when they want to begin with that client already selected."
+        "text": "Firm users can work from the shared Communications module when they want to manage conversations across multiple clients, or open a client’s Communications tab when they want to begin with that client already selected."
       },
       {
         "type": "paragraph",
@@ -5018,7 +5018,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
   },
   "pro-how-do-i-start-a-client-conversation-116": {
     "category": "Communications",
-    "answer": "Firm users can start a conversation from the shared Communications area or directly from a client’s Communications tab.",
+    "answer": "Firm users can start a conversation from the shared Communications module or directly from a client’s Communications tab.",
     "blocks": [
       {
         "type": "paragraph",
@@ -5556,7 +5556,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
     "blocks": [
       {
         "type": "paragraph",
-        "text": "After Twilio is connected, your firm can configure a phone number for client text messaging. The Phone Numbers area shows the communication capabilities available for each number, such as:"
+        "text": "After Twilio is connected, your firm can configure a phone number for client text messaging. The Phone Numbers module shows the communication capabilities available for each number, such as:"
       },
       {
         "type": "list",
@@ -5649,7 +5649,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "The Phone Numbers area can also show information such as:"
+        "text": "The Phone Numbers module can also show information such as:"
       },
       {
         "type": "list",
@@ -5764,7 +5764,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
   },
   "pro-how-is-the-reports-area-organized-131": {
     "category": "Reporting",
-    "answer": "The Reports area is organized into three main destinations:",
+    "answer": "The Reports module is organized into three main destinations:",
     "blocks": [
       {
         "type": "list",
@@ -6710,7 +6710,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
     "blocks": [
       {
         "type": "paragraph",
-        "text": "The AI Credits area provides visibility into usage across:"
+        "text": "The AI Credits module provides visibility into usage across:"
       },
       {
         "type": "list",

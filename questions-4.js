@@ -120,9 +120,9 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-the-billing-area-organized-93",
     "product": "pro",
     "category": "Billing",
-    "title": "Billing area explained",
+    "title": "Billing module explained",
     "description": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks…",
-    "answer": "The Billing area is organized into three main tabs:",
+    "answer": "The Billing module is organized into three main tabs:",
     "more": [
       "Invoices — used to review receivables, agreement-generated drafts, invoice activity, and the invoice register.",
       "Recurring — used to manage billing schedules that create invoices on a defined cadence.",
@@ -131,9 +131,9 @@ window.ASSUREONE_ARTICLES.push(...[
       "The Recurring tab is used when your firm wants billing to continue automatically on a recurring schedule.",
       "The Referrals tab is used for MyCPEOne referral activity and commission tracking.",
       "A signed-agreements banner can also surface billing items created from accepted engagement letters. These may include draft invoices or recurring schedules that still need firm review before they are activated or sent.",
-      "Use the Billing area based on what you need to manage: Invoices for receivables, Recurring for scheduled billing, and Referrals for referral-related activity."
+      "Use the Billing module based on what you need to manage: Invoices for receivables, Recurring for scheduled billing, and Referrals for referral-related activity."
     ],
-    "search": "The Billing area is organized into three main tabs: Invoices — used to review receivables, agreement-generated drafts, invoice activity, and the invoice register. Recurring — used to manage billing schedules that create invoices on a defined cadence. Referrals — used to track MyCPEOne referrals and related commissions. The Invoices tab is the main workspace for one-time and generated receivables. It includes summary cards, search, filters, and the detailed invoice register. The Recurring tab is used when your firm wants billing to continue automatically on a recurring schedule. The Referrals tab is used for MyCPEOne referral activity and commission tracking. A signed-agreements banner can also surface billing items created from accepted engagement letters. These may include draft invoices or recurring schedules that still need firm review before they are activated or sent. Use the Billing area based on what you need to manage: Invoices for receivables, Recurring for scheduled billing, and Referrals for referral-related activity.",
+    "search": "The Billing module is organized into three main tabs: Invoices — used to review receivables, agreement-generated drafts, invoice activity, and the invoice register. Recurring — used to manage billing schedules that create invoices on a defined cadence. Referrals — used to track MyCPEOne referrals and related commissions. The Invoices tab is the main workspace for one-time and generated receivables. It includes summary cards, search, filters, and the detailed invoice register. The Recurring tab is used when your firm wants billing to continue automatically on a recurring schedule. The Referrals tab is used for MyCPEOne referral activity and commission tracking. A signed-agreements banner can also surface billing items created from accepted engagement letters. These may include draft invoices or recurring schedules that still need firm review before they are activated or sent. Use the Billing module based on what you need to manage: Invoices for receivables, Recurring for scheduled billing, and Referrals for referral-related activity.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -428,10 +428,10 @@ window.ASSUREONE_ARTICLES.push(...[
       "Add or update the procedure for that service.",
       "Review the SOP to make sure the active instructions match the service currently being offered to clients.",
       "For example, the SOP for Monthly Bookkeeping might document: Collect statements → Post transactions → Reconcile accounts → Complete review → Deliver reports → Follow up with client.",
-      "Use the service-level SOP for procedures that apply specifically to how that service is delivered. Keep broader firm policies in Firm SOP and client-specific exceptions in the client's AI SOP area.",
+      "Use the service-level SOP for procedures that apply specifically to how that service is delivered. Keep broader firm policies in Firm SOP and client-specific exceptions in the client's AI SOP module.",
       "Keeping the service description and SOP aligned helps ensure that what the firm sells and what the team delivers remain consistent."
     ],
-    "search": "A service can have a related Standard Operating Procedure (SOP) that documents how your firm performs and delivers that service. The SOP helps preparers, reviewers, and managers follow a consistent process when the same service is delivered across multiple clients. Open Services. Locate the required service. Select the + control in the service's SOP column, or open the service's action menu and choose SOPs. Add or update the procedure for that service. Review the SOP to make sure the active instructions match the service currently being offered to clients. For example, the SOP for Monthly Bookkeeping might document: Collect statements → Post transactions → Reconcile accounts → Complete review → Deliver reports → Follow up with client. Use the service-level SOP for procedures that apply specifically to how that service is delivered. Keep broader firm policies in Firm SOP and client-specific exceptions in the client's AI SOP area. Keeping the service description and SOP aligned helps ensure that what the firm sells and what the team delivers remain consistent.",
+    "search": "A service can have a related Standard Operating Procedure (SOP) that documents how your firm performs and delivers that service. The SOP helps preparers, reviewers, and managers follow a consistent process when the same service is delivered across multiple clients. Open Services. Locate the required service. Select the + control in the service's SOP column, or open the service's action menu and choose SOPs. Add or update the procedure for that service. Review the SOP to make sure the active instructions match the service currently being offered to clients. For example, the SOP for Monthly Bookkeeping might document: Collect statements → Post transactions → Reconcile accounts → Complete review → Deliver reports → Follow up with client. Use the service-level SOP for procedures that apply specifically to how that service is delivered. Keep broader firm policies in Firm SOP and client-specific exceptions in the client's AI SOP module. Keeping the service description and SOP aligned helps ensure that what the firm sells and what the team delivers remain consistent.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },

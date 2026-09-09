@@ -167,7 +167,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "description": "Settings has 21 destinations grouped under Firm, Work, Money, Communication, and Access. Open Settings from the Admin area of the main navigation. Enter a term in Search settings, or scan the five…",
     "answer": "Use Search settings when you know what you want to configure but are unsure where the setting is located.",
     "more": [
-      "The Settings area is organized into Firm, Work, Money, Communication, and Access. Search settings looks for matching Settings pages and lets you open the relevant page directly. For example, search \"reminders\" to find automated follow-up settings, search \"credentials\" to find the firm's secure credential-management area, search \"documents\" to find document-related configuration, and search \"notifications\" to find notification and email settings."
+      "The Settings module is organized into Firm, Work, Money, Communication, and Access. Search settings looks for matching Settings pages and lets you open the relevant page directly. For example, search \"reminders\" to find automated follow-up settings, search \"credentials\" to find the firm's secure credential-management area, search \"documents\" to find document-related configuration, and search \"notifications\" to find notification and email settings."
     ],
     "steps": [
       "Open Settings from the Admin area of the main navigation.",
@@ -175,7 +175,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Select the matching Settings page from the results.",
       "For example, you can open Documents under Work or Notifications & Email under Communication."
     ],
-    "search": "Use Search settings when you know what you want to configure but are unsure where the setting is located. The Settings area is organized into Firm, Work, Money, Communication, and Access. Search settings looks for matching Settings pages and lets you open the relevant page directly. For example, search \"reminders\" to find automated follow-up settings, search \"credentials\" to find the firm's secure credential-management area, search \"documents\" to find document-related configuration, and search \"notifications\" to find notification and email settings. Open Settings from the Admin area of the main navigation. Enter a keyword in Search settings, or browse the available setting groups. Select the matching Settings page from the results. For example, you can open Documents under Work or Notifications & Email under Communication.",
+    "search": "Use Search settings when you know what you want to configure but are unsure where the setting is located. The Settings module is organized into Firm, Work, Money, Communication, and Access. Search settings looks for matching Settings pages and lets you open the relevant page directly. For example, search \"reminders\" to find automated follow-up settings, search \"credentials\" to find the firm's secure credential-management area, search \"documents\" to find document-related configuration, and search \"notifications\" to find notification and email settings. Open Settings from the Admin area of the main navigation. Enter a keyword in Search settings, or browse the available setting groups. Select the matching Settings page from the results. For example, you can open Documents under Work or Notifications & Email under Communication.",
     "read": "2 min",
     "path": "assurepro/index.html"
   },
