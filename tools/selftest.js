@@ -16,7 +16,10 @@ const cases=[
  ['internal numbering leaks into a reader-facing label','assets/js/taxonomy.js',s=>s.replace("label: 'Start Here', guides:","label: '1.1 Start Here', guides:"),'internal numbering is exposed'],
  ['homepage card loses its canonical module','index.html',s=>s.replace("['firm-admin','settings',","['nonexistent-module','settings',"),'does not link its six cards'],
  ['an article loses its canonical branch home','assets/js/branches.js',s=>s.replace("'gs-intro':'fa-understand'","'gs-intro':'nonexistent-header'"),'no canonical learning-branch home'],
- ['reviewed Word content loses an answer','assets/js/reviewed-content.js',s=>s.replace('"pro-what-is-assurepro-1":','"deleted-review-answer":'),'missing their reviewed Word answer']
+ ['reviewed Word content loses an answer','assets/js/reviewed-content.js',s=>s.replace('"pro-what-is-assurepro-1":','"deleted-review-answer":'),'missing their reviewed Word answer'],
+ ['a new branch header ships with no icon mapping','assets/js/help-center.js',s=>s.replace("'fa-understand':'flag',",''),'no icon mapping'],
+ ['two headers in the same module share an icon','assets/js/help-center.js',s=>s.replace("'fa-firm':'settings',","'fa-firm':'flag',"),'same icon on more than one header'],
+ ['numbered steps restart at 1 after a nested list instead of continuing','article.html',s=>s.replace('stepStart>1?` start="${stepStart}"`:\'\'','false'),'restart at 1 instead of continuing']
 ];
 function make(){const d=fs.mkdtempSync(path.join(os.tmpdir(),'assureone-qc-'));for(const rel of files){const to=path.join(d,rel);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(path.join(ROOT,rel),to)}return d}
 let failed=0;

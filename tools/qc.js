@@ -105,6 +105,28 @@ else{
   if(unstructured.length)fail(`${unstructured.length} reviewed answers do not contain structured blocks`);else ok('reviewed answer structure is available to the article template');
   const publishedReviewedText=JSON.stringify(reviewed||{});
   if(/\d+ questions? in this category/i.test(publishedReviewedText))fail('editorial category totals leaked into published answer content');else ok('editorial category totals are excluded from answers');
+  // A header id missing from TOPIC_ICONS doesn't throw — topicIcon() just
+  // falls back to the generic file icon, so every card on a module page can
+  // go silently identical. This happened once already, after branches.js
+  // introduced its own header ids alongside the older taxonomy guide ids.
+  const iconMap=vm.runInNewContext('({'+(app.match(/const TOPIC_ICONS=\{([\s\S]*?)\n  \};/)?.[1]||'')+'})');
+  const headerIconGaps=B.MODULES.flatMap(module=>module.headers.filter(header=>!iconMap[header.id]).map(header=>`${module.id}/${header.id}`));
+  if(headerIconGaps.length)fail(`these branch headers have no icon mapping and silently render the generic file icon: ${headerIconGaps.slice(0,6).join(', ')}${headerIconGaps.length>6?', …':''}`);
+  else ok('every branch header has its own icon mapping');
+  const duplicateIconModules=B.MODULES.filter(module=>{const seen=new Set();for(const header of module.headers){const i=iconMap[header.id];if(!i)continue;if(seen.has(i))return true;seen.add(i)}return false});
+  if(duplicateIconModules.length)fail(`these modules show the same icon on more than one header card: ${duplicateIconModules.map(m=>m.id).join(', ')}`);
+  else ok('no module repeats an icon across its own header cards');
+  // A section's numbered steps are commonly interrupted by a nested bullet list (e.g.
+  // "Filter by product:" followed by the product options) — that list is supporting detail
+  // for the step before it, not a new procedure. If article.html always starts a fresh <ol>
+  // at 1, a reader sees "1, 2 … 1, 2 … 1" instead of one continuous 6-step walkthrough. This
+  // affects 19 real articles (found via reviewed-content.js), so it is checked directly.
+  if(!articlePage.includes('stepStart>1')||!articlePage.includes('stepCount+=block.items.length'))fail('numbered steps interrupted by a nested list restart at 1 instead of continuing the sequence');
+  else ok('numbered steps continue across a nested list instead of restarting at 1');
+  const multiStepSections=[];
+  for(const [articleId,entry] of Object.entries(reviewed||{})){const blocks=entry.blocks||[];let stepsInSection=0;for(const block of blocks){if(block.type==='heading')stepsInSection=0;else if(block.type==='steps'){stepsInSection++;if(stepsInSection>1)multiStepSections.push(articleId)}}}
+  if(!multiStepSections.length)fail('no reviewed article exercises the multi-block numbered-steps case, so the continuation fix above has no real coverage');
+  else ok(`${new Set(multiStepSections).size} article(s) exercise a section with more than one numbered-steps block`);
 }
 
 if(!failures)console.log('\nPASS — Help Center QC completed with no failures.');else{console.error(`\n${failures} QC failure${failures===1?'':'s'}.`);process.exit(1)}

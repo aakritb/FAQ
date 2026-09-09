@@ -65,6 +65,15 @@
     'account-security':'shield','firm-user-access':'users','client-access':'idcard','credentials':'edit','data-security':'grid','compliance':'check','data-retention-export':'file',
     'account-issues':'idcard','portal-issues':'grid','communication-issues':'users','integration-issues':'plug','billing-issues':'receipt','get-support':'wrench',
     'release-notes':'grid',
+    // Branch (learning module) headers — assets/js/branches.js. Keyed by
+    // header id so a wording change to a header label can never silently
+    // break the lookup, matching the taxonomy icon convention above.
+    'fa-understand':'flag','fa-firm':'settings','fa-team':'users','fa-prospects':'flow','fa-client-work':'briefcase','fa-client-experience':'idcard','fa-billing':'receipt','fa-data':'file','fa-launch':'check',
+    'tm-activate':'idcard','tm-find':'compass','tm-day':'flag','tm-clients':'users','tm-work':'check','tm-documents':'file','tm-communicate':'edit','tm-time':'receipt','tm-help':'wrench',
+    'pc-prospects':'users','pc-pipeline':'flow','pc-convert':'check','pc-clients':'idcard','pc-workspace':'briefcase','pc-portal-access':'shield','pc-portal-guide':'grid',
+    'dw-engagements':'briefcase','dw-recurring':'flag','dw-workflows':'flow','dw-tasks':'check','dw-workload':'chart','dw-documents':'file','dw-requests':'receipt','dw-letters':'signature','dw-signing':'edit','dw-communicate':'users','dw-complete':'book',
+    'rf-time':'receipt','rf-services':'briefcase','rf-billing':'percent','rf-team':'users','rf-processes':'book','rf-reports':'chart','rf-configure':'settings','rf-communications':'edit','rf-connect':'plug','rf-security':'shield','rf-plan':'idcard',
+    'ai-start':'flag','ai-agent':'sparkle','ai-actions':'check','ai-memory':'book','ai-briefing':'grid','ai-reminders':'edit','ai-credits':'percent','ai-responsible':'shield',
   };
   function topicIcon(id){return icon(TOPIC_ICONS[id]||'file')}
   function fallbackCopy(text){const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.cssText='position:fixed;opacity:0';document.body.append(t);t.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}
