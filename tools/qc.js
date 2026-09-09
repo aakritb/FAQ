@@ -133,6 +133,22 @@ else{
   for(const [articleId,entry] of Object.entries(reviewed||{})){const blocks=entry.blocks||[];let stepsInSection=0;for(const block of blocks){if(block.type==='heading')stepsInSection=0;else if(block.type==='steps'){stepsInSection++;if(stepsInSection>1)multiStepSections.push(articleId)}}}
   if(!multiStepSections.length)fail('no reviewed article exercises the multi-block numbered-steps case, so the continuation fix above has no real coverage');
   else ok(`${new Set(multiStepSections).size} article(s) exercise a section with more than one numbered-steps block`);
+  // .steps li .step-details and .detail-list.level-1 have equal CSS specificity, so whichever
+  // rule is declared LAST in the stylesheet wins regardless of intent — a nested step's detail
+  // list silently kept the standalone lavender-box look instead of blending into the step. This
+  // happened once already (found in "Select the reporting period" and the AI Credits article),
+  // so the higher-specificity selector is checked directly rather than trusting declaration order.
+  if(!css.includes('.steps li .step-details'))fail('a nested step-details list is not styled with enough specificity to beat .detail-list.level-1, so it renders as a disconnected floating box instead of part of the step');
+  else ok('nested step-details reliably overrides the standalone detail-list box styling');
+  // A short paragraph that is just a bare "X > Y" navigation path, sitting between two other
+  // paragraphs, reads as an orphaned fragment with no visual connection to the sentence
+  // introducing it (e.g. "Administrators can manage pending invitations under:" / "Team & Roles
+  // > Invitations" / "From there, they can..." as three disconnected lines). This happened
+  // twice already from docx paragraphs that should have been merged into one sentence.
+  const bareBreadcrumbs=[];
+  for(const [articleId,entry] of Object.entries(reviewed||{})){const blocks=entry.blocks||[];for(const block of blocks){if(block.type==='paragraph'&&/^[\w &]+( > [\w &]+){1,3}$/.test(block.text.trim()))bareBreadcrumbs.push(articleId)}}
+  if(bareBreadcrumbs.length)fail(`these articles have a bare navigation-path paragraph that reads as an orphaned fragment instead of part of a sentence: ${[...new Set(bareBreadcrumbs)].slice(0,5).join(', ')}`);
+  else ok('no reviewed article has a bare navigation-path paragraph floating on its own');
 }
 
 if(!failures)console.log('\nPASS — Help Center QC completed with no failures.');else{console.error(`\n${failures} QC failure${failures===1?'':'s'}.`);process.exit(1)}

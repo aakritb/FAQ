@@ -25,7 +25,9 @@ const cases=[
  ['Quick answer card is added back','article.html',s=>s.replace('<main id="ar-main">','<section id="quick-answer">Quick answer</section><main id="ar-main">'),'removed article chrome remains'],
  ['article Copy link is added back','article.html',s=>s.replace('<main id="ar-main">','<button class="copy-link">Copy article link</button><main id="ar-main">'),'removed article chrome remains'],
  ['redundant article back link is added back','article.html',s=>s.replace('<nav class="category-nav" id="category-nav"></nav>','<a class="back-link">Back</a><nav class="category-nav" id="category-nav"></nav>'),'redundant back or browse navigation'],
- ['invalid sidebar link is nested inside a button','assets/js/help-center.js',s=>s.replace('<div class="nav-collection-toggle${c.id','<button><a href="category.html">Topics</a></button><div class="nav-collection-toggle${c.id'),'nests a link inside a button']
+ ['invalid sidebar link is nested inside a button','assets/js/help-center.js',s=>s.replace('<div class="nav-collection-toggle${c.id','<button><a href="category.html">Topics</a></button><div class="nav-collection-toggle${c.id'),'nests a link inside a button'],
+ ['nested step-details loses to the standalone detail-list box on specificity','assets/css/help-center.css',s=>s.split('.steps li .step-details').join('.steps .step-details'),'not styled with enough specificity'],
+ ['a reviewed paragraph is just a bare navigation path','assets/js/reviewed-content.js',s=>s.replace('"AssurePro also provides the shared client and firm context used across other AssureOne products enabled for your organization. By keeping operational information connected to a single client record, teams can move seamlessly between practice management and service delivery without recreating client information or maintaining disconnected records across multiple systems."','"Settings > Security"'),'orphaned fragment']
 ];
 function make(){const d=fs.mkdtempSync(path.join(os.tmpdir(),'assureone-qc-'));for(const rel of files){const to=path.join(d,rel);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(path.join(ROOT,rel),to)}return d}
 let failed=0;

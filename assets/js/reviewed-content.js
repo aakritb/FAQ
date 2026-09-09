@@ -130,15 +130,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "Administrators can manage pending invitations under:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Team & Roles > Invitations"
-      },
-      {
-        "type": "paragraph",
-        "text": "From there, they can review the invitation status, resend an invitation, or cancel it if required."
+        "text": "Administrators can manage pending invitations under Team & Roles > Invitations. From there, they can review the invitation status, resend an invitation, or cancel it if required."
       }
     ]
   },
@@ -2334,19 +2326,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "For example, a recurring client may use a structure such as:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tax > 2025 > Source Documents / Workpapers / Filed Return"
-      },
-      {
-        "type": "paragraph",
-        "text": "or:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Bookkeeping > 2026 > January / February / March"
+        "text": "For example, a recurring client may use a structure such as Tax > 2025 > Source Documents / Workpapers / Filed Return, or Bookkeeping > 2026 > January / February / March."
       },
       {
         "type": "paragraph",
@@ -7147,11 +7127,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "Firm users manage their own password under:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Settings > Security"
+        "text": "Firm users manage their own password under Settings > Security."
       },
       {
         "type": "paragraph",
