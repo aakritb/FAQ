@@ -33,15 +33,15 @@ section('4. Language and product boundaries');
 const body=articles.map(a=>[a.title,a.answer,...(a.steps||[]),...(a.more||[]).map(x=>typeof x==='string'?x:JSON.stringify(x))].join(' ')).join('\n');
 for(const phrase of ['same destination form','destination window','start common work','AssureOne is the firm\'s internal'])if(body.toLowerCase().includes(phrase.toLowerCase()))fail(`unclear or incorrect wording remains: “${phrase}”`);
 if(!body.includes('Firm users')&&!body.includes('firm users'))fail('firm-user terminology is missing');else ok('firm-user and client-user wording remains explicit');
-const hub=read('index.html');for(const product of ['AssureTax','AssureAudit','AssureBooks']){const re=new RegExp(`<button[^>]+data-coming-soon[^>]*>[\\s\\S]{0,400}?${product}[\\s\\S]{0,200}?</button>`);if(!re.test(hub))fail(`${product} must be a non-navigating Coming soon control`)}
-if(/href=["'][^"']*(assuretax|assureaudit|assurebooks)/i.test(hub))fail('homepage links to a product that is not yet published');else ok('unpublished products are visible but non-navigating');
+const hub=read('index.html');for(const product of ['AssureTax','AssureAudit','AssureBooks']){const re=new RegExp(`<button[^>]+data-coming-soon[^>]*>[\\s\\S]{0,400}?${product}[\\s\\S]{0,200}?</button>`);if(!re.test(hub))fail(`${product} must remain a non-navigating Coming soon control on the approved homepage`)}
+if(!hub.includes('<h2 id="journey-heading">Get to know AssurePro</h2>'))fail('approved homepage heading changed');else ok('approved homepage product controls and heading remain intact');
 
 section('5. Search, navigation, and media readiness');
 const app=read('assets/js/help-center.js'),articlePage=read('article.html'),categoryPage=read('category.html');
 if(!app.includes("e.key==='Enter'"))fail('search does not open the first result with Enter');else ok('search supports keyboard selection');
-if(!articlePage.includes('T.guideUrl(guideId)')||!articlePage.includes('renderSidebarTree'))fail('article breadcrumb/sidebar is not connected to the feature-based taxonomy');else ok('article breadcrumbs and topic navigation are connected');
+if(!articlePage.includes('B.articleHome(article.id)')||!articlePage.includes('renderBranchTree'))fail('article breadcrumb/sidebar is not connected to the six-branch learning structure');else ok('article breadcrumbs and branch navigation are connected');
 if(!articlePage.includes('media?.steps')||!articlePage.includes('media?.overview'))fail('article template is not ready for screenshots and overview media');else ok('article schema supports overview and step-specific media');
-if(!articlePage.includes('detail(entry)')||!articlePage.includes('entry.list'))fail('structured supporting lists are not rendered');else ok('structured explanations and lists are preserved');
+if(!articlePage.includes("block.type==='list'")||!articlePage.includes("block.type==='steps'"))fail('reviewed bullets and numbered procedures are not rendered');else ok('reviewed bullets and numbered procedures are preserved');
 if((hub.match(/class="support-copy"/g)||[]).length!==1)fail('homepage has a redundant support card or control');else ok('homepage has one always-available support control');
 
 section('6. Local asset links');
@@ -62,9 +62,12 @@ if(!articlePage.includes('related-list')||!articlePage.includes('Related article
 else if(!articlePage.includes('exclude.has(a.id)'))fail('related articles are not filtered against the current and paged articles');
 else ok('every article suggests related articles instead of dead-ending');
 
-section('8. Feature-based taxonomy (Collection -> Guide -> Article)');
+section('8. Learning branches and canonical article homes');
 function loadTaxonomy(){const ctx={window:{}};vm.runInNewContext(read('assets/js/taxonomy.js'),ctx,{filename:'assets/js/taxonomy.js'});return ctx.window.HelpCenterTaxonomy}
 const T=loadTaxonomy();
+function loadBranches(){const ctx={window:{HelpCenterTaxonomy:T}};vm.runInNewContext(read('assets/js/branches.js'),ctx,{filename:'assets/js/branches.js'});return ctx.window.AssureProBranches}
+function loadReviewed(){const ctx={window:{}};vm.runInNewContext(read('assets/js/reviewed-content.js'),ctx,{filename:'assets/js/reviewed-content.js'});return ctx.window.ASSUREPRO_REVIEWED_CONTENT}
+const B=loadBranches(),reviewed=loadReviewed();
 const taxonomyPages=['category.html','article.html'];
 for(const p of taxonomyPages)if(!read(p).includes('assets/js/taxonomy.js'))fail(`${p}: taxonomy.js is not loaded, so guide and collection navigation will not work`);
 if(!T)fail('assets/js/taxonomy.js did not export window.HelpCenterTaxonomy');
@@ -85,18 +88,23 @@ else{
   const danglingArticleRefs=Object.keys(T.ARTICLE_GUIDE).filter(id=>!ids.has(id));
   if(danglingArticleRefs.length)fail(`ARTICLE_GUIDE maps an article id that no longer exists: ${danglingArticleRefs.slice(0,5).join(', ')}`);
   else ok('every article id referenced by ARTICLE_GUIDE is a real, published article');
-  const journeyIds=new Set([...categoryPage.matchAll(/\n\s*'([\w-]+)':\{title:/g)].map(m=>m[1]));
-  const homepageLinks=[...homepage.matchAll(/\['([\w-]+)',\s*'[\w-]+',/g)].map(m=>m[1]);
-  const badHomepageLinks=homepageLinks.filter(jid=>!journeyIds.has(jid));
-  if(!homepageLinks.length)fail('index.html: no homepage entry point links to a journey — the homepage would have nothing to click into');
-  else if(badHomepageLinks.length)fail(`a homepage entry point links to a journey id that does not exist in category.html: ${[...new Set(badHomepageLinks)].join(', ')}`);
-  else ok('every homepage entry point links to a journey defined in category.html');
-  const journeyGuideMatches=[...categoryPage.matchAll(/guides:\s*\[([^\]]*)\]/g)];
-  const journeyGuideIds=journeyGuideMatches.flatMap(m=>[...m[1].matchAll(/'([\w-]+)'/g)].map(x=>x[1]));
-  const badJourneyGuideRefs=journeyGuideIds.filter(gid=>!guideIds.has(gid));
-  if(!journeyGuideIds.length)fail('category.html: no journey references any guide — journey pages would be empty');
-  else if(badJourneyGuideRefs.length)fail(`a journey references a guide id that does not exist: ${[...new Set(badJourneyGuideRefs)].join(', ')}`);
-  else ok('every guide referenced by a journey exists in the taxonomy');
+  if(!B||B.MODULES.length!==6)fail(`expected exactly six homepage learning modules, found ${B?.MODULES?.length||0}`);else ok('exactly six learning modules are defined');
+  const moduleIds=new Set(B?.MODULES.map(module=>module.id)||[]),headerIds=new Set((B?.MODULES||[]).flatMap(module=>module.headers.map(header=>header.id)));
+  const homepageModuleIds=[...homepage.matchAll(/\['([\w-]+)','[\w-]+','/g)].map(match=>match[1]);
+  const badHomepageModules=homepageModuleIds.filter(id=>!moduleIds.has(id));
+  if(homepageModuleIds.length!==6||badHomepageModules.length)fail('approved homepage does not link its six cards to the six canonical modules');else ok('approved homepage cards connect to the six canonical branch modules');
+  if(!categoryPage.includes("params.get('module')")||!categoryPage.includes("params.get('header')"))fail('category page does not support module and header routes');else ok('module and header routes are available');
+  const unmapped=articles.filter(article=>!B.articleHome(article.id));
+  if(unmapped.length)fail(`${unmapped.length} article(s) have no canonical learning-branch home: ${unmapped.slice(0,5).map(a=>a.id).join(', ')}`);else ok('all 166 articles have one canonical learning-branch home');
+  const badHomes=articles.map(article=>B.articleHome(article.id)).filter(Boolean).filter(home=>!moduleIds.has(home.module.id)||!headerIds.has(home.header.id));
+  if(badHomes.length)fail('one or more canonical article homes point outside the branch structure');else ok('all canonical homes resolve to a real module and header');
+  if(Object.keys(reviewed||{}).length!==articles.length)fail(`reviewed Word content covers ${Object.keys(reviewed||{}).length}/${articles.length} articles`);else ok('reviewed Word content covers all 166 articles');
+  const missingReviewed=articles.filter(article=>!reviewed?.[article.id]);
+  if(missingReviewed.length)fail(`${missingReviewed.length} article(s) are missing their reviewed Word answer: ${missingReviewed.slice(0,5).map(a=>a.id).join(', ')}`);else ok('each article id resolves to its reviewed Word answer');
+  const unstructured=Object.entries(reviewed||{}).filter(([,entry])=>!Array.isArray(entry.blocks));
+  if(unstructured.length)fail(`${unstructured.length} reviewed answers do not contain structured blocks`);else ok('reviewed answer structure is available to the article template');
+  const publishedReviewedText=JSON.stringify(reviewed||{});
+  if(/\d+ questions? in this category/i.test(publishedReviewedText))fail('editorial category totals leaked into published answer content');else ok('editorial category totals are excluded from answers');
 }
 
 if(!failures)console.log('\nPASS — Help Center QC completed with no failures.');else{console.error(`\n${failures} QC failure${failures===1?'':'s'}.`);process.exit(1)}

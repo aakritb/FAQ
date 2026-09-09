@@ -3,7 +3,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-ai-agent-conversations-managed-148",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "How are AI Agent conversations managed?",
+    "title": "Manage AI Agent conversations",
     "description": "The Agent keeps separate conversations so a user can return to earlier work without mixing unrelated requests. Open AI Agent and select New chat when beginning a different question or client context.…",
     "answer": "The AI Agent keeps each chat as a separate conversation so firm users can maintain different questions, clients, or work contexts independently.",
     "more": [
@@ -27,7 +27,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-ai-agent-memory-and-how-can-i-control-it-149",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "What is AI Agent memory and how can I control it?",
+    "title": "AI Agent Memory explained",
     "description": "Memory is the context the Agent retains for future conversations. Each user can decide whether the Agent should keep that context and can inspect what has been saved. Open AI Agent and go to Memory.…",
     "answer": "AI Agent memory is the information the Agent retains for the signed-in firm user so it can use relevant context in future conversations.",
     "more": [
@@ -51,7 +51,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-does-auto-approve-low-risk-actions-do-150",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "What does Auto-approve low-risk actions do?",
+    "title": "Configure Auto-approve for low-risk actions",
     "description": "The setting allows the Agent to proceed with actions it classifies as low risk without asking for each approval. Keep it off when the user wants to review every proposed change; higher-impact actions…",
     "answer": "Auto-approve low-risk actions allows the AI Agent to complete supported actions it classifies as low risk without asking the firm user to approve each action individually.",
     "more": [
@@ -67,7 +67,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-the-ai-generated-daily-briefing-151",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "What is the AI-generated daily briefing?",
+    "title": "Daily Briefing explained",
     "description": "The Daily briefing turns recent firm activity into quantified insights and direct follow-up paths. For example, it can say that four invoices are overdue, identify payments received, count completed…",
     "answer": "The AI-generated Daily briefing summarizes recent firm activity and highlights items that may need attention, using the firm's current AssurePro data for the selected period rather than a fixed set of sample metrics.",
     "more": [
@@ -89,7 +89,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-use-is-tracked-in-ai-credits-152",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "What use is tracked in AI Credits?",
+    "title": "AI Credits usage explained",
     "description": "AI Credits power the smart features used across AssureOne, including the AI assistant, summaries, drafting, call transcripts, document reading and extraction, and product-specific AI assistance. Every…",
     "answer": "AI Credits track usage of AI-powered features across AssureOne so the firm can see where credits are being consumed.",
     "more": [
@@ -108,7 +108,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-much-do-ai-credits-cost-and-how-are-more-credits-purchased-153",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "How much do AI Credits cost, and how are more credits purchased?",
+    "title": "AI Credits pricing and purchases explained",
     "description": "The purchase screen offers $25 for 2,500 credits, $50 for 5,000 credits, and $100 for 10,000 credits, plus a Custom amount option. Credits are billed at the underlying AI cost without a markup, and the…",
     "answer": "Firm administrators can purchase additional AI Credits from Settings > AI Credits when the available balance needs topping up.",
     "more": [
@@ -127,7 +127,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-are-ai-credits-replenished-automatically-or-included-as-a-monthly-allo-154",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "Are AI Credits replenished automatically or included as a monthly allowance?",
+    "title": "AI Credits replenishment explained",
     "description": "No. The firm controls when credits are purchased; AssurePro does not automatically charge the card or reset the balance as a monthly allowance. When the balance is running low, an administrator…",
     "answer": "No. AI Credits are not automatically added back, and they do not reset to a set amount each month.",
     "more": [
@@ -143,7 +143,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-happens-when-the-firm-runs-out-of-ai-credits-155",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "What happens when the firm runs out of AI Credits?",
+    "title": "What happens when AI Credits run out",
     "description": "The remaining firm balance is shown in the application header and in Settings > AI Credits. When it reaches zero, activities that depend on AI Credits pause rather than creating an automatic card…",
     "answer": "The firm's remaining AI Credit balance is visible in the application header and under Settings > AI Credits. When the balance reaches zero, features that require AI Credits pause until more are purchased — AssurePro does not automatically charge the firm's card or replenish the balance.",
     "more": [
@@ -162,7 +162,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-the-firm-set-a-spending-cap-or-get-an-alert-before-ai-credits-run--156",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "How can administrators control AI Credit usage across the firm?",
+    "title": "Control AI Credit usage across the firm",
     "description": "Not yet. A spending cap and low-balance alert are planned for release by the end of this year. Until those controls are available, administrators should monitor the header balance, the last-30-days…",
     "answer": "Firm administrators can monitor and manage AI Credit consumption from Settings > AI Credits.",
     "more": [
@@ -178,7 +178,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-are-ai-credits-shared-across-the-firm-or-does-each-user-have-a-separat-157",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "Are AI Credits shared across the firm, or can they be allocated by firm user?",
+    "title": "Allocate AI Credits across the firm",
     "description": "AI Credits are pooled at the firm level rather than issued as a separate allowance for each seat. Administrators can still attribute consumption by selecting a team member in Settings > AI Credits and…",
     "answer": "AI Credits are purchased at the firm level, and firm administrators can manage how that balance is allocated across individual firm users.",
     "more": [
@@ -194,7 +194,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-we-control-what-data-the-ai-agent-retains-158",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "Can we control what data the AI Agent retains?",
+    "title": "Control what data the AI Agent retains",
     "description": "Yes. Each user controls retention through AI Agent Memory. Turn Memory on when the Agent should keep useful context for future conversations, or turn it off when nothing should be retained beyond the…",
     "answer": "Yes. Each firm user can control the context retained by the AI Agent through AI Agent > Memory.",
     "more": [
@@ -210,7 +210,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-an-ai-agent-action-be-undone-and-is-there-an-audit-trail-of-what-i-159",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "Can an AI Agent action be undone, and is there an audit trail of what it did?",
+    "title": "Review AI Agent action history",
     "description": "An Agent action cannot be undone after it is completed, so the Agent asks for confirmation before higher-impact changes; Auto-approve low-risk actions is a separate user-controlled setting. Review the…",
     "answer": "AssurePro does not provide one universal Undo action for every change completed by the AI Agent.",
     "more": [
@@ -226,7 +226,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-do-unused-ai-credits-expire-or-roll-over-160",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "Do unused AI Credits expire or roll over?",
+    "title": "AI Credits expiration and rollover explained",
     "description": "AI Credits never expire and do not reset at the end of a month or subscription cycle. The unused balance remains available to the firm until it is consumed, so there is no rollover calculation and no…",
     "answer": "No. Unused AI Credits do not expire and do not reset at the end of a month or subscription cycle.",
     "more": [
@@ -243,7 +243,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-third-party-services-can-be-connected-161",
     "product": "pro",
     "category": "Integrations",
-    "title": "Which third-party services can be connected?",
+    "title": "Third-party connections explained",
     "description": "Open Settings > Integrations to connect the external services the firm uses for communication, scheduling, documents, payments, and accounting. Email: connect Gmail or Outlook so authorized users can…",
     "answer": "AssurePro supports third-party integrations for email, meetings, document storage, client payments, accounting, SMS, and other connected workflows.",
     "more": [
@@ -258,7 +258,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-connect-an-integration-162",
     "product": "pro",
     "category": "Integrations",
-    "title": "How do I connect and test an integration?",
+    "title": "Connect and test an integration",
     "description": "Connections are managed by provider in Settings. Open Settings and choose Integrations. Find the email, calendar, storage, payment, accounting, messaging, or other provider needed by the firm. Select…",
     "answer": "Firm administrators can connect supported external services from Settings > Integrations.",
     "more": [
@@ -288,7 +288,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-workflows-require-a-connected-service-163",
     "product": "pro",
     "category": "Integrations",
-    "title": "Which AssurePro workflows depend on a connected service?",
+    "title": "Workflows that require a connected service",
     "description": "Cloud document import requires Dropbox or OneDrive; client SMS requires Twilio and a firm phone number; calendar matching uses Calendly, Google Calendar, or Outlook Calendar; email connections use…",
     "answer": "Some AssurePro features require a third-party service to be connected before the workflow can be used.",
     "more": [
@@ -304,7 +304,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-the-tax-connector-164",
     "product": "pro",
     "category": "Integrations",
-    "title": "What is the Tax Connector?",
+    "title": "Tax Connector explained",
     "description": "Tax Connector approves Windows computers that import supported tax-software data into AssureTax. A pairing code expires after ten minutes, each approved computer receives its own revocable import-only…",
     "answer": "The Tax Connector is used to approve Windows computers that import supported tax-software data into AssureTax.",
     "more": [
@@ -328,7 +328,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-shared-firm-and-client-credentials-handled-165",
     "product": "pro",
     "category": "Users & Access",
-    "title": "How are shared firm and client credentials handled?",
+    "title": "Manage shared firm and Client Credentials",
     "description": "Firm Credentials stores internal shared logins, while each client workspace has its own Credentials tab. The interface states that secrets are encrypted at rest with AES-256, only engagement owners can…",
     "answer": "AssurePro keeps firm-wide credentials and client-specific credentials in separate areas.",
     "more": [
@@ -353,7 +353,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-users-manage-in-security-settings-166",
     "product": "pro",
     "category": "Integrations",
-    "title": "What can firm users manage in Security settings?",
+    "title": "Security settings explained",
     "description": "Security currently provides password change for the signed-in user. It requires the current password, a new password of at least eight characters, and confirmation; show-password controls are available…",
     "answer": "The Security settings currently allow the signed-in firm user to change their AssurePro password.",
     "more": [
@@ -376,7 +376,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-account-security-control-is-available-in-assurepro-167",
     "product": "pro",
     "category": "Integrations",
-    "title": "How is account access managed for firm users and client users?",
+    "title": "Account access for firm users and Client users explained",
     "description": "Security settings let a signed-in user change their password by supplying the current password, a new password, and confirmation. Team access and roles are managed separately in Team & Roles.",
     "answer": "Firm-user access and client-user access are managed separately in AssurePro.",
     "more": [
@@ -391,7 +391,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-notifications-and-report-alerts-controlled-168",
     "product": "pro",
     "category": "Integrations",
-    "title": "How are notifications and report alerts controlled?",
+    "title": "Control notifications and Report Alerts",
     "description": "Notifications & Email lets a user independently choose email and in-app delivery for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Report alerts can…",
     "answer": "Firm users can control personal notifications under Settings > Notifications & Email, while report alerts can be configured for firm-level KPI monitoring.",
     "more": [
@@ -406,7 +406,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-where-is-firm-and-client-data-hosted-and-is-it-encrypted-169",
     "product": "pro",
     "category": "Integrations",
-    "title": "Where is firm and client data hosted, and is it encrypted?",
+    "title": "Data hosting and encryption explained",
     "description": "AssurePro runs on Amazon Web Services infrastructure. Firm and client data is encrypted both in transit and at rest. Firm Credentials and client Credentials state that stored secrets use AES-256…",
     "answer": "AssurePro runs on Amazon Web Services (AWS) infrastructure.",
     "more": [
@@ -422,7 +422,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-does-assurepro-hold-specific-compliance-certifications-such-as-soc-2-170",
     "product": "pro",
     "category": "Integrations",
-    "title": "Does AssurePro hold compliance certifications such as SOC 2?",
+    "title": "Compliance certifications explained",
     "description": "Formal compliance-certification details, including the current SOC 2 status, will be published soon. Because certification scope and report periods can change, firms should request the latest security…",
     "answer": "Security certifications, audit reports, and their coverage can change over time.",
     "more": [
@@ -438,7 +438,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-is-multi-factor-authentication-available-for-staff-and-client-portal-l-171",
     "product": "pro",
     "category": "Users & Access",
-    "title": "Is multi-factor authentication available for firm users and client users?",
+    "title": "Require multi-factor authentication",
     "description": "Yes. During account activation, both firm staff and client-portal users accept the invitation, set a password, and confirm their identity with a one-time code sent to the email address that received…",
     "answer": "AssurePro currently uses a one-time email verification step during account activation for both firm users and client users.",
     "more": [
@@ -454,7 +454,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-the-firm-export-its-data-if-it-cancels-its-assurepro-subscription-172",
     "product": "pro",
     "category": "Integrations",
-    "title": "Can the firm export its data if it cancels its AssurePro subscription?",
+    "title": "Export firm data before cancellation",
     "description": "Yes. A firm can export its data before the AssurePro account is closed. Plan the export with the AssureOne account team early enough to identify the records, documents, reports, communications, billing…",
     "answer": "Yes, but the data-export and account-closure process should be planned with the AssureOne account team before access is terminated.",
     "more": [
@@ -470,7 +470,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-a-typical-prospect-workflow-in-assurepro-174",
     "product": "pro",
     "category": "Getting Started",
-    "title": "What is a typical prospect workflow in AssurePro?",
+    "title": "Typical Prospect workflow explained",
     "description": "A prospect typically moves through a series of pipeline stages as your firm qualifies the opportunity and determines whether it should become a client.",
     "answer": "A prospect typically moves through a series of pipeline stages as your firm qualifies the opportunity and determines whether it should become a client.",
     "more": [

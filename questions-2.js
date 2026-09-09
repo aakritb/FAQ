@@ -3,7 +3,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-does-each-template-library-type-provide-30",
     "product": "pro",
     "category": "Settings",
-    "title": "What does each Template Library type provide?",
+    "title": "Template Library types explained",
     "description": "Engagement Letter Templates include agreement prose, packages, services, and billing structures. Workflows provide stage-and-task sequences. Folders provide reusable per-client folder layouts. Messages…",
     "answer": "The Template Library includes different template types that help your firm standardize recurring client work, documents, and communication.",
     "more": [
@@ -18,7 +18,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-a-new-client-added-directly-31",
     "product": "pro",
     "category": "Clients",
-    "title": "How is a new client added directly?",
+    "title": "Add a Client directly",
     "description": "Use this path when the person or organization should begin as a client rather than first moving through the prospect pipeline. Open Clients and select New Client, or choose Client from the global + New…",
     "answer": "Create a client directly in AssurePro when the relationship is already confirmed and the client does not need to move through the prospect pipeline.",
     "more": [
@@ -41,7 +41,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-are-all-the-ways-to-add-a-client-32",
     "product": "pro",
     "category": "Clients",
-    "title": "What are all the ways to add a client?",
+    "title": "Ways to add a Client",
     "description": "AssurePro provides several entry points for different onboarding situations: create one client directly, convert a qualified prospect by moving it to Won, import many clients from a CSV or Excel file,…",
     "answer": "AssurePro provides several ways to add a client, depending on how the relationship was established and how the firm is onboarding the client.",
     "more": [
@@ -63,7 +63,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-convert-a-prospect-into-a-client-33",
     "product": "pro",
     "category": "Clients",
-    "title": "How do I convert a prospect into a client?",
+    "title": "Convert a Prospect into a Client",
     "description": "Use the Won stage after the lead has completed the firm's prospect process. This preserves the prospect workflow and promotes the successful lead into client onboarding. Open Prospects and find the…",
     "answer": "Convert a prospect to a client when the opportunity has completed your firm's prospect process and the relationship has been confirmed.",
     "more": [
@@ -85,7 +85,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-import-multiple-clients-34",
     "product": "pro",
     "category": "Clients",
-    "title": "How do I import multiple clients?",
+    "title": "Import multiple Clients",
     "description": "The client import accepts CSV and XLSX files and provides a downloadable CSV template. Open Clients. Select More ways to add clients, then Import from CSV. Download the CSV template if you need the…",
     "answer": "Use the client import feature when your firm needs to add or migrate multiple client records into AssurePro at the same time.",
     "more": [
@@ -110,7 +110,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-i-create-a-client-while-starting-an-engagement-35",
     "product": "pro",
     "category": "Clients",
-    "title": "Can I create a client while starting an engagement?",
+    "title": "Create a Client while starting an Engagement",
     "description": "Yes. The New Engagement client chooser includes Create new client, so staff do not have to leave the workflow when the required client is missing. Open Workflow and select New Engagement. Open the…",
     "answer": "Yes. If the client record does not yet exist, firm users can create it directly while setting up a new engagement.",
     "more": [
@@ -135,7 +135,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-staff-see-in-a-client-workspace-36",
     "product": "pro",
     "category": "Clients",
-    "title": "What can firm users see in a client workspace?",
+    "title": "Client Workspace explained",
     "description": "Each client workspace has tabs for Overview, Info, Documents, Communications, Engagements, Billing, Engagement Letter, Credentials, Emails, and AI SOP. Overview summarizes items needing attention,…",
     "answer": "The client workspace gives firm users a consolidated view of the client relationship and the work associated with that client.",
     "more": [
@@ -151,7 +151,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-information-is-kept-on-the-client-info-tab-37",
     "product": "pro",
     "category": "Clients",
-    "title": "What information is kept on the client Info tab?",
+    "title": "Work with the Client Info tab",
     "description": "The Info tab includes profile completeness, contact information, entity details, contacts, tags, related entities, account roles, and notes. The displayed entity fields adjust to the client type; for…",
     "answer": "The Info tab stores the core profile and relationship information for a client.",
     "more": [
@@ -167,7 +167,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-a-client-have-multiple-contacts-and-relationship-details-38",
     "product": "pro",
     "category": "Clients",
-    "title": "Can a client have multiple contacts and relationship details?",
+    "title": "Add multiple contacts to a Client",
     "description": "Yes. The client record includes a Contacts section as well as Related Entities and Account Roles. These areas keep the people and relationships associated with the client separate from the primary…",
     "answer": "Yes. A client record can include multiple Contacts, Related Entities, and Account Roles, allowing your firm to maintain the different people and relationships associated with the client without combining them into the primary client record.",
     "more": [
@@ -182,7 +182,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-does-assurepro-help-complete-a-client-profile-39",
     "product": "pro",
     "category": "Clients",
-    "title": "How does AssurePro help complete a client profile?",
+    "title": "Complete a Client profile",
     "description": "The Info tab shows a profile-completeness checklist and identifies missing fields. Staff can add missing contact, address, entity, and period information directly from that checklist.",
     "answer": "The Info tab includes a profile-completeness checklist that helps firm users identify missing client information during onboarding and ongoing account maintenance.",
     "more": [
@@ -197,7 +197,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-a-portal-invitation-be-sent-again-40",
     "product": "pro",
     "category": "Clients",
-    "title": "Can a portal invitation be sent again?",
+    "title": "Resend a Client Portal invitation",
     "description": "Yes. Portal access can be initiated during client creation or managed later from the client record. Open the client and choose Info. Find the contact who should have portal access and confirm the email…",
     "answer": "Yes. Firm users can resend a client portal invitation when a client has not completed activation or needs a new invitation link.",
     "more": [
@@ -220,7 +220,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-a-client-do-through-the-client-portal-41",
     "product": "pro",
     "category": "Clients",
-    "title": "What can a client do through the client portal?",
+    "title": "Client Portal activities explained",
     "description": "A client with portal access can work with the firm on the client-facing items made available to them, including engagement-letter review and signing, document requests and uploads, messages, and…",
     "answer": "The client portal gives clients a secure, client-facing space to complete the activities your firm makes available to them.",
     "more": [
@@ -236,7 +236,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-does-a-client-set-a-password-for-the-client-portal-or-use-a-passwordle-42",
     "product": "pro",
     "category": "Clients",
-    "title": "Does a client set a password for the client portal, or use a passwordless link?",
+    "title": "Client Portal sign-in explained",
     "description": "The invitation flow uses an account password rather than a permanent passwordless link. The client opens the invitation sent to their email address, accepts it, completes the email-verification step…",
     "answer": "Clients create an account password when activating their AssurePro client portal access. The invitation email is used to begin account activation; it is not a permanent passwordless sign-in link.",
     "more": [
@@ -251,7 +251,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-is-there-a-mobile-app-for-clients-43",
     "product": "pro",
     "category": "Clients",
-    "title": "Is there a mobile app for clients?",
+    "title": "Client Portal mobile access explained",
     "description": "Yes. AssurePro provides a client mobile app for both iOS and Android. Clients can use the mobile experience for the work the firm makes available to them, including reviewing requests, uploading…",
     "answer": "Yes. AssurePro provides a client mobile app for iOS and Android so clients can complete supported activities from a mobile device.",
     "more": [
@@ -270,7 +270,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-we-migrate-data-from-our-previous-practice-management-software-44",
     "product": "pro",
     "category": "Clients",
-    "title": "Can we migrate data from our previous practice-management software?",
+    "title": "Migrate Client data from previous software",
     "description": "Yes. AssurePro's implementation team supports migration from other practice-management platforms, including systems such as Karbon, Canopy, and TaxDome, as part of onboarding. The firm should identify…",
     "answer": "Yes. The AssureOne implementation team can work with your firm to plan and execute a migration from an existing practice-management system into AssurePro.",
     "more": [
@@ -285,7 +285,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-does-assurepro-include-crm-capabilities-45",
     "product": "pro",
     "category": "Clients",
-    "title": "Does AssurePro include CRM capabilities?",
+    "title": "AssurePro CRM capabilities explained",
     "description": "Yes. AssurePro combines client records with a prospect pipeline. Firms can capture leads, owners, expected close dates, sources, service interests, deal values, and other prospect details, then manage…",
     "answer": "Yes. AssurePro includes CRM capabilities that allow your firm to manage both prospects and active client relationships within the same practice-management environment.",
     "more": [
@@ -300,7 +300,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-prospects-managed-before-they-become-clients-46",
     "product": "pro",
     "category": "Clients",
-    "title": "How are prospects managed before they become clients?",
+    "title": "Prospect Pipeline explained",
     "description": "Prospects can be managed in Board or List view inside a firm-defined pipeline. The firm is not limited to one fixed sales process: administrators can create a new pipeline and define, rename, reorder,…",
     "answer": "AssurePro allows your firm to manage prospects through a configurable sales pipeline before they become clients.",
     "more": [
@@ -327,7 +327,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-create-a-prospect-47",
     "product": "pro",
     "category": "Clients",
-    "title": "How do I create a prospect?",
+    "title": "Add a Prospect",
     "description": "Open Prospects and select New prospect. Enter the required name and email, then add any company, deal value, phone, stage, source, owners, expected close date, tags, lead type, referrer, industry,…",
     "answer": "Create a prospect in AssurePro when your firm wants to track a potential client before the relationship is confirmed.",
     "more": [
@@ -350,7 +350,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-information-can-be-captured-for-a-prospect-48",
     "product": "pro",
     "category": "Clients",
-    "title": "What information can be captured for a prospect?",
+    "title": "Prospect information explained",
     "description": "A prospect record supports standard sales, contact, ownership, and qualification information, and the firm can extend the record with custom fields configured in Settings. Capture the prospect or…",
     "answer": "A prospect record can store the information your firm needs to qualify, manage, and follow up on a potential client before the relationship is converted into an active client.",
     "more": [
@@ -366,7 +366,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-work-can-be-managed-from-a-prospect-record-49",
     "product": "pro",
     "category": "Clients",
-    "title": "What work can be managed from a prospect record?",
+    "title": "Manage work from a Prospect record",
     "description": "A prospect record keeps the lead information and pipeline stage together with tabs for Overview, Tasks, Email, Calls, and Engagement Letters. Staff can also add tasks and notes while the opportunity…",
     "answer": "A prospect record gives firm users one place to manage the information and activities associated with a potential client before the relationship becomes active.",
     "more": [
@@ -381,7 +381,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-documents-organized-across-the-firm-50",
     "product": "pro",
     "category": "Documents",
-    "title": "How are documents organized across the firm?",
+    "title": "Document Workspace explained",
     "description": "The top-level Documents screen groups work by client and highlights clients that are awaiting documents. Inside a client workspace, documents are organized into folders and can be viewed by areas such…",
     "answer": "AssurePro organizes documents at both the firm level and the client level so users can quickly find missing, requested, uploaded, and completed documents.",
     "more": [
@@ -396,7 +396,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-firms-standardize-folder-structures-and-document-labels-51",
     "product": "pro",
     "category": "Documents",
-    "title": "Can firms standardize folder structures and document labels?",
+    "title": "Standardize folder structures with Templates",
     "description": "Yes. Documents settings contain Folder Templates, Document Types, and Work Types. Administrators can create folder templates, add folders, define document codes, labels, categories, descriptions, and…",
     "answer": "Yes. Firm administrators can use the Documents settings to standardize how client files are organized and classified across the practice.",
     "more": [
@@ -412,7 +412,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-create-or-update-a-folder-template-52",
     "product": "pro",
     "category": "Documents",
-    "title": "How do I create or update a folder template?",
+    "title": "Create or update a Folder Template",
     "description": "Open Settings, choose Documents, and stay on Folder Templates. Select New template to create a structure or open an existing template, then use Add Folder to build its hierarchy. The finished template…",
     "answer": "Firm administrators can create reusable Folder Templates to standardize how documents are organized for clients and recurring service types.",
     "more": [
@@ -438,7 +438,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-be-configured-for-document-types-53",
     "product": "pro",
     "category": "Documents",
-    "title": "What can be configured for Document Types?",
+    "title": "Configure Document Types",
     "description": "Document Types standardize how uploads are classified and which fields can be extracted. The table shows name, category, description, field count, status, and actions; system definitions are marked…",
     "answer": "Document Types help your firm classify files consistently and define the information that should be captured for each type of document.",
     "more": [
@@ -453,7 +453,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-available-under-work-types-in-documents-settings-54",
     "product": "pro",
     "category": "Documents",
-    "title": "What is available under Work Types in Documents settings?",
+    "title": "Set up Work Types",
     "description": "Work Types defines the selectable work classifications used when staff create intake templates for bookkeeping, audit, accounting, advisory, and tax work. The table shows Code, Label, Description,…",
     "answer": "Work Types define the categories of client work that can be used when your firm creates document-intake templates.",
     "more": [
@@ -468,7 +468,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-a-folder-template-applied-to-a-client-55",
     "product": "pro",
     "category": "Documents",
-    "title": "How is a folder template applied to a client?",
+    "title": "Apply a Folder Template to a Client",
     "description": "A template creates the firm's reusable folder structure inside a client workspace. Open the client and choose Documents. Select Apply Template and choose the appropriate firm template. Review the…",
     "answer": "Firm users can apply a Folder Template from the client's Documents tab to quickly create the standard folder structure used for that client or service.",
     "more": [
@@ -492,7 +492,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-request-documents-from-a-client-56",
     "product": "pro",
     "category": "Documents",
-    "title": "How do I request documents from a client?",
+    "title": "Request Documents from a Client",
     "description": "A document request tells the client exactly what the firm needs and keeps the response attached to the client workspace. Open the client and choose Documents. Select Request and describe each document…",
     "answer": "Use a document request when your firm needs the client to provide specific files or information through the client portal.",
     "more": [
@@ -518,7 +518,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-happens-if-a-client-doesn-t-respond-to-a-document-request-57",
     "product": "pro",
     "category": "Documents",
-    "title": "What happens if a client doesn't respond to a document request?",
+    "title": "Follow up on an unanswered Document Request",
     "description": "AssurePro can continue following up through the configured Document requests reminder schedule, so staff do not have to rely only on manual chasing. Open Settings and choose Reminders. Confirm that…",
     "answer": "If a document request remains outstanding, AssurePro can follow the firm's configured Document requests reminder schedule to remind the client automatically.",
     "more": [

@@ -3,7 +3,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-the-difference-between-request-import-and-upload-58",
     "product": "pro",
     "category": "Documents",
-    "title": "What is the difference between Request, Import, and Upload?",
+    "title": "Request, Import, and Upload explained",
     "description": "Request asks the client to provide documents through the portal. Import brings documents from connected Dropbox or OneDrive storage. Upload adds a file available on the user's computer directly to the…",
     "answer": "Use Request, Import, or Upload based on who currently has the document and where the file is stored.",
     "more": [
@@ -18,7 +18,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-upload-a-document-to-a-client-workspace-59",
     "product": "pro",
     "category": "Documents",
-    "title": "How do I upload a document to a client workspace?",
+    "title": "Upload a Document to a Client Workspace",
     "description": "Upload places a local file into the selected client's document structure. Open Documents and select the client. Choose the destination folder in the folder tree, or create a folder first with New…",
     "answer": "Use Upload when a firm user already has the document saved locally and needs to add it to a client's Documents workspace.",
     "more": [
@@ -42,7 +42,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-import-documents-from-dropbox-or-onedrive-60",
     "product": "pro",
     "category": "Documents",
-    "title": "How do I import documents from Dropbox or OneDrive?",
+    "title": "Import Documents from Dropbox or OneDrive",
     "description": "A storage connection must be configured before cloud import is available. If neither provider is connected, AssurePro directs the user to Settings. Open Settings, choose Integrations, and connect…",
     "answer": "Firm users can import documents from a connected Dropbox or OneDrive account directly into a client's Documents workspace.",
     "more": [
@@ -67,7 +67,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-find-a-file-or-review-outstanding-requests-61",
     "product": "pro",
     "category": "Documents",
-    "title": "How do I find a file or review outstanding requests?",
+    "title": "Find a file or review outstanding requests",
     "description": "The client Documents workspace provides search, source filters, display controls, and separate Files and Requests views. Select the client in Documents. Use the folder tree or All Documents to set the…",
     "answer": "Use the Files view to find documents already stored in a client workspace, and use the Requests view to review document requests that are still outstanding or have been completed.",
     "more": [
@@ -90,7 +90,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-client-documents-be-organized-by-tax-year-or-reporting-period-62",
     "product": "pro",
     "category": "Documents",
-    "title": "Can client documents be organized by tax year or reporting period?",
+    "title": "Organize Client Documents by tax year or period",
     "description": "Yes. Administrators can build year- or period-based folders into a Folder Template, and staff can also create folders directly in a client's Documents tab. Apply the appropriate template to keep the…",
     "answer": "Yes. Your firm can organize client documents by tax year, fiscal year, month, quarter, or other reporting period.",
     "more": [
@@ -106,7 +106,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-documents-be-brought-in-from-cloud-storage-63",
     "product": "pro",
     "category": "Documents",
-    "title": "Can documents be brought in from cloud storage?",
+    "title": "Import Documents from cloud storage",
     "description": "Integrations supports Dropbox and OneDrive. Staff can import client documents without first downloading and re-uploading them, and synced folders can automatically bring new files from a connected…",
     "answer": "Yes. AssurePro supports document import from connected Dropbox and OneDrive storage.",
     "more": [
@@ -121,7 +121,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-views-are-available-for-engagement-work-64",
     "product": "pro",
     "category": "Workflow",
-    "title": "What views are available for engagement work?",
+    "title": "Engagement Workflow views explained",
     "description": "Workflow provides Board, List, and Tasks views. Staff can select a workflow, search engagements, create a new engagement, customize displayed information, and open workflow configuration.",
     "answer": "The Workflow area provides three main views for managing engagement work:",
     "more": [
@@ -140,7 +140,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-does-the-workflow-board-show-65",
     "product": "pro",
     "category": "Workflow",
-    "title": "What does the Workflow board show?",
+    "title": "Work with the Workflow board",
     "description": "The Board groups engagements by configured stages and shows stage totals, engagement value, priority, role assignments, due dates, time in stage, start date, and task progress. The Overview also…",
     "answer": "The Workflow Board gives firm users a visual view of engagements grouped by their current workflow stage.",
     "more": [
@@ -155,7 +155,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-engagement-workflows-configured-66",
     "product": "pro",
     "category": "Workflow",
-    "title": "How are engagement workflows configured?",
+    "title": "Configure an Engagement Workflow",
     "description": "A workflow is the reusable operating path applied to engagements of the relevant type. Administrators define the stages, the order in which work moves, the controls for advancing, and the task…",
     "answer": "A workflow defines the repeatable process the firm follows to deliver an engagement from start to completion, including its stages, their order, the requirements for advancing, and the tasks created as work reaches each stage.",
     "more": [
@@ -179,7 +179,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-create-a-workflow-67",
     "product": "pro",
     "category": "Workflow",
-    "title": "How do I create a workflow?",
+    "title": "Create a Workflow",
     "description": "Open Settings, choose Workflow, and select New Workflow. Add and order the required stages, then add task templates to each stage with the appropriate role, relative due date, and required status. The…",
     "answer": "Firm administrators can create a workflow from Settings > Workflow to define the standard process used for a recurring type of engagement.",
     "steps": [
@@ -204,7 +204,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-be-configured-on-workflow-task-templates-68",
     "product": "pro",
     "category": "Workflow",
-    "title": "What can be configured on workflow task templates?",
+    "title": "Configure Workflow Task Templates",
     "description": "A task template has a task name, responsible role, relative due-date offset from the time the engagement enters the stage, and an optional Required designation. Administrators can add, edit, delete,…",
     "answer": "Workflow task templates define the repeatable tasks that AssurePro creates when an engagement reaches a particular workflow stage.",
     "more": [
@@ -219,7 +219,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-firm-sop-and-how-is-it-managed-69",
     "product": "pro",
     "category": "Workflow",
-    "title": "What is Firm SOP and how is it managed?",
+    "title": "Firm SOPs explained",
     "description": "Firm SOP stores firm-wide procedures so preparers can follow one documented method. The page separates All, Pending, Active, Draft, and Rejected items and provides New SOP to start a procedure;…",
     "answer": "Firm SOP is the central location for maintaining firm-wide standard operating procedures in AssurePro.",
     "more": [
@@ -243,7 +243,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-a-new-engagement-created-70",
     "product": "pro",
     "category": "Workflow",
-    "title": "How is a new engagement created?",
+    "title": "Create an Engagement",
     "description": "An engagement can be started from Workflow or from the selected client's Engagements tab. Select New Engagement. Search for and select the client; if the client is missing, choose Create new client.…",
     "answer": "Firm users can create a new engagement either from Workflow or from the client's Engagements tab.",
     "more": [
@@ -268,7 +268,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-should-staff-use-board-list-and-tasks-views-71",
     "product": "pro",
     "category": "Workflow",
-    "title": "How should firm users use Board, List, and Tasks views?",
+    "title": "Choose the right Workflow view",
     "description": "Board is best for seeing engagements by workflow stage, List is best for scanning engagement records in rows, and Tasks focuses on the work items assigned within engagements. Open Workflow and select…",
     "answer": "The Board, List, and Tasks views provide different ways to review the same underlying engagement work. Switching views does not change an engagement's status or workflow.",
     "more": [
@@ -293,7 +293,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-an-engagement-repeat-72",
     "product": "pro",
     "category": "Workflow",
-    "title": "Can an engagement repeat?",
+    "title": "Set up a recurring Engagement",
     "description": "Yes. Workflow includes recurring engagements and shows recurrence badges such as monthly and semesterly, occurrence counts, and a Finished repeating state. Recurrence availability and options are…",
     "answer": "Yes. AssurePro supports recurring engagements for services that repeat on a regular schedule.",
     "more": [
@@ -309,7 +309,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-tasks-tracked-73",
     "product": "pro",
     "category": "Workflow",
-    "title": "How are tasks tracked?",
+    "title": "Track Tasks",
     "description": "Tasks can carry a priority, due date, assignee, completion state, and engagement context. They appear in Workflow, on the client Overview, and in dashboard task and review widgets, with overdue work…",
     "answer": "Tasks in AssurePro represent the individual actions that need to be completed as part of client and engagement work.",
     "more": [
@@ -324,7 +324,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-does-the-time-tracker-work-74",
     "product": "pro",
     "category": "Tasks",
-    "title": "How does the time tracker work?",
+    "title": "Time Tracker explained",
     "description": "The header timer records work while it is being performed and keeps the entry connected to the correct client, engagement, task, billing treatment, and staff member. Open the timer from the application…",
     "answer": "The time tracker allows firm users to record time as work is being performed and keep that time connected to the correct client, engagement, task, and billing treatment.",
     "more": [
@@ -350,7 +350,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-time-be-entered-manually-instead-of-using-the-timer-75",
     "product": "pro",
     "category": "Tasks",
-    "title": "Can time be entered manually instead of using the timer?",
+    "title": "Add a Time Entry manually",
     "description": "Yes. Manual entry is useful for work completed away from the live timer, corrections, or time reconstructed from another reliable work record. Open the time tracker and select the correct client or…",
     "answer": "Yes. Firm users can enter time manually when live tracking was not used or when the duration of the work is already known.",
     "more": [
@@ -377,7 +377,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-does-assurepro-support-workload-capacity-and-budget-oversight-76",
     "product": "pro",
     "category": "Troubleshooting",
-    "title": "How does AssurePro support workload, capacity, and budget oversight?",
+    "title": "Workload, capacity, and budget oversight explained",
     "description": "AssurePro brings workload, progress, actual time, and financial reporting together so managers can decide where attention or reassignment is needed. Use Team load to compare active staff, assigned task…",
     "answer": "AssurePro brings together team workload, workflow progress, recorded time, and reporting so partners and managers can see where work is at risk and decide when reassignment, follow-up, or a budget review is needed.",
     "more": [
@@ -399,7 +399,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-we-do-in-time-sheet-77",
     "product": "pro",
     "category": "Tasks",
-    "title": "What can we do in Time Sheet?",
+    "title": "Work with the Time Sheet",
     "description": "Time Sheet is the detailed register for reviewing recorded time and moving eligible billable entries into invoicing. Review the date, start and end time, client, engagement, task, assignee,…",
     "answer": "Time Sheet is the detailed register for reviewing recorded time across the firm and moving eligible billable time into invoicing.",
     "more": [
@@ -414,7 +414,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-standard-operating-procedures-be-managed-in-assurepro-78",
     "product": "pro",
     "category": "Workflow",
-    "title": "Can standard operating procedures be managed in AssurePro?",
+    "title": "Manage Standard Operating Procedures",
     "description": "Yes. Firm SOP stores firm-wide procedures with Pending, Active, Draft, and Rejected states. A client's AI SOP tab stores client-specific procedures so the work can follow the same documented steps…",
     "answer": "Yes. AssurePro supports documented procedures at different levels so your firm can maintain consistent working practices while still accounting for service- or client-specific requirements.",
     "more": [
@@ -430,7 +430,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-can-a-new-signing-package-be-started-80",
     "product": "pro",
     "category": "Engagements",
-    "title": "How can a new signing package be started?",
+    "title": "Start a new signing package",
     "description": "A signing package can start from scratch or from a saved or curated template. Import from agreement is displayed as Coming soon and is not currently available as a starting method.",
     "answer": "A new signing package can be started in one of the following ways:",
     "more": [
@@ -448,7 +448,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-are-the-main-steps-in-the-engagement-letter-builder-81",
     "product": "pro",
     "category": "Engagements",
-    "title": "What are the main steps in the engagement-letter builder?",
+    "title": "Engagement Letter builder steps explained",
     "description": "The engagement-letter builder separates the package into four connected sections so the firm can validate the client, commercial terms, agreement content, and delivery settings before sending. Setup:…",
     "answer": "The engagement-letter builder guides firm users through four connected sections so the client, commercial terms, agreement content, and sending requirements can be reviewed before the package is issued.",
     "more": [
@@ -469,7 +469,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-create-and-send-an-engagement-letter-82",
     "product": "pro",
     "category": "Engagements",
-    "title": "How do I create and send an engagement letter?",
+    "title": "Create and send an Engagement Letter",
     "description": "The builder prevents sending until its required client, package, recipient, and service information is complete. Open Engagement Letter and start a new Engagement Letter. Start from scratch or choose a…",
     "answer": "Create an engagement letter in AssurePro by starting a new signing package from Engagement Letters.",
     "more": [
@@ -496,7 +496,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-engagement-letters-be-created-and-sent-in-bulk-83",
     "product": "pro",
     "category": "Engagements",
-    "title": "Can engagement letters be created and sent in bulk?",
+    "title": "Send Engagement Letters in bulk",
     "description": "Engagement letters are currently created and sent as client-specific signing packages; the Engagement Letter screen does not provide a bulk-create or bulk-send action. This keeps each package tied to…",
     "answer": "Yes. AssurePro allows firms to select a bulk draft engagement letter and send it to multiple clients.",
     "more": [
@@ -512,7 +512,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-can-services-be-presented-to-a-client-in-a-signing-package-84",
     "product": "pro",
     "category": "Engagements",
-    "title": "How can services be presented to a client in a signing package?",
+    "title": "Present Services in a signing package",
     "description": "Services & Pricing supports three structures: Client picks one for choose-one packages, Client can add it for optional add-ons, and No client choice for services that are always included. The builder…",
     "answer": "In Services & Pricing, firm users can control how each service is presented to the client and whether the client has a choice.",
     "more": [
@@ -527,7 +527,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-a-package-include-more-than-one-recipient-85",
     "product": "pro",
     "category": "Engagements",
-    "title": "Can a package include more than one recipient?",
+    "title": "Add multiple recipients to a package",
     "description": "Yes. After selecting the client in Setup, confirm the primary recipient and use Add additional recipient for every other required signer. Review each recipient's name and email before sending, then…",
     "answer": "Yes. A signing package can include a primary recipient and additional recipients when more than one person needs to review or sign the engagement letter.",
     "more": [
@@ -551,7 +551,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-the-firm-customize-the-introduction-and-agreement-terms-86",
     "product": "pro",
     "category": "Engagements",
-    "title": "Can the firm customize the introduction and agreement terms?",
+    "title": "Customize the introduction and Agreement terms",
     "description": "Yes. A package can include an introduction with a selected or custom message. Agreement & Terms uses a terms template, can require explicit approval before signing, and can add supporting material such…",
     "answer": "Yes. Firm users can customize both the client-facing introduction and the agreement terms included in a signing package.",
     "more": [

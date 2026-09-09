@@ -77,7 +77,7 @@
   // expanding to their guides. The collection holding the current guide (or
   // the current collection page itself) auto-expands and highlights, so a
   // reader always sees where they are without hunting for a breadcrumb.
-  function renderSidebarTree(container, activeGuideId, activeCollectionId) {
+  function renderSidebarTree(container, activeGuideId, activeCollectionId, activeArticleId, contextQuery='') {
     const T = window.HelpCenterTaxonomy;
     if (!T || !container) return;
     const counts = {};
@@ -88,7 +88,11 @@
       const guidesHtml = c.guides.map((g) => {
         const n = counts[g.id] || 0;
         const cls = g.id === activeGuideId ? 'active' : '';
-        return `<a href="${T.guideUrl(g.id)}" class="${cls}"><span>${esc(g.label)}</span>${n ? '' : '<small class="soon">Soon</small>'}</a>`;
+        const guideHref = T.guideUrl(g.id) + (contextQuery && g.id === activeGuideId ? `&${contextQuery}` : '');
+        const articleItems = g.id === activeGuideId && activeArticleId
+          ? proArticles().filter(a => T.guideOfArticle(a.id) === g.id).map(a => `<a class="nav-article${a.id === activeArticleId ? ' current' : ''}" href="${articleUrl(a.id)}${contextQuery ? `&${contextQuery}` : ''}"${a.id === activeArticleId ? ' aria-current="page"' : ''}>${esc(a.title)}</a>`).join('')
+          : '';
+        return `<div class="nav-guide${cls ? ' active' : ''}"><a href="${guideHref}" class="nav-guide-link ${cls}"><span>${esc(g.label)}</span>${n ? `<small>${n}</small>` : '<small class="soon">Soon</small>'}</a>${articleItems ? `<div class="nav-articles">${articleItems}</div>` : ''}</div>`;
       }).join('');
       return `<div class="nav-collection${isOpen ? ' open' : ''}">
         <button type="button" class="nav-collection-toggle${c.id === (activeCollectionId || (activeCollection && activeCollection.id)) ? ' active' : ''}" aria-expanded="${isOpen ? 'true' : 'false'}">
@@ -110,7 +114,34 @@
       });
     });
   }
+  function renderBranchTree(container, moduleId, activeHeaderId, activeArticleId) {
+    const B = window.AssureProBranches;
+    if (!B || !container) return;
+    const module = B.moduleById(moduleId);
+    if (!module) return;
+    const all = proArticles();
+    container.innerHTML = `<a class="branch-module-link" href="${B.moduleUrl(module.id)}">${esc(module.label)}</a><div class="branch-headers">${module.headers.map(header => {
+      const items = B.headerArticles(header.id, all);
+      const active = header.id === activeHeaderId;
+      const listId = `branch-${header.id}`;
+      const children = items.map(article => `<a class="nav-article${article.id === activeArticleId ? ' current' : ''}" href="${articleUrl(article.id)}"${article.id === activeArticleId ? ' aria-current="page"' : ''}>${esc(article.title)}</a>`).join('');
+      return `<div class="branch-header${active ? ' open active' : ''}${items.length ? '' : ' unavailable'}"><button class="branch-header-toggle" type="button" aria-expanded="${active ? 'true' : 'false'}" aria-controls="${listId}"${items.length ? '' : ' disabled'}><span>${esc(header.label)}</span><small>${items.length || 'Soon'}</small><span class="branch-caret" aria-hidden="true">${icon('chevron')}</span></button>${items.length ? `<div class="nav-articles branch-article-drawer" id="${listId}">${children}</div>` : ''}</div>`;
+    }).join('')}</div><a class="branch-all-link" href="category.html">Browse all AssurePro topics</a>`;
+    container.querySelectorAll('.branch-header-toggle:not(:disabled)').forEach((button) => {
+      button.addEventListener('click', () => {
+        const row = button.closest('.branch-header');
+        const opening = !row.classList.contains('open');
+        container.querySelectorAll('.branch-header.open').forEach((other) => {
+          if (other === row) return;
+          other.classList.remove('open');
+          other.querySelector('.branch-header-toggle')?.setAttribute('aria-expanded', 'false');
+        });
+        row.classList.toggle('open', opening);
+        button.setAttribute('aria-expanded', String(opening));
+      });
+    });
+  }
   function boot(){bindSupport();bindCopyLink();bindSearch();bindComingSoon()}
-  window.HelpCenter={articles,proArticles,esc,slug,articleUrl,categoryUrl,categoryOfSlug,boot,PRODUCT_LABEL,iconCopy,icon,topicIcon,renderSidebarTree};
+  window.HelpCenter={articles,proArticles,esc,slug,articleUrl,categoryUrl,categoryOfSlug,boot,PRODUCT_LABEL,iconCopy,icon,topicIcon,renderSidebarTree,renderBranchTree};
   document.addEventListener('DOMContentLoaded',boot);
 })();

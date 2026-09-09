@@ -3,7 +3,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-communication-channels-are-available-115",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Which communication channels are available?",
+    "title": "Client Communications explained",
     "description": "Communications brings together Chat, Email, SMS, Call, and Team chat. Chat keeps the conversation in the client experience; Email uses the firm's connected email service; SMS uses the firm's connected…",
     "answer": "AssurePro brings the firm's client and internal communication channels together in Communications.",
     "more": [
@@ -18,7 +18,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-start-a-client-conversation-116",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I start a client conversation?",
+    "title": "Start a Client conversation",
     "description": "A conversation can begin in the shared Communications area or in the selected client's workspace. Open Communications and choose the required channel, or open the client's Communications tab. Select…",
     "answer": "Firm users can start a conversation from the shared Communications area or directly from a client's Communications tab.",
     "more": [
@@ -46,7 +46,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-the-difference-between-portal-chat-and-sms-117",
     "product": "pro",
     "category": "Getting Started",
-    "title": "What is the difference between portal chat and SMS?",
+    "title": "Portal Messages and SMS compared",
     "description": "Chat is a conversation inside the AssurePro client experience, so the client reads and replies through their portal access. SMS uses the firm's connected Twilio phone number and reaches the client's…",
     "answer": "Both portal chat and SMS let firm users communicate with clients, but the client receives and responds through a different channel.",
     "more": [
@@ -60,7 +60,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-can-the-communications-inbox-be-organized-118",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How can the communications inbox be organized?",
+    "title": "Organize the Communications Inbox",
     "description": "First choose the required channel, then narrow the inbox to All, Unread, Assigned to me, or Resolved. Use Unread for new activity, Assigned to me for the signed-in user's queue, and Resolved to review…",
     "answer": "The Communications inbox can be filtered and organized so firm users can focus on conversations that need attention.",
     "more": [
@@ -76,7 +76,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-client-facing-emails-be-standardized-119",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can client-facing emails be standardized?",
+    "title": "Standardize client-facing Email Templates",
     "description": "Email Templates centralizes the automated messages AssurePro sends on the firm's behalf. Verified groups cover Billing, Tax & intake, Documents, E-sign, Client portal, and Internal alerts. Each…",
     "answer": "Yes. Email Templates allows firm administrators to standardize automated emails that AssurePro sends on the firm's behalf.",
     "more": [
@@ -92,7 +92,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-edit-and-test-an-automated-email-template-120",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I edit and test an automated email template?",
+    "title": "Edit and test an Email Template",
     "description": "The editor supports placeholders, rich-text controls, desktop and mobile preview widths, and a test-send action. Edited templates are marked so administrators can find customized wording. Open Settings…",
     "answer": "Firm administrators can customize an automated email template from Settings > Email Templates and test the message before it is used with clients.",
     "more": [
@@ -120,7 +120,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-administrators-audit-automated-email-delivery-121",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can administrators audit automated email delivery?",
+    "title": "Audit automated Email delivery",
     "description": "Yes. Email Log records sent time, status, recipient, client, subject, type, and a delivery error when one is returned. It can be searched by recipient or subject and filtered by All, Sent, Failed, or…",
     "answer": "Yes. Email Log gives firm administrators visibility into automated emails sent by AssurePro.",
     "more": [
@@ -136,7 +136,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-investigate-an-email-that-was-not-delivered-122",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I investigate an email that was not delivered?",
+    "title": "Investigate an undelivered Email",
     "description": "Use Email Log rather than the client's general communications history when checking an automated AssurePro email. Open Settings and choose Email Log. Search by recipient or subject. Filter to Failed or…",
     "answer": "Use Email Log to investigate an automated AssurePro email that was not successfully delivered.",
     "steps": [
@@ -159,7 +159,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-reminders-can-be-automated-123",
     "product": "pro",
     "category": "Getting Started",
-    "title": "What reminders can be automated?",
+    "title": "Automated Reminders explained",
     "description": "Reminders provides separate automatic nudges for document requests, unanswered messages, tax organizers, and signature requests. Each reminder type has its own on/off switch and editable schedule…",
     "answer": "AssurePro can automate follow-up reminders for several common client actions, helping the firm reduce repetitive manual follow-up.",
     "more": [
@@ -175,7 +175,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-change-an-automatic-reminder-schedule-124",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I change an automatic reminder schedule?",
+    "title": "Change an automatic Reminder schedule",
     "description": "Reminder schedules are configured independently so the firm can use different follow-up timing for different kinds of client work. Open Settings and choose Reminders. Find Document requests, Unanswered…",
     "answer": "Firm administrators can configure each type of automated client reminder separately from Settings > Reminders.",
     "more": [
@@ -199,7 +199,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-assurepro-follow-up-when-a-client-has-not-responded-125",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can AssurePro follow up when a client has not responded?",
+    "title": "Automate follow-up for an unresponsive Client",
     "description": "Yes, for the supported reminder types. Reminders can automatically nudge clients about unanswered messages, document requests, tax organizers, and signature requests. Configure each reminder type…",
     "answer": "Yes. AssurePro can automatically follow up with clients when certain requests or actions remain outstanding.",
     "more": [
@@ -215,7 +215,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-assurepro-send-and-receive-client-text-messages-126",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can AssurePro send and receive client text messages?",
+    "title": "Send and receive Client text messages",
     "description": "Yes, through a connected Twilio account. Phone Numbers lets the firm link an owned number or add a new one and shows whether it supports SMS, MMS, and Voice. It also exposes A2P 10DLC registration…",
     "answer": "Yes. AssurePro supports client SMS messaging through a connected Twilio account.",
     "more": [
@@ -235,7 +235,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-configure-a-firm-phone-number-for-sms-127",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I configure a firm phone number for SMS?",
+    "title": "Configure a firm phone number for SMS",
     "description": "The firm first connects Twilio in Integrations, then manages usable numbers in Phone Numbers. Open Settings and confirm Twilio is connected under Integrations. Choose Phone Numbers and select Add…",
     "answer": "Firm administrators can configure a phone number for client SMS messaging after connecting the firm's Twilio account.",
     "steps": [
@@ -257,7 +257,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-phone-number-does-a-client-see-when-the-firm-sends-an-sms-128",
     "product": "pro",
     "category": "Getting Started",
-    "title": "What phone number does a client see when the firm sends an SMS?",
+    "title": "Client SMS phone number explained",
     "description": "The client sees the Twilio phone number connected to the firm in Phone Numbers. Administrators should confirm that the intended number is linked and that its A2P 10DLC registration is complete before…",
     "answer": "The client sees the Twilio phone number linked to your firm in AssurePro as the sender of the SMS.",
     "more": [
@@ -272,7 +272,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-calendar-connections-are-supported-129",
     "product": "pro",
     "category": "Troubleshooting",
-    "title": "What calendar connections are supported?",
+    "title": "Calendar connections explained",
     "description": "Calendar prompts the firm to connect Calendly for meetings. Integrations also lists Google Calendar and Outlook Calendar and describes matching connected meetings to the relevant client.",
     "answer": "AssurePro supports calendar and scheduling integrations that help the firm manage client meetings and connect meeting activity to client records.",
     "more": [
@@ -286,7 +286,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-does-everything-a-client-sees-carry-the-firm-s-branding-or-does-assure-130",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Does everything a client sees carry the firm's branding, or does AssureOne branding appear anywhere?",
+    "title": "Client-facing branding explained",
     "description": "The firm can configure its client-facing identity in Settings > Client Portal, including the available firm branding and portal presentation controls. That branding is used across the client…",
     "answer": "AssurePro allows the firm to apply its own branding across key client-facing areas, but some AssureOne branding may still appear in selected platform-managed locations.",
     "more": [
@@ -302,7 +302,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-the-reports-area-organized-131",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How is the Reports area organized?",
+    "title": "Reports area explained",
     "description": "Reports has three destinations. Overview contains standard firm KPIs and report cards. My Report contains starter dashboards, dashboards shared with the firm, and the user's own dashboards. Templates…",
     "answer": "The Reports area is organized into three main destinations:",
     "more": [
@@ -318,7 +318,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-kpis-appear-at-the-top-of-reports-133",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Which KPIs appear at the top of Reports?",
+    "title": "Reports KPIs explained",
     "description": "The KPI cards are Total Revenue, Collected, Outstanding A/R, Billable Hours, Utilization, and New Clients. Use them together: Revenue shows billed performance, Collected shows cash received,…",
     "answer": "The top of Reports includes headline KPI cards that provide a quick view of firm performance.",
     "more": [
@@ -334,7 +334,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-review-and-export-a-report-134",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I review and export a report?",
+    "title": "Review and export a Report",
     "description": "Use the common period controls to keep the report cards and KPI context aligned. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or Custom and provide the date range when…",
     "answer": "Set the reporting period first so the KPI cards, report widgets, detailed dashboards, and exported results reflect the dates you intend to review.",
     "more": [
@@ -359,7 +359,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-report-periods-and-results-be-changed-or-exported-136",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can report periods and results be changed or exported?",
+    "title": "Change or export Report periods and results",
     "description": "Yes. Reports provides MTD, QTD, YTD, 12M, and custom date ranges, along with Export and Full report actions. Workflow reporting can also be filtered by stage and status-related measures such as active…",
     "answer": "Yes. AssurePro lets firm users change the reporting period, review more detailed results, and export report data.",
     "more": [
@@ -375,7 +375,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-report-and-dashboard-data-be-exported-137",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can report and dashboard data be exported?",
+    "title": "Export Report and Dashboard data",
     "description": "Yes. Report and dashboard results can be exported for review or use outside AssurePro. Open Reports and choose Overview or My Report. Select MTD, QTD, YTD, 12M, or a Custom date range so the export…",
     "answer": "Yes. Firm users can export report and dashboard data for external analysis, reconciliation, or recordkeeping.",
     "steps": [
@@ -396,7 +396,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-build-a-custom-dashboard-140",
     "product": "pro",
     "category": "Dashboard",
-    "title": "How do I build a custom report?",
+    "title": "Build a custom Dashboard",
     "description": "Templates lets a user assemble a dashboard from individual report widgets. Save dashboard becomes available after at least one widget is selected. Open Reports and choose Templates. Search for a widget…",
     "answer": "You can build a custom dashboard from Reports > Templates by selecting the report widgets that match the information or management question you want to track.",
     "more": [
@@ -422,7 +422,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-share-or-manage-a-custom-dashboard-142",
     "product": "pro",
     "category": "Dashboard",
-    "title": "How do I share or manage a custom dashboard?",
+    "title": "Share or manage a custom Dashboard",
     "description": "When saving, enable Share with the firm to make the dashboard visible to everyone with report access; only owners and administrators can edit shared dashboards. Dashboard actions include Edit widgets,…",
     "answer": "When saving a custom dashboard, enable Share with the firm to make it available to other firm users who have report access.",
     "more": [
@@ -437,7 +437,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-report-widget-categories-can-i-use-143",
     "product": "pro",
     "category": "Dashboard",
-    "title": "Which report-widget categories can I use?",
+    "title": "Report widget categories explained",
     "description": "Templates groups widgets into Revenue, Clients, Workflow, Tasks, Time, Billing, and Agreements. The library includes headline metrics, trend charts, mixes and ageing reports, assignee and client…",
     "answer": "The Reports > Templates library organizes report widgets into categories so you can quickly find metrics related to a specific area of the firm.",
     "more": [
@@ -452,7 +452,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-does-the-agreement-funnel-report-show-144",
     "product": "pro",
     "category": "Getting Started",
-    "title": "What does the agreement funnel report show?",
+    "title": "Agreement Funnel report explained",
     "description": "The agreement funnel tracks Sent, Viewed, and Signed activity and identifies packages that are in flight, declined, expired, or cancelled. It helps the firm see where signing packages are progressing…",
     "answer": "The Agreement Funnel report shows how engagement-letter signing packages are progressing from delivery through completion.",
     "more": [
@@ -468,7 +468,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-does-the-dashboard-help-identify-work-needing-attention-145",
     "product": "pro",
     "category": "Dashboard",
-    "title": "How does the dashboard help identify work needing attention?",
+    "title": "Find work needing attention on the Dashboard",
     "description": "Dashboard tiles highlight due-this-week and past-due engagements, engagement letters awaiting action, stalled work, team workload, overdue tasks, review queues, receivables, and key filing dates. Each…",
     "answer": "The Overview dashboard helps firm users identify work that may require attention by bringing key deadlines, exceptions, workload indicators, and operational risks into one place.",
     "more": [
@@ -484,7 +484,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-the-ai-agent-help-with-146",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "What can the AI Agent help with?",
+    "title": "AI Agent explained",
     "description": "The AssurePro AI Agent can answer questions about clients, documents, work, and billing. Verified examples include client counts, outstanding billing, open tasks, inbox summaries, stuck engagements,…",
     "answer": "The AssurePro AI Agent can help firm users find, summarize, analyze, and draft information related to client and firm work.",
     "more": [
@@ -500,7 +500,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-ask-the-ai-agent-for-help-147",
     "product": "pro",
     "category": "AI & Automation",
-    "title": "How do I ask the AI Agent for help?",
+    "title": "Ask the AI Agent for help",
     "description": "The Agent uses a conversational prompt and states that it asks before changing anything. Open AI Agent. Enter a specific question about clients, documents, work, billing, or communications, or choose a…",
     "answer": "Ask the AI Agent a specific question in plain language, then review the response, linked records, and any action it proposes.",
     "steps": [

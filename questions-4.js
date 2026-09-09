@@ -3,7 +3,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-checked-before-a-package-is-sent-87",
     "product": "pro",
     "category": "Engagements",
-    "title": "What is checked before a package is sent?",
+    "title": "Before you send a signing package",
     "description": "Review & Send summarizes the client, package name, recipients, sign-by date, validity date, reminder cadence, billing, terms, and approval requirement. The builder lists each unresolved requirement and…",
     "answer": "Before a signing package can be sent, Review & Send provides a final summary of the package and highlights any required information that is still missing.",
     "more": [
@@ -18,7 +18,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-assurepro-remind-a-client-to-sign-an-engagement-letter-88",
     "product": "pro",
     "category": "Engagements",
-    "title": "Can AssurePro remind a client to sign an engagement letter?",
+    "title": "Automate Engagement Letter Reminders",
     "description": "Yes. Review & Send includes a reminder cadence for the signing package. Set the sign-by and validity dates as needed, choose the reminder schedule, and confirm the reminder details before sending.",
     "answer": "Yes. Firm users can configure a reminder cadence for a signing package so clients are reminded when an engagement letter is still awaiting action.",
     "more": [
@@ -40,7 +40,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-signing-statuses-can-staff-track-89",
     "product": "pro",
     "category": "Engagements",
-    "title": "Which signing statuses can firm users track?",
+    "title": "Track Engagement Letter signing status",
     "description": "The package list shows states including Draft, Sent, Viewed, Partial, Signed, Declined, and Archived. Rows also show events such as sent, completed, partially signed, backdated, and consent status…",
     "answer": "AssurePro allows firm users to track the progress of signing packages from preparation through completion.",
     "more": [
@@ -56,7 +56,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-does-the-engagement-letter-signature-process-work-90",
     "product": "pro",
     "category": "Engagements",
-    "title": "How does the engagement-letter signature process work?",
+    "title": "Engagement Letter signing process explained",
     "description": "The signer opens the client-facing engagement package, reviews the offered services, pricing, agreement terms, and supporting content, and then completes the required signature step by drawing a…",
     "answer": "After the signing package is sent, the recipient opens the client-facing package, reviews the services, pricing, agreement terms, and any supporting content, then completes any required selections or approvals and signs by drawing a signature or typing their name.",
     "more": [
@@ -77,7 +77,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-are-the-magic-link-and-audit-log-for-a-sent-engagement-letter-91",
     "product": "pro",
     "category": "Engagements",
-    "title": "What are the magic link and audit log for a sent engagement letter?",
+    "title": "Review Engagement Letter magic link and audit log",
     "description": "After an engagement letter has been sent, previewing the sent package provides the operational actions for that delivery, including its magic link and audit log. Open Engagement Letter and select the…",
     "answer": "For a sent engagement letter, the magic link gives access to that specific client-facing signing package, and the audit log records the delivery and signing activity for it.",
     "more": [
@@ -97,7 +97,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-a-client-sign-an-engagement-letter-from-a-mobile-device-92",
     "product": "pro",
     "category": "Engagements",
-    "title": "Can a client sign an engagement letter from a mobile device?",
+    "title": "Sign an Engagement Letter from a mobile device",
     "description": "Yes. The client can review and sign the engagement package from a supported mobile device. Open the engagement-package link from the firm's invitation or client experience. Review the introduction,…",
     "answer": "Yes. Clients can open and complete an engagement-letter signing package from a phone or tablet.",
     "more": [
@@ -120,7 +120,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-the-billing-area-organized-93",
     "product": "pro",
     "category": "Billing",
-    "title": "How is the Billing area organized?",
+    "title": "Billing area explained",
     "description": "Billing has three tabs. Invoices combines receivable summaries, agreement-generated drafts, search, filters, and the invoice register. Recurring manages automated billing schedules. Referrals tracks…",
     "answer": "The Billing area is organized into three main tabs:",
     "more": [
@@ -141,7 +141,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-does-the-invoices-overview-show-94",
     "product": "pro",
     "category": "Billing",
-    "title": "What does the Invoices overview show?",
+    "title": "Invoices overview explained",
     "description": "The overview summarizes Outstanding, Overdue, Awaiting payment, Collected in the last 30 days, and Drafts. Selecting a summary card filters the register to that group. The register can also be searched…",
     "answer": "The Invoices overview gives firm users a quick view of the firm's current receivables and billing activity.",
     "more": [
@@ -156,7 +156,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-invoice-sources-and-statuses-are-tracked-95",
     "product": "pro",
     "category": "Billing",
-    "title": "Which invoice sources and statuses are tracked?",
+    "title": "Invoice sources and statuses explained",
     "description": "The invoice register distinguishes Manual, Agreement, and Time sources. Visible statuses include Draft, Sent, Viewed, Overdue, Paid, and Cancelled. Total, remaining balance, and due date are shown…",
     "answer": "The invoice register tracks both where an invoice came from and where it is in its lifecycle.",
     "more": [
@@ -170,7 +170,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-a-new-invoice-created-96",
     "product": "pro",
     "category": "Billing",
-    "title": "How is a new invoice created?",
+    "title": "Create a new Invoice",
     "description": "An invoice cannot be sent until a client, due date, and at least one priced line item are present. Open Billing and select Create invoice, or choose Invoice from the global + New menu. Select the…",
     "answer": "Create an invoice by selecting the client, setting the invoice and due dates, and adding at least one priced line item.",
     "more": [
@@ -195,7 +195,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-staff-review-on-an-individual-invoice-97",
     "product": "pro",
     "category": "Billing",
-    "title": "What can firm users review on an individual invoice?",
+    "title": "Review an individual Invoice",
     "description": "The invoice record shows its status and source, balance, issue and due dates, subtotal, discount, tax, amount paid, client, related signed agreement when applicable, description, and line items.…",
     "answer": "An individual invoice record gives firm users a detailed view of the invoice, its financial position, and the activity that has occurred since it was created.",
     "more": [
@@ -211,7 +211,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-can-clients-pay-an-assurepro-invoice-98",
     "product": "pro",
     "category": "Billing",
-    "title": "How can clients pay an AssurePro invoice?",
+    "title": "Pay an Invoice as a Client",
     "description": "Client payment collection uses the payment processor connected in Integrations and the firm's Billing & Payments configuration. An invoice tracks its total, balance, due date, and payment status; the…",
     "answer": "Clients can pay AssurePro invoices using the payment methods the firm enables through its connected payment processor.",
     "more": [
@@ -225,7 +225,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-the-firm-record-a-payment-received-outside-assurepro-99",
     "product": "pro",
     "category": "Billing",
-    "title": "Can the firm record a payment received outside AssurePro?",
+    "title": "Record a Payment received outside AssurePro",
     "description": "Yes. Open the invoice and use Add payment to record an off-platform payment. Select the payment method, enter the payment date and required details, and save it so the invoice balance and status…",
     "answer": "Yes. Firm users can record a payment received outside AssurePro so the invoice balance and payment history remain accurate.",
     "more": [
@@ -251,7 +251,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-signed-agreements-create-billing-work-100",
     "product": "pro",
     "category": "Billing",
-    "title": "Can signed agreements create billing work?",
+    "title": "Create Billing from a signed Agreement",
     "description": "Yes. Signed engagements can create invoice drafts and recurring schedules from their agreed billing terms. Billing places them in Agreements awaiting billing so staff can review the generated work…",
     "answer": "Yes. Billing terms accepted through a signed engagement package can generate billing work in AssurePro.",
     "more": [
@@ -266,7 +266,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-review-billing-created-by-a-signed-agreement-101",
     "product": "pro",
     "category": "Billing",
-    "title": "How do I review billing created by a signed agreement?",
+    "title": "Review Billing created from a signed Agreement",
     "description": "Agreement billing is separated by what still needs attention. Open Billing and select the signed-agreements banner. Search by client or agreement if needed. Under Pending review, check the signed date,…",
     "answer": "When a signed engagement letter creates billing work, AssurePro places the generated item in a review queue before it is sent or activated.",
     "more": [
@@ -292,7 +292,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-does-recurring-billing-work-102",
     "product": "pro",
     "category": "Billing",
-    "title": "How does recurring billing work?",
+    "title": "Recurring Billing explained",
     "description": "Recurring contains schedules that generate invoices on a configured cadence. Auto-send schedules bill the client automatically; Manual send schedules wait for firm review. The list shows client,…",
     "answer": "Recurring billing allows your firm to create invoice schedules for services that are billed on a repeating cadence.",
     "more": [
@@ -307,7 +307,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-review-or-control-a-recurring-schedule-103",
     "product": "pro",
     "category": "Billing",
-    "title": "How do I review or control a recurring schedule?",
+    "title": "Review or control a recurring Billing schedule",
     "description": "A schedule can be inspected without opening the client record. Open Billing and choose Recurring. Find the schedule in tile or list view. Select View details to review client, email, status, total…",
     "answer": "Firm users can open a recurring billing schedule to review its current setup, billing history, and upcoming invoice activity.",
     "more": [
@@ -333,7 +333,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-the-services-catalog-104",
     "product": "pro",
     "category": "Billing",
-    "title": "What is the Services catalog?",
+    "title": "Service Catalog explained",
     "description": "Services is the reusable catalog behind invoice line items and engagement packages. Search and filters narrow the list by name or description, kind, pricing, and active state. Each row shows the…",
     "answer": "The Services catalog is the firm's reusable library of services used across billing and engagement packages.",
     "more": [
@@ -349,7 +349,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-which-service-kinds-and-pricing-models-are-available-105",
     "product": "pro",
     "category": "Billing",
-    "title": "Which service kinds and pricing models are available?",
+    "title": "Service types and pricing explained",
     "description": "The New service form offers Bundle, Add-on, Hourly, Retainer, and Service as kinds. Pricing is configured separately as Fixed, Hourly, or Retainer. Bundles represent packaged items and display the…",
     "answer": "When creating a service, AssurePro separates its Kind from its Pricing model.",
     "more": [
@@ -363,7 +363,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-create-a-service-106",
     "product": "pro",
     "category": "Billing",
-    "title": "How do I create a service?",
+    "title": "Create a Service",
     "description": "A catalog item can carry the defaults that staff would otherwise re-enter during billing. Open Services and select New service. Enter the service name and optional description. Choose Bundle, Add-on,…",
     "answer": "Create a service in Services to define a reusable offering that firm users can use in invoices and engagement packages.",
     "more": [
@@ -390,7 +390,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-find-deactivate-or-archive-a-service-107",
     "product": "pro",
     "category": "Billing",
-    "title": "How do I find, deactivate, or archive a service?",
+    "title": "Find, deactivate, or archive a Service",
     "description": "Search by name or description, or filter the catalog by kind and pricing. Use the Active switch on a row to make an item inactive, and enable Show inactive when it needs to be found again. Archive is…",
     "answer": "Use search and filters in the Services catalog to find an existing service by name, description, kind, pricing model, or active status.",
     "more": [
@@ -415,7 +415,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-a-standard-operating-procedure-attached-to-a-service-108",
     "product": "pro",
     "category": "Billing",
-    "title": "How is a standard operating procedure attached to a service?",
+    "title": "Attach an SOP to a Service",
     "description": "Select the plus control in the service's SOP column or choose SOPs from its action menu. The Standard Operating Procedures dialog is labeled for the selected service and is where the firm records how…",
     "answer": "A service can have a related Standard Operating Procedure (SOP) that documents how your firm performs and delivers that service.",
     "more": [
@@ -439,7 +439,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-time-entries-turned-into-invoices-109",
     "product": "pro",
     "category": "Billing",
-    "title": "How are time entries turned into invoices?",
+    "title": "Create an Invoice from billable time",
     "description": "Uninvoiced time entries can be selected in Time Sheet and passed to Generate invoice. The invoice editor also includes Import unbilled time so billable work can be added while drafting an invoice.",
     "answer": "Billable time recorded in Time Sheet can become invoice line items in two ways: from Time Sheet, by selecting eligible uninvoiced entries and choosing Generate invoice, or from the invoice builder, by selecting Import unbilled time. Both let the firm use already-recorded time instead of re-entering hours.",
     "more": [
@@ -454,7 +454,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-the-difference-between-billing-payments-and-platform-subscript-110",
     "product": "pro",
     "category": "Billing",
-    "title": "What is the difference between Billing & Payments and Platform Subscription?",
+    "title": "Billing & Payments vs. Platform Subscription explained",
     "description": "Billing & Payments identifies the firm's Stripe payout account and directs administrators to Integrations to manage that connection. Its additional invoicing defaults, accepted payment methods, and…",
     "answer": "Billing & Payments and Platform Subscription serve two different financial purposes in AssurePro.",
     "more": [
@@ -468,7 +468,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-review-assureone-platform-purchases-and-receipts-111",
     "product": "pro",
     "category": "Billing",
-    "title": "How do I review AssureOne platform purchases and receipts?",
+    "title": "Review AssureOne platform purchases and receipts",
     "description": "Platform Subscription is separate from client billing. It summarizes firm purchases from AssureOne Technologies LLC and lists the purchase, date, status, amount, and payment-card summary for each…",
     "answer": "Use Platform Subscription to review invoices and receipts for purchases your firm makes from AssureOne Technologies LLC.",
     "more": [
@@ -492,7 +492,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-payment-and-accounting-connections-are-available-112",
     "product": "pro",
     "category": "Billing",
-    "title": "What payment and accounting connections are available?",
+    "title": "Payment and accounting connections explained",
     "description": "The Integrations screen provides a payment-processor connection for client payments and a QuickBooks Online connection so paid AssurePro invoices can sync into accounting. Billing & Payments points…",
     "answer": "AssurePro supports integrations for both client payment collection and accounting synchronization.",
     "more": [
@@ -507,7 +507,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-does-assurepro-include-referral-tracking-113",
     "product": "pro",
     "category": "Billing",
-    "title": "Does AssurePro include referral tracking?",
+    "title": "Referral tracking explained",
     "description": "Yes. Billing includes a Referrals tab for MyCPEOne referrals. It supports bulk import and individual referral, and tracks referred clients, active or paying referrals, monthly commission, lifetime…",
     "answer": "Yes. The Referrals tab under Billing allows your firm to track MyCPEOne referrals and the related commission activity.",
     "more": [
@@ -522,7 +522,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-refer-a-client-to-mycpeone-114",
     "product": "pro",
     "category": "Billing",
-    "title": "How do I refer a client to MyCPEOne?",
+    "title": "Refer a Client to MyCPEOne",
     "description": "A referral can use an existing AssurePro client or create a new referral contact. Open Billing and choose Referrals. Select Refer a client. Choose New client or From my clients. Enter the required…",
     "answer": "Firm users can create a MyCPEOne referral from Billing > Referrals.",
     "more": [

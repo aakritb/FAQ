@@ -4,7 +4,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-assurepro-1",
     "product": "pro",
     "category": "Getting Started",
-    "title": "What is AssurePro?",
+    "title": "AssurePro explained",
     "description": "AssurePro is AssureOne's practice-management foundation. It brings together firm setup, team access, clients, prospects, documents, engagement workflows, engagement letters, time, billing, services,…",
     "answer": "AssurePro is the practice management platform within AssureOne. It helps accounting firms manage their day-to-day operations from a centralized system, including firm setup, team access, client relationships, documents, engagement workflows, engagement letters, time and billing, communications, reporting, templates, and integrations.",
     "more": [
@@ -18,7 +18,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-is-assurepro-the-firm-s-practice-management-system-or-a-bookkeeping-sy-2",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Is AssurePro the firm's practice-management system or a bookkeeping system?",
+    "title": "AssurePro and AssureBooks compared",
     "description": "AssurePro is the firm's practice-management system. It manages the operational relationship with clients, including onboarding, documents, workflows, engagement letters, time, billing, communications,…",
     "answer": "AssurePro is the firm's practice management system. It manages the operational relationship with clients, including onboarding, document requests, workflows, engagement letters, time tracking, billing, communications, and reporting.",
     "more": [
@@ -34,7 +34,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-on-the-assurepro-overview-3",
     "product": "pro",
     "category": "Dashboard",
-    "title": "What is on the AssurePro Overview?",
+    "title": "Overview dashboard explained",
     "description": "Overview is the firm's operating dashboard. It combines an AI-generated daily briefing with configurable tiles and widgets for clients, engagements, team load, engagement letters, bottlenecks, billing,…",
     "answer": "The Overview is AssurePro's main operating dashboard. It gives firm users a consolidated view of important activity, priorities, and performance across the practice.",
     "more": [
@@ -49,7 +49,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-can-the-overview-dashboard-be-customized-4",
     "product": "pro",
     "category": "Dashboard",
-    "title": "Can the Overview dashboard be customized?",
+    "title": "Customize your Overview",
     "description": "Yes. Select Edit layout to add or remove available widgets, drag them into the preferred order, and save the layout. This changes how the available Overview information is arranged for the user.",
     "answer": "Yes. You can customize the Overview dashboard to show the information that is most relevant to your role and day-to-day responsibilities.",
     "more": [
@@ -65,7 +65,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-find-information-or-start-common-work-quickly-5",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I find existing information quickly?",
+    "title": "Use Global Search",
     "description": "Use search when the record already exists and + New when the work has not been created yet. Select the header search or use its displayed keyboard shortcut. Enter a client, document, or task name and…",
     "answer": "Use the global search in AssurePro to quickly find information that already exists in the system. You can search for clients, documents, or tasks by name and open the relevant record directly from the search results.",
     "steps": [
@@ -82,7 +82,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-create-a-new-record-quickly-173",
     "product": "pro",
     "category": "Getting Started",
-    "title": "How do I create a new record quickly?",
+    "title": "Create records from the + New menu",
     "description": "Use the global + New menu to create a Client, Task, Message, Invoice, Document Request, or Engagement Letter from anywhere in AssurePro. Selecting a shortcut opens the full creation form for that…",
     "answer": "Use the + New menu in the top-right corner of AssurePro to create common records from anywhere in the application. Depending on your access, you can quickly create a Client, Task, Message, Invoice, Document Request, or Engagement Letter.",
     "more": [
@@ -103,7 +103,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-where-do-firm-users-sign-in-7",
     "product": "pro",
     "category": "Users & Access",
-    "title": "Where do firm users sign in?",
+    "title": "Sign in to AssurePro",
     "description": "Firm users use the AssurePro sign-in link supplied by their administrator or AssureOne. A new user first opens the invitation sent to their work email, accepts it, completes the requested email-code…",
     "answer": "Firm users sign in to the internal AssurePro workspace using the access link provided by their firm administrator. A new firm user opens the invitation sent to their work email, verifies the address, and sets a password to activate the account. Client users follow a separate process: they sign in through the firm's client portal or the AssureOne mobile app, on iOS or Android.",
     "more": [
@@ -117,7 +117,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-support-channels-are-available-if-we-run-into-an-issue-9",
     "product": "pro",
     "category": "Troubleshooting",
-    "title": "How do I get help or report an issue in AssurePro?",
+    "title": "Contact AssureOne Support",
     "description": "AssureOne provides direct email support, in-product issue reporting, and implementation assistance. Email support@assureone.ai when you need help from the AssureOne support team. Use Report a bug in…",
     "answer": "AssureOne provides direct email support, in-product issue reporting, and implementation assistance.",
     "steps": [
@@ -133,7 +133,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-is-there-an-audit-log-of-staff-actions-across-the-firm-10",
     "product": "pro",
     "category": "Getting Started",
-    "title": "Can administrators review recent activity across the firm?",
+    "title": "Review recent activity across the firm",
     "description": "Yes. The Overview dashboard's Recent activity area gives administrators firm-wide visibility into staff and client actions. Each entry identifies what happened, the person or record involved, and the…",
     "answer": "Yes. Administrators can use the Recent Activity section on the Overview dashboard to review recent user and system activity across the firm.",
     "more": [
@@ -148,7 +148,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-included-in-assurepro-settings-11",
     "product": "pro",
     "category": "Settings",
-    "title": "What is included in AssurePro Settings?",
+    "title": "Settings overview",
     "description": "Settings is the firm's central configuration area, organized into five groups so administrators can move from firm setup to day-to-day operating controls. Firm: maintain Firm Profile, Client Portal,…",
     "answer": "Settings is the central administration area for configuring how AssurePro works for your firm.",
     "more": [
@@ -163,7 +163,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-find-a-particular-setting-12",
     "product": "pro",
     "category": "Settings",
-    "title": "How do I find a particular setting?",
+    "title": "Find a particular setting",
     "description": "Settings has 21 destinations grouped under Firm, Work, Money, Communication, and Access. Open Settings from the Admin area of the main navigation. Enter a term in Search settings, or scan the five…",
     "answer": "Use Search settings when you know what you want to configure but are unsure where the setting is located.",
     "more": [
@@ -183,7 +183,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-should-an-administrator-configure-first-13",
     "product": "pro",
     "category": "Settings",
-    "title": "What should an administrator configure first?",
+    "title": "Firm administrator setup checklist",
     "description": "A practical setup order is Firm Profile, Team & Roles, Engagement Types, Workflow, Documents, Tags, and Onboarding Defaults. Then configure money, communication, integrations, and access settings that…",
     "answer": "A firm administrator should begin with the settings that define the firm, its users, and how client work will be managed in AssurePro.",
     "more": [
@@ -206,7 +206,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-we-maintain-in-firm-profile-14",
     "product": "pro",
     "category": "Settings",
-    "title": "What can we maintain in Firm Profile?",
+    "title": "Complete your Firm Profile",
     "description": "Firm Profile contains the firm logo, contact information, mailing address, registration identifier, and portal branding. The logo field accepts PNG, JPG, WEBP, or SVG files up to 1 MB with a minimum…",
     "answer": "Firm Profile is where firm administrators maintain the firm information and branding used across AssurePro and supported client-facing experiences.",
     "more": [
@@ -230,7 +230,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-the-client-portal-address-configured-15",
     "product": "pro",
     "category": "Settings",
-    "title": "How is the client portal address configured?",
+    "title": "Configure the Client Portal address",
     "description": "Client Portal controls the always-on AssurePro address and supports a branded custom domain. The default slug accepts lowercase letters, numbers, and hyphens up to 63 characters, and availability is…",
     "answer": "Firm administrators can configure the web address clients use to access the firm's client portal from Settings > Client Portal.",
     "more": [
@@ -254,7 +254,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-teams-members-invitations-and-roles-managed-16",
     "product": "pro",
     "category": "Users & Access",
-    "title": "How are teams, members, invitations, and roles managed?",
+    "title": "Teams and Roles explained",
     "description": "Team & Roles has Teams, Members, and Invitations tabs. Teams define access and shared operating defaults; Members shows each user's product access, team or role, status, and permission count;…",
     "answer": "Firm administrators manage user access and responsibilities from Team & Roles.",
     "more": [
@@ -274,7 +274,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-can-be-configured-for-a-team-17",
     "product": "pro",
     "category": "Users & Access",
-    "title": "What can be configured for a team?",
+    "title": "Configure a Team",
     "description": "A team has a name, description, optional standard hourly rate, optional per-member AI credit allowance, client-access scope, members, and permissions. Access all clients lets the team bypass per-client…",
     "answer": "Firm administrators can configure teams in AssurePro to group users with similar responsibilities and define how they access client work.",
     "more": [
@@ -300,7 +300,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-granular-are-team-permissions-18",
     "product": "pro",
     "category": "Users & Access",
-    "title": "How granular are team permissions?",
+    "title": "Configure Team permissions",
     "description": "The team editor provides 86 permissions grouped into Client Management, Content & Documents, Work & Operations, Communication, Finance & Compliance, Reporting & Analytics, and Administration. Controls…",
     "answer": "AssurePro allows firm administrators to control team permissions by both work area and action, so access can be aligned with each team's responsibilities.",
     "more": [
@@ -315,7 +315,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-administrators-review-members-and-invitations-19",
     "product": "pro",
     "category": "Users & Access",
-    "title": "How do administrators review members and invitations?",
+    "title": "Review members and invitations",
     "description": "Members can be searched by name or email and filtered by role, with product access, active status, and permission totals visible in the table. Invitations shows the recipient, assigned team, sent date,…",
     "answer": "Team & Roles lets administrators review both active firm users and people who have been invited but have not yet completed activation.",
     "more": [
@@ -337,7 +337,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-invite-a-team-member-20",
     "product": "pro",
     "category": "Users & Access",
-    "title": "How do I invite a team member?",
+    "title": "Invite a firm user",
     "description": "Team & Roles manages Teams, Members, and Invitations in one place. Open Settings and choose Team & Roles, or use Team & Roles in the main navigation. Select Invite member. Complete the member details…",
     "answer": "Firm administrators can invite partners, managers, accountants, reviewers, and other firm users from Team & Roles.",
     "more": [
@@ -361,7 +361,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-are-engagement-types-21",
     "product": "pro",
     "category": "Settings",
-    "title": "What are Engagement Types?",
+    "title": "Engagement Types explained",
     "description": "Engagement Types are the named services the firm delivers, organized by areas such as Bookkeeping, Audit & Assurance, Accounting, Advisory, and Tax. Each type has a description and code and can control…",
     "answer": "Engagement Types are reusable definitions for the services your firm delivers to clients. They help standardize how different types of client work are created and managed in AssurePro.",
     "more": [
@@ -377,7 +377,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-configure-an-engagement-type-s-context-fields-22",
     "product": "pro",
     "category": "Settings",
-    "title": "How do I configure an engagement type's Custom fields?",
+    "title": "Configure Custom Fields for an Engagement Type",
     "description": "The editor supports Dropdown, People, Date, Files, Number, Money, Formula, and Text fields. Fields can be reordered, made required or inactive where supported, and deleted; Formula fields are…",
     "answer": "Firm administrators can configure Custom fields for each Engagement Type to capture information specific to that type of client work.",
     "more": [
@@ -404,7 +404,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-are-onboarding-defaults-23",
     "product": "pro",
     "category": "Settings",
-    "title": "What are Onboarding Defaults?",
+    "title": "Onboarding Defaults explained",
     "description": "Onboarding Defaults pre-fill the first engagement assignee, engagement-letter template, and client folder structure. An unset assignee or template can auto-resolve, entity-type matches can override the…",
     "answer": "Onboarding Defaults allow firm administrators to define the standard setup applied when a new client is created in AssurePro.",
     "more": [
@@ -428,7 +428,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-are-tags-created-and-maintained-24",
     "product": "pro",
     "category": "Settings",
-    "title": "How are tags created and maintained?",
+    "title": "Create and manage Tags",
     "description": "Tags categorize clients and engagements across the firm. Settings provides a simple tag list with add, edit, and delete controls. Open Settings and choose Tags. Enter the new tag name under Add a tag…",
     "answer": "Tags help your firm categorize and organize clients and engagements in AssurePro. They can be used to make records easier to identify, filter, and group based on characteristics that matter to your practice.",
     "more": [
@@ -451,7 +451,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-configure-personal-notification-preferences-25",
     "product": "pro",
     "category": "Settings",
-    "title": "How do I configure personal notification preferences?",
+    "title": "Configure your notification preferences",
     "description": "Notifications & Email provides separate email and in-app switches for new document uploads, client messages, invoice payments, upcoming deadlines, and overdue invoices. Emails received in a connected…",
     "answer": "Firm users can manage their own notification preferences from Settings > Notifications & Email.",
     "more": [
@@ -473,7 +473,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-report-alerts-work-26",
     "product": "pro",
     "category": "Settings",
-    "title": "How do report alerts work?",
+    "title": "Report Alerts explained",
     "description": "The Report alerts area can notify subscribed users by email and the in-app bell when a KPI crosses a threshold, or send a scheduled digest of key firm metrics. Open Settings and choose Notifications &…",
     "answer": "Report alerts help firm users monitor important KPIs without having to review reports manually throughout the day.",
     "more": [
@@ -503,7 +503,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-what-is-in-the-template-library-27",
     "product": "pro",
     "category": "Settings",
-    "title": "What is in the Template Library?",
+    "title": "Template Library explained",
     "description": "The Template Library gives the firm reusable starting points that can be added to its working configuration instead of rebuilding common content from scratch. All combines the available library items…",
     "answer": "The Template Library provides reusable starting points that help CPA firms standardize recurring work and client communication in AssurePro.",
     "more": [
@@ -519,7 +519,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-do-i-find-the-right-template-library-item-28",
     "product": "pro",
     "category": "Settings",
-    "title": "How do I find the right Template Library item?",
+    "title": "Find a Template Library item",
     "description": "The library can be searched by name, type, or tag, filtered by practice area, limited to items already added, sorted, or narrowed to one asset-type tab. Open Template Library from Admin. Choose All,…",
     "answer": "Use the search, filters, and asset-type tabs in the Template Library to quickly narrow the available templates to the type of work your firm is setting up.",
     "more": [
@@ -543,7 +543,7 @@ window.ASSUREONE_ARTICLES.push(...[
     "id": "pro-how-is-a-template-library-item-added-and-edited-29",
     "product": "pro",
     "category": "Settings",
-    "title": "How do I add and customize a Template Library item?",
+    "title": "Add and edit a Template Library item",
     "description": "Select Add to Library on an available item. An item already activated displays Added and provides a destination-specific link such as Open in Engagement Letter, Open in Workflows, or Open in Document…",
     "answer": "Firm users can add a curated item from the Template Library and then customize the firm's working copy before using it in live client work.",
     "more": [
