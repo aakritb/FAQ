@@ -101,7 +101,7 @@
         const articleItems = g.id === activeGuideId && activeArticleId
           ? proArticles().filter(a => T.guideOfArticle(a.id) === g.id).map(a => `<a class="nav-article${a.id === activeArticleId ? ' current' : ''}" href="${articleUrl(a.id)}${contextQuery ? `&${contextQuery}` : ''}"${a.id === activeArticleId ? ' aria-current="page"' : ''}>${esc(a.title)}</a>`).join('')
           : '';
-        return `<div class="nav-guide${cls ? ' active' : ''}"><a href="${guideHref}" class="nav-guide-link ${cls}"><span>${esc(g.label)}</span>${n ? `<small>${n}</small>` : '<small class="soon">Soon</small>'}</a>${articleItems ? `<div class="nav-articles">${articleItems}</div>` : ''}</div>`;
+        return `<div class="nav-guide${cls ? ' active' : ''}"><a href="${guideHref}" class="nav-guide-link ${cls}"><span class="nav-topic-group"><span class="nav-topic-icon">${topicIcon(g.id)}</span><span>${esc(g.label)}</span></span>${n ? `<small>${n}</small>` : '<small class="soon">Soon</small>'}</a>${articleItems ? `<div class="nav-articles">${articleItems}</div>` : ''}</div>`;
       }).join('');
       return `<div class="nav-collection${isOpen ? ' open' : ''}">
         <button type="button" class="nav-collection-toggle${c.id === (activeCollectionId || (activeCollection && activeCollection.id)) ? ' active' : ''}" aria-expanded="${isOpen ? 'true' : 'false'}">
@@ -134,7 +134,7 @@
       const active = header.id === activeHeaderId;
       const listId = `branch-${header.id}`;
       const children = items.map(article => `<a class="nav-article${article.id === activeArticleId ? ' current' : ''}" href="${articleUrl(article.id)}"${article.id === activeArticleId ? ' aria-current="page"' : ''}>${esc(article.title)}</a>`).join('');
-      return `<div class="branch-header${active ? ' open active' : ''}${items.length ? '' : ' unavailable'}"><button class="branch-header-toggle" type="button" aria-expanded="${active ? 'true' : 'false'}" aria-controls="${listId}"${items.length ? '' : ' disabled'}><span>${esc(header.label)}</span><small>${items.length || 'Soon'}</small><span class="branch-caret" aria-hidden="true">${icon('chevron')}</span></button>${items.length ? `<div class="nav-articles branch-article-drawer" id="${listId}">${children}</div>` : ''}</div>`;
+      return `<div class="branch-header${active ? ' open active' : ''}${items.length ? '' : ' unavailable'}"><button class="branch-header-toggle" type="button" aria-expanded="${active ? 'true' : 'false'}" aria-controls="${listId}"${items.length ? '' : ' disabled'}><span class="nav-topic-group"><span class="nav-topic-icon">${topicIcon(header.id)}</span><span>${esc(header.label)}</span></span><small>${items.length || 'Soon'}</small><span class="branch-caret" aria-hidden="true">${icon('chevron')}</span></button>${items.length ? `<div class="nav-articles branch-article-drawer" id="${listId}">${children}</div>` : ''}</div>`;
     }).join('')}</div><a class="branch-all-link" href="category.html">Browse all AssurePro topics</a>`;
     container.querySelectorAll('.branch-header-toggle:not(:disabled)').forEach((button) => {
       button.addEventListener('click', () => {
