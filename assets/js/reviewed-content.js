@@ -4831,7 +4831,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
     "blocks": [
       {
         "type": "paragraph",
-        "text": "Available connections include:"
+        "text": "Available integrations include:"
       },
       {
         "type": "list",
@@ -6194,12 +6194,12 @@ window.ASSUREPRO_REVIEWED_CONTENT={
         "type": "list",
         "level": 0,
         "items": [
-          "“Which engagements have been in the same stage for more than 10 days?”",
-          "“Summarize unread messages for my assigned clients.”",
-          "“Show clients with outstanding invoices due this month.”",
-          "“Which document requests are still waiting on a client response?”",
-          "“Summarize work due this week.”",
-          "“Draft a polite follow-up for overdue invoices, but do not send it.”"
+          "Which engagements have been in the same stage for more than 10 days?",
+          "Summarize unread messages for my assigned clients.",
+          "Show clients with outstanding invoices due this month.",
+          "Which document requests are still waiting on a client response?",
+          "Summarize work due this week.",
+          "Draft a polite follow-up for overdue invoices, but do not send it."
         ]
       },
       {
@@ -6222,7 +6222,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "“List my tax engagements due in the next 14 days that still have open document requests, grouped by manager.”"
+        "text": "List my tax engagements due in the next 14 days that still have open document requests, grouped by manager."
       },
       {
         "type": "paragraph",
@@ -6256,7 +6256,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "“What needs attention?”"
+        "text": "What needs attention?"
       },
       {
         "type": "paragraph",
@@ -6264,7 +6264,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "“Show my assigned engagements due in the next seven days that have overdue tasks or missing client documents.”"
+        "text": "Show my assigned engagements due in the next seven days that have overdue tasks or missing client documents."
       },
       {
         "type": "paragraph",
@@ -6276,7 +6276,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
       },
       {
         "type": "paragraph",
-        "text": "If you only want assistance preparing content, make that clear in the prompt—for example, “Draft the message, but do not send it.”"
+        "text": "If you only want assistance preparing content, make that clear in the prompt—for example: Draft the message, but do not send it."
       }
     ]
   },
@@ -6911,7 +6911,7 @@ window.ASSUREPRO_REVIEWED_CONTENT={
           "Twilio – client SMS",
           "Payment processor shown in Integrations – online client payments",
           "QuickBooks Online – accounting synchronization",
-          "ProdAff – for the ProdAff connection shown in Integrations"
+          "ProdAff – for the ProdAff integration shown in Integrations"
         ]
       },
       {
