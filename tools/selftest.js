@@ -4,7 +4,7 @@ const ROOT=path.resolve(__dirname,'..');
 const files=['index.html','category.html','article.html','assets/css/help-center.css','assets/js/help-center.js','assets/js/taxonomy.js','assets/js/branches.js','assets/js/reviewed-content.js','tools/qc.js','assurepro/index.html',...Array.from({length:6},(_,i)=>`questions-${i+1}.js`)];
 const cases=[
  ['removed shared stylesheet','index.html',s=>s.replace('assets/css/help-center.css','missing.css'),'shared design system missing'],
- ['approved homepage heading changed','index.html',s=>s.replace('Get to know AssurePro','Learning modules'),'approved homepage heading changed'],
+ ['approved homepage module-cards section loses its accessible label','index.html',s=>s.replace('aria-label="Get to know AssurePro"','aria-label="Learning modules"'),'lost its accessible label'],
  ['vague destination wording','questions-1.js',s=>s.replace('Use the global search in AssurePro','Use the destination window in AssurePro'),'unclear or incorrect wording'],
  ['missing screenshot support','article.html',s=>s.replace('media?.steps','media.steps'),'article template is not ready'],
  ['duplicate support control','index.html',s=>s.replace('</main>','<button class="support-copy">Duplicate</button></main>'),'redundant support'],
@@ -14,7 +14,7 @@ const cases=[
  ['taxonomy not loaded on a page','category.html',s=>s.replace('src="assets/js/taxonomy.js">',''),'taxonomy.js is not loaded'],
  ['article no longer mapped to a guide','assets/js/taxonomy.js',s=>s.replace('"pro-what-is-assurepro-1": \'gs-intro\',',''),'not mapped to any guide'],
  ['internal numbering leaks into a reader-facing label','assets/js/taxonomy.js',s=>s.replace("label: 'Start Here', guides:","label: '1.1 Start Here', guides:"),'internal numbering is exposed'],
- ['homepage card loses its canonical module','index.html',s=>s.replace("['firm-admin','settings',","['nonexistent-module','settings',"),'does not link its six cards'],
+ ['homepage card loses its canonical module','index.html',s=>s.replace("['getting-started','flag',","['nonexistent-module','flag',"),'does not link its ten cards'],
  ['an article loses its canonical branch home','assets/js/branches.js',s=>s.replace("'pro-what-is-assurepro-1':'fa-core-concepts-firm-setup',","'pro-what-is-assurepro-1':'nonexistent-header',"),'no canonical learning-branch home'],
  ['reviewed Word content loses an answer','assets/js/reviewed-content.js',s=>s.replace('"pro-what-is-assurepro-1":','"deleted-review-answer":'),'missing their reviewed Word answer'],
  ['a new branch header ships with no icon mapping','assets/js/help-center.js',s=>s.replace("'fa-quick-start-tutorials':'flag',",''),'no icon mapping'],

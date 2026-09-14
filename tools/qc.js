@@ -34,7 +34,7 @@ const body=articles.map(a=>[a.title,a.answer,...(a.steps||[]),...(a.more||[]).ma
 for(const phrase of ['same destination form','destination window','start common work','AssureOne is the firm\'s internal'])if(body.toLowerCase().includes(phrase.toLowerCase()))fail(`unclear or incorrect wording remains: “${phrase}”`);
 if(!body.includes('Firm users')&&!body.includes('firm users'))fail('firm-user terminology is missing');else ok('firm-user and client-user wording remains explicit');
 const hub=read('index.html');for(const product of ['AssureTax','AssureAudit','AssureBooks']){const re=new RegExp(`<button[^>]+data-coming-soon[^>]*>[\\s\\S]{0,400}?${product}[\\s\\S]{0,200}?</button>`);if(!re.test(hub))fail(`${product} must remain a non-navigating Coming soon control on the approved homepage`)}
-if(!hub.includes('<h2 id="journey-heading">Get to know AssurePro</h2>'))fail('approved homepage heading changed');else ok('approved homepage product controls and heading remain intact');
+if(!hub.includes('aria-label="Get to know AssurePro"'))fail('approved homepage module-cards section lost its accessible label');else ok('approved homepage product controls and module-cards section label remain intact');
 
 section('5. Search, navigation, and media readiness');
 const app=read('assets/js/help-center.js'),articlePage=read('article.html'),categoryPage=read('category.html');
