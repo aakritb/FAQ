@@ -36,6 +36,20 @@
     edit:'<path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/><path d="m15 5 4 4"/>',
     idcard:'<rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="11" r="2.2"/><path d="M6 17c.5-2 2-3 3-3s2.5 1 3 3"/><path d="M14 9h5"/><path d="M14 13h5"/>',
     chevron:'<path d="m6 9 6 6 6-6"/>',
+    inbox:'<path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>',
+    bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>',
+    calendar:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/>',
+    mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/>',
+    phone:'<path d="M6.6 10.8a11 11 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 8 8 0 0 0 2.5.4 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A16 16 0 0 1 3 6a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 8 8 0 0 0 .4 2.5 1 1 0 0 1-.25 1z"/>',
+    history:'<path d="M3 3v5h5"/><path d="M3.05 13a9 9 0 1 0 2.13-6.36L3 8"/><path d="M12 7v5l3 2"/>',
+    link:'<path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><path d="M8 12h8"/>',
+    lock:'<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    layout:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>',
+    target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+    folder:'<path d="M4 6a2 2 0 0 1 2-2h4l2 3h6a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>',
+    upload:'<path d="M12 21V9"/><path d="m7 13 5-5 5 5"/><path d="M4 21h16"/>',
+    download:'<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/>',
+    chat:'<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>',
   };
   function icon(name){return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]||ICONS.file}</svg>`}
   // Matched to AssurePro's own sidebar iconography where a topic has a direct
@@ -67,12 +81,12 @@
     // Branch (learning module) headers — assets/js/branches.js. Keyed by
     // header id so a wording change to a header label can never silently
     // break the lookup, matching the taxonomy icon convention above.
-    'fa-understand':'flag','fa-firm':'settings','fa-team':'users','fa-prospects':'flow','fa-client-work':'briefcase','fa-client-experience':'idcard','fa-billing':'receipt','fa-data':'file','fa-launch':'check',
-    'tm-activate':'idcard','tm-find':'compass','tm-day':'flag','tm-clients':'users','tm-work':'check','tm-documents':'file','tm-communicate':'edit','tm-time':'receipt','tm-help':'wrench',
-    'pc-prospects':'users','pc-pipeline':'flow','pc-convert':'check','pc-clients':'idcard','pc-workspace':'briefcase','pc-portal-access':'shield','pc-portal-guide':'grid',
-    'dw-engagements':'briefcase','dw-recurring':'flag','dw-workflows':'flow','dw-tasks':'check','dw-workload':'chart','dw-documents':'file','dw-requests':'receipt','dw-letters':'signature','dw-signing':'edit','dw-communicate':'users','dw-complete':'book',
-    'rf-time':'receipt','rf-services':'briefcase','rf-billing':'percent','rf-team':'users','rf-processes':'book','rf-reports':'chart','rf-configure':'settings','rf-communications':'edit','rf-connect':'plug','rf-security':'shield','rf-plan':'idcard',
-    'ai-start':'flag','ai-agent':'sparkle','ai-actions':'check','ai-memory':'book','ai-briefing':'grid','ai-reminders':'edit','ai-credits':'percent','ai-responsible':'shield',
+    'fa-core-concepts-firm-setup':'settings','fa-complete-your-firm-setup':'check','fa-get-your-prospect-pipeline-running':'compass','fa-get-your-first-workflow-running':'flow','fa-get-ready-to-invite-clients':'idcard','fa-import-your-client-data':'download','fa-migrate-documents':'file','fa-quick-start-tutorials':'flag',
+    'tm-core-concepts-account-setup':'idcard','tm-find-your-way-around-assurepro':'compass','tm-work-with-assigned-clients':'settings','tm-manage-your-assigned-work':'users','tm-work-with-client-documents':'file','tm-communicate-with-clients':'chat','tm-record-and-review-time':'receipt','tm-plan-your-day':'percent','tm-manage-notifications':'bell','tm-use-ai-responsibly':'shield','tm-quick-start-tutorials':'flag',
+    'pc-add-and-manage-prospects':'compass','pc-find-and-organize-prospects':'settings','pc-work-with-the-prospect-pipeline':'flow','pc-record-prospect-activity':'users','pc-convert-prospects-to-clients':'check','pc-add-clients':'idcard','pc-organize-client-records':'briefcase','pc-manage-contacts-and-relationships':'chart','pc-work-with-the-client-workspace':'plug','pc-invite-clients-to-the-portal':'grid','pc-guide-clients-through-portal-activiti':'flag',
+    'dw-work-with-engagements':'compass','dw-manage-recurring-work':'history','dw-work-with-workflow-views':'flow','dw-progress-work-through-a-workflow':'settings','dw-work-with-tasks':'check','dw-monitor-workload-and-deadlines':'chart','dw-work-with-client-documents':'idcard','dw-organize-client-folders':'folder','dw-add-client-documents':'file','dw-request-documents-from-clients':'inbox','dw-work-with-engagement-letters':'signature','dw-create-an-engagement-letter':'users','dw-add-services-and-pricing':'percent','dw-configure-agreement-content':'briefcase','dw-review-and-send-the-package':'plug','dw-complete-the-signing-process':'book','dw-track-engagement-letter-status':'flag','dw-review-package-history':'grid','dw-work-with-client-communications':'chat','dw-start-client-conversations':'sparkle','dw-manage-active-conversations':'shield','dw-send-portal-messages':'mail','dw-send-email':'wrench','dw-send-sms':'phone','dw-record-calls':'receipt','dw-collaborate-with-firm-users':'edit','dw-follow-up-with-clients':'bell','dw-work-with-calendar':'calendar','dw-manage-deadlines':'link','dw-complete-client-work':'lock',
+    'rf-track-time':'receipt','rf-manage-services-and-pricing':'percent','rf-manage-billing':'signature','rf-manage-teams-and-roles':'users','rf-standardize-firm-processes':'book','rf-use-overview':'grid','rf-review-reports':'chart','rf-set-up-your-firm':'settings','rf-configure-work-standards':'edit','rf-configure-firm-communications':'chat','rf-connect-your-tools':'plug','rf-manage-security-and-credentials':'shield','rf-manage-your-assureone-plan':'briefcase','rf-manage-referrals':'flag',
+    'ai-get-started-with-ai':'compass','ai-work-with-the-ai-agent':'sparkle','ai-complete-work-with-the-ai-agent':'check','ai-manage-ai-memory':'book','ai-use-the-daily-briefing':'flag','ai-automate-follow-up':'bell','ai-manage-ai-credits':'percent','ai-use-ai-responsibly':'shield','ai-troubleshoot-ai-features':'wrench',
   };
   function topicIcon(id){return icon(TOPIC_ICONS[id]||'file')}
   function fallbackCopy(text){const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.cssText='position:fixed;opacity:0';document.body.append(t);t.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}
