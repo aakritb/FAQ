@@ -11,6 +11,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "AssurePro also provides the shared client and firm context used across other AssureOne products enabled for your organization. By keeping operational information connected to a single client record, teams can move seamlessly between practice management and service delivery without recreating client information or maintaining disconnected records across multiple systems."
     ],
     "search": "AssurePro is the practice management platform within AssureOne. It helps accounting firms manage their day-to-day operations from a centralized system, including firm setup, team access, client relationships, documents, engagement workflows, engagement letters, time and billing, communications, reporting, templates, and integrations. AssurePro also provides the shared client and firm context used across other AssureOne products enabled for your organization. By keeping operational information connected to a single client record, teams can move seamlessly between practice management and service delivery without recreating client information or maintaining disconnected records across multiple systems.",
+    "media":{"overview":[{"src":"assets/images/articles/assurepro-explained-1.png","alt":"AssurePro sign-in page"},{"src":"assets/images/articles/assurepro-explained-2.png","alt":"AssurePro Overview dashboard with the AI-generated daily briefing"},{"src":"assets/images/articles/assurepro-explained-3.png","alt":"AssurePro Overview dashboard showing clients, engagements, team load, and billing widgets"}]},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -27,6 +28,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "When AssureBooks is enabled, firm users can access it through the AssureOne product switcher, allowing them to move between practice management and bookkeeping while maintaining the relevant client context."
     ],
     "search": "AssurePro is the firm's practice management system. It manages the operational relationship with clients, including onboarding, document requests, workflows, engagement letters, time tracking, billing, communications, and reporting. Bookkeeping work itself is performed in AssureBooks, when that product is enabled for the firm. For example, AssurePro can be used to create a bookkeeping engagement, assign tasks, request source documents, track time, communicate with the client, and invoice for the work. The underlying accounting records, transactions, and books are managed in AssureBooks. When AssureBooks is enabled, firm users can access it through the AssureOne product switcher, allowing them to move between practice management and bookkeeping while maintaining the relevant client context.",
+    "media":{"overview":[{"src":"assets/images/articles/assurepro-vs-assurebooks-1.png","alt":"Switching between AssurePro and AssureBooks from the product menu"},{"src":"assets/images/articles/assurepro-vs-assurebooks-2.png","alt":"AssureBooks dashboard showing bookkeeping and financial data"}]},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -75,6 +77,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Select the relevant result to open the corresponding client record, document, or task."
     ],
     "search": "Use the global search in AssurePro to quickly find information that already exists in the system. You can search for clients, documents, or tasks by name and open the relevant record directly from the search results. Select the Search field. Enter the name of the client, document, or task you are looking for. Review the matching results. Select the relevant result to open the corresponding client record, document, or task.",
+    "media":{"steps":[null,null,{"src":"assets/images/articles/global-search-step3.png","alt":"Global search results showing quick actions and matching pages"}]},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -96,6 +99,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Select the appropriate completion action, such as Save, Create, Save as draft, or Create & send, depending on the record type."
     ],
     "search": "Use the + New menu in the top-right corner of AssurePro to create common records from anywhere in the application. Depending on your access, you can quickly create a Client, Task, Message, Invoice, Document Request, or Engagement Letter. Selecting an option opens the corresponding creation form, where you can enter the required information and complete the action. For example, selecting Invoice opens the invoice builder, where you can choose the client, set issue and due dates, add line items, apply discounts or taxes, enter notes, preview the invoice, and either save it as a draft or create and send it. Select + New in the application header. Choose the record you want to create: Client, Task, Message, Invoice, Document Request, or Engagement Letter. Complete the required fields in the form, confirming the relevant client, recipients, or other details. Select the appropriate completion action, such as Save, Create, Save as draft, or Create & send, depending on the record type.",
+    "media":{"steps":[{"src":"assets/images/articles/new-record-menu-step1.png","alt":"The + New menu open, showing Client, Task, Message, Invoice, Document Request, and Engagement Letter"},{"src":"assets/images/articles/new-record-menu-step2.png","alt":"Add New Client form opened from the + New menu"}]},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -110,6 +114,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "If a firm user cannot activate the account, first confirm the correct email address was used and ask them to open the most recent invitation. Administrators can review, resend, or cancel a pending invitation under Team & Roles > Invitations."
     ],
     "search": "Firm users sign in to the internal AssurePro workspace using the access link provided by their firm administrator. A new firm user opens the invitation sent to their work email, verifies the address, and sets a password to activate the account. Client users follow a separate process: they sign in through the firm's client portal or the AssureOne mobile app, on iOS or Android. If a firm user cannot activate the account, first confirm the correct email address was used and ask them to open the most recent invitation. Administrators can review, resend, or cancel a pending invitation under Team & Roles > Invitations.",
+    "media":{"overview":{"src":"assets/images/articles/sign-in.png","alt":"Team invitation email with the Accept invitation link"}},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -126,6 +131,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "For configuration, onboarding, or data-migration questions, contact the firm's assigned AssureOne implementation team, since the answer may depend on the firm's plan and rollout."
     ],
     "search": "AssureOne provides direct email support, in-product issue reporting, and implementation assistance. Email support@assureone.ai when you need help from the AssureOne support team, describing the feature, access issue, or workflow involved. Use Report a bug in the application header to report a product issue from the screen where it occurred, describing what you were doing, what you expected, what actually happened, and the affected area; attach a screenshot when it helps, with no unnecessary sensitive or confidential information. For configuration, onboarding, or data-migration questions, contact the firm's assigned AssureOne implementation team, since the answer may depend on the firm's plan and rollout.",
+    "media":{"overview":{"src":"assets/images/articles/contact-support.png","alt":"Report a Bug panel available from the top navigation"}},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -141,6 +147,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Recent Activity is designed to provide administrators with quick visibility into day-to-day activity across the firm."
     ],
     "search": "Yes. Administrators can use the Recent Activity section on the Overview dashboard to review recent user and system activity across the firm. Each activity entry shows the action performed, the related user or record, and when the activity occurred. Depending on the activity captured by AssurePro, this may include events such as a team invitation being sent or accepted, a client signing in to the client portal, a client or contact record being updated, and other supported user or system actions. Recent Activity is designed to provide administrators with quick visibility into day-to-day activity across the firm.",
+    "media":{"overview":{"src":"assets/images/articles/activity-log.png","alt":"Activity History panel listing recent firm-wide actions"}},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
@@ -199,6 +206,7 @@ window.ASSUREONE_ARTICLES.push(...[
       "Before rolling the configuration out across the practice, test it with an internal or demo client. Run the client through a typical process such as onboarding, engagement setup, document collection, workflow, review, communication, time tracking, and billing. This helps confirm that the setup reflects how your firm actually operates before it is applied more broadly."
     ],
     "search": "A firm administrator should begin with the settings that define the firm, its users, and how client work will be managed in AssurePro. A recommended setup order is: Firm Profile — add the firm's name, contact information, branding, and client-facing identity. Team & Roles — add partners, managers, and other firm users, then assign the appropriate roles and permissions. Engagement Types — define the services your firm provides, such as tax, bookkeeping, advisory, or other engagement types. Workflow — configure the stages used to manage work from initiation through preparation, review, completion, and delivery. Documents — define document-related settings and reusable document configurations used across client engagements. Tags — create labels that help the firm organize and filter clients, engagements, and work. Onboarding Defaults — configure reusable defaults that help standardize how new clients and engagements are set up. After the core practice-management setup is complete, configure the relevant billing, communications, integrations, and access settings used by your firm. Before rolling the configuration out across the practice, test it with an internal or demo client. Run the client through a typical process such as onboarding, engagement setup, document collection, workflow, review, communication, time tracking, and billing. This helps confirm that the setup reflects how your firm actually operates before it is applied more broadly.",
+    "media":{"steps":[{"src":"assets/images/articles/admin-setup-checklist-step1.png","alt":"Settings > Firm Profile"},{"src":"assets/images/articles/admin-setup-checklist-step2.png","alt":"Settings > Team & Roles > Members"},{"src":"assets/images/articles/admin-setup-checklist-step3.png","alt":"Settings > Engagement Types"},{"src":"assets/images/articles/admin-setup-checklist-step4.png","alt":"Settings > Workflow"},{"src":"assets/images/articles/admin-setup-checklist-step5.png","alt":"Settings > Documents"},{"src":"assets/images/articles/admin-setup-checklist-step6.png","alt":"Settings > Tags"},{"src":"assets/images/articles/admin-setup-checklist-step7.png","alt":"Settings > Onboarding Defaults"}]},
     "read": "2 min",
     "path": "assurepro/index.html"
   },
