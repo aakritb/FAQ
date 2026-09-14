@@ -8,11 +8,11 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+<svg hidden aria-hidden="true"><symbol id="assureone-mark" viewBox="0 0 55 70"><path d="M23.3 21.9805L23.21 29.6505L12.69 48.1505L4.69 52.8205L4.67 52.8305L0.54 45.7605L0.53 45.7405L0 44.8305L13.1 21.9805H23.3Z"/><path d="M36.8913 56.3809L15.6013 56.5109L9.03125 60.2109L14.2613 69.1109L40.3613 69.0309L44.9513 60.9909L36.8913 56.3809Z"/><path d="M41.1311 21.9805H41.0211L31.8711 22.0205L31.9211 31.3105L42.6711 49.6705L49.2311 53.5605L54.3211 44.6405L41.1311 21.9805Z"/><path d="M27.0616 36.9805L19.6016 50.0705L34.6716 49.9805L27.0616 36.9805Z"/></symbol></svg>
 <header class="topbar">
-  <div class="topbar-inner">
+  <div class="topbar-inner no-search">
     <a class="brand" href="index.html" aria-label="AssureOne Help Center home">
       <img class="brand-logo" src="assets/images/assureone-logo.png" alt="AssureOne" width="149" height="31"><span class="brand-suffix">Help Center</span></a>
-    <div class="top-search"><svg class="search-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2"/></svg><input data-search type="search" placeholder="Search AssurePro help" aria-label="Search AssurePro help"><span class="key-hint">⌘ K</span><div class="search-panel" hidden></div></div>
     <div class="top-actions"><a class="website-link" href="https://assureone.ai/" target="_blank" rel="noopener">Visit our website</a><button class="support-copy" aria-label="Copy support@assureone.ai to clipboard"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.5" stroke="currentColor" stroke-width="1.8"/></svg><span class="support-label">Contact support</span></button></div>
   </div>
 </header>
@@ -23,18 +23,18 @@
       <div class="hero-search"><svg class="search-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2"/></svg><input data-search type="search" placeholder="What do you need help with?" aria-label="Search all AssurePro articles"><span class="key-hint">⌘ K</span><div class="search-panel" hidden></div></div>
     </div>
   </section>
-  <div class="content page-width">
-    <section aria-label="Choose an AssureOne product">
-      <div class="product-switcher-row">
-        <p class="overline">Choose a product</p>
-        <div class="product-switcher" role="tablist">
-          <a class="product-pill active" href="index.html" aria-current="page" role="tab" aria-selected="true">AssurePro</a>
-          <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureBooks<span class="pill-soon">Soon</span></button>
-          <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureAudit<span class="pill-soon">Soon</span></button>
-          <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false">AssureTax<span class="pill-soon">Soon</span></button>
-        </div>
+  <section class="product-switcher-band" aria-label="Choose an AssureOne product">
+    <div class="product-switcher-row page-width">
+      <p class="overline">Choose a product</p>
+      <div class="product-switcher" role="tablist">
+        <a class="product-pill active" href="index.html" aria-current="page" role="tab" aria-selected="true"><svg class="product-mark" aria-hidden="true"><use href="#assureone-mark"/></svg>AssurePro</a>
+        <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false"><svg class="product-mark" aria-hidden="true"><use href="#assureone-mark"/></svg>AssureBooks<span class="pill-soon">Soon</span></button>
+        <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false"><svg class="product-mark" aria-hidden="true"><use href="#assureone-mark"/></svg>AssureAudit<span class="pill-soon">Soon</span></button>
+        <button class="product-pill disabled" data-coming-soon type="button" role="tab" aria-selected="false"><svg class="product-mark" aria-hidden="true"><use href="#assureone-mark"/></svg>AssureTax<span class="pill-soon">Soon</span></button>
       </div>
-    </section>
+    </div>
+  </section>
+  <div class="content page-width">
     <section aria-labelledby="journey-heading" style="margin-top:44px">
       <div class="section-heading"><div><h2 id="journey-heading">Get to know AssurePro</h2></div></div>
       <div class="journey-grid" id="journey-grid"></div>
