@@ -48,7 +48,7 @@ button{color:inherit}
 .audience-card .pill-soon{position:absolute;top:16px;right:16px;background:var(--lavender);color:var(--brand-dark);padding:3px 9px;border-radius:999px;font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;font-weight:800}
 .content{padding-top:36px;padding-bottom:56px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:18px}.section-heading h2{margin:0;font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.15;letter-spacing:-.035em}.section-heading p{margin:7px 0 0;color:var(--muted)}
 .product-switcher-band{background:var(--lavender);border-bottom:1px solid var(--line)}
-.product-switcher-row{display:flex;align-items:center;flex-wrap:wrap;gap:28px;padding:14px 32px}
+.product-switcher-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:28px;padding:14px 32px}
 .product-switcher-row .overline{margin:0;color:#6c7290}
 .product-switcher{display:flex;align-items:center;flex-wrap:wrap;gap:28px;overflow-x:auto}
 .product-pill{display:flex;align-items:center;gap:8px;padding:4px 0 13px;border:0;border-bottom:2.5px solid transparent;background:transparent;font:inherit;font-size:15.5px;font-weight:700;color:#9297ab;line-height:1;white-space:nowrap;cursor:pointer;transition:.18s}
