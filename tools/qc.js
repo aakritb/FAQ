@@ -94,11 +94,11 @@ else{
   const danglingArticleRefs=Object.keys(T.ARTICLE_GUIDE).filter(id=>!ids.has(id));
   if(danglingArticleRefs.length)fail(`ARTICLE_GUIDE maps an article id that no longer exists: ${danglingArticleRefs.slice(0,5).join(', ')}`);
   else ok('every article id referenced by ARTICLE_GUIDE is a real, published article');
-  if(!B||B.MODULES.length!==6)fail(`expected exactly six homepage learning modules, found ${B?.MODULES?.length||0}`);else ok('exactly six learning modules are defined');
+  if(!B||B.MODULES.length!==10)fail(`expected exactly ten homepage learning modules, found ${B?.MODULES?.length||0}`);else ok('exactly ten learning modules are defined');
   const moduleIds=new Set(B?.MODULES.map(module=>module.id)||[]),headerIds=new Set((B?.MODULES||[]).flatMap(module=>module.headers.map(header=>header.id)));
   const homepageModuleIds=[...homepage.matchAll(/\['([\w-]+)','[\w-]+','/g)].map(match=>match[1]);
   const badHomepageModules=homepageModuleIds.filter(id=>!moduleIds.has(id));
-  if(homepageModuleIds.length!==6||badHomepageModules.length)fail('approved homepage does not link its six cards to the six canonical modules');else ok('approved homepage cards connect to the six canonical branch modules');
+  if(homepageModuleIds.length!==10||badHomepageModules.length)fail('approved homepage does not link its ten cards to the ten canonical modules');else ok('approved homepage cards connect to the ten canonical branch modules');
   if(!categoryPage.includes("params.get('module')")||!categoryPage.includes("params.get('header')"))fail('category page does not support module and header routes');else ok('module and header routes are available');
   const unmapped=articles.filter(article=>!B.articleHome(article.id));
   if(unmapped.length)fail(`${unmapped.length} article(s) have no canonical learning-branch home: ${unmapped.slice(0,5).map(a=>a.id).join(', ')}`);else ok('all 166 articles have one canonical learning-branch home');

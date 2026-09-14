@@ -1,12 +1,11 @@
 /* AssurePro learning branches. Articles keep one canonical home and URL.
-   Header structure regenerated from AssurePro_Course_Structure.xlsx (83 topics
-   across the 6 modules, replacing the earlier ~55-topic structure). Every
-   published article has an explicit ARTICLE_HOME entry — there is no more
-   taxonomy-guide fallback or "recommended" borrowed-content behavior, since
-   every article now has one direct, authoritative home. */
+   Modules regrouped into 10 top-level topics (from the original 6) per an
+   updated front-page card list; the 83 headers and every article's home
+   (ARTICLE_HOME) are unchanged — only which module each header sits under
+   changed. */
 (function () {
   const MODULES = [
-    { id:'firm-admin', icon:'settings', label:'Get Started as a Firm Administrator', objective:'Configure the firm, team, client experience, and launch essentials.', headers:[
+    { id:'getting-started', icon:'flag', label:'Getting Started with AssurePro', objective:'Set up your firm, activate your account, and find your way around AssurePro.', headers:[
       ['fa-core-concepts-firm-setup','Core concepts & firm setup','Learn about finding your way around AssurePro and ways to access AssurePro.'],
       ['fa-complete-your-firm-setup','Complete your firm setup','Learn about set up your firm in AssurePro and complete your Firm Profile.'],
       ['fa-get-your-prospect-pipeline-running','Get your prospect pipeline running','Learn about prospect Pipeline and prospect Pipeline stages.'],
@@ -15,21 +14,12 @@
       ['fa-import-your-client-data','Import your client data','Learn about prepare your client data for import and prepare a Client CSV file.'],
       ['fa-migrate-documents','Migrate documents','Learn about prepare Client Documents for migration and plan your Client folder structure.'],
       ['fa-quick-start-tutorials','Quick-start tutorials','Learn about learn AssurePro basics in practice and set up a Prospect Pipeline in practice.'],
-    ]},
-    { id:'team-member', icon:'compass', label:'Get Started as a Team Member', objective:'Activate your account, find assigned work, and complete daily activities.', headers:[
       ['tm-core-concepts-account-setup','Core concepts & account setup','Learn about get started as a firm user and activate your firm-user account.'],
       ['tm-find-your-way-around-assurepro','Find your way around AssurePro','Learn about navigate your AssurePro workspace and work with the.'],
-      ['tm-work-with-assigned-clients','Work with assigned clients','Learn about find Clients assigned to you and open a Client workspace.'],
-      ['tm-manage-your-assigned-work','Manage your assigned work','Learn about find Engagements assigned to you and review Engagement details.'],
-      ['tm-work-with-client-documents','Work with Client Documents','Learn about find Documents for a Client and search and filter Documents.'],
-      ['tm-communicate-with-clients','Communicate with clients','Learn about client communication channels and find conversations requiring your response.'],
-      ['tm-record-and-review-time','Record and review time','Learn about time tracking and track time with the Timer.'],
       ['tm-plan-your-day','Plan your day','Learn about daily Briefing and review today’s priorities.'],
-      ['tm-manage-notifications','Manage notifications','Learn about notification channels and choose your notification preferences.'],
-      ['tm-use-ai-responsibly','Use AI responsibly','Learn about AI Agent explained for firm users and write an effective AI Agent request.'],
       ['tm-quick-start-tutorials','Quick-start tutorials','Learn about complete your first day in AssurePro and complete a Task and progress an Engagement.'],
     ]},
-    { id:'prospects-clients', icon:'idcard', label:'Work with Prospects and Clients', objective:'Manage the relationship from first prospect contact through ongoing client service.', headers:[
+    { id:'work-with-clients', icon:'idcard', label:'Work with clients', objective:'Add prospects, move them through the pipeline, and manage client relationships and access.', headers:[
       ['pc-add-and-manage-prospects','Add and manage Prospects','Learn about prospects and add a Prospect manually.'],
       ['pc-find-and-organize-prospects','Find and organize Prospects','Learn about work with the Prospect Board and work with the Prospect List.'],
       ['pc-work-with-the-prospect-pipeline','Work with the Prospect Pipeline','Learn about prospect Pipeline and prospect stage.'],
@@ -41,18 +31,9 @@
       ['pc-work-with-the-client-workspace','Work with the Client workspace','Learn about client workspace and client.'],
       ['pc-invite-clients-to-the-portal','Invite Clients to the Portal','Learn about client Portal and client Portal access.'],
       ['pc-guide-clients-through-portal-activiti','Guide Clients through Portal activities','Learn about review requests as a Client user and upload Documents through the Client Portal.'],
+      ['tm-work-with-assigned-clients','Work with assigned clients','Learn about find Clients assigned to you and open a Client workspace.'],
     ]},
-    { id:'deliver-work', icon:'flow', label:'Deliver Client Work', objective:'Create, progress, communicate, and complete client engagements.', headers:[
-      ['dw-work-with-engagements','Work with Engagements','Learn about work with the Engagements List and find an Engagement.'],
-      ['dw-manage-recurring-work','Manage recurring work','Learn about recurring Engagements and create a recurring Engagement.'],
-      ['dw-work-with-workflow-views','Work with Workflow views','Learn about choose the appropriate Workflow view and review Engagements on the Board.'],
-      ['dw-progress-work-through-a-workflow','Progress work through a Workflow','Learn about review an Engagement’s current stage and open an Engagement from the Board.'],
-      ['dw-work-with-tasks','Work with Tasks','Learn about work with the Tasks List and find a Task.'],
-      ['dw-monitor-workload-and-deadlines','Monitor workload and deadlines','Learn about team workload and review Team Load.'],
-      ['dw-work-with-client-documents','Work with Client Documents','Learn about client Document workspace and open a Client’s Documents.'],
-      ['dw-organize-client-folders','Organize Client folders','Learn about client folder structure and create a Client folder.'],
-      ['dw-add-client-documents','Add Client Documents','Learn about upload a Document from your computer and select the correct upload folder.'],
-      ['dw-request-documents-from-clients','Request Documents from Clients','Learn about document Requests and create a Document Request.'],
+    { id:'engagement-letters', icon:'signature', label:'Engagement Letters and Signatures', objective:'Build, price, send, and track engagement letters through signing.', headers:[
       ['dw-work-with-engagement-letters','Work with Engagement Letters','Learn about engagement Letters and find your way around Engagement Letters.'],
       ['dw-create-an-engagement-letter','Create an Engagement Letter','Learn about start a new signing package and start from a blank package.'],
       ['dw-add-services-and-pricing','Add Services and Pricing','Learn about add Services to an Engagement Letter and configure Service pricing.'],
@@ -61,6 +42,27 @@
       ['dw-complete-the-signing-process','Complete the signing process','Learn about client signing experience and open the Client-facing package.'],
       ['dw-track-engagement-letter-status','Track Engagement Letter status','Learn about engagement Letter statuses and review sent packages awaiting Client action.'],
       ['dw-review-package-history','Review package history','Learn about engagement Letter audit history and open the audit history.'],
+    ]},
+    { id:'engagements-workflow-tasks', icon:'flow', label:'Engagements, Workflow, and Tasks', objective:'Create and progress engagements, manage tasks, workload, deadlines, and your calendar.', headers:[
+      ['dw-work-with-engagements','Work with Engagements','Learn about work with the Engagements List and find an Engagement.'],
+      ['dw-manage-recurring-work','Manage recurring work','Learn about recurring Engagements and create a recurring Engagement.'],
+      ['dw-work-with-workflow-views','Work with Workflow views','Learn about choose the appropriate Workflow view and review Engagements on the Board.'],
+      ['dw-progress-work-through-a-workflow','Progress work through a Workflow','Learn about review an Engagement’s current stage and open an Engagement from the Board.'],
+      ['dw-work-with-tasks','Work with Tasks','Learn about work with the Tasks List and find a Task.'],
+      ['dw-monitor-workload-and-deadlines','Monitor workload and deadlines','Learn about team workload and review Team Load.'],
+      ['dw-manage-deadlines','Manage deadlines','Learn about engagement dates and task due dates.'],
+      ['dw-work-with-calendar','Work with Calendar','Learn about assurePro Calendar and open Calendar.'],
+      ['dw-complete-client-work','Complete Client work','Learn about complete the final Workflow Tasks and review final Client Documents.'],
+      ['tm-manage-your-assigned-work','Manage your assigned work','Learn about find Engagements assigned to you and review Engagement details.'],
+    ]},
+    { id:'documents-client-requests', icon:'file', label:'Documents and Client Requests', objective:'Organize client documents and folders, and request files from clients.', headers:[
+      ['dw-work-with-client-documents','Work with Client Documents','Learn about client Document workspace and open a Client’s Documents.'],
+      ['dw-organize-client-folders','Organize Client folders','Learn about client folder structure and create a Client folder.'],
+      ['dw-add-client-documents','Add Client Documents','Learn about upload a Document from your computer and select the correct upload folder.'],
+      ['dw-request-documents-from-clients','Request Documents from Clients','Learn about document Requests and create a Document Request.'],
+      ['tm-work-with-client-documents','Work with Client Documents','Learn about find Documents for a Client and search and filter Documents.'],
+    ]},
+    { id:'communications-notifications', icon:'chat', label:'Communications and Notifications', objective:'Message clients and your team, and configure notifications and reminders.', headers:[
       ['dw-work-with-client-communications','Work with Client Communications','Learn about client Communications and find your way around Communications.'],
       ['dw-start-client-conversations','Start Client conversations','Learn about start a new Client conversation and select the Client.'],
       ['dw-manage-active-conversations','Manage active conversations','Learn about assign a conversation and change conversation ownership.'],
@@ -70,27 +72,21 @@
       ['dw-record-calls','Record Calls','Learn about call activity and add a Call activity.'],
       ['dw-collaborate-with-firm-users','Collaborate with firm users','Learn about team Chat and start an internal conversation.'],
       ['dw-follow-up-with-clients','Follow up with Clients','Learn about automated reminders and follow up on an outstanding Document Request.'],
-      ['dw-work-with-calendar','Work with Calendar','Learn about assurePro Calendar and open Calendar.'],
-      ['dw-manage-deadlines','Manage deadlines','Learn about engagement dates and task due dates.'],
-      ['dw-complete-client-work','Complete Client work','Learn about complete the final Workflow Tasks and review final Client Documents.'],
+      ['rf-configure-firm-communications','Configure firm communications','Learn about notification settings and configure firm-user notifications.'],
+      ['tm-communicate-with-clients','Communicate with clients','Learn about client communication channels and find conversations requiring your response.'],
+      ['tm-manage-notifications','Manage notifications','Learn about notification channels and choose your notification preferences.'],
     ]},
-    { id:'run-firm', icon:'briefcase', label:'Run Your Firm', objective:'Manage time, billing, people, processes, reporting, integrations, and security.', headers:[
+    { id:'time-billing-payments', icon:'receipt', label:'Time Sheet, Billing, and Payments', objective:'Track time, manage services and pricing, and handle billing and payments.', headers:[
       ['rf-track-time','Track time','Learn about time tracking and set up time tracking for your firm.'],
       ['rf-manage-services-and-pricing','Manage Services and pricing','Learn about services and plan your Service catalog.'],
       ['rf-manage-billing','Manage Billing','Learn about billing in AssurePro and set up Billing and Payment preferences.'],
-      ['rf-manage-teams-and-roles','Manage Teams and Roles','Learn about teams and Roles and plan your team structure.'],
-      ['rf-standardize-firm-processes','Standardize firm processes','Learn about template Library and create and organize Templates.'],
+      ['tm-record-and-review-time','Record and review time','Learn about time tracking and track time with the Timer.'],
+    ]},
+    { id:'reports', icon:'chart', label:'Reports', objective:'Review firm performance with the Overview dashboard and reports.', headers:[
       ['rf-use-overview','Use Overview','Learn about overview dashboard and review the Daily Briefing.'],
       ['rf-review-reports','Review Reports','Learn about reports and choose a reporting period.'],
-      ['rf-set-up-your-firm','Set up your firm','Learn about firm Profile settings and complete or update your Firm Profile.'],
-      ['rf-configure-work-standards','Configure work standards','Learn about create and manage Engagement Types and create and manage Tags.'],
-      ['rf-configure-firm-communications','Configure firm communications','Learn about notification settings and configure firm-user notifications.'],
-      ['rf-connect-your-tools','Connect Your Tools','Learn about connected tools and prepare to connect an external tool.'],
-      ['rf-manage-security-and-credentials','Manage security and credentials','Learn about security settings and require secure firm-user authentication.'],
-      ['rf-manage-your-assureone-plan','Manage your AssureOne plan','Learn about platform Subscription and update subscription and payment information.'],
-      ['rf-manage-referrals','Manage Referrals','Learn about referrals and review referral progress and commission information.'],
     ]},
-    { id:'ai-automation', icon:'sparkle', label:'Use AI and Automation', objective:'Use AI assistance, briefing, memory, reminders, and credits responsibly.', headers:[
+    { id:'ai-automation', icon:'sparkle', label:'AI Agent and Automation', objective:'Use the AI Agent, Daily Briefing, AI Credits, and automated reminders responsibly.', headers:[
       ['ai-get-started-with-ai','Get started with AI','Learn about AI in AssurePro and AI Agent, Daily Briefing, and automation compared.'],
       ['ai-work-with-the-ai-agent','Work with the AI Agent','Learn about AI Agent and start and manage conversations.'],
       ['ai-complete-work-with-the-ai-agent','Complete work with the AI Agent','Learn about AI Agent actions and request a supported action.'],
@@ -100,6 +96,17 @@
       ['ai-manage-ai-credits','Manage AI Credits','Learn about AI Credits and see which features use AI Credits.'],
       ['ai-use-ai-responsibly','Use AI responsibly','Learn about review AI output before using it and protect confidential information.'],
       ['ai-troubleshoot-ai-features','Troubleshoot AI features','Learn about improve an incomplete or inaccurate response and fix information the AI Agent cannot access.'],
+      ['tm-use-ai-responsibly','Use AI responsibly','Learn about AI Agent explained for firm users and write an effective AI Agent request.'],
+    ]},
+    { id:'firm-setup-administration', icon:'settings', label:'Firm Setup and Administration', objective:'Manage your team and roles, standardize processes, connect tools, and configure security.', headers:[
+      ['rf-manage-teams-and-roles','Manage Teams and Roles','Learn about teams and Roles and plan your team structure.'],
+      ['rf-standardize-firm-processes','Standardize firm processes','Learn about template Library and create and organize Templates.'],
+      ['rf-set-up-your-firm','Set up your firm','Learn about firm Profile settings and complete or update your Firm Profile.'],
+      ['rf-configure-work-standards','Configure work standards','Learn about create and manage Engagement Types and create and manage Tags.'],
+      ['rf-connect-your-tools','Connect Your Tools','Learn about connected tools and prepare to connect an external tool.'],
+      ['rf-manage-security-and-credentials','Manage security and credentials','Learn about security settings and require secure firm-user authentication.'],
+      ['rf-manage-your-assureone-plan','Manage your AssureOne plan','Learn about platform Subscription and update subscription and payment information.'],
+      ['rf-manage-referrals','Manage Referrals','Learn about referrals and review referral progress and commission information.'],
     ]},
   ].map(module => ({ ...module, headers: module.headers.map(([id,label,objective]) => ({ id,label,objective })) }));
 

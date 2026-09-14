@@ -52,12 +52,16 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const H=window.HelpCenter;
   const journeys=[
-    ['firm-admin','settings','Get started as a firm administrator','Set up your firm, invite clients, and get your first engagement workflow running.'],
-    ['team-member','compass','Get started as a team member','Activate your account, find your way around, and start working with clients.'],
-    ['prospects-clients','idcard','Work with prospects and clients','Add prospects, move them through the pipeline, and manage client relationships.'],
-    ['deliver-work','flow','Deliver client work','Run engagements, manage documents, send engagement letters, and track deadlines.'],
-    ['run-firm','briefcase','Run your firm','Track time and billing, manage your team, review reports, and connect your tools.'],
-    ['ai-automation','sparkle','Use AI and automation','Use AI Agent, Daily Briefing, AI Credits, and automated reminders.']
+    ['getting-started','flag','Getting Started with AssurePro','Set up your firm, activate your account, and find your way around AssurePro.'],
+    ['work-with-clients','idcard','Work with clients','Add prospects, move them through the pipeline, and manage client relationships and access.'],
+    ['engagement-letters','signature','Engagement Letters and Signatures','Build, price, send, and track engagement letters through signing.'],
+    ['engagements-workflow-tasks','flow','Engagements, Workflow, and Tasks','Create and progress engagements, manage tasks, workload, deadlines, and your calendar.'],
+    ['documents-client-requests','file','Documents and Client Requests','Organize client documents and folders, and request files from clients.'],
+    ['communications-notifications','chat','Communications and Notifications','Message clients and your team, and configure notifications and reminders.'],
+    ['time-billing-payments','receipt','Time Sheet, Billing, and Payments','Track time, manage services and pricing, and handle billing and payments.'],
+    ['reports','chart','Reports','Review firm performance with the Overview dashboard and reports.'],
+    ['ai-automation','sparkle','AI Agent and Automation','Use the AI Agent, Daily Briefing, AI Credits, and automated reminders responsibly.'],
+    ['firm-setup-administration','settings','Firm Setup and Administration','Manage your team and roles, standardize processes, connect tools, and configure security.']
   ];
   document.getElementById('journey-grid').innerHTML=journeys.map(j=>`<a class="journey-card" href="category.html?journey=${j[0]}"><span class="journey-icon">${H.icon(j[1])}</span><h3>${j[2]}</h3><p>${j[3]}</p></a>`).join('');
 });
